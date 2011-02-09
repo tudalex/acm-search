@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>berarii.in, berarii.out</td><td><strong>Sursă</strong></td><td>Selectie echipe ACM ICPC, UPB 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>40 sec</td><td><strong>Limită de memorie</strong></td><td>65535 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=berarii">Vezi solutiile trimise</a></p>
+
+<h1>Berarii<br></h1>
+
+<p>Oamenii beau foarte multa bere in Romania. Pentru fiecare oras <var>i</var> din cele <var>N</var> orase ale tarii (numerotate de la <var>1</var> la <var>N</var>) se cunoaste cantitatea de bere <var>B<sub>i</sub></var> ceruta de locuitorii sai. Pentru a satisface cererea totala, o compania faimoasa producatoare de bere doreste sa infiinteze <var>K</var> berarii in <var>K</var> orase diferite din Romania. De la aceste berarii, berea va fi transportata catre celelalte orase folosind reteaua de strazi existenta. Fiecare strada uneste <var>2</var> orase distincte si are o anumita lungime. Datorita inundatiilor recente, reteaua de strazi a Romaniei are structura unui arbore: exista exact un singur drum intre orice pereche de orase. Sa consideram un oras <var>i</var> si o berarie amplasata intr-un oras <var>X</var>, care este cea mai apropiata berarie de <var>i</var>. Costul transportului berii din orasul <var>X</var> in orasul <var>i</var> este <var>dist(i,X)*B<sub>i</sub></var>, unde <var>dist(i,X)</var> este distanta dintre orasul <var>i</var> si orasul <var>X</var>. Compania producatoare de bere doreste sa aleaga amplasarea celor <var>K</var> berarii in asa fel incat costul maxim de transport al berii in orice oras din tara sa fie minim.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>berarii.in</var> contine numarul intreg <var>T</var>, reprezentand numarul de teste ce urmeaza. Prima linie a fiecarui test contine <var>2</var> numere intregi: <var>N</var> si <var>K</var>. Urmatoarele <var>N</var> linii contin cantitatile de bere cerute in fiecare oras: a <var>i</var>-a din aceste linii contine valoarea <var>B<sub>i</sub></var>. Urmatoarele <var>N-1</var> linii contin cate <var>3</var> numere intregi: <var>A</var>, <var>B</var> si <var>L</var>, avand semnificatia ca exista o strada de lungime <var>L</var> intre orasele <var>A</var> si <var>B</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pentru fiecare din cele <var>T</var> teste, in ordinea data in fisierul de intrare, veti afisa in fisierul de iesire <var>berarii.out</var> cate o linie continand valoarea minima posibila pentru costul maxim al transportului berii, in cazul unei amplasari optime a berariilor.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 21</var></li>
+<li><var>1 ≤ N ≤ 100 000</var></li>
+<li><var>1 ≤ K ≤ N</var></li>
+<li><var>1 ≤ B<sub>i</sub> ≤ 10 000</var></li>
+<li>Lungimea oricarei strazi este un numar intreg din intervalul <var>[1, 10 000]</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>berarii.in</th><th>berarii.out</th></tr><tr><td>1<br>
+4 2<br>
+3<br>
+4<br>
+2<br>
+7<br>
+1 2 10<br>
+2 3 21<br>
+2 4 57<br></td><td>42<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Arborele este prezentat in figura de mai jos. Orasele in care vor fi construite berarii sunt colorate cu galben. Costul maxim al transportului berii, egal cu 42, se obtine intre orasul <var>3</var> si beraria amplasata in orasul <var>2</var>.</p>
+
+<p><img src="http://infoarena.ro/problema/berarii?action=download&amp;file=berarii.jpg&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

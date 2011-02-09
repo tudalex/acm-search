@@ -1,0 +1,51 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>caramizi.in, caramizi.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2009, clasele 9-10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=122">Liviu Ciortea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/efer"><img src="/utilizator/efer?action=download&amp;file=avatar&amp;resize=L16x16" alt="efer">Liviu Ciortea</a> <a title="Rating efer: 639" class="rating-badge-1" href="http://infoarena.ro/utilizator/efer?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/efer">efer</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>32756 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=caramizi">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=caramizi">Vezi solutiile trimise</a></p>
+
+<h1>Caramizi<br></h1>
+
+<p>Haralambie s-a decis sa incerce o noua afacere in domeniul constructiilor. A procurat deja <var>N</var> tipuri de caramizi de dimensiuni identice dar de culori diferite, din fiecare tip existand <var>C<sub>i</sub></var> caramizi. El va aseza caramizi unele peste altele pentru a construi turnuri dupa urmatoarele reguli:</p>
+
+
+<ol><li>Fiecare turn trebuie sa contina doar caramizi de culori diferite.</li>
+<li>Toate turnurile trebuie sa aiba aceeasi inaltime.</li>
+</ol><p>Scopul pe care si-l propune Haralambie este de a folosi cat mai multe caramizi in constructiile sale. Nefiind pasionat de informatica, se bazeaza pe voi sa ii raspundeti la <var>M</var> intrebari de tipul: <em>"Care este numarul maxim de caramizi pe care il pot folosi pentru a construi cel mult <var>L<sub>i</sub></var> turnuri?"</em>. In afara de glorie, Haralambie va asigura ca o sa va ofere si caramizile ramase.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>caramizi.in</var> va contine pe prima linie numerele <var>N</var> si <var>M</var> cu semnificatiile din enunt. Pe urmatoarea linie se vor afla <var>N</var> numere naturale <var>C<sub>1</sub></var>, <var>C<sub>2</sub></var> ... <var>C<sub><var>N</var></sub></var>, reprezentand numarul de caramizi din fiecare tip. Pe ultima linie se vor afla <var>M</var> numere <var>L<sub>1</sub></var>, <var>L<sub>2</sub></var>, ..., <var>L<sub><var>M</var></sub></var>, cu semnificatia din enunt.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>caramizi.out</var> se vor afla <var>M</var> linii, fiecare continand raspunsul la intrebarea corespunzatoare din fisierul de intrare.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 200 000</var></li>
+<li><var>1 ≤ M ≤ 200 000</var> </li>
+<li><var>1 ≤ C<sub>i</sub> ≤ 1 000 000</var></li>
+<li><var>1 ≤ L<sub>i</sub> ≤ 2 000 000 000</var></li>
+<li>Pentru <var>30%</var> din testele folosite la evaluare <var>1 ≤ N ≤ 100</var>, <var>1 ≤ M ≤ 100</var>, <var>1 ≤ C<sub>i</sub> ≤ 100</var>, <var>1 ≤ L<sub>i</sub> ≤ 100</var>.</li>
+<li>Pentru alte <var>20%</var> din testele folosite la evaluare <var>1 ≤ N ≤ 500</var>, <var>1 ≤ M ≤ 5 000</var>, <var>1 ≤ C<sub>i</sub> ≤ 100</var>, <var>1 ≤ L<sub>i</sub> ≤ 5 000</var>.</li>
+<li>Pentru alte <var>30%</var> din testele folosite la evaluare <var>1 ≤ L<sub>i</sub> ≤ 1 000 000</var>.</li>
+<li>Pentru afisarea rezultatelor se recomanda folosirea intregilor cu semn pe <var>64</var> de biti.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>caramizi.in</th><th>caramizi.out</th></tr><tr><td>5 5 <br>
+  4 7 10 11 13<br>
+  3 12 13 14 21<br></td><td>15<br>
+  40<br>
+  40<br>
+  42<br>
+  45<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>In primul caz, Haralambie construieste <var>3</var> turnuri, fiecare continand toate cele <var>5</var> tipuri de caramizi, aranjate oricum. Urmatoarele doua cazuri au aceeasi solutie, in care Haralambie construieste <var>10</var> turnuri de cate <var>4</var> caramizi fiecare. In al patrulea caz, Haralambie va folosi un numar maxim de caramizi construind <var>14</var> turnuri de cate <var>3</var> caramizi fiecare. In ultimul caz, Haralambie poate folosi toate caramizile pe care le are la dispozitie. </p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

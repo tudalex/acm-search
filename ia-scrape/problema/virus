@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>virus.in, virus.out</td><td><strong>Sursă</strong></td><td>ONI 2008, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=140">Csaba Patcas</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/sima_cotizo"><img src="/utilizator/sima_cotizo?action=download&amp;file=avatar&amp;resize=L16x16" alt="sima_cotizo">Sima Cotizo</a> <a title="Rating sima_cotizo: 638" class="rating-badge-1" href="http://infoarena.ro/utilizator/sima_cotizo?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/sima_cotizo">sima_cotizo</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>98304 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=virus">Vezi solutiile trimise</a></p>
+
+<h1>Virus<br></h1>
+
+<p>Marian este programator la o firma ce produce software antivirus si a primit ca sarcina scrierea motorului de cautare al produsului. Firma fiind recent infiintata, analistii i-au pus la dispozitie doar un numar mic de virusi cunoscuti. Motorul va fi testat pe un sir de biti extras dintr-un executabil, trebuind sa produca o statistica care sa contina numarul de aparitii al fiecarui virus in sirul de biti.</p>
+
+<p>Scrieti un program pentru a-l ajuta pe Marian sa obtina statistica ceruta.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>virus.in</var> contine doua numere naturale <var>L</var> si <var>N</var>, separate printr-un spatiu, <var>L</var> reprezentand marimea sirului de biti, iar <var>N</var> reprezentand numarul virusilor cunoscuti. A doua linie a fisierului contine un sir de lungime <var>L</var>, format doar din caracterele <var>'0'</var> si <var>'1'</var>, reprezentand sirul de biti. Urmatoarele <var>2*N</var> linii contin descrierea virusilor pusi la dispozitie de echipa de analisti. Fiecare virus este descris pe doua linii consecutive; prima dintre aceste linii contine un numar natural <var>k</var> reprezentand lungimea acestui virus (exprimata in biti), iar a doua linie contine un sir de lungime <var>k</var>, format doar din caracterele <var>'0'</var> si <var>'1'</var>, reprezentand descrierea lui.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>virus.out</var> va contine exact <var>N</var> linii. Pe fiecare linie se va scrie o valoare naturala reprezentand numarul de aparitii al fiecarui virus cunoscut, in ordinea data in fisierul de intrare.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1 000</var></li>
+<li><var>1 ≤ L ≤ 100 000</var></li>
+<li><var>1 ≤ k ≤ 1 000</var></li>
+<li>Numarul total de aparitii nu va depasi <var>1 000 000</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>virus.in</th><th>virus.out</th></tr><tr><td>7 3<br>
+0110101<br>
+5<br>
+11111<br>
+1<br>
+0<br>
+3<br>
+101<br></td><td>0<br>
+3<br>
+2<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Sunt <var>3</var> virusi. Primul virus din fisier, <var>11111</var>, nu apare in sirul de biti , astfel se va scrie valoarea <var>0</var> pe prima linie a fisierului <var>virus.out</var>. Cel de-al doilea virus din fisier, <var>0</var>, apare in sirul de biti de <var>3</var> ori (pozitiile <var>1, 4</var> si <var>6</var>), astfel se va scrie valoarea <var>3</var> pe a doua linie a fisierului <var>virus.out</var>. Ultimul virus din fisier, <var>101</var>, apare in sirul de biti de <var>2</var> ori (incepand cu pozitiile <var>3</var> si <var>5</var>), astfel se va scrie valoarea <var>2</var> pe a treia linie a fisierului <var>virus.out</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,48 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>caluti.in, caluti.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2006, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=124">Adrian Vladu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/bogdan2412"><img src="/utilizator/bogdan2412?action=download&amp;file=avatar&amp;resize=L16x16" alt="bogdan2412">Bogdan-Cristian Tataroiu</a> <a title="Rating bogdan2412: 1162" class="rating-badge-4" href="http://infoarena.ro/utilizator/bogdan2412?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/bogdan2412">bogdan2412</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.75 sec</td><td><strong>Limită de memorie</strong></td><td>16000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=caluti">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=caluti">Vezi solutiile trimise</a></p>
+
+<h1>Caluti<br></h1>
+
+<p>Fermierul Chernel are o mare problema. Trebuie sa transporte <var>N</var> caluti de la pasune la hambar. Pentru aceasta el foloseste un camion in care incap maxim <var>K</var> caluti pentru un transport. Timpul in care Chernel efectueaza un transport de la pasune la hambar si se intoarce la pasune cu camionul gol este <var>P</var>.</p>
+
+<p>Insa calutii zburdalnici sunt greu de convins sa intre in camion inainte de o anumita ora. Pentru fiecare calut <var>i</var> se cunoaste timpul <var>T<sub>i</sub></var> dupa care acesta va putea fi bagat in camion. Chernel doreste sa isi termine munca cat mai repede, altfel spus ar vrea sa minimizeze timpul dupa care toti calutii vor fi fost transportati la hambar iar el ajuns cu camionul inapoi la pasune.</p>
+
+<h2>Cerinta</h2>
+
+<p>Ajutati-l pe Chernel sa isi indeplineasca dificila sarcina de a transporta toti calutii in timp minim.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>caluti.in</var> contine un numar natural <var>T</var>, reprezentand numarul de teste. Pe urmatoarele linii sunt descrise cele <var>T</var> teste, fiecare dintre ele avand formatul urmator: pe prima linie se afla trei numere intregi <var>N</var>, <var>K</var> si <var>P</var>, iar pe urmatoarele <var>N</var> linii se afla timpii <var>T<sub>i</sub></var> ai calutilor, sortati <strong>crescator</strong>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>caluti.out</var> va contine <var>T</var> linii. Pe linia <var>i</var> se va afla un singur numar intreg, reprezentand timpul minim de transport al calutilor corespunzator testului <var>i</var> din fisierul de intrare.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 10</var></li>
+<li><var>1 ≤ K ≤ N ≤ 100 000</var></li>
+<li><var>1 ≤ P ≤ 10 000 000 000</var></li>
+<li><var>1 ≤ T<sub>i</sub> ≤ 10 000 000 000</var></li>
+<li>Pentru <var>40%</var> din teste <var>N ≤ 500</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>caluti.in</th><th>caluti.out</th></tr><tr><td>1<br>
+3 2 15<br>
+10<br>
+20<br>
+30<br></td><td>45<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Chernel incarca primul calut la timpul <var>10</var>, il transporta la hambar si ajunge inapoi la pasune la timpul <var>25</var>.<br>
+Asteapta pana la momentul <var>30</var>, apoi incarca al doilea si al treilea calut, pe care ii transporta la hambar, intorcandu-se apoi la pasune la timpul <var>45</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,54 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>maxq.in, maxq.out</td><td><strong>Sursă</strong></td><td>ONI 2007, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=143">Daniel Pasaila</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2.1 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=maxq">Vezi solutiile trimise</a></p>
+
+<h1>Maxq<br></h1>
+
+<p>Johnie a inceput sa se joace cu un vector de numere. El dispune initial de un vector <var>V</var> cu <var>N</var> numere intregi (numerotate de la <var>0</var> la <var>N-1</var>) si poate efectua urmatoarele operatii:</p>
+
+
+<ul><li>schimbarea elementului de pe pozitia <var>p</var> cu un alt numar intreg; </li>
+<li>aflarea subsecventei de suma maxima din <var>V</var> inclusa intre indicii <var>a</var> si <var>b</var>; </li>
+</ul><h2>Cerinta</h2>
+
+<p>Ajutati-l pe Johnie sa efectueze repede operatiile de mai sus.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul <var>maxq.in</var> contine pe prima linie numarul <var>N</var> reprezentand dimensiunea vectorului. Pe urmatoarea linie se gasesc <var>N</var> elemente reprezentand valorile initiale ale vectorului. Urmatoarea linie contine <var>M</var>, reprezentand numarul de operatii. Pe fiecare dintre urmatoarele <var>M</var> linii sunt descrise cele <var>M</var> operatii in forma urmatoare:</p>
+
+
+<ul><li><var>0 i p</var>: numarul <var>0</var> de la inceput codifica faptul ca operatia curenta este una de schimbare; astfel elementul de pe pozitia <var>i</var> a vectorului se inlocuieste cu numarul intreg <var>p</var>; </li>
+<li><var>1 a b</var>: numarul <var>1</var> de la inceput codifica faptul ca operatia curenta este o intrebare; astfel se cere sa se afle subsecventa de suma maxima din vector inclusa intre indicii <var>a</var> si <var>b</var> (<var>a ≤ b</var>);</li>
+</ul><h2>Date de iesire</h2>
+
+<p>Fisierul <var>maxq.out</var> trebuie sa contina un numar de linii egal cu numarul de intrebari din fisierul de intrare. Pe linia <var>i</var> se cere sa se afiseze un singur numar reprezentand suma maxima ce se poate obtine in contextul intrebarii <var>i</var> din fisierul de intrare (<var>i=1,2,...</var>); in cazul in care vor exista doar subsecvente de suma negativa se va afisa <var>0</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 200 000</var>;</li>
+<li><var>1 ≤ M ≤ 200 000</var>;</li>
+<li>toate elementele vectorului apartin intervalului [<var>-100000, 100000</var>];</li>
+<li>definim o subsecventa ca fiind un sir de termeni consecutivi din vector, iar suma ei se obtine adunand elementele ce o compun;</li>
+<li>exista cel putin o intrebare.</li>
+<li>pentru <var>20%</var> din teste se garanteaza <var>N ≤ 5000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>maxq.in</th><th>maxq.out</th></tr><tr><td>5<br>
+1 -10 4 -1 9<br>
+4<br>
+1 0 3<br>
+0 1 1<br>
+1 0 3<br>
+1 2 4<br></td><td>4<br>
+6<br>
+12<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Pentru prima intrebare se alege subsecventa formata de elementul pe pozitia <var>2</var> din vector. Pentru a <var>2</var>-a intrebare se aleg primele <var>3</var> elemente din vector (elementul de pe pozitia <var>1</var> a fost schimbat). Pentru a <var>3</var>-a intrebare se aleg toate elementele din intervalul cerut.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

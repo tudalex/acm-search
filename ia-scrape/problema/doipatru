@@ -1,0 +1,72 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>doipatru.in, doipatru.out</td><td><strong>Sursă</strong></td><td>Lot 2002</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=doipatru">Vezi solutiile trimise</a></p>
+
+<h1>DoiPatru<br></h1>
+
+
+<p>Membrii Lotului National de Informatica sunt foarte mandri de noul joc inventat de ei, pe care l-au denumit asemanator cu o problema de la Olimpiada Internationala de Informatica din anul 2001, care le-a placut foarte mult. Astfel, jocul se numeste DoiPatru.</p>
+
+<p>Pentru acest joc se folosesc <var>N</var> gramezi, fiecare continand cel putin <var>0</var> si cel mult <var>4</var> bile. Numarul total de bile din toate gramezile este <var>2N</var>. Doi jucatori muta alternativ. Atunci cand ii vine randul, fiecare jucator este obligat sa efectueze o mutare valida.</p>
+
+<p>O mutare valida consta din alegerea a doua gramezi, dintre care prima gramada are mai multe bile decat cea de a doua. Jucatorul ia o bila din prima gramada si o muta in cealalta. Mutarea se considera valida, doar daca numarul de bile rezultat in a doua gramada dupa mutarea bilei nu este mai mare decat numarul de bile ramas in prima gramada.</p>
+
+<p>Jocul se termina atunci cand nu mai poate fi efectuata nici o mutare valida (daca va ganditi putin, veti constata ca acest lucru se intampla atunci cand fiecare gramada contine doua bile).</p>
+
+<p>Castigatorul jocului este desemnat cel care detine mai multe gramezi la sfarsitul jocului. Bineinteles, daca cei doi jucatori detin un numar egal de gramezi, jocul se considera a fi remiza.</p>
+
+<p>Un jucator detine o gramada daca gramada are doua bile, iar acest numar (de doua bile) a rezultat in urma unei mutari efectuate de jucatorul respectiv. De exemplu, daca un jucator alege o gramada cu <var>4</var> bile si una cu o bila, in urma efectuarii mutarii, el va detine cea de-a doua gramada (care va avea doua bile), dar prima nu va apartine deocamdata nici unuia dintre jucatori. Daca alege o gramada cu <var>3</var> bile si una cu <var>0</var> bile, jucatorul va deveni proprietarul primei gramezi, deoarece, in urma mutarii efectuate, gramada respectiva va ramane cu doua bile. In cazul in care alege o gramada cu <var>3</var> bile si una cu o bila, dupa efectuarea mutarii, el va detine ambele gramezi (amandoua au acum doua bile).</p>
+
+<p>Daca un jucator este proprietarul unei gramezi la un moment dat in timpul jocului, nu inseamna ca aceasta gramada va ramane in posesia lui pana la sfarsit. De exemplu, sa presupunem ca jucatorul <var>1</var> detine o gramada cu doua bile si este randul jucatorului <var>2</var> sa mute. Daca acesta alege o gramada cu <var>4</var> bile si gramada cu doua bile ce apartine jucatorului <var>1</var>, dupa efectuarea mutarii, ambele gramezi vor avea <var>3</var> bile, iar numarul de gramezi aflate in posesia jucatorului <var>1</var> va scadea cu <var>1</var> (gramada detinuta de el anterior nu mai apartine nici unuia din cei doi jucatori, caci nu mai are doua bile).</p>
+
+<p>Daca la inceputul jocului exista unele gramezi avand doua bile, acestea sunt distribuite in mod egal celor doi jucatori. Daca numarul de gramezi cu doua bile este impar, atunci jucatorul <var>2</var> va primi cu o gramada mai mult decat jucatorul <var>1</var>. Jucatorul <var>1</var> este cel care efectueaza prima mutare.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care, pentru un <var>N</var> dat si un set de configuratii initiale ale jocului cu <var>N</var> gramezi, decide rezultatul fiecarei configuratii de joc.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>doipatru.in</var> se afla doi intregi: <var>N</var> si <var>S</var>, reprezentand numarul de gramezi folosite in joc, respectiv numarul de configuratii initiale ale jocului, descrise in continuare. Pe urmatoarele <var>S</var> linii se afla cate <var>N</var> valori intregi din intervalul <var>[0, 4]</var>, a caror suma este egala cu <var>2N</var>, reprezentand cate o configuratie initiala a jocului.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>doipatru.out</var>, pentru fiecare configuratie initiala a jocului descrisa in fisierul de intrare, in ordinea in care sunt descrise acestea, afisati rezultatul final al jocului, in conditiile in care ambii jucatori joaca optim. Veti afisa valoarea <var>1</var>, daca jocul este castigat de primul jucator, valoarea <var>2</var>, daca jocul este castigat de cel de-al doilea sau valoarea <var>0</var>, daca jocul se termina remiza.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 30</var></li>
+<li><var>1 ≤ S ≤ 1000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>doipatru.in</th><th>doipatru.out</th></tr><tr><td>5 4<br>
+0 3 4 1 2<br>
+2 2 2 2 2<br>
+1 1 2 2 4<br>
+4 3 2 1 0<br></td><td>1<br>
+2<br>
+1<br>
+1</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=60">Teoria jocurilor</a></span>
+            <a href="javascript:show_tag_list(60)" id="tag_anchor_60" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_60"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=78">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

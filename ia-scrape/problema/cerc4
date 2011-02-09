@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cerc4.in, cerc4.out</td><td><strong>Sursă</strong></td><td>Lot Juniori 2009 - Baraj 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=177">Rodica Pintea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/CezarMocan"><img src="/utilizator/CezarMocan?action=download&amp;file=avatar&amp;resize=L16x16" alt="CezarMocan">Cezar Mocan</a> <a title="Rating CezarMocan: 892" class="rating-badge-1" href="http://infoarena.ro/utilizator/CezarMocan?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/CezarMocan">CezarMocan</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>8192 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cerc4">Vezi solutiile trimise</a></p>
+
+<h1>Cerc4<br></h1>
+
+<p><var>N</var> puncte numerotate de la <var>1</var> la <var>N</var> sunt aşezate pe cerc, în sensul acelor de ceasornic, în ordine strict crescătoare.<br>
+Există <var>M</var> segmente de dreaptă diferite care unesc <var>M</var> perechi de puncte dintre cele <var>N</var> date. Cele două puncte care formează orice pereche sunt distincte. <br>
+Distanţele dintre două puncte succesive sunt alese astfel încât să nu existe <var>3</var> sau mai multe segmente care trec printr-un acelaşi punct interior cercului.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Cunoscându-se numărul de puncte, numărul de perechi şi perechile de puncte care vor fi unite, se cere să se determine numărul <var>P</var> de puncte de intersecţie formate de acestea în interiorul cercului (punctele de intersecţie aflate chiar pe cerc nefiind luate în considerare).</p>
+
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>cerc4.in</var> conţine:</p>
+
+
+<ul><li>pe prima linie două numere <var>N</var> şi <var>M</var> despărţite printr-un spaţiu, numere reprezentând numărul de puncte şi respectiv numărul de segmente</li>
+<li>pe următoarele <var>M</var> linii, câte o pereche de numere dinstincte <var>p<sub>i1</sub></var>, <var>p<sub>i2</sub></var> despărţite prin câte un spaţiu, numere reprezentând capetele câte unui segment</li>
+</ul><h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>cerc4.out</var> va conţine un singur număr <var>P</var> reprezentând numărul total de puncte de intersecţie formate în interiorul cercului. Dacă acest număr depăşeşte <var>999999</var>, atunci se va scrie numărul format numai din ultimele sale <var>6</var> cifre.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 500</var></li>
+<li><var>0 ≤ M ≤ 125000</var></li>
+<li><var>1 ≤ p<sub>i1</sub> ≤ p<sub>i2</sub> ≤ N</var></li>
+<li>Nu exista doua perechi <var>p<sub>i1</sub></var> <var>p<sub>i2</sub></var> identice</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>cerc4.in</th><th>cerc4.out</th></tr><tr><td>5 6<br>
+1 2<br>
+1 3<br>
+1 4<br>
+2 4<br>
+3 5<br>
+4 5<br></td><td>3<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>S-au format în interiorul cercului 3 puncte de intersecţie (marcate prin cerculeţe pe figură)   <br><img src="http://infoarena.ro/problema/cerc4?action=download&amp;file=cerc.jpg&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

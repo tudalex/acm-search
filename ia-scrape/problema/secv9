@@ -1,0 +1,34 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>secv9.in, secv9.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2010, Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/wefgef"><img src="/utilizator/wefgef?action=download&amp;file=avatar&amp;resize=L16x16" alt="wefgef">Andrei Grigorean</a> <a title="Rating wefgef: 783" class="rating-badge-4" href="http://infoarena.ro/utilizator/wefgef?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/wefgef">wefgef</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=secv9">Vezi solutiile trimise</a></p>
+
+<h1>Secv9<br></h1>
+
+<p>Se da un sir de <var>N</var> numere intregi. Sa se gaseasca cea mai lunga subsecventa care are suma mai mare sau egala cu un numar dat <var>S</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>secv9.in</var> se gasesc doua numere intregi <var>N</var> si <var>S</var>. Pe a doua linie se gasesc cele <var>N</var> valori ale sirului.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>In fisierul de iesire <var>secv9.out</var> veti afisa lungimea celei mai lungi subsecvente cu suma mai mare sau egala cu <var>S</var>.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 10<sup>5</sup></var></li>
+<li>Valorile sirului, suma oricarei subsecvente, precum si valoarea <var>S</var>, se incadreaza pe <var>32</var> de biti cu semn.</li>
+<li>Se garanteaza existenta unei solutii pentru toate datele de test.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>secv9.in</th><th>secv9.out</th></tr><tr><td>5 7<br>
+-4 10 -3 6 -12<br></td><td>4<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Subsecventa cuprinsa intre indicii 1 si 4 ai sirului are suma 9. Este cea mai lunga subsecventa cu suma mai mare sau egala cu 7.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

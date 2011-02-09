@@ -1,0 +1,31 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>rute.in, rute.out</td><td><strong>Sursă</strong></td><td>Romanian Open Contest, TIMUS 2001</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=rute">Vezi solutiile trimise</a></p>
+
+<h1>Rute<br></h1>
+
+<p>Un turist roman a plecat intr-o excursie pe Marea Mediterana. El a ajuns intr-unul dintre orasele de pe una din cele <var>3</var> insule pe care doreste sa le viziteze. Fiecare insula are exact <var>N</var> orase si toate sunt porturi. Turistul doreste sa isi inceapa calatoria din orasul in care se afla, sa viziteze toate celelalte <var>3*N-1</var> orase exact o data si apoi sa se intoarca in orasul de unde si-a inceput calatoria, pentru a pleca dupa aceea inapoi spre casa.</p>
+
+<p>Din pacate, pe fiecare din cele <var>3</var> insule traiesc triburi de canibali, astfel incat este interzis de catre autoritati sa se calatoreasca direct intre <var>2</var> orase de pe aceeasi insula. Din fericire, exista rute maritime intre orice pereche de orase care nu se afla pe aceeasi insula. Nu exista rute maritime intre <var>2</var> orase de pe aceeasi insula.</p>
+
+<p>Turistul vrea sa stie in cate moduri isi poate planifica calatoria pe cele <var>3</var> insule.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>rute.in</var> contine un singur numar intreg <var>N</var>, reprezentand numarul de orase de pe fiecare din cele <var>3</var> insule.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>rute.out</var> veti afisa numarul de posibilitati de planificare a calatoriei. <var>2</var> calatorii se considera identice daca secventa de <var>3*N</var> orase vizitate este identica sau daca secventa oraselor vizitate in cadrul primei calatorii este identica cu secventa oraselor vizitate in a doua calatorie, dar citita invers (de exemplu, daca fiecare insula ar avea un singur oras, numerotat cu numarul insulei, calatoriile <var>1-2-3-1</var> si <var>1-3-2-1</var> ar fi identice).</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 30</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>rute.in</th><th>rute.out</th></tr><tr><td>2</td><td>16</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

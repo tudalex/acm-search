@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>puteri.in, puteri.out</td><td><strong>Sursă</strong></td><td>preONI 2007, Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=153">Adrian Diaconu</a>, <a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.7 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=puteri">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=puteri">Vezi solutiile trimise</a></p>
+
+<h1>Puteri<br></h1>
+
+<p>Fie <var>M</var> = {<var>2<sup>i</sup> * 3<sup>j</sup> * 5<sup>k</sup></var> | <var>i</var>, <var>j</var>, <var>k</var> numere naturale }. Se dau <var>N</var> numere, fiecare apartinand multimii <var>M</var>. Sa se determine cate perechi de numere putem selecta din cele <var>N</var> astfel incat produsul numerelor din pereche sa fie o putere. Un numar natural <var>X</var> este o putere daca si numai daca exista <var>a</var> si <var>b</var> numere naturale astfel incat <var>X</var> = <var>a<sup>b</sup></var> si <var>b</var> &gt; 1.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>puteri.in</var> se afla <var>N</var>, numarul de numere ce sunt date. Pe fiecare din urmatoarele <var>N</var> linii se afla un triplet de numere naturale (<var>a b c</var>) despartite de exact un spatiu. Tripletul (<var>a b c</var>) de pe linia <var>i+1</var> are urmatoarea semnficatie: <var>a</var> semnifica puterea lui 2, <var>b</var> puterea lui 3 iar <var>c</var> puterea lui 5 din al <var>i</var>-lea numar dat.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului <var>puteri.out</var> se va afla <var>P</var>, numarul de perechi dintre numerele date care au proprietatea ca produsul numerelor din pereche este o putere.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100 000</var></li>
+<li>Orice triplet din fisierul de intrare indeplineste <var>0 ≤ a, b, c ≤ 64</var></li>
+<li>Intr-un triplet, <var>a</var>, <var>b</var> si <var>c</var> nu vor fi simultan nule</li>
+<li>Numerele date nu sunt in mod obligatoriu distincte doua cate doua</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>puteri.in</th><th>puteri.out</th></tr><tr><td>5<br>
+1 0 0<br>
+1 0 3<br>
+2 2 0<br>
+0 0 1<br>
+2 0 0<br></td><td>3<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Numerele date sunt <var>2</var>, <var>250</var>, <var>36</var>, <var>5</var> si <var>4</var>. Perechile care indeplinesc cerintele impuse sunt: (<var>2, 4</var>), (<var>250, 4</var>) si (<var>36, 4</var>). Pentru prima pereche avem produsul <var>8</var> = <var>2<sup>3</sup></var>, pentru a doua <var>1000</var> = <var>10<sup>3</sup></var> iar pentru ultima pereche <var>144</var> = <var>12<sup>2</sup></var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

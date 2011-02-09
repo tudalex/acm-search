@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>sirag.in, sirag.out</td><td><strong>Sursă</strong></td><td>Lot Iasi 2008, Baraj 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=171">Emanuela Cerchez</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=sirag">Vezi solutiile trimise</a></p>
+
+<h1>Sirag<br></h1>
+
+<p>Pentru a intra în Cartea Recordurilor, locuitorii din Văscăuţi vor face un şirag de mărgele foarte foarte lung. În acest scop ei au cumpărat mărgele de <var>K</var> culori (pentru fiecare culoare <var>i</var> fiind cunoscut numărul <var>a<sub>i</sub></var> de mărgele cumpărate).<br>
+Locuitorii din Văscăuţi consideră că şiragul este frumos dacă oricare secvenţă de <var>P</var> mărgele consecutive din şirag ( <var>2 ≤ P ≤ K</var>) nu conţine două mărgele de aceeaşi culoare.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieţi un program care să determine lungimea maximă a unui şirag frumos care se poate construi cu mărgelele cumpărate.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>sirag.in</var> conţine pe prima linie numerele naturale <var>K</var> şi <var>P</var> separate prin spaţiu. Pe următoarele <var>K</var> linii sunt scrise în ordine valorile <var>a<sub>1</sub></var>, <var>a<sub>2</sub></var>, ..., <var>a<sub>K</sub></var>, câte o valoare pe o linie.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>sirag.out</var> va conţine o singură linie pe care va fi scris numărul natural <var>LMax</var>, reprezentând lungimea maximă a unui şirag frumos care se poate construi cu mărgelele cumpărate.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ K ≤ 100 000</var></li>
+<li><var>2 ≤ P ≤ K</var></li>
+<li><var>1 ≤ a<sub>i</sub> ≤ 10<sup>9</sup></var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>sirag.in</th><th>sirag.out</th></tr><tr><td>4 3<br>
+  2<br>
+  5<br>
+  2<br>
+  1<br></td><td>8<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Un şirag frumos de lungime maximă 8 este </p>
+
+
+<ul><li>2,4,3,1,2,3,1,2</li>
+</ul><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

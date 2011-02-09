@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>colorare3.in, colorare3.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2010</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=200">Bogdan-Cristian Tataroiu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/stef2n"><img src="/utilizator/stef2n?action=download&amp;file=avatar&amp;resize=L16x16" alt="stef2n">Stefan Istrate</a> <a title="Rating stef2n: 644" class="rating-badge-4" href="http://infoarena.ro/utilizator/stef2n?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/stef2n">stef2n</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.15 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=colorare3">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=colorare3">Vezi solutiile trimise</a></p>
+
+<h1>Colorare3<br></h1>
+
+<p>În Oraşul Simplu au avut loc de curând alegeri pentru funcţia de primar. Cel care a fost ales a câştigat mai ales datorită proiectului său de restaurare a faţadelor tuturor clădirilor, iar acum trebuie să-l pună în practică. Oraşul Simplu constă din <var>N</var> obiective între care există străzi, în aşa fel încât pentru oricare 2 astfel de obiective există un singur drum de a ajunge de la unul la celălalt mergând pe străzi. Planul primarului constă în colorarea tuturor caselor astfel încât casele de pe aceeaşi stradă să aibă aceeaşi culoare, iar pentru oricare 2 străzi care se întâlnesc în acelaşi obiectiv, culorile să fie diferite. Ştiind ca primarul are la dispoziţie <var>K</var> culori, ar vrea să afle câte posibilităţi sunt de a-şi realiza planul de colorare.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>colorare3.in</var> conţine pe prima linie numerele <var>N</var> şi <var>K</var>. Urmează <var>N - 1</var> linii, fiecare conţinând câte 2 numere <var>a</var> şi <var>b</var> semnificând faptul că există o stradă între obiectivele <var>a</var> şi <var>b</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>colorare3.out</var> se va scrie numărul de posibilităţi de colorare modulo <var>1 000 000 007</var>.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100 000</var></li>
+<li><var>1 ≤ K ≤ 1 000 000 000</var></li>
+<li>Obiectivele sunt numerotate de la <var>1</var> la <var>N</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>colorare3.in</th><th>colorare3.out</th></tr><tr><td>5 3<br>
+1 2<br>
+1 3<br>
+1 4<br>
+3 5<br></td><td>12<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Se observă că după ce alegem culorile pentru străzile <var>(1,2)</var>, <var>(1,3)</var>, <var>(1,4)</var> (având <var>6</var> posibilităţi), strada <var>(3,5)</var> poate fi colorată în <var>2</var> moduri: cu aceeaşi culoare ca <var>(1,2)</var> sau <var>(1,4)</var>. Cu mai puţin de <var>3</var> culori nu se poate realiza planul. Aşadar, <var>6 * 2 = 12</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

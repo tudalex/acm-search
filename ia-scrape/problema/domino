@@ -1,0 +1,61 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>domino.in, domino.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil By Net 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=140">Csaba Patcas</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=domino">Vezi solutiile trimise</a></p>
+
+<h1>Domino<br></h1>
+
+<p>Se dau <var>N</var> dominouri. Sa se determine o modalitate de construire al unui sir, care sa contina toate dominourile, respectand regula jocului domino. Aceasta regula inseamna ca numerele inscrise pe fetele corespunzatoare a doua dominouri consecutive trebuie sa fie egale. Dominourile pot fi alese in ordine oarecare si rotite.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>domino.in</var> se va afla numarul <var>N</var> al dominourilor. Pe urmatoarele <var>N</var> linii se vor afla cate doua numere separate printr-un singur spatiu, reprezintand cele doua numere inscrise pe dominoul corespunzator.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierul <var>domino.out</var> va trebuie sa afisati <var>1</var>, daca exista solutie si <var>0</var> daca nu. Daca exista solutie vor urma exact <var>N</var> linii, care descriu sirul construit. Cele <var>N</var> linii vor trebui sa contina numerele de ordine al dominourilor in ordinea in care apar in sir. Fiecare numar de ordine va fi urmat de un spatiu si de un numar, care poate fi <var>0</var> sau <var>1</var> si va fi egal cu <var>1</var> in cazul in care dominoul corespunzator a fost rotit.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 50.000</var></li>
+<li>Numerele inscrise pe dominouri pot fi cuprinse intre <var>0</var> si <var>9</var> inclusiv</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>domino.in</th><th>domino.out</th></tr><tr><td>12<br>
+1 4<br>
+3 7<br>
+1 5<br>
+2 4<br>
+2 5<br>
+2 6<br>
+2 7<br>
+3 4<br>
+4 6<br>
+5 6<br>
+5 7<br>
+6 7<br></td><td>1<br>
+3 0<br>
+11 0<br>
+12 1<br>
+9 1<br>
+8 1<br>
+2 0<br>
+7 1<br>
+6 0<br>
+10 1<br>
+5 1<br>
+4 0<br>
+1 1</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=112">Lant eulerian</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=69">Parcurgere in adancime</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

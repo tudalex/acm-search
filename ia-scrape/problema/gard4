@@ -1,0 +1,46 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>gard4.in, gard4.out</td><td><strong>Sursă</strong></td><td>lot 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=128">Dan-Ionut Fechete</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>16000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=gard4">Vezi solutiile trimise</a></p>
+
+<h1>Gard 4<br></h1>
+
+<table style="margin:0.5em auto;" cellspacing="0"><tr><td align="center" style="background-color:#F8EABA;"><img src="http://infoarena.ro/template/badtests?action=download&amp;file=attention.gif&amp;safe_only=true" alt="" class="left" style="float:left"><em>Testele pentru aceasta problema nu sunt destul de bine construite pentru a departaja corect solutii ineficiente sau gresite.</em><br><a href="http://infoarena.ro/implica-te/imbunatatire-teste"><strong>Intra aici</strong></a> <em>daca vrei sa ne ajuti sa imbunatatim calitatea testelor pentru aceasta problema!</em></td></tr></table><p>Praslea cel Voinic a gasit gradina cu meri cu mere de aur, dar are acum probleme cu paza acestora. A stat treaz ani la rand pana cand a decis sa construiasca un gard in jurul lor, astfel incat sa poata dormi linistit. Gradina are forma unui patrat cu latura <var>N</var> metri. Praslea a impartit gradina in <var>N*N</var> patrate de <var>1m<sup>2</sup></var>, patrate aranjate pe <var>N</var> linii (numerotate de la <var>1</var> la <var>N</var>) si <var>N</var> coloane (numerotate de la <var>1</var> la <var>N</var>). Fiecare mar se afla in unul dintre aceste patrate. Pentru a construi gardul, Praslea a decis sa selecteze un sir de patrate in care primul si ultimul patrat, precum si oricare 2 patrate consecutive in sir au cel putin un punct comun. Un patrat poate fi ales in sir o data sau de mai multe ori. In fiecare patrat din sir Praslea va plasa un stalp urias. Gardul format din acesti stalpi imparte gradina in doua zone (interior si exterior). Toti merii trebuie sa se afle in interior. Un patrat este considerat in interior daca nu exista drum de la un patrat situat pe marginea gradinii (linia <var>1</var>, coloana <var>1</var>, linia <var>N</var> sau coloana <var>N</var>) la patratul respectiv. Un drum este un sir de patrate, astfel incat oricare doua patrate consecutive pe drum au o latura comuna, patratele de pe drum fiind libere (patrate care nu contin stalpi). Plasarea unui stalp intr-un anumit patrat are un anumit cost. Daca un patrat apare de mai multe ori in sirul ales de Praslea atunci costul va fi adunat de tot atatea ori la costul total.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care sa determine costul total minim de construire a gardului respectand conditiile din enunt.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>gard4.in</var> este scris numarul natural <var>N</var> reprezentand dimensiunea gradinii. Urmatoarele <var>N</var> linii contin cate <var>N</var> numere separate prin cate un spatiu. Daca al <var>j</var>-lea numar de pe linia <var>i</var> a fisierului este <var>-1</var> atunci patratul din gradina situat pe linia <var>i-1</var> si coloana <var>j</var> contine un mar; altfel acel numar reprezinta costul de plasare a unui stalp in patratul de pe linia <var>i-1</var> si coloana <var>j</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>gard4.out</var> va contine o singura linie pe care va fi scris un numar natural reprezentand costul minim total de plasare a stalpilor.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 35</var></li>
+<li><var>1 ≤ numarul de meri ≤ 5</var></li>
+<li>costul plasarii unui stalp este un numar natural mai mare sau egal cu <var>0</var> si mai mic decat <var>6666</var></li>
+<li>nu vor exista meri pe marginea gradinii (linia <var>1</var>, coloana <var>1</var>, linia <var>N</var> sau coloana <var>N</var>)</li>
+<li>evident, nu se poate plasa un stalp intr-un patrat ce contine un mar </li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>gard4.in</th><th>gard4.out</th></tr><tr><td>5<br>
+  3 0 10 10 10<br>
+  10 1 10 0 10<br>
+  0 -1 4 -1 0<br>
+  10 0 10 0 0 <br>
+  10 10 10 10 0<br></td><td>9<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Sirul de patrate ales pentru plasarea stalpilor este urmatorul: <br><var> 3  0 10 10 10</var><br><var>10  <b>1</b> 10  <b>0</b> 10</var><br><var> <b>0</b> -1  <b>4</b> -1  <b>0</b></var><br><var>10  <b>0</b> 10  <b>0</b>  0</var> <br><var>10 10 10 10  0</var></p>
+
+<p>Dupa cum observati, patratul de cost 4 dintre cei doi meri a fost ales de 2 ori.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

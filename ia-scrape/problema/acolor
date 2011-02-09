@@ -1,0 +1,57 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>acolor.in, acolor.out</td><td><strong>Sursă</strong></td><td>Baraj 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=37">Emilian Miron</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.6 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=acolor">Vezi solutiile trimise</a></p>
+
+<h1>Acolor<br></h1>
+
+<p>Omida-agent Smith s-a saturat sa tot distruga arborii si acum isi dezvolta simtul artistic - ii place mult mai mult sa-i coloreze.<br>
+De fiecare data cand vrea sa creeze o noua arbo-pictura isi ia cu el cele <var>K</var> creioane colorate, isi alege un arbore din gradina si porneste la lucru.<br>
+Arborele ales de Smith este alcatuit din <var>N</var> noduri, are ca radacina nodul <var>R</var> si o forma potrivita pentru pictura:</p>
+
+
+<ul><li>fiecare nod are cel mult doua crengi care duc spre doua noduri: unul la stanga si/sau unul la dreapta;</li>
+<li>intre oricare doua noduri exista un drum unic format din crengi distincte, pe care omida se poate plimba pentru a ajunge de la un nod la celalalt;</li>
+<li>nodurile din subarborele stang al unui nod sunt toate plasate mai la stanga decat acesta, iar cele din subarborele drept sunt toate mai la dreapta, de aceea nodurile au fost etichetate de la <var>1</var> la <var>N</var> de la cel mai din stanga pana la cel mai din dreapta.</li>
+</ul><p>Omida a observat ca picturile sale sunt frumoase doar daca respecta unele reguli de baza pe care le-a citit intr-o carte:</p>
+
+
+<ul><li>orice nod trebuie sa fie colorat cu exact una dintre cele <var>K</var> culori;</li>
+<li>un nod trebuie sa fie colorat diferit fata de parintele dinspre radacina (adica fata de nodul care preceda nodul respectiv atunci cand omida se plimba pe drumul de la radacina la nod);</li>
+<li>privit din exterior arborele trebuie sa fie colorat diferit de la stanga la dreapta: orice nod are o culoare diferita de cel mai apropiat nod la stanga de el si fata de cel mai apropiat nod la dreapta (cu alte cuvinte culoarea nodului etichetat cu <var>i</var> trebuie sa fie diferita de culoarea nodurilor etichetate cu <var>i-1</var>, <var>i+1</var>).</li>
+</ul><h2>Cerinta</h2>
+
+<p>Scrieti un program care sa determine pentru un arbore dat in cate picturi frumoase (picturi care sa respecte criteriile din enunt) poate fi transformat acesta. Deoarece numarul cerut poate fi foarte mare, este suficient sa aflati restul impartirii la <var>10007</var>.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Fisierul de intrare <var>acolor.in</var> va contine pe prima linie numerele intregi <var>N, R, K</var> separate prin cate un spatiu. Pe urmatoarele <var>N</var> linii este descrisa structura arborelui. Mai exact, pe linia <var>i+1</var> vor exista doua numere <var>st<sub>i</sub>, dr<sub>i</sub></var> separate printr-un spatiu, reprezentand nodul fiu spre stanga si respectiv nodul fiu spre dreapta al nodului <var>i</var>. Daca un nod nu are fiu spre stanga si/sau fiu spre dreapta atunci numarul corespunzator va fi <var>0</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>acolor.out</var> va contine o singura linie pe care va fi scris numarul de picturi frumoase care se pot obtine pentru arborele dat.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>0 &lt; N ≤ 100 000, 1 ≤ R ≤ N, 1 ≤ K ≤ 100</var></li>
+<li>In <var>40%</var> din teste sunt indeplinite relatiile <var>N ≤ 100</var> si <var>K ≤ 10</var></li>
+<li>In <var>60%</var> din teste sunt indeplinite relatiile <var>N ≤ 400 si K ≤ 15</var></li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>acolor.in</th><th>acolor.out</th><th>figura</th></tr><tr><td>9 5 4<br>
+0 0<br>
+1 3<br>
+0 4<br>
+0 0<br>
+2 6<br>
+0 7<br>
+0 9<br>
+0 0<br>
+8 0<br></td><td>3601<br></td><td><img src="http://infoarena.ro/problema/acolor?action=download&amp;file=image001.gif&amp;safe_only=true" alt=""></td></tr><tr><td>3 1 2<br>
+0 3<br>
+0 0<br>
+2 0<br></td><td>0<br></td><td> </td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

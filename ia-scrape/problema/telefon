@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>telefon.in, telefon.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil 2010, clasele 5-6</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=159">Clara Ionescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/savim"><img src="/utilizator/savim?action=download&amp;file=avatar&amp;resize=L16x16" alt="savim">Serban Andrei Stan</a> <a title="Rating savim: 783" class="rating-badge-1" href="http://infoarena.ro/utilizator/savim?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/savim">savim</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=telefon">Vezi solutiile trimise</a></p>
+
+<h1>Telefon<br></h1>
+
+<table style="margin:0.5em auto;" cellspacing="0"><tr><td align="center" style="background-color:#F8EABA;"><img src="http://infoarena.ro/template/badtests?action=download&amp;file=attention.gif&amp;safe_only=true" alt="" class="left" style="float:left"><em>Testele pentru aceasta problema nu sunt destul de bine construite pentru a departaja corect solutii ineficiente sau gresite.</em><br><a href="http://infoarena.ro/implica-te/imbunatatire-teste"><strong>Intra aici</strong></a> <em>daca vrei sa ne ajuti sa imbunatatim calitatea testelor pentru aceasta problema!</em></td></tr></table><p><img src="http://infoarena.ro/problema/telefon?action=download&amp;file=telefon.png&amp;resize=70%25" alt="" class="right" style="float:right"></p>
+
+<p>Avem un telefon pe care butoanele cu cifre sunt aranjate ca în figura alăturată. Acest telefon este acţionat de către un robot care, iniţial, are capul de acţionare deasupra butonului <var>*</var>. Robotul se comandă cu următoarele comenzi:</p>
+
+
+<ul><li><var>S x</var>	– capul de acţionare se mişcă <var>x</var> unităţi în sus</li>
+<li><var>J x</var>	– capul de acţionare se mişcă <var>x</var> unităţi în jos</li>
+<li><var>DR x</var> – capul de acţionare se mişcă <var>x</var> unităţi în dreapta</li>
+<li><var>ST x</var> – capul de acţionare se mişcă <var>x</var> unităţi în stânga</li>
+<li><var>A</var> – apasă capul de acţionare pe butonul deasupra căruia se află.</li>
+</ul><p>La terminarea formării numărului, capul trebuie să fie poziţionat deasupra butonului <var>#</var>. </p>
+
+<h2>Cerinţă</h2>
+
+<p>Scrieţi un program care citeşte un număr de telefon, având cel mult <var>10</var> cifre, apoi realizează apelarea acelui număr prin intermediul robotului, parcurgând un drum de lungime minimă deasupra tastaturii.</p>
+
+<h2>Date de intrare</h2>
+
+<p>În fişierul de intrare <var>telefon.in</var> este scris un număr întreg, reprezentând numărul de telefon care trebuie apelat.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>telefon.out</var> se vor scrie comenzile pe care trebuie să le execute robotul pentru a apela numărul de telefon dat. Comenzile se vor scrie pe o singură linie, în ordinea în care va trebui să le efectueze robotul. Două comenzi se vor despărţi printr-un singur spaţiu.</p>
+
+<h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>telefon.in</th><th>telefon.out</th></tr><tr><td>123804<br></td><td>S 3 A DR 1 A DR 1 A J 2 ST 1 A J 1 A S 2 ST 1 A J 2 DR 2<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Mai întâi trebuie să mutăm capul de acţionare de deasupra butonului <var>*</var> deasupra butonului <var>1</var>. În acest scop ne mutăm în sus <var>3</var> poziţii <var>(S 3)</var> şi apăsăm butonul <var>(A)</var>. Urmează butonul <var>2</var>, deci mutăm capul o poziţie la dreapta <var>(DR 1)</var> şi apăsăm <var>(A)</var>. Pentru a ajunge la butonul <var>3</var>, din nou facem o mutare la dreapta cu o poziţie <var>(DR 1)</var> şi apăsăm <var>(A)</var>. Pentru a ajunge deasupra butonului <var>8</var>, mai întâi mutăm capul în jos <var>2</var> poziţii <var>(J 2)</var>, apoi la stânga o poziţie <var>(ST 1)</var> şi apăsăm <var>(A)</var>. 0 se află sub <var>8</var>, deci avem o mutare <var>(J 1)</var> şi apăsăm <var>(A)</var>. Acum trebuie să ajungem la <var>4</var>, deci urcăm <var>2</var> poziţii <var>(S 2)</var>, apoi mutăm capul o poziţie la stânga <var>(ST 1)</var> şi apăsăm <var>(A)</var>. În final mutăm capul deasupra butonului <var>#</var> cu comenzile <var>J 2</var> şi <var>DR 2</var>. Aici nu trebuie să apăsăm butonul.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,46 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>pawns.in, pawns.out</td><td><strong>Sursă</strong></td><td>Bursele Agora 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=pawns">Vezi solutiile trimise</a></p>
+
+<h1>Pawns<br></h1>
+
+
+<p>Se considera o tabla impartita in mai multe celule care contin pioni. Celulele sunt conectate intre ele prin sageti, si mergand de la orice celula in directia in care indica sagetile nu vom ajunge niciodata in locul din care am plecat. Deci, exista celule din care nu pleaca sageti si celule in care nu ajung sageti.<br>
+Consideram doi jucatori. Fiecare jucator poate muta, cand ii vine randul, un pion din celula in care se afla intr-o celula spre care pleaca o sageata. Cel care nu mai poate muta atunci cand ii vine randul pierde partida. La inceputul unui joc, prima mutare o face jucatorul <var>1</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se determine daca jucatorul <var>1</var> are strategie sigura de castig.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>pawns.in</var> contine pe prima linie doua numere intregi <var>n</var> si <var>m</var>, separate printr-un singur spatiu, care reprezinta numarul de celule de pe tabla, respectiv numarul de sageti.<br>
+Pe fiecare dintre urmatoarele <var>m</var> linii se afla cate doua numere intregi <var>x</var> si <var>y</var>, separate intre ele printr-un singur spatiu, cu semnificatia ca exista o sageata care pleaca din celula cu numarul de ordine <var>x</var> si ajunge in celula cu numarul de ordine <var>y</var>.<br>
+Pe linia urmatoare se afla un numar <var>t</var> care reprezinta numarul de jocuri care se joaca.<br>
+Pe fiecare dintre urmatoarele <var>t</var> linii se afla <var>n</var> numere intregi, separate intre ele prin spatii, care reprezinta numarul de pioni din fiecare celula pentru un anumit joc.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>pawns.out</var> trebuie sa contina <var>t</var> linii. Fiecare dintre cele <var>t</var> linii va contine valoarea <var>0</var>, daca pentru o configuratie jucatorul <var>1</var> nu are strategie sigura de castig si valoarea <var>1</var> in caz contrar.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ n, m ≤ 500</var></li>
+<li><var>1 ≤ t ≤ 15</var></li>
+<li>Numarul de pioni dintr-o celula nu va depasi valoarea <var>500</var></li>
+<li>Celulele sunt numerotate de la <var>1</var> la <var>n</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>pawns.in</th><th>pawns.out</th></tr><tr><td>3 3<br>
+1 2<br>
+1 3<br>
+2 3<br>
+2<br>
+1 0 0<br>
+2 2 2<br></td><td>1<br>
+0</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

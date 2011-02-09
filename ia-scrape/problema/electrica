@@ -1,0 +1,38 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>electrica.in, electrica.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2009, Runda Finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=223">Cosmin Gheorghe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gcosmin"><img src="/utilizator/gcosmin?action=download&amp;file=avatar&amp;resize=L16x16" alt="gcosmin">Gheorghe Cosmin</a> <a title="Rating gcosmin: 1142" class="rating-badge-4" href="http://infoarena.ro/utilizator/gcosmin?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gcosmin">gcosmin</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>32000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=electrica">Vezi solutiile trimise</a></p>
+
+<h1>Electrica<br></h1>
+
+<p>Gabriela lucreaza la Electrica <span class="caps">S.A. </span>unde se ocupa de panouri publicitare. Ea acum lucreaza la un panou putin mai ciudat. Panoul consta din multe becuri dispuse sub forma unei matrice de <var>N</var> linii pe <var>M</var> coloane. Initial toate becurile sunt stinse, iar Gabriela trebuie sa aprinda unele dintre acestea. Problema este ca singura operatie permisa este alegerea unei submatrice de <var>L</var> pe <var>L</var> si schimbarea starii tuturor becurilor din acea submatrice. Gabriela vrea sa stie care este numarul minim de operatii astfel incat sa aduca becurile in starea finala ceruta.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>electrica.in</var> va contine pe prima linie numerele <var>N</var>, <var>M</var> si <var>L</var>. Urmatoarele <var>N</var> linii vor contine fiecare cate <var>M</var> numere <var>0</var> sau <var>1</var> (nedespartite prin spatii) reprezentand starea finala a becurilor ( <var>O</var> pentru stins si <var>1</var> pentru aprins).</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>electrica.out</var> va contine o singura linie continand numarul minim de operatii pentru a aduce becurile in starea finala, sau numarul <var>-1</var> in caz ca acest lucru nu este posibil.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ L ≤ N, M ≤ 1000</var></li>
+<li>Pentru <var>40</var>% din teste <var>1 ≤ N, M ≤ 100</var></li>
+<li>Pentru <var>60</var>% din teste <var>1 ≤ N, M ≤ 500</var></li>
+<li><b>Atentie</b>: submatricea reprezinta extinderea bidimensioanala a subsecventei si nu a subsirului</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>electrica.in</th><th>electrica.out</th></tr><tr><td>4 4 3<br>
+1110<br>
+1001<br>
+1001<br>
+0111<br></td><td>2<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Gabriela alege submatricile cu coltul stanga sus in punctele <var>1</var>, <var>1</var> si <var>2</var>, <var>2</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

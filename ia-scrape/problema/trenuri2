@@ -1,0 +1,51 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>trenuri2.in, trenuri2.out</td><td><strong>Sursă</strong></td><td>Lot Alba Iulia 2010, Baraj 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=166">Tiberiu Savin</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mathboy"><img src="/utilizator/mathboy?action=download&amp;file=avatar&amp;resize=L16x16" alt="mathboy">Dragos-Alin Rotaru</a> <a title="Rating mathboy: 510" class="rating-badge-3" href="http://infoarena.ro/utilizator/mathboy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mathboy">mathboy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=trenuri2">Vezi solutiile trimise</a></p>
+
+<h1>Trenuri2<br></h1>
+
+<p>Peste nouă mări şi nouă ţări, într-o mare împărăţie, prinţesa Alexandra s-a îndrăgostit foarte tare de Făt-Frumos, cel mai puternic şi mai viteaz bărbat. Din nefericire pentru ea, în urmă cu mulţi ani, în timpul unei lupte împotriva lui Gefghev tiranicul împarat din vremea aceea, lui Făt Frumos i-a scăzut foarte mult karma şi din această cauză nu mai are voie să se apropie de instituţiile publice. Astfel, de fiecare dată când cei doi vor să se întâlnească, Făt frumos îi trimite Alexandrei un bileţel printr-un porumbel călător. Pe bileţel, Făt Frumos scrie cea mai apropiată staţie de tren faţă de pădurea în care se ascunde acesta. Aşadar, Alexandra trebuie să se ducă la cea mai apropiată staţie de tren şi de acolo să ajungă în staţia indicată de Făt Frumos. Aici intervine mama Alexandrei care nu-şi va lăsa fata să îşi abandoneze responsabilitaţile princiare chiar atât de uşor. De fiecare dată când fata vrea să se întâlnească cu Făt Frumos, trebuie să-i spună mamei timpul exact pe care îl va face trenul din staţia de plecare până la staţia indicată de Făt Frumos. Alexandra cunoaşte foarte bine sistemul feroviar din împărăţie şi ştie următoarele:</p>
+
+
+<ul><li>Între oricare două staţii există un drum unic care nu trece prin aceeaşi staţie de două ori.</li>
+<li>Pentru oricare două staţii unite direct printr-o linie de cale ferată, Alexandra cunoaşte distanţa dintre staţii şi viteza maximă cu care un tren poate circula pe această linie.</li>
+</ul><h2>Cerinţă</h2>
+
+<p>Alexandra nu se simte în largul ei când trebuie să facă calcule, mai cu seamă că împaraţia este foarte mare şi calculele pot deveni destul de complicate. Din aceasta cauză vă roagă să faceţi un program care primeşte configuraţia sistemului feroviar şi răspunde unor întrebări de forma <var>x y v</var>, cu următoarea semnificaţie: “Cât timp îi va fi necesar unui tren care poate merge cu viteza maximă <var>v</var>, să ajungă din staţia <var>x</var> în staţia <var>y</var> ?”.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare <var>trenuri2.in</var> se află două numere: <var>N</var> şi <var>M</var>, reprezentând numărul de staţii din sistemul feroviar, respectiv numărul de întrebări pe care le pune Alexandra. Pe următoarele <var>N – 1</var> linii, se află câte <var>4</var> numere <var>x y d v</var> având semnificaţia că există o linie de cale ferată directă de la staţia <var>x</var> la staţia <var>y</var> de lungime <var>d</var>, care nu poate fi parcursă cu cu o viteză mai mare decât <var>v</var>. Următoarele <var>M</var> linii conţin câte trei numere: <var>x y z</var>, reprezentând întrebările puse de Alexandra, având semnificaţia descrisă în enunţ.</p>
+
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul <var>trenuri2.out</var> se vor afla M numere, câte unul pe linie, reprezentând răspunsurile la întrebările Alexandrei cu o precizie de trei zecimale.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>3 &lt; N, M &lt; 100 000</var></li>
+<li>Pentru <var>30%</var> din teste <var>M &lt; 100</var></li>
+<li>Lungimea unui drum va fi un număr natural mai mic decât <var>100 000</var></li>
+<li>Viteza maximă pe care o poate atinge un tren este un număr natural mai mic sau egal decât <var>1000</var></li>
+<li>Pentru fiecare întrebare se ştie că trenul va merge pe drumul minim dintre staţia <var>x</var> şi staţia <var>y</var></li>
+<li>Oricare tren merge cu minimul dintre viteza maximă pe care o poate atinge şi viteza maximă admisă pe linia de cale ferată pe care se află.</li>
+<li>Diferenţa maximă cu care rezultatul final poate varia faţă de cel corect este de <var>0,001</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>trenuri2.in</th><th>trenuri2.out</th></tr><tr><td>4 2<br>
+1 2 4 2<br>
+1 3 6 5<br>
+3 4 2 10<br>
+1 4 7<br>
+2 3 4<br></td><td>1.485<br>
+3.500<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Primul tren va parcurge drumul dintre staţia <var>1</var> şi statia <var>3</var> cu viteza <var>5</var>, iar drumul de la statia <var>4</var> la statia <var>4</var> cu viteza <var>7</var>. Astfel, timpul total va fi:  <var>6/5 + 2/7 = 1.485714286</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

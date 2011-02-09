@@ -1,0 +1,47 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>jetoane2.in, jetoane2.out</td><td><strong>Sursă</strong></td><td>Winter Challenge 2008, Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=252">Bogdan Alexandru Stoica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/fireatmyself"><img src="/utilizator/fireatmyself?action=download&amp;file=avatar&amp;resize=L16x16" alt="fireatmyself">Bogdan A. Stoica</a> <a title="Rating fireatmyself: 536" class="rating-badge-2" href="http://infoarena.ro/utilizator/fireatmyself?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/fireatmyself">fireatmyself</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=jetoane2">Vezi solutiile trimise</a></p>
+
+<h1>Jetoane 2<br></h1>
+
+<p>Dupa mai multe incercari esuate de a castiga la Loto, WW decide sa renunte si sa se apuce de jocuri de noroc. A deprins repede experienta si chiar a inceput sa castige bani frumosi (sumele dobandite sunt strict confidentiale). Nu conteaza cum a reusit ca intr-un timp atat de scurt sa invete atat de multe, ce conteaza, insa, este ca zilele trecute WW a dat peste un joc destul de incurcat. El are in fata un numar de jetoane, puse unul langa celalalt, pe care sunt inscriptionate literele mici ale alfabetului englez (cate o litera pe fiecare jeton). El poate executa urmatoarea mutare asupra sirului: alege o subsecventa, din acest sir, pe care o extrage, apoi alatura (daca exista) cele doua bucati ramase. Pentru ca jocul sa fie si mai palpitant, fiecare litera are o pondere <var>p<sub>i</sub></var>. Mai mult, WW nu poate alege orice subsecventa, ci doar una aflata in lista de <var>N</var> mutari valide (care se obtine la inceputul jocului printr-un algoritm neinteresant). O mutare valida este reprezentata de un sir de maxim <var>10</var> caractere. Cand WW a extras o anumita subsecventa el primeste un scor numeric egal cu suma ponderii fiecarei litere ce compune subsecventa.</p>
+
+<h2>Cerinta</h2>
+
+<p>WW va pune la dispozitie sirul de jetoane, ponderile fiecarei litere, precum si lista cu mutarile valide. Va roaga sa-l ajutati a determina scorul maxim pe care poate sa-l obtina.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>jetoane2.in</var> se afla <var>26</var> de numere naturale, mai mici decat <var>1000</var>, reprezentand ponderea fiecarei litere. Pe a doua linie se afla sirul initial de jetoane urmat, pe a treia linie, de numarul de mutari valide, <var>N</var>. Pe urmatoarele <var>N</var> linii se afla cate un sir de maxim <var>10</var> caractere, reprezentad descrierea unei mutari.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului <var>jetoane2.out</var> se va afla numarul maxim cerut de <span class="caps">WW.</span></p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 170</var></li>
+<li><var>1 ≤ lungimea sirului initial ≤ 170</var></li>
+<li>toate literele din fisierul de intrare vor fi litere mici ale alfabetului englez</li>
+<li>doua litere pot avea aceeasi pondere</li>
+<li>pentru <var>30%</var> din teste <var>N ≤ 9</var></li>
+<li>pentru simplitatea si cursivitatea enuntului WW se poate citi <em>Dubluveu</em></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>jetoane2.in</th><th>jetoane2.out</th></tr><tr><td>2 5 3 1 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+aabcdee<br>
+5<br>
+ab<br>
+cd<br>
+be<br>
+ae<br>
+acd<br></td><td>19</td></tr></table><h3>Explicatie</h3>
+
+<p>Initial sirul este "<var>aabcdee</var>". WW extrage intai sirul "<var>cd</var>" ("<var>aab ee</var>"), obtinandu-se sirul "<var>aabee</var>" si costul <var>1+3=4</var>. Urmatorea mutare este extragerea sirului "<var>be</var>" ("<var>aa e</var>"), obtinandu-se sirul "<var>aae</var>" si costul <var>4+(5+4)=13</var>. Ultima subsecventa extrasa este "<var>ae</var>", sirul devenind "<var>a</var>" si costul final, <var>13+(2+4)=19</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

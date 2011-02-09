@@ -1,0 +1,57 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>joc.in, joc.out</td><td><strong>Sursă</strong></td><td>preOJI 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.75 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">2/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=joc">Vezi solutiile trimise</a></p>
+
+<h1>Joc<br></h1>
+
+<p>Gicu si Nicu, olimpici la informatica si buni prieteni, mereu incearca sa imbine activitatile lor cu informatica. Spre exemplu, cand se plictisesc in ore ei joaca un joc, bazat pe urmatoarele reguli:</p>
+
+
+<ul><li>fie o matrice cu numere intregi cu <var>N</var> linii si <var>M</var> coloane</li>
+<li>fiecare jucator muta alternativ un jeton plasat pe un element din matrice</li>
+<li>o mutare consta in plasarea jetonului pe o alta pozitie si adaugarea valorii din matrice de pe pozitia respectiva la scorul jucatorului care a facut mutarea; odata plasat jetonul pe o pozitie, jucatorul urmator poate sa mute jetonul doar pe o alta pozitie din dreptunghiul format de coltul stanga-sus si pozitia curenta a matricei</li>
+<li>jocul se termina cand un jucator ajunge cu jetonul in coltul stanga-sus al matricei</li>
+<li>la inceputul jocului, ambii jucatori au scor <var>0</var>, iar jucatorul care incepe alege pozitia initiala a jetonului</li>
+</ul><h2>Cerinta</h2>
+
+<p>Presupunand ca fiecare din cei doi joaca optim, si ca Gicu va incepe jocul, determinati pozitia initiala a jetonului, astfel incat diferenta de scor intre Gicu si Nicu sa fie maxima!</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului <var>joc.in</var> contine doua numere intregi <var>N</var> si <var>M</var>, separate prin cate un spatiu, care reprezinta numarul de linii si coloane ale matricii. Urmatoarele <var>N</var> linii contin cate <var>M</var> numere intregi, separate prin cate un spatiu, care descriu matricea.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul <var>joc.out</var> va contine trei numere intregi separate prin cate un spatu: diferenta maxima de scor intre Gicu si Nicu si linia si coloana unde se va plasa jetonul la inceputul jocului.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N, M ≤ 1.000</var></li>
+<li>Valorile din matrice sunt cuprinse in intervalul [<var>-1.000, 1.000</var>]</li>
+<li>Liniile sunt numerotate de la <var>1</var> la <var>N</var>, iar coloanele de la <var>1</var> la <var>M</var></li>
+<li>Prin joc optim se intelege ca Gicu va incerca sa maximizeze diferenta de scor, in timp ce Nicu va incerca sa o minimizeze</li>
+<li>Daca exista mai multe pozitii initiale pentru care se obtine diferenta maxima, atunci se va alege cea in care numarul liniei este cel mai mic, iar in caz de egalitate cea in care numarul coloanei este cel mai mic</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>joc.in</th><th>joc.out</th></tr><tr><td>1 6<br>
+2 1 3 4 0 5<br></td><td>3 1 6</td></tr></table><h3>Explicatii </h3>
+
+<p>Incepand din (<var>1, 6</var>) jocul optim este: Gicu ia <var>5</var>, Nicu ia <var>4</var>, Gicu ia <var>2</var>. <br>
+Orice alta pozitie initiala a jetonului ar fi dus la obtinerea unei diferente de scor mai mica.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

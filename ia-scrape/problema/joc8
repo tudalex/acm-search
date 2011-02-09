@@ -1,0 +1,70 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>joc8.in, joc8.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil 2008, clasele 5-6</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=159">Clara Ionescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=joc8">Vezi solutiile trimise</a></p>
+
+<h1>Joc8<br></h1>
+
+<p>Gigel si Alina se joaca de-a ghicitoarea. Gigel se gandeste la un numar natural mai mare sau egal decat un anumit numar <var>x</var> si mai mic sau egal decat un alt numar <var>y</var>. Alina ii promite lui Gigel ca va ghici la ce numar s-a gandit Gigel punandu-i un numar surprinzator de mic de intrebari de urmatoarele forme: </p>
+
+
+<ul><li>Te-ai gandit la numarul <var>z</var>?</li>
+<li>Numarul tau este mai mic decat <var>z</var>?</li>
+</ul><p>Urmeaza ca Gigel sa-i raspunda numai cu <var>Da</var> sau <var>Nu</var> dupa caz. Gigel este neincrezator deoarece nu stie cum va proceda Alina. Noi in schimb va spunem secretul Alinei. Ea va calcula numarul natural <var>z</var> aflat la mijlocul intervalului <var>[x, y]</var> si va intreba: "Te-ai gandit la <var>z</var>?". Daca raspunsul lui Gigel este <var>Da</var>, jocul s-a terminat, deoarece Alina a ghicit numarul la care s-a gandit Gigel. Daca raspunsul este <var>Nu</var>, Alina va intreba "Numarul tau este mai mic decat <var>z</var>?". </p>
+
+
+<ul><li>Daca acum raspunsul este <var>Da</var>, Alina va calcula numarul natural aflat la mijlocul intervalului <var>[x, z-1]</var> si va pune din nou intrebarea <var>1</var>. </li>
+<li>Daca raspunsul este <var>Nu</var>, Alina va calcula numarul natural aflat la mijlocul intervalului <var>[z + 1, y]</var> si va pune din nou intrebarea <var>1</var>. </li>
+</ul><p>Intrebarile Alinei vor continua in mod similar, pana cand ghiceste numarul la care s-a gandit Gigel. Numai ca Gigel este smecher si este posibil ca el sa incerce s-o pacaleasca pe Alina si sa dea cel putin un raspuns gresit. In cazul acesta Alina isi va da seama ca a fost pacalita in momentul in care marginea din stanga a intervalului curent devine mai mare decat marginea din dreapta. </p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care simuleaza jocul descris.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>joc8.in</var> se afla doua numere naturale <var>x</var> si <var>y</var> reprezentand limitele intre care a ales Gigel un numar. Pe urmatoarele linii sunt scrise raspunsurile lui Gigel. Daca raspunsul este <var>Da</var>, in fisier este scrisa cifra <var>1</var>. Daca raspunsul este <var>Nu</var>, in fisier este scrisa cifra <var>0</var>. Intotdeauna sunt atatea raspunsuri cate intrebari a pus Alina.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>joc8.out</var> se va scrie numarul natural la care s-a gandit Gigel. In cazul in care Gigel triseaza, pe prima linie se va scrie numarul <var>0</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ x, y ≤ 10 000</var></li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>joc8.in</th><th>joc8.out</th></tr><tr><td>100 300<br>
+0<br>
+0<br>
+0<br>
+1<br>
+0<br>
+0<br>
+1<br></td><td>237<br></td></tr><tr><td>25 30<br>
+0<br>
+0<br>
+0<br>
+0<br>
+0<br>
+0<br></td><td>0<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Pentru primul exemplu, Alina face urmatoarele presupuneri (mai jos prin [expresie] am notat partea intreaga a expresiei):</p>
+
+
+<ul><li><var>[(100 + 300)/2] = 200</var> (intrebare de tip <var>1</var>, raspuns <var>Nu</var>, apoi intrebare de tip <var>2</var> si raspuns <var>Nu</var>)</li>
+<li><var>[(201 + 300)/2] = 250</var> (intrebare de tip <var>1</var>, raspuns <var>Nu</var>, apoi intrebare de tip <var>2</var> si raspuns <var>Da</var>)</li>
+<li><var>[(201 + 249)/2] = 225</var> (intrebare de tip <var>1</var>, raspuns <var>Nu</var>, apoi intrebare de tip <var>2</var> si raspuns <var>Nu</var>)</li>
+<li><var>[(226 + 249)/2] = 237</var> (intrebare de tip <var>1</var>, raspuns <var>Da</var>)</li>
+</ul><p>Pentru al doilea exemplu, Alina face presupunerile:</p>
+
+
+<ul><li><var>[(25 + 30)/2] = 27</var> (intrebare de tip <var>1</var>, raspuns <var>Nu</var>, apoi intrebare de tip <var>2</var>, si raspuns <var>Nu</var>)</li>
+<li><var>[(28 + 30)/2] = 29</var> (intrebare de tip <var>1</var>, raspuns <var>Nu</var>, apoi intrebare de tip <var>2</var>, si raspuns <var>Nu</var>)</li>
+<li><var>[(30 + 30)/2] = 30</var> (intrebare de tip <var>1</var>, raspuns <var>Nu</var>, apoi intrebare de tip <var>2</var>, si raspuns <var>Nu</var>)</li>
+<li><var>[(31 + 30)/2] =</var> nu se mai calculeaza, deoarece <var>x</var> a devenit mai mic decat <var>y</var>. Rezulta ca Gigel a trisat.</li>
+</ul><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

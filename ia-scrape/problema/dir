@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>dir.in, dir.out</td><td><strong>Sursă</strong></td><td>OJI 2007, Clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=188">Alin Burta</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gabitzish1"><img src="/utilizator/gabitzish1?action=download&amp;file=avatar&amp;resize=L16x16" alt="gabitzish1">Gabriel Bitis</a> <a title="Rating gabitzish1: 658" class="rating-badge-1" href="http://infoarena.ro/utilizator/gabitzish1?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gabitzish1">gabitzish1</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=dir">Vezi solutiile trimise</a></p>
+
+<h1>Dir<br></h1>
+
+<p>Costel trebuie sa realizeze, impreuna cu echipa sa, o aplicatie software pentru gestiunea fisierelor de pe hard-disk, sarcina sa fiind aceea de a scrie un modul pentru determinarea cailor tuturor fisierelor de date aflate in structura arborescenta a folderelor de pe disc. Membrii echipei au stabilit o codificare proprie pentru memorarea structurii fisierelor de pe disc, utilizand un sir de caractere. Specificatiile tehnice sunt urmatoarele:</p>
+
+
+<ul><li>folderul este un fisier de tip special, care poate contine fisiere si/sau foldere (acestea fiind considerate subfoldere ale folderului respectiv);</li>
+<li>numele folderelor incep cu o litera, au maxim 30 de caractere si sunt scrise cu majuscule;</li>
+<li>numele fisierelor de date incep cu o litera, au maxim 30 de caractere si sunt scrise cu minuscule;</li>
+<li>caracterele utilizate pentru numele fisierelor si folderelor sunt literele alfabetului englez si cifrele arabe;</li>
+<li>reprezentarea structurii fisierelor sub forma unui sir de caractere se realizeaza dupa urmatoarea regula: <var><span class="caps">NUME</span>_FOLDER(lista_de_foldere_si_fisiere)</var>, unde <var>lista_de_foldere_si_fisiere</var>, posibil vida, contine fisierele si/sau subfolderele folderului <var><span class="caps">NUME</span>_FOLDER</var>, separate prin virgula. Subfolderele se reprezinta respectand aceeasi regula. De exemplu, structura de fisiere si foldere din figura de mai jos se reprezinta prin sirul de caractere: <br><code>FOLDER1(FOLDER2(),FOLDER3(FOLDER4(poveste,basm),basm))</code><br><img src="http://infoarena.ro/problema/dir?action=download&amp;file=dir.jpg&amp;safe_only=true" alt=""></li>
+</ul><h2>Cerinta</h2>
+
+<p>Scrieti un program care, cunoscand sirul de caractere ce codifica o structura de fisiere de pe disc, determina calea pentru fiecare fisier de date din structura. Prin cale a unui fisier se intelege o succesiune de foldere, fiecare folder fiind urmat de caracterul <var>\</var>(backslash), incepand de la folderul aflat pe cel mai inalt nivel al structurii (primul specificat in sirul ce codifica structura de fisiere), pana la subfolderul in care se afla fisierul de date respectiv si terminata cu numele fisierului. Caile determinate vor fi afisate in ordine lexicografica. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>dir.in</var> contine pe prima linie sirul de caractere ce codifica structura de fisiere de pe disc.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>dir.out</var> va contine pe prima linie un numar natural <var>N</var> reprezentand numarul de fisiere de date gasite. Pe urmatoarele <var>N</var> linii se vor scrie, in ordine lexicografica, caile ce permit identificarea fisierelor gasite, in formatul: <var>F<sub>1</sub>\F<sub>2</sub>\...\F<sub>n</sub>\fisier</var>, cate o cale pe o linie.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>Sirul de caractere ce codifica structura de fisiere este nevid si contine maxim <var>1600</var> de caractere.</li>
+<li>Structura de foldere contine cel putin un folder si cel putin un fisier.</li>
+<li>Numarul de fisiere de date este cel mult <var>100</var>.</li>
+<li>Lungimea caii unui fisier este de cel mult <var>255</var> caractere. </li>
+<li>Sirul <var>x<sub>1</sub>x<sub>2</sub>...x<sub>n</sub></var> este mai mic lexicografic decat sirul <var>y<sub>1</sub>y<sub>2</sub>...y<sub>m</sub></var>, daca exista <var>k</var> astfel incat <var>x<sub>1</sub>=y<sub>1</sub>,x<sub>2</sub>=y<sub>2</sub>,...,x<sub>k-1</sub>=y<sub>k-1</sub></var> si (<var>x<sub>k</sub>&lt;y<sub>k</sub> sau k=n+1</var>).</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>dir.in</th><th>dir.out</th></tr><tr><td><code>FOLDER1(FOLDER2(),FOLDER3(FOLDER4(poveste,basm),basm))</code><br></td><td>3<br><span class="caps">FOLDER1</span>\FOLDER3\FOLDER4\basm<br><span class="caps">FOLDER1</span>\FOLDER3\FOLDER4\poveste<br><span class="caps">FOLDER1</span>\FOLDER3\basm<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

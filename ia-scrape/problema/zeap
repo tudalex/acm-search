@@ -1,0 +1,63 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>zeap.in, zeap.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.7 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=zeap">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=zeap">Vezi solutiile trimise</a></p>
+
+<h1>Zeap<br></h1>
+
+<p>Desi putini stiu, una din marile pasiuni ale lui Zaharel sunt structurile de date. Intr-o zi de vara, rasfoind diverse cursuri de structuri de date, Zaharel s-a decis sa inventeze propria lui structura pe care a numit-o zeap. In conceptia lui Zaharel, un zeap mentine o multime de numere naturale distincte si suporta urmatoarele operatii intr-un timp eficient:</p>
+
+
+<ul><li><b><span class="caps">INSEREAZA</span><code>(Z,x)</code></b>: se insereaza elementul <var>x</var> in zeap-ul <var>Z</var>; daca <var>x</var> exista deja in zeap se ignora operatia; aceasta operatie nu returneaza nimic;</li>
+</ul><ul><li><b><span class="caps">STERGE</span><code>(Z,x)</code></b>: se sterge elementul <var>x</var> din zeap-ul <var>Z</var>; in cazul in care elementul nu exista in zeap, operatia returneaza -1;</li>
+</ul><ul><li><b><span class="caps">CAUTA</span><code>(Z,x)</code></b>: se cauta elementul <var>x</var> in zeap-ul <var>Z</var>; se returneaza 0 daca elementul nu exista sau 1 daca exista;</li>
+</ul><ul><li><b><span class="caps">MAX</span>-DIF<code>(Z)</code></b>: returneaza diferenta in modul maxima dintre oricare doua elemente distincte din zeap-ul <var>Z</var>; daca nu exista cel putin doua elemente in zeap se returneaza -1;</li>
+</ul><ul><li><b><span class="caps">MIN</span>-DIF<code>(Z)</code></b>: returneaza diferenta in modul minima dintre oricare doua elemente distincte din zeap-ul Z; daca nu exista cel putin doua elemente in zeap se returneaza -1;</li>
+</ul><h2>Cerinta</h2>
+
+<p>Scrieti un program care sa simuleze comportamentul unui zeap.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>zeap.in</var> va contine pe fiecare linie descrierea unei operatii:</p>
+
+<p><b>I x</b>: se efectueaza operatia <b><span class="caps">INSEREAZA</span><code>(Z,x)</code></b></p>
+
+<p><b>S x</b>: se efectueaza operatia <b><span class="caps">STERGE</span><code>(Z,x)</code></b></p>
+
+<p><b>C x</b>: se efectueaza operatia <b><span class="caps">CAUTA</span><code>(Z,x)</code></b></p>
+
+<p><b><span class="caps">MAX</span></b>: se efectueaza operatia <b><span class="caps">MAX</span>-DIF<code>(Z)</code></b></p>
+
+<p><b><span class="caps">MIN</span></b>: se efectueaza operatia <b><span class="caps">MIN</span>-DIF<code>(Z)</code></b></p>
+
+<h2>Date de iesire</h2>
+
+<p>Pentru fiecare operatie care returneaza o valoare se va afisa rezultatul respectiv pe cate o linie in fisierul de iesire <var>zeap.out</var>.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li>Fisierul de intare va contine maxim <var>300 000</var> linii</li>
+</ul><ul><li>Numerele care se vor insera in zeap vor fi numere naturale din intervalul <var>[1...10<sup>9</sup>]</var></li>
+</ul><ul><li>Se recomanda folosirea functiilor gets/fgets pentru cei ce programeaza in C/C++ datorita volumului mare de date de intrare</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>zeap.in</th><th>zeap.out</th></tr><tr><td>I 1<br>
+I 3<br>
+S 2<br>
+I 7<br><span class="caps">MAX</span><br><span class="caps">MIN</span><br>
+C 5<br>
+C 1<br>
+S 3<br><span class="caps">MAX </span><br><span class="caps">MIN</span><br></td><td>-1<br>
+6<br>
+2<br>
+0<br>
+1<br>
+6<br>
+6</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

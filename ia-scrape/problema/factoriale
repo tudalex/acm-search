@@ -1,0 +1,36 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>factoriale.in, factoriale.out</td><td><strong>Sursă</strong></td><td>preONI 2008, Runda 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=factoriale">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=factoriale">Vezi solutiile trimise</a></p>
+
+<h1>Factoriale<br></h1>
+
+<p>Definim <var>P!</var> (<var>P</var> factorial) ca fiind produsul primelor <var>P</var> numere intregi pozitive. Fie <var>N</var> numere naturale <var>x<sub>1</sub></var>, <var>x<sub>2</sub></var>... <var>x<sub>N</sub></var> date. Notam cu <var>M</var> = (<var>x<sub>1</sub>!</var>) * (<var>x<sub>2</sub>!</var>) * ... * (<var>x<sub>N</sub>!</var>). Sa se determine care este cel mai mic numar natural nenul cu care trebuie inmultit numarul <var>M</var> astfel incat rezultatul sa se poate scrie sub forma <var>A<sup>K</sup></var>, unde <var>K</var> este dat si <var>A</var> este numar natural.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>factoriale.in</var> contine pe prima linie numerele <var>N</var> si <var>K</var>, separate printr-un spatiu. Cea de a doua linie contine numerele <var>x<sub>1</sub></var>, <var>x<sub>2</sub></var>... <var>x<sub>N</sub></var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>factoriale.out</var> se va scrie numarul minim care indeplineste proprietatea ceruta.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100</var></li>
+<li><var>2 ≤ K ≤ 100</var></li>
+<li><var>1 ≤ x<sub>i</sub> ≤ 100</var></li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>factoriale.in</th><th>factoriale.out</th></tr><tr><td>2 2<br>
+2 4<br></td><td>3</td></tr></table><h3>Explicatie</h3>
+
+<p><var>M</var> = <var>2! * 4!</var> = <var>2 * 24</var> = <var>48</var>. <var>48 * 3</var> = <var>144</var> = <var>12<sup>2</sup></var>. <var>3</var> este cel mai mic numar natural cu proprietatea ca rezultatul inmultirii dintre el si <var>48</var> este un patrat perfect.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

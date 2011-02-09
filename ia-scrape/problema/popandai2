@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>popandai2.in, popandai2.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil By Net 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=popandai2">Vezi solutiile trimise</a></p>
+
+<h1>Popandai2<br></h1>
+
+<p>Popandaii de pe "tarlaua vesela" au scapat de atacul vulturilor si acum trebuie sa se adaposteasca de lupi in vizuinile lor. Aceste vizuini se pot identifica prin puncte avand coordonate intregi in plan si sunt dispuse in colturile unui poligon convex. Pentru a fi protejati de atacul lupilor, popandaii vor sa stabileasca un perimetru de siguranta cat mai mare posibil, unde se pot misca in voie. Acest perimetru va fi in forma de patrulater si va avea varfurile situate in patru din cele <var>N</var> puncte care reprezinta vizuinile.</p>
+
+<h2>Cerinta</h2>
+
+<p>Ajutati popandaii sa determine zona de arie maxima care satisface conditiile de mai sus!</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>popandai2.in</var> se afla un numar intreg <var>N</var>, reprezentand numarul vizuinilor. Urmatoarele <var>N</var> linii contin fiecare cate doua numere intregi (<var>X<sub>i</sub> , Y<sub>i</sub></var>) (separate printr-un spatiu) reprezentand coordonatele celei de-a <var>i</var>-a vizuina. Aceste coordonate vor fi date in ordine trigonometrica.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>popandai2.out</var> va fi afisat un singur numar real cu o zecimala exacta reprezentand aria maxima a patrulaterului cautat.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>4 ≤ N ≤ 1.000</var></li>
+<li><var>1 ≤ X<sub>i</sub>, Y<sub>i</sub> ≤ 30.000</var></li>
+<li>Pentru <var>60%</var> din punctaj rezolvati problema pe cazul <var>3 ≤ N ≤ 300</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>popandai2.in</th><th>popandai2.out</th><th>Figura</th></tr><tr><td>7<br>
+3 2<br>
+6 1<br>
+9 3<br>
+8 7<br>
+6 9<br>
+3 8<br>
+2 4<br></td><td>28.5<br></td><td><img src="http://infoarena.ro/problema/popandai2?action=download&amp;file=popandai2.jpg&amp;safe_only=true" alt=""></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=41">Geometrie</a></span>
+            <a href="javascript:show_tag_list(41)" id="tag_anchor_41" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_41"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=62">ad-hoc</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=266">Rotating calipers</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

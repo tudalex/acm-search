@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>curcubeu.in, curcubeu.out</td><td><strong>Sursă</strong></td><td>Autumn Warmup 2007, Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/wefgef"><img src="/utilizator/wefgef?action=download&amp;file=avatar&amp;resize=L16x16" alt="wefgef">Andrei Grigorean</a> <a title="Rating wefgef: 783" class="rating-badge-4" href="http://infoarena.ro/utilizator/wefgef?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/wefgef">wefgef</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=curcubeu">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=curcubeu">Vezi solutiile trimise</a></p>
+
+<h1>Curcubeu<br></h1>
+
+<p>Miruna are <var>N-1</var> casute asezate in linie pe care le numeroteaza de la <var>1</var> la <var>N-1</var>. Deoarece ii plac foarte mult obiectele viu colorate, ea doreste sa efectueze <var>N-1</var> operatii de colorare a casutelor. Fiecare operatie este caracterizata de <var>3</var> valori: <var>A<sub>i</sub></var>, <var>B<sub>i</sub></var> si <var>C<sub>i</sub></var>, semnificand faptul ca noua culoare a casutelor aflate intre pozitiile <var>minim(A<sub>i</sub>, B<sub>i</sub>)</var> si <var>maxim(A<sub>i</sub>, B<sub>i</sub>)</var> este <var>C<sub>i</sub></var>. Incepand cu cea de a doua operatie, Miruna se foloseste de urmatoarele relatii de recurenta:</p>
+
+
+<ul><li><var>A</var><sub><var>i</var></sub> = <var>(A</var><sub><var>i-1</var></sub> * <var>i</var>) <var>% N</var></li>
+<li><var>B</var><sub><var>i</var></sub> = <var>(B</var><sub><var>i-1</var></sub> * <var>i</var>) <var>% N</var></li>
+<li><var>C</var><sub><var>i</var></sub> = <var>(C</var><sub><var>i-1</var></sub> * <var>i</var>) <var>% N</var></li>
+</ul><h2>Cerinta</h2>
+
+<p>Vi se cere sa gasiti culoarea finala a fiecarei casute.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>curcubeu.in</var> se gasesc <var>4</var> numere intregi: <var>N</var>, <var>A</var><sub><var>1</var></sub>, <var>B</var><sub><var>1</var></sub> si <var>C</var><sub><var>1</var></sub>, avand semnificatia din enunt.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul <var>curcubeu.out</var> va contine <var>N-1</var> linii, pe linia cu numarul <var>i</var> gasindu-se un singur intreg reprezentand culoarea casutei <var>i</var> dupa ce se incheie toate operatiile de colorare. Daca o casuta ramane necolorata se va afisa valoarea <var>0</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 &lt; N ≤ 1 000 000</var></li>
+<li><var>N</var> va fi intotdeauna un numar prim.</li>
+<li><var>1 ≤ A</var><sub><var>1</var></sub> &lt; <var>N</var></li>
+<li><var>1 ≤ B</var><sub><var>1</var></sub> &lt; <var>N</var></li>
+<li><var>1 ≤ C</var><sub><var>1</var></sub> &lt; <var>N</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>curcubeu.in</th><th>curcubeu.out</th></tr><tr><td>3 2 2 1<br></td><td>2<br>
+  1<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,55 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cifru.in, cifru.out</td><td><strong>Sursă</strong></td><td>OJI 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=135">Stelian Ciurea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cifru">Vezi solutiile trimise</a></p>
+
+<h1>Secretul Cifrului<br></h1>
+
+<p>Un criptolog amator isi propune sa construiasca o masina de cifrat care sa cripteze un text alcatuit din exact <var>N</var> simboluri distincte. Cifrarea se realizeaza prin permutarea simbolurilor ce formeaza textul.<br>
+Criptologul nostru doreste ca reconstituirea textului initial sa poata fi realizata trecand textul cifrat inca de <var>K-1</var> ori prin procedura de cifrare. Cu alte cuvinte, daca textul rezultat din prima cifrare este cifrat inca o data, rezultatul este cifrat din nou si asa mai departe, plecand de la textul initial si aplicand in total <var>K</var> operatii de cifrare successive, trebuie sa obtina textul initial.<br>
+Criptologul nostru ar vrea sa afle, cunoscand <var>N</var> si <var>K</var>, numarul de moduri distincte in care poate fi realizata masina de cifrat. Doua moduri de realizare a masinii difera daca, exista cel putin un text in urma cifrarii caruia, in cele doua texte obtinute exista cel putin o pozitie in care se afla simboluri diferite.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care determina restul impartirii numarului de moduri distincte in care poate fi realizata masina de cifrat la <var>19997</var>.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Fisierul <var>cifru.in</var> contine pe prima (si singura) linie, doua valori numerice naturale separate printr-un spatiu, <var>N</var> si <var>K</var> (cu semnificatia din enunt)</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul <var>cifru.out</var> va contine pe prima linie, numarul de moduri distincte de realizare a masinii de cifrat modulo <var>19997</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 2000</var></li>
+<li><var>2 ≤ K ≤ 1000000000</var></li>
+<li>pentru <var>30%</var> din teste <var><span class="caps">N,K </span>&lt; 13</var></li>
+<li>pentru <var>50%</var> din teste <var><span class="caps">N,K </span>≤ 100</var></li>
+</ul><p>Exemple</p>
+
+
+<table class="example" cellspacing="0"><tr><th>cifru.in</th><th>cifru.out</th></tr><tr><td>3 3<br></td><td>3</td></tr><tr><td>9 6<br></td><td>11560</td></tr><tr><td>100 200<br></td><td>13767</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=423">Factorizare</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=44">Invers Modular</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

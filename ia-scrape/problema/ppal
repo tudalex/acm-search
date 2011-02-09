@@ -1,0 +1,56 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ppal.in, ppal.out</td><td><strong>Sursă</strong></td><td>Lot Cluj 2009, Baraj 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=221">Zoltan Szabo</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Marius"><img src="/utilizator/Marius?action=download&amp;file=avatar&amp;resize=L16x16" alt="Marius">Marius Stroe</a> <a title="Rating Marius: 627" class="rating-badge-4" href="http://infoarena.ro/utilizator/Marius?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Marius">Marius</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ppal">Vezi solutiile trimise</a></p>
+
+<h1>Ppal<br></h1>
+
+<p>Un cuvânt format din literele mici ale alfabetului englezesc este palindrom dacă citind de la stânga la dreapta sau de la dreapta la stânga avem acelaşi cuvânt. De exemplu, <var>ghihg</var> sau <var>lool</var> sunt palindroame.</p>
+
+<p>Să considerăm un şir format numai din litere mici ale alfabetului englez. În acest şir se pot introduce pe alocuri câte un spaţiu astfel încât să se transforme într-un text ce conţine doar cuvinte palindroame. De exemplu, <var>abbbabaca</var> se poate despărţi în cuvinte palindrom în mai multe moduri, dintre care exemplificăm toate descompunerile în <var>5</var> palindroame în ordine lexicografică:</p>
+
+
+<ol><li><var>a b b bab aca</var></li>
+<li><var>a bbb a b aca</var></li>
+<li><var>a bbb aba c a</var> </li>
+<li><var>abbba b a c a</var></li>
+</ol><p>Să considerăm toate descompunerile unui şir în exact <var>p</var> palindroame, soluţiile obţinute fiind aranjate în ordine lexicografică. Caracterul <var>’ ’</var> (spaţiu) este mai mic lexicografic decât orice literă.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Fiind date un şir de litere mici şi două numere naturale <var>p</var>, respectiv <var>q</var>, se cere să se determine descompunerea cu numărul de ordine <var>q</var> din mulţimea tuturor soluţiilor ordonate lexicografic formate din <var>p</var> palindroame.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>ppal.in</var> conţine pe prima linie numărul natural <var>n</var>. Pe cea de a doua linie se află un şir de <var>n</var> litere mici ale alfabetului englez. Începând cu linia a <var>3</var>-a până la sfârşitul fişierului fiecare linie conţine câte o pereche de numere naturale <var>p</var> şi <var>q</var> separate prin câte un spaţiu. </p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>ppal.out</var> va conţine pentru fiecare pereche de numere <var>p q</var> a fişierului de intrare câte o linie pe care se va scrie descompunerea cu numărul de ordine <var>q</var> din mulţimea tuturor soluţiilor formate din <var>p</var> palindroame, aranjate lexicografic, sau <var>0</var> (zero) în cazul în care soluţia cu numărul de ordine <var>q</var> nu există. </p>
+
+<h2>Restricţii şi precizări</h2>
+
+
+<ul><li><var>0 &lt; p ≤ n ≤ 500</var></li>
+<li><var>0 &lt; q ≤ 10<sup>18</sup> - 1</var></li>
+<li>Numărul maxim de perechi <var>p q</var> nu va depăşi <var>50 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>ppal.in</th><th>ppal.out</th></tr><tr><td>9<br>
+abbbabaca<br>
+5 3<br>
+5 1<br>
+5 5<br>
+3 1<br>
+3 2<br></td><td>a bbb aba c a<br>
+a b b bab aca<br>
+0<br>
+abbba b aca<br>
+0<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Primele două rezulte corespund celei de a treia descompunere din exemplul anterior, respectiv a primei descompuneri din exemplul anterior. Pentru perechea <var>5 5</var> nu există <var>5</var> soluţii, deci se scrie <var>0</var>. Pentru perechea <var>3 1</var> există o singură descompunere de <var>3</var> palindroame. Pentru <var>3 2</var> a doua soluţie nu există, deci se scrie <var>0</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

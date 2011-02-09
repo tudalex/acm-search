@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>johnie.in, johnie.out</td><td><strong>Sursă</strong></td><td>.campion 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=143">Daniel Pasaila</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/danielp"><img src="/utilizator/danielp?action=download&amp;file=avatar&amp;resize=L16x16" alt="danielp">Daniel Pasaila</a> <a title="Rating danielp: 532" class="rating-badge-4" href="http://infoarena.ro/utilizator/danielp?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/danielp">danielp</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>16000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=johnie">Vezi solutiile trimise</a></p>
+
+<h1>Johnie<br></h1>
+
+<p>Intr-o tara indepartata traia Johnie Walker, un personaj caruia ii placeau foarte mult plimbarile. Tara lui era organizata in <var>N</var> orase, iar intre anumite perechi de orase existau poteci. Johnie are dorinta de a umbla pe fiecare poteca din tara sa. Astfel, el s-a hotarat sa faca o mare plimbare intr-un numar de etape. In fiecare etapa Johnie porneste din orice oras din tara, parcurge un anumit drum si se opreste in ce oras doreste. Un drum este reprezentat de un sir de orase, a.i intre oricare <var>2</var> orase consecutive din sir exista o poteca. In plimbarea lui, Johnie doreste sa parcurga fiecare poteca o singura data. Lui ii este indiferent daca trece printr-un oras de mai multe ori, chiar in acelasi drum.<br>
+Dandu-se numarul de orase din tara si potecile dintre acestea, se cere sa se determine numarul minim de etape in care Johnie poate parcurge toate potecile. De asemenea, se cere si o modalitate de parcurgere a potecilor, pe etape.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>johnie.in</var> este scris numarul <var>N</var>, reprezentand numarul de orase si <var>M</var>, reprezentand numarul de poteci. Pe urmatoarele <var>M</var> linii sunt scrise perechile <var>(i, j)</var> ce marcheaza existenta unei poteci de la orasul <var>i</var> la orasul <var>j</var>.</p>
+
+
+<h2>Date de iesire</h2>
+
+<p>Prima linie a fisierului <var>johnie.out</var> trebuie sa contina numarul minim de etape. Urmatoarele linii contin, cate unul pe linie, drumurile pe care le parcurge Johnie in fiecare etapa. Primul numar dintr-o anumita linie reprezinta numarul de orase parcurse in drumul respectiv, iar urmatoarele numere reprezinta orasele parcurse, in ordine.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 50000</var></li>
+<li><var>1 ≤ M ≤ 100000</var></li>
+<li>intre doua orase pot exista mai multe poteci</li>
+<li>o poteca este bidirectionala</li>
+<li>nu exista poteci ce incep si se termina in acelasi oras</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>johnie.in</th><th>johnie.out</th></tr><tr><td>7 7<br>
+1 2<br>
+1 3<br>
+1 4<br>
+2 3<br>
+3 5<br>
+4 5<br>
+6 7<br></td><td>2<br>
+7 1 4 5 3 2 1 3<br>
+2 6 7<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

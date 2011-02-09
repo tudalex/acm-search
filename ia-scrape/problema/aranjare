@@ -1,0 +1,60 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>aranjare.in, aranjare.out</td><td><strong>Sursă</strong></td><td>ONI 2008, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=186">Marinel Serban</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/bogdan2412"><img src="/utilizator/bogdan2412?action=download&amp;file=avatar&amp;resize=L16x16" alt="bogdan2412">Bogdan-Cristian Tataroiu</a> <a title="Rating bogdan2412: 1162" class="rating-badge-4" href="http://infoarena.ro/utilizator/bogdan2412?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/bogdan2412">bogdan2412</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=aranjare">Vezi solutiile trimise</a></p>
+
+<h1>Aranjare<br></h1>
+
+<p>La festivitatea de deschidere a <span class="caps">ONI</span> Ploiesti, Gigel, mare amator de probleme de logica a observat ca primul rand din sala este format din <var>2 * N + 2</var> scaune, numerotate de la stanga la dreapta de la <var>1</var> la <var>2 * N + 2</var>. Pe acest rand s-au asezat, intr-o ordine oarecare, <var>N</var> baieti si <var>N</var> fete, cele doua scaune ramase libere fiind alaturate.</p>
+
+<p>Imediat Gigel inventeaza o problema. Sa consideram ca singura mutare posibila este ca doi elevi care stau pe scaune alaturate sa se ridice si sa se aseze (in aceeasi ordine) pe cele doua locuri libere.</p>
+
+<p>Problema consta in determinarea unei secvente de mutari dupa executarea carora toate fetele sa fie grupate in stanga randului, toti baietii sa fie grupati in dreapta, iar cele doua locuri libere sa separe fetele de baieti.  </p>
+
+<h2>Cerinta</h2>
+
+<p>Cunoscandu-se valoarea <var>N</var>, precum si aranjarea initiala a elevilor, sa se determine o secventa de mutari care sa conduca in final la aranjarea descrisa in enuntul problemei.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>aranjare.in</var> contine pe prima linie numarul natural <var>N</var>. Linia a doua a fisierului de intrare contine un sir de <var>2 * N + 2</var> caractere (<var>N</var> caractere <var>F</var>, <var>N</var> caractere <var>B</var> si doua caractere alaturate <var>S</var>) care reprezinta aranjarea initiala a elevilor pe rand si cele doua locuri libere. Mai exact, <var>F</var> indica un loc ocupat de o fata, <var>B</var> un loc ocupat de un baiat, iar <var>SS</var> reprezinta cele doua scaune libere.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>aranjare.out</var> va contine mutarile din secventa determinata, in ordine, cate o mutare pe o linie. O mutare este descrisa printr-o valoare naturala <var>K</var> <var>(1 ≤ K &lt; 2 * N + 2)</var> cu semnificatia "se vor muta pe scaunele libere elevii situati pe scaunele <var>K</var> si <var>K + 1</var>".</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 5000</var></li>
+<li>Pentru datele de test exista totdeauna solutie. Solutia nu este unica.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>aranjare.in</th><th>aranjare.out</th></tr><tr><td>3<br><span class="caps">FBSSFBFB</span><br></td><td>7<br>
+2<br>
+5<br>
+3<br>
+6<br>
+1<br>
+7<br>
+3<br>
+6<br>
+4<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Se vor obtine pe rand configuratiile:</p>
+
+
+<ul><li><var><span class="caps">FBFBFBSS</span></var></li>
+<li><var><span class="caps">FSSBFBBF</span></var></li>
+<li><var><span class="caps">FFBBSSBF</span></var></li>
+<li><var><span class="caps">FFSSBBBF</span></var></li>
+<li><var><span class="caps">FFBBBSSF</span></var></li>
+<li><var><span class="caps">SSBBBFFF</span></var></li>
+<li><var><span class="caps">FFBBBFSS</span></var></li>
+<li><var><span class="caps">FFSSBFBB</span></var></li>
+<li><var><span class="caps">FFFBBSSB</span></var></li>
+<li><var><span class="caps">FFFSSBBB</span></var></li>
+</ul><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

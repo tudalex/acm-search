@@ -1,0 +1,43 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>neuroni.in, neuroni.out</td><td><strong>Sursă</strong></td><td>ONI gimnaziu 2010, clasa a 8-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=239">Ciprian Chesca</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/miculprogramator"><img src="/utilizator/miculprogramator?action=download&amp;file=avatar&amp;resize=L16x16" alt="miculprogramator">A Cosmina - vechi</a> <a title="Rating miculprogramator: 508" class="rating-badge-3" href="http://infoarena.ro/utilizator/miculprogramator?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/miculprogramator">miculprogramator</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=neuroni">Vezi solutiile trimise</a></p>
+
+<h1>Neuroni<br></h1>
+
+<p>Cercetătorii neurologi au identificat în retina umană o zonă de neuroni bipolari, ce au exact două ramificaţii, aranjaţi într-o structură piramidală. Structura de neuroni este dispusă pe <var>n</var> niveluri astfel încât pe un nivel <var>k</var> există <var>k</var> neuroni (<var>k=1, 2, ..., n</var>). S-a constatat că un neuron din această structură poate transmite impulsurile nervoase numai către cei doi neuroni, corespunzători celor două ramificaţii, aşezaţi pe nivelul următor.</p>
+
+<p>În momentul receptării primului impuls de către un neuron din reţea, acesta transmite mai departe impulsul astfel: dacă se află pe un nivel par, către neuronul din stânga, iar dacă se află pe un nivel impar către neuronul din dreapta, de pe nivelul următor. Transmiterea impulsurilor între neuroni funcţionează alternativ. Astfel, după ce un impuls a fost transmis către neuronul aflat pe ramificaţia din stânga, următorul impuls va fi transmis către neuronul aflat pe ramificaţia din dreapta şi invers. Neuronii de pe ultimul nivel al structurii, numiţi şi neuroni receptori, primesc impulsurile din această reţea. Toate impulsurile provin de la neuronul aflat pe nivelul <var>1</var>.</p>
+
+<p><img src="http://infoarena.ro/problema/neuroni?action=download&amp;file=x1.jpg&amp;safe_only=true" alt=""></p>
+
+<h2>Cerinţă</h2>
+
+<p>Cunoscând numărul <var>n</var> de niveluri pe care sunt dispuşi neuronii şi numărul <var>m</var> de impulsuri ce sunt transmise în reţea, scrieţi un program care să determine numărul de impulsuri receptate de fiecare neuron de pe nivelul <var>n</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fişierului de intrare <var>neuroni.in</var> conţine cele două numere naturale <var>n</var> şi <var>m</var> separate printr-un spaţiu, având semnificaţia de mai sus.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Prima linie a fişierului de ieşire <var>neuroni.out</var> va conţine numărul de impulsuri receptate de fiecare neuron de pe nivelul <var>n</var>, scrise de la stânga la dreapta, separate prin câte un spaţiu.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>2 ≤ n ≤ 100</var></li>
+<li><var>1 ≤ m ≤ 100.000</var></li>
+<li>Ramificaţiile îngroşate din figură arată direcţia de transmitere a primului impuls.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>neuroni.in</th><th>neuroni.out</th></tr><tr><td>3 5<br></td><td>1 3 1<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Traseul celor <var>5</var> impulsuri şi numărul de impulsuri recepţionat pe nivelul <var>3</var> va fi următorul:</p>
+
+<p><var>1</var>: dreapta – stânga <var>(0,1,0)</var><br><var>2</var>: stânga – stânga <var>(1,1,0)</var><br><var>3</var>: dreapta – dreapta <var>(1,1,1)</var><br><var>4</var>: stânga – dreapta <var>(1,2,1)</var><br><var>5</var>: dreapta – stânga <var>(1,3,1)</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

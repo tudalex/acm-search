@@ -1,0 +1,60 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>insule.in, insule.out</td><td><strong>Sursă</strong></td><td>OJI 2009, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=171">Emanuela Cerchez</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrei-alpha"><img src="/utilizator/andrei-alpha?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrei-alpha">Andrei-Bogdan Antonescu</a> <a title="Rating andrei-alpha: 700" class="rating-badge-1" href="http://infoarena.ro/utilizator/andrei-alpha?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrei-alpha">andrei-alpha</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=insule">Vezi solutiile trimise</a></p>
+
+<h1>Insule<br></h1>
+
+<p>Arhipelagul <span class="caps">RGB </span>este format din insule care aparţin ţărilor <var>R</var>, <var>G</var> şi <var>B</var>.Putem reprezenta harta arhipelagului ca o matrice cu <var>N</var> linii şi <var>M</var> coloane cu elemente din mulţimea {<var>0</var>, <var>1</var>, <var>2</var>, <var>3</var>} astfel:</p>
+
+
+<ul><li>un element egal cu <var>0</var> reprezintă o zonă acoperită de apă</li>
+<li>un element egal cu <var>1</var> reprezintă o zonă de pământ aparţinând unei insule din ţara <var>R</var></li>
+<li>un element egal cu <var>2</var> reprezintă o zonă de pământ aparţinând unei insule din ţara <var>G</var></li>
+<li>un element egal cu <var>3</var> reprezintă o zonă de pământ aparţinând unei insule din ţara <var>B</var></li>
+</ul><p>Se consideră că două elemente ale matricei sunt vecine dacă ele au aceeaşi valoare şi fie sunt consecutive pe linie, fie sunt consecutive pe coloană. Două elemente aparţin aceleiaşi insule dacă ele sunt vecine sau dacă se poate ajunge de la un element la celălalt pe un drum de-a lungul căruia oricare două elemente consecutive sunt vecine.<br>
+Pentru a încuraja relaţiile de colaborare dintre ţările <var>R</var> şi <var>G</var>, se doreşte construirea unui pod care să unească o insulă aparţinând ţării <var>R</var> de o insulă aparţinând ţării <var>G</var>. Podul trebuie să respecte următoarele condiţii:</p>
+
+
+<ul><li>să înceapă pe o zonă cu apă consecutivă pe linie sau coloană cu o zonă aparţinând ţării <var>R</var>;</li>
+<li>să se termine pe o zonă cu apă consecutivă pe linie sau coloană cu o zonă aparţinând ţării <var>G</var>;</li>
+<li>să traverseze numai zone acoperite cu apă;</li>
+<li>oricare două elemente consecutive ale podului trebuie să fie vecine;</li>
+<li>lungimea podului să fie minimă (lungimea podului este egală cu numărul de elemente traversate de pod).</li>
+</ul><h2>Cerinta</h2>
+
+<p>Dată fiind harta arhipelagului să se determine câte insule aparţin fiecărei ţări, precum şi lungimea minimă a unui pod care să satisfacă condiţiile din enunt.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>insule.in</var> conţine pe prima linie numerele naturale <var>N</var> şi <var>M</var>, separate prin spaţiu. Pe următoarele n linii este descrisă harta arhipelagului. Pe fiecare dintre aceste n linii sunt scrise câte m valori din mulţimea {<var>0</var>, <var>1</var>, <var>2</var>, <var>3</var>}; valorile nu sunt separate prin spaţii. </p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>insule.out</var> va conţine o singură linie pe care vor fi scrise patru numere naturale separate prin spaţii <var>NR</var> <var>NG</var> <var>NB</var> <var>Lg</var>, unde <var>NR</var> reprezintă numărul de insule aparţinând ţării <var>R</var>, <var>NG</var> numărul de insule aparţinând ţării <var>G</var>, <var>NB</var> numărul de insule aparţinând ţării <var>B</var>, iar <var>Lg</var> lungimea minimă a podului.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1</var> ≤ <var>N</var>,<var>M</var> ≤ <var>100</var></li>
+<li>Se garantează că pe hartă există cel puţin un element <var>1</var>, un element <var>2</var> şi un element <var>0</var>.</li>
+<li>Se acordă <var>40</var>% din punctaj pentru determinarea corectă a numărului de insule din fiecare ţară; se acordă punctaj integral pentru rezolvarea corectă a tuturor cerinţelor.</li>
+<li>Începutul şi sfârşitul podului pot să coincidă.</li>
+<li>Pentru datele de test există întotdeauna soluţie.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>insule.in</th><th>insule.out</th></tr><tr><td>6 7<br>
+1000320<br>
+0110313<br>
+3333000<br>
+2033000<br>
+2203011<br>
+2000010<br></td><td>4 2 3 4<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Ţara <var>R</var> are <var>4</var> insule, ţara <var>G</var> are <var>2</var> insule, iar ţara <var>B</var> are <var>3</var> insule.<br>
+Lungimea minimă a unui pod care poate fi construit este <var>4</var>; de exemplu, podul traversează celulele (<var>6</var>,<var>5</var>), (<var>6</var>,<var>4</var>), (<var>6</var>,<var>3</var>), (<var>6</var>,<var>2</var>).</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

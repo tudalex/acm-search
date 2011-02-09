@@ -1,0 +1,43 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>csir.in, csir.out</td><td><strong>Sursă</strong></td><td>ONI 2005</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=csir">Vezi solutiile trimise</a></p>
+
+<h1>Csir<br></h1>
+
+<p>Un sir circular este un sir format numai din caracterele <var>"A"</var> si <var>"B"</var> care are urmatoarele proprietati:</p>
+
+
+<ul><li>are lungime 1 ≤ <var>N</var> (nu poate fi sirul vid);</li>
+<li>se considera ca dupa ultimul caracter din sir urmeaza primul caracter din sir.</li>
+</ul><p>Aceasta proprietate implica faptul ca orice sir circular are <var>N</var> subsecvente de lungime <var>L</var> ( <var>1 ≤ L ≤ N</var> ). O subsecventa de lungime <var>L</var> a unui sir circular <var>S</var> este un sir de caractere (obisnuit, nu circular) format din <var>L</var> caractere aflate pe pozitii consecutive in sirul <var>S</var> . De exemplu, sirul circular <var>"ABAAB"</var> are 5 subsecvente de lungime 3: <var>"ABA", "BAA", "AAB", "ABA"</var> si <var>"BAB"</var> (ele nu sunt distincte ca valoare, insa difera ca pozitie de inceput in sirul din care fac parte).<br>
+Un csir este un sir circular care are in plus urmatoarea proprietate: pentru orice <var>L</var> ( <var>1 ≤ L ≤ N</var> )si oricare doua subsecvente de lungime <var>L</var> (sa le numim <var>S1</var> si <var>S2</var>), numarul de caractere <var>"A"</var> din <var>S1</var> difera fata de numarul de caractere <var>"A"</var> din <var>S2</var> cu cel mult <var>1</var> (in valoare absoluta).Sa consideram sirul circular <var>"BBAABAA"</var>. Acest sir nu este un csir, deoarece exista subsecventele <var>"BBAAB"</var> si <var>"AABAA"</var> (de lungime <var>5</var>), care contin <var>2</var>, respectiv <var>4</var> caractere <var>"A"</var> (diferenta dintre numarul de caractere <var>"A"</var> este, astfel, <var>2</var>). De asemenea, sirul <var>"ABABAABAAB"</var> nu este un csir, deoarece contine subsecvente <var>"AABAA"</var> si <var>"BABAB"</var> pentru care diferenta dintre numarul de caractere <var>"A"</var> este mai mare decat 1 (in valoare absoluta). Sirurile circulare <var>"ABA"</var> si <var>"AABABAAB"</var> sunt, in schimb, csir-uri, deoarece oricare ar fi doua subsecvente <var>S1</var> si <var>S2</var> avand aceeasi lungime, diferenta dintre numarul de caractere <var>"A"</var> din <var>S1</var> si numarul de caractere <var>"A"</var> din <var>S2</var> este mai mica sau egala cu <var>1</var> (in valoare absoluta).</p>
+
+<h2>Cerinta</h2>
+
+<p>Dandu-se mai multe siruri circulare, determinati daca ele sunt csir-uri.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>csir.in</var> contine numarul intreg <var>S</var> , reprezentand numarul de siruri continute in fisier. Pe fiecare dintre urmatoarele <var>S</var> linii se afla cate un sir circular.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>csir.out</var> se vor scrie <var>S</var> linii. Pe a <var>K</var>-a linie din acest fisier, se va afisa <var>1</var> , daca al <var>K</var>-lea sir din fisierul de intrare este un csir, sau <var>0</var>, in caz contrar.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ S ≤ 20</var></li>
+<li>Lungimea fiecarui sir circular din fisierul de intrare este cuprinsa intre 1 si 50.000 (inclusiv).</li>
+<li>Sirurile contin numai caracterele <var>"A"</var> si <var>"B"</var> (nu si <var>"a"</var> sau <var>"b"</var>).</li>
+<li>Nu se acorda punctaje partiale.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>csir.in</th><th>csir.out</th></tr><tr><td>4 <br><span class="caps">BBAABAA </span><br><span class="caps">ABABAABAAB </span><br><span class="caps">ABA </span><br><span class="caps">AABABAAB</span></td><td>0 <br>
+0<br>
+1<br>
+1</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

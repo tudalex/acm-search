@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>exit.in, exit.out</td><td><strong>Sursă</strong></td><td>Selectie echipe ACM ICPC, UPB 2008</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=exit">Vezi solutiile trimise</a></p>
+
+<h1>Exit<br></h1>
+
+<p>Doi prieteni (Ionel si Gigel) au ramas blocati in interiorul unui labirint alcatuit din <var>X x Y</var> celule (coordonatele celulelor iau valori de la <var>0</var> la <var>X-1</var>, respectiv de la <var>0</var> la <var>Y-1</var>). Dintre aceste celule, numai in <var>C</var> celule se poate intra, celelalte fiind blocate. Dintr-o celula <var>(x,y)</var> se pot efectua deplasari numai catre una din cele <var>4</var> celule invecinate: catre nord, in celula <var>(x,y+1)</var>; catre est, in celula <var>(x+1,y)</var>; catre sud, in celula <var>(x,y-1)</var>; catre vest, in celula <var>(x-1,y)</var>. Deplasarea se poate realiza numai daca nu se iese din labirint si daca pasajul de trecere catre celula invecinata nu este blocat. Costul unei astfel de deplasari este <var>1</var> unitate.</p>
+
+<p>Cei doi prieteni cunosc coordonatele a <var>N</var> celule <strong>magice</strong> pe care trebuie sa le <strong>viziteze</strong> in ordine. Celulele magice trebuie <strong>vizitate</strong> de cel putin unul dintre cei doi prieteni, insa nu neaparat de catre amandoi. Initial, Ionel si Gigel se afla in celula <var>(x<sub>0</sub>,y<sub>0</sub>)</var>. De aici, unul dintre ei (sau amandoi) se va (vor) duce in prima celula magica. Dupa ce Ionel sau Gigel (sau amandoi) a (au) ajuns in a <var>i</var>-a celula magica, unul dintre ei (sau amandoi) se va (vor) deplasa in a <var>(i+1)</var>-a celula magica. Intre doua celule magice (sau intre celula initiala si prima celula magica) se poate trece si prin alte celule magice, insa a <var>i</var>-a celula magica se considera <strong>vizitata</strong> atunci cand unul din cei doi prieteni ajunge in ea doar daca: <var>i=1</var> sau a fost deja <strong>vizitata</strong> a <var>(i-1)</var>-a celula magica.</p>
+
+<p>Dupa vizitarea celei de-a <var>N</var>-a celule magice, ambii prieteni trebuie sa ajunga in aceasta celula, pentru a putea parasi, in sfarsit, labirintul.</p>
+
+<p>Determinati costul total minim al deplasarilor efectuate de cei doi prieteni pentru a vizita cele <var>N</var> celule magice si a ajunge amandoi in a <var>N</var>-a celula magica.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>exit.in</var> contine <var>6</var> numere intregi, separate prin cate un spatiu: <var>N, X, Y, x<sub>0</sub>, y<sub>0</sub>, C</var>. Urmatoarele <var>C</var> linii contin cate <var>6</var> numere intregi, separate prin cate un spatiu: <var>xc, yc, nord, est, sud, vest</var>. <var>(xc,yc)</var> reprezinta coordonatele unei celule, iar <var>nord, est, sud</var> si <var>vest</var> sunt numere din multimea <var>{0,1}</var>. Daca numarul este <var>1</var>, atunci pasajul catre celula invecinata din directia respectiva este blocat (iar daca este <var>0</var>, pasajul este liber). Pasajele blocate vor fi simetrice (daca o celula are pasajul blocat catre nord, atunci si celula dinspre nord, daca nu este o celula blocata, va avea pasajul blocat in directia sud). Urmatoarele <var>N</var> linii contin cate doua numere intregi, separate printr-un spatiu. A <var>i</var>-a dintre aceste linii contine numerele <var>xm<sub>i</sub>, ym<sub>i</sub></var>, reprezentand coordonatele celei de-a <var>i</var>-a celule magice.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>exit.out</var> veti afisa costul total minim al deplasarilor efectuate de cei doi prieteni pana ce acestia ajung in ultima celula magica.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ X, Y ≤ 100</var></li>
+<li><var>1 ≤ C ≤ X * Y</var></li>
+<li><var>1 ≤ N ≤ 1000</var></li>
+<li>Se garanteaza ca cei doi prieteni vor putea vizita cele <var>N</var> celule magice.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>exit.in</th><th>exit.out</th></tr><tr><td>2 3 2 0 1 6<br>
+0 0 1 1 1 1<br>
+0 1 1 0 1 1<br>
+1 0 1 0 1 1<br>
+1 1 1 0 1 0<br>
+2 0 0 1 1 0<br>
+2 1 1 1 0 0<br>
+2 1<br>
+0 1<br></td><td>4</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

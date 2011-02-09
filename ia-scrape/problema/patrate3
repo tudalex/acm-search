@@ -1,0 +1,43 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>patrate3.in, patrate3.out</td><td><strong>Sursă</strong></td><td>preONI 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=143">Daniel Pasaila</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/danielp"><img src="/utilizator/danielp?action=download&amp;file=avatar&amp;resize=L16x16" alt="danielp">Daniel Pasaila</a> <a title="Rating danielp: 532" class="rating-badge-4" href="http://infoarena.ro/utilizator/danielp?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/danielp">danielp</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=patrate3">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=patrate3">Vezi solutiile trimise</a></p>
+
+<h1>Patrate 3<br></h1>
+
+<p>Johnie a desenat pe o hartie <var>N</var> puncte, si le-a incadrat intr-un reper cartezian. El se intreaba acum cate patrate exista care sa aiba colturile in punctele desenate de el.<br>
+Stiind numarul de puncte si coordonatele acestea, se cere sa determinati numarul de patrate ce se pot forma folosind drept colturi punctele date.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>patrate3.in</var> se afla <var>N</var>, numarul de puncte. Pe urmatoarele <var>N</var> linii se gaseste cate o pereche <var>x y</var>, reprezentand coordonatele ( absicsa si ordonata ) unui punct din cele <var>N</var> date.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul <var>patrate3.out</var> contine pe prima linie numarul cerut.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1000</var></li>
+<li>Coordonatele punctelor sunt numere reale cu exact <var>4</var> zecimale din intervalul <var>[-10000, 10000]</var></li>
+<li>Punctele date sunt distincte</li>
+<li>Patratele ce se formeaza nu au neaparat laturile paralele cu axele</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>patrate3.in</th><th>patrate3.out</th></tr><tr><td>10<br>
+18.3350 44.1050<br>
+91.3200 13.3600<br>
+49.1500 50.6900<br>
+35.9300 34.8700<br>
+42.0900 17.6800<br>
+9.1000 26.5100<br>
+88.9000 53.1100<br>
+51.5700 10.9400<br>
+26.6950 17.2750<br>
+74.9300 28.6800<br></td><td>2</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

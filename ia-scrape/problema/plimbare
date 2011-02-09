@@ -1,0 +1,43 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>plimbare.in, plimbare.out</td><td><strong>Sursă</strong></td><td>Summer Challenge 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=165">Din Folclor</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=plimbare">Vezi solutiile trimise</a></p>
+
+<h1>Plimbare<br></h1>
+
+<table style="margin:0.5em auto;" cellspacing="0"><tr><td align="center" style="background-color:#F8EABA;"><img src="http://infoarena.ro/template/badtests?action=download&amp;file=attention.gif&amp;safe_only=true" alt="" class="left" style="float:left"><em>Testele pentru aceasta problema nu sunt destul de bine construite pentru a departaja corect solutii ineficiente sau gresite.</em><br><a href="http://infoarena.ro/implica-te/imbunatatire-teste"><strong>Intra aici</strong></a> <em>daca vrei sa ne ajuti sa imbunatatim calitatea testelor pentru aceasta problema!</em></td></tr></table><p>In fiecare oras unde componentii lotului de informatica fac pregatiri inaintea olimpiadelor internationale, se organizeaza cate o plimbare pentru a vizita obiectivele turistice. Anul acesta orasul in care au ajuns olimpicii are proprietatea curioasa ca exista cate o strada intre oricare doua obiective, dar strada are un singur sens de mers.</p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati o plimbare de lungime maxima care poate merge pe strazile orasului in sensul lor normal de mers, astfel ca la sfarsitul plimbarii sa ajungem la acelasi obiectiv de la care am pornit, iar fiecare strada sau obiectiv sa fie vizitat o cel mult o data (in afara de obiectivul de unde pornim care va fi vizitat de doua ori).</p>
+
+<h2>Date de intrare</h2>
+
+<p>In fisierul de intrare <var>plimbare.in</var> vom avea pe prima linie numarul <var>N</var> de obiective. Pe urmatoarele <var>N*(N-1)/2</var> linii vor fi cate doi intregi <var>x, y</var> separati prin exact un spatiu, cu semnificatia ca intre obiectivul <var>x</var> si obiectivul <var>y</var> exista o strada cu sensul de la <var>X</var> la <var>y</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>plimbare.out</var> va contine pe prima linie numarul <var>P</var> maxim de obiective pe care le putem vizita intr-o asemenea plimbare. Urmatoarea linie va contine <var>P</var> intregi separati prin spatiu, care ne vor da obiectivele vizitate si ordinea vizitarii lor.</p>
+
+<h2>Restrictie</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>plimbare.in</th><th>plimbare.out</th></tr><tr><td>4<br>
+1 2<br>
+1 4<br>
+2 3<br>
+3 1<br>
+3 4<br>
+4 2</td><td>4<br>
+1 4 2 3</td></tr></table><h3>Explicatie</h3>
+
+<p>Cea mai lunga plimbare este una ce viziteaza toate cele 4 obiective. Obiectivele vor fi vizitate in ordinea <var>1-&gt;4-&gt;2-&gt;3-&gt;1</var>.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

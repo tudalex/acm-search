@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>stalpisori.in, stalpisori.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2010, Runda Finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=166">Tiberiu Savin</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/devilkind"><img src="/utilizator/devilkind?action=download&amp;file=avatar&amp;resize=L16x16" alt="devilkind">Savin Tiberiu</a> <a title="Rating devilkind: 675" class="rating-badge-4" href="http://infoarena.ro/utilizator/devilkind?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/devilkind">devilkind</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=stalpisori">Vezi solutiile trimise</a></p>
+
+<h1>Stalpisori<br></h1>
+
+<p>Alexandra este studenta la facultatea de informatica. Astazi, mergand inapoi spre casa a observat ca pe strada pe care merge se afla <var>N</var> stalpisori amplasati pe marginea trotuarului. Fiind studenta la informatica, ea se gandeste imediat la o problema de informatica plecand de la acest lucru. Ea se intreaba care este distanta minima <var>D</var>, astfel incat pentru fiecare din cei <var>N</var> stalpisori, in intervalul <var>[P<sub>i</sub> - D, P<sub>i</sub> + D]</var> sa se afle cel putin <var>K</var> stalpisori, <var>P<sub>i</sub></var> reprezentand distanta de la inceputul strazii pana la stalpisorul <var>i</var>. Avand in vedere ca Alexandra a picat examenul de algoritmica, ea va roaga pe voi sa o ajutati sa rezolve aceasta problema.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>stalpisori.in</var> contine pe prima linie <var>2</var> numere, <var>N</var> si <var>K</var>. Pe urmatoarele <var>N</var> linii urmeaza distantele de la inceputul strazii pana la fiecare stalpisor.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fisierul de iesire <var>stalpisori.out</var> va contine un singur numar reprezentand distanta minima ceruta in enuntul problemei.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1.000.000</var></li>
+<li><var>1 ≤ K ≤ N</var></li>
+<li>Pozitiile stalpisorilor sunt numere naturale distincte strict mai mici decat 2<sup>31</sup></li>
+<li>Pozitiile stalpisorilor vor fi date in <strong>ordine crescatoare</strong></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>stalpisori.in</th><th>stalpisori.out</th></tr><tr><td>10 3<br>
+5<br>
+9<br>
+14<br>
+20<br>
+24<br>
+26<br>
+35<br>
+38<br>
+41<br>
+43<br></td><td>9<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

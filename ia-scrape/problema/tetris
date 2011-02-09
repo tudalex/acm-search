@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>tetris.in, tetris.out</td><td><strong>Sursă</strong></td><td>Lista lui Francu</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=163">Cristian Cadar</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Florian"><img src="/utilizator/Florian?action=download&amp;file=avatar&amp;resize=L16x16" alt="Florian">Marcu Florian</a> <a title="Rating Florian: 667" class="rating-badge-1" href="http://infoarena.ro/utilizator/Florian?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Florian">Florian</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=tetris">Vezi solutiile trimise</a></p>
+
+<h1>Tetris<br></h1>
+
+<p>Imagineaza-ti ca te afli in fata jocului de Tetris. Bineinteles scopul tau este de "a sparge" toate recordurile. Dar fara un algoritm bun nu puteti face nimic.<br>
+Asa ca trebuie sa gasiti o acoperire cat mai buna a suprafetei de joc, astfel incat sa asezati piesele in ordinea aparitiei lor. Adica o piesa nu poate fi asezata pe o pozitie decat daca:</p>
+
+
+<ul><li>piesa de dinaintea ei a fost asezata</li>
+<li>piesa mai incape pe suprafata de joc</li>
+</ul><p>Piesele sunt plasate intr-o anumita pozitie fiind lasate sa cada libere de undeva de deasupra suprafetei de joc.<br>
+Pentru simplificare, consideram ca piesele sunt de forma patrata.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>tetris.in</var> contine pe prima linie numarul <var>n</var> de linii si numarul <var>m</var> de coloane ale suprafetei de joc, despartite printr-un spatiu. Apoi, pe linia a doua se vor specifica laturile fiecarui patrat in ordinea aparitiei lor. Linia se va termina cu un <var>0</var>.</p>
+
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>tetris.out</var>, contine pe prima linie numarul maxim de patrate acoperite din suprafata de joc. Pe urmatoarele linii va fi afisata suprafata de joc sub forma unei matrici, unde fiecare patrat este marcat prin numarul de aparitie. Pozitiile neocupate sunt marcate prin numarul <var>0</var>. Nu este obligatoriu ca toate patratele sa fie asezate.</p>
+
+
+<h2>Restrictii</h2>
+
+
+<ul><li>Toate numerele din fisierul de intrare sunt mai mici decat <var>30</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>tetris.in</th><th>tetris.out</th></tr><tr><td>4 4<br>
+1 2 2 1 2 1 2 0<br></td><td>15<br>
+6 0 3 3<br>
+5 5 3 3<br>
+5 5 2 2<br>
+1 4 2 2<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

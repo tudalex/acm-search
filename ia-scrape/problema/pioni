@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>pioni.in, pioni.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2007-2008, Clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=pioni">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=pioni">Vezi solutiile trimise</a></p>
+
+<h1>Pioni<br></h1>
+
+<p>Nargy si Fumeanu joaca un joc pe un graf orientat aciclic cu <var>N</var> noduri si <var>M</var> muchii. In acest graf exista <var>K</var> pioni in noduri. Fiecare jucator poate muta, cand ii vine randul, oricati pioni din nodurile lor in noduri adiacente. Cel care nu mai poate muta atunci cand ii vine randul pierde partida. La inceputul unui joc, prima mutare o face jucatorul Nargy. <br>
+Dandu-se mai multe configuratii de pioni, sa se determine cine castiga jocul, daca ambii jucatori joaca optim.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>pioni.in</var> contine pe prima linie numerele <var>T N M</var> separate prin spatii. Urmatoarele <var>M</var> linii vor contine cate doua numere naturale <var>a b</var> cu semnificatia ca exista muchie de la <var>a</var> la <var>b</var>. Urmatoarele <var>T</var> linii vor descrie configuratii de pioni astfel: primul numar din linie va fi <var>K</var> si va fi urmat de inca <var>K</var> numere naturale reprezentand nodurile in care se afla pioni. </p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>pioni.out</var> se vor scrie urmatoarele pentru fiecare din cele <var>T</var> configuratii:</p>
+
+
+<ul><li>numele jucatorului care castiga pe o linie (Nargy sau Fumeanu)</li>
+<li>daca Nargy poate castiga se va descrie si o prima mutare pe care o poate face astfel incat sa castige: se va scrie <var>nr</var> reprezentand numarul de pioni pe care ii muta la prima mutare, urmat de <var>nr</var> perechi de numere <var>a b</var> cu semnificatia ca se muta un pion din nodul <var>a</var> in nodul <var>b</var> </li>
+</ul><h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 5</var></li>
+<li><var>1 ≤ N ≤ 20.000</var></li>
+<li><var>1 ≤ M ≤ 50.000</var></li>
+<li><var>1 ≤ K ≤ 30.000</var></li>
+<li>Pot exista mai multi pioni in acelasi nod</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>pioni.in</th><th>pioni.out</th></tr><tr><td>2 4 3<br>
+2 1<br>
+3 1<br>
+4 3<br>
+3 2 2 3<br>
+2 1 4<br></td><td>Nargy<br>
+3 2 1 2 1 3 1<br>
+Fumeanu<br></td></tr></table><h3>Explicatie</h3>
+
+<p>In prima configuratie Nargy poate castiga mutand toti pionii din <var>2</var> si <var>3</var> in <var>1</var>. Astfel, Fumeanu nu va mai putea muta.<br>
+In a doua configuratie singurul pion care se poate muta este cel din <var>4</var> (<var>1</var> nu are noduri adiacente). Asadar, Nargy este fortat sa mute din <var>4</var> in <var>3</var>, Fumeanu va muta apoi din <var>3</var> in <var>1</var>, iar Nargy va pierde.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

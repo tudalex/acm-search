@@ -1,0 +1,96 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>tproc.in, tproc.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2007-2008, Clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=tproc">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=tproc">Vezi solutiile trimise</a></p>
+
+<h1>Tproc<br></h1>
+
+<p>Un sistem multiprocesor este alcatuit din <var>K</var> procesoare. Pe acest sistem trebuie executata o aplicatie ce consta din <var>N</var> procese independente, numerotate de la <var>1</var> la <var>N</var>. Fiecare proces trebuie executat in totalitate pe unul din cele <var>K</var> procesoare. Deoarece unele procese folosesc date din locatii de memorie total diferite, daca anumite perechi de procese (numite <strong>procese incompatibile</strong>) sunt executate pe acelasi procesor, va aparea fenomenul de <a href="http://citeseer.ist.psu.edu/100759.html" class="wiki_link_external">cache thrashing</a> , care va scadea foarte mult performantele sistemului. Pentru fiecare dintre aceste <var>P</var> perechi de procese incompatibile <var>(i,j)</var> este cunoscuta penalizarea de performanta <var>pe<sub>i,j</sub></var>, adusa daca cele <var>2</var> procese sunt executate pe acelasi procesor. Penalizarea de performanta totala este egala cu suma penalizarilor de performanta pentru fiecare pereche de procese incompatibile care sunt executate pe acelasi procesor.</p>
+
+<p>Determinati penalizarea de performanta totala minima posibila pentru executia celor <var>N</var> procese pe cele <var>K</var> procesoare ale sistemului.</p>
+
+<p>In rezolvarea problemei puteti sa va folositi de urmatoarea particularitate a aplicatiei compusa din cele <var>N</var> procese: Procesele sunt organizate in <var>M</var> grupuri, in functie de tipul prelucrarilor pe care le au de realizat. Grupurile sunt numerotate de la <var>1</var> la <var>M</var>. Fiecare grup contine <strong>cel mult 8 procese</strong>. Un proces poate face parte din mai multe grupuri. Daca <var>2</var> procese <var>i</var> si <var>j</var> sunt incompatibile, atunci va exista cel putin un grup <var>X</var> din care fac parte atat procesul <var>i</var>, cat si procesul <var>j</var>. Cele <var>M</var> grupuri sunt organizate intr-o structura arborescenta. Mai exact, exista <var>M-1</var> perechi de grupuri cu proprietatea ca intre cele <var>2</var> grupuri <var>X</var> si <var>Y</var> dintr-o pereche exista referinte reciproce, iar graful format din grupuri ca noduri si perechile de grupuri ca muchii formeaza un <strong>arbore</strong> (graf conex si fara cicluri). Toate grupurile din care face parte un proces <var>i</var> formeaza un subarbore al arborelui grupurilor (acest lucru se datoreaza faptului ca, in cadrul aplicatiei, este necesar sa se poata ajunge prin intermediul referintelor dintre grupuri, de la orice grup din care face parte procesul <var>i</var> la orice alt grup din care face parte procesul <var>i</var>). Aceasta ultima proprietate este echivalenta cu urmatoarea: daca un proces <var>i</var> face parte din grupurile <var>X</var> si <var>Y</var>, atunci el va face parte din toate grupurile aflate pe drumul unic dintre <var>X</var> si <var>Y</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>tproc.in</var> contine numerele intregi <var>M</var>, <var>N</var> si <var>K</var>, separate prin cate un spatiu. Urmatoarele <var>M-1</var> linii contin cate <var>2</var> numere intregi <var>X</var> si <var>Y</var>, separate printr-un spatiu, reprezentand <var>2</var> grupuri intre care exista o referinta. Urmatoarele <var>M</var> linii descriu alcatuirea fiecarui grup. A <var>X</var>-a din aceste <var>M</var> linii reprezinta descrierea grupului cu numarul <var>X</var>. Primul numar de pe linie reprezinta numarul <var>T</var> de procese ce fac parte din grupul <var>X</var>. Urmatoarele <var>T</var> numere reprezinta numerele celor <var>T</var> procese. Cele <var>T+1</var> numere de pe linie sunt separate prin cate un spatiu. Urmatoarea linie contine numarul intreg <var>P</var> de perechi de procese incompatibile. Urmatoarele <var>P</var> linii contin cate <var>3</var> numere intregi, <var>i</var>, <var>j</var> si <var>pe<sub>i,j</sub></var>, separate prin cate un spatiu, reprezentand numerele celor <var>2</var> procese incompatibile din cadrul perechii si penalizarea de performanta asociata executiei celor 2 procese pe acelasi procesor.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>tproc.out</var> veti afisa penalizarea totala minima posibila pentru executia celor <var>N</var> procese pe cele <var>K</var> procesoare ale sistemului.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ M ≤ 500</var></li>
+<li><var>1 ≤ N ≤ 500</var></li>
+<li><var>1 ≤ K ≤ 8</var></li>
+<li>Fiecare grup va contine intre 0 si 8 procese (inclusiv).</li>
+<li>Un proces poate face parte din oricate grupuri (cel putin unul).</li>
+<li><var>0 ≤ P ≤ 3000</var></li>
+<li><var>0 ≤ pe<sub>i,j</sub> ≤ 1000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>tproc.in</th><th>tproc.out</th></tr><tr><td>6 9 3<br>
+1 3<br>
+6 3<br>
+4 3<br>
+5 3<br>
+2 1<br>
+7 1 2 3 4 5 7 9<br>
+5 1 2 3 5 9<br>
+8 1 2 3 4 6 7 8 9<br>
+5 2 4 6 7 8<br>
+5 2 4 6 7 8<br>
+6 1 4 6 7 8 9<br>
+22<br>
+1 2 703<br>
+1 3 485<br>
+1 4 384<br>
+1 5 216<br>
+1 7 670<br>
+1 9 410<br>
+2 3 789<br>
+2 4 977<br>
+2 6 210<br>
+2 7 856<br>
+2 9 610<br>
+3 4 780<br>
+3 9 453<br>
+4 6 149<br>
+4 8 528<br>
+4 9 85<br>
+5 9 949<br>
+6 7 754<br>
+6 8 457<br>
+7 8 204<br>
+7 9 827<br>
+8 9 700<br></td><td>937</td></tr><tr><td>2 10 2<br>
+1 2<br>
+6 1 2 3 4 5 6<br>
+6 1 2 7 8 9 10<br>
+12<br>
+1 3 1<br>
+3 4 1<br>
+4 2 1<br>
+3 5 1<br>
+5 6 1<br>
+6 1 1<br>
+1 7 1<br>
+1 8 1<br>
+1 9 1<br>
+1 10 1<br>
+2 7 1<br>
+2 8 1<br>
+2 9 1<br>
+2 10 1<br></td><td>1</td></tr></table><h3>Explicatie</h3>
+
+<p>In primul exemplu, o solutie optima a repartizarii celor <var>9</var> procese pe cele <var>3</var> procesoare este urmatoarea (al i-lea numar din secventa indica pe ce procesor este executat procesul <var>i</var>): <var>2 2 3 1 3 1 3 2 1</var>.<br>
+In al doilea exemplu, o solutie optima a repartizarii celor <var>10</var> procese pe cele <var>2</var> procesoare este urmatoarea: <var>1 1 2 1 1 2 2 2 2 2</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

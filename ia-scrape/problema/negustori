@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>negustori.in, negustori.out</td><td><strong>Sursă</strong></td><td>Summer Challenge 2009, Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=165">Din Folclor</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Marius"><img src="/utilizator/Marius?action=download&amp;file=avatar&amp;resize=L16x16" alt="Marius">Marius Stroe</a> <a title="Rating Marius: 627" class="rating-badge-4" href="http://infoarena.ro/utilizator/Marius?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Marius">Marius</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=negustori">Vezi solutiile trimise</a></p>
+
+<h1>Negustori<br></h1>
+
+<p>Sunteţi santinela unei bresle de negustori. Astăzi dimineaţă, <var>n</var> negustori (numerotaţi de la <var>1</var> la <var>n</var>) s-au aşezat în linie pentru a intra pe aleea comercială a oraşului. De-alungul aleii există <var>n</var> locaţii unde negustorii îşi pot parca căruţele pentru a-şi vinde ulterior bunurile. Începând cu negustorul numărul <var>1</var>, fiecare negustor, unul după celălalt, intră pe alee cu căruţa proprie, se îndreaptă către locaţia repartizată iar dacă este liberă o ocupă. Altfel, negustorul îşi continuă drumul spre următorul loc liber pe care îl ocupă. Dacă toate următoarele locaţii sunt ocupate, acesta părăseşte oraşul fără a-şi vinde bunurile.</p>
+
+<p>Negustorii nu îşi pot întoarce căruţele datorită îngustimii aleii. Sarcina dvs ca santinelă este să repartizaţi negustorii în locaţiile de pe alee. Negustorii locali sunt privilegiaţi în sensul că sunt repartizaţi în locaţia favorită, în timp ce negustorii străini vor trebui să accepte orice locaţie le desemnaţi.</p>
+
+<p>Fiind date locaţiile preferate ale negustorilor locali, trebuie să decideţi dacă există o repartizare a negustorilor străini în locaţii de pe alee astfel încât fiecare negustor (deopotrivă local şi străin) să îşi găsească un loc liber. În caz că există o astfel de repartizare, trebuie să găsiţi numărul de repartizări valide modulo un număr întreg dat <var>M</var>.</p>
+
+<p>Să considerăm un exemplu. Să presupunem că există patru negustori. Primii trei sunt negustori locali cu poziţia favorită <var>2</var>, <var>1</var>, respectiv <var>1</var>. Ultimul negustor este străin. Fiecare negustor îşi găseşte un loc liber în fiecare din următoarele patru cazuri: <var>(2, 1, 1, 1)</var>, <var>(2, 1, 1, 2)</var>, <var>(2, 1, 1, 3)</var>, <var>(2, 1, 1, 4)</var>, unde, de exemplu, <var>(2, 1, 1, 3)</var> înseamnă că primul negustor are repartizată poziţia <var>2</var>, ... , iar ultimul negustor poziţia <var>3</var>. Acest exemplu arată că negustori locali diferiţi pot avea locaţii favorite identice, că unui negustor străin i se poate repartizata o locaţie dorită de un negustor local şi că locaţia finală a unui negustor local poate fi îndepărtată de locaţia favorită.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>negustori.in</var> conţine pe prima linie trei numere întregi <var>n</var>, <var>m</var>, <var>M</var>, separate prin spaţiu, unde <var>m</var> reprezintă numărul negustorilor locali din toţi cei <var>n</var> negustori. Pe următoarea linie se vor găsi <var>m</var> perechi de numere <var>a<sub>1</sub>, b<sub>1</sub>, ..., a<sub>m</sub>, b<sub>m</sub></var>, cu <var>1 ≤ a<sub>i</sub>, b<sub>i</sub> ≤ n</var> şi toţi <var>a<sub>i</sub></var> diferiţi, unde <var>a<sub>i</sub></var> este poziţia celui de al <var>i</var>-lea negustor local în coadă iar <var>b<sub>i</sub></var> locaţia sa preferată. Dacă nu există negustori locali, această linie va fi goală.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>negustori.out</var> se va scrie o singură linie, conţinând, fie <var>NO</var> dacă este imposibil ca fiecare negustor să primească o locaţie liberă, fie <var><span class="caps">YES</span></var> urmat de numărul total de repartizări modulo <var>M</var> (separate printr-un spaţiu).</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ n ≤ 300</var></li>
+<li><var>0 ≤ m ≤ n</var></li>
+<li><var>2 ≤ M ≤ 10<sup>9</sup></var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>negustori.in</th><th>negustori.out</th></tr><tr><td>4 3 10        <br>
+1 2 2 1 3 1<br></td><td><span class="caps">YES</span> 4<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Este exemplul din enunţ.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,36 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>chernel.in, chernel.out</td><td><strong>Sursă</strong></td><td>Unirea 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=124">Adrian Vladu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/azotlichid"><img src="/utilizator/azotlichid?action=download&amp;file=avatar&amp;resize=L16x16" alt="azotlichid">Adrian Vladu</a> <a title="Rating azotlichid: 631" class="rating-badge-4" href="http://infoarena.ro/utilizator/azotlichid?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/azotlichid">azotlichid</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=chernel">Vezi solutiile trimise</a></p>
+
+<h1>Chernel<br></h1>
+
+<p>Chernel a renuntat la afaceri si s-a apucat de matematica. De aceasta data, el studiaza niste siruri mai speciale. Chernel porneste de la un sir de <var>N</var> numere naturale <var>a<sub>1</sub> a<sub>2</sub> ... a<sub>N</sub></var>, pe care aplica transformari succesive care schimba un sir de <var>X</var> elemente <var>a<sub>1</sub> a<sub>2</sub> ... a<sub>X</sub></var> in sirul de <var>X-1</var> elemente <var>a<sub>1</sub>+a<sub>2</sub> a<sub>2</sub>+a<sub>3</sub> ... a<sub>X-1</sub>+a<sub>X</sub></var>. Chernel repeta aceasta operatie pana cand ramane cu un singur element. De aici obtine <var>numarul caracteristic</var> al sirului, ca fiind restul impartirii aceslui ultim element ramas la un numar natural <var>M</var>.</p>
+
+<p>Chernel observa ca valorile unor elemente din sirul initial nu influenteaza <var>numarul caracteristic</var> al sirului, altfel spus oricare ar fi valoarea acestora, <var>numarul caracteristic</var> ramane acelasi.</p>
+
+<p>Pentru <var>N</var> si <var>M</var> date, ajutati-l pe Chernel sa afle cate astfel de valori exista in sirul initial.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>chernel.in</var> se gasesc cele doua numere naturale <var>N</var> si <var>M</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>chernel.out</var> se va gasi un singur numar natural, reprezentand numarul de elemente din sirul initial a caror valoare nu influenteaza <var>numarul caracteristic</var> al sirului.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100.000</var></li>
+<li><var>1 ≤ M ≤ 1.000.000.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>chernel.in</th><th>chernel.out</th></tr><tr><td>3 2<br></td><td>1<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Fie sirul initial <var>a<sub>1</sub> a<sub>2</sub> a<sub>3</sub></var>. Acesta se transforma in <var>a<sub>1</sub>+a<sub>2</sub> a<sub>2</sub>+a<sub>3</sub></var> apoi in <var>a<sub>1</sub>+2*a<sub>2</sub>+a<sub>3</sub></var>. Pentru <var>M = 2</var>, singura valoare a sirului initial care nu influenteaza <var>numarul caracteristic</var> este <var>a<sub>2</sub></var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

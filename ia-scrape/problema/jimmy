@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>jimmy.in, jimmy.out</td><td><strong>Sursă</strong></td><td>Selectie echipe ACM ICPC, UPB 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>65535 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=jimmy">Vezi solutiile trimise</a></p>
+
+<h1>Jimmy<br></h1>
+
+<p>Jimmy studiaza la universitate Algoritmi Avansati pe Grafuri. Ultima sa tema consta in gasirea unui cuplaj maxim intr-un tip special de graf. Acest graf este neorientat, are <var>N</var> noduri, iar fiecare nod are gradul <var>3</var>. Mai mult, graful este biconex din punct de vedere al muchiilor (adica trebuie eliminate cel putin 2 muchii pentru ca graful sa nu mai fie conex). Un cuplaj este o submultime a muchiilor grafului, astfel incat oricare <var>2</var> muchii din submultime nu au nici un capat comun. Un cuplaj maxim este un cuplaj avand cardinal maximal.<br>
+Fiind date o serie de grafuri speciale avand proprietatile precizate mai sus, gasiti cardinalul unui cuplaj maxim pentru fiecare graf.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>jimmy.in</var> contine numarul intreg <var>T</var>, reprezentand numarul de grafuri descrise in continuare. Descrierea fiecarui graf contine pe prima linie numarul intreg par <var>N</var>, reprezentand numarul de noduri ale grafului. Fiecare din urmatoarele <var>3*N/2</var> linii contine cate <var>2</var> numere intregi, <var>A</var> si <var>B</var>, separate printr-un spatiu, avand semnificatia ca exista o muchie intre nodul <var>A</var> si nodul <var>B</var>. Nodurile sunt numerotate de la <var>1</var> la <var>N</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pentru fiecare din cele <var>T</var> grafuri date in fisierul de intrare, afisati in fisierul de iesire <var>jimmy.out</var> cate o linie continand cardinalul unui cuplaj maxim.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 50</var></li>
+<li><var>4 ≤ N ≤ 5000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>jimmy.in</th><th>jimmy.out</th></tr><tr><td>2<br>
+4<br>
+1 2<br>
+1 3<br>
+1 4<br>
+2 3<br>
+2 4<br>
+3 4<br>
+4<br>
+1 2<br>
+1 3<br>
+1 4<br>
+2 3<br>
+2 4<br>
+3 4<br></td><td>2<br>
+2<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

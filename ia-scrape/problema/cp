@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cp.in, cp.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2008</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cp">Vezi solutiile trimise</a></p>
+
+<h1>Cp<br></h1>
+
+<p>Se da un graf neorientat, conex, avand <var>N</var> noduri, numerotate de la <var>1</var> la <var>N</var>, si <var>M</var> muchii. Nodurile <var>1</var> si <var>N</var> sunt <strong>speciale</strong>. Doi jucatori <var>(1</var> si <var>2)</var> joaca urmatorul joc - ei efectueaza mutari alternativ (jucatorul <var>1</var> efectueaza prima mutare), astfel: jucatorul aflat la mutare alege un nod necolorat al grafului (diferit de <var>1</var> si <var>N</var>) si il coloreaza. Jucatorul <var>1</var> coloreaza nodurile cu culoarea <strong>verde</strong>, iar jucatorul <var>2</var> cu culoarea <strong>rosie</strong>. Jocul se termina atunci cand toate nodurile (cu exceptia lui <var>1</var> si <var>N</var>) au fost colorate, considerand ca, initial, niciun nod nu este colorat.</p>
+
+<p>Un <strong>drum</strong> in graf este reprezentat de o secventa de noduri <var>1, v<sub>1</sub>, v<sub>2</sub>, ..., v<sub>k</sub>, N (k ≥ 1)</var>, astfel incat exista muchiile <var>(1,v<sub>1</sub>), (v<sub>k</sub>,N)</var> si <var>(v<sub>i</sub>,v<sub>i+1</sub>) (1≤i≤k-1)</var>. Nodurile <var>v<sub>1</sub>, v<sub>2</sub>, ..., v<sub>k</sub></var> se numesc <strong>noduri interne</strong> ale drumului.</p>
+
+<p>Daca la sfarsitul jocului exista cel putin un drum ale carui noduri interne sunt toate colorate in <strong>verde</strong> si nu exista niciun drum ale carui noduri interne sunt toate colorate in <strong>rosu</strong>, atunci jucatorul 1 este castigator. Daca la sfarsitul jocului exista cel putin un drum ale carui noduri interne sunt toate colorate in <strong>rosu</strong> si nu exista niciun drum ale carui noduri interne sunt toate colorate in <strong>verde</strong>, atunci jucatorul 2 este castigator.</p>
+
+<p>Daca la sfarsitul jocului nu exista nici un drum ale carui noduri interne sa aiba toate aceeasi culoare sau exista atat un drum cu toate nodurile interne colorate in verde, cat si un drum cu toate nodurile interne colorate in rosu, rezultatul jocului este remiza.</p>
+
+<p>Determinati daca jucatorul <var>2</var> are o strategie sigura de obtinere a victoriei.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>cp.in</var> contine numarul intreg <var>T</var>, reprezentand numarul de teste descrise in continuare. Prima linie a unui test contine numerele intregi <var>N</var> si <var>M</var>, reprezentand numarul de noduri si numarul de muchii. Urmatoarele <var>M</var> linii contin cate <var>2</var> numere intregi <var>a</var> si <var>b</var>, avand semnificatia ca exista o muchie intre nodul numerotat cu <var>a</var> si cel numerotat cu <var>b</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pentru fiecare test din fisierul de intrare veti afisa in fisierul de iesire <var>cp.out</var> cate o linie, continand sirul <strong>"DA"</strong> (fara ghilimele), daca jucatorul <var>2</var> are strategie sigura de castig pentru testul respectiv, sau <strong>"NU"</strong> (tot fara ghilimele), daca nu are o astfel de strategie (in acest caz, orice ar face, jucatorul 2 ori va pierde jocul, ori va obtine doar o remiza).</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 10</var></li>
+<li><var>2 ≤ N ≤ 1000</var></li>
+<li><var>N-1 ≤ M ≤ 100000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>cp.in</th><th>cp.out</th></tr><tr><td>1<br>
+3 3<br>
+1 2<br>
+2 3<br>
+3 1<br></td><td>NU</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

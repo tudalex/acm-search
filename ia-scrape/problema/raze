@@ -1,0 +1,48 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>raze.in, raze.out</td><td><strong>Sursă</strong></td><td>ONI gimnaziu 2010, clasa a 8-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=232">Marius Nicoli</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/miculprogramator"><img src="/utilizator/miculprogramator?action=download&amp;file=avatar&amp;resize=L16x16" alt="miculprogramator">A Cosmina - vechi</a> <a title="Rating miculprogramator: 508" class="rating-badge-3" href="http://infoarena.ro/utilizator/miculprogramator?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/miculprogramator">miculprogramator</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.7 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=raze">Vezi solutiile trimise</a></p>
+
+<h1>Raze<br></h1>
+
+<p>Harta digitală a câmpului de luptă este memorată într-un tablou bidimensional cu <var>N</var> linii, <var>M</var> coloane şi elemente din mulţimea <var>{0,1}</var>. Valoarea <var>0</var> reprezintă o poziţie liberă, iar valoarea <var>1</var> reprezintă o poziţie ocupată de un obstacol. În fiecare element aflat pe conturul tabloului, adică pe prima linie, prima coloana, ultima linie şi ultima coloană, se află obiective inamice. Pe conturul tabloului se găsesc numai elemente nule.</p>
+
+<p>În interiorul tabloului (elementele care nu se află pe contur), într-o poziţie liberă, trebuie plasat un soldat. Scopul său este să anihileze cât mai multe obiective inamice. Din păcate, el deţine o armă laser cu care poate executa doar un singur atac. La lansarea atacului, se trimit <var>4</var> raze, câte una în fiecare dintre cele <var>4</var> direcţii diagonale. O rază poate merge până la întâlnirea unui obstacol (în acest caz se opreşte şi nu va avea nici un efect) sau până ajunge pe contur (în acest caz distruge obiectivul inamic respectiv). </p>
+
+<h2>Cerinţă</h2>
+
+<p>Scrieţi un program care determină numărul maxim de obiective inamice, notat cu <var>K</var>, ce pot fi distruse în urma unui atac, precum şi numărul poziţiilor în care putem plasa soldatul pentru a distruge <var>K</var> obiective inamice.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare raze.in conţine pe prima linie se găseşte numărul natural <var>T</var>, reprezentând numărul seturilor de date de intrare. Pentru fiecare set de date de intrare în fişierul de intrare pe prima linie a setului se află numerele naturale <var>N</var> şi <var>M</var>, separate printr-un spaţiu, reprezentând numărul liniilor, respectiv numărul coloanelor tabloului; pe următoarele <var>N</var> linii ale setului de date se află câte <var>M</var> numere naturale din mulţimea <var>{0,1}</var>, separate prin câte un spaţiu, reprezentând forma digitală a hărţii câmpului de luptă.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire raze.out va conţine <var>T</var> linii, corespunzătoare celor <var>T</var> seturi de date de intrare. Pe fiecare linie se vor tipări două numere naturale <var>K</var> şi <var>P</var>, separate printr-un spaţiu, reprezentând numărul maxim de obiective inamice distruse în atac, respectiv numărul poziţiilor din care se pot distruge <var>K</var> obiective inamice.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 80</var></li>
+<li><var>3 ≤ N, M ≤ 135</var></li>
+<li>Se garantează că există cel puţin un obiectiv inamic ce poate fi anihilat pentru fiecare set de date de intrare.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>raze.in</th><th>raze.out</th></tr><tr><td>2<br>
+4 6<br>
+0 0 0 0 0 0<br>
+0 0 1 1 1 0<br>
+0 0 0 0 0 0<br>
+0 0 0 0 0 0<br>
+4 7<br>
+0 0 0 0 0 0 0<br>
+0 1 1 1 1 1 0<br>
+0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0<br></td><td>4 1<br>
+3 2<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>În fişier se găsesc două seturi de date de intrare. În primul set de date se pot anihila maximum <var>4</var> obiective inamice, poziţionând soldatul în linia <var>2</var> şi coloana <var>2</var>. În al doilea set de date se pot anihila maximum <var>3</var> obiective inamice, poziţionând soldatul în elementul de pe linia <var>3</var> şi coloana <var>2</var> sau în elementul din linia <var>3</var> şi coloana <var>6</var>.<br></p><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

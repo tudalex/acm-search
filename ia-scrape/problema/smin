@@ -1,0 +1,51 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>smin.in, smin.out</td><td><strong>Sursă</strong></td><td>Lot Juniori 2009 - Baraj 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=217">Suzana Galatan</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/CezarMocan"><img src="/utilizator/CezarMocan?action=download&amp;file=avatar&amp;resize=L16x16" alt="CezarMocan">Cezar Mocan</a> <a title="Rating CezarMocan: 892" class="rating-badge-1" href="http://infoarena.ro/utilizator/CezarMocan?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/CezarMocan">CezarMocan</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>3.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=smin">Vezi solutiile trimise</a></p>
+
+<h1>Smin<br></h1>
+
+<p>Ana are un joc nou. Pe o tablă pătrată este trasat un grid format din celule pătratice de dimensiune <var>1</var>. În oricare dintre colţurile <img src="http://infoarena.ro/problema/smin?action=download&amp;file=poza1.jpg&amp;safe_only=true" alt="" class="right" style="float:right"> oricarei celule, Ana poate înfige câte un beţişor perpendicular pe tablă. După ce a plasat <var>n</var> beţişoare, Ana ia dintr-o cutie (cu un număr suficient de mare de corzi elastice circulare) câte o coardă cu care înconjoară trei sau mai multe beţişoare. Fiecare coardă este bine întinsă şi formează pe tablă un contur poligonal.                                                                <br>
+În figura alăturată este folosită o coardă ce formează un contur poligonal cu <var>4</var> laturi cu care sunt înconjurate <var>5</var> dintre cele <var>8</var> beţişoare de pe tablă.<br>
+Jocul se încheie când au fost plasate atâtea coarde încât toate beţişoarele de pe tablă să se afle pe marginea sau în interiorul a cel puţin unul dintre contururile poligonale formate. Scopul jocului este ca amplasarea corzilor să fie făcută convenabil astfel încât totalul ariilor contururilor poligonale formate să fie minim.</p>
+
+
+<h2>Cerinţă </h2>
+
+<p>Cunoscând coordonatele celor <var>n</var> beţişoare <var>(x<sub>1</sub>, <sub>y1</sub>)</var>, <var>(x<sub>2</sub>, y<sub>2</sub>)</var>, …, <var>(x<sub>n</sub>, y<sub>n</sub>)</var> măsurate faţă de unul dintre colţurile gridului, Ana doreşte să găsească suma minimă a ariilor poligonale obţinute prin amplasarea convenabilă a coardelor, astfel încât fiecare beţişor să se găsească în interiorul sau pe conturul a cel puţin un astfel de poligon. </p>
+
+
+<h2>Date de intrare</h2>
+
+<p>În fişierul <var>smin.in</var> pe prima linie se găseşte numărul natural <var>n</var>. Pe fiecare dintre următoarele <var>n</var> linii, se află câte două numere naturale: <var>x y</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul <var>smin.out</var> se va scrie numărul real <var>s</var>, reprezentând suma minimă a ariilor poligoanelor convexe care acoperă toate punctele date. </p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 17</var></li>
+<li><var>0 ≤ x, y ≤ 100</var></li>
+<li>Datele de intrare nu vor conţine trei beţişoare plasate în puncte coliniare din planul tablei</li>
+<li>Suma cerută se obţine însumând ariile tuturor poligoanelor, indiferent dacă unele poligoane se suprapun sau nu</li>
+<li>Modulul diferenţei dintre valoarea reală a lui <var>s</var> şi cea afişată este mai mic decât <var>0.001</var> </li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>smin.in</th><th>smin.out</th></tr><tr><td>4<br>
+0 2<br>
+0 4<br>
+4 4<br>
+4 2<br></td><td>8.000<br></td></tr><tr><td>4<br>
+0 2<br>
+2 4<br>
+3 4<br>
+4 1<br></td><td>2.5000<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>In primul exemplu aria minimă este dreptunghiul din prima figură, cu cele patru beţişoare în vârfuri. Se foloseşte o singură coardă elastică. In cel de-al doilea aria minimă este suma ariilor celor două triunghiuri delimitate de două corzi elastice din a doua figură.<br><img src="http://infoarena.ro/problema/smin?action=download&amp;file=poza2.jpg&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

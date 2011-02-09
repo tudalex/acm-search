@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>kinder.in, kinder.out</td><td><strong>Sursă</strong></td><td>Lot 2008 - Piatra Neamt, Baraj2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.7 sec</td><td><strong>Limită de memorie</strong></td><td>131072 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=kinder">Vezi solutiile trimise</a></p>
+
+<h1>Kinder<br></h1>
+
+<p>Bunicuta Miruna are <var>N</var> nepotei care sunt asezati in linie si sunt numerotati de la stanga spre dreapta, in ordine, cu numere naturale distincte de la <var>1</var> la <var>N</var>. Deoarece se apropie Ziua Copilului, Miruna le-a cumparat nepoteilor mai multe oua Kinder. Aceste oua Kinder nu sunt toate la fel, ci sunt de <var>M</var> tipuri (numerotate de la <var>1</var> la <var>M</var>) si doua culori ( <var>0</var> - rosu si <var>1</var> - albastru). Tipul oului precizeaza cat de gustos este oul (daca tipul <var>t<sub>1</sub>&lt;t<sub>2</sub></var>, atunci un ou de tipul <var>t<sub>1</sub></var> va fi mai gustos decat un ou de tipul <var>t<sub>2</sub></var>). Miruna va efectua operatii de urmatoarele 3 tipuri:</p>
+
+<table><tr><th>Tip</th><th>Nume</th><th>Format</th><th>Efect</th></tr><tr><td><var>1</var></td><td>Update</td><td><var>c t p q</var></td><td>Copilul <var>c</var> primeste <var>q</var> oua de tip <var>t</var> si culoare <var>p</var></td></tr><tr><td><var>2</var></td><td>Update</td><td><var>c t</var></td><td>Copilul <var>c</var> ia fiecare ou de tipul <var>t</var> care este al sau si il vopseste in culoarea opusa (din <var>0</var> in <var>1</var> si din <var>1</var> in <var>0</var>)</td></tr><tr><td><var>3</var></td><td>Query</td><td><var>a b p x</var></td><td>Miruna se uita la ouale de culoare <var>p</var> care apartin copiilor din intervalul <var>[a, b]</var> si vrea sa afle tipul celui de-al <var>x</var>-lea cel mai gustos ou.</td></tr></table><p>Scrieti un program care sa efectueze in mod eficient toate operatiile descrise.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>kinder.in</var> va contine pe prima linie <var>3</var> numere naturale <var>N M T</var>, reprezentand numarul de nepotei, numarul de tipuri de oua, respectiv numarul de operatii ce vor fi efectuate. Pe fiecare dintre urmatoarele <var>T</var> linii va fi descrisa cate o operatie. Linia care descrie o operatie incepe cu un numar ( <var>1</var>, <var>2</var> sau <var>3</var>) care indica tipul operatiei, urmat de <var>4</var>, <var>2</var>, respectiv <var>4</var> numere naturale conform formatului operatiei. Valorile scrise pe aceeasi linie sunt separate prin spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>kinder.out</var> va contine cate o linie pentru fiecare operatie de tip <var>3</var> efectuata. Pe linia <var>i</var> se afla raspunsul pentru cea de a <var>i</var>-a operatie de tip <var>3</var> din fisierul de intrare.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N, M, T ≤ 50000</var></li>
+<li>Pentru operatii de tipul <var>1</var>: <var>1 ≤ c ≤ N, 1 ≤ t ≤ M, 0 ≤ p ≤ 1, 1 ≤ q ≤ 1000</var></li>
+<li>Pentru operatii de tipul <var>2</var>: <var>1 ≤ c ≤ N, 1 ≤ t ≤ M</var><br>
+Se garanteaza ca nepotul <var>c</var> are cel putin un ou de tip <var>t</var></li>
+<li>Pentru operatii de tipul <var>3</var>: <var>1 ≤ a ≤ b ≤ N, 0 ≤ p ≤ 1</var><br><var>1 ≤ x ≤</var> Numarul total de oua de culoare <var>p</var> pe care le detin nepotii din intervalul <var>[a, b]</var><br>
+Se garanteaza ca nepotii din intervalul <var>[a,b]</var> detin cel putin un ou de culoare <var>p</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>kinder.in</th><th>kinder.out</th></tr><tr><td>5 100 3<br>
+ 1 2 68 0 100<br>
+ 2 2 68<br>
+ 3 1 5 1 99<br></td><td>68<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Miruna are <var>5</var> nepoti, oua de <var>100</var> de tipuri si efectueaza <var>3</var> operatii. La prima operatie nepotul <var>2</var> primeste <var>100</var> de oua de tip <var>68</var> si culoare <var>0</var>. La a doua operatie nepotul <var>2</var> vopseste cele <var>100</var> de oua de tipul <var>68</var> pe care le are in culoarea <var>1</var>. La a treia operatie Miruna vede ca al <var>99</var>-lea cel mai gustos ou de culoare <var>1</var> pentru nepotii din intervalul <var>[1, 5]</var> are tipul <var>68</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

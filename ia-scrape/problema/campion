@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>campion.in, campion.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2006, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/bogdan2412"><img src="/utilizator/bogdan2412?action=download&amp;file=avatar&amp;resize=L16x16" alt="bogdan2412">Bogdan-Cristian Tataroiu</a> <a title="Rating bogdan2412: 1162" class="rating-badge-4" href="http://infoarena.ro/utilizator/bogdan2412?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/bogdan2412">bogdan2412</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>32000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=campion">Vezi solutiile trimise</a></p>
+
+<h1>Campion<br></h1>
+
+<p>Zaharel lucreaza din greu la site-ul <a href="http://infoarena.ro" class="wiki_link_external">infoarena 2.0</a>. Treaba lui este sa construiasca un sistem de rating al utilizatorilor, in functie de competitiile la care a participat fiecare.</p>
+
+<p>In primul rand, va trebui sa numere cati concurenti au fost campioni pe parcursul timpului. Pentru a simplifica problema, vom considera momentele de timp ca fiind numere <strong>reale</strong> intre <var>0</var> si <var>T</var>.</p>
+
+<p>Fiecare din cei <var>N</var> utilizatori infoarena au inceput sa concureze la timpul <var>0</var> si au avut un rating <var>R<sub>i</sub></var> <var>(1 ≤ i ≤ N)</var>. Se stie, de asemenea, ca fiecare concurent isi imbunatateste rating-ul cu <var>D<sub>i</sub></var> <var>(1 ≤ i ≤ N)</var> pentru fiecare unitate de timp care trece.</p>
+
+<p>Un utilizator se numeste campion daca exista un moment de timp in care a avut cel mai mare rating dintre toti utilizatorii. Daca doi sau mai multi utilizatori au fiecare cel mai mare rating intr-un moment de timp, se considera ca toti sunt campioni.</p>
+
+<h2>Cerinta</h2>
+
+<p>Ajutati-l pe Zaharel sa determine numarul de utilizatori care au fost campioni.</p>
+
+<h2>Date de intrare</h2>
+
+<p>In fisierul <var>campion.in</var> se afla pe prima linie numerele naturale <var>N</var> si <var>T</var> reprezentand numarul de utilizatori si limita superioara a momentelor de timp. Urmeaza <var>N</var> linii fiecare continand doua numere naturale <var>R<sub>i</sub></var> <var>D<sub>i</sub></var>, reprezentand rating-ul initial si valoarea cu care se imbunatateste per unitate de timp, al fiecarui utilizator.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>campion.out</var> va contine o singura linie pe care se va afla numarul de concurenti care au fost campioni.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 20 000</var></li>
+<li><var>0 ≤ T ≤ 100 000 000</var></li>
+<li><var>0 ≤ R<sub>i</sub> ≤ 1 000 000 000</var></li>
+<li><var>0 ≤ D<sub>i</sub> ≤ 1 000 000</var></li>
+<li>Rating-ul fiecarui utilizator nu va depasi <var>2 000 000 000</var> pentru orice moment de timp din intervalul <var>[0...T]</var></li>
+<li>Toatele numerele din fisierul de intrare sunt numere naturale</li>
+<li>Pot exista utilizatori cu acelasi rating de inceput si aceasi valoare de imbunatatire</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>campion.in</th><th>campion.out</th></tr><tr><td>3 6<br>
+20 0<br>
+4 2<br>
+15 1<br></td><td>2<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Concurentul <var>1</var> este initial campion, iar la momentul <var>5</var> concurentul <var>3</var> devine campion. Concurentul <var>2</var> devine campion la momentul <var>11</var>, dar <var>T = 6</var>, deci nu se ia in considerare.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

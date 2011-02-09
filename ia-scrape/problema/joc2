@@ -1,0 +1,76 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>joc2.in, joc2.out</td><td><strong>Sursă</strong></td><td>Bursele Agora 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=joc2">Vezi solutiile trimise</a></p>
+
+<h1>Joc2<br></h1>
+
+<p>Doi participanti mananca alternant din niste tablete de ciocolata dupa urmatoarele reguli:</p>
+
+
+<ol><li>taie o tableta in doua, taietura trebuie sa fie paralela cu una din laturile tabletei si trebuie sa nu taie patratelele de ciocolata</li>
+<li>poate sa rupa si sa manance orice linie sau coloana de patratele care nu se afla pe marginea tabletei</li>
+<li>poate sa rupa si sa manance toate patratelele de pe marginea tabletei, cu conditia ca tableta ramasa sa aiba cel putin dimensiunea <var>1 × 1</var></li>
+</ol><p>Nici una dintre aceste trei mutari nu poate fi efectuata asupra unei tablete de dimensiune <var>1 × 1</var>.<br>
+Pierde jucatorul care nu mai poate efectua nici o mutare.</p>
+
+<h2>Date de intare</h2>
+
+<p>In fisierul de intrare <var>joc2.in</var> se va afla numarul <var>N</var> de tablete, iar pe urmatoarele <var>N</var> linii se afla perechi de numere intregi care reprezinta dimensiunile tabletelor.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>joc2.out</var> va contine un singur numar intreg, care reprezinta numarul de moduri in care poate face prima mutare astfel incat sa existe o strategie ca sa poata castiga partida.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100</var></li>
+<li>dimensiunile tabletelor sunt cuprinse intre <var>1</var> si <var>100</var></li>
+<li>primul jucator muta intotdeauna primul</li>
+<li>se presupune ca ambii participanti joaca optim</li>
+<li>mutare este identificata prin tableta asupra careia se efectueaza, prin tip, si prin linia/coloana pe care o afecteaza.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>joc2.in</th><th>joc2.out</th></tr><tr><td>2<br>
+1 2<br>
+2 2</td><td><var>0</var></td></tr></table><h3>Explicatie</h3>
+
+<p>La prima mutare, primul jucator poate sa rupa fie prima tableta in doua, obtinandu-se astfel doua tablete de <var>1</var> patratel si una de <var>4</var> patratele.<br>
+La a doua mutare, al doilea jucator poate rupe in doua (fie orizontal fie vertical) tableta de <var>4</var> patratele, obtinandu-se <var>2</var> tablete de <var>2</var> patratele.<br>
+La a treia mutare, primul jucator poate sa rupa in doua una dintre cele <var>2</var> tablete de <var>2</var> patratele, obtinandu-se astfel doua tablete de <var>1</var> patratel si una de <var>2</var> patratele.<br>
+La a patra mutare, al doilea jucator poate rupe in doua singura tableta de <var>2</var> patratele care a mai ramas, obtinandu-se astfel doua tablete de <var>1</var> patratel.<br>
+Primul jucator nu mai poate efectua nici o mutare.</p>
+
+<p>O alta varianta de joc ar putea fi:<br>
+La prima mutare, primul jucator poate rupe in doua (orizontal sau vertical) tableta de <var>4</var> patratele, obtinandu-se astfel trei tablete de <var>2</var> patratele.<br>
+La a doua mutare, al doile jucator poate sa rupa in doua una dintre cele <var>3</var> tablete de <var>2</var> patratele, obtinandu-se astfel doua tablete de <var>1</var> patratel si <var>2</var> de <var>2</var> patratele.<br>
+La a treia mutare, primul jucator poate sa rupa in doua una dintre cele <var>2</var> tablete de <var>2</var> patratele, obtinandu-se astfel doua tablete de <var>1</var> patratel si una de <var>2</var> patratele.<br>
+La a patra mutare, al doilea jucator poate rupe in doua singura tableta de <var>2</var> patratele care a mai ramas, obtinandu-se astfel doua tablete de <var>1</var> patratel.<br>
+Primul jucator nu mai poate efectua nici o mutare.</p>
+
+<p>In concluzie indiferent ce muta primul jucator la prima mutare, acesta va pierde partida de fiecare data. </p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=60">Teoria jocurilor</a></span>
+            <a href="javascript:show_tag_list(60)" id="tag_anchor_60" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_60"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=447">Sprague-Grundy</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

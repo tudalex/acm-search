@@ -1,0 +1,60 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>dreptunghiuri2.in, dreptunghiuri2.out</td><td><strong>Sursă</strong></td><td>ONI 2010, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=232">Marius Nicoli</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mathboy"><img src="/utilizator/mathboy?action=download&amp;file=avatar&amp;resize=L16x16" alt="mathboy">Dragos-Alin Rotaru</a> <a title="Rating mathboy: 510" class="rating-badge-3" href="http://infoarena.ro/utilizator/mathboy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mathboy">mathboy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.6 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=dreptunghiuri2">Vezi solutiile trimise</a></p>
+
+<h1>Dreptunghiuri2<br></h1>
+
+<p>Se consideră o matrice cu elemente <var>0</var> sau <var>1</var>, cu <var>L</var> linii (numerotate de la <var>1</var> la <var>L</var>) şi <var>C</var> coloane (numerotate de la <var>1</var> la <var>C</var>). Definim o zonă dreptunghiulară ca fiind o submatrice ce are pe contur numai valori <var>1</var> şi cu proprietatea că nu există valori de <var>1</var> nesituate pe contur şi în acelaşi timp la distanţa <var>1</var> faţă de un punct de pe contur. Două puncte sunt la distanţa <var>1</var> dacă şi numai dacă sunt vecine pe una dintre cele <var>8</var> direcţii. Interiorul unei zone dreptunghiulare constă din elementele din submatrice nesituate pe contur. O zonă dreptunghiulară poate fi inclusă complet în interiorul alteia. Definim ordinul unei zone dreptunghiulare ca fiind valoarea <var>d + 1</var>, unde <var>d</var> este numărul de zone în interiorul cărora aceasta este inclusă. <var>Fig. 1-4</var> conţin exemple de zone dreptunghiulare. În <var>fig. 5</var> este o matrice în care se găsesc trei zone dreptunghiulare, dintre care zonele din interior au ordinul <var>2</var> iar cealaltă ordinul <var>1</var>.</p>
+
+
+<table class="example" cellspacing="0"><tr><th>fig. 1</th><th>fig. 2</th><th>fig. 3</th><th>fig.4</th><th>fig. 5</th></tr><tr><td>1 1 1 1 1<br>
+1 0 0 0 1<br>
+1 1 1 1 1<br></td><td>1 1 1<br></td><td>1<br></td><td>1 1 1 1<br>
+1 1 1 1<br></td><td><b>1 1 1 1 1 1 1 1 1</b> 0<br><b>1</b> 0 0 0 0 0 0 0 <b>1</b> 0<br><b>1</b> 0 <b>1 1 1</b> 0 <b>1</b> 0 <b>1</b> 0<br><b>1</b> 0 <b>1</b> 0 <b>1</b> 0 <b>1</b> 0 <b>1</b> 0<br><b>1</b> 0 <b>1 1 1</b> 0 <b>1</b> 0 <b>1</b> 0<br><b>1</b> 0 0 0 0 0 0 0 <b>1</b> 0<br><b>1 1 1 1 1 1 1 1 1</b> 0<br></td></tr></table><h2>Cerinţă</h2>
+
+<p>Să se determine numărul total de zone dreptunghiulare din matrice, ordinul maxim al unei zone şi numărul de zone care au acest ordin maxim. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>dreptunghiuri2.in</var> conţine pe prima linie numerele naturale <var>L</var> şi <var>C</var> separate printr-un spaţiu. Pe fiecare din următoarele <var>L</var> linii din fişier se află câte <var>C</var> numere din mulţimea <var>{0,1}</var>, separate prin câte un spaţiu, reprezentând valorile din matrice.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>dreptunghiuri2.out</var> conţine pe prima linie trei numere naturale <var>D</var>, <var>O</var> şi <var>NR</var>, separate prin câte un spaţiu, unde <var>D</var> este numărul total de zone dreptunghiulare din matrice, <var>O</var> este ordinul maxim al unui astfel de zone, iar <var>NR</var> este numărul de zone de ordin maxim.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>3 ≤ L, C ≤ 1 000</var></li>
+<li>Datele de intrare sunt corecte. Va exista cel puţin o zonă dreptunghiulară în matrice.</li>
+<li>Pentru determinarea corectă a numărului de zone se acordă <var>20%</var> din punctajul pe fiecare test.</li>
+<li>Orice element <var>1</var> din matrice se află pe conturul unei singure zone dreptunghiulare.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>dreptunghiuri2.in</th><th>dreptunghiuri2.out</th></tr><tr><td>9 12<br>
+0 1 1 1 1 1 1 1 1 1 1 1<br>
+0 1 0 0 0 0 0 0 0 0 0 1<br>
+0 1 0 1 1 1 1 1 0 0 0 1<br>
+0 1 0 1 0 0 0 1 0 1 0 1<br>
+0 1 0 1 0 1 0 1 0 1 0 1<br>
+0 1 0 1 0 0 0 1 0 1 0 1<br>
+0 1 0 1 1 1 1 1 0 1 0 1<br>
+0 1 0 0 0 0 0 0 0 0 0 1<br>
+0 1 1 1 1 1 1 1 1 1 1 1<br></td><td>4 3 1<br></td></tr></table><h3>Explicaţii</h3>
+
+<p>Sunt în total <var>4</var> zone dreptunghiulare, ordinul maxim al uneia dintre ele este <var>3</var> (cea formată dintr-un singur <var>1</var>) şi există o singură astfel de zonă.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=69">Parcurgere in adancime</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=47">Parcurgere in latime</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

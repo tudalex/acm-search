@@ -1,0 +1,53 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>gather.in, gather.out</td><td><strong>Sursă</strong></td><td>preONI 2008 Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=153">Adrian Diaconu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=gather">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=gather">Vezi solutiile trimise</a></p>
+
+<h1>Gather<br></h1>
+
+<p>Bunul nostru prieten Gigel a ajuns la inchisoare. Inchisoarea are <var>N</var> celule legate intre ele prin <var>M</var> coridoare ce pot fi parcurse in ambele sensuri. In inchisoare se afla in total <var>K</var> detinuti. Foarte inteligent si practic Gigel are deja un plan de evadare, dar pentru asta are nevoie de toti detinutii. Initial Gigel se afla in celula <var>1</var>, iar modul in care ii poate aduna pe detinuti este urmatorul: el se plimba prin coridoarele inchisorii si cand intalneste un nou detinut ii spune planul si in continuare acesta va trebui sa il urmeze(Gigel vrea sa se asigure ca nici un detinut nu il va trada, de aceea nu scapa din ochi nici un detinut care stie de planul sau). Problema este ca daca pe anumite coridoare sunt vazuti mai multi detinuti mergand impreuna, paznicii inchisorii vor intra la banuieli, iar planul lui Gigel va esua. Deoarece vrea ca toti sa fie cat mai odihniti pentru a maximiza sansele de reusita ale planului Gigel trebuie sa minimizeze suma totala parcursa de toti detinutii si de el. Detinutii stau pe loc pana in momentul in care Gigel vine la ei, apoi il vor urma intotdeauna.</p>
+
+<h2>Cerinta</h2>
+
+<p>Calculati suma minima a distanelor parcurse de detinuti si de Gigel pentru a-i aduna pe toti intr-o celula.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>gather.in</var> contine pe prima linie trei numere naturale <var>K</var>, <var>N</var>, <var>M</var>. Pe urmatoarele <var>K</var> linii se afla cate un numar reprezentand celulele in care se afla initial detinutii. In continuare vor urma <var>M</var> linii fiecare continand cate patru numere naturale <var>A</var> <var>B</var> <var>C</var> <var>D</var> cu urmatoare semnificatie: intre celulele <var>A</var> si <var>B</var> se afla un coridor de lungime <var>C</var> pe care nu pot merge mai mult de <var>D</var> detinuti(<strong>exceptandu-l pe Gigel</strong>).</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>gather.out</var> se va afla o singura linie care contine distanta minima ceruta.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 750</var></li>
+<li><var>1 ≤ K ≤ 15</var></li>
+<li><var>1 ≤ M ≤ 1250</var></li>
+<li><var>C</var> si <var>D</var> se vor incadra pe 32 de biti pentru fiecare muchie</li>
+<li>Rezultatul se va incadra pe 32 de biti</li>
+<li>Nu vor exista mai multi detinuti in aceeasi celula</li>
+<li>Gigel poate trece prin celule cu prizonieri fara a le spune de planul sau in acest moment, urmand sa ii viziteze din nou mai tarziu</li>
+<li>Va exista mereu solutie</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>gather.in</th><th>gather.out</th></tr><tr><td>2 4 5<br>
+4<br>
+2<br>
+1 2 50 1<br>
+2 3 75 2<br>
+2 4 25 1<br>
+3 4 100 2<br>
+3 1 10 2<br></td><td>100<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Gigel merge din celula <var>1</var> in celula <var>2</var> parcurgand o distanta de <var>50</var>. Aici ii spune detinutului <var>2</var> de planul sau.<br>
+Gigel merge apoi impreuna cu detinutul <var>2</var> in celula <var>4</var> parcurgand impreuna distanta <var>2*25</var>. Aici este informat si detinutul <var>1</var> de plan.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

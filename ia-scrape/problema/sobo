@@ -1,0 +1,61 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>sobo.in, sobo.out</td><td><strong>Sursă</strong></td><td>Concurs de incalzire 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=119">Silviu-Ionut Ganceanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">2/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=sobo">Vezi solutiile trimise</a></p>
+
+<h1>Sobo<br></h1>
+
+<p>Petrica, satul de munca pe santier, vrea sa faca de ceva mai apropiat capacitatii sale intelectuale. Astfel si-a luat o cutie cu <var>N</var> sobolani si face experimente pe ei. Printre altele el a scos harta genetica a fiecarui sobolan, care consta intr-o secventa binara de lungime <var>L</var>. Printre sobolani se afla unul mai special, cel mai inteligent dintre ei, pe care Gigel, prietenul lui Petrica, il vrea cu orice pret. Petrica insa nu vrea sa renunte la sobolanul inteligent atat de usor si il pune pe Gigel la urmatoarea proba: ii da hartile genetice ale tuturor sobolanilor, fara sa-i spuna care este cel special. Gigel are voie sa puna intrebari de genu: "Ce valoare are harta sobolanului inteligent in pozitia <var>x</var> ?" dar raspunsul are un pret, Petrica dandu-i lista preturilor tuturor pozitiilor. Asadar Gigel va trebui sa ghiceasca sobolanul destept pe baza raspunsurilor lui Petrica care sunt de forma: "Harta sobolanului inteligent are in pozitia <var>x</var> valoarea <var>y</var>" unde <var>y</var> este <var>0</var> sau <var>1</var>. Gigel vrea sa stie care e pretul minim pe care il plateste, considerand cel mai defavorabil caz (Petrica va alege raspunsurile astfel incat costul sa fie cat mai mare posibil).</p>
+
+<h2>Cerinta</h2>
+
+<p>Gigel va plati considerabil (cu 100 de puncte) pe cel care ii va face un program care sa calculeze acest cost.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie in fisierul de intrare <var>sobo.in</var> se afla numerule <var>N</var>, <var>L</var> separate prin cate un spatiu reprezentand numarul de sobolani si lungimea hartilor genetice ale acestora. Pe urmatoarele <var>N</var> linii se afla cate un sir de <var>L</var> biti (nedespartiti de spatii) reprezentand harta unui sobolan. Pe ultima linie se afla <var>L</var> numere separate prin spatii reprezentand costul raspunsului pentru fiecare pozitie.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie din fisierul de iesire <var>sobo.out</var> se va gasi un numar intreg reprezentand costul minim in cel mai defavorabil caz pentru Gigel.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 15</var></li>
+<li><var>1 ≤ L ≤ 1000</var></li>
+<li>Costurile raspunsurilor sunt numere intregi din intervalul <var>[1, 1 000 000]</var></li>
+<li>Nu exista sobolani cu harti genetice identice</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>sobo.in</th><th>sobo.out</th></tr><tr><td>4 3<br>
+101<br>
+000<br>
+011<br>
+010<br>
+2 6 7</td><td>13</td></tr></table><h3>Explicatii</h3>
+
+<p>Costul minim 13 (in cel mai defavorabil caz) este obtinut astfel: Gigel intreaba care este valoarea hartii sobolanului inteligent in pozitia 2 si Petrica ii raspunde 1 acesta fiind cel mai defavorabil caz (daca raspunsul lui Petrica ar fi fost 0 urma intrebarea lui Gigel despre valoarea in pozitia 1 si sobolanul ar fi fost identificat cu un costul 6 + 2 = 8). Asadar niciunul dintre primii doi sobolani nu este cel inteligent. Gigel mai trebuie sa afle care din ultimii doi sobolani este cel inteligent si mai cere informatii despre pozitia 3 din harta sobolanului inteligent. Indiferent de raspuns sobolanul inteligent va fi descoperit.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=45">Diverse</a></span>
+            <a href="javascript:show_tag_list(45)" id="tag_anchor_45" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_45"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=73">Operatii pe biti</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=59">Dinamica pe stari exponentiale</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=77">Memoizare</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,51 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>1expr.in, 1expr.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=1expr">Vezi solutiile trimise</a></p>
+
+<h1>1expr<br></h1>
+
+<table style="margin:0.5em auto;" cellspacing="0"><tr><td align="center" style="background-color:#FFFFCC;border:1px solid FFCC66;"><img src="http://infoarena.ro/template/cleanup?action=download&amp;file=cleanup.png&amp;safe_only=true" alt="" class="left" style="float:left"><em>Continutul acestei pagini nu este formatat conform</em> <a href="http://infoarena.ro/documentatie/conventii-de-formatare"><strong>recomandarilor de formatare</strong></a>.<br><em>Daca aveti permisiunile necesare, va rugam sa il imbunatatiti.</em></td></tr></table><p>Gigel, student in anul II (desi a inceput facultatea acum 4 ani - ce sa-i faci, Electronica asta..), tocmai a invatat despre expresii aritmetice ce contin operatorii <code>'+','*','^'</code> si <code>'!'</code>, precum si paranteze (<code>'('</code> si <code>')'</code>). Totusi, fiind abia in anul <span class="caps">II, </span>el se incurca cand trebuie sa lucreze cu numere prea mari, de aceea singurul numar care apare in mod direct (adica nu doar ca rezultat al unei operatii) in cadrul unei expresii este numarul 1. Vom numi o astfel de expresie 1-expresie. De exemplu, <code>"(1+(1*1))^(1+1+1*1)^(1+(1+1)!)"</code> este o 1-expresie, dar <code>"2+5*7+6!+3^4^3!+1*6"</code> nu este o 1-expresie (deoarece apar in mod direct numerele 2, 3, 4, 5, 6 si 7). O 1-expresie poate fi privita ca un sir format din caracterele <code>'1','+','*','^','!','(',')'</code> si care poate fi descris cu ajutorul urmatoarelor reguli gramaticale:</p>
+
+<p><code>1-expresie =</code></p>
+
+
+<ul><li><code>'1'</code></li>
+<li><code>'(' 1-expresie ')'</code></li>
+<li><code>1-expresie '+' 1-expresie</code></li>
+<li><code>1-expresie '*' 1-expresie</code></li>
+<li><code>1-expresie '^' 1-expresie</code></li>
+<li><code>1-expresie '!'</code></li>
+</ul><p>Desi in cadrul expresiei apare in mod direct doar numarul 1, rezultatele evaluarii operatiilor pot fi numere mai mari decat 1, astfel ca Gigel va trebui sa invete sa foloseasca si aceste numere. Pentru a evalua o expresie aritmetica, trebuie cunoscute prioritatile operatorilor. </p>
+
+
+<ul><li>Operatorul cu cea mai mica prioritate este <code>'+'</code> si realizeaza operatia de adunare. Rezultatul 1-expresiei <code>"1+1+1"</code> este 3. </li>
+<li>Operatorul <code>'*'</code> este mai prioritar decat operatorul <code>'+'</code> si realizeaza operatia de inmultire. Rezultatul 1-expresiei <code>"1+1*(1+1)*(1+1+1)+(1+1)*(1+1)"</code> este <code>1+1*2*3+2*2=1+6+4=11</code>. Operatorul <code>'^'</code> este mai prioritar decat operatorii <code>'+'</code> si <code>'*'</code> si realizeaza operatia de ridicare la putere (<code>A^B</code> reprezinta <code>A</code> ridicat la puterea <code>B</code>). Rezultatul 1-expresiei <code>"(1+1)*(1+1+1)^(1+1)*(1+1+1)+(1+1)"</code> este <code>2*3^2*3+2=2*9*3+2=54+2=56</code>. </li>
+<li>Spre deosebire de operatorii <code>'+'</code> si <code>'*'</code> care au proprietatea ca <code>A+B=B+A</code> si <code>A*B=B*A</code>, in cazul <code>'^'</code> nu este neaparat adevarat ca <code>A^B=B^A</code> (decat in unele cazuri speciale). O alta particularitate a acestui operator este ordinea de aplicare in cazul absentei parantezelor: el este asociativ dreapta. De exemplu, <code>A^B^C^D</code> este echivalent cu <code>A^(B^(C^D))</code>. Rezultatul 1-expresiei <code>"(1+1)^(1+1)^(1+1+1)"</code> este <code>2^2^3=2^(2^3)=2^8=256</code> si nu <code>(2^2)^3=4^3=64</code>. Astfel, daca exista mai multi operatori <code>'^'</code> neseparati de paranteze, ordinea de efectuare a operatiilor este de la dreapta catre stanga. </li>
+<li>Operatorul cu prioritatea cea mai mare este <code>'!'</code> si realizeaza operatia "factorial". Rezultatul 1-expresiei <code>"(1+1+1)!"</code> este <code>3!=6</code>. Factorialul unui numar <code>X</code>, notat <code>X!</code>, este definit ca fiind <code>1*2*..*X</code>. Rezultatul 1-expresiei <code>"(1+1)*(1+1+1+1)!^(1+1+1)!!"</code> este <code>2*4!^3!!=2*(4!)^(3!!)=2*(4!)^((3!)!)=2*24^(6!)=2*(24^720)</code> (rezultatul este un numar prea mare pentru a fi afisat aici).</li>
+</ul><p>Lungimea unei 1-expresii este definita ca fiind egala cu numarul de caractere ale sirului ce reprezinta 1-expresia. Lungimea 1-expresiei <code>"(1+1)!^(1+1)*(1+1)+1"</code> este 20. Tema pe care a primit-o Gigel la scoala este urmatoarea: dandu-se un numar <code>N</code>, gasiti o 1-expresie de lungime minima al carei rezultat sa fie egal cu <code>N</code>. Ajutati-l pe Gigel sa isi rezolve tema.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>1expr.in</var> contine numarul intreg <var>T</var>. Pe urmatoarele <var>T</var> linii se afla cate un numar intreg <var>N</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>In fisierul de iesire <var>1expr.out</var> veti afisa <var>T</var> linii. Pe a <var>K</var>-a linie veti afisa o 1-expresie de lugime minima al carei rezultat este egal cu al <var>K</var>-lea numar dintre cele <var>T</var> date in fisierul de intrare. Daca exista mai multe 1-expresii de lungime minima, puteti afisa oricare dintre ele.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 100</var></li>
+<li><var>1 ≤ N ≤ 3<sup>8</sup></var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>1expr.in</th><th>1expr.out</th></tr><tr><td>3 <br>
+ 1<br>
+ 3<br>
+ 200<br></td><td>1 <br>
+ 1+1+1 <br>
+ (1+1)^(1+1+1)*(1+(1+1+1+1)!)</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

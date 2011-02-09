@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>suma3.in, suma3.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil 2008, clasa a 9-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=159">Clara Ionescu</a>, <a href="/cauta-probleme?tag_id%5B%5D=140">Csaba Patcas</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=suma3">Vezi solutiile trimise</a></p>
+
+<h1>Suma3<br></h1>
+
+<p>Pe o foaie cu patratele avem delimitat un dreptunghi. Pe fiecare patratel din interiorul dreptunghiului delimitat este scris un singur numar natural. Exact jumatate din numere sunt egale cu <var>0</var>, iar restul numerelor sunt distincte. Ne propunem sa cream un traseu pe caroiajul din interiorul dreptunghiului parcurgand toate numerele diferite de <var>0</var> astfel incat pe traseu fiecare numar sa apara o singura data. Parcurgerea numerelor se realizeaza trecand de la un numar la unul dintre numerele cu care se invecineaza in caroiaj pe linie, pe coloana sau pe diagonala. Definim suma traseului ca fiind egala cu suma produselor de forma <var>k * a<sub>i,j</sub></var>, unde <var>k</var> este numarul de ordine al numarului in ordinea parcurgerii, iar <var>a<sub>i,j</sub></var> este numarul curent in traseu. </p>
+
+<p><img src="http://infoarena.ro/problema/suma3?action=download&amp;file=formula.bmp&amp;safe_only=true" alt=""></p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati traseul avand suma minima, precum si aceasta suma. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>suma3.in</var> se afla doua numere naturale, <var>M</var> si <var>N</var>, reprezentand dimensiunile dreptunghiului (acesta va avea <var>M</var> linii si <var>N</var> coloane). Pe urmatoarele <var>M</var> linii sunt scrise cate <var>N</var> numere naturale separate prin cel putin un spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>suma3.out</var> se va scrie un numar natural, reprezentand suma traseului minim. Pe a doua linie se va descrie traseul minim, adica toate numerele diferite de <var>0</var> din caroiaj, in ordinea in care au fost introduse in suma. Numerele se vor separa prin cel putin un spatiu.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ M, N ≤ 8</var></li>
+<li><var>M * N</var> va fi intotdeauna numar par</li>
+<li><var>0 ≤ nr<sub>i,j</sub> ≤ 100</var>, pentru orice <var>i</var> intre <var>1</var> si <var>M</var>, <var>j</var> intre <var>1</var> si <var>N</var></li>
+<li>Intotdeauna va fi posibil sa se parcurga toate numerele</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>suma3.in</th><th>suma3.out</th></tr><tr><td>3 4<br>
+1 0 10 0<br>
+4 3 0 8<br>
+0 0 2 0<br></td><td>70<br>
+10 8 2 3 4 1<br></td></tr></table><h3>Explicatie</h3>
+
+<p><var>1 * 10 + 2 * 8 + 3 * 2 + 4 * 3 + 5 * 4 + 6 * 1 = 10 + 16 + 6 + 12 + 20 + 6 = 70</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

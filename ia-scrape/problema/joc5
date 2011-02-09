@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>joc5.in, joc5.out</td><td><strong>Sursă</strong></td><td>ONI 2007, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=152">Tiberiu-Lucian Florea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=joc5">Vezi solutiile trimise</a></p>
+
+<h1>Joc5<br></h1>
+
+<p>Gica si Petrica locuiesc in Orasul Vesel. Acolo exista o retea stradala care contine doar strazi cu sens unic iar pentru a te deplasa intre doua intersectii trebuie sa platesti o taxa specifica fiecarei intersectii si fiecarei strazi prin care treci (inclusiv intersectia din care pleci si intersectia in care ajungi). Aceste taxe nu deranjeaza insa pe nimeni, deoarece sunt valori monetare naturale intre <var>0</var> si <var>10</var>. Pe cei doi nu ii intereseaza harta propriu-zisa a Orasului, insa au gasit tabelul sumelor minime pe care trebuie sa le plateasca pentru a se plimba intre oricare doua intersectii si s-au gandit sa-l foloseasca pentru a juca un joc interesant (Aceasta matrice contine numai valori finite).</p>
+
+<p>Astfel, avand matricea <var>A</var> in care <var>A<sub>i,j</sub></var> reprezinta costul minim pentru a ajunge din intersectia <var>i</var> in intersectia <var>j</var> (<var>A<sub>i,i</sub></var> este taxa care trebuie platita in nodul <var>i</var>), fiecare dintre cei doi muta alternativ, dupa cum urmeaza: jucatorul aflat la mutare isi alege un numar natural strict pozitiv <var>k</var>, si scade <var>k</var> din toate elementele unei linii sau coloane ale matricei, cu conditia ca toate elementele matricei sa ramana nenegative. Gica muta primul, iar jucatorul care, atunci cand ii vine randul, nu mai poate efectua o mutare corecta, pierde. Se considera ca cei doi prieteni joaca perfect, insemnand ca daca unul dintre ei are la un moment dat o strategie de castig indiferent de mutarile adversarului, nu va efectua o mutare care sa duca la pierderea oricarei strategii de castig.</p>
+
+<h2>Cerinta</h2>
+
+<p>Dandu-se matricea <var>A</var> cu semnificatia din enunt, aflati care dintre cei doi este castigatorul jocului.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul <var>joc5.in</var> contine intre <var>1</var> si <var>20</var> de seturi de date de intrare. Pe prima linie a fiecarui set se afla un numar natural pozitiv <var>N</var> reprezentand dimensiunile matricei <var>A</var>, iar pe urmatoarele <var>N</var> linii se afla cate N numere naturale, reprezentand elementele matricei <var>A</var>. <var>N = 0</var> marcheaza sfarsitul seturilor de date ce compun fisierul de intrare.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>joc5.out</var> va contine un numar de linii egal cu numarul de seturi de date. Pe fiecare dintre aceste linii se afla una dintre valorile: <var>1</var> in cazul in care jocul respectiv este castigat de Gica, <var>2</var> in cazul in care jocul respectiv este castigat de Petrica.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ numarul testelor ≤ 20</var></li>
+<li><var>2 ≤ N ≤ 100</var></li>
+<li>Rezolvarea corecta a testelor ce contin cel mult <var>10</var> seturi de date cu <var>N ≤ 5</var> garanteaza obtinerea a <var>50%</var> din punctaj.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>joc5.in</th><th>joc5.out</th></tr><tr><td>2<br>
+8 25<br>
+25 9<br>
+2<br>
+3 8<br>
+9 3<br>
+0<br></td><td>1<br>
+2<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

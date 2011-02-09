@@ -1,0 +1,46 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>eq.in, eq.out</td><td><strong>Sursă</strong></td><td>Autumn Warmup 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=169">Vlad Berteanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=eq">Vezi solutiile trimise</a></p>
+
+<h1>Easy Query<br></h1>
+
+<p>Se considera un sir de <var>N</var> numere naturale, <var>x<sub>1</sub>, x<sub>2</sub>, ... x<sub>N</sub></var>. Se defineste urmatoarea operatie:</p>
+
+
+<ul><li>pentru o pereche <var>i,j</var>, <var>1 ≤ i ≤ j ≤ N</var>, se considera secventa <var>x<sub>i</sub>, x<sub>i+1</sub>, ... x<sub>j</sub></var></li>
+<li>se construiesc doua siruri corespunzatoare secventei date, astfel:
+<ul><li><var>y<sub>t</sub> = x<sub>t</sub> - x<sub>k</sub> + x<sub>p</sub></var>, <var>i ≤ t ≤ j</var>, <var>t ≤ k ≤ j</var>, <var>t ≤ p ≤ j</var>, unde <var>y<sub>t</sub></var> este maxim</li>
+<li><var>z<sub>t</sub> = x<sub>t</sub> - x<sub>k</sub> + x<sub>p</sub></var>, <var>i ≤ t ≤ j</var>, <var>t ≤ k ≤ j</var>, <var>t ≤ p ≤ j</var>, unde <var>z<sub>t</sub></var> este minim</li>
+</ul></li>
+<li>se calculeaza valoarea <var>P = max(y) + min(z)</var>, unde <var>max(y)</var> este maximul din sirul <var>y</var> construit ca mai sus, iar <var>min(z)</var> minimul din sirul <var>z</var>.</li>
+</ul><h2>Cerinta</h2>
+
+<p>Dandu-se sirul initial, sa se raspunda la un set de mai multe operatii.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>eq.in</var> se gasesc doua numere <var>N</var> si <var>M</var> reprezentand numarul de elemente ale sirului <var>x</var>, respectiv numarul operatiilor pentru care se doreste determinarea valorii <var>P</var>. Pe urmatoarea linie se afla elementele sirului <var>x</var> separate prin cate un caracter spatiu. Urmatoarele <var>M</var> linii contin subsecventele definite prin doi intregi <var>i</var> si <var>j</var> separati prin spatiu reprezentand pozitia de inceput, respective pozitia de sfarsit a subsecventei.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>eq.out</var> contine valorile P pentru fiecare subsecventa data, cate una pe linie, in ordinea aparitiei acestora in fisierul de intrare.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 &lt; N ≤ 100 001</var></li>
+<li><var>1 &lt; M ≤ 130 001</var></li>
+<li><var>0 ≤ x<sub>i</sub> ≤ 2<sup>24</sup></var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>eq.in</th><th>eq.out</th></tr><tr><td>6 3<br>
+1 8 10 5 9 3<br>
+1 4<br>
+2 6<br>
+3 5<br></td><td>7<br>
+16<br>
+16</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

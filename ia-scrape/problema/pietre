@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>pietre.in, pietre.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=118">Stefan Gheorghe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=pietre">Vezi solutiile trimise</a></p>
+
+<h1>Pietre<br></h1>
+
+<p>Macarie si Petronela joaca un joc foarte interesant care, spera ei, le va dezvolta inteligenta si mai mult. Astfel ei au in fata doua gramezi de pietre (cu <var>A</var> respectiv <var>B</var> pietre fiecare). Jocul se desfasoara alternativ (Macarie incepe), iar la un moment dat un jucator poate lua un numar oarecare de pietre dintr-o gramada sau poate lua acelasi numar de pietre din ambele gramezi. Pierde cel care nu mai poate lua pietre.</p>
+
+<h2>Cerinta</h2>
+
+<p>Va trebui sa aflati castigatorul pentru <var>T</var> jocuri stiind ca mereu Macarie incepe jocul.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului <var>pietre.in</var> contine numarul <var>T</var> de teste. Urmatoarele <var>T</var> linii contin cate 2 numere intregi <var>A</var> si <var>B</var> seperate prin cate un spatiu care descriu numarul de pietre din cele doua gramezi.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul <var>pietre.out</var> va contine <var>T</var> linii corespunzatoare celor <var>T</var> teste cu valoarea <var>1</var> daca la testul respectiv castiga Macarie si <var>2</var> daca invinge Petronela.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ A, B ≤ 1.000.000</var></li>
+<li><var>1 ≤ T ≤ 10</var></li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>pietre.in</th><th>pietre.out</th></tr><tr><td>2 <br>
+1 2<br>
+2 3</td><td>2<br>
+1</td></tr></table><h3>Explicatii</h3>
+
+<p>In primul test Macarie poate lua <var>1</var> piatra din oricare gramada, <var>2</var> pietre din a doua gramada sau o piatra din ambele gramezi, in toate cazurile Petronela putand lua toate pietrele ramase castigand jocul.<br>
+In testul <var>2</var> Macarie castiga luand <var>2</var> pietre din a doua gramada si Petronela va pierde conform acelorasi considerente de la exemplul <var>1</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=60">Teoria jocurilor</a></span>
+            <a href="javascript:show_tag_list(60)" id="tag_anchor_60" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_60"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=78">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

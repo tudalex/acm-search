@@ -1,0 +1,51 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>autostrazi.in, autostrazi.out</td><td><strong>Sursă</strong></td><td>Lot Alba Iulia 2010, Baraj 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=162">Constantin Galatan</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mathboy"><img src="/utilizator/mathboy?action=download&amp;file=avatar&amp;resize=L16x16" alt="mathboy">Dragos-Alin Rotaru</a> <a title="Rating mathboy: 510" class="rating-badge-3" href="http://infoarena.ro/utilizator/mathboy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mathboy">mathboy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.7 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=autostrazi">Vezi solutiile trimise</a></p>
+
+<h1>Autostrazi<br></h1>
+
+<p>Într-o ţară care-şi caută drumul spre bunăstare şi civilizaţie, există <var>N</var> oraşe, numerotate de la <var>1</var> la <var>N</var>, legateîntre ele prin <var>N – 1</var> şosele bidirecţionale. Între oricare două oraşe există cel mult o singură şosea. Fiecare şosea uneşte două oraşe distincte. Se poate călători între oricare două oraşe, circulând numai pe şosele. Din păcate, nu există autostrăzi. Nu există nici bani pentru construirea autostrăzilor. Din acest motiv, politica statului este de a concesiona şoselele celor <var>K</var> „regi ai asfaltului”. Aceştia vor construi autostrăzi pe cheltuiala lor, având apoi dreptul de a impune taxe de trecere pe autostradă, exprimate în euro. Fiecare autostradă astfel construită va înlocui una dintre şosele.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Scrieţi un program care calculează numărul de moduri modulo <var>30011</var> în care se pot concesiona şoselele, astfel încât pentru niciun vehicul care se deplasează între oricare două orase ale ţării mergând pe şosele şi autostrăzi să nu se depăşească un total al taxelor mai mare decât <var>S</var> euro.</p>
+
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare <var>autostrazi.in</var> se află trei numere întregi <var>N</var>, <var>S</var> si <var>K</var> separate printr-un singur spaţiu, cu semnificaţia din enunţ. Pe linia următoare se află <var>K</var> numere naturale, <var>R<sub>1</sub>, R<sub>2</sub>, .. R<sub>k</sub></var>, nu neapărat distincte, separate printr-un singur spaţiu, reprezentând taxele percepute de regii asfaltului. Pe următoarele <var>N – 1</var> linii se găsesc câte două numere naturale distincte <var>x</var> şi <var>y</var> separate printr-un singur spaţiu<br>
+reprezentând o şosea care leagă oraşul <var>x</var> de oraşul <var>y</var>.</p>
+
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>autostrazi.out</var> se află un singur număr natural <var>M</var>, reprezentând numărul de posibilităţi modulo <var>30011</var> în care poate fi construită reţeaua de autostrăzi, astfel încat suma taxelor plătite într-o călătorie între oricare două oraşe să nu depăşească <var>S</var> euro.</p>
+
+
+<h2>Restricţii şi precizări</h2>
+
+
+<ul><li><var>1 ≤ x, y ≤ N ≤ 100</var></li>
+<li><var>1 ≤ K ≤ 20</var></li>
+<li><var>1 ≤ S ≤ 100</var></li>
+<li><var>1 ≤ R<sub>1</sub>, R<sub>2</sub>, .. R<sub>k</sub> ≤ 100</var></li>
+<li>Regele <var>i</var> al asfaltului impune aceeaşi taxă <var>R<sub>i</sub></var> pentru fiecare autostradă constuită de el şi poate construi zero, una sau maxim <var>N – 1</var> autostrăzi.</li>
+<li>O şosea se concesionează în întregime unui singur constructor sau poate să nu fie concesionată deloc. În acest caz nu există taxă de trecere.</li>
+<li>Este admis cazul în care nu se concesionează nicio şosea.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>autostrazi.in</th><th>autostrazi.out</th></tr><tr><td>4 2 2<br>
+2 1<br>
+1 2<br>
+2 3<br>
+4 2<br></td><td>11<br></td></tr></table><h3>Explicaţie</h3>
+
+
+<ul><li>Taxele: <var>2</var> si <var>1</var>. </li>
+<li>Şoselele : <var>2 1, 2 3, 2 4</var></li>
+<li>Variantele de taxare: <var>(0 0 0)</var> <var>, (1 0 0), (0 1 0), (0 0 1), (1 1 0), (0 1 1), (1 0 1), (1 1 1), (2 0 0), (0 2 0), (0 0 2)</var></li>
+</ul><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

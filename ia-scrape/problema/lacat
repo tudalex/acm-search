@@ -1,0 +1,56 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>lacat.in, lacat.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil 2008, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=159">Clara Ionescu</a>, <a href="/cauta-probleme?tag_id%5B%5D=140">Csaba Patcas</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/wefgef"><img src="/utilizator/wefgef?action=download&amp;file=avatar&amp;resize=L16x16" alt="wefgef">Andrei Grigorean</a> <a title="Rating wefgef: 783" class="rating-badge-4" href="http://infoarena.ro/utilizator/wefgef?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/wefgef">wefgef</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.2 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=lacat">Vezi solutiile trimise</a></p>
+
+<h1>Lacat<br></h1>
+
+<p><em>Lacatul dracului</em> este o jucarie veche chinezeasca. Este format din inele de metal, montate pe cate o coada de lemn, astfel incat coada unui inel trece prin inelul urmator. Atunci cand lacatul este inchis, cozile sunt blocate intr-un suport de lemn de forma ovala.</p>
+
+<p><img src="http://infoarena.ro/problema/lacat?action=download&amp;file=moisil.jpg&amp;resize=70%25" alt=""></p>
+
+<p>Lacatul trebuie deschis, adica inelele trebuie desprinse din acest suport oval (trebuie date jos). Inelele sunt numerotate de la stanga la dreapta cu numere de la <var>1</var> la <var>N</var>. Intr-un pas se poate elibera sau pune la loc un singur inel, respectand urmatoarele reguli:</p>
+
+
+<ol><li>Primul inel poate fi eliberat sau pus la loc oricand.</li>
+<li>Fiecare inel, avand numarul de ordine <var><em>i</em> &gt; 1</var> poate fi eliberat sau pus la loc atunci si numai atunci cand inelul avand numarul de ordine <var><em>i-1</em></var> se afla prins in suportul oval (este sus) si toate inele avand numarul de ordine mai mic decat <var><em>i-1</em></var> sunt eliberate (sunt jos).</li>
+</ol><p>Lacatul este deschis daca toate inelele sunt eliberate (sunt jos).</p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati numarul minim de pasi necesari pentru a deschide lacatul si precizati acesti pasi! Un pas consta in eliberarea unui singur inel, respectiv in punerea la loc a unui singur inel.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>lacat.in</var> se afla un numar natural <var>N</var>, reprezentand numarul inelelor.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>lacat.out</var> se va scrie un numar natural, reprezentand numarul minim de pasi necesari pentru a deschide lacatul. Incepand cu a doua linie, pe urmatoarele linii ale fisierului de iesire se vor descrie pasii care conduc la deschiderea lacatului:</p>
+
+
+<ul><li>Corespunzator desprinderii celui de-al <var><em>i</em></var>-lea inel, in fisier se va scrie litera <var>'J'</var>, urmata de <var><em>i</em></var>.</li>
+<li>Corespunzator punerii la loc celui de-al <var><em>i</em></var>-lea inel, in fisier se va scrie litera <var>'S'</var>, urmata de <var><em>i</em></var>.</li>
+</ul><h2>Restrictii</h2>
+
+
+<ul><li><var>2 &lt; N ≤ 22</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>lacat.in</th><th>lacat.out</th></tr><tr><td>3<br></td><td>5<br>
+  J1<br>
+  J3<br>
+  S1<br>
+  J2<br>
+  J1<br></td></tr></table><h3>Explicatie</h3>
+
+
+<ul><li>Jos <var>1</var> (primul inel oricand se poate elibera)</li>
+<li>Jos <var>3</var> (inelul <var>3</var> se poate elibera, deoarece <var>1</var> este jos si <var>2</var> este sus)</li>
+<li>Sus <var>1</var> (primul inel oricand se poate pune sus; avem nevoie de el sus pentru a elibera inelul <var>2</var>)</li>
+<li>Jos <var>2</var> (acum inelul <var>2</var> poate fi eliberat)</li>
+<li>Jos <var>1</var> (putem sa eliberam si inelul <var>1</var>)</li>
+</ul><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

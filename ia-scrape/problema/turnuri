@@ -1,0 +1,36 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>turnuri.in, turnuri.out</td><td><strong>Sursă</strong></td><td>Lot 2008 - Piatra Neamt, Baraj3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=161">Adrian Airinei</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=turnuri">Vezi solutiile trimise</a></p>
+
+<h1>Turnuri<br></h1>
+
+<p>Andreea si Ioana au <var>N</var> turnuri de diferite inaltimi. Ele aseaza turnurile pe masa, in linie dreapta si numeroteaza turnurile de la <var>1</var> la <var>N</var> de la cel mai din stanga la cel mai din dreapta. Cele doua fete plaseaza apoi in fiecare turn cate un soldatel de jucarie. Soldatelul din turnul <var>i</var> poate vedea orice turn <var>j</var> aflat in stanga sa <var>(j&lt;i)</var> daca intre cele doua turnuri nu exista un turn <var>k</var> <var>(j&lt;k&lt;i)</var> astfel incat turnul <var>k</var> are o inaltime strict mai mare decat turnul <var>i</var>. Definim vizibilitatea totala a soldateilor ca fiind suma numarului de turnuri pe care le vede fiecare soldatel. Pentru fiecare turn <var>i</var> <var>(1≤i≤N)</var> cele doua fete se intreaba care ar fi vizibilitatea totala a soldateilor daca ar elimina de pe masa turnul <var>i</var>. Determinati suma vizibilitatilor totale ale soldateilor ce se obtin eliminand pe rand fiecare dintre cele <var>N</var> turnuri.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>turnuri.in</var> va contine numarul natural <var>N</var>, reprezentand numarul de turnuri. Urmeaza <var>N</var> linii, pe linia <var>i+1</var> aflandu-se inaltimea turnului <var>i</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>turnuri.out</var> va contine o singura linie pe care va fi scrisa suma vizibilitatilor totale ale soldateilor, vizibilitati totale ce se obtin eliminand pe rand fiecare dintre cele <var>N</var> turnuri.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1 000 000</var></li>
+<li>Inaltimile turnurilor sunt numere naturale din intervalul <var>[1,2 000 000 000]</var> si sunt distincte doua cate doua</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>turnuri.in</th><th>turnuri.out</th></tr><tr><td>4<br>
+ 7<br>
+ 10<br>
+ 2<br>
+ 5<br></td><td>10<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Daca eliminam turnul <var>1</var> se obtine sirul de turnuri <var>10, 2, 5</var>. Vizibilitatea soldatelului din turnul cu inaltimea <var>2</var> este <var>1</var>, iar vizibilitatea celui din turnul cu intaltimea <var>5</var> este <var>2</var>. Suma vibilitatilor totale obtinute prin eliminarea turnului <var>1</var>, <var>2</var>, <var>3</var>, respectiv <var>4</var> este <var>3+3+2+2=10</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

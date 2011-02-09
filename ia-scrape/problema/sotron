@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>sotron.in, sotron.out</td><td><strong>Sursă</strong></td><td>ONI 2007, clasa 9</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=185">Cristina Barbieru</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=sotron">Vezi solutiile trimise</a></p>
+
+<h1>Sotron<br></h1>
+
+<p>Pe asfalt este desenat cu creta un sotron, caroiaj format din <var>n*n</var> casute avand aceleasi dimensiuni (cate <var>n</var> casute pe fiecare din cele <var>n</var> randuri). In fiecare casuta este scris cate un numar intreg. Fiecare jucator are cate o piatra pe care o arunca intr-o casuta a sotronului, si sarind intr-un picior, impinge piatra din casuta in casuta, pe un anumit traseu astfel incat punctajul obtinut din suma numerelor de pe traseul parcurs sa fie cat mai mare.<br>
+Numerele din casutele sotronului sunt scrise cu doua culori albastru si alb, astfel incat sa nu existe doua casute alaturate (pe cele patru directii Nord, Est, Sud, Vest) avand numere scrise cu aceeasi culoare. Intotdeauna, prima casuta din primul rand al sotronului are inscris un numar de culoare albastra.</p>
+
+<p>Se stabilesc apoi, urmatoarele reguli ale jocului: </p>
+
+
+<ul><li>la inceputul jocului, piatra poate fi aruncata in oricare casuta a sotronului. Din pozitia respectiva jucatorul isi conduce piatra pana la sfarsitul traseului stabilit de el;</li>
+<li>dintr-o casuta in care numarul este scris cu albastru, piatra poate fi deplasata doar in casuta vecina pe directia Nord;</li>
+<li>dintr-o casuta in care numarul este scris cu alb, piatra poate fi deplasata doar in casuta vecina pe directia Est;</li>
+<li>jucatorul poate alege orice casuta (inclusiv cea in care a aruncat piatra) pentru a incheia jocul, atata timp cat piatra nu iese din sotron</li>
+</ul><h2>Cerinta</h2>
+
+<p>Sa se scrie un program care sa determine cel mai mare punctaj care se poate obtine jucand sotron dupa regulile stabilite.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>sotron.in</var> are pe prima linie dimensiunea <var>n</var> a sotronului, iar pe urmatoarele <var>n</var> linii cate <var>n</var> numere separate de cate un spatiu, reprezentand numerele scrise in sotron.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>sotron.out</var> va contine pe prima linie un singur numar reprezentand punctajul maxim care se poate obtine jucand sotron.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ n ≤ 240</var></li>
+<li>numerele din fiecare casuta sunt intregi cuprinse in intervalul [<var>-100, 100</var>].</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>sotron.in</th><th>sotron.out</th></tr><tr><td>5<br>
+0 -6 -5 -17 2<br>
+1 -4 7 10 5<br>
+-3 -2 3 -8 -8<br>
+-20 3 5 3 -5<br>
+-10 -15 2 2 -4<br></td><td>21<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Punctajul obtinut este <var>3+(-2)+3+7+10=21</var><br><img src="http://infoarena.ro/problema/sotron?action=download&amp;file=sotron.gif&amp;safe_only=true" alt="">  </p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

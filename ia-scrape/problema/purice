@@ -1,0 +1,67 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>purice.in, purice.out</td><td><strong>Sursă</strong></td><td>Lot 2003</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=purice">Vezi solutiile trimise</a></p>
+
+<h1>Purice<br></h1>
+
+<p>Un purice se afla pe o tabla liniara impartita in <var>N</var> pozitii numerotate de la <var>1</var> la <var>N</var>, oricare doua pozitii alaturate avand numere de ordine consecutive. O parte dintre aceste pozitii sunt libere, iar in fiecare dintre celelalte pozitii se afla cate un cubulet de zahar. Initial, puricele se afla pe pozitia <var>1</var> (cea mai din stanga) si doreste sa ajunga pe pozitia <var>N</var> (cea mai din dreapta). Pentru a-si atinge scopul, puricele poate executa urmatoarele miscari:</p>
+
+
+<ul><li><strong>deplasare la dreapta</strong>: Presupunand ca puricele se afla pe pozitia <var>x</var>, atunci el se poate deplasa pe pozitia <var>x+1</var>, daca aceasta este libera, consumand o cantitate de energie <var>W</var>.</li>
+<li><strong>deplasare la stanga</strong>: Presupunand ca puricele se afla pe pozitia <var>x</var>, atunci el se poate deplasa pe pozitia <var>x-1</var>, daca aceasta este libera, consumand o cantitate de energie <var>W</var>.</li>
+<li><strong>salt la dreapta</strong>: Pentru a putea sari, puricele trebuie sa isi ia avant. Astfel, daca ultimele <var>K</var> <var>(K ≥ 1)</var> miscari ale sale au fost toate deplasari la dreapta, atunci puricele poate sari intre <var>1</var> si <var>K+1</var> pozitii. Presupunand ca pozitia sa este <var>x</var>, dupa un salt la dreapta de <var>Q</var> pozitii, puricele se va afla pe pozitia <var>x + Q</var>. Aceasta pozitie trebuie sa fie libera. Indiferent de numarul de pozitii peste care sare, puricele consuma o cantitate de energie <var>J</var>.</li>
+<li><strong>salt la stanga</strong>: Daca ultimele <var>K</var> <var>(K ≥ 1)</var> miscari ale puricelui au fost toate deplasari la stanga, atunci el poate sari intre <var>1</var> si <var>K+1</var> pozitii. Presupunand ca pozitia sa este <var>x</var>, dupa un salt la stanga de <var>Q</var> pozitii, puricele se va afla pe pozitia <var>x - Q</var>. Aceasta pozitie trebuie sa fie libera. Indiferent de numarul de pozitii peste care sare, puricele consuma o cantitate de energie <var>J</var>.</li>
+<li><strong>impingere la dreapta</strong>: Presupunem ca puricele se afla pe pozitia <var>x</var>. Daca pozitia <var>x + 1</var> contine un cub de zahar, atunci puricele poate impinge acest cub o pozitie la dreapta. In urma executarii acestei operatii, toate cuburile de pe pozitiile <var>x + 1, x + 2, ..., x + K - 1</var>, unde <var>x + K</var> este prima pozitie libera din dreapta puricelui, se vor deplasa cu o pozitie la dreapta. Daca nu exista nici o pozitie libera la dreapta puricelui, atunci operatia nu este permisa. Pentru o impingere, puricele consuma o cantitate de energie <var>P</var>. In urma operatiei de impingere la dreapta, noua pozitie a puricelui va fi <var>x + 1</var>.</li>
+<li><strong>impingere la stanga</strong>: Presupunem ca puricele se afla pe pozitia <var>x</var>. Daca pozitia <var>x - 1</var> contine un cub de zahar, atunci puricele poate impinge acest cub o pozitie la stanga. In urma executarii acestei operatii, toate cuburile de pe pozitiile <var>x - 1, x - 2, ..., x - K + 1</var>, unde <var>x - K</var> este prima pozitie libera din stanga puricelui, se vor deplasa o pozitie la stanga. Daca nu exista nici o pozitie libera la stanga puricelui, atunci operatia nu este permisa. Pentru o impingere, puricele consuma o cantitate de energie <var>P</var>. In urma operatiei de impingere la stanga, noua pozitie a puricelui va fi <var>x - 1</var>.</li>
+</ul><p>Scrieti un program care determina cantitatea minima de energie pe care o va consuma puricele pentru a ajunge pe pozitia <var>N</var>, precum si o secventa de miscari ale acestuia.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>purice.in</var> se afla 4 numere intregi <var>N W J P</var> (avand semnificatiile descrise mai sus). Pe cea de a doua linie a fisierului se afla o secventa de <var>N</var> caractere din multimea <var>{0,1}</var>, ce descriu cele <var>N</var> pozitii: <var>0</var> inseamna ca pozitia respectiva este libera, iar <var>1</var> ca este ocupata de un cub de zahar.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>purice.out</var> veti afisa cantitatea minima de energie necesara puricelui pentru a ajunge pe pozitia <var>N</var>. Pe urmatoarele linii veti descrie miscarile efectuate de catre purice (cate o miscare pe linie). Miscarile vor fi codificate astfel:</p>
+
+
+<ul><li><var>"WR"</var> - pentru o deplasare la dreapta</li>
+<li><var>"WL"</var> - pentru o deplasare la stanga</li>
+<li><var>"JR" K</var> - pentru un salt la dreapta; dupa sirul <var>JR</var> urmeaza un spatiu si apoi un intreg <var>K</var> <var>(K ≥ 1)</var>, reprezentand numarul de pozitii pe care le va sari puricele (in urma acestei operatii, pozitia puricelui va creste cu K unitati)</li>
+<li><var>"JL" K</var> - pentru un salt la stanga; dupa sirul <var>JL</var> urmeaza un spatiu si apoi un intreg <var>K</var> <var>(K ≥ 1)</var>, reprezentand numarul de pozitii pe care le va sari puricele (in urma acestei operatii, pozitia puricelui va scadea cu <var>K</var> unitati)</li>
+<li><var>"PR"</var> - pentru o impingere la dreapta</li>
+<li><var>"PL"</var> - pentru o impingere la stanga</li>
+</ul><h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 100</var></li>
+<li><var>0 ≤ W, J, P ≤ 100 000</var></li>
+<li>Pozitia puricelui va trebui sa fie intotdeauna in intervalul <var>1..N</var>.</li>
+<li>Initial, pozitiile <var>1</var> si <var>N</var> sunt libere.</li>
+<li>In cazul testelor folosite, va exista cel putin o succesiune valida de miscari ale puricelui care sa il aduca de pe pozitia <var>1</var> pe pozitia <var>N</var>.</li>
+<li>La evaluare se vor folosi <var>20</var> de teste. Punctajul pentru fiecare test se acorda in felul urmator:
+<ul><li>Daca succesiunea de miscari descrisa in fisierul de iesire nu este valida sau, in urma executarii ei, puricele nu ajunge pe pozitia <var>N</var> sau cantitatea de energie consumata de purice in urma executarii tuturor miscarilor nu este egala cu numarul scris pe prima linie a fisierului de iesire, veti primi <var>0</var> puncte</li>
+<li>Altfel, sa presupunem ca <var>M</var> este cantitatea minima de energie consumata de purice pentru a ajunge in pozitia finala si <var>A</var> este cantitatea de energie determinata de programul dumneavoastra
+<ul><li>Daca <var>A = M</var>, veti primi <var>5</var> puncte</li>
+<li>Daca <var>M &lt; A ≤ 1.15*M</var>, veti primi <var>4</var> puncte</li>
+<li>Daca <var>1.15*M &lt; A ≤ 1.5*M</var>, veti primi <var>3</var> puncte</li>
+<li>Daca <var>1.5*M &lt; A ≤ 2*M</var>, veti primi <var>2</var> puncte</li>
+<li>Daca <var>A &gt; 2*M</var>, veti primi <var>1</var> punct</li>
+</ul></li>
+</ul></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>purice.in</th><th>purice.out</th></tr><tr><td>8 2 2 3<br>
+00110010<br></td><td>20<br>
+WR<br>
+PR<br>
+PR<br>
+WL<br>
+JL 2<br>
+WR<br>
+WR<br>
+WR<br>
+JR 4<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

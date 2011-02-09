@@ -1,0 +1,43 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>shgraf.in, shgraf.out</td><td><strong>Sursă</strong></td><td>Lot Iasi 2008, Baraj 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=shgraf">Vezi solutiile trimise</a></p>
+
+<h1>Shgraf<br></h1>
+
+<p>Miruna a devenit de curând fascinată de grafuri. Mirunei i-au plăcut grafurile atât de tare, încât s-a decis să inventeze o nouă proprietate a lor. Astfel, ea consideră că un graf neorientat simplu are proprietatea de <var>„SHGRAF”</var> dacă şi numai dacă se respectă una dintre următoarele două cerinţe:</p>
+
+
+<ul><li>Este un graf conex în care numărul de noduri este egal cu numărul de muchii.</li>
+<li>Nu este un graf conex, dar fiecare componentă conexă a sa are proprietatea de <var>„SHGRAF”</var>.</li>
+</ul><p>Prietena cea mai bună a Mirunei, A. Irina, este o fire foarte curioasă. Ea s-a gândit la două numere naturale <var>N</var> şi <var>K</var>, iar acum o întreabă pe Miruna câte grafuri etichetate cu <var>N</var> noduri şi cu proprietatea de <var>„SHGRAF”</var> există, astfel încât orice ciclu din graf are lungimea mai mare sau egală decât <var>K</var>.</p>
+
+<h2>Cerinţa</h2>
+
+<p>Ajutaţi-o pe Miruna să răspundă provocării A. Irinei, scriind un program care sa afişeze numărul căutat modulo <var>30011</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>shgraf.in</var> conţine pe prima linie două numere naturale <var>N</var> şi <var>K</var>, având semnificaţia din enunţ.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>shgraf.out</var> va conţine o singură linie pe care va fi afişat un număr întreg, reprezentând numărul total de grafuri etichetate cu <var>N</var> noduri, fără cicluri de lungime mai mică decât <var>K</var> şi care au proprietatea de <var>„SHGRAF”</var>, modulo <var>30011</var>.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 250</var></li>
+<li><var>3 ≤ K ≤ N</var></li>
+<li>Pentru <var>40%</var> din teste <var>3 ≤ N ≤ 50</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>shgraf.in</th><th>shgraf.out</th></tr><tr><td>3 3<br></td><td>1</td></tr><tr><td>50 10<br></td><td>20726<br></td></tr></table><h3>Explicaţie</h3>
+
+
+<ol><li>Singurul graf care respectă condiţiile impuse este ciclul elementar format din 3 noduri.</li>
+<li>Numărul de grafuri este prea mare pentru mai multe explicaţii, va trebui să ne credeţi pe cuvânt ;)</li>
+</ol><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

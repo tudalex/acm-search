@@ -1,0 +1,47 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>paritate.in, paritate.out</td><td><strong>Sursă</strong></td><td>OJI 2007, clasa a 9-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=186">Marinel Serban</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Florian"><img src="/utilizator/Florian?action=download&amp;file=avatar&amp;resize=L16x16" alt="Florian">Marcu Florian</a> <a title="Rating Florian: 667" class="rating-badge-1" href="http://infoarena.ro/utilizator/Florian?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Florian">Florian</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>1024 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=paritate">Vezi solutiile trimise</a></p>
+
+<h1>Paritate<br></h1>
+
+<p>In vederea asigurarii unei transmiteri cat mai exacte a informatiilor pe retea, transmiterea se efectueaza caracter cu caracter, fiecare caracter fiind dat prin codul sau <span class="caps">ASCII, </span>adica o grupa de <var>8</var> biti (octet). Pentru fiecare <var>8</var> biti transmisi se calculeaza un bit de paritate care are valoarea <var>0</var> (daca codul <span class="caps">ASCII </span>al caracterului contine un numar par de cifre binare <var>1</var>) sau <var>1</var> (in caz contrar). Deoarece in problema noastra se transmit numai caractere <span class="caps">ASCII </span>standard, cu codul <span class="caps">ASCII </span>din intervalul <var>[32,127]</var>, codul lor <span class="caps">ASCII </span>are bitul <var>7</var> (primul bit din stanga) egal cu <var>0</var>. Pe aceasta pozitie va fi pus bitul de paritate, economisind astfel cate un bit pentru fiecare caracter transmis. De exemplu, daca mesajul care trebuie trasmis contine caracterele "Paritate", succesiunea de biti transmisa va fi:<br><b>0</b>1010000 <b>1</b>1100001 <b>0</b>1110010 <b>0</b>1101001 <b>0</b>1110100 <b>1</b>1100001 <b>0</b>1110100 <b>0</b>1100101<br>
+In plus, pe langa caracterele amintite, in mesaj mai poate sa apara un caracterul special, caracter care indica trecerea la inceputul unui nou rand. Acest caracter are codul <span class="caps">ASCII </span><var>10</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se scrie un program care sa verifice daca un text a fost sau nu transmis corect.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>paritate.in</var> are pe prima linie o succesiune de caractere <var>'0'</var> si <var>'1'</var> care reprezinta mesajul transmis. Intre caractere nu exista spatii. Linia se termina cu caracterul marcaj de sfarsit de linie (newline).</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>paritate.out</var> are pe prima linie mesajul <var>DA</var> daca textul a fost transmis corect sau <var>NU</var> in caz contrar. In cazul in care mesajul de pe prima linie este <var>DA</var> liniile urmatoare vor contine textul transmis in clar. In cazul in care mesajul de pe prima linie este <var>NU</var> linia urmatoare va contine numerele de ordine ale caracterelor care nu au fost transmise corect, in ordine strict crescatoare, separate prin cate un spatiu. </p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>Cei <var>8</var> biti ai codului <span class="caps">ASCII </span>a unui caracter se numeroteaza de la <var>0</var> la <var>7</var>, de la dreapta la stanga, cel mai din stanga bit fiind bitul <var>7</var> iar cel mai din dreapta bitul <var>0</var>.</li>
+<li>Textul transmis are cel mult <var>60000</var> caractere.</li>
+<li>Numarul de caractere <var>'0'</var> si <var>'1'</var> din prima linie a fisierului de intrare este multiplu de <var>8</var>.</li>
+<li>Codurile <span class="caps">ASCII </span>ale caracterelor din text apartin multimii <var>{10, 32-127}</var>, codul <var>10</var> insemnand trecerea la inceputul unui rand nou.</li>
+<li>Nici o linie din fisierul de iesire nu va avea mai mult de <var>255</var> caractere.</li>
+<li>Caracterele din text sunt numerotate incepand de la <var>0</var>.</li>
+<li>Mesajele <var>DA/NU</var> din prima linie a fisierului de iesire se scriu cu majuscule. </li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>paritate.in</th><th>paritate.out</th></tr><tr><td>0101000011100001011100100110100101110100111000010111010001100101<br></td><td>DA<br>
+Paritate<br></td></tr><tr><td>1101000011100001111100100110100101110100111000010111010011100101<br></td><td>NU<br>
+0 2 7<br></td></tr><tr><td>010000011111101001101001000010100110010100001010011010100110111101101001<br></td><td>DA<br>
+Azi<br>
+e<br>
+joi<br></td></tr></table><h3>Explicatie</h3>
+
+<p>In primul exemplu toate codurile sunt corecte. In cel de-al doilea, primul caracter a fost transmis ca succesiune de biti <var>11010000</var> ceea ce inseamna ca fara bitul de paritate ar fi trebuit sa existe un numar impar de cifre <var>1</var>, ceea ce este fals. Deci caracterul nu a fost transmis corect. Acelasi lucru se verifica si pentru caracterele cu numerele de ordine <var>2</var> si <var>7</var>. In cel de-al treilea exemplu, toate codurile sunt transmise corect, existand doua caractere cu codul <span class="caps">ASCII </span><var>10</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

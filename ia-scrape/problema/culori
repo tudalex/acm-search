@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>culori.in, culori.out</td><td><strong>Sursă</strong></td><td>preONI 2007, Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=124">Adrian Vladu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/azotlichid"><img src="/utilizator/azotlichid?action=download&amp;file=avatar&amp;resize=L16x16" alt="azotlichid">Adrian Vladu</a> <a title="Rating azotlichid: 631" class="rating-badge-4" href="http://infoarena.ro/utilizator/azotlichid?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/azotlichid">azotlichid</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2.5 sec</td><td><strong>Limită de memorie</strong></td><td>16000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=culori">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=culori">Vezi solutiile trimise</a></p>
+
+<h1>Culori<br></h1>
+
+<p>Alice si Bob, doi renumiti montaniarzi care tocmai au iesit din sesiune, s-au hotarat sa isi petreaca vacanta in inima muntilor. Intr-o zi, explorand padurile din preajma, au descoperit o pestera despre care au presupus ca odinioara a apartinut unei colonii de maimute. Conform cunostintelor in domeniu, pestera este formata din <var>N</var> camere unite prin coridoare bidirectionale astfel incat intre oricare doua camere exista un singur drum. Mai mult, peretii fiecarei camere au fost vopsiti de catre maimute intr-o culoare notata cu un numar intreg intre <var>1</var> si <var>N</var>.</p>
+
+<p>Temerarii nostri doresc sa reconstituie harta pesterii. Pentru aceasta ei procedeaza in felul urmator: </p>
+
+
+<ul><li>initial Bob se afla in camera <var>#1</var> tinand mana stanga lipita de perete</li>
+<li>la fiecare pas, Bob isi noteaza culoarea camerei in care se afla, apoi - fara sa isi dezlipeasca mana stanga de pe perete - intra intr-o noua camera (care poate sa mai fi fost vizitata sau nu)</li>
+<li>Bob se opreste cand ajunge din nou in camera <var>#1</var> iar toate cele <var>N</var> camere au fost vizitate</li>
+</ul><p>Alice observa ca, din pacate, numai pe baza sirului de culori notate de catre Bob harta pesterii nu poate fi intotdeauna reconstituita. De aceea ea va cere sa aflati cate posibilitati de intocmire a hartii exista pe baza datelor culese.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare se afla numarul intreg <var>N</var>. Pe a doua linie se afla sirul de <var>2 * N - 1</var> culori in ordinea in care au fost notate de Bob.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire veti afisa numarul de posibilitati de intocmire a hartii <var>modulo 9901</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 256</var></li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>culori.in</th><th>culori.out</th></tr><tr><td>3<br>
+3 1 3 1 3<br></td><td>2</td></tr><tr><td>2<br>
+1 2 2<br></td><td><var>0</var></td></tr></table><h3>Explicatie</h3>
+
+<p>In desen observam cele doua harti posibile pentru primul exemplu, traseul parcurs de Bob fiind marcat cu sageti albastre. Parcurgand oricare dintre cele doua pesteri dupa algoritmul lui Bob (incepand din camera <var>#1</var> marcata in desen cu rosu) obtinem sirul de culori <var>3 1 3 1 3</var>.</p>
+
+<p><img src="http://infoarena.ro/problema/culori?action=download&amp;file=culori_s.GIF&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

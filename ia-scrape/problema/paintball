@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>paintball.in, paintball.out</td><td><strong>Sursă</strong></td><td>Lot Iasi 2008, Baraj 6</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>131072 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=paintball">Vezi solutiile trimise</a></p>
+
+<h1>Paintball<br></h1>
+
+<p>După amiază la Iezăreni cei <var>N</var> membri ai lotului naţional de informatică vor participa la o partidă mai specială de paintball. Fiecare concurent va primi o armă şi o singură bilă cu vopsea. <br>
+În primul rând concurenţii sunt numerotaţi de la <var>1</var> la <var>N</var>. Având o singură bilă, fiecare concurent se gândeşte dinainte în cine va trage. Un concurent care a fost împuşcat cu o bilă de vopsea este declarat “mort” şi nu mai poate să tragă.</p>
+
+<p>Concurenţii trag succesiv, în orice ordine doresc.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Să se determine numărul minim şi numărul maxim de “morţi”. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>paintball.in</var> e prima linie numărul natural <var>N</var> reprezentând numărul de concurenţi. Pe cea de a două linie sunt scrise <var>N</var> numere naturale separate prin spaţii; al <var>i</var>-lea număr de pe linie reprezentând numărul concurentului în care va trage concurentul <var>i</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>paintball.out</var> va conţine o singură linie pe care vor fi scrise două numere naturale separate prin spaţiu <var>nrmin nrmax</var> reprezentând numărul minim şi respectiv numărul maxim de “morţi”. </p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1.000.000</var></li>
+<li>Un concurent se poate împuşca pe sine însuşi.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>paintball.in</th><th>paintball.out</th></tr><tr><td>8<br>
+  2 3 2 2 6 7 8 5<br></td><td>3 5<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Dacă de exemplu ordinea în care trag concurenţii este <var>1, 4, 3, 5, 7</var> vor muri <var>2, 6, 8</var> (număr minim de morţi).<br>
+Dacă ordinea este: <var>2, 1, 4, 7, 6, 5</var> vor muri <var>3, 2, 8, 7, 6</var> (număr maxim de morţi).</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,57 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>rubarba.in, rubarba.out</td><td><strong>Sursă</strong></td><td>preONI 2005 Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=124">Adrian Vladu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><div class="hidden">5/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=rubarba">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=rubarba">Vezi solutiile trimise</a></p>
+
+<h1>Rubarba<br></h1>
+
+<p>Proaspat evadat din temnita, <em>Paftenie barbarul</em> a decis ca este timpul sa puna capat pentru o vreme aventurilor sale. Intorcandu-se la familia lui, s-a dedicat unui nou hobby: gradinaritul. De data aceasta a plantat in gradina sa <var>N</var> tulpini de rubarba. Nefiind specialist in domeniu, a plantat tulpinile aleator, iar acum se pune problema construirii unei sere. Sera trebuie sa fie de forma dreptunghiulara, sa contina in interiorul sau toate tulpinile de rubarba, iar aria sa sa fie minima.</p>
+
+<h2>Cerinta</h2>
+
+<p>Ajutati-l pe gradinarul <em>Paftenie</em> sa rezolve problema!</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare este dat numarul <var>N</var> al tulpinilor de rubarba. Pe urmatoarele <var>N</var> linii se afla cate o pereche de numere intregi, reprezentand coordonatele acestora.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire va contine pe prima linie un singur numar real, reprezentand aria minima a dreptunghiului cerut.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1</var> ≤ <var>N</var> ≤ <var>100.000</var></li>
+<li>coordonatele plantelor sunt numere intregi cuprinse intre <var>0</var> si <var>1.000.000</var></li>
+<li>rezultatul se va afisa cu o precizie de <var>2</var> zecimale</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>rubarba.in</th><th>rubarba.out</th></tr><tr><td>9<br>
+2 1<br>
+4 2<br>
+7 2<br>
+1 4<br>
+7 4<br>
+5 6<br>
+6 8<br>
+8 8<br>
+3 9<br></td><td>50.32</td></tr></table><h3>Explicatie</h3>
+
+<p><img src="http://infoarena.ro/problema/rubarba?action=download&amp;file=rubarba.jpg&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=41">Geometrie</a></span>
+            <a href="javascript:show_tag_list(41)" id="tag_anchor_41" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_41"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=265">Infasuratoare convexa</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=266">Rotating calipers</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

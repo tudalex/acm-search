@@ -1,0 +1,37 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>triplete.in, triplete.out</td><td><strong>Sursă</strong></td><td>preONI 2007, Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=triplete">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=triplete">Vezi solutiile trimise</a></p>
+
+<h1>Triplete<br></h1>
+
+<p>Zaharel are o ferma de <var>N</var> animale, numerotate convenabil cu numere de la <var>1</var> la <var>N</var>. Observand activitatea animalelor a constatat ca anumite animale sunt prietene intre ele. Curios de felul lui, Zaharel si-a pus intrebarea cate triplete de animale exista astfel incat oricare doua animale din triplet sa fie prietene. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>triplete.in</var> va contine pe prima linie doua numere naturale <var>N M</var> separate prin cate un spatiu, reprezentand numarul de animale si numarul de relatii de prietenie.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>triplete.out</var> va contine un singur numar natural pe prima linie reprezetand numarul de triplete care se pot forma.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 4096</var></li>
+<li><var>1 ≤ M ≤ 65536</var></li>
+<li>Daca animalul <var>a</var> este prieten cu animalul <var>b</var>, atunci si animalul <var>b</var> este prieten cu animalul <var>a</var></li>
+<li>Toate relatiile de prietenie din fisierul de intrare sunt distincte</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>triplete.in</th><th>triplete.out</th></tr><tr><td>4 5<br>
+1 2<br>
+2 3<br>
+1 3<br>
+2 4<br>
+3 4<br></td><td>2</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

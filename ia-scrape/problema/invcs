@@ -1,0 +1,36 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>invcs.in, invcs.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=154">Andrei Teodorescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=invcs">Vezi solutiile trimise</a></p>
+
+<h1>Invcs<br></h1>
+
+<p>Gigel se joaca din nou cu algoritmul de aflare a celui mai lung subsir crescator. Pentru asta el foloseste un vector auxiliar <var>v</var> cu semnficatia <var>v<sub>i</sub></var> = lungimea celui mai lung subsir crescator din sirul initial care se termina pe pozitia <var>i</var>.Uitandu-se el la sirul obtinut isi pune urmatoarea intrebare:</p>
+
+<h2>Cerinta</h2>
+
+<p>Cate permutari ale primelor <var>N</var> numere naturale duc la obtinerea acestui vector auxiliar?</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>invcs.in</var> va contine numarul natural nenul <var>N</var> reprezentand lungimea unui sir pe care Gigel a aplicat algoritmul de aflare a celui mai lung subsir crescator. Pe urmatoarele <var>N</var> linii este dat vectorul auxiliar <var>v</var> calculat de Gigel.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>invcs.out</var> va contine o singura linie cu numarul cerut.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>N ≤ 20</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>invcs.in</th><th>invcs.out</th></tr><tr><td>5<br>
+1<br>
+1<br>
+1<br>
+2<br>
+2<br></td><td>6</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

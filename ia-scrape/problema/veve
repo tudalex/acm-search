@@ -1,0 +1,55 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>veve.in, veve.out</td><td><strong>Sursă</strong></td><td>CCEX 2009</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=244">Petronela Aga</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.3 sec</td><td><strong>Limită de memorie</strong></td><td>512 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=veve">Vezi solutiile trimise</a></p>
+
+<h1>Veve<br></h1>
+
+<p>Într-o pădure există o comunitate de veveriţe, care locuiesc în copaci. Două din aceste veveriţe s-au gândit să-şi facă o mică afacere. Ele vor să deschidă un lanţ de <var>K</var> localuri, unde veveriţele ce locuiesc în copacii din jur să se poată întalni să ia o gustare. Cele două "afaceriste" au în vedere <var>M</var> potenţiale locaţii ca posibile zone unde pot să îşi amplaseze localurile. Un astfel de local poate onora toate comenzile din raza sa de acţiune, o zonă circulară de rază <var>R</var>, cu centrul în locaţia restaurantului. Se ştie că veveriţele sunt mari consumatoare de ghinde şi alune, aşa că locuitoarele din copacii apropiaţi vor fi considerate cliente sigure. În pădure există <var>N</var> copaci. Pentru fiecare copac se cunoaşte locaţia sa, precum şi numărul de veveriţe ce locuiesc în el. Pentru pornirea afacerii trebuie să se aleagă exact <var>K</var> dintre cele <var>M</var> locaţii posibile pentru localuri astfel încat numarul total de veveriţe cliente sigure sa fie cât mai mare posibil.<br>
+Scrieţi un program care să determine numărul maxim de clienţi siguri.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fişierului <var>veve.in</var> conţine două numere întregi <var>K</var> şi <var>R</var>, separate printr-un spaţiu, reprezentând numărul de localuri pe care veveriţele vor să le deschidă şi respectiv raza de acţiune a fiecărui local. Pe cea de-a doua linie se află un număr natural <var>M</var>, reprezentând numărul de locaţii posibile pentru localuri. Fiecare dintre urmatoarele <var>M</var> linii conţine două numere întregi <var>X Y</var>, separate printr-un spaţiu, reprezentând coordonatele unei locaţii (abscisa şi ordonata). Pe următoarea linie se află un număr natural <var>N</var>, reprezentând numărul de copaci cu veveriţe. Fiecare din urmatoarele <var>N</var> linii conţine informaţii despre cate un copac sub forma a <var>3</var> numere întregi separate prin câte un spaţiu <var>X Y V</var> cu semnificaţia că în punctul de coordonate <var>X Y</var> există un copac în care locuiesc <var>V</var> veveriţe.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>veve.out</var> va conţine o singura linie pe care va fi scris numărul maxim de clienţi siguri.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ K ≤ 10</var></li>
+<li><var>1 ≤ R ≤ 500</var></li>
+<li><var>K ≤ M ≤ 20</var></li>
+<li><var>-1000 ≤ X, Y ≤ 1000</var></li>
+<li><var>1 ≤ N, V ≤ 100</var></li>
+<li>Un copac se află în raza de acţiune a unui local dacă distanţa de la copac la local este mai mică sau egală cu <var>R</var></li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>veve.in</th><th>veve.out</th><th>veve.in</th><th>veve.out</th></tr><tr><td>2 2<br>
+3<br>
+1 0<br>
+4 0<br>
+7 0<br>
+4<br>
+0 0 1<br>
+3 0 7<br>
+5 0 9<br>
+8 0 1<br></td><td>18<br></td><td>2 2<br>
+3<br>
+-2 0<br>
+0 1<br>
+3 0<br>
+8<br>
+-3 1 1<br>
+-3 0 1<br>
+-3 -1 1<br>
+-2 -1 1<br>
+0 0 3<br>
+0 2 1<br>
+2 1 3<br>
+4 0 2<br></td><td>12</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

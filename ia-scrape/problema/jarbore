@@ -1,0 +1,63 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>jarbore.in, jarbore.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=141">Bogdan Piloca</a>, <a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">2/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=jarbore">Vezi solutiile trimise</a></p>
+
+<h1>J-Arbore<br></h1>
+
+<p>J-arborele este un arbore infinit cu urmatoarele proprietati:</p>
+
+
+<ul><li>pe nivelul <var>1</var> al arborelui exista un singur nod (radacina)</li>
+<li>fiecare nod de pe nivelul <var>i</var> are exact <var>i</var> fii</li>
+<li>muchiile arborelui se eticheteaza cu numere intregi consecutive incepand cu primul nivel al arborelui mergand de la stanga la dreapta</li>
+<li>toate nodurile in afara radacinii vor fi etichetate cu numere intregi egale cu suma muchiilor de pe drumul de la radacina la nodul respectiv</li>
+</ul><p>Mai jos aveti primele nivele ale unui astfel de arbore.</p>
+
+<p><img src="http://infoarena.ro/problema/jarbore?action=download&amp;file=jtree.gif&amp;safe_only=true" alt=""></p>
+
+<h2>Cerinta</h2>
+
+<p>Dandu-se un numar natural <var>X</var> vi se cere sa spuneti daca exista un nod etichetat cu valoarea <var>X</var> si sa afisati etichetele muchiilor din drumul de la radcina spre nodul respectiv.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>In fisierul de intrare <var>jarbore.in</var> vor exista mai multe teste. Pe prima linie se va afla <var>T</var> numarul de teste. Pe urmatoarele <var>T</var> linii se afla cate un numar <var>X</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>In fisierul de iesire <var>jarbore.out</var> vor exista <var>T</var> linii. Pe fiecare linie se vor afla etichetele muchiilor din drumul de radacina catre nodul cu proprietatea ceruta sau <var>-1</var> in cazul in care nu exista un astfel de nod.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ X ≤ 10<sup>18</sup></var></li>
+<li><var>1 ≤ T ≤ 1000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>jarbore.in</th><th>jarbore.out</th></tr><tr><td>7<br>
+100<br>
+1<br>
+2<br>
+12<br>
+17<br>
+89<br>
+666<br></td><td>-1<br>
+1<br>
+-1<br>
+1 3 8<br>
+1 2 4 10<br>
+1 2 5 16 65<br>
+1 3 7 22 97 536</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=48">Cautare</a></span>
+            <a href="javascript:show_tag_list(48)" id="tag_anchor_48" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_48"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=49">Cautare binara</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

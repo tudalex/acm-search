@@ -1,0 +1,47 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>salvare.in, salvare.out</td><td><strong>Sursă</strong></td><td>Campion 2002-2003</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=127">Mihai Stroe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=salvare">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=salvare">Vezi solutiile trimise</a></p>
+
+<h1>Salvare<br></h1>
+
+<p>Se considera un arbore (graf neorientat, conex si aciclic) cu <var>N</var> varfuri. In nodurile acestui arbore locuiesc oameni, iar muchiile au lungime 1. Se doreste infiintarea in noduri ale arborelui a <var>K</var> puncte de salvare, astfel incat locuitorii arborelui sa fie ajutati cat mai rapid in caz de urgente.<br>
+La aparitia unei urgente intr-un anumit nod, o masina a Salvarii pleaca dintr-unul din cele mai apropiate puncte de salvare catre nodul respectiv, pentru a acorda primul ajutor, dupa care se intoarce la punctul de plecare. Timpul de rezolvare a unei urgente este dat de numarul de muchii parcurse de la punctul de salvare la nodul in care a aparut urgenta. Se considera ca pana la intoarcerea salvarii in punctul de plecare nu pot aparea urgente noi.<br>
+Sa se stabileasca nodurile in care se vor infiinta puncte de salvare, astfel incat orice urgenta sa fie rezolvabila in timp minim (mai exact, maximul <var>M</var> al timpilor de rezolvare sa fie minim).</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>salvare.in</var> contine numarul intreg <var>N</var>, reprezentand numarul de varfuri ale arborelui. A doua linie a fisierului contine numarul intreg <var>K</var>, reprezentand numarul de puncte de salvare. Urmatoarele <var>N-1</var> linii contin cate doi intregi distincti <var>a</var> si <var>b</var>, separati printr-un spatiu, avand semnificatia ca exista muchie intre varful numerotat cu <var>a</var> si cel numerotat cu <var>b</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul <var>salvare.out</var> veti afisa:</p>
+
+
+<ul><li>pe prima linie numarul <var>M</var>, maximul timpilor de rezolvare;</li>
+<li>pe a doua linie <var>K</var> numere distincte intre <var>1</var> si <var>N</var>, ordonate crescator, nodurile in care se vor infiinta puncte de salvare</li>
+</ul><h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1000</var></li>
+<li><var>1 ≤ K ≤ 300</var></li>
+<li>Varfurile sunt numerotate cu numere distincte intre <var>1</var> si <var>N</var></li>
+<li>Daca exista mai multe solutii, se va afisa una oarecare</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>salvare.in</th><th>salvare.out</th></tr><tr><td>5<br>
+2<br>
+4 1<br>
+1 3<br>
+1 2<br>
+4 5<br></td><td>1 <br>
+1 4<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Timpul maxim de rezolvare este 1. Se infiinteaza doua puncte de salvare, in nodurile 1 si 4. Salvarea din 1 rezolva urgentele din 1 in timp 0 si urgentele din 2 si 3 in timp 1. Salvarea din 4 rezolva urgentele din 4 in timp 0 si urgentele din 5 in timp 1. Exista si alte solutii.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

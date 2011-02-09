@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>sea2.in, sea2.out</td><td><strong>Sursă</strong></td><td>Lot 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=146">Radu Berinde</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=sea2">Vezi solutiile trimise</a></p>
+
+<h1>Sea2<br></h1>
+
+<p>Pe mare va avea loc o mare batalie intre <var>N</var> vapoare. Vapoarele sunt considerate niste puncte si sunt date prin coordonatele lor carteziene <var>x</var> si <var>y</var>. Din motive greu de inteles, vapoarele nu pot ataca decat vapoarele care se afla la stanga si mai jos (mai exact, un vapor la pozitia <var>x1, y1</var> poate ataca alt vapor la pozitia <var>x2, y2</var> daca si numai daca <var>x1 &gt; x2</var> si <var>y1 &gt; y2</var>). Pentru ca aceasta batalie are loc in zona Triunghiului Bermudelor, vapoarele apar (se teleporteaza) pe rand in zona bataliei. Vapoarele sunt numerotate <var>1, 2, ..., N</var> in ordinea aparitiei lor. In momentul in care un vas apare, daca exista alt vas care a aparut deja si care poate sa il atace pe cel nou, vasul nou este distrus instantaneu. Daca nu, vasul cel nou ramane pe mare si distruge toate vasele pe care le poate ataca.</p>
+
+<h2>Cerinta</h2>
+
+<p>Dandu-se coordonatele la care apar pe rand vapoarele, sa se afle pentru fiecare vapor daca este distrus sau nu in momentul aparitiei sale si daca nu este distrus, sa se precizeze numarul total de vapoare ramase pe mare dupa aparitia sa.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>sea2.in</var> se afla numarul natural <var>N</var> reprezentand numarul de vapoare ce vor aparea pe mare. Pe fiecare dintre urmatoarele <var>N</var> linii se afla cate o pereche de numere intregi separate printr-un spatiu, reprezentand coordonata <var>x</var> respectiv <var>y</var> a vaporului corespunzator liniei (mai exact, pe linia <var>i</var> sunt scrise coordonatele vaporului <var>i-1</var>, pentru orice <var>i</var> de la <var>2</var> la <var>N+1</var>).</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>sea2.out</var> va contine <var>N</var> linii, fiecare linie cu un numar intreg. Pe linia <var>i</var> se va afla <var>-1</var> daca vaporul <var>i</var> este distrus in momentul aparitiei, sau un numar intreg strict pozitiv reprezentand numarul de vapoare de pe mare dupa aparitia vaporului <var>i</var> in caz contrar.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 200 000</var></li>
+<li>Coordonatele sunt numere intregi strict pozitive mai mici sau egale cu <var>260 000</var></li>
+<li>Nu vor exista doua vase cu aceeasi coordonata <var>x</var> sau aceiasi coordonata <var>y</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>sea2.in</th><th>sea2.out</th></tr><tr><td>5<br>
+  4 1<br>
+  8 6<br>
+  7 5<br>
+  3 4<br>
+  9 3<br></td><td>1<br>
+  1<br>
+  -1<br>
+  -1<br>
+  2<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Vaporul <var>1</var> ramane pe mare<br>
+Vaporul <var>2</var> ramane pe mare si distruge vaporul <var>1</var><br>
+Vaporul <var>3</var> este distrus de vaporul <var>2</var><br>
+Vaporul <var>4</var> este distrus de vaporul <var>2</var><br>
+Vaporul <var>5</var> ramane pe mare, impreuna cu vaporul <var>2</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

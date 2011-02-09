@@ -1,0 +1,51 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>curent.in, curent.out</td><td><strong>Sursă</strong></td><td>ONI 2008, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=128">Dan-Ionut Fechete</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/sima_cotizo"><img src="/utilizator/sima_cotizo?action=download&amp;file=avatar&amp;resize=L16x16" alt="sima_cotizo">Sima Cotizo</a> <a title="Rating sima_cotizo: 638" class="rating-badge-1" href="http://infoarena.ro/utilizator/sima_cotizo?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/sima_cotizo">sima_cotizo</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.7 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=curent">Vezi solutiile trimise</a></p>
+
+<h1>Curent<br></h1>
+
+<p>Satul Mirsid este format din <var>N</var> case numerotate cu numerele naturale de la <var>1</var> la <var>N</var>. In casa numerotata cu <var>1</var> se afla un generator care alimenteaza cu curent electric toate casele din sat astfel: casa cu numarul <var>1</var> alimenteaza cu curent un numar de case, fiecare dintre aceste case alimentand la randul lor alte case, s.a.m.d. Fiecare casa este alimentata de exact o sursa de curent (care poate fi o alta casa alimentata cu curent electric sau generatorul, in cazul casei cu numarul <var>1</var>). In fiecare casa exista o singura siguranta electrica. In cazul unei defectiuni la un aparat electric dintr-o casa, siguranta casei se arde. In acest caz, alimentarea cu curent electric a casei se intrerupe, determinand intreruperea curentului in toate casele alimentate de la aceasta, direct sau indirect.</p>
+
+<p>Compania producatoare de sigurante are un jurnal in care a fost notata fiecare zi in care s-a ars, respectiv s-a inlocuit, o siguranta, impreuna cu numarul casei in care s-a petrecut evenimentul. Jurnalul contine in total <var>M</var> evenimente. Pentru a stabili gradul de multumire al clientilor, compania vrea sa afle numarul total de case care aveau curent electric in anumite zile de interes.</p>
+
+<p>Sa se scrie un program care sa determine numarul de case care aveau curent electric pentru fiecare dintre zilele de interes stabilite de conducerea companiei.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>curent.in</var> are pe prima linie numarul natural <var>N</var>. A doua linie, contine <var>N-1</var> numere naturale nenule cel mult egale cu <var>N</var>, separate prin cate un singur spatiu, cel de al <var>k</var>-lea numar <var>(1≤k≤N)</var> reprezentand numarul casei de la care primeste curent casa cu numarul <var>k+1</var>. A treia linie contine un numar natural <var>M</var> reprezentand numarul de evenimente notate in jurnalul companiei. Fiecare dintre urmatoarele <var>M</var> linii contin cate <var>3</var> numere naturale <var>a b c</var>, separate prin cate un spatiu, care descriu astfel un eveniment: daca <var>c</var> este <var>0</var> atunci in ziua <var>a</var> s-a ars siguranta in casa <var>b</var>, daca <var>c</var> este <var>1</var> atunci in ziua <var>a</var> s-a inlocuit siguranta din casa <var>b</var>. Linia <var>M+4</var> a fisierului contine un numar natural <var>T</var> reprezentand numarul zilelor pentru care trebuie determinat numarul caselor ce au curent electric, iar linia <var>M+5</var> a fisierului contine un sir strict crescator de <var>T</var> numere naturale, separate prin cate un spatiu, reprezentand zilele de interes stabilite de conducerea companiei. Zilele sunt numerotate de la <var>1</var> la <var>10<sup>9</sup></var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>curent.out</var> va contine <var>T</var> linii, fiecare linie <var>k</var> <var>(1≤k≤T)</var> va contine un numar natural reprezentand numarul de case care aveau curent electric in a <var>k</var>-a zi de interes (in ordinea din fisierul de intrare).</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>0 &lt; N &lt; 100011</var></li>
+<li><var>0 &lt; M &lt; 100022</var></li>
+<li><var>0 &lt; T &lt; 100033</var></li>
+<li>Daca <var>a b c</var> si <var>a' b' c'</var> sunt valorile care descriu, in fisierul de intrare, doua evenimente, iar <var>a=a'</var>, atunci <var>b≠b'</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>curent.in</th><th>curent.out</th></tr><tr><td>11<br>
+1 2 3 3 3 5 5 2 1 10<br>
+6<br>
+9 9 0<br>
+2 3 0<br>
+10 10 0<br>
+22 3 1<br>
+14 5 0<br>
+31 1 0<br>
+4<br>
+8 13 23 33<br></td><td>5<br>
+2<br>
+5<br>
+0<br></td></tr></table><h3>Explicatie</h3>
+
+<p>In ziua <var>2</var>, siguranta din casa <var>3</var> se arde, casele <var>3,4,5,6,7,8</var> nemaifiind alimentate cu curent electric. Siguranta nu a fost inlocuita pana in ziua <var>8</var>, ramanand doar <var>5</var> case alimentate <var>(1,2,9,10,11)</var>, valoarea <var>5</var> scriidu-se pe prima linie a fisierului <var>curent.out</var>. In zilele <var>9</var> si <var>10</var> se ard sigurantele din casele <var>9</var> si <var>10</var>. Astfel, in ziua <var>13</var> doar <var>2</var> case <var>(1 si 2)</var> sunt alimentate cu curent, valoarea <var>2</var> scriidu-se pe a doua linie a fisierului. In ziua <var>14</var> se arde siguranta din casa <var>5</var>, fapt care nu modifica numarul caselor alimentate cu curent. In ziua <var>22</var> se repara siguranta in casa <var>3</var>, in ziua <var>23</var> fiind <var>5</var> case alimentate cu curent <var>(1,2,3,4,6)</var>, valoarea <var>5</var> scriidu-se pe a treia linie a fisierului. In ziua <var>31</var> se arde siguranta din casa <var>1</var>, astfel ca in ziua <var>33</var> nicio casa nu mai este alimentata cu curent, valoarea <var>0</var> scriindu-se pe cea de-a patra linie a fisierului. </p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

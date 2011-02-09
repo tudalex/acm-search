@@ -1,0 +1,77 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>colectie.in, colectie.out</td><td><strong>Sursă</strong></td><td>Finala GInfo 2005</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a>, <a href="/cauta-probleme?tag_id%5B%5D=138">Leonard Crestez</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=colectie">Vezi solutiile trimise</a></p>
+
+<h1>Colectie<br></h1>
+
+<p>Tudor s-a gandit ca, deja, colectia lui de CD-uri si <span class="caps">DVD</span>-uri a devenit destul de impresionanta si, pentru a organiza mai usor discurile, vrea sa le numeroteze cu etichete. El vrea sa cumpere cutii care contin etichete cu cifre.</p>
+
+<p>La magazinul din apropiere se gasesc k asemenea pachete care contin etichete cu cateva cifre de <var>0</var>, cateva cifre de <var>1</var> si asa mai departe (pachete diferite pot avea continut diferit).</p>
+
+<p>Tudor ar vrea sa cumpere cateva dintre pachete si sa poata forma din etichete toate numerele de la <var>1</var> la <var>K</var> (<var>K</var> fiind numarul de CD-uri si <span class="caps">DVD</span>-uri din colectie).</p>
+
+<p>O conditie pentru a realiza etichetarea este ar fi sa nu ramana etichete care nu sunt folosite pentru ca Tudor nu ar avea ce face cu ele. Acest lucru nu este tot timpul posibil. Daca este posibil, atunci ne intereseaza solutia care foloseste un numar minim de pachete.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>colectie.in</var> se afla doua numere naturale <var>N</var> si <var>K</var>, reprezentand numarul de pachete de la magazin, respectiv numarul de CD-uri si <span class="caps">DVD</span>-uri din colectia lui Tudor. Pe urmatoarele <var>N</var> linii se vor afla cate zece numere intregi separate prin spatii; linia <var>i + 1</var> contine numarul de etichete cu cifrele <var>0, 1, ... 9</var> din pachetul <var>i</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>In fisierul de iesire colectie.out se va scrie pe prima linie valoarea <var>1</var> daca exista o solutie, sau valoarea <var>0</var> daca problema nu are solutie. Daca problema are solutie atunci pe urmatoarea linie va fi scris numarul <var>L</var> al pachetelor folosite intr-o solutie optima, iar urmatoarea linie va contine <var>L</var> numere intregi, reprezentand pachetele alese.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 32</var></li>
+<li><var>1 ≤ K ≤ 100.000.000</var></li>
+</ul><h2>Exemplu</h2>
+
+
+<table class="example" cellspacing="0"><tr><th>colectie.in</th><th>colectie.out</th></tr><tr><td>4 11<br>
+0 1 0 0 0 0 1 1 0 0<br>
+1 2 1 1 1 1 0 0 0 0<br>
+0 1 0 0 0 0 0 0 1 1<br>
+0 2 0 0 0 0 1 1 1 1<br></td><td>1<br>
+2<br>
+2 4</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 4 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=96">Backtracking</a></span>
+            <a href="javascript:show_tag_list(96)" id="tag_anchor_96" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_96"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=98">Generarea tuturor submultimilor</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=48">Cautare</a></span>
+            <a href="javascript:show_tag_list(48)" id="tag_anchor_48" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_48"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=49">Cautare binara</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=63">Sortare</a></span>
+            <a href="javascript:show_tag_list(63)" id="tag_anchor_63" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_63"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=64">Sortare</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

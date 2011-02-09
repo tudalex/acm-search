@@ -1,0 +1,47 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>zip.in, zip.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil 2008, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=140">Csaba Patcas</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=zip">Vezi solutiile trimise</a></p>
+
+<h1>Zip<br></h1>
+
+<p>Un student oarecare, la o facultate oarecare are de scris ca tema de casa la o materie oarecare un program de arhivare. Studentul si-a propus sa implementeze urmatorul algoritm:</p>
+
+
+<ul><li>Continutul fisierului de arhivat se imparte in <var>M</var> bucati avand exact <var>K</var> octeti</li>
+<li>Pentru doua bucati consecutive se determina cea mai lunga secventa de octeti de la sfarsitul primei bucati, care apare si la inceputul celei de-a doua bucati</li>
+<li>Arhivarea propriu-zisa se realizeaza prin scrierea bucatilor in fisier astfel incat secventele care apar si la sfarsitul bucatii curente si la inceputul bucatii urmatoare sa apara o singura data</li>
+</ul><p>Din cauza unei erori in program intre bucatile fisierului s-au strecurat si alte bucati, tot de lungime <var>K</var>, iar ordinea bucatilor s-a schimbat si ea. De asemenea, daca au existat bucati identice in fisierul initial, este posibil ca acestea sa apara de mai putine ori, in urma erorii.</p>
+
+<h2>Cerinta</h2>
+
+<p>Arhivati fisierului initial, stiind ca acesta este format din bucatile care conduc la o arhivare optima in sensul ca fisierul rezultat dupa arhivare are lungime minima.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>zip.in</var> se afla trei numere naturale: <var>N</var> (numarul total al bucatilor care au fost obtinute de catre programul studentului), <var>M</var> (numarul bucatilor in fisierul initial) si <var>K</var> (lungimea in octeti a bucatilor). Cele trei numere sunt separate prin cate un spatiu. Pe urmatoarele <var>N</var> linii se afla cate <var>K</var> caractere, formand bucatile obtinute de catre student.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>zip.out</var> se va scrie lungimea fisierului arhivat.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ M ≤ N ≤ 100</var></li>
+<li><var>1 ≤ K ≤ 100</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>zip.in</th><th>zip.out</th></tr><tr><td>5 2 4 <br>
+  rado<br>
+  dora<br>
+  arad<br>
+  oboa<br>
+  aaaa<br></td><td>5<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Fisierul initial a fost format din bucatile <var>arad</var> si <var>rado</var>. Cea mai lunga secventa care satisface conditiile este <var>rad</var>, deci forma arhivata a fisierului va fi <var>arado</var>, avand cinci octeti.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

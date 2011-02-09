@@ -1,0 +1,46 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>shop.in, shop.out</td><td><strong>Sursă</strong></td><td>preONI 2007, Runda 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=shop">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=shop">Vezi solutiile trimise</a></p>
+
+<h1>Shop<br></h1>
+
+<p>Zaharel face din nou cumparaturi in magazinul detinut de Nargy si Fumeanu. Dupa ce a cumparat produse in valoarea de <var>L</var> lei, Zaharel trebuie sa plateasca fix <var>L</var> lei la casa folosind monezile pe care le are. Se stie ca in tara lui Zaharel toate monezile sunt de forma <var>C<sup>P</sup></var> unde <var>C</var> este o valoare fixata de guvern. Astfel, Zaharel are la dispozitie <var>N</var> tipuri de monezi, moneda de tipul <var>i</var> avand valorand <var>C<sup>A<sub>i</sub></sup></var> lei, iar Zaharel detine <var>B<sub>i</sub></var> astfel de monezi. Desigur, Zaharel doreste sa plateasca suma de <var>L</var> lei cu numar minim de monezi.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>shop.in</var> contine pe prima linie numerele naturale <var>N, C, L</var> separate prin spatii. Urmatoarele <var>N</var> linii contin perechi de numere <var>A<sub>i</sub> B<sub>i</sub></var> cu semnificatia prezentata mai sus.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de isire <var>shop.out</var> se va scrie un singur numar natural, reprezentand numarul minim de monezi necesare pentru a plati suma de <var>L</var> lei. Urmatoarea linie va contine <var>N</var> numere naturale, al <var>i</var>-lea numar reprezentand de cate ori s-a folosit moneda de tip <var>i</var>. </p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 30</var></li>
+<li><var>1 ≤ C ≤ 10</var></li>
+<li><var>0 ≤ L ≤ 10<sup>16</sup></var></li>
+<li><var>0 ≤ A<sub>i</sub> ≤ 32</var></li>
+<li><var>1 ≤ B<sub>i</sub> ≤ 10<sup>9</sup></var></li>
+<li>Se garanteaza ca valoarea oricarei monezi este mai mica sau egala cu <var>L</var></li>
+<li>Cele <var>N</var> tipuri de monezi sunt distincte ca valori</li>
+<li>Pentru <var>50%</var> din teste <var>L ≤ 1.000.000</var></li>
+<li>Se garanteaza existenta unei solutii; daca exista mai multe solutii se poate afisa oricare</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>shop.in</th><th>shop.out</th></tr><tr><td>4 2 47<br>
+0 5<br>
+3 2<br>
+2 4<br>
+4 1<br></td><td>9<br>
+3 2 3 1</td></tr></table><h3>Explicatie</h3>
+
+<p><var>47 = 2<sup>0</sup> + 2<sup>0</sup> + 2<sup>0</sup> + 2<sup>3</sup> + 2<sup>3</sup> + 2<sup>2</sup> + 2<sup>2</sup> + 2<sup>2</sup> + 2<sup>4</sup> = 1 + 1 + 1 + 8 + 8 + 4 + 4 + 4 + 16</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

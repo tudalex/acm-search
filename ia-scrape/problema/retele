@@ -1,0 +1,51 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>retele.in, retele.out</td><td><strong>Sursă</strong></td><td>Lista lui Francu</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=163">Cristian Cadar</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/pauldb"><img src="/utilizator/pauldb?action=download&amp;file=avatar&amp;resize=L16x16" alt="pauldb">Paul-Dan Baltescu</a> <a title="Rating pauldb: 792" class="rating-badge-4" href="http://infoarena.ro/utilizator/pauldb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/pauldb">pauldb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.8 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=retele">Vezi solutiile trimise</a></p>
+
+<h1>Retele<br></h1>
+
+<p>Intr-un oras exista <var>N</var> abonati si mai multe retele de telefonie. Doi abonati apartin aceleiasi retele de telefonie, daca primul abonat il poate contacta pe al doilea (direct sau prin intermediul altor abonati) si reciproc.</p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati toate retele de telefonie din oras, prin specificarea abonatilor fiecarei retele.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>retele.in</var>, se afla numarele <var>N</var> si <var>M</var>, reprezentand numarul de abonati si numarul de contacte din oras. Pe urmatoarele <var>M</var> linii, se afla cate doua numere <var>x</var> si <var>y</var>, cu semnificatia ca abonatul <var>x</var> il poate contacta direct pe abonatul <var>y</var>. </p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>retele.out</var> contine pe prima linie numarul <var>T</var> de retele de telefonie. Pe urmatoarele <var>T</var> linii vor fi afisate retelele de telefonie, cate una pe o linie, in formatul urmator: <var>R</var> <var>A</var><sub>1</sub><var>A</var><sub>2</sub> ... <var>A</var><sub>R</sub>, unde <var>R</var> este numarul de abonati, iar <var>A</var><sub>1</sub><var>A</var><sub>2</sub> ... <var>A</var><sub>R</sub> reprezinta abonatii care fac parte din reteaua respectiva. Retelele vor fi afisate in ordinea crescatoare a abonatului de numar minim, iar abonatii din aceeasi retea vor fi, de asemenea, afisati in ordine crescatoare.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 50000</var></li>
+<li><var>1 ≤ M ≤ 300000</var></li>
+<li>Daca abonatul <var>x</var> il poate contacta direct pe abonatul <var>y</var>, nu inseamna ca neaparat si abonatul <var>y</var> il poate contacta direct pe abonatul <var>x</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>retele.in</th><th>retele.out</th></tr><tr><td>10 14<br>
+  2 3<br>
+  3 2<br>
+  3 1<br>
+  1 9<br>
+  9 7<br>
+  7 1<br>
+  4 3<br>
+  4 10<br>
+  6 10<br>
+  5 4<br>
+  5 6<br>
+  10 5<br>
+  5 8<br>
+  5 7<br></td><td>4<br>
+3 1 7 9<br>
+2 2 3<br>
+4 4 5 6 10<br>
+1 8<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

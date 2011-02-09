@@ -1,0 +1,37 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>control.in, control.out</td><td><strong>Sursă</strong></td><td>All You Can Code 2008</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=144">Mihai Ciucu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gogu"><img src="/utilizator/gogu?action=download&amp;file=avatar&amp;resize=L16x16" alt="gogu">Gogu Marian</a> <a title="Rating gogu: 552" class="rating-badge-2" href="http://infoarena.ro/utilizator/gogu?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gogu">gogu</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>24000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=control">Vezi solutiile trimise</a></p>
+
+<h1>Control<br></h1>
+
+<p>Incercand sa-si deschida o afacere in Izbiceni, Fane a inceput sa studieze bursa de legume. El a observat ca aici se gasesc <var>N</var> tipuri de legume, numerotate de la <var>1</var> la <var>N</var>, care se pot schimba la troc decat dupa anumite reguli fixe. El a aflat de la prietenul sau Emil ce tipuri de schimburi se pot efectua pe piata si acum isi pune intrebarea: daca el reuseste sa detina monopolul pe un anumit tip de leguma, atunci cate tipuri diferite de legume poate detine el cel mult daca se foloseste de trocul la bursa. Fiindca nu stie exact in ce leguma sa investeasca exact in momentul de fata, Fane vrea sa afle aceasta informatie pentru fiecare din cele <var>N</var> tipuri de legume.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare se afla numarul <var>N</var>, care reprezinta numarul de tipuri de legume existente pe piata. Pe liniile <var>i+1</var> se vor afla cate un numar reprezentant numarul tipurilor de legume in care poate pot schimba legumele de tip i, urmat de numerele de ordine ale acestora.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire trebuie sa contina cele <var>N</var> numere cerute pe prima linie.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 250.000</var></li>
+<li>La Bursa din Izbiceni sunt cel mult <var>3.000.000</var> de relatii de schimb care se pot efectua.</li>
+<li>Daca un tip de leguma se poate schimba pentru altul atunci relatia inversa nu este implicita.</li>
+<li>Fane este sigur ca nu sunt mai mult de <var>7.777</var> tipuri de legume <var>A</var> care au proprietatea ca daca se pot schimba in legume de tip <var>B</var> atunci legumele de tip <var>B</var> nu se pot schimba in legume de tip <var>A</var> sau <var>B</var> &gt; <var>A</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>control.in</th><th>control.out</th></tr><tr><td>7<br>
+2 5 2<br>
+0<br>
+1 2<br>
+3 3 5 1<br>
+2 1 2<br>
+3 1 2 3<br>
+3 2 5 6<br></td><td>3 1 2 5 3 5 6<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

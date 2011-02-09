@@ -1,0 +1,29 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>per.in, per.out</td><td><strong>Sursă</strong></td><td>Selectie echipe ACM ICPC, UPB 2008</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=per">Vezi solutiile trimise</a></p>
+
+<h1>Per<br></h1>
+
+<p>Se da un sir <var>S</var> format din <var>N</var> litere mici ale alfabetului englez <var>('a'-'z')</var>. Determinati cate <strong>subsecvente</strong> ale sirului <var>S</var> sunt de forma <var>u<sup>K</sup></var>. O <strong>subsecventa</strong> a unui sir <var>S</var> este o secventa de caractere consecutive ale sirului <var>S</var>. Un sir <var>X</var> este de forma <var>u<sup>K</sup></var> daca exista un sir de caractere <var>u</var> format din cel putin un caracter, astfel incat <var>X</var> este format din concatenarea de <strong>exact</strong> <var>K</var> ori a sirului <var>u</var>. De exemplu, sirul <var>X=aabaabaab</var> este de forma <var>u<sup>3</sup></var>, deoarece exista sirul <var>u=aab</var> care, concatenat de <var>3</var> ori, formeaza sirul <var>X</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>per.in</var> contine doua numere intregi, separate printr-un spatiu: <var>N</var> si <var>K</var>. A doua linie contine <var>N</var> caractere din multimea <var>{'a'-'z'}</var>, neseparate prin spatii, reprezentand sirul <var>S</var> dat.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima (si singura) linie a fisierului de iesire <var>per.out</var> veti afisa numarul de subsecvente ale sirului dat <var>S</var> care sunt de forma <var>u<sup>K</sup></var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 6000</var></li>
+<li><var>2 ≤ K ≤ N</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>per.in</th><th>per.out</th></tr><tr><td>30 3<br>
+aabaabaabaacaabaacaabaacaabxyz<br></td><td>7<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,56 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>nomem.in, nomem.out</td><td><strong>Sursă</strong></td><td>Lot Cluj 2009, Baraj 6</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=240">Catalin-Stefan Tiseanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/sima_cotizo"><img src="/utilizator/sima_cotizo?action=download&amp;file=avatar&amp;resize=L16x16" alt="sima_cotizo">Sima Cotizo</a> <a title="Rating sima_cotizo: 638" class="rating-badge-1" href="http://infoarena.ro/utilizator/sima_cotizo?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/sima_cotizo">sima_cotizo</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.2 sec</td><td><strong>Limită de memorie</strong></td><td>5120 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=nomem">Vezi solutiile trimise</a></p>
+
+<h1>Nomem<br></h1>
+
+<p>În urma unei afaceri necurate cu mafiotul Ivan, Lunasorab a suferit un accident suspect de maşină. Din această cauză el se confruntă cu o pierdere temporară a memoriei. Acest lucru este foarte neplăcut, deoarece el trebuia să facă inventarul moşiilor sale de creştere a găinilor. Aceastea au forma unui triunghi isoscel dreptunghic, cu catetele paralele cu axele de coordonate. Mai exact, suprafaţa pe care se găsesc moşiile lui Lunasorab poate fi modelată ca o matrice pătratică de <var>N</var> linii şi <var>N</var> coloane (cu liniile şi coloanele numerotate de la <var>1</var> la <var>N</var>) de numere naturale, în fiecare pătrat de dimensiuni <var>1 × 1</var> găsindu-se coeficientul de inteligenţă al unei găini. Un triunghi isoscel dreptunghic de catetă de lungime <var>L</var> cu originea pe linia <var>x</var> şi coloana <var>y</var> va conţine toate celulele din matrice de linie <var>a</var> şi coloană <var>b</var> cu <var>a ≤ x</var> şi <var>b ≥ y</var> şi cu <var>|a – x| + |b - y| &lt; L</var>.</p>
+
+<p>Pentru Lunasorab gradul de risc al unei moşii (reprezentată ca un triunghi isoscel dreptunghic definit ca mai sus) este dată de valoarea minimă a coeficientului de inteligenţă al unei găini de pe moşia respectivă.</p>
+
+<p>Deoarece momentan Lunasorab nu stă prea bine cu memoria, el vă cere suma gradelor de risc ale tuturor moşiilor modulo <var>1 000 000 007</var>.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Ajutaţi-l pe Lunasorab să afle rapid suma tuturor gradelor de risc ale moşiilor sale.</p>
+
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare <var>nomem.in</var> se găsesc numerele <var>N</var> şi <var>Q</var>, separate prin câte un singur spaţiu, reprezentând dimensiunile matricii, respectiv numărul de moşii ale lui Lunasorab. Pe următoarele <var>N</var> linii, fiecare conţinând <var>N</var> elemente, urmează elementele matricii, separate prin câte un singur spaţiu. Următoarele <var>Q</var> linii conţin câte <var>3</var> numere <var>L x y</var>, separate prin câte un singur spaţiu reprezentând moşia cu originea în <var>x y</var>, de latură <var>L</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>nomem.out</var> se va găsi un număr natural, reprezentând suma gradelor de risc ale tuturor moşiilor modulo <var>1 000 000 007</var>.</p>
+
+<h2>Restricţii şi precizări</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1 000</var></li>
+<li><var>1 ≤ Q ≤ 1 000 000</var></li>
+<li><var>1 ≤ x, y, L ≤ N</var></li>
+<li>O moşie se găseşte complet în interiorul unei matrici.</li>
+<li>Gradul de inteligenţă al unei găini este cuprins între <var>0</var> şi <var>1 010 010 010</var>.</li>
+<li>În fişierul de intrare întrebările vor fi ordonate crescător după <var>L</var>.</li>
+<li>Pot exista găini care nu aparţin niciunei moşii ale lui Lunasorab.</li>
+<li>Pentru <var>20%</var> din teste <var>N = 200</var> şi <var>Q = 100 000</var>.</li>
+<li>Pentru încă <var>20%</var> din teste <var>N = 300</var> şi <var>Q = 400 000</var>.</li>
+<li>Pentru încă <var>20%</var> din teste <var>N = 700</var> şi <var>Q = 1 000 000</var>.</li>
+<li>Lunasorab vă recomandă să parsaţi citirea pentru a avea mai mult timp ca să-l ajutaţi.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>nomem.in</th><th>nomem.out</th></tr><tr><td>3 3<br>
+1 2 3<br>
+4 5 6<br>
+7 8 9<br>
+1 2 3<br>
+2 3 2<br>
+3 3 1<br></td><td>12<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Pentru prima întrebare răspunsul este <var>6</var>, pentru a doua <var>5</var> iar pentru ultima <var>1</var>. Dacă le adunăm şi facem restul împărţirii modulo <var>1 000 000 007</var> obţinem <var>12</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

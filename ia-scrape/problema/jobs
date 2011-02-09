@@ -1,0 +1,65 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>jobs.in, jobs.out</td><td><strong>Sursă</strong></td><td>.campion 2005</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.15 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=jobs">Vezi solutiile trimise</a></p>
+
+<h1>Jobs<br></h1>
+
+<p>Intr-o fabrica exista <var>2</var> activitati ce trebuie executate. Prima activitate consta din <var>S<sub>1</sub></var> pasi consecutivi identici, iar a doua activitate din <var>S<sub>2</sub></var> pasi consecutivi identici. In fabrica lucreaza <var>N</var> persoane. Fiecare persoana poate executa orice pas al oricareia dintre cele <var>2</var> activitati. Pentru fiecare persoana <var>K</var> se cunosc timpii <var>T<sub>1,K</sub></var>, respectiv <var>T<sub>2,K</sub></var>, ce reprezinta durata de timp necesara pentru ca acea persoana sa execute un pas din prima, respectiv un pas din a doua activitate. Fiecare pas al oricareia dintre cele <var>2</var> activitati trebuie executat de exact o persoana. O persoana poate executa mai multi pasi din ambele activitati, insa numai un pas la un moment dat.</p>
+
+<p>Executia celor <var>2</var> activitati se considera ca incepe dimineata devreme, dupa ce toti cei <var>N</var> muncitori au sosit la fabrica (la momentul de timp <var>0</var>). O data ce un muncitor a inceput executia unuia dintre pasi, el nu mai poate fi intrerupt pana cand nu termina de executat pasul respectiv. Pauze (timpi de asteptare) pot exista numai inaintea inceputului executiei fiecarui pas al oricareia dintre cele <var>2</var> activitati.</p>
+
+<p>Sa consideram momentul <var>TA<sub>1</sub></var> cand se termina executia ultimului pas al primei activitati si momentul <var>TA<sub>2</sub></var> cand se termina executia ultimului pas al celei de-a doua activitati. Directorul fabricii doreste sa minimizeze suma <var>TA<sub>1</sub> + TA<sub>2</sub></var>.</p>
+
+<p>Scrieti un program care determina valoarea minima pentru suma <var>TA<sub>1</sub> + TA<sub>2</sub></var>. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>jobs.in</var> contine numarul de seturi de date de test <var>T</var> aflate in fisier. Urmatoarele linii descriu cele <var>T</var> seturi de date de test. Prima linie a fiecarui set de date de test contine <var>3</var> numere naturale separate prin cate un spatiu: <var>N</var> <var>S<sub>1</sub></var> <var>S<sub>2</sub></var>, care reprezinta numarul de persoane ce lucreaza la fabrica, numarul de pasi ai primei activitati si respectiv numarul de pasi ai celei de-a doua activitati. Urmatoarele <var>N</var> linii ale setului de date de test contin fiecare cate <var>2</var> numere intregi separate prin spatiu: <var>T<sub>1,K</sub></var> si <var>T<sub>2,K</sub></var> cu semnificatia din enunt. Va exista o linie goala inaintea fiecarui set de date de test din fisier.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>jobs.out</var> va contine <var>T</var> linii, cate una pentru fiecare set de date de test din fisierul de intrare. Pe linia <var>i</var> va fi afisata valoarea minima posibila pentru suma <var>TA<sub>1</sub> + TA<sub>2</sub></var> pentru cel de-al <var>i</var>-lea set de date de test.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 20</var></li>
+<li><var>1 ≤ N ≤ 100</var></li>
+<li><var>1 ≤ S<sub>1</sub>, S<sub>2</sub> ≤ 7</var></li>
+<li><var>1 ≤ T<sub>1,K</sub>, T<sub>2,K</sub> ≤ 1.000.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>jobs.in</th><th>jobs.out</th></tr><tr><td>4<br><br>
+1 2 3<br>
+10 20<br><br>
+3 5 7<br>
+10 20<br>
+15 16<br>
+17 18<br><br>
+4 3 6<br>
+10 12<br>
+8 9<br>
+16 11<br>
+13 20<br><br>
+4 4 6<br>
+7 12<br>
+5 3<br>
+6 5<br>
+1000000 1000000<br></td><td>100<br>
+162<br>
+84<br>
+41<br></td></tr></table><h3>Explicatie</h3>
+
+<p>In primul set de date, primul (si singurul) muncitor executa primii <var>2</var> pasi ai primei activitati si termina la momentul <var>20</var> <var>(TA<sub>1</sub> = 20)</var>. Apoi, incepand de la momentul <var>20</var>, el executa cei <var>3</var> pasi ai celei de-a doua activitati si termina la momentul <var>80</var> <var>(TA<sub>2</sub> = 80)</var>. Raspunsul este <var>20 + 80 = 100</var>.</p>
+
+<p>In al doilea set de date, muncitorul <var>#1</var> executa toti cei <var>5</var> pasi ai primei activitati, terminand la momentul <var>50</var>, iar muncitorul <var>#2</var> executa toti cei <var>7</var> pasi ai celei de-a doua activitati, terminand la momentul <var>112</var>. Raspunsul este <var>50 + 112 = 162</var>.</p>
+
+<p>In al treilea set de date, muncitorul <var>#1</var> executa toti cei <var>3</var> pasi ai primei activitati, terminand la momentul <var>30</var>, iar muncitorul <var>#2</var> executa toti cei <var>6</var> pasi ai celei de-a doua activitati, terminand la momentul <var>54</var>. Astfel, raspunsul este <var>30 + 54 = 84</var>.</p>
+
+<p>In al patrulea set de date, muncitorul <var>#2</var> executa toti cei <var>6</var> pasi ai celei de-a doua activitati, terminand la momentul <var>18</var> <var>(TA<sub>2</sub> = 18)</var>. Incepand de la momentul <var>0</var>, muncitorul <var>#3</var> executa primii <var>3</var> pasi ai primei activitati, terminand la momentul <var>18</var> (ce coincidenta :) ). Apoi, al <var>4</var>-lea pas al primei activitati este executat de muncitorul <var>#2</var>, de la momentul <var>18</var> pana la momentul <var>23</var> <var>(TA<sub>1</sub> = 23)</var>. Astfel, raspunsul este <var>18 + 23 = 41</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

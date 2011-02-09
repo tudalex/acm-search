@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>zmeu2.in, zmeu2.out</td><td><strong>Sursă</strong></td><td>OJI 2003, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=125">Dana Lica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/stocarul"><img src="/utilizator/stocarul?action=download&amp;file=avatar&amp;resize=L16x16" alt="stocarul">Cosmin Mihai Tutunaru</a> <a title="Rating stocarul: 725" class="rating-badge-1" href="http://infoarena.ro/utilizator/stocarul?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/stocarul">stocarul</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=zmeu2">Vezi solutiile trimise</a></p>
+
+<h1>Zmeu2<br></h1>
+
+<p>Un zmeu cu <var>N</var> capete călătoreşte din poveste în poveste, iar în poveştile tradiţionale întâlneşte câte un Făt Frumos care-l mai scurtează de câteva capete, în timp ce în poveştile moderne salvează omenirea mâncând în timp record, cu toate capetele lui, insecte ucigaşe apărute prin mutaţii genetice. Într-o seară, el îşi planifică o succesiune de poveşti cărora să le dea viaţă. El ştie <var>P</var> poveşti numerotate de la <var>1</var> la <var>P</var>, durata fiecăreia şi numărul de capete pe care le pierde în fiecare poveste. Mai ştie o mulţime de <var>K</var> perechi de poveşti care nu pot fi spuse una după alta.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Ştiind că trebuie să înceapă cu povestea <var>1</var> şi să încheie succesiunea cu povestea <var>P</var>, ajutaţi bietul zmeu să aleagă una sau mai multe poveşti intermediare astfel încât durata totală să fie minimă şi să rămână cu cel puţin un cap la sfârşitul tuturor poveştilor.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>zmeu2.in</var> conţine pe prima linie numerele <var>N</var>, <var>P</var> şi <var>K</var> despărţite prin câte un spaţiu. Pe următoarele <var>P</var> linii se află câte o pereche de numere <var>d<sub>i</sub></var> şi <var>c<sub>i</sub></var> (separate prin câte un spaţiu) ce reprezintă durata şi capetele tăiate pentru fiecare poveste. Iar pe ultimele <var>K</var> linii se află câte o pereche de numere <var>p<sub>i</sub></var> şi <var>p<sub>j</sub></var> (separate prin câte un spaţiu) ce semnifică faptul că povestea <var>p<sub>j</sub></var> nu poate fi spusă după povestea <var>p<sub>i</sub></var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>zmeu2.out</var> veţi afişa un singur număr natural reprezentând durata (minimă) a succesiunii de poveşti, sau valoarea <var>-1</var> dacă nu există o astfel de succesiune.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 500</var></li>
+<li><var>1 ≤ P ≤ 200</var></li>
+<li><var>0 ≤ K ≤ 30.000</var></li>
+<li>Valorile reprezentând duratele şi numărul de capete sunt numere naturale (duratele fiind strict pozitive), nedepăşind valoarea 10.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>zmeu2.in</th><th>zmeu2.out</th></tr><tr><td>10 4 2<br>
+  2 6<br>
+  4 0<br>
+  1 3<br>
+  3 3<br>
+  3 2<br>
+  4 3<br></td><td>9<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,64 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>numere.in, numere.out</td><td><strong>Sursă</strong></td><td>Happy Coding 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">2/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=numere">Vezi solutiile trimise</a></p>
+
+<h1>Numere<br></h1>
+
+<p>Cand erau ei mai tineri, lui Mars si lui Mugurel le placea sa se joace cu numerele. Astfel, ei au inventat urmatorul joc: Doi jucatori se joaca cu doua numere pozitive. Jucatorii efectueaza mutari alternativ, iar jucatorul care a efectuat ultima mutare castiga. O mutare consta in scaderea din numarul mai mare a unui multiplu strict pozitiv al numarului mai mic, cu conditia ca acest multiplu sa fie mai mic decat sau egal cu numarul mai mare. Altfel spus, presupunand ca cele doua numere sunt <var>X</var> si <var>Y</var> si ca <var>X≥Y</var>, o mutare consta in scaderea din numarul <var>X</var> a oricarui numar de forma <var>K*Y</var> (<var>K≥1</var>), cu conditia <var>K*Y≤X</var>. Jocul se termina cand unul din numere devine egal cu <var>0</var>. Scrieti un program care decide care din cei doi jucatori va castiga jocul, considerand ca ambii jucatori joaca optim.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului <var>numere.in</var> contine numarul <var>T</var> de jocuri descrise in continuare. Fiecare din urmatoarele <var>T</var> linii contine <var>2</var> numere intregi <var>X</var> si <var>Y</var>, separate printr-un spatiu, reprezentand valorile initiale ale celor doua numere.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>In fisierul <var>numere.out</var> veti afisa <var>T</var> linii. Pe fiecare linie veti afisa castigatorul jocului corespunzator din fisierul de intrare. Veti afisa <var>1</var>, daca primul jucator (cel care efectueaza prima mutare) va castiga, respectiv <var>2</var>, daca al doilea jucator va castiga.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 20</var></li>
+<li><var>1 ≤ <span class="caps">X,Y </span>≤ 10<sup>9</sup></var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>numere.in</th><th>numere.out</th></tr><tr><td>5<br>
+  1 19<br>
+  19 1<br>
+  27 33<br>
+  333333333 273333333<br>
+  9997 19999<br></td><td>1<br>
+  1<br>
+  2<br>
+  2<br>
+  1</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 3 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=45">Diverse</a></span>
+            <a href="javascript:show_tag_list(45)" id="tag_anchor_45" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_45"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=345">Recursivitate</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=100">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=60">Teoria jocurilor</a></span>
+            <a href="javascript:show_tag_list(60)" id="tag_anchor_60" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_60"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=78">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

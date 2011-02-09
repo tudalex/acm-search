@@ -1,0 +1,30 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>kprime.in, kprime.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2009, Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/wefgef"><img src="/utilizator/wefgef?action=download&amp;file=avatar&amp;resize=L16x16" alt="wefgef">Andrei Grigorean</a> <a title="Rating wefgef: 783" class="rating-badge-4" href="http://infoarena.ro/utilizator/wefgef?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/wefgef">wefgef</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=kprime">Vezi solutiile trimise</a></p>
+
+<h1>Kprime<br></h1>
+
+<p>Mirunei ii plac doar sirurile care contin exact <var>K</var> numere prime. Pentru un sir cu <var>N</var> elemente, determinati cate subsecvente ale acestuia sunt pe gustul Mirunei.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>kprime.in</var> contine pe prima linie doua numere naturale <var>N</var> si <var>K</var> avand semnificatia din enunt. Cea de a doua linie va contine <var>N</var> numere naturale reprezentand elementele sirului dat.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>kprime.out</var> veti afisa numarul cautat.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 10<sup>5</sup></var></li>
+<li><var>1 ≤ K ≤ N</var></li>
+<li>Elementele sirului vor cuprinse intre <var>1</var> si <var>1000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>kprime.in</th><th>kprime.out</th></tr><tr><td>5 2<br>
+  1 2 4 3 8<br></td><td>4<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,51 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>munte2.in, munte2.out</td><td><strong>Sursă</strong></td><td>ONI 2003, clasa 10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=127">Mihai Stroe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Tabara"><img src="/utilizator/Tabara?action=download&amp;file=avatar&amp;resize=L16x16" alt="Tabara">Tabara Mihai</a> <a title="Rating Tabara: 449" class="rating-badge-3" href="http://infoarena.ro/utilizator/Tabara?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Tabara">Tabara</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=munte2">Vezi solutiile trimise</a></p>
+
+<h1>Munte2<br></h1>
+
+<p>Intr-o zona montana se doreste deschiderea unui lant de telecabine. Statiile de telecabine pot fi infiintate pe oricare din cele <var>N</var> varfuri ale zonei montane. Varfurile sunt date in ordine de la stanga la dreapta si numerotate de la <var>1</var> la <var>N</var>, fiecare varf <var>i</var> fiind precizat prin coordonata <var>X<sub>i</sub></var> pe axa OX si prin inaltimea <var>H<sub>i</sub></var>.<br>
+Se vor infiinta exact <var>K</var> statii de telecabine. Statia de telecabine <var>i</var> (2 ≤ <var>i</var> ≤ <var>K</var>) va fi conectata cu statiile <var>i-1</var> si <var>i+1</var>. Statia <var>1</var> va fi conectata doar cu statia <var>2</var>, iar statia <var>K</var>, doar cu statia <var>K-1</var>. Statia <var>1</var> va fi obligatoriu amplasata in varful <var>1</var>, iar statia <var>K</var> in varful <var>N</var>.<br>
+	Se doreste ca lantul de telecabine sa asigure legatura intre varful <var>1</var> si varful <var>N</var>. Mai mult, se doreste ca lungimea totala a cablurilor folosite pentru conectare sa fie minima. Lungimea cablului folosit pentru a conecta doua statii este egala cu distanta dintre ele. In plus, un cablu care uneste doua statii consecutive nu poate avea lungimea mai mare decat o lungime fixata <var>L</var>.<br>
+	O restrictie suplimentara este introdusa de formele de relief. Astfel, varfurile <var>i</var> si <var>j</var> ( <var>i &lt; j</var>) nu pot fi conectate direct daca exista un varf <var>v</var> ( <var>i &lt; v &lt; j</var>) astfel incat segmentul de dreapta care ar uni varfurile <var>i</var> si <var>j</var> nu ar trece pe deasupra varfului <var>v</var>. In cazul in care cele trei varfuri sunt coliniare, se considera toate trei ca fiind statii, chiar daca distanta dintre varfurile <var>i</var> si <var>j</var> este mai mica decat <var>L</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Dandu-se amplasarea celor <var>N</var> varfuri ale lantului muntos, stabiliti o modalitate de dispunere a celor <var>K</var> statii de telecabine astfel incat lungimea totala a cablurilor folosite pentru conectare sa fie minima, cu restrictiile de mai sus. <br>
+Se garanteaza ca, pe toate testele date la evaluare, conectarea va fi posibila.<br></p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie contine trei numere intregi <var>N</var>, <var>K</var> si <var>L</var>, separate prin spatii, cu semnificatiile de mai sus. Urmatoarele <var>N</var> linii contin coordonatele varfurilor: linia <var>i</var> + <var>1</var> contine coordonatele varfului <var>i</var>, <var>X<sub>i</sub></var> si <var>H<sub>i</sub></var>, separate printr-un spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+
+<ul><li>Pe prima linie lungimea totala minima a cablurilor, rotunjita la cel mai apropiat numar intreg (pentru orice intreg <var>Q</var>, <var><span class="caps">Q.5</span></var> se rotunjeste la <var>Q+1</var>).</li>
+<li>Pe a doua linie <var>K</var> numere distincte intre <var>1</var> si <var>N</var>, ordonate crescator, numerele varfurilor in care se vor infiinta statii de telecabine. </li>
+</ul><h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 100</var></li>
+<li><var>2 ≤ K ≤ 30</var> si <var>K ≤ N</var></li>
+<li><var>0 ≤ L, X<sub>i</sub>, H<sub>i</sub> ≤ 100.000</var> si <var>X<sub>i</sub> &lt; X<sub>i+1</sub></var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>munte2.in</th><th>munte2.out</th></tr><tr><td>7 5 11 <br>
+0 16 <br>
+4 3<br>
+6 8<br>
+7 4 <br>
+12 16<br>
+13 16<br>
+14 16<br></td><td>22 <br>
+1 3 5 6 7<br></td></tr></table><h3>Explicatie</h3>
+
+
+<ul><li>Trasarea unui cablu direct intre varfurile <var>1</var> si <var>5</var> ar fi contravenit restrictiei referitoare la lungimea maxima a unui cablu. In plus, s-ar fi obtinut o solutie cu <var>2</var> statii de telecabine in loc de <var>3</var> (deci solutia ar fi invalida si pentru valori mari ale lui <var>L</var>).</li>
+<li>Pentru a ilustra restrictia introdusa de formele de relief, precizam ca varfurile <var>1</var> si <var>4</var> nu au putut fi conectate direct datorita inaltimii varfului <var>3</var>. De asemenea, varfurile <var>5</var> si <var>7</var> nu au putut fi conectate direct datorita inaltimii varfului <var>6</var>.</li>
+</ul><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,56 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>mesaje.in, mesaje.out</td><td><strong>Sursă</strong></td><td>ONI 2010, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=236">Florentina Ungureanu</a>, <a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mathboy"><img src="/utilizator/mathboy?action=download&amp;file=avatar&amp;resize=L16x16" alt="mathboy">Dragos-Alin Rotaru</a> <a title="Rating mathboy: 510" class="rating-badge-3" href="http://infoarena.ro/utilizator/mathboy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mathboy">mathboy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=mesaje">Vezi solutiile trimise</a></p>
+
+<h1>Mesaje<br></h1>
+
+<p>După multe năzbâtii făcute împreună, Alex şi Cipri nu mai au voie să se întâlnească. Alex – strategul echipei - a plănuit o nouă poznă şi a decis să-i transmită prietenului său planul de luptă, constând din anumite cuvinte dintr-un mesaj <var>m<sub>0</sub></var>. Pentru a nu fi descoperiţi, i-a trimis ulterior mai multe mesaje <var>m<sub>1</sub>, m<sub>2</sub>, ...</var> lui Cipri, acesta trebuind să le descifreze folosind convenţia secretă stabilită la începutul prieteniei lor şi să „acţioneze”. Fiecare mesaj <var>m<sub>i</sub></var> este format din mai multe cuvinte, separate prin câte un spaţiu, numerotate cu valori consecutive, începând de la <var>1</var>. </p>
+
+<p>Pentru a afla planul, Cipri trebuie să găsească cea mai mare valoare <var>i ≥ 0</var> astfel încât mesajele <var>m<sub>i</sub></var> şi <var>m<sub>0</sub></var> să conţină cel puţin un cuvânt identic având acelaşi număr de ordine în ambele mesaje. Din <var>m<sub>0</sub></var> se păstrează toate cuvintele care se găsesc şi în mesajul <var>m<sub>i</sub></var> cu acelaşi număr de ordine ca în <var>m<sub>0</sub></var>. Cuvintele păstrate trebuie ordonate în ordine descrescătoare lexicografică a puterii lor. Puterea cuvântului cu numărul de ordine <var>j</var> în <var>m<sub>0</sub></var> este egală cu şirul ordonat descrescător al indicilor mesajelor în care apare cu acelaşi număr de ordine ca în m<sub>0</sub>. Astfel, un cuvânt care a apărut cu numărul de ordine <var>2</var> în mesajele <var>m<sub>0</sub></var>, <var>m<sub>6</sub></var> şi <var>m<sub>8</sub></var> are puterea <var>{8, 6, 0}</var>. Dacă două cuvinte au aceeaşi putere, vor rămâne în ordinea din mesajul iniţial. Lui Cipri nu i-a mai rămas decât să citească fiecare cuvânt de la dreapta la stânga şi a descifrat tot planul de luptă!</p>
+
+<h2>Cerinţă</h2>
+
+<p>Cunoscând mesajele transmise de Alex, ajutaţi-l pe Cipri să descifreze planul de luptă conform convenţiei secrete.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>mesaje.in</var> conţine în ordine mesajele <var>m<sub>0</sub>, m<sub>1</sub>, m<sub>2</sub>, ...,</var> câte unul pe linie.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>mesaje.out</var> va conţine pe prima linie numărul <var>n</var> de cuvinte ale planului de luptă, iar pe cea de a doua linie cele <var>n</var> cuvinte ale planului de luptă.</p>
+
+<h2>Restricţii si precizări</h2>
+
+
+<ul><li>Mesajele sunt memorate câte unul pe linie, fiind formate din cuvinte separate prin câte un spaţiu. </li>
+<li>Lungimea unui cuvânt este de maxim <var>20</var> de caractere, litere mici ale alfabetului englez.</li>
+<li>Lungimea unui mesaj este de maxim <var>30002</var> de caractere.</li>
+<li>Toate mesajele au acelaşi număr de cuvinte.</li>
+<li>Fişierul de intrare conţine cel puţin unul şi cel mult <var>128</var> de mesaje.</li>
+<li>Orice linie din fişierul de intrare (mesaj) se termină cu marcajul de sfârşit de linie <var>(newline)</var>. Caracterul <var>newline</var> nu va fi considerat ca făcând parte din mesaj. </li>
+<li>Nu există mesaje vide.</li>
+<li>Se acordă <var>40%</var> din punctajul corespunzător fiecărui test pentru determinarea valorii <var>n</var> şi întregul punctaj pentru rezolvarea corectă a ambelor cerinţe.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>mesaje.in</th><th>mesaje.out</th></tr><tr><td>inosos yy ataeclud ni<br>
+a yy ataeclud ni<br>
+yy inosos ni yy<br>
+inosos bb ataeclud ni<br>
+acni in e enib<br></td><td>3<br>
+dulceata in sosoni<br></td></tr><tr class="example"><td>miras ep maeg<br></td><td>3<br>
+sarim pe geam<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Pentru primul exemplu:</p>
+
+
+<ul><li>Mesajele <var>m<sub>0</sub></var> şi <var>m<sub>4</sub></var> nu conţin cuvinte identice cu acelaşi număr de ordine. Mesajele <var>m<sub>0</sub></var> şi <var>m<sub>3</sub></var> conţin trei cuvinte identice cu acelaşi număr de ordine: <var>inosos, ataeclud, ni</var>. În ordinea puterii, ele sunt: <var>ataeclud {3,1,0}, ni {3,1,0}, inosos{3,0}</var>.</li>
+</ul><p>Pentru al doilea exemplu :</p>
+
+
+<ul><li>Pentru că a primit un singur mesaj, planul de luptă conţine oglinditele cuvintele din textul iniţial având toate aceeaşi putere, citite de la dreapta la stânga.</li>
+</ul><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

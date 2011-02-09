@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>irmcast.in, irmcast.out</td><td><strong>Sursă</strong></td><td>Selectie echipe ACM ICPC, UPB 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.8 sec</td><td><strong>Limită de memorie</strong></td><td>65535 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=irmcast">Vezi solutiile trimise</a></p>
+
+<h1>Irmcast<br></h1>
+
+<p>Sa consideram o retea de comunicatie ce consta din <var>N</var> noduri numerotate de la <var>1</var> la <var>N</var>. Nodurile sunt interconectate in asa fel incat reteaua are structura unui arbore avand radacina in nodul <var>1</var>. Nodul <var>1</var> doreste sa trimita un mesaj (acelasi mesaj) catre fiecare nod care este o frunza in arbore (adica nu are nici un fiu) - aceasta operatie este cunoscuta sub numele de <strong>multicast</strong>. Un mesaj poate fi transmis numai de la un nod la unul din descendentii acestuia (inclusiv nodul insusi). Fiecare muchie a arborelui are asociat un cost, iar costul transmiterii unui mesaj de la un nod <var>X</var> la unul din descendentii acestuia este suma costurilor muchiilor de pe drumul unic de la <var>X</var> la <var>Y</var> (daca <var>X = Y</var>, atunci costul este <var>0</var>). Costul total al unei strategii de multicast este egal cu suma costurilor transmiterii fiecarui mesaj.<br>
+Pentru a-si indeplini scopul, nodul <var>1</var> va utiliza urmatoarea strategie de multicast: Strategia consta din <var>K</var> runde intermediare. In prima runda, nodul <var>1</var> trimite un mesaj individual catre o submultime de noduri <var>S<sub>1</sub></var>, astfel incat fiecare nod frunza din arbore este descendent al exact unui singur nod <var>X</var> din <var>S<sub>1</sub></var> (aceasta inseamna ca orice nod <var>X</var> din <var>S<sub>1</sub></var> nu este descendent al unui alt nod <var>Y</var> din <var>S<sub>1</sub></var>). In runda <var>i</var> <var>(2 ≤ i ≤ K)</var>, fiecare nod X din <var>S<sub>i-1</sub></var> trimite un mesaj individual unei submultimi de noduri <var>S<sub>i,X</sub></var> din subarborele sau, in asa fel incat fiecare nod frunza care este descendent al lui <var>X</var> este descendent al exact unui singur nod din <var>S<sub>i,X</sub></var>. Submultimea de noduri <var>S<sub>i</sub></var> este reuniunea multimilor <var>S<sub>i,X</sub></var>, pentru fiecare <var>X</var> din <var>S<sub>i-1</sub></var>. La final, fiecare nod <var>X</var> din <var>S<sub>K</sub></var> trebuie sa trimita un mesaj individual fiecarui nod frunza care este descendent al lui <var>X</var>.<br>
+Fiind data reteaua de comunicatie, costul fiecarei muchii si numarul de runde intermediare <var>K</var>, determinati costul total minim al unei strategii de multicast.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>irmcast.in</var> contine numarul intreg <var>T</var>, reprezentand numarul de teste ce urmeaza. Prima linie a fiecarui test contine <var>2</var> numere intregi, separate printr-un spatiu, <var>N</var> si <var>K</var>. Urmatoarele <var>N-1</var> linii contin cate <var>3</var> numere intregi fiecare: <var>A</var>, <var>B</var> si <var>C</var>, avand semnificatia ca nodul <var>B</var> este un fiu al nodului <var>A</var>, iar muchia <var>(A,B)</var> are costul <var>C</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pentru fiecare din cele <var>T</var> teste date in fisierul de intrare, afisati in fisierul de iesire <var>irmcast.out</var> cate o linie continand costul total minim al unei strategii de multicast avand proprietatile specificate.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 21</var></li>
+<li><var>1 ≤ N ≤ 333</var></li>
+<li><var>1 ≤ K ≤ 10</var></li>
+<li><var>1 ≤ costul oricarei muchii ≤ 10 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>irmcast.in</th><th>irmcast.out</th></tr><tr><td>1<br>
+6 1<br>
+1 2 10<br>
+1 3 11<br>
+2 4 21<br>
+2 5 17<br>
+3 6 7<br></td><td>66<br></td></tr></table><h3>Explicatie</h3>
+
+<p>In prima (si singura) runda intermediara, nodul <var>1</var> trimite mesaje nodului <var>6</var> (cu costul <var>18</var>) si nodului <var>2</var> (cu costul <var>10</var>). Multimea <var>S<sub>1</sub></var> este <var>{2,6}</var>. La final, nodul <var>6</var> va trimite un mesaj catre el insusi (cu costul <var>0</var>), iar nodul <var>2</var> va trimite mesaje nodului <var>4</var> (cu costul <var>21</var>) si nodului <var>5</var> (cu costul <var>17</var>). Costul total este <var>18+10+21+17=66</var>.<br><img src="http://infoarena.ro/problema/irmcast?action=download&amp;file=irmcast.jpg&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>senzori.in, senzori.out</td><td><strong>Sursă</strong></td><td>Lot 2008 - Piatra Neamt, Baraj2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=senzori">Vezi solutiile trimise</a></p>
+
+<h1>Senzori<br></h1>
+
+<p>De-a lungul autostrazii Soarelui sunt amplasati <var>N</var> senzori, numerotati in ordinea de la Bucuresti spre Constanta, de la <var>1</var> la <var>N</var>. In timpul unei zile, senzorii inregistreaza date in continuu, cu exceptia unui anumit interval de timp; mai exact, pentru orice senzor <var>i</var> exista un interval <var>[T<sub>1,i</sub>,T<sub>2,i</sub>)</var> in care senzorul trebuie sa trimita datele inregistrate catre statia centrala (acest interval de timp poate fi diferit de la un senzor la altul). Durata de transmitere a datelor senzorului <var>i</var> este <var>d<sub>i</sub></var>, iar datele trebuie sa fie transmise intr-un interval de timp <var>[t<sub>start,i</sub>,t<sub>start,i</sub>+d<sub>i</sub>) ⊆ [T<sub>1,i</sub>,T<sub>2,i</sub>)</var> (momentul <var>t<sub>start,i</sub></var> nu este dat). Datele unui senzor <var>i</var> au o valoare <var>v<sub>i</sub></var> (in functie de importanta strategica a amplasarii senzorului). Senzorii comunica wireless cu statia centrala, pe aceeasi frecventa, si de aceea pot aparea interferente la transmisia datelor senzorilor cu numere de ordine consecutive. Asadar, intervalele de timp in care sunt transmise datele a doi senzori <var>i</var> si <var>i+1</var> <var>(1≤i&lt;N)</var> trebuie sa fie disjuncte: <var>[t<sub>start,i</sub>,t<sub>start,i</sub>+d<sub>i</sub>) ∩ [t<sub>start,i+1</sub>,t<sub>start,i+1</sub>+d<sub>i+1</sub>) = ∅</var>. Aceasta restrictie poate conduce la situatia neplacuta in care nu toti senzorii vor putea trimite datele catre statia centrala in intervalul de timp disponibil ( <var>[T<sub>1,i</sub>,T<sub>2,i</sub>)</var> pentru senzorul <var>i</var>). In acest caz, se doreste determinarea unei submultimi de senzori care vor transmite datele catre statia centrala si pentru care suma valorilor datelor transmise este maxima. <br>
+Sa se determine suma maxima a valorilor datelor transmise de o submultime a celor <var>N</var> senzori, astfel incat transmisia datelor acestor senzori sa respecte toate restrictiile specificate.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>senzori.in</var> contine pe prima linie numarul natural <var>N</var>, reprezentand numarul de senzori. Fiecare dintre urmatoarele <var>N</var> linii contine cate <var>4</var> numere intregi separate prin spatiu: <var>T<sub>1,i</sub> T<sub>2,i</sub> d<sub>i</sub> v<sub>i</sub></var>; a <var>i</var>-a dintre aceste linii corespunde senzorului cu numarul <var>i</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>senzori.out</var> veti afisa suma maxima a valorilor datelor transmise de o submultime de senzori care poate trimite datele catre statia centrala respectand toate restrictiile specificate in enunt.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 2000</var></li>
+<li><var>0 ≤ T<sub>1,i</sub> &lt; T<sub>2,i</sub> ≤ 2000</var></li>
+<li><var>1 ≤ d<sub>i</sub> ≤ T<sub>2,i</sub>-T<sub>1,i</sub></var></li>
+<li><var>1 ≤ v<sub>i</sub> ≤ 10000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>senzori.in</th><th>senzori.out</th></tr><tr><td>4<br>
+  0 5 3 6<br>
+  1 4 3 7<br>
+  2 8 3 5<br>
+  6 8 2 5<br></td><td>16<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Senzorii care vor trimite date catre statia centrala sunt: <var>1</var>, <var>3</var> si <var>4</var>. Senzorul <var>1</var> va trimite datele in intervalul <var>[0,3)</var>, senzorul <var>3</var> va trimite datele in intervalul <var>[3,6)</var>, iar senzorul <var>4</var> in intervalul <var>[6,8)</var>. Valoarea totala a datelor trimise este <var>6+5+5=16</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

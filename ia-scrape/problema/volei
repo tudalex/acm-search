@@ -1,0 +1,54 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>volei.in, volei.out</td><td><strong>Sursă</strong></td><td>ONI 2009, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrei-alpha"><img src="/utilizator/andrei-alpha?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrei-alpha">Andrei-Bogdan Antonescu</a> <a title="Rating andrei-alpha: 700" class="rating-badge-1" href="http://infoarena.ro/utilizator/andrei-alpha?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrei-alpha">andrei-alpha</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=volei">Vezi solutiile trimise</a></p>
+
+<h1>Volei<br></h1>
+
+<p>La ora de sport elevii doresc să joace volei. Sunt exact <var>N</var> fete şi <var>N</var> băieţi şi se doreşte formarea a două echipe, o echipă formată numai din fete, iar cealaltă numai din băieţi. Iniţial, elevii au o poziţie fixată pe teren. Ei pot fi reprezentaţi ca <var>2N</var> puncte de coordonate întregi în plan. Pentru a putea începe jocul, profesorul de sport trebuie să traseze un fileu (o dreaptă) între echipa băieţilor şi echipa fetelor, astfel încât cele două echipe să se afle de o parte şi de alta a fileului. Cum trasarea unui fileu între cele două echipe poate să nu fie posibilă conform aşezării iniţiale, trebuie să fie efectuate unele schimbări. Astfel, profesorul poate alege la un moment dat o singură fată şi un singur băiat, situaţi la distanţa maxim <var>D</var> şi să le interschimbe poziţiile (fata va trece în locul băiatului, iar băiatul în locul fetei).</p>
+
+<h2>Cerinta</h2>
+
+<p>Să se determine numărul minim de mutări pe care trebuie să le efectueze profesorul de sport pentru a fi posibilă amplasarea unui fileu, precum şi mutările efectuate.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>volei.in</var> conţine pe prima linie <var>N</var>, numărul de fete, egal cu numărul de băieţi. A doua linie va conţine numărul natural nenul <var>D</var>, cu semnificaţia din enunţ. Fiecare dintre următoarele <var>2N</var> linii va conţine un triplet de forma <var>x</var> <var>y</var> <var>tip</var>, unde <var>x</var> <var>y</var> sunt coordonatele iniţiale ale unui elev (abscisa, ordonata), iar tip este caracterul <var>B</var> dacă elevul corespunzător este băiat sau <var>F</var> dacă este fată. </p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire volei.out va conţine pe prima linie un număr natural nrmin reprezentând numărul minim de mutări care trebuie să fie efectuate. Pe următoarele nrmin linii se vor afişa mutările efectuate, câte o mutare pe o linie, în ordinea efectuării lor. O mutare este descrisă sub forma <var>x<sub>1</sub></var> <var>y<sub>1</sub></var> <var>x<sub>2</sub></var> <var>y<sub>2</sub></var>, cu semnificaţia că elevii situaţi la poziţiile (<var>x<sub>1</sub></var>, <var>y<sub>1</sub></var>) şi (<var>x<sub>2</sub></var>, <var>y<sub>2</sub></var>) vor fi interschimbaţi.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>2</var> ≤ <var>N</var> ≤ <var>7</var></li>
+<li><var>1</var> ≤ <var>D</var> ≤ <var>30000</var></li>
+<li>Coordonatele sunt numere întregi din intervalul [-<var>10000</var>, <var>10000</var>]</li>
+<li>Nu vor exista <var>3</var> poziţii coliniare.</li>
+<li>Nu vor exista două persoane în aceeaşi poziţie.</li>
+<li>Distanţa dintre punctele (<var>x<sub>1</sub></var>, <var>y<sub>1</sub></var>) şi (<var>x<sub>2</sub></var>, <var>y<sub>2</sub></var>) este sqrt((<var>x<sub>1</sub></var> - <var>x<sub>2</sub></var>)<sup>2</sup> + (<var>y<sub>1</sub></var> - <var>y<sub>2</sub></var>)<sup>2</sup>).</li>
+<li>Dacă sunt mai multe soluţii posibile, afişaţi oricare dintre acestea.</li>
+<li>Se va acorda <var>40</var>% din punctajul pe test dacă numărul de mutări este corect, respectiv <var>100</var>% din punctaj dacă atât numărul mutărilor, cât şi mutarile efectuate sunt corecte.</li>
+<li>Pentru <var>50</var>% dintre teste <var>D</var> mai mare decât maximul distanţelor între oricare două puncte.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>volei.in</th><th>volei.out</th></tr><tr><td>3<br>
+4<br>
+-2 4 B<br>
+-1 3 F<br>
+-1 -2 B<br>
+1 5 F<br>
+3 3 F<br>
+6 6 B<br></td><td>2<br>
+-2 4 -1 3<br>
+-1 3 3 3<br></td></tr></table><h3>Explicaţie</h3>
+
+<p><img src="http://infoarena.ro/problema/volei?action=download&amp;file=fete.jpg&amp;safe_only=true" alt=""></p>
+
+<p>Se interschimbă băiatul de la poziţia (-<var>2</var>,<var>4</var>) cu fata de la poziţia (-<var>1</var>,<var>3</var>). Apoi se interschimbă băiatul de la poziţia (-<var>1</var>,<var>3</var>) cu fata de la poziţia (<var>3</var>,<var>3</var>).</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,60 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>struti.in, struti.out</td><td><strong>Sursă</strong></td><td>preONI 2006 Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>4 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=struti">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=struti">Vezi solutiile trimise</a></p>
+
+<h1>Struti<br></h1>
+
+<p>Patratel s-a lasat de scoala si, pentru ca a aflat ca sunt foarte profitabile, s-a apucat de afaceri cu struti. Pentru a demara afacerea sa, el are nevoie mai intai de toate sa cumpere teren in regiune. Regiunea este dreptunghiulara si are dimensiunile de <var>M</var> km x <var>N</var> km, fiind impartita in zone de <var>1</var> x <var>1</var> km. Fiecare zona are o altitudine cunoscuta, specificata pe harta in metri fata de nivelul marii. Astfel, toate altitudinile sunt numere intregi nenegative. Terenul pe care Patratel vrea sa il cumpere in aceasta regiune trebuie sa fie de asemenea dreptunghiular si sa aiba laturile paralele cu ale regiunii. In plus, terenul nu trebuie ales la intamplare. Pentru ca a studiat comportamentul strutilor, el si-a dat seama ca sunt animale destul de pretentioase. Se defineste diferenta de altitudine a unui teren ca fiind diferenta dintre altitudinea maxima si altitudinea minima ale unor zone de <var>1</var> km<sup>2</sup> cuprinse in teren. Pentru ca strutii sa se dezvolte optim, diferenta de altitudine a terenului ales trebuie sa fie cat mai mica posibil.</p>
+
+<p>Patratel primeste <var>P</var> oferte pe care trebuie sa le analizeze. O oferta este formata dintr-o pereche de numere naturale (<var>DX DY</var>), semnificand faptul ca Patratel poate alege oriunde in regiune un teren cu laturile de dimensiuni <var>DX</var> si <var>DY</var> ( nu neaparat in aceasta ordine ). Pentru fiecare oferta in parte Patratel ar dori sa stie care este diferenta de altitudine minima a unui teren cu laturile specificate in oferta.</p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati diferenta de altitudine mimima pentru fiecare oferta in parte.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului <var>struti.in</var> contine <var>M</var>, <var>N</var> si <var>P</var>, dimensiunile regiunii si numarul de oferte, despartite de cate un spatiu. Pe fiecare din urmatoarele <var>M</var> linii se afla cate <var>N</var> numere naturale nenegative, specificand altitudinea zonei respective. Urmatoarele <var>P</var> linii descriu cate o oferta, compusa din doua numere naturale <var>DX</var> si <var>DY</var>, cu semnificatiile descrise in enunt.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul <var>struti.out</var> contine <var>P</var> linii, pe linia <var>i</var> aflandu-se <var><span class="caps">MIN</span></var> si <var>NR</var>, diferenta de altitudine minima pentru oferta a <var>i</var>-a si numarul de terenuri posibile cu aceasta diferenta minima.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>3 ≤ M, N ≤ 1 000</var></li>
+<li><var>P ≤ 10</var></li>
+<li><var>1 &lt; <span class="caps">DX,</span> DY ≤ minim(M, N)</var></li>
+<li>Fiecare teren selectat trebuie sa fie inclus complet in regiune</li>
+<li>Toate altitudinile sunt date in metri si nu depasesc <var>8 000</var></li>
+<li>Punctele pe un test se acorda doar daca fisierul de iesire este in intregime corect</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>struti.in</th><th>struti.out</th></tr><tr><td>4 4 2<br>
+1 4 3 2<br>
+5 4 8 9<br>
+3 8 5 8<br>
+2 0 6 4<br>
+2 3<br>
+2 2<br></td><td>5 4 <br>
+4 4<br></td></tr></table><h3>Explicatii</h3>
+
+<p>Cele patru terenuri care pot fi selectate pentru prima oferta sunt cele ingrosate:<br><var>1 4 3 2  1 4 3 2  1 4 3 2  1 <b>4 3</b> 2</var><br><var>5 4 <b>8 9</b>  5 <b>4 8 9</b>  <b>5 4 8</b> 9  5 <b>4 8</b> 9</var><br><var>3 8 <b>5 8</b>  3 <b>8 5 8</b>  <b>3 8 5</b> 8  3 <b>8 5</b> 8</var><br><var>2 0 <b>6 4</b>  2 0 6 4  2 0 6 4  2 0 6 4|</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=94">Deque</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

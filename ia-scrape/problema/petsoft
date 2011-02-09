@@ -1,0 +1,58 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>petsoft.in, petsoft.out</td><td><strong>Sursă</strong></td><td>Concurs de incalzire 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=119">Silviu-Ionut Ganceanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=petsoft">Vezi solutiile trimise</a></p>
+
+<h1>PetSoft<br></h1>
+
+<p>Petrica detine o companie de software numita <span class="caps">PETSOFT </span>cu care este lider in domeniu. Secretul succesului sta in modul de organizare interna din aceasta firma. Fiecare angajat are asociat un numar distinct de la <var>1</var> la <var>N</var> si se stie pentru fiecare angajat cine este seful sau direct (angajatul numarul <var>1</var> este chiar Petrica si nu are nici un sef). Mai exact relatiile dintre angajatii firmei formeaza un arbore cu radacina in nodul <var>1</var>. Firma este invitatata la un targ international de software unde isi va prezenta oferta. La conferinta se vor prezenta din partea firmei un numar de echipe (stabilit de Petrica) de cate doi angajati. Petrica nu este interasat de numarul de echipe ci de valoarea lor. Pentru asta el stabileste urmatoarele regula: angajatii <var>x</var> si <var>y</var> pot fi trimisi la conferinta impreuna daca <var>x</var> este seful direct al lui <var>y</var> sau daca <var>x</var> si <var>y</var> au acelasi sef iar valoarea echipei formate din cei doi este <var>|x - y|</var>. De asemenea este stiut faptul ca Petrica (angajatul numarul <var>1</var>) nu va fi incadrat in nici o echipa, el fiind managerul firmei. Valoarea totala e echipelor va fi suma valorilor tuturor echipelor.</p>
+
+<h2>Cerinta</h2>
+
+<p>Se cauta un programator capabil sa stabileasca modul de formare a echipelor astfel incat valoarea totala a echipelor sa fie maxima. Odata gasit, el va fi angajat direct intr-un loc de frunte in ierarhia firmei. Poti fi chiar tu acel programator, dar trebuie sa demostrezi ca esti alegerea buna dezvoltand un program care poate calcula valoarea totala maxima a echipelor pe care firma le va trimite la conferinta.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie in fisierul de intrare <var>petsoft.in</var> se afla un numar intreg <var>N</var> reprezentand numarul de angajati ai firmei. Pe urmatoarele <var>N-1</var> linii sunt date informatiile cu privire la ierhia firmei: pe linia <var>i</var> se afla seful angajatului cu numarul <var>i</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie din fisierul de iesire <var>petsoft.out</var> se va gasi un numar intreg reprezentand valoarea totala maxima a echipelor ce vor fi trimise la conferinta.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1000</var></li>
+<li>Fiecare angajat poate fi incadrat in maxim o echipa.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>petsoft.in</th><th>petsoft.out</th></tr><tr><td>5<br>
+1<br>
+4<br>
+2<br>
+4<br></td><td>4</td></tr></table><h3>Explicatii</h3>
+
+<p>Se vor forma echipele 2-4 si 3-5.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=69">Parcurgere in adancime</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=71">Dinamica pe arbore</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

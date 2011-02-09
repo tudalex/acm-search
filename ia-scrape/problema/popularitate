@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>popularitate.in, popularitate.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2010, Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=253">Stefan Alexandru Filip</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Prostu"><img src="/utilizator/Prostu?action=download&amp;file=avatar&amp;resize=L16x16" alt="Prostu">Filip Stefan A.</a> <a title="Rating Prostu: 650" class="rating-badge-4" href="http://infoarena.ro/utilizator/Prostu?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Prostu">Prostu</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=popularitate">Vezi solutiile trimise</a></p>
+
+<h1>Popularitate<br></h1>
+
+<p>Se dau <var>K</var> si <var>M</var> grupuri de numere. Fiecare din cele <var>M</var> grupuri contine <var>N<sub>i</sub></var> numere. Fie <var>G<sub>i</sub></var> produsul numerelor din grupul <var>i</var>. Definim popularitatea unui grup ca fiind <var>P</var> daca <var>K<sup>P</sup></var> divide <var>G<sub>i</sub></var> si <var>K<sup>P+1</sup></var> nu divide <var>G<sub>i</sub></var>, sau, echivalent, de cate ori se imparte <var>G<sub>i</sub></var> la <var>K</var>. Se cere sa determinati grupul cu popularitatea maxima.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>popularitate.in</var> contine pe prima linie <var>K</var>, iar pe a doua linie din fisier se gaseste <var>M</var>. Pe urmatoarele <var>M</var> linii se gasesc descrierile grupurilor. Pe linia <var>i+2</var> prima valoare reprezinta <var>N<sub>i</sub></var>. Ea e urmata de <var>N<sub>i</sub></var> numere asociate grupului <var>i</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>popularitate.out</var> veti afisa 2 valori reprezentand popularitatea cea mai mare si grupul care are aceasta popularitate. In caz ca sunt mai multe grupuri care au popularitate maxima afisati grupul cu indice minim.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>2 ≤ K ≤ 10000000</var> (<var>10</var> milioane)</li>
+<li><var>1 ≤ M ≤ 100</var></li>
+<li><var>1 ≤ N<sub>i</sub> ≤ 2000</var></li>
+<li>Grupurile sunt formate din numere naturale din intervalul <var>[1, 100000000]</var> (<var>100</var> milioane)</li>
+<li>Pentru <var>30%</var> din teste <var>K</var> este prim.</li>
+<li>Pentru <var>30%</var> din teste <var>N<sub>i</sub> ≤ 100</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>popularitate.in</th><th>popularitate.out</th></tr><tr><td>6<br>
+3<br>
+6 2 3 5 8 12 9<br>
+4 5 7 64 11<br>
+3 4 9 81<br></td><td>4 1<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>grupul <var>1</var> are popularitate <var>4</var>, <var>2 * 3 * 5 * 8 * 12 * 9 = 25920 = 6<sup>4</sup> * 20</var><br>
+grupul <var>2</var> are popularitate <var>0</var>, <var>5 * 7 * 64 * 11 = 24640</var> nu se divide cu <var>6</var><br>
+grupul <var>3</var> are popularitate <var>2</var>, <var>4 * 9 * 81 = 2916 = 6<sup>2</sup> * 81</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

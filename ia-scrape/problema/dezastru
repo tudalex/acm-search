@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>dezastru.in, dezastru.out</td><td><strong>Sursă</strong></td><td>preONI 2007, Runda 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=153">Adrian Diaconu</a>, <a href="/cauta-probleme?tag_id%5B%5D=152">Tiberiu-Lucian Florea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/greco"><img src="/utilizator/greco?action=download&amp;file=avatar&amp;resize=L16x16" alt="greco">Tiberiu-Lucian Florea</a> <a title="Rating greco: 623" class="rating-badge-4" href="http://infoarena.ro/utilizator/greco?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/greco">greco</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=dezastru">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=dezastru">Vezi solutiile trimise</a></p>
+
+<h1>Dezastru<br></h1>
+
+<p>Ziua Dezastrului a sosit. Conform lui <a href="http://en.wikipedia.org/wiki/L._Ron_Hubbard" class="wiki_link_external">L. Ron Hubbard</a>, din cauza numarului mic de persoane inscrise la <a href="http://en.wikipedia.org/wiki/Scientology" class="wiki_link_external">Scientology</a>, extraterestrii vor supune Pamantul la <var>N</var> atacuri consecutive. Pe langa faptul ca au construit un scut care va apara Pamantul dupa primele <var>K</var> asalturi, oamenii au calculat probabilitatile <var>p<sub>1</sub></var>, <var>p<sub>2</sub></var>, .. <var>p<sub>N</sub></var> de a supravietui fiecaruia dintre atacurile planificate. Ramane o singura problema: nu se stie in ce ordine vor avea loc aceste atacuri, fiecare dintre cele <var>N!</var> variante fiind la fel de probabila ca si celelalte.</p>
+
+<p>Stii ca probabilitatea supravietuirii la <var>x</var> atacuri este egala cu produsul probabilitatilor individuale. Ti se cere sa calculezi probabilitatea ca Pamantul sa reziste primelor <var>K</var> atacuri, salvandu-se astfel de Dezastru.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>dezastru.in</var> se gasesc numerele naturale si pozitive <var>N</var> si <var>K</var>. Pe urmatoarea linie se afla <var>N</var> numere reale, reprezentand probabilitatea ca Pamantul sa reziste fiecaruia dintre cele <var>N</var> atacuri asteptate.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului <var>dezastru.out</var> se va scrie un singur numar real cu 6 zecimale: probabilitatea supravietuirii primelor <var>K</var> atacuri, dupa care Pamantul va porni scutul cosmic. Raspunsul va fi verificat cu o precizie de <var>0.000001</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 25</var></li>
+<li><var>K ≤ N</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>dezastru.in</th><th>dezastru.out</th></tr><tr><td>3 2<br>
+  0.3 0.5 0.8<br></td><td>0.263333<br></td></tr></table><h3>Explicatie</h3>
+
+<table class="example" cellspacing="0"><tr><th>Permutare</th><th>Probabilitate sa supravietuiasca primelor <strong>2</strong> atacuri</th></tr><tr><td><ins>1 2</ins> 3<br></td><td>0.3 * 0.5 = 0.15<br></td></tr><tr><td><ins>1 3</ins> 2<br></td><td>0.3 * 0.8 = 0.24<br></td></tr><tr><td><ins>2 1</ins> 3<br></td><td>0.5 * 0.3 = 0.15<br></td></tr><tr><td><ins>2 3</ins> 1<br></td><td>0.5 * 0.8 = 0.40<br></td></tr><tr><td><ins>3 1</ins> 2<br></td><td>0.8 * 0.3 = 0.24<br></td></tr><tr><td><ins>3 2</ins> 1<br></td><td>0.8 * 0.5 = 0.40<br></td></tr></table><p>Sunt in total <var>6</var> permutari deci fiecare va aparea cu probabilitatea <var>1/6</var>.<br>
+Solutie: <var>0.15/6 + 0.24/6 + 0.15/6 + 0.40/6 + 0.24/6 + 0.40/6 = 0.263333</var></p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

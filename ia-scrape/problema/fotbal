@@ -1,0 +1,35 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>fotbal.in, fotbal.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil 2009, clasa a 9a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=140">Csaba Patcas</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>1024 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=fotbal">Vezi solutiile trimise</a></p>
+
+<h1>Fotbal<br></h1>
+
+<p>La un campionat de fotbal vor juca <var>n</var> echipe intr-o grupa astfel incat fiecare echipa joaca cu toate celelalte. Numarul etapelor va fi <var>n–1</var>, daca <var>n</var> este par, respectiv <var>n</var>, pentru <var>n</var> impar. Pentru victorie o echipa primeste <var>3</var> puncte, pentru scor egal <var>1</var> punct, iar daca o echipa pierde, nu primeste niciun punct. In caz de egalitate de puncte conteaza rezultatul direct, iar daca cele doua echipe au facut meci egal, atunci conteaza golaverajul (diferenta golurilor marcate si celor primite). In caz de golaveraj egal, conteaza numărul golurilor inscrise. Daca doua echipe si acum sunt la egalitate, se decide echipa castigatoare prin aruncarea monedei. Daca exista mai multe decat doua echipe la egalitate de puncte, se face un tabel separat cu rezultatele lor si se aplica regulile de mai sus. Daca nici prin acest procedeu nu se poate decide ordinea a două sau mai multe echipe, se decide ordinea prin aruncarea monedei. Cunoscand rezultatele meciurilor, stabiliti clasamentul, iar in cazul echipelor aflate la egalitate de puncte cu alte echipe pozitia cea mai buna si cea mai rea pe care ar putea sa se situeze. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>fotbal.in</var> se afla un numar natural <var>n</var>, reprezentand numarul echipelor in grupa. Urmeaza <var>n–1</var> (pentru <var>n</var> par), sau <var>n</var> (pentru <var>n</var> impar) grupe de cate <var>[n/2]</var> linii, care descriu desfasurarea etapelor. Fiecare linie contine doua numere naturale, reprezentand doua echipe prin numerele lor de ordine (insemnand o confruntare dintre cele doua echipe) urmat de doua numere, reprezentand numarul golurilor inscrise de cele doua echipe. Numerele sunt despartite prin cate un spatiu.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>In fisierul de iesire <var>fotbal.out</var> se vor scrie <var>n</var> linii. Pe fiecare se vor afla doua numere naturale, despartite printr-un spatiu, reprezentand pozitia cea mai buna, respectiv cea mai rea pe care poate sa se situeze echipa respectiva. Pe cea de a <var>i</var>-a linie se va descrie situatia celei de a <var>i</var>-a echipe. </p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>2 ≤ n ≤ 5</var></li>
+<li>Se garanteaza ca planificarea meciurilor va fi corecta, adica fiecare echipa va juca cu celelalte echipe exact o data</li>
+<li>Numarul golurilor marcate de o echipa intr-un meci nu va depasi 10</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>fotbal.in</th><th>fotbal.out</th></tr><tr><td>2 <br>
+  2 1 1 0<br></td><td>2 2<br>
+  1 1<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Avem doua echipe, deci vom avea un singur meci. In acest meci echipa a doua castiga cu 1 la 0, deci ea este castigatoarea campionatului.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

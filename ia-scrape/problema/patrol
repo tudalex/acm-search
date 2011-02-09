@@ -1,0 +1,62 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>patrol.in, patrol.out</td><td><strong>Sursă</strong></td><td>Summer Challenge 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=patrol">Vezi solutiile trimise</a></p>
+
+<h1>Patrol<br></h1>
+
+<p>O tara are <var>N</var> orase si <var>M</var> legaturi directe, bidirectionale, intre aceste orase. Fiecare oras percepe o taxa de sedere cunoscuta. Un infractor porneste din orasul numerotat cu <var>1</var> si doreste sa ajunga in orasul numerotat cu <var>N</var>, folosind legaturile existente. Cum lucrurile nu sunt niciodata asa de simple, exista si <var>P</var> politisti care il cauta. Un politist are un traseu de patrulare bine definit. Traseul sau este de fapt un drum simplu ( in care toate orasele sunt distincte ). El va parcurge un drum du-te vino, adica pleaca pe drumul stabilit, dupa care se intoarce pe acelasi drum, etc. De exemplu, daca traseul de patrulare al unui politist este <var>4 7 5</var>, el va merge intotdeuna pe <var>4 7 5 7 4 7 5 7 4...</var>. Parcurgerea unei legaturi intre oricare doua orase legate direct se realizeaza intr-o unitate de timp, pentru infractor si pentru oricare dintre politisti. Stationarea intr-un oras nu necesita timp suplimentar.<br>
+Infractorul porneste din orasul numerotat cu <var>1</var> si doreste sa ajunga in orasul numerotat cu <var>N</var>, platind o taxa de sedere minima prin orasele prin care trece, evitand intalnirea cu vreun politist. O intalnire se poate realiza atunci cand infractorul si unul din politisti se afla in acelasi timp in acelasi oras, sau in acelasi timp pe o legatura intre orase. Plecarea din orasul <var>1</var> se realizeaza la momentul <var>1</var>, cand toti politistii isi incep patrularea.</p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se determine costul total minim de sedere in orase astfel incat sa se indeplineasca conditiile precizate.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>patrol.in</var> are urmatoarea structura:</p>
+
+<table class="example" cellspacing="0"><tr><td><var>N M P</var> <br><var><code>C[1] C[2]...C[n]</code></var> <br><var><code>A[1] B[1]</code></var><br><var><code>A[2] B[2]</code></var> <br><var>.......</var>    <br><var><code>A[M] B[M]</code></var><br><var><code>L[1] T[1,1]...T[1,L[1]]</code></var><br><var><code>L[2] T[2,1]...T[2,L[2]]</code></var> <br><var>.......</var> <br><var><code>L[P] T[P,1]...T[P,L[P]]</code></var><br></td><td>numarul de orase, de legaturi si de politisti<br>
+costurile de sedere, pentru fiecare oras in parte<br>
+ <br>
+linia <var><code>A[i] B[i]</code></var> semnifica faptul ca exista o<br>
+legatura directa intre orasele <var><code>A[i]</code></var> si <var><code>B[i]</code></var><br>
+ <br>
+primul numar de pe linie indica lungimea<br>
+traseului de patrulare, dupa care urmeaza<br>
+descrierea traseului propriu-zis</td></tr></table><p>In total, fisierul de intrare contine M+P+2 linii.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Prima linie a fisierului de iesire <var>patrol.out</var> contine costul minim platit. Se garanteaza ca intotdeauna exista solutie.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>3 &lt; N ≤ 1 024</var></li>
+<li><var>4 &lt; M ≤ 16 000</var></li>
+<li><var>P ≤ 512</var></li>
+<li><var>2 ≤ L[i] &lt; 8</var></li>
+<li>Costurile de sedere sunt numere naturale din <var>[1, 1 600]</var></li>
+<li>In orice moment infractorul trebuie sa se deplaseze ( nu poate sta pe loc )</li>
+<li>La costul total se vor calcula si taxele percepute in orasul de plecare si cel de sosire</li>
+<li>Este posibil ca intr-un oras, in acelasi timp, sa fie mai mult de un politist</li>
+</ul><h2>Exemplu</h2>
+
+
+<table class="example" cellspacing="0"><tr><th>patrol.in</th><th>patrol.out</th></tr><tr><td>7 6 1<br>
+10 4 9 1 2 5 2<br>
+1 2<br>
+2 3<br>
+2 4<br>
+2 6<br>
+4 5<br>
+6 7<br>
+5 7 6 2 4 5<br></td><td>34</td></tr></table><h3>Explicatie</h3>
+
+<p>Drumul infractorului este 1 2 3 2 6 7. Se observa ca, de exemplu, la timpul 2, infractorul nu poate pleca spre orasul cu numarul 6 pentru ca s-ar intalni pe legatura dintre orasele 2 si 6 cu politistul. In plus, daca ar pleca spre orasul cu numarul 4, el ar fi prins in final de catre politist.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

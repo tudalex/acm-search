@@ -1,0 +1,46 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>algebra.in, algebra.out</td><td><strong>Sursă</strong></td><td>.campion 2003</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=algebra">Vezi solutiile trimise</a></p>
+
+<h1>Algebra<br></h1>
+
+<p>Se da o matrice patratica <var>A</var> cu elemente reale din intervalul <var>[0,1]</var> , avand <var>N</var> linii si <var>N</var> coloane. Suma elementelor de pe fiecare linie si fiecare coloana este egala cu <var>1</var>. <var>A</var> se poate scrie ca o functie liniara de matrici permutare, adica <var>A = x<sub>1</sub>*P<sub>1</sub> + ... + x<sub>K</sub>*P<sub>K</sub></var>, unde <var>P<sub>1</sub>,P<sub>2</sub>,...,P<sub>K</sub></var> sunt matrici permutare (nu neaparat distincte) cu <var>N</var> linii si <var>N</var> coloane, iar <var>x<sub>1</sub>, ..., x<sub>K</sub></var> sunt numere reale din intervalul <var>[0,1]</var> cu proprietatea ca <var>x<sub>1</sub> + ... + x<sub>K</sub> = 1</var>. O matrice permutare cu <var>N</var> linii si <var>N</var> coloane contine exact <var>N</var> elemente de <var>1</var>, cate unul pe fiecare linie si fiecare coloana, iar restul elementelor sunt egale cu <var>0</var>. Scrierea matricei <var>A</var> in forma precizata nu este neaparat unica.</p>
+
+<p>Dandu-se o matrice <var>A</var> avand proprietatile din enunt, sa se determine valoarea <var>K</var>, numerele reale <var>x<sub>1</sub>, ..., x<sub>K</sub></var> si matricile permutare corespunzatoare <var>P<sub>1</sub>, ..., P<sub>K</sub></var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>algebra.in</var> va contine numarul intreg <var>N</var>. Urmatoarele <var>N</var> linii vor contine cate <var>N</var> numere reale, reprezentand elementele matricii <var>A</var>, in ordine, de la linia <var>1</var> la linia <var>N</var> si de la coloana <var>1</var> la coloana <var>N</var>. Elementele lui <var>A</var> sunt date cu maxim <var>9</var> zecimale.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>algebra.out</var> veti afisa numarul intreg <var>K</var>. Pe urmatoarele <var>2*K</var> linii veti afisa numerele <var>x<sub>1</sub>,...,x<sub>K</sub></var> si matricile <var>P<sub>1</sub>,..,P<sub>K</sub></var> , astfel: pe linia <var>2*i-1</var> din cele <var>2*K</var> veti afisa numarul real <var>x<sub>i</sub></var>, cu cel putin <var>9</var> zecimale. Pe linia <var>2*i</var> veti descrie matricea <var>P<sub>i</sub></var> sub forma unui sir de <var>N</var> numere intregi, separate prin cel putin un spatiu: <var>C<sub>1</sub> C<sub>2</sub> ... C<sub>N</sub></var>. Valoarea <var>C<sub>j</sub></var> din acest sir va reprezenta coloana pe care se afla elementul egal cu <var>1</var> de pe linia <var>j</var> a matricei <var>P<sub>i</sub></var> .</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 30</var></li>
+<li>Rezultatul inmultirii unui numar real <var>x</var> cu o matrice <var>P</var> avand <var>N</var> linii si <var>N</var> coloane este o matrice <var>Q</var> cu <var>N</var> linii si <var>N</var> coloane, avand elementele <var>Q<sub>i,j</sub>=x*P<sub>i,j</sub></var> .</li>
+<li>Rezultatul adunarii a doua matrici <var>P</var> si <var>Q</var> cu <var>N</var> linii si <var>N</var> coloane este o matrice <var>R</var> cu <var>N</var> linii si <var>N</var> coloane, avand elementele <var>R<sub>i,j</sub>=P<sub>i,j</sub>+Q<sub>i,j</sub></var> .</li>
+<li>Nu este impusa o limita superioara pentru valoarea lui <var>K</var> . Totusi, se poate demonstra ca, oricare ar fi matricea <var>A</var> avand proprietatile specificate, exista valorile <var>x<sub>i</sub></var> si matricile <var>P<sub>i</sub></var>, astfel incat <var>K ≤ N*(N-1)+1</var> .</li>
+<li>Solutia furnizata de programul dumneavostra va fi considerata corecta daca, in urma efectuarii sumei <var>x<sub>1</sub>*P<sub>1</sub> + x<sub>2</sub>*P<sub>2</sub> + ... + x<sub>K</sub>*P<sub>K</sub></var>, fiecare element din matricea rezultata difera fata de elementul corespunzator din matricea <var>A</var> cu maxim <var>10<sup>-9</sup></var> in valoare absoluta, suma <var>x<sub>1</sub> + x<sub>2</sub> + ... + x<sub>K</sub></var> se afla in intervalul <var>[1.0-10<sup>-9</sup>,1.0+10<sup>-9</sup>]</var> si fiecare valoarea <var>x<sub>i</sub></var> se afla in intervalul <var>[0,1]</var>. </li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>algebra.in</th><th>algebra.out</th></tr><tr><td>3<br>
+0.4 0.5 0.1<br>
+0.3 0.3 0.4<br>
+0.3 0.2 0.5<br></td><td>5<br>
+0.300000000000<br>
+1 2 3<br>
+0.200000000000<br>
+2 1 3<br>
+0.300000000000<br>
+2 3 1<br>
+0.100000000000<br>
+1 3 2<br>
+0.100000000000<br>
+3 1 2<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

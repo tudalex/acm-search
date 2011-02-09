@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>gramezi.in, gramezi.out</td><td><strong>Sursă</strong></td><td>.campion 2007, Runda 11</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=gramezi">Vezi solutiile trimise</a></p>
+
+<h1>Gramezi<br></h1>
+
+<p>Zaharel si Bronzarel joaca urmatorul joc: se pun pe masa <var>N</var> gramezi de monede. Se stie ca daca Zaharel ia gramada <var>i</var> primeste <var>A<sub>i</sub></var> din monedele din gramada, iar daca Bronzarel ia gramada <var>i</var> primeste <var>B<sub>i</sub></var> din monedele din gramada (se stie ca fiecare gramada are cel putin <var>max(A<sub>i</sub>, B<sub>i</sub>)</var> monede iar monedele care raman se arunca). Cei doi jucatori iau alternativ cate o gramada, pana cand se epuizeaza toate cele <var>N</var>, iar Zaharel este primul care ia o gramada. La final, castiga jucatorul cu mai multe monede. Daca cantitatile de monede sunt egale, jocul se considera remiza.</p>
+
+<p>Stiind ca Zaharel si Bronzarel joaca optim, determinati numarul de monede pe care il va avea fiecare jucator la final. Prin joc optim se intelege ca fiecare jucator incearca sa mareasca diferenta dintre numarul de monezi pe care le detine si numarul de monezi ale celuilalt jucator, iar in cazul in care are mai multe posiblitati de a obtine aceeasi diferenta va incerca sa-si mareasca numarul de monede.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>gramezi.in</var> este scris numarul natural <var>N</var>. Pe urmatoarele <var>N</var> linii se vor gasi cate doua numere naturale separate prin cate un spatiul, reprezentand valorile <var>A<sub>i</sub></var>, respectiv <var>B<sub>i</sub></var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Prima linie a fisierului <var>gramezi.out</var> va contine doua numere naturale separate prin spatii reprezentand scorul lui Zaharel, respectiv scorul lui Bronzarel.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 30.000</var></li>
+<li><var>1 ≤ A<sub>i</sub>, B<sub>i</sub> ≤ 30.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>gramezi.in</th><th>gramezi.out</th></tr><tr><td>4<br>
+2 10<br>
+5 5<br>
+7 3<br>
+4 1<br></td><td>9 6<br></td></tr></table><h3>Explicatie</h3>
+
+
+<p>Zaharel ia gramada 1, apoi Bronzarel ia gramada 2, apoi Zaharel ia gramada 3, apoi Bronzarel ia gramada 4. O alta posiblitate de joc cu aceeasi diferenta de scor este urmatoarea: Zaharel ia gramada 1, apoi Bronzarel ia gramada 3, apoi Zaharel ia gramada 2, apoi Bronzarel ia gramada 4. Astfel, s-ar fi obtinut scorurile 7, respectiv 4, dar acestea sunt mai mici decat in prima varianta.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

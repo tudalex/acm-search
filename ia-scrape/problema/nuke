@@ -1,0 +1,55 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>nuke.in, nuke.out</td><td><strong>Sursă</strong></td><td>Lot Vrancea 2010, Baraj 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=223">Cosmin Gheorghe</a>, <a href="/cauta-probleme?tag_id%5B%5D=392">Victor Rusu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Mishu91"><img src="/utilizator/Mishu91?action=download&amp;file=avatar&amp;resize=L16x16" alt="Mishu91">Andrei Misarca</a> <a title="Rating Mishu91: 662" class="rating-badge-1" href="http://infoarena.ro/utilizator/Mishu91?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Mishu91">Mishu91</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=nuke">Vezi solutiile trimise</a></p>
+
+<h1>Nuke<br></h1>
+
+<p>Teritoriul Metalopolis poate fi văzut ca un plan cartezian. În acest teritoriu, Zeratul a reuşit să infiltreze <var>N</var> soldaţi invizibili cu misiunea de a învinge forţele inamicului său, Jim Raynor. Soldaţii pot fi consideraţi puncte de coordonate <var>(XS, YS)</var> întregi. Pentru a se apăra, Jim Raynor lansează <var>M</var> bombe nucleare. Bomba <var>i</var> elimină toţi soldaţii aflaţi la o distanţă mai mică sau egală cu <var>R<sub>i</sub></var> de punctul <var>(XB<sub>i</sub> , YB<sub>i</sub>)</var> în care a explodat. Pentru a maximiza eficienţa atacului, Raynor are grijă ca nicio zonă din Metalopolis să nu fie afectată decât de cel mult o bombă nucleară. Pentru fiecare bombă <var>i</var> Zeratul doreşte să ştie câţi soldaţi a pierdut.</p>
+
+<p>Având la dispoziţie coordonatele celor <var>N</var> soldaţi, coordonatele şi razele de acţiune ale celor <var>M</var> bombe, aflaţi pentru fiecare bombă câţi soldaţi elimină.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului <var>nuke.in</var> se dau două numere naturale <var>N</var> şi <var>M</var> cu semnificaţia din enunţ. Urmatoarele <var>N</var> linii conţin fiecare câte două numere întregi <var>XS<sub>i</sub></var> , <var>YS<sub>i</sub></var> reprezentând coordonatele soldaţilor. Următoarele M linii conţin câte trei numere întregi <var>XB<sub>i</sub></var> , <var>YB<sub>i</sub></var> , <var>R<sub>i</sub></var> reprezentând coordonatele şi raza fiecărei bombe.</p>
+
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>nuke.out</var> veţi afişa <var>M</var> linii, pe fiecare linie <var>i</var> aflându-se câte un singur număr natural reprezentând numărul de soldaţi eliminaţi de bomba <var>i</var>. Bombele se consideră în ordinea în care apar în fişierul de intrare.</p>
+
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 200.000</var></li>
+<li><var>1 ≤ M ≤ 100.000</var></li>
+<li><var>1 ≤ R<sub>i</sub> ≤ 1.000.000.000</var></li>
+<li><var>-1.000.000.000 ≤ XB<sub>i</sub> , YB<sub>i</sub> , XS<sub>i</sub> , YS<sub>i</sub> ≤ 1.000.000.000</var></li>
+<li>Un soldat aflat la o distanţă egală cu <var>R<sub>i</sub></var> de bomba <var>i</var> va fi eliminat</li>
+<li>Suprafeţele de acţiune ale oricăror două bombe nu au niciun punct în comun.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>nuke.in</th><th>nuke.out</th></tr><tr><td>7 3<br>
+4 5<br>
+0 5<br>
+-1 6<br>
+5 1<br>
+-1 -2<br>
+-3 6<br>
+1 4<br>
+5 4 3<br>
+1 1 1<br>
+-1 6 2<br></td><td>2<br>
+0<br>
+3<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Prima bombă elimină soldaţii <var>(4, 5)</var>, <var>(5, 1)</var>.<br>
+A doua bombă nu elimină niciun soldat.<br>
+A treia bombă elimină soldaţii <var>(0, 5)</var>, <var>(-1, 6)</var> şi <var>(-3, 6)</var>.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

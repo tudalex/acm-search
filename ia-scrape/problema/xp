@@ -1,0 +1,83 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>xp.in, xp.out</td><td><strong>Sursă</strong></td><td>ONI 2010, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mathboy"><img src="/utilizator/mathboy?action=download&amp;file=avatar&amp;resize=L16x16" alt="mathboy">Dragos-Alin Rotaru</a> <a title="Rating mathboy: 510" class="rating-badge-3" href="http://infoarena.ro/utilizator/mathboy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mathboy">mathboy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>7 sec</td><td><strong>Limită de memorie</strong></td><td>1024 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=xp">Vezi solutiile trimise</a></p>
+
+<h1>Xp<br></h1>
+
+<p>Se consideră <var>3</var> şiruri, numite <var>A</var>, <var>B</var> şi <var>val</var>, fiecare dintre ele având câte <var>N</var> elemente naturale nenule. Elementele din cadrul şirurilor sunt indexate de la <var>1</var> la <var>N</var>. Cunoscându-se <var>A<sub>1</sub></var>, <var>B<sub>1</sub></var> şi o valoare naturală nenulă <var>P</var>, regula după care se calculează elementele şirurilor este următoarea:</p>
+
+
+<ul><li>Pentru <var>2 ≤ i ≤ N</var> avem:
+<ul><li><var>A<sub>i</sub> = ((A<sub>i-1</sub> + P - 1) <span class="caps">XOR </span>(B<sub>i-1</sub> + 1)) mod P</var></li>
+<li><var>B<sub>i</sub> = ((A<sub>i-1</sub> + P - 1) OR (B<sub>i-1</sub> + 1)) mod P</var>.</li>
+</ul></li>
+<li>Pentru <var>1 ≤ i ≤ N</var> avem:
+<ul><li><var>val<sub>i</sub> = max{1, ((i mod P) <span class="caps">XOR </span>(((A<sub>i</sub> + 1) <span class="caps">AND </span>(B<sub>i</sub> + 1)) mod P)) mod P}</var>.</li>
+</ul></li>
+</ul><p><var>F mod G</var> reprezintă restul împărţirii lui <var>F</var> la <var>G</var>. Definim <var>Prod<sub>i</sub></var> ca fiind egal cu: (produsul tuturor elementelor şirului <var>val</var>, cu excepţia lui <var>val<sub>i</sub>) mod Q</var>. Mai exact, <var>Prod<sub>i</sub> = (val<sub>1</sub>·val<sub>2</sub>·...·val<sub>i-1</sub>·val<sub>i+1</sub>·...·val<sub>N</sub>) mod Q</var>. Operaţiile utilizate în formulele de mai sus au următoarea semnificaţie:</p>
+
+
+<ul><li><var><span class="caps">XOR</span></var> : <var>sau-exclusiv</var> pe biţi</li>
+<li><var>OR</var> : <var>sau</var> pe biţi</li>
+<li><var><span class="caps">AND</span></var> : <var>şi</var> pe biţi</li>
+</ul><h2>Cerinţă</h2>
+
+<p>Să se calculeze valoarea <var>Rez = Prod<sub>1</sub><span class="caps">XOR</span> Prod<sub>2</sub><span class="caps">XOR</span> ... <span class="caps">XOR</span> Prod<sub>N</sub></var> (adică <var><span class="caps">XOR</span></var> între toate cele <var>N</var> valori <var>Prod<sub>i</sub>, 1 ≤ i ≤ N</var>). </p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>xp.in</var> conţine pe prima (şi singura) linie <var>5</var> numere naturale separate prin câte un spaţiu, reprezentând, în ordine, valorile <var>N</var>, <var>A<sub>1</sub>, B<sub>1</sub></var>, <var>P</var> şi <var>Q</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>xp.out</var> va conţine valoarea <var>Rez</var>.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 4 000 000</var></li>
+<li><var>2 ≤ P ≤ 1 000 000 000</var></li>
+<li><var>2 ≤ Q ≤ 1 000 000 000</var></li>
+<li><var>0 ≤ A<sub>1</sub>, B<sub>1</sub> ≤ P-1</var></li>
+<li>Pentru <var>30%</var> dintre teste vom avea <var>N ≤ 10 000</var>.</li>
+<li>Pentru alte <var>20%</var> dintre teste vom avea <var>10 001 ≤ N ≤ 200 000</var>.</li>
+<li>Problema nu urmăreşte găsirea vreunei proprietăţi speciale a relaţiilor de generare a elementelor şirurilor <var>A</var>, <var>B</var> şi <var>val</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>xp.in</th><th>xp.out</th></tr><tr><td>5 4 6 10 15<br></td><td>10<br></td></tr><tr class="example"><td>3999999 9003 3333 30000 900330000<br></td><td>594979072<br></td></tr></table><h3>Explicaţie pentru primul exemplu:</h3>
+
+<p>Se obţin următoarele şiruri <var>A</var>, <var>B</var> şi <var>val</var>:</p>
+
+
+<ul><li><var>A<sub>1</sub>=4, B<sub>1</sub>=6, val<sub>1</sub>=4</var></li>
+<li><var>A<sub>2</sub>=0, B<sub>2</sub>=5, val<sub>2</sub>=2</var></li>
+<li><var>A<sub>3</sub>=5, B<sub>3</sub>=5, val<sub>3</sub>=5</var></li>
+<li><var>A<sub>4</sub>=8, B<sub>4</sub>=4, val<sub>4</sub>=5</var></li>
+<li><var>A<sub>5</sub>=0, B<sub>5</sub>=1, val<sub>5</sub>=5</var></li>
+</ul><p>Se obţin următoarele valori pentru şirul <var>Prod</var> (în ordine, de la <var>1</var> la <var>5</var>): <var>10, 5, 5, 5, 5</var>.</p>
+
+<p>Obţinem <var>Rez = 10 <span class="caps">XOR</span> 5 <span class="caps">XOR</span> 5 <span class="caps">XOR</span> 5 <span class="caps">XOR</span> 5 = 10</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=89">Divide et Impera</a></span>
+            <a href="javascript:show_tag_list(89)" id="tag_anchor_89" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_89"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=90">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=44">Invers Modular</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

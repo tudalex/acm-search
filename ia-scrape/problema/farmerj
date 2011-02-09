@@ -1,0 +1,62 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>farmerj.in, farmerj.out</td><td><strong>Sursă</strong></td><td>preONI 2002</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=133">Stefan Ciobaca</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>1000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=farmerj">Vezi solutiile trimise</a></p>
+
+<h1>Farmerj<br></h1>
+
+<p>Rob Kolstad este suparat pe Farmer John si vacile sale, datorita greutatilor intampinate de echipa <span class="caps">USACO </span>in ultima vreme (bani putini, probleme furate, etc). Fiind superstitios, el crede ca problemele se trag de la numele lui Farmer John. De aceea, el doreste sa ii schimbe acestuia numele. Pentru a realiza acest lucru, Rob are la dispozitie un sir <var>S</var>. El vrea sa obtina <var>2</var> siruri de caractere care sa formeze noul nume al lui Farmer John si care sa aiba urmatoarele proprietati:</p>
+
+
+<ul><li>trebuie sa existe o posibilitate de a interclasa cele <var>2</var> siruri astfel incat sirul obtinut sa fie un subsir al sirului <var>S</var> (atentie! <strong>subsir</strong> este diferit de <strong>subsecventa</strong>). </li>
+<li>suma lungimilor celor <var>2</var> siruri sa fie maxima</li>
+</ul><p>In afara de aceste conditii, cele <var>2</var> siruri trebuie sa satisfaca niste criterii de usurinta a pronuntarii. Mai exact, exista <var>M</var> perechi de caractere care nu pot aparea unul dupa celalalt in nici unul din cele <var>2</var> nume.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>farmerj.in</var> se afla sirul de caractere <var>S</var> pe care il are Rob la dispozitie. Pe a doua linie se afla numarul intreg <var>M</var>. Urmatoarele <var>M</var> linii contin cate <var>2</var> caractere alfanumerice care nu pot aparea unul dupa altul in nici unul din cele <var>2</var> nume.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>farmerj.out</var> veti afisa 2 linii. A <var>i</var>-a din cele 2 linii va contine pozitiile din cadrul sirului <var>S</var> pe care se afla caracterele ce compun al <var>i</var>-lea nume. Aceste pozitii trebuie afisate in ordine crescatoare.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1</var> ≤ lungimea sirului <var>S</var> ≤ <var>50</var></li>
+<li>Sirul <var>S</var> este alcatuit numai din caractere alfanumerice.</li>
+<li>In mod evident, caracterul de pe orice pozitie <var>i</var> a lui <var>S</var> poate apartine doar unuia din cele <var>2</var> nume.</li>
+<li>Oricare din cele <var>2</var> nume poate contine <var>0</var> caractere.</li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>farmerj.in</th><th>farmerj.out</th></tr><tr><td><span class="caps">FJOHNARMERZ</span><br>
+14<br>
+FJ<br>
+FO<br>
+FH<br>
+FN<br>
+ZF<br>
+ZJ<br>
+ZO<br>
+ZH<br>
+ZN<br>
+ZA<br>
+ZR<br>
+ZM<br>
+ZE<br>
+ZR<br></td><td>1 6 7 8 9 10<br>
+2 3 4 5<br></td></tr><tr><td>123456789<br>
+5<br>
+81<br>
+84<br>
+89<br>
+56<br>
+68<br></td><td>1 2 3 4 5 9<br>
+6 7 8<br></td></tr><tr><td>1223<br>
+2<br>
+22<br>
+23<br></td><td>1 2<br>
+4<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

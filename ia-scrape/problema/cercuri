@@ -1,0 +1,55 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cercuri.in, cercuri.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">1/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cercuri">Vezi solutiile trimise</a></p>
+
+<h1>Cercuri<br></h1>
+
+<p>Se dau doua cercuri. Acestea se pot intersecta in 0, 1, 2 sau o infinitate de puncte (daca sunt identice).</p>
+
+<h2>Cerinta</h2>
+
+<p>Gasiti distanta dintre cele doua puncte de intersectie, in cazul in care se intersecteaza in exact 2 puncte, sau tratati celelalte cazuri corespunzator (vezi <var>Date de iesire</var>).</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>cercuri.in</var> contine <var>T</var>, numarul de teste. Pe fiecare din urmatoarele <var>T</var> linii se afla cate un test: un test contine <var>6</var> numere intregi: <var>x<sub>1</sub>, y<sub>1</sub>, R<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub>, R<sub>2</sub></var>. <var>(x<sub>1</sub>, y<sub>1</sub>)</var> sunt coordonatele centrului primului cerc, iar R<sub>1</sub> este raza primului cerc. <var>(x<sub>2</sub>, y<sub>2</sub>)</var> sunt coordonatele celui de-al doilea cerc, iar R<sub>2</sub> este raza celui de-al doilea cerc.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Pentru fiecare test, afisati o linie pe care scrie:</p>
+
+
+<ul><li><var>-1</var>, daca cele doua cercuri sunt identice</li>
+<li><var>-2</var>, daca cele doua cercuri nu se intersecteaza in nici un punct</li>
+<li><var>-3</var>, daca cele doua cercuri se intersecteaza in exact un punct</li>
+<li>distanta dintre cele doua puncte de intersectie, daca cele doua cercuri se intersecteaza in exact <var>2</var> puncte</li>
+</ul><h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>0 ≤ x<sub>1</sub>, y<sub>1</sub>, R<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub>, R<sub>2</sub> ≤ 1.000</var></li>
+<li>Rezultatul va fi afisat cu o precizie de <var>3</var> zecimale</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>cercuri.in</th><th>cercuri.out</th></tr><tr><td>5<br>
+5 5 5 6 6 6<br>
+5 5 5 6 6 6<br>
+0 0 10 5 5 10<br>
+0 0 10 0 0 10<br>
+0 0 1 1000 1000 1<br></td><td>7.714<br>
+7.714<br>
+18.708<br>
+-1<br>
+-2</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=41">Geometrie</a></span>
+            <a href="javascript:show_tag_list(41)" id="tag_anchor_41" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_41"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=62">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

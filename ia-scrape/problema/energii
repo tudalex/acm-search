@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>energii.in, energii.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=123">Robert Danci</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">1/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=energii">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=energii">Vezi solutiile trimise</a></p>
+
+<h1>Energii<br></h1>
+
+<table style="margin:0.5em auto;" cellspacing="0"><tr><td align="center" style="background-color:#F8EABA;"><img src="http://infoarena.ro/template/badtests?action=download&amp;file=attention.gif&amp;safe_only=true" alt="" class="left" style="float:left"><em>Testele pentru aceasta problema nu sunt destul de bine construite pentru a departaja corect solutii ineficiente sau gresite.</em><br><a href="http://infoarena.ro/implica-te/imbunatatire-teste"><strong>Intra aici</strong></a> <em>daca vrei sa ne ajuti sa imbunatatim calitatea testelor pentru aceasta problema!</em></td></tr></table><p>Gigel a ajuns administrator la o centrala termo-electrica. Intr-o zi a avut loc o cadere de tensiune si astfel centrala este la pamant. Gigel trebuie sa o repuna in functiune. Stiind ce energie produce fiecare generator cat si costul punerii in functiune el trebuie sa gasesca o solutie de cost minim, pentru a produce o cantitate de energie egala sau mai mare cu cea necesara repornirii centralei.</p>
+
+<h2>Cerinta</h2>
+
+<p>Ajutati-l pe Gigel sa gaseasca solutia ceruta !</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Fisierul de intrare <var>energii.in</var> are urmatorul format :<br><var>G</var> - numarul de generatoare<br><var>W</var> - cantitatea de energie necesara repornirii centralei<br><var>EG<sub>i</sub> CG<sub>i</sub></var> - urmatoarele <var>G</var> linii contin catitatea de energie produsa de generator si costul necesar producerii energiei, separate printr-un spatiu <var>(1 ≤ i ≤ G)</var></p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>energii.out</var> are urmatorul format :<br><var>C<sub>min</sub></var> - costul minim necesar repornirii centralei sau <var>-1</var> daca nu este suficienta energie pentru repornire</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 &lt; G &lt; 1001</var></li>
+<li><var>1 &lt; W &lt; 5001</var></li>
+<li><var>1 &lt; EG<sub>i</sub>,CG<sub>i</sub> &lt; 10001</var></li>
+<li>Solutia este unica</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>energii.in</th><th>energii.out</th></tr><tr><td>3<br>
+8<br>
+2 4<br>
+2 3<br>
+8 9<br></td><td>9</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=95">Problema rucsacului</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>galagie.in, galagie.out</td><td><strong>Sursă</strong></td><td>infoarena 2.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=165">Din Folclor</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrei.12"><img src="/utilizator/andrei.12?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrei.12">Andrei Parvu</a> <a title="Rating andrei.12: 739" class="rating-badge-4" href="http://infoarena.ro/utilizator/andrei.12?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrei.12">andrei.12</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=galagie">Vezi solutiile trimise</a></p>
+
+<h1>Galagie<br></h1>
+
+<p>Toată lumea ştie că în pauzele dintre orele de liceu se face foarte multă gălăgie. O anumită clasă deţine recordul pentru acest nivel de gălăgie, iar voi vreţi să îl aflaţi. Clasa este formată din <var>N</var> elevi, care sunt aşezaţi într-un singur rând. Fiecare pereche de elevi poartă o conversaţie simultan (deci fiecare elev poartă o conversaţie cu toţi ceilalţi <var>N-1</var> elevi). Atunci când un elev <var>i</var> vorbeşte cu un alt elev <var>j</var>, pentru ca <var>i</var> să se poată face auzit, trebuie să genereze sunete cu un volum, în decibeli, egal cu distanţa dintre <var>i</var> şi <var>j</var>. Calculaţi volumul total generat de toţi cei <var>N</var> elevi.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului <var>galagie.in</var> se află numărul <var>N</var>, reprezentând numărul de elevi. Pe fiecare din următoarele <var>N</var> linii se află câte un număr natural, reprezentând poziţia unui elev în rând, relativ la începutul rândului.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Pe singura linie a fişierului <var>galagie.out</var> se va afla un singur număr, reprezentând volumul total modulo <var>1.000.000.007</var>.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 100.000</var></li>
+<li>Poziţiile elevilor sunt numere naturale cuprinse între <var>0</var> şi <var>10<sup>9</sup></var> (sala de clasă este foarte mare)</li>
+<li>Pot exista mai mulţi elevi în aceeşi poziţie, caz în care distanţa dintre ei se consideră <var>0</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>galagie.in</th><th>galagie.out</th></tr><tr><td>3<br>
+2<br>
+5<br>
+3<br></td><td>12<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Primul elev comunică cu ceilalţi doi elevi şi generează, pentru a se putea face auzit, un volum egal cu <var>|2-5| + |2-3| = 4</var> decibeli. Al doilea elev generează un volum egal cu <var>|5-2| + |5-3| = 5</var> decibeli. Ultimul elev generează un volum de <var>|3-2| + |3-5| = 3</var> decibeli. Volumul total generat este egal cu <var>4+5+3 = 12</var> decibeli.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=79">Sume partiale</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

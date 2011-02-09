@@ -1,0 +1,38 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>photo.in, photo.out</td><td><strong>Sursă</strong></td><td>CEOI 2009</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=155">Mihai Patrascu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Marius"><img src="/utilizator/Marius?action=download&amp;file=avatar&amp;resize=L16x16" alt="Marius">Marius Stroe</a> <a title="Rating Marius: 627" class="rating-badge-4" href="http://infoarena.ro/utilizator/Marius?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Marius">Marius</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.6 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=photo">Vezi solutiile trimise</a></p>
+
+<h1>Photo<br></h1>
+
+<p>Vi se oferă o fotografie a liniei de orizont a oraşului Târgu-Mureş realizată în timpul nopţii. Unele camere încă mai au lumina aprinsă. Se ştie că toate clădirile se modelează cu dreptunghiuri de arie cel mult <var>A</var>. Găsiţi numărul minim de clădiri ce reconstituie fotografia.</p>
+
+<p>Mai exact, se dă un număr întreg <var>A</var> şi <var>N</var> puncte la coordonate numere întregi <var>(x, y)</var>. Cerinţa constă în a găsi un număr minim de dreptunghiuri, cu una din laturi pe axa <em>Ox</em> iar aria cel mult egală cu <var>A</var>, care acoperă toate punctele. Dreptunghiurile se pot suprapune.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fişierului de intrare <var>photo.in</var> conţine două numere întregi <var>N</var> şi <var>A</var>, separate printr-un singur spaţiu. Următoarele <var>N</var> linii conţin două numere întregi <var>x</var> şi <var>y</var>, reprezentând coordonatele fiecărui punct.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>photo.out</var> conţine o singură linie cu numărul minim de dreptunghiuri.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100</var></li>
+<li><var>1 ≤ A ≤ 200 000</var></li>
+<li>Fiecare punct are <var>0 ≤ x ≤ 3 000 000</var> şi <var>1 ≤ y ≤ A</var>.</li>
+<li>Pentru <var>30%</var> din teste <var>1 ≤ N ≤ 18</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>photo.in</th><th>photo.out</th><th>Explicaţie</th></tr><tr><td>6 4<br>
+2 1<br>
+4 1<br>
+5 1<br>
+5 4<br>
+7 1<br>
+6 4<br></td><td>3<br></td><td><img src="http://infoarena.ro/problema/photo/?action=download&amp;file=photo.png&amp;safe_only=true" alt=""></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

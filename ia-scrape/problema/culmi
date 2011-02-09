@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>culmi.in, culmi.out</td><td><strong>Sursă</strong></td><td>Lot 2005 Sibiu</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=186">Marinel Serban</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=culmi">Vezi solutiile trimise</a></p>
+
+<h1>Culmi<br></h1>
+
+<p>Lui Gigel ii place sa se joace cu numerele. De data asta el se joaca numai cu numerele <var>+1</var> si <var>-1</var>. El pune pe hartie, unul dupa altul, <var>n</var> numere <var>+1</var> si <var>n</var> numere <var>-1</var>, dar are grija ca oricum ar aduna numere consecutive pornind de la primul numar pus pe hartie sa nu obtina o suma negativa. Apoi Gigel figureaza numarul <var>+1</var> prin <var>/</var> iar numarul <var>-1</var> prin <var>\</var> si obtine niste desene interesante. Astfel, pentru <var>n=3</var>, configuratiile corecte si desenele pe care le obtine Gigel arata in felul urmator:<br><br><img src="http://infoarena.ro/problema/culmi?action=download&amp;file=img1.jpg&amp;safe_only=true" alt=""></p>
+
+<p>Evident, configuratia</p>
+
+<p> <br><img src="http://infoarena.ro/problema/culmi?action=download&amp;file=img2.jpg&amp;safe_only=true" alt=""> nu este corecta, deoarece la un moment dat suma devine <var>-1</var>. </p>
+
+
+<p>Gigel observa faptul ca aceste desene seamana cu niste munti si, mai mult, observa ca numarul de varfuri ale "muntilor" difera: unii au un varf, altii au doua varfuri, iar altii chiar trei. Un varf de munte are forma /\.</p>
+
+<h2>Cerinta</h2>
+
+<p>Pentru valorile <var>n</var> si <var>k</var> date, determinati cati dintre "muntii" corect formati cu <var>n</var> semne <var>/</var> si <var>n</var> semne <var>\</var> au exact <var>k</var> varfuri.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>culmi.in</var> va contine pe prima linie valorile <var>n</var> si <var>k</var> separate printr-un spatiu. </p>
+
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>culmi.out</var> va contine pe prima linie numarul de munti corect formati care au exact <var>k</var> varfuri.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ n ≤ 100</var></li>
+<li><var>1 ≤ k ≤ n</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>culmi.in</th><th>culmi.out</th></tr><tr><td>3 2<br></td><td>3<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,57 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>lesbulan.in, lesbulan.out</td><td><strong>Sursă</strong></td><td>Bursele Agora 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><div class="hidden">5/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=lesbulan">Vezi solutiile trimise</a></p>
+
+<h1>Lesbulan<br></h1>
+
+
+<p>Servicile secrete ale <span class="caps">SUA </span>au informatii despre zona unde se invarte teroristul Lesbulan. Acesta se ascunde intr-o serie de <var>N</var> buncare care nu pot fi infiltrate. Buncarele sunt legate prin <var>M</var> drumuri. Singura solutie pentru neutralizarea lui ar fi bombardarea buncarelor. Pentru a nu cauza scandal international, doar un buncar poate fi bombardat intr-o noapte, dupa bombardare buncarul nu va fi distrus ci refacut imediat pentru ca Lesbulan este un om plin de resurse. Serviciile secrete au mai aflat ca pentru a nu ii fi desconspirata locatia el schimba in fiecare seara buncarul in care isi va petrece noaptea si se va deplasa intr-un buncar vecin celui din noaptea anterioara.</p>
+
+<h2>Cerinta</h2>
+
+<p>Ajutati serviciile secrete sa determine daca exista o strategie de neutralizare a lui Lesbulan!</p>
+
+<h2>Date de intrare</h2>
+
+<p>In fisierul de intrare <var>lesbulan.in</var> vom avea pe prima linie un numar intreg <var>T</var> care corespunde numarului de configuratii de buncare din fisier. Pe urmatoarele linii se vor afla <var>T</var> configuratii posibile ale buncarelor. Prima linie a fiecarui test va contine doua numere intregi <var>N</var> si <var>M</var>. Pe urmatoarele <var>M</var> linii vor fi situate cate doua numere intregi <var>X</var> si <var>Y</var>, separate intre ele printr-un spatiu reprezentand existenta unui drum intre buncarele <var>X</var> si <var>Y</var>. Testele vor fi separate de o linie goala asa cum se vede in exemplu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>lesbulan.out</var> va contine <var>T</var> linii, linia a i-a avand numarul <var>1</var> daca pentru configuratia a <var>i</var>-a din fisierul de intrare exista o strategie de neutralizare a lui Lesbulan sau un <var>0</var> in caz contrar.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 10</var></li>
+<li><var>1 ≤ N ≤ 50</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>lesbulan.in</th><th>lesbulan.out</th></tr><tr><td>2<br>
+2 1<br>
+1 2<br>
+ <br>
+4 6<br>
+1 2<br>
+1 3<br>
+1 4<br>
+2 3<br>
+2 4<br>
+3 4<br></td><td>1<br>
+0</td></tr></table><h3>Explicatie</h3>
+
+<p>O strategie pentru primul caz este bombardarea de doua ori a orasului 1.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=69">Parcurgere in adancime</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

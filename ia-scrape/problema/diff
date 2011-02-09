@@ -1,0 +1,55 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>diff.in, diff.out</td><td><strong>Sursă</strong></td><td>ONI 2010, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=223">Cosmin Gheorghe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrei-alpha"><img src="/utilizator/andrei-alpha?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrei-alpha">Andrei-Bogdan Antonescu</a> <a title="Rating andrei-alpha: 700" class="rating-badge-1" href="http://infoarena.ro/utilizator/andrei-alpha?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrei-alpha">andrei-alpha</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=diff">Vezi solutiile trimise</a></p>
+
+<h1>Diff<br></h1>
+
+<p>Aurora tocmai a ajuns învăţătoare la şcoala din cartier. În prima zi de şcoală ea a aşezat toţi cei <var>N</var> copii din şcoală într-un singur rând, apoi a numerotat copiii de la <var>1</var> la <var>N</var>, de la stânga la dreapta. Acum Aurora pune <var>M</var> întrebări de tipul: "există doi copii <var>x</var> şi <var>y(x ≤ y)</var> astfel încât diferenţa dintre numărul de băieţi şi numărul de fete situaţi în şir între copilul <var>x</var> şi copilul <var>y</var> (inclusiv <var>x</var> şi <var>y</var>) să fie exact <var>K</var>; dacă da, daţi un exemplu!"? </p>
+
+<h2>Cerinţă</h2>
+
+<p>Scrieţi un program care să răspundă la întrebările Aurorei.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare <var>diff.in</var> se vor afla numerele naturale <var>N</var> şi <var>M</var>, separate printr-un spaţiu, reprezentând numărul de copii şi respectiv numărul de întrebări ale Aurorei. Următoarea linie va conţine <var>N</var> numere <var>0</var> sau <var>1</var> separate prin câte un spaţiu; al i-lea număr de pe linie va fi <var>0</var> în cazul în care copilul <var>i</var> este fată, respectiv <var>1</var>, în cazul în care copilul <var>i</var> este băiat. Următoarele <var>M</var> linii vor conţine cele <var>M</var> întrebări, câte o întrebare pe o linie. Pe cea de a <var>i-a</var> linie dintre cele <var>M</var> se află numărul natural <var>K<sub>i</sub></var>, specificat în cea de a <var>i-a</var> întrebare a Aurorei.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>diff.out</var> veţi scrie <var>M</var> linii. Pe cea de a <var>i-a</var> linie <var>(1≤i≤M)</var> se vor scrie două numere naturale <var>x</var> şi <var>y</var> <var>(1 ≤ x ≤ y ≤ N)</var>, cu semnificaţia că diferenţa dintre numărul de băieţi şi numărul de fete situaţi în şir între copilul <var>x</var> şi copilul <var>y</var> (inclusiv <var>x</var> şi <var>y</var>) este exact <var>K<sub>i</sub></var> sau <var>-1</var> în cazul în care nu există soluţie.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100 000</var></li>
+<li><var>1 ≤ M ≤ 200 000</var></li>
+<li><var>-1 000.000.000 ≤ <var>K<sub>i</sub></var> ≤ 1 000 000 000, pentru 1 ≤ i ≤ M</var></li>
+<li>Pot exista mai multe răspunsuri corecte la o întrebare; afişaţi oricare dintre acestea.</li>
+<li>În răspunsul la o întrebare <var>x</var> poate fi egal cu <var>y</var>, caz în care este vorba de un singur copil.</li>
+<li>Pentru <var>20%</var> din teste <var>N ≤ 300 şi M ≤ 300</var></li>
+<li>Pentru <var>40%</var> din teste <var>N ≤ 100 000 şi M ≤ 500</var></li>
+<li>Pentru <var>40%</var> din teste <var>N ≤ 3 000 şi M ≤ 200 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>diff.in</th><th>diff.out</th></tr><tr><td>10 4<br>
+0 0 1 0 0 1 1 0 1 1<br>
+3<br>
+-3<br>
+10<br>
+0<br></td><td>6 10<br>
+1 5<br>
+-1<br>
+2 3<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Există <var>10</var> copii. Aurora formulează <var>4</var> întrebări.</p>
+
+
+<ul><li>La prima întrebare trebuie să fie determinaţi doi copii <var>x</var> şi <var>y</var> astfel încât diferenţa dintre numărul de băieţi şi numărul de fete situaţi între <var>x</var> şi <var>y</var> să fie <var>3</var>. O soluţie posibilă este <var>x=6</var> şi <var>y=10</var> (între <var>6</var> şi <var>10</var> există <var>4</var> băieţi şi o fată).</li>
+</ul><ul><li>La a doua întrebare trebuie să fie determinaţi doi copii <var>x</var> şi <var>y</var> astfel încât diferenţa dintre numărul de băieţi şi numărul de fete situaţi între <var>x</var> şi <var>y</var> să fie <var>-3</var>. O soluţie posibilă este <var>x=1</var> şi <var>y=5</var> (între <var>1</var> şi <var>5</var> există <var>4</var> fete şi un băiat).</li>
+</ul><ul><li>La a treia întrebare trebuie să fie determinaţi doi copii <var>x</var> şi <var>y</var> astfel încât diferenţa dintre numărul de băieţi şi numărul de fete situaţi între <var>x</var> şi <var>y</var> să fie <var>10</var>. Nu există soluţie în acest caz.</li>
+</ul><ul><li>La a patra întrebare trebuie să fie determinaţi doi copii <var>x</var> şi <var>y</var> astfel încât diferenţa dintre numărul de băieţi şi numărul de fete situaţi între <var>x</var> şi <var>y</var> să fie <var>0</var>. O soluţie posibilă este <var>x=2</var> şi <var>y=3</var> (între <var>2</var> şi <var>3</var> există o fată şi un băiat).</li>
+</ul><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

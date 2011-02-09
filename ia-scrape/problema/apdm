@@ -1,0 +1,60 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>apdm.in, apdm.out</td><td><strong>Sursă</strong></td><td>Algoritmus</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=apdm">Vezi solutiile trimise</a></p>
+
+<h1>APDM<br></h1>
+
+<p>Vom considera un graf conex, neorientat, cu <var>N</var> varfuri si <var>M</var> muchii. Fie <var>D(i, j)</var> distanta minima dintre varfurile <var>i</var> si <var>j</var>. Prin diametrul grafului vom defini valoarea <var>Max { D(i,j) (1 ≤ i &lt; j ≤ N) }</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se determine arborele partial de diametru minim al grafului dat!</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie a fisierului <var>apdm.in</var> se afla <var>N</var> si <var>M</var>. Pe fiecare din urmatoarele <var>M</var> linii se afla cate doua numere intregi sub forma <var>x y</var>, indicand prezenta unei muchii intre varfurile <var>x</var> si <var>y</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Pe prima linie a fisierului <var>apdm.out</var> se va afisa diametrul arborelui obtinut.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 150</var></li>
+<li><var>N ≤ M ≤ 5000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>apdm.in</th><th>apdm.out</th></tr><tr><td>8 13<br>
+1 2<br>
+1 5<br>
+2 4<br>
+1 7<br>
+2 3<br>
+3 4<br>
+3 8<br>
+4 5<br>
+4 6<br>
+5 6<br>
+5 7<br>
+6 7<br>
+6 8<br></td><td>4</td></tr></table><h3>Explicatie</h3>
+
+<p>In desen observam colorate cu verde muchiile unui arbore partial de diametru 4, acestea sunt: (1, 5), (2, 4), (3, 4), (4, 5), (4, 6), (5, 7), (6, 8)</p>
+
+<p><img src="http://infoarena.ro/problema/apdm?action=download&amp;file=image001.gif&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=277">ad-hoc</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=47">Parcurgere in latime</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,46 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>sume2.in, sume2.out</td><td><strong>Sursă</strong></td><td>.campion 2006/2007, Runda 8</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=sume2">Vezi solutiile trimise</a></p>
+
+<h1>Sume 2<br></h1>
+
+<p>Zaharel s-a gandit sa-si aleaga un numar norocos. Pentru a-l alege va proceda astfel: scrie un sir <var>A</var> de <var>N</var> numere naturale si formeaza toate perechile de sume <var>A<sub>i</sub>+A<sub>j</sub></var> cu <var>1 ≤ i, j ≤ N</var>. Apoi, sorteaza cele <var>N<sup>2</sup></var> sume crescator si o alege pe a <var>K</var>-a, in ordinea sortarii. Avand dat sirul <var>A</var> de <var>N</var> numere determinati pentru Zaharel a <var>K</var>-a suma in ordinea sortarii.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>sume2.in</var> sunt scrise cele doua numere naturale <var>N</var> si <var>K</var>, separate printr-un singur spatiu. Pe urmatoarele <var>N</var> linii se vor gasi elementele vectorului <var>A</var>, cate unul pe linie.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Prima linie a fisierului <var>sume2.out</var> va contine a <var>K</var>-a suma in ordinea sortarii.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 50.000</var></li>
+<li><var>1 ≤ K ≤ N<sup>2</sup></var></li>
+<li><var>0 ≤ A<sub>i</sub> &lt; 2<sup>20</sup></var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>sume2.in</th><th>sume2.out</th></tr><tr><td>3 6<br>
+4 <br>
+1<br>
+5<br></td><td>8</td></tr></table><h3>Explicatie</h3>
+
+<p>Cele 9 sume in ordinea sortarii sunt:</p>
+
+
+<ol><li><var>1+1=2</var></li>
+<li><var>1+4=5</var></li>
+<li><var>4+1=5</var></li>
+<li><var>1+5=6</var></li>
+<li><var>5+1=6</var></li>
+<li><var>4+4=8</var></li>
+<li><var>4+5=9</var></li>
+<li><var>5+4=9</var></li>
+<li><var>5+5=10</var></li>
+</ol><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,43 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cercuri2.in, cercuri2.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=252">Bogdan Alexandru Stoica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cercuri2">Vezi solutiile trimise</a></p>
+
+<h1>Cercuri 2<br></h1>
+
+<p>Adriana a ajuns la concluzia ca discul este o figura interesanta. Cu atat mai interesanta atunci cand este formata din <var>M</var> cercuri concentrice <var>K</var>-numerice. Un cerc este <var>K</var>-numeric daca de-alungul conturului sau sunt scrise <var>3*K</var> numere cu proprietatea ca exista cel putin o alegere a pozitiilor <var>x, y, z</var> (de pe acest cerc), astfel incat sa aiba loc urmatoarea relatie : <var>a(x) + a(x+1) + ... + a(y-1) = a(y) + a(y+1) + ... + a(z-1) = a(z) + a(z+1) + ...+ a(x-1) = R</var> si mai mult <var>|x-y| = |y-z| = |z-x| = K</var> (<var>a(i)</var> este al <var>(x+i)</var>-lea numar de pe cerc).</p>
+
+<h2>Cerinta</h2>
+
+<p>Adriana va roaga sa numarati toate discurile cu toate proprietatiile de mai sus, pentru un <var>R</var> si un <var>M</var> date.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie a fisierului <var>cercuri2.in</var> se vor afla <var>R</var> si <var>M</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Pe prima linie a fisierului <var>cercuri2.out</var> se va afisa numarul cerut, luat modulo <var>666013</var>.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>M*(M-1)/2 &lt; R &lt; 20001</var></li>
+<li><var>a(x) &gt; a(x+1) &gt; ... &gt; a(y-1)</var></li>
+<li><var>a(y) &gt; a(y+1) &gt; ... &gt; a(z-1)</var></li>
+<li><var>a(z) &gt; a(z+1) &gt; ... &gt; a(x-1)</var></li>
+<li>in mod evident, primul cerc al discului este <var>M</var>-numeric, al doilea cerc este <var>(M-1)</var>-numeric, ...., ultimul cerc este 1-numeric.</li>
+<li>toate numerele de pe cercuri sunt numere naturale strict pozitive</li>
+</ul><table class="example" cellspacing="0"><tr><th>cercuri2.in</th><th>cercuri2.out</th></tr><tr><td>9 3</td><td>1728</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

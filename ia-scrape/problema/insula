@@ -1,0 +1,72 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>insula.in, insula.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=252">Bogdan Alexandru Stoica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=insula">Vezi solutiile trimise</a></p>
+
+<h1>Insula<br></h1>
+
+<p>Intr-o zi, pe cand era in vizita la bunica ei, Adriana cauta ca de obicei carti vechi prin biblioteca. Deodata se opri asupra unei carti pe care erau inscriptionate intialele <span class="caps">BA.</span> Fetita curioasa, Adriana o deschise si incepu sa citeasca. Astfel afla ca intr-o tara foarte indepartata, unde totul e fermecat (inclusiv perlele), cresc niste arbori cu o proprietate ciudata : prin simpla rostire a unei formule magice, toti copacii isi modifica raza trunchiului. Cercetand mai in amanunt, Adriana descopera ca tara este de fapt o insula care are forma unui cerc. Mai mult, ea afla ca arborii de pe acea insula sunt plantati numai in puncte de coordonate intregi si numai in interiorul si pe marginile insulei. Pe ultima pagina, Adriana gasi harta tarii schitata intr-un sistem de axe ortogonale. Fiind convinsa ca ceva lipseste, se desena in centrul insulei si duse creionul la gura, gandindu-se : "Ce frumos ar fi sa am si eu un astfel de loc al meu. Daca as sta in mijloc si as rosti forumula magica de un numar de<br>
+ori, as reusi sa ma fac nevazuta pentru orice privitor aflat pe marginea insulei". Si tot gandindu-se, Adriana, fetita desteapta, reusi sa determine raza minima pe care trebuie sa o aiba trunchiurile astfel incat ea sa devina nevazuta. Voi puteti face acest lucru?</p>
+
+<h2>Cerinta</h2>
+
+<p>Dandu-se raza insulei, aflati raza minima <var>G</var> pe care trebuie sa o aiba trunchiurlie arborilor astfel incat centrul sa nu poata fi vazut (implicit nici Adriana) din nici un punct de pe marginea insulei.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>insula.in</var> contine numarul intreg <var>T</var> , numarul de teste. Urmeaza apoi <var>T</var> linii, pe fiecare aflandu-se cate un numar <var>Ri</var> raza insulei.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>In fisierul <var>insula.out</var> veti afisa <var>T</var> linii pe fiecare aflandu-se raza minima <var>G</var> pentru testul respectiv cu <var>3</var> zecimale exacte.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 10</var></li>
+<li><var>1 ≤ Ri ≤ 100</var></li>
+<li>dupa rostirea formulei magice raza fiecarui arbore se va mari cu aceeasi unitate de lungime</li>
+<li>initial arborii sunt punctiformi (raza lor tinde spre <var>0</var> )</li>
+<li>prin raza minima <var>G</var> se intelege ca pentru orice alta raza <var>G'(G' &lt; G)</var> exista cel putin un punct de pe marginea insulei din care, daca privesti, o poti vedea pe Adriana</li>
+<li>fiind o fetita mica de inaltime, Adriana va neglija coroana arborilor, interesand-o doar trunchiul acestora</li>
+<li>centrul insulei va fi mereu un punct de coordonate intregi in care se afla doar Adriana</li>
+<li>in interiorul insulei va fi plantat cel putin un arbore</li>
+<li>pentru a evita aproximarile ( <var>0.09967</var> sa fie scris ca <var>0.100</var> ) rezultatul va fi afisat dupa urmatorul model : scrie ( <var>floor(G*1000)/1000.0</var> )</li>
+<li>gasirea cartii nu a fost mana destinului, ci doar mana Blaurului Arhirel, care inca sta la panda</li>
+</ul><h2>Exemplu</h2>
+
+
+<table class="example" cellspacing="0"><tr><th>insula.in</th><th>insula.out</th></tr><tr><td>2<br>
+1<br>
+2<br></td><td>0.707<br>
+0.447</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 3 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=48">Cautare</a></span>
+            <a href="javascript:show_tag_list(48)" id="tag_anchor_48" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_48"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=49">Cautare binara</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=41">Geometrie</a></span>
+            <a href="javascript:show_tag_list(41)" id="tag_anchor_41" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_41"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=62">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=105">Formula</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

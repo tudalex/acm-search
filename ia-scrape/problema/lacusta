@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>lacusta.in, lacusta.out</td><td><strong>Sursă</strong></td><td>OJI 2005, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=181">Nistor Eugen Mot</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Florian"><img src="/utilizator/Florian?action=download&amp;file=avatar&amp;resize=L16x16" alt="Florian">Marcu Florian</a> <a title="Rating Florian: 667" class="rating-badge-1" href="http://infoarena.ro/utilizator/Florian?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Florian">Florian</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=lacusta">Vezi solutiile trimise</a></p>
+
+<h1>Lacusta<br></h1>
+
+
+<p>Se considera o matrice dreptunghiulara cu <var>m</var> linii si <var>n</var> coloane, cu valori naturale. Traversam matricea pornind de la coltul stanga-sus la coltul dreapta-jos. O traversare consta in mai multe deplasari. La fiecare deplasare se executa un salt pe orizontala si un pas pe verticala. Un salt inseamna ca putem trece de la o celula la oricare alta aflata pe aceeasi linie, iar un pas inseamna ca putem trece de la o celula la celula aflata imediat sub ea. Exceptie face ultima deplasare (cea in care ne aflam pe ultima linie), cand vom face doar un salt pentru a ajunge in coltul dreapta-jos, dar nu vom mai face si pasul corespunzator. Astfel traversarea va consta din vizitarea a <var>2m</var> celule. </p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care sa determine suma minima care se poate obtine pentru o astfel de traversare.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>lacusta.in</var> contine pe prima linie doua numere naturale separate printr-un spatiu <var>m</var> <var>n</var>, reprezentand numarul de linii si, respectiv, numarul de coloane ale matricei. Pe urmatoarele <var>m</var> linii este descrisa matricea, cate <var>n</var> numere pe fiecare linie, separate prin cate un spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>lacusta.out</var> va contine o singura linie pe care va fi scrisa suma minima gasita.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 &lt; <var>n</var>, <var>m</var> ≤ 250</var></li>
+<li>Valorile elementelor matricei sunt numere intregi din intervalul <var>[1, 255]</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>lacusta.in</th><th>lacusta.out</th></tr><tr><td>4 5<br>
+3 4 5 7 9<br>
+6 6 3 4 4<br>
+6 3 3 9 6<br>
+6 5 3 8 2<br></td><td>28<br></td></tr></table><h3>Explicatie:</h3>
+
+<p>Drumul este:<br>
+(1,1)-&gt;(1,3)-&gt;<br>
+(2,3)-&gt;(2,2)-&gt;<br>
+(3,2)-&gt;(3,3)-&gt;<br>
+(4,3)-&gt;(4,5)</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

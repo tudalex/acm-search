@@ -1,0 +1,38 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>spirala2.in, spirala2.out</td><td><strong>Sursă</strong></td><td>OJI 2003, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=177">Rodica Pintea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/stocarul"><img src="/utilizator/stocarul?action=download&amp;file=avatar&amp;resize=L16x16" alt="stocarul">Cosmin Mihai Tutunaru</a> <a title="Rating stocarul: 725" class="rating-badge-1" href="http://infoarena.ro/utilizator/stocarul?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/stocarul">stocarul</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=spirala2">Vezi solutiile trimise</a></p>
+
+<h1>Spirala2<br></h1>
+
+<p>Se consideră un automat de criptare format dintr-un tablou cu <var>n</var> linii şi <var>n</var> coloane, tablou ce conţine toate numerele de la <var>1</var> la <var>n<sup>2</sup></var> aşezate ”şerpuit” pe linii, de la prima la ultima linie, pe liniile impare pornind de la stânga către dreapta, iar pe cele pare de la dreapta către stânga (ca în prima figură). Numim ”amestecare“ operaţia de desfăşurare în spirală a valorilor din tablou în ordinea indicată de săgeţi şi de reaşezare a acestora în acelaşi tablou, ”şerpuit” pe linii ca şi în cazul precedent.</p>
+
+<p>De exemplu, desfăşurarea tabloului din prima figură conduce la şirul: <var>1 2 3 4 5 12 13 14 15 16 9 8 7 6 11 10</var>, iar reaşezarea acestuia în tablou conduce la obţinerea unui nou tablou reprezentat în cea de-a doua figură.</p>
+
+<p><img src="http://infoarena.ro/problema/spirala2?action=download&amp;file=Screenshot.png&amp;safe_only=true" alt=""></p>
+
+<p>După orice operaţie de amestecare se poate relua procedeul, efectuând o nouă amestecare. S-a observat un fapt interesant: că după un număr de amestecări, unele valori ajung din nou în poziţia iniţială (pe care o aveau în tabloul de pornire). De exemplu, după două amestecări, tabloul de <var>4×4</var> conţine <var>9</var> dintre elementele sale în exact aceeaşi poziţie în care se aflau iniţial (vezi elemente marcate din figura <var>3</var>).</p>
+
+<h2>Cerinţă</h2>
+
+<p>Pentru <var>n</var> şi <var>k</var> citite, scrieţi un program care să determine numărul minim de amestecări ale unui tablou de <var>n</var> linii necesar pentru a ajunge la un tablou cu exact <var>k</var> elemente aflate din nou în poziţia iniţială.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>spirala2.in</var> conţine pe prima linie cele două numere <var>n</var> şi <var>k</var> despărţite printr-un spaţiu.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>spirala2.out</var> veţi afişa numărul de amestecări determinat.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 50</var></li>
+<li>Datele de intrare sunt alese astfel încât numărul minim de amestecări necesare să încapă pe <var>32</var> de biţi cu semn.</li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>spirala2.in</th><th>spirala2.out</th><th>spirala2.in</th><th>spirala2.out</th></tr><tr><td>4 9<br></td><td>2<br></td><td>6 36<br></td><td>330<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

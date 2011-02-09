@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>char.in, char.out</td><td><strong>Sursă</strong></td><td>ONI gimnaziu 2010, clasa a 7-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=184">Doru Popescu Anastasiu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/miculprogramator"><img src="/utilizator/miculprogramator?action=download&amp;file=avatar&amp;resize=L16x16" alt="miculprogramator">A Cosmina - vechi</a> <a title="Rating miculprogramator: 508" class="rating-badge-3" href="http://infoarena.ro/utilizator/miculprogramator?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/miculprogramator">miculprogramator</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>1024 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=char">Vezi solutiile trimise</a></p>
+
+<h1>Char<br></h1>
+
+<p>Alex a primit de la Moş Crăciun un joc foarte interesant. Jocul este format dintr-un text cu <var>n</var> litere mici ale alfabetului englez. Fiecare literă are o anumită putere, dată printr-un număr natural. Puterea <var>k</var> a unei litere <var>C</var> constă în faptul că, dacă aceasta este atinsă atunci toate literele din secvenţa de <var>k</var> litere, din stânga şi din dreapta se transformă în <var>C</var>. Spre exemplu, dacă litera <var>x</var> are puterea <var>2</var>, atunci după atingere, textul <var>abcbxpbrr</var> se transformă în <var>abxxxxxrr</var>. Cunoscând puterea fiecărei litere, jocul constă în determinarea numărului maxim <var>m</var> de litere, care după atingere să transforme orice literă din text cel mult o dată.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Scrieţi un program care să citească un text cu <var>n</var> litere, puterea fiecărei litere şi să afişeze numărul de litere din text cu puterea maximă, notat cu <var>q</var>, precum şi numărul <var>m</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>char.in</var> conţine pe prima linie numărul natural <var>n</var>, pe a doua linie cele <var>n</var> litere ale textului fără spaţiu între ele, pe a treia linie numărul <var>h</var> de litere distincte din text, iar pe a patra linie <var>h</var> numere naturale separate între ele prin câte un spaţiu reprezentând puterea literelor din text în ordine alfabetică.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>char.out</var> va conţine pe prima linie numărul <var>q</var> şi pe a doua linie numărul <var>m</var>.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ n ≤ 10.000</var></li>
+<li><var>1 ≤ putere literă ≤ 100</var></li>
+<li>Dacă în stânga sau dreapta unei litere sunt mai puţine litere decât puterea, atunci atingerea ei conduce la transformarea tuturor literelor din stânga, respectiv dreapta.</li>
+<li>Prima literă din text este pe poziţia <var>1</var>, a doua literă pe poziţia <var>2</var>, şi aşa mai departe.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>char.in</th><th>char.out</th></tr><tr><td>12<br>
+acbbxacbbbxb<br>
+4<br>
+2 5 3 2<br></td><td>6<br>
+3<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Litera <var>a</var> are puterea <var>2</var>, litera <var>b</var> puterea <var>5</var>, litera <var>c</var> puterea <var>3</var>, respectiv litera <var>x</var> are puterea <var>2</var>. Litera cu puterea maximă este <var>b</var> şi apare în secvenţă de <var>6</var> ori. Numărul maxim de litere, care pot fi atinse astfel încât oricare literă a textului să se transforme cel mult odată este <var>3</var> (de exemplu se pot atinge literele de pe poziţiile <var>1</var>, <var>6</var>, <var>11</var>).</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

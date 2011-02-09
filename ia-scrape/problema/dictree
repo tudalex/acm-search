@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>dictree.in, dictree.out</td><td><strong>Sursă</strong></td><td>Selectie echipe ACM ICPC, UPB 2008</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=155">Mihai Patrascu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>9000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=dictree">Vezi solutiile trimise</a></p>
+
+<h1>Dictree<br></h1>
+
+<p>Pe parcursul acestei probleme, vom numi <strong>litera</strong> oricare dintre cele <var>52</var> de caractere latine (litere mari si mici, care sunt considerate diferite). Numim <strong>arbore dictionar</strong> un arbore cu radacina, care are fiecare muchie etichetata cu o litera. Un cuvant (succesiune finita de litere) poate fi regasit intr-un arbore dictionar daca exista un drum care coboara in arbore, pornind de la radacina, astfel incat muchiile de pe drum sa fie etichetate cu literele care formeaza cuvantul, in ordine.</p>
+
+<p><strong>Un exemplu valoreaza cat 1000 de cuvinte.</strong><br><img src="http://infoarena.ro/problema/dictree?action=download&amp;file=dictree.jpg&amp;safe_only=true" alt=""></p>
+
+<p>Acest arbore dictionar are 10 noduri.<br>
+Urmatoarele cuvinte se pot regasi in acest arbore dictionar: <strong>M</strong>, <strong>MI</strong>, <strong><span class="caps">MIT</span></strong>, <strong>Ma</strong>, <strong>i</strong>, <strong>io</strong>, <strong>ioi</strong>, <strong>iq</strong>, <strong>C</strong>.<br>
+Cateva exemple de cuvinte care nu se pot regasi in acest arbore dictionar: <strong>Pascal</strong>, <strong>a</strong>, <strong>oi</strong>, <strong><span class="caps">MIM</span></strong>.</p>
+
+<p>Fiind dat un set de cuvinte, exista o infinitate de arbori dictionar in care se regasesc toate aceste cuvinte. Determinati numarul de noduri ale arborelui cu cele mai putine noduri. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>dictree.in</var> este scris numarul <var>N</var> de cuvinte. Pe fiecare din urmatoarele <var>N</var> linii se gaseste cate un cuvant (succesiune de litere fara spatii). Cuvintele nu sunt neaparat distincte.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>dictree.out</var> va contine o singura linie, pe care va fi scris numarul minim de noduri ale unui arbore dictionar in care se regasesc cuvintele date.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>0 ≤ N ≤ 25.000</var></li>
+<li><var>1 ≤ numarul de litere dintr-un cuvant ≤ 100</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>dictree.in</th><th>dictree.out</th></tr><tr><td>5<br>
+io<br>
+iq<br>
+C<br>
+ioi<br><span class="caps">MIT</span><br></td><td>9</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

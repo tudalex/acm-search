@@ -1,0 +1,33 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>restante.in, restante.out</td><td><strong>Sursă</strong></td><td>preONI 2008 Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=143">Daniel Pasaila</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=restante">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=restante">Vezi solutiile trimise</a></p>
+
+<h1>Restante<br></h1>
+
+<p>Wef si Astro au multe restante la facultate si au hotarat sa mearga intr-un local sa consume suc natural de portocale. Cand au primit nota de plata, au observat ca pe nota apar <var>N</var> cuvinte formate din litere mici ale alfabetului latin. Wef spune ca unele cuvinte nu sunt originale si il provoaca pe Astro sa gaseasca numarul de cuvinte originale. Un cuvant <var>A</var> este original daca nu exista un alt cuvant <var>B</var> scris pe nota de plata caruia daca ii permutam literele intr-o anumita ordine obtinem cuvantul <var>A</var>. De exemplu daca pe lista am avea scrise cuvintele <var>abc</var>, <var>cba</var> si <var>bbb</var>, singurul cuvant original este <var>bbb</var>. Celelalte doua cuvinte se pot obtine unul din celalalt schimband ordinea literelor.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>restante.in</var> contine pe prima linie numarul <var>N</var> avand semnificatia din enunt. Apoi urmeaza cele <var>N</var> cuvinte de pe nota de plata, fiecare cuvant avand maxim <var>16</var> caractere.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>restante.out</var> se afla pe prima linie numarul <var>NR</var>, reprezentand numarul de cuvinte originale de pe nota de plata.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 36000</var></li>
+<li>Fiecare cuvant are maxim <var>16</var> caractere</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>restante.in</th><th>restante.out</th></tr><tr><td>3<br>
+  abc<br>
+  cba<br>
+  bbb<br></td><td>1<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,56 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>albinuta.in, albinuta.out</td><td><strong>Sursă</strong></td><td>ONI 2008, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=37">Emilian Miron</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/sima_cotizo"><img src="/utilizator/sima_cotizo?action=download&amp;file=avatar&amp;resize=L16x16" alt="sima_cotizo">Sima Cotizo</a> <a title="Rating sima_cotizo: 638" class="rating-badge-1" href="http://infoarena.ro/utilizator/sima_cotizo?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/sima_cotizo">sima_cotizo</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=albinuta">Vezi solutiile trimise</a></p>
+
+<h1>Albinuta<br></h1>
+
+<p>Albinuta D are <var>N</var> flori preferate si un mod aparte de a le culege polenul. Aceasta si-a intocmit o harta a florilor sub forma unui graf orientat cu <var>N</var> noduri si <var>M</var> muchii, in care florile sunt nodurile grafului si sunt numerotate cu <var>1,2,...,N</var>. Pentru fiecare nod se cunoaste lista de adiacenta, ordonata conform preferintelor albinutei.</p>
+
+<p>Traseul parcurs de albinuta pentru culegerea polenului porneste din nodul cu numarul <var>1</var>, la momentul de timp <var>T=1</var>. La fiecare moment de timp <var>T</var> albinuta alege al <var>T</var>-lea nod din lista de adiacenta, numarand circular <var>T</var> pozitii, incepand cu primul nod din lista. Ea va ajunge la momentul <var>T+1</var> in nodul astfel ales. De exemplu, daca la momentul de timp <var>T=12</var> lista de adiacenta a nodului curent, ordonata conform preferintelor albinutei, este: <var>1 6 2 9 5</var>, atunci la momentul <var>T=13</var> albinuta va ajunge in nodul <var>6</var>.</p>
+
+<p>Un apicultor a descoperit harta folosita de albinuta si se intreaba in ce floare se va afla aceasta la anumite momente de timp <var>T</var><sub>i</sub><var>(1≤i≤Q)</var>. Scrieti un program care sa determine pentru fiecare moment de timp <var>T</var><sub>i</sub> dat, floarea pe care se va afla albinuta.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>albinuta.in</var> va contine pe prima linie doua numere naturale naturale <var>N</var> si <var>Q</var>, separate printr-un singur spatiu. Fiecare linie <var>k</var>, dintre urmatoarele <var>N</var>, contine numarul natural <var>L</var><sub>k</sub>, reprezentand numarul de noduri adiacente cu nodul <var>k</var>, urmat de <var>L</var><sub>k</sub> numere naturale reprezentand lista de adiacenta a acestuia, ordonata conform preferintelor albinutei. Numerele continute de cele <var>N</var> linii sunt separate prin cate un spatiu. Urmatoarele <var>Q</var> linii vor contine, in ordine, numerele <var>T</var><sub>1</sub>, <var>T</var><sub>2</sub>,... , <var>T</var><sub>Q</sub>, cate unul pe linie.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>albinuta.out</var> va contine <var>Q</var> linii. Pe linia <var>i</var> se va scrie numarul nodului in care se va afla albinuta la momentul de timp <var>T</var><sub>i</sub>.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>M</var> = <var>L</var><sub>1</sub> + <var>L</var><sub>2</sub> + ... + <var>L</var><sub>N</sub></li>
+<li><var>1 ≤ N, M, Q ≤ 50</var></li>
+<li><var>1 ≤ L<sub>k</sub> ≤ M</var>, <var>1 ≤ k ≤ N</var></li>
+<li><var>1 ≤ T<sub>i</sub> ≤ 10<sup>9</sup></var>, <var>1 ≤ i ≤ Q</var></li>
+<li>Intr-o lista de adiacenta, un nod poate aparea de mai multe ori.</li>
+<li>Un nod poate aparea in lista lui de adiacenta.</li>
+<li>Pentru <var>30%</var> din teste, <var>1 ≤ T<sub>i</sub> ≤ 10<sup>6</sup></var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>albinuta.in</th><th>albinuta.out</th></tr><tr><td>6 5<br>
+2 2 1<br>
+2 1 3<br>
+3 4 5 6<br>
+1 5<br>
+1 6<br>
+1 1<br>
+1<br>
+2<br>
+3<br>
+4<br>
+5<br></td><td>1<br>
+2<br>
+3<br>
+6<br>
+1<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Albinuta va urma traseul: <var>1 2 3 6 1</var> la momentele de timp <var>1,2,3,4,5</var>. </p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,37 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cerc.in, cerc.out</td><td><strong>Sursă</strong></td><td>Algoritmus, runda 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/cyber"><img src="/utilizator/cyber?action=download&amp;file=avatar&amp;resize=L16x16" alt="cyber">Claudia Cardei</a> <a title="Rating cyber: 488" class="rating-badge-3" href="http://infoarena.ro/utilizator/cyber?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/cyber">cyber</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>1024 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cerc">Vezi solutiile trimise</a></p>
+
+<h1>Cerc<br></h1>
+
+<p>Se considera <var>N</var> cercuri in plan. Se cere sa se determine numarul de zone finite in care cercurile date impart planul.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>cerc.in</var> se afla <var>N</var>. Pe urmatoarele <var>N</var> linii se afla cate trei numere intregi sub forma <var>x<sub>i</sub></var> <var>y<sub>i</sub></var> si <var>r<sub>i</sub></var>, reprezentand coordonatele centrului si raza cercului <var>i</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>cerc.out</var> se va afisa numarul de zone determinat de cercurile date.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 200</var></li>
+<li>Coordonatele cercurilor sunt numere intregi din intervalul <var>[0, 10 000]</var></li>
+<li>Razele cercurilor sunt intregi din intervalul <var>[1, 1 000]</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>cerc.in</th><th>cerc.out</th></tr><tr><td>4<br>
+90 110 50<br>
+130 70 30<br>
+155 45 15<br>
+165 115 65<br></td><td>11<br></td></tr></table><h3>Explicatie</h3>
+
+<p><img src="http://infoarena.ro/problema/cerc?action=download&amp;file=cercuri.gif&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

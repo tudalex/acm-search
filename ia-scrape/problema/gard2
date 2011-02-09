@@ -1,0 +1,81 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>gard2.in, gard2.out</td><td><strong>Sursă</strong></td><td>Lot 2002</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=gard2">Vezi solutiile trimise</a></p>
+
+<h1>Gard2<br></h1>
+
+<p>Dupa succesul avut la vopsirea primului gard, echipa de muncitori a fost angajata sa vopseasca gardul unuia dintre cei mai bogati oameni din oras. Fiind multumiti de suma oferita intregii echipe, muncitorii nu au mai facut prea multe mofturi de data aceasta. Ei s-au decis, insa, sa lucreze in ture: intai muncitorii din prima tura, apoi cei din a doua s.a.m.d. In cadrul fiecarei ture vor lucra <strong>cel putin unul</strong> si <strong>cel mult <var>K</var></strong> muncitori. De asemenea, fiecare muncitor va lucra in <strong>exact</strong> o tura. Surprins de modul de organizare in ture a muncitorilor si fiind un iubitor al problemelor de numarare, proprietarul gardului doreste sa afle in cate moduri pot fi aranjati muncitorii in ture. Intrucat a anuntat ca va oferi o suma frumusica celui care ii va da raspunsul in mai putin de o secunda, ati decis sa scrieti un program care sa va ajute sa castigati premiul pus in joc.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care, pentru valorile <var>N</var> si <var>K</var> date, determina cate posibilitati de aranjare a celor <var>N</var> muncitori in ture exista, astfel incat in fiecare tura sa lucreze cel putin unul si cel mult <var>K</var> dintre ei.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>gard2.in</var> se afla doi intregi: <var>N</var> si <var>K</var>, reprezentand numarul total de muncitori si numarul maxim de muncitori ce pot lucra simultan (intr-o tura).</p>
+
+<h2>Date de Iesire</h2>
+
+<p>In fisierul de iesire <var>gard2.out</var> veti afisa numarul determinat.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ K ≤ N ≤ 50</var></li>
+<li>Doua posibilitati de asezare sunt distincte daca exista cel putin un muncitor care lucreaza in ture cu numere de ordine diferite.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>gard2.in</th><th>gard2.out</th></tr><tr><td>3 2</td><td>12</td></tr><tr><td>4 1</td><td>24</td></tr><tr><td>5 3</td><td>530</td></tr></table><h3>Explicatie</h3>
+
+<p>Pentru primul exemplu, posibilitatile de aranjare in ture sunt:</p>
+
+<table><tr><th>Varianta 1</th><th>Varianta 2</th><th>Varianta 3</th><th>Varianta 4</th><th>Varianta 5</th><th>Varianta 6</th></tr><tr><td>Tura1: <strong>1 2</strong><br>
+Tura2: <strong>3</strong><br></td><td>Tura1: <strong>1 3</strong><br>
+Tura2: <strong>2</strong><br></td><td>Tura1: <strong>3 2</strong><br>
+Tura2: <strong>1</strong><br></td><td>Tura1: <strong>1</strong><br>
+Tura2: <strong>2 3</strong><br></td><td>Tura1: <strong>2</strong><br>
+Tura2: <strong>3 1</strong><br></td><td>Tura1: <strong>3</strong><br>
+Tura2: <strong>1 2</strong></td></tr><tr><th>Varianta 7</th><th>Varianta 8</th><th>Varianta 9</th><th>Varianta 10</th><th>Varianta 11</th><th>Varianta 12</th></tr><tr><td>Tura1: <strong>1</strong><br>
+Tura2: <strong>2</strong><br>
+Tura3: <strong>3</strong><br></td><td>Tura1: <strong>1</strong><br>
+Tura2: <strong>3</strong><br>
+Tura3: <strong>2</strong><br></td><td>Tura1: <strong>2</strong><br>
+Tura2: <strong>1</strong><br>
+Tura3: <strong>3</strong><br></td><td>Tura1: <strong>2</strong><br>
+Tura2: <strong>3</strong><br>
+Tura3: <strong>1</strong><br></td><td>Tura1: <strong>3</strong><br>
+Tura2: <strong>1</strong><br>
+Tura3: <strong>2</strong><br></td><td>Tura1: <strong>3</strong><br>
+Tura2: <strong>2</strong><br>
+Tura3: <strong>1</strong></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 3 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=45">Diverse</a></span>
+            <a href="javascript:show_tag_list(45)" id="tag_anchor_45" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_45"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=104">Operatii pe numere mari</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=281">Combinatorica</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

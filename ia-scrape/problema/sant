@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>sant.in, sant.out</td><td><strong>Sursă</strong></td><td>.campion 2003</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=181">Nistor Eugen Mot</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/devilkind"><img src="/utilizator/devilkind?action=download&amp;file=avatar&amp;resize=L16x16" alt="devilkind">Savin Tiberiu</a> <a title="Rating devilkind: 675" class="rating-badge-4" href="http://infoarena.ro/utilizator/devilkind?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/devilkind">devilkind</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>1024 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=sant">Vezi solutiile trimise</a></p>
+
+<h1>Sant<br></h1>
+
+<p>Pentru a sapa un sant de lungime <var>S</var>, apelam la o firma de constructii care ne pune la dispozitie muncitori de diverse categorii (in total <var>C</var> categorii notate <var>1</var>, <var>2</var>, ..., <var>C</var>). Un muncitor de categorie superioara munceste mai mult si mai bine, dar cere si un salariu mai mare. Vrem sa terminam lucrarea intr-o singura zi, asa ca ne intereseaza pentru fiecare categorie care e salariul si cati metri sapa pe zi un muncitor din categoria respectiva. In plus vrem sa angajam exact <var>N</var> muncitori (avem <var>N</var> locuri la masa!). Se mai stie ca pentru fiecare categorie exista un numar suficient de mare de muncitori si un muncitor nu se opreste pana nu sapa lungimea corespunzatoare categoriei sale.</p>
+
+<h2>Cerinta</h2>
+
+<p>Gasiti posibilitatea de a angaja <var>N</var> muncitori de diverse categorii care sa sape exact <var>S</var> metri intr-o zi si sa poata fi platiti cu suma cea mai mica posibila.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>sant.in</var> sunt scrise numerele naturale <var>S</var>, <var>N</var> si <var>C</var>, (lungimea santului, numarul de muncitori pe care vrem sa-i angajam si numarul de categorii) separate prin cate un spatiu. Pe urmatoarele <var>C</var> linii sunt cate doua numere naturale <var>L<sub>i</sub></var> si <var>P<sub>i</sub></var> (<var>i</var>= <var>1</var>, <var>2</var>, ..., <var>C</var>) reprezentand lungimea santului sapat si plata ceruta pentru o zi, de un muncitor de categoria <var>i</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Prima linie a fisierului <var>sant.out</var> va contine suma minima care poate fi platita unui numar de <var>N</var> muncitori care sapa exact <var>S</var> metri intr-o zi sau cifra <var>0</var> daca nu exista solutie. Daca exista solutie, urmatoarea linie va contine un sir de <var>N</var> numere ordonate crescator, reprezentand categoriile muncitorilor angajati. Daca sunt mai multe solutii se va alege solutia cea mai mica din punct de vedere lexicografic (pentru cine a uitat, un exemplu: conform ordinei lexicografice sirul <var>1</var> <var>1</var> <var>1</var> <var>2</var> <var>3</var> <var>3</var> este mai mic decat sirul <var>1</var> <var>1</var> <var>2</var> <var>2</var> <var>2</var> <var>3</var>).</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1</var> ≤ <var>N</var> ≤ <var>100</var></li>
+<li><var>1</var> ≤ <var>S</var> ≤ <var>1000</var></li>
+<li><var>1</var> ≤ <var>C</var> ≤ <var>20</var></li>
+<li><var>1</var> ≤ <var>L<sub>i</sub></var>, <var>P<sub>i</sub></var> ≤ <var>100</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>sant.in</th><th>sant.out</th></tr><tr><td>15 5 4<br>
+1 1<br>
+2 3<br>
+3 7<br>
+5 10<br></td><td>27<br>
+1 2 2 4 4<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

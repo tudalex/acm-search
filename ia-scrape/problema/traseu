@@ -1,0 +1,58 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>traseu.in, traseu.out</td><td><strong>Sursă</strong></td><td>preONI 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=traseu">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=traseu">Vezi solutiile trimise</a></p>
+
+<h1>Traseu<br></h1>
+
+<p>Gigel s-a mutat intr-un oras nou! Pentru a se familiariza cu noile imprejurimi a cumparat harta orasului si a observat ca este alcatuita din <var>M</var> strazi de diferite lungimi, cu sens unic si <var>N</var> intersectii de strazi. Gigel a luat harta si a inceput sa alcauiasca un traseu care porneste dintr-o intersectie anume, trece prin fiecare strada cel putin o data, si revine in intersectia de unde a pornit. Desi dorinta lui de explorare este mare, conditia lui fizica nu este tocmai buna, astfel ca vrea sa gasesasca un traseu in care suma lungimilor strazilor parcurse este minima.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care gaseste un traseu de lungime minima in orasul lui Gigel.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>traseu.in</var> se gasesc numerele <var>N</var> si <var>M</var> separate prin cate un spatiu. Pe urmatoarele <var>M</var> linii se vor gasi triplete de numere <var>i j k</var> cu semnificatia ca exista o strada de la intersectia cu numar <var>i</var> la intersectia cu numar <var>j</var> de lungime <var>k</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie din fisierul <var>traseu.out</var> se va afisa un singur numar natural reprezentand lungimea minima a traseului lui Gigel.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 60</var></li>
+<li>Lungimile strazilor sunt numere naturale din intervalul <var>[1, 10 000]</var></li>
+<li>Daca intre doua intersectii <var>i</var> si <var>j</var> exista o strada, atunci cu singuranta nu va exista o strada si intre intersectiile <var>j</var> si <var>i</var></li>
+<li>Se garanteaza ca exista cel putin un traseu in oras care trece prin fiecare strada cel putin o data si incepe si se termina in aceeasi intersectie</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>traseu.in</th><th>traseu.out</th></tr><tr><td>6 8<br>
+1 2 3<br>
+2 3 1<br>
+3 1 2<br>
+1 4 4<br>
+4 6 2 <br>
+6 1 5<br>
+4 5 1<br>
+5 1 6<br></td><td>28</td></tr></table><h3>Explicatii</h3>
+
+<p>Traseul ales este: <var>(1,2,3,1,4,6,1,4,5,1)</var>.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 3 taguri
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=92">Algoritmul Bellman-Ford</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=342">Algoritmul Roy-Floyd</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=93">Flux maxim de cost minim</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

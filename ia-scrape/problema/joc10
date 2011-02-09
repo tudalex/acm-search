@@ -1,0 +1,53 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>joc10.in, joc10.out</td><td><strong>Sursă</strong></td><td>ONI 2009 clasa a 9 a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=237">Adriana Simulescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=joc10">Vezi solutiile trimise</a></p>
+
+<h1>Joc10<br></h1>
+
+<p>Pentru un concurs de design de jocuri, Gigel vrea să construiască un joc. La joc participă <var>n</var> concurenţi numerotaţi de la <var>1</var> la <var>n</var>. Fiecare concurent are la dispoziţie câte un şir de <var>m</var> încăperi, numerotate de la <var>1</var> la <var>m</var>. Scopul jocului este de a găsi o comoară ascunsă în una din aceste încăperi. Fiecare încăpere conţine un cod, număr natural, fie egal cu <var>0</var>, fie având cel puţin <var>2</var> cifre. Ultima cifră indică numărul de etape de penalizare, adică numărul de etape în care concurentul nu are voie să părăsească încăperea. Numărul obţinut prin eliminarea ultimei cifre a codului indică numărul încăperii în care se va deplasa acesta la următoarea etapă sau la expirarea penalizării. </p>
+
+<p>Există două excepţii de la regula de definire a codului: numărul <var>9999</var> codifică o încăpere conţinând o comoară, iar numărul <var>0</var> o încăpere conţinând o capcana. </p>
+
+<p>În etapa <var>1</var> fiecare jucător intră în încăperea <var>1</var> din şirul său de încăperi. În funcţie de codul găsit în încăpere sunt posibile următoarele situaţii:</p>
+
+
+<ul><li>codul găsit este <var>9999</var> ceea ce înseamnă că jucătorul este câştigător şi jocul se încheie la finalul acestei etape;</li>
+<li>codul găsit este <var>0</var> ceea ce duce la eliminarea sa din joc;</li>
+<li>pentru celelalte coduri, după efectuarea etapelor de penalizare, jucătorul efectuează o deplasare în încăperea indicată de cod. De exemplu la întâlnirea codul <var>157</var>, după efectuarea celor <var>7</var> etape de penalizare jucătorul se va deplasa în camera <var>15</var>.</li>
+</ul><p>Trecerea de la o etapă la alta se realizează simultan pentru toţi concurenţii.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Fiind dat numărul <var>n</var> de concurenţi, numărul <var>m</var> de încăperi alocate fiecărui concurent, şi codurile din cele <var>n×m</var> încăperi să se determine câştigătorul jocului, numărul încăperii în care a găsit comoara, numărul de etape parcurse până când câştigătorul găseşte comoara precum şi numărul de concurenţi eliminaţi din joc până la etapa respectivă (inclusiv).</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fişierului de intrare <var>joc10.in</var> conţine două numere naturale <var>n</var> şi <var>m</var>, separate printr-un spaţiu, reprezentând numărul concurenţilor, respectiv numărul încăperilor.<br>
+Următoarele <var>n</var> linii conţin câte <var>m</var> numere naturale, separate prin câte un spaţiu, reprezentând codurile din fiecare încăpere.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Prima linie a fişierului de ieşire <var>joc10.out</var> va conţine patru numere naturale separate prin câte un spaţiu, reprezentând indicele câştigătorului, numărul încăperii unde a găsit comoara, numărul etapei în care a câştigat şi respectiv numărul de concurenţi eliminaţi din joc.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ n ≤ 400</var></li>
+<li><var>1 ≤ m ≤ 900</var></li>
+<li>Pentru toate testele de intrare se garantează că există exact un câştigător.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>joc10.in</th><th>joc10.out</th></tr><tr><td>4 8<br>
+  0 9999 41 50 61 70 80 30<br>
+  30 80 60 60 9999 21 40 50<br>
+  20 30 40 50 61 71 81 9999<br>
+  20 30 50 0 61 71 9999 41<br></td><td>2 5 7 1<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Câştigă jucătorul al <var>2</var>-lea, după <var>7</var> etape, iar încăperea în care a găsit comoara este încăperea <var>5</var>. În cele <var>7</var> etape a fost eliminat un singur concurent şi anume primul concurent.<br>
+Încăperile prin care trece jucătorul câştigător până la final sunt: <var>1-&gt;3-&gt;6-&gt;2-&gt;8-&gt;5</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

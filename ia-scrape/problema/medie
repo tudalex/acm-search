@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>medie.in, medie.out</td><td><strong>Sursă</strong></td><td>ONI 2006, clasa 10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=190">Adrian Nita</a>, <a href="/cauta-probleme?tag_id%5B%5D=189">Maria Nita</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/marcelcodrea"><img src="/utilizator/marcelcodrea?action=download&amp;file=avatar&amp;resize=L16x16" alt="marcelcodrea">Codrea Marcel</a> <a title="Rating marcelcodrea: 492" class="rating-badge-3" href="http://infoarena.ro/utilizator/marcelcodrea?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/marcelcodrea">marcelcodrea</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=medie">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=medie">Vezi solutiile trimise</a></p>
+
+<h1>Medie<br></h1>
+
+<p>La Targoviste, in Cetatea Domneasca, a fost descoperit un document in care erau scrise mai multe numere naturale. Mircea cel Tanar, pasionat de aritmetica, a observat proprietatea ca, uneori, un numar din sir poate fi scris ca medie aritmetica a doua numere de pe alte doua pozitii din sir. Intrebarea pe care si-o pune Mircea cel Tanar este de cate ori se regaseste in sir aceasta proprietate.<br>
+Scrieti un program care determina numarul total de triplete <var>(i, j, k)</var> cu <var>(i ≠ j, i ≠ k , j &lt; k)</var> astfel incat <var>V<sub>i</sub></var> este media aritmetica dintre <var>V<sub>j</sub></var> si <var>V<sub>k</sub></var>.</p>
+
+<h2>Date de intrare</h2>
+
+
+<p>Fisierul de intrare <var>medie.in</var> are pe prima linie o valoare <var>n</var> reprezentand numarul de numere din sir, iar pe urmatoarele <var>n</var> linii cate o valoare <var>V<sub>i</sub></var> pe linie, reprezentand valorile din sir. Valorile din sir nu sunt neaparat distincte.</p>
+
+
+<h2>Date de iesire</h2>
+
+
+<p>Fisierul de iesire <var>medie.out</var> va contine o singura linie cu o valoare <var>max</var>, reprezentand numarul total de triplete determinat.</p>
+
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>0 &lt; n ≤ 9000</var></li>
+<li><var>0 &lt; V<sub>i</sub> ≤ 7000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>medie.in</th><th>medie.out</th></tr><tr><td><var>5</var><br><var>1</var><br><var>1</var><br><var>1</var><br><var>1</var><br><var>1</var><br></td><td><var>30</var><br></td></tr><tr><td><var>3</var><br><var>4</var><br><var>2</var><br><var>1</var><br></td><td><var>0</var><br></td></tr><tr><td><var>6</var><br><var>3</var><br><var>1</var><br><var>6</var><br><var>4</var><br><var>5</var><br><var>2</var><br></td><td><var>6</var><br></td></tr></table><h3>Explicatie</h3>
+
+
+<ol><li>Fiecare valoare <var>1</var> poate fi scrisa ca media a cate doua valori din celelalte <var>4</var> posibile. <br>
+Se vor numara tripletele: <br>
+( <var>1</var>, <var>2</var>, <var>3</var> ), ( <var>1</var>, <var>2</var>, <var>4</var> ), ( <var>1</var>, <var>2</var>, <var>5</var> ), ( <var>1</var>, <var>3</var>, <var>4</var> ), ( <var>1</var>, <var>3</var>, <var>5</var> ), <br>
+( <var>1</var>, <var>4</var>, <var>5</var> ), ( <var>2</var>, <var>1</var>, <var>3</var> ), ( <var>2</var>, <var>1</var>, <var>4</var> ), ( <var>2</var>, <var>1</var>, <var>5</var> ), ( <var>2</var>, <var>3</var>, <var>4</var> ), <br>
+( <var>2</var>, <var>3</var>, <var>5</var> ), ( <var>2</var>, <var>4</var>, <var>5</var> ), ( <var>3</var>, <var>1</var>, <var>2</var> ), ( <var>3</var>, <var>1</var>, <var>4</var> ), ( <var>3</var>, <var>1</var>, <var>5</var> ), etc </li>
+<li>Valoarea <var>4</var> nu este media aritmetica a valorilor <var>2</var> si <var>1</var>,<br>
+Valoarea <var>2</var> nu este media aritmetica a valorilor <var>4</var> si <var>1</var>,<br>
+Valoarea <var>1</var> nu este media aritmetica a valorilor <var>4</var> si <var>2</var>. </li>
+<li><var>2</var> = ( <var>1</var> + <var>3</var> ) / <var>2</var><br><var>3</var> = ( <var>4</var> + <var>2</var> ) / <var>2</var> ; ( <var>1</var> + <var>5</var> ) / <var>2</var><br><var>4</var> = ( <var>3</var> + <var>5</var> ) / <var>2</var> ; ( <var>6</var> + <var>2</var> ) / <var>2</var><br><var>5</var> = ( <var>6</var> + <var>4</var> ) / <var>2</var><br>
+Tripletele sunt: <br>
+( <var>6</var>, <var>1</var>, <var>2</var> ), ( <var>1</var>, <var>4</var>, <var>6</var> ), ( <var>1</var>, <var>2</var>, <var>5</var> ), <br>
+( <var>4</var>, <var>1</var>, <var>5</var> ), ( <var>4</var>, <var>3</var>, <var>6</var> ), ( <var>5</var>, <var>3</var>, <var>4</var> ).  </li>
+</ol><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

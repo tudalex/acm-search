@@ -1,0 +1,31 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>subset.in, subset.out</td><td><strong>Sursă</strong></td><td>Selectie individuala ACM ICPC, UPB 2009</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=subset">Vezi solutiile trimise</a></p>
+
+<h1>Subset<br></h1>
+
+<p>Se considera multimea <var>{1,2,..,N}</var>, despre care se stie ca are <var>2<sup>N</sup></var> submultimi (incluzand multimea vida). Fiecarei submultimi i se ataseaza un sir de elemente, si anume: cel mai mic sir in ordine lexicografica, format din elementele submultimii. De exemplu, submultimii <var>{1,7,3,5}</var> i se ataseaza sirul <var>1 3 5 7</var>. Se ordoneaza toate cele <var>2<sup>N</sup></var> submultimi, in ordinea lexicografica a sirurilor asociate. De exemplu, submultimea <var>{1,3,4,10}</var> se va afla inaintea submultimii <var>{1,4,5}</var> in ordinea considerata, deoarece sirul <var>1 3 4 10</var> se afla inaintea sirului <var>1 4 5</var> in ordine lexicografica. In cazul in care sirul asociat unei submultimi cu mai putine elemente coincide cu primele elemente ale sirului asociat unei submultimi cu mai multe elemente, atunci submultimea cu mai putine elemente se considera inaintea submultimii cu mai multe elemente. De exemplu, submultimea <var>{1,5,8,10}</var> se afla inaintea submultimii <var>{1,5,8,10,13,21}</var>.</p>
+
+<p>Cunoscandu-se numarul <var>N</var> de elemente al multimii, precum si numarul de ordine al unei submultimi in ordinea descrisa mai sus, trebuie sa afisati sirul corespunzator submultimii cu acel numar de ordine.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>subset.in</var> contine <var>2</var> valori intregi, separate printr-un spatiu, <var>N</var> si <var>M</var>, reprezentand numarul de elemente al multimii si numarul de ordine al submultimii dorite.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>subset.out</var> veti afisa pe o singura linie, separate prin spatii, elementele sirului asociat submultimii de pe pozitia <var>M</var>.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 60</var></li>
+<li>Multimea vida nu ne intereseaza, asa ca prima submultime va fi <var>{1}</var>. In aceste conditii, numarul de ordine din fisierul de intrare variaza intre <var>1</var> si <var>2<sup>N</sup>-1</var> (ultima valoarea corespunzand chiar multimii <var>{N}</var>).</li>
+<li><strong>Aceasta problema are testele impartite in 2 grupe, valorand 30 si, respectiv, 70 de puncte.</strong></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>subset.in</th><th>subset.out</th></tr><tr><td>3 3<br></td><td>1 2 3</td></tr><tr><td>6 10<br></td><td>1 2 3 6<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

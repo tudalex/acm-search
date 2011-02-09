@@ -1,0 +1,79 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>matrice2.in, matrice2.out</td><td><strong>Sursă</strong></td><td>ONI 2009, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=167">Paul-Dan Baltescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Mishu91"><img src="/utilizator/Mishu91?action=download&amp;file=avatar&amp;resize=L16x16" alt="Mishu91">Andrei Misarca</a> <a title="Rating Mishu91: 662" class="rating-badge-1" href="http://infoarena.ro/utilizator/Mishu91?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Mishu91">Mishu91</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>3.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=matrice2">Vezi solutiile trimise</a></p>
+
+<h1>Matrice 2<br></h1>
+
+<p>Laura a primit de ziua ei o matrice pătratică de dimensiuni <var>NxN</var> de numere întregi. Neştiind ce să facă cu ea, a început să-şi pună diverse întrebări. Fata consideră că un drum de la (<var>x<sub>1</sub></var>, <var>y<sub>1</sub></var>) la (<var>x<sub>2</sub></var>, <var>y<sub>2</sub></var>) este o secvenţă de celule care începe în celula (<var>x<sub>1</sub></var>, <var>y<sub>1</sub></var>), se termină în (<var>x<sub>2</sub></var>, <var>y<sub>2</sub></var>) şi oricare două celule consecutive au o latură în comun (deplasarea se poate face spre nord, est, sud, vest). Laura a definit costul unui drum ca fiind valoarea minimă a unei celule de pe acel drum. Apoi ea a început să-şi pună <var>Q</var> întrebări de forma: <em>Care este costul maxim pe care îl poate avea un drum de la (<var>x<sub>1</sub></var>, <var>y<sub>1</sub></var>) la (<var>x<sub>2</sub></var>, <var>y<sub>2</sub></var>)?</em> Întrebările au început să i se pară dificile şi vă cere ajutorul. </p>
+
+<p>Aflaţi răspunsul pentru fiecare dintre cele <var>Q</var> întrebări.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare <var>matrice2.in</var> se află <var>2</var> numere întregi <var>N</var> si <var>Q</var> cu semnificaţia din enunţ. Pe următoarele <var>N</var> linii se află câte <var>N</var> numere întregi reprezentând matricea primită de Laura. Fiecare dintre următoarele <var>Q</var> linii conţine câte patru numere întregi <var>x<sub>1</sub></var> <var>y<sub>1</sub></var> <var>x<sub>2</sub></var> <var>y<sub>2</sub></var> care descriu câte o întrebare.</p>
+
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>matrice2.out</var> se află răspunsul la cele <var>Q</var> întrebări, câte unul pe linie, în aceeaşi ordine în care au apărut în fişierul de intrare.</p>
+
+
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 300</var></li>
+<li><var>1 ≤ Q ≤ 20.000</var></li>
+<li>Elementele matricei sunt numere întregi cuprinse între <var>1</var> şi <var>1.000.000</var>.</li>
+<li>Pentru <var>15%</var> din teste <var>N ≤ 50</var>, <var>Q ≤ 10</var> şi valorile matricei sunt cuprinse între <var>1</var> şi <var>250</var>.</li>
+<li>Pentru alte <var>20%</var> din teste <var>N ≤ 100</var>, <var>Q ≤ 100</var>.</li>
+<li>Nu există nicio întrebare pentru care perechea (<var>x<sub>1</sub></var>, <var>y<sub>1</sub></var>) să coincidă cu perechea (<var>x<sub>2</sub></var>, <var>y<sub>2</sub></var>).</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>matrice2.in</th><th>matrice2.out</th></tr><tr><td>5 3<br>
+9 5 9 8 7<br>
+2 1 1 3 8<br>
+1 3 9 4 6<br>
+4 1 8 6 7<br>
+2 4 5 5 6<br>
+1 1 3 3<br>
+5 5 1 5<br>
+2 2 4 3<br></td><td>5<br>
+6<br>
+1<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Pentru prima întrebare răspunsul este dat de următorul drum:<br><var><b>9 5 9 8 7</b></var><br><var>2 1 1 3 <b>8</b></var><br><var>1 3 <b>9</b> 4 <b>6</b></var><br><var>4 1 <b>8</b> 6 <b>7</b></var><br><var>2 4 <b>5 5 6</b></var></p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 3 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=48">Cautare</a></span>
+            <a href="javascript:show_tag_list(48)" id="tag_anchor_48" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_48"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=49">Cautare binara</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=63">Sortare</a></span>
+            <a href="javascript:show_tag_list(63)" id="tag_anchor_63" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_63"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=64">Sortare</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=296">Multimi disjuncte</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

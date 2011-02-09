@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>mesaj.in, mesaj.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2006, clasele 9-10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/bogdan2412"><img src="/utilizator/bogdan2412?action=download&amp;file=avatar&amp;resize=L16x16" alt="bogdan2412">Bogdan-Cristian Tataroiu</a> <a title="Rating bogdan2412: 1162" class="rating-badge-4" href="http://infoarena.ro/utilizator/bogdan2412?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/bogdan2412">bogdan2412</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.25 sec</td><td><strong>Limită de memorie</strong></td><td>16000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=mesaj">Vezi solutiile trimise</a></p>
+
+<h1>Mesaj<br></h1>
+
+<p>Zaharel ii trimite mesaje prietenei sale Eugenia folosind un sistem propriu de comunicatii (ca sa nu dea banii pe <span class="caps">SMS</span>-uri). Din pacate, sistemul lui Zaharel nu este complet eficient, iar uneori mesajul este distorsionat, mai exact este posibil sa apara caractere in plus in mesaj. Din fericire, vocabularul lui Zaharel este relativ limitat, iar Eugenia stie de profite de acest lucru: a facut o lista cu toate cele <var>N</var> cuvinte pe care le poate folosi Zaharel in cadrul mesajului. Sistemul lui Zaharel nu foloseste spatii pentru despartirea cuvintelor, dar Eugenia este destul de isteata sa-si dea seama intelesul mesajului, chiar si fara spatii.</p>
+
+<h2>Cerinta</h2>
+
+<p>Stiind lista de <var>N</var> cuvinte precum si mesajul final format din <var>M</var> caractere, aflati numarul minim de caractere pe care Eugenia trebuie sa le elimine din mesaj pentru ca acesta sa poate fi reprezentat ca o secventa de cuvinte din dictionar.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>mesaj.in</var> se afla doua numere naturale <var>N</var> si <var>M</var> reprezentand numarul de cuvinte din lista si lungimea mesajului. Pe linia a doua se vor afla <var>M</var> caractere reprezentand mesajul. Urmatoarele <var>N</var> linii contin cate un cuvant din lista.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>mesaj.out</var> va contine o singura linie pe care se va afla numarul minim de caractere care trebuie sterse.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>5 ≤ N ≤ 1 000</var></li>
+<li><var>1 ≤ M ≤ 1 600</var></li>
+<li>Cuvintele din lista au lungimi cuprinse intre <var>1</var> si <var>20</var></li>
+<li>Mesajul si cuvintele sunt formate doar din litere mici din alfabetul englez <var>{a, b, c ... z}</var><br></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>mesaj.in</th><th>mesaj.out</th></tr><tr><td>9 20<br>
+carmrcmddrcaddamroom<br>
+car<br>
+cdr<br>
+cadar<br>
+moo<br>
+oom<br>
+omo<br>
+mr<br>
+cam<br>
+room<br></td><td>4<br></td></tr></table><h3>Explicatie</h3>
+
+<p><var>carmrc<span style="color:red">md</span>drcad<span style="color:red">d</span>a<span style="color:red">m</span>room</var><br>
+Daca se elimina litere de culoare rosie, mesajul ramas va reprezenta urmatoare insiruire de cuvinte din lista:<br><var>car | mr | cdr | cadar | oom</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

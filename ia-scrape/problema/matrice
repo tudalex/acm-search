@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>matrice.in, matrice.out</td><td><strong>Sursă</strong></td><td>ONI 2007, clasa 10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=matrice">Vezi solutiile trimise</a></p>
+
+<h1>Matrice<br></h1>
+
+<p>Se considera o matrice binara <var>B</var> (cu valori <var>0</var> sau <var>1</var>) cu <var>N</var> linii si <var>M</var> coloane, liniile si coloanele fiind numerotate de la <var>1</var> la <var>N</var>, respectiv de la <var>1</var> la <var>M</var>. Matricea <var>B</var> este generata dupa regula <var>B<sub>i,j</sub> = R<sub>i</sub> xor C<sub>j</sub></var>, unde <var>R</var> si <var>C</var> sunt vectori binari de lungime <var>N</var>, respectiv <var>M</var>. Numim dreptunghi de colturi (<var>x<sub>1</sub>,y<sub>1</sub></var>) (<var>x<sub>2</sub>,y<sub>2</sub></var>) cu <var>x<sub>1</sub> ≤ x<sub>2</sub></var> si <var>y<sub>1</sub> ≤ y<sub>2</sub></var>, multimea elementelor <var>B<sub>i,j</sub></var> cu <var>x<sub>1</sub> ≤ i ≤ x<sub>2</sub></var> si <var>y<sub>1</sub> ≤ j ≤ y<sub>2</sub></var>. Aria unui astfel de dreptunghi este <var>(x<sub>2</sub>-x<sub>1</sub>+1)*(y<sub>2</sub>-y<sub>1</sub>+1)</var>.</p>
+
+<h2>Cerinta </h2>
+
+<p>Determinati numarul maxim de elemente egale cu <var>0</var> intr-un dreptunghi a carui arie este exact <var>A</var>, precum si numarul de dreptunghiuri pentru care se obtine acest numar maxim.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>matrice.in</var> contine pe prima linie numerele naturale <var>N</var>, <var>M</var>, <var>A</var> separate prin cate un spatiu. A doua linie va contine <var>N</var> valori <var>0</var> sau <var>1</var> separate prin cate un spatiu, reprezentand elementele vectorului <var>R</var>, iar a treia linie va contine <var>M</var> valori <var>0</var> sau <var>1</var> separate prin cate un spatiu, reprezentand elementele vectorului <var>C</var>. </p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>matrice.out</var> va contine o singura linie pe care vor fi scrise doua numere naturale separate printr-un singur spatiu <var>Zmax Nsol</var>, reprezentand in ordine numarul maxim de elemente egale cu <var>0</var> intr-un dreptunghi a carui arie este exact <var>A</var>, precum si numarul de dreptunghiuri pentru care se obtine acest numar maxim.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ <span class="caps">N,M </span>≤ 30 000</var></li>
+<li><var>1 ≤ A ≤ 5 000 000</var></li>
+<li>Pentru <var>40%</var> din teste <var><span class="caps">N,M </span>≤ 300</var></li>
+<li>Prin <var>x xor y</var> se intelege operatia sau exclusiv, mai exact:</li>
+</ul><table style="width:10%" cellspacing="0"><tr><th>x xor y</th><td><var>0 </var></td><td><var>1</var></td></tr><tr><td><var>0 </var></td><td><var>0 </var></td><td><var>1</var></td></tr><tr><td><var>1</var></td><td><var>1</var></td><td>0 </td></tr></table><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>matrice.in</th><th>matrice.out</th></tr><tr><td>2 4 4<br>
+0 1<br>
+1 0 0 1<br></td><td>2 5<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Matricea <var>B</var>:</p>
+
+<table style="width:10%" cellspacing="0"><tr><td><var>1</var></td><td><var>0 </var></td><td><var>0 </var></td><td><var>1</var></td></tr><tr><td><var>0 </var></td><td><var>1</var></td><td><var>1</var></td><td><var>0 </var></td></tr></table><p>Numarul maxim de valori <var>0</var> dintr-un dreptunghi de arie <var>4</var> este <var>2</var>.<br>
+Cele <var>5</var> dreptunghiuri de arie <var>4</var> cu numar maxim de <var>0</var> sunt:</p>
+
+
+<ul><li>(<var>1,1</var>)(<var>1,4</var>)</li>
+<li>(<var>2,1</var>)(<var>2,4</var>)</li>
+<li>(<var>1,1</var>)(<var>2,2</var>)</li>
+<li>(<var>1,2</var>)(<var>2,3</var>)</li>
+<li>(<var>1,3</var>)(<var>2,4</var>)</li>
+</ul><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

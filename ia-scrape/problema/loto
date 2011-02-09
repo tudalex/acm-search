@@ -1,0 +1,56 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>loto.in, loto.out</td><td><strong>Sursă</strong></td><td>preONI 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">2/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=loto">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=loto">Vezi solutiile trimise</a></p>
+
+<h1>Loto<br></h1>
+
+<p>Gigel este un mare pasionat al jocurilor de noroc, iar cel mai mult ii place sa joace la loto "<var>6</var> din <var>N</var>". La acest joc, el poate scrie pe un bilet <var>6</var> numere, din <var>N</var> numere naturale distincte date de Loteria Nationala; un numar poate fi folosit pe un bilet de mai multe ori. Gigel a visat intr-o noapte ca suma numerelor scrise pe biletul castigator va fi <var>S</var>, asa ca a doua zi s-a dus sa puna si el un bilet castigator!</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care ii spune lui Gigel ce numere trebuie sa aleaga ca sa obtina un bilet castigator (cu suma <var>S</var>)</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie din fisierul <var>loto.in</var> se vor gasi numerele naturale <var>N</var> si <var>S</var>, separate prin cate un spatiu. Pe a doua linie vor fi <var>N</var> numere naturale distincte, date de Loteria Nationala.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>In fisierul <var>loto.out</var> se vor gasi <var>6</var> valori reprezentand numerele alese pentru biletul lui Gigel. Daca nu se poate obtine un bilet castigator in fisierul de iesire se va afla doar numarul <var>-1</var>.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100</var></li>
+<li><var>1 ≤ S ≤ 600.000.000</var></li>
+<li>Valorile numerelor date de Loteria Nationala nu vor depasi <var>100.000.000</var></li>
+<li>Daca exista mai multe solutii, se va afisa una singura</li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>loto.in</th><th>loto.out</th></tr><tr><td>3 13 <br>
+1 2 3</td><td>1 1 2 3 3 3</td></tr><tr><td>3 19<br>
+1 2 3</td><td>-1</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=48">Cautare</a></span>
+            <a href="javascript:show_tag_list(48)" id="tag_anchor_48" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_48"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=49">Cautare binara</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=63">Sortare</a></span>
+            <a href="javascript:show_tag_list(63)" id="tag_anchor_63" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_63"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=64">Sortare</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

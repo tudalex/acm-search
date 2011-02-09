@@ -1,0 +1,59 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>sir.in, sir.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=132">Alexandru Dimitriu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=sir">Vezi solutiile trimise</a></p>
+
+<h1>Sir<br></h1>
+
+<p>Explorand pestera arheologica de la Altamira, profesorul Richard a gasit un sir de numere de lungime <var>N</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Dorind sa descifreze semnificatia acestui sir, el trebuie sa gaseasca secventa de lungime maxima de lungime cuprinsa intre <var>X</var> si <var>Y</var> cu propietatea: <var><span class="caps">MAX </span>- <span class="caps">MIN </span>≤ Z</var> unde, <var><span class="caps">MAX</span></var> reprezinta valoarea maxima din secventa, <var><span class="caps">MIN</span></var> valoare minima din secventa, iar <var>Z</var> un numar natural dat.</p>
+
+<p>Ajutati-l pe profesorul Richard sa descifreze limba antica din pestera Altamira si astfel, sa devina celebru.</p>
+
+<h2>Date de intrare:</h2>
+
+<p>De pe prima linie a fisierului <var>sir.in</var> se vor citi <var>4</var> numere <var>N X Y Z</var>. Pe a doua linie a fisierului de intrare se vor citi <var>N</var> numere, reprezentand valorile sirului.</p>
+
+<h2>Date de iesire:</h2>
+
+<p>Pe prima linie a fisierului <var>sir.out</var> se vor afisa <var>3</var> numere separate prin spatii reprezentand lungimea maxima a secventei cu propietatea data, pozitia de inceput a secventei si pozitia de sfarsit a acesteia. In cazul in care nu exista solutie se va afisa un singur numar, <var>-1</var>.</p>
+
+<h2>Restrictii si prezizari:</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 100 000</var></li>
+<li><var>1 ≤ X ≤ Y ≤ N</var></li>
+<li><var>0 ≤ Z ≤ 30 000</var></li>
+<li>Valorile sirului sunt numere naturale ≤ <var>30 000</var></li>
+<li>In cazul in care exista mai multe solutii se va afisa secventa cu pozitia de inceput maxima</li>
+</ul><h2>Exemple:</h2>
+
+<table class="example" cellspacing="0"><tr><th>sir.in</th><th>sir.out</th></tr><tr><td>6 2 4 3<br>
+1 5 3 2 5 9<br></td><td>4 2 5</td></tr><tr><td>3 2 3 1<br>
+2 5 2<br></td><td>-1</td></tr></table><p><em>Explicatii</em>: In primul exemplu, secventa maxima cu lungime cuprinsa intre 2 si 4 care indeplineste propietatea din enunt are lungimea 4. Aceasta secventa incepe de pe pozitia 2 si se termina pe pozitia 5. In al doilea exemplu, nu exista secventa de lungime cuprinsa intre 2 si 3 care sa indeplineasca propietatea din enunt.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=48">Cautare</a></span>
+            <a href="javascript:show_tag_list(48)" id="tag_anchor_48" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_48"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=49">Cautare binara</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=94">Deque</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

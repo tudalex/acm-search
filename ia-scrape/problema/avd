@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>avd.in, avd.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.6 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=avd">Vezi solutiile trimise</a></p>
+
+<h1>AVD<br></h1>
+
+<p>Un arbore este un graf neorientat, conex cu <var>N</var> noduri si <var>N-1</var> muchii. Se numeste arbore <span class="caps">AVD </span>un arbore care pentru fiecare partitie a lui <var>N  = n<sub>1</sub> + n<sub>2</sub> + ... + n<sub>k</sub></var> nodurile arborelui se pot imparti in <var>k</var> multimi astfel incat multimea <var>i</var> are n<sub>i</sub> noduri si fiecare multime ramane conexa, <var>n<sub>i</sub> ≤ n<sub>j</sub></var> pentru <var>i &lt; j</var>. Gradul <span class="caps">AVD </span>al unui arbore este numarul de partitii care indeplinesc conditiile anterioare impartit la numarul total de partitii existente pentru <var>N</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Dandu-se un arbore cu <var>N</var> noduri, calculati gradul <span class="caps">AVD </span>al acestuia.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>avd.in</var> contine <var>T</var>, numarul de teste din fisier apoi vor urma cele <var>T</var> teste. Pe prima linie a fiecarui test se afla <var>N</var> numarul de noduri, urmand apoi <var>N-1</var> linii continand cate doua numere <var>x, y</var> cu semnificatia exista muchie intre nodurile <var>x</var> si <var>y</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>In fisierul <var>avd.out</var> vor exista <var>T</var> linii fiecare continand gradul <span class="caps">AVD </span>al arborelui descris la testului respectiv.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 13</var></li>
+<li><var>1 ≤ T ≤ 50</var></li>
+<li>rezultatul se va afisa cu <var>5</var> zecimale (prin rotunjire)</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>avd.in</th><th>avd.out</th></tr><tr><td>3<br>
+4<br>
+1 2<br>
+1 3<br>
+1 4<br>
+5<br>
+1 2<br>
+2 3<br>
+3 4<br>
+4 5<br>
+1<br></td><td>0.80000<br>
+1.00000<br>
+1.00000</td></tr></table><h3>Explicatii</h3>
+
+<p>Pentru primul test, exista in total <var>5</var> partitii pentru <var>4: 1+1+1+1, 1+1+2, 1+3, 2+2, 4</var> din care doar partitia <var>2+2</var> nu poate fi obtinuta. Deci gradul <span class="caps">AVD </span>al arborelui este <var>4/5=0.80000</var>. </p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

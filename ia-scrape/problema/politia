@@ -1,0 +1,58 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>politia.in, politia.out</td><td><strong>Sursă</strong></td><td>Lot Bistrita 2009, Baraj 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=253">Stefan Alexandru Filip</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=politia">Vezi solutiile trimise</a></p>
+
+<h1>Politia<br></h1>
+
+<p>Dubota a terminat Academia de poliţie şi se pregăteşte de prima lui misiune în calitate de poliţist. Primul pas este însă determinarea echipajelor. Un echipaj este format din <var>2</var> politişti cu specializări diferite. Cele <var>2</var> specializări ale politiştilor sunt şoferi şi itişti. Şoferii trebuie să ştie să conducă maşina şi să folosească echipamentul radio, iar itiştii să ştie să folosească echipamentul radio şi computerul. Au absolvit Academia <var>N<sub>S</sub></var> poliţişti cu specializarea şofer şi <var>N<sub>I</sub></var> poliţişti cu specializarea itist. Poliţia dispune de <var>M</var> maşini, <var>R</var> echipamente radio si <var>C</var> computere. Din păcate, nu toţi absolvenţii ştiu să folosească echipamentele poliţiei, adică un şofer ştie să conducă numai anumite maşini şi să folosească numai anumite echipamente radio şi, asemănator, un itist nu ştie să folosească decât anumite echipamente radio şi anumite computere.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Fiind date listele echipamentelor pe care le poate folosi fiecare absolvent, să se determine numărul maxim de echipaje de poliţie care se pot forma.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie din fişierul de intrare <var>politia.in</var> se află <var>5</var> numere întregi separate prin spaţii: <var>N<sub>S</sub></var> <var>N<sub>I</sub></var> <var>M</var> <var>R</var> <var>C</var>. Pe următoarele <var>2</var> * <var>N<sub>S</sub></var> linii se găsesc descrierile absolvenţilor şoferi. Primul element de pe linia <var>2</var> * <var>i</var> <var>(1 ≤ i ≤ N<sub>S</sub>)</var> este <var>L<sub>i<sub>M</sub></sub></var>, numărul maşinilor pe care al <var>i</var>-lea absolvent şofer ştie să le folosească, urmat de <var>L<sub>i<sub>M</sub></sub></var> numere care reprezintă indicii maşinilor pe care acesta ştie să le folosească. Pe linia <var>2 * i + 1</var> <var>( 1 ≤ i ≤ N<sub>S</sub>)</var> se află <var>L<sub>i<sub>R</sub></sub></var>, numărul echipamentelor radio pe care al <var>i</var>-lea absolvent şofer ştie să le folosească, urmat de <var>L<sub>i<sub>R</sub></sub></var> numere, reprezentând indicii echipamentelor radio pe care absolventul şofer ştie să le folosească. Pe următoarele <var>2 * N<sub>I</sub></var> linii se găsesc descrierile absolvenţilor itişti, într-o manieră asemănătoare. Pe liniile <var>2 * N<sub>S</sub> + 2 * i</var> <var>(1 ≤ i ≤ N<sub>I</sub>)</var> se găseşte lista echipamentelor radio pe care al <var>i</var>-lea absolvent itist ştie să le folosească şi pe liniile <var>2 * N<sub>S</sub> + 2 * i + 1</var> se găseşte lista computerelor pe care al <var>i</var>-lea absolvent itist ştie să le folosească.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>politia.out</var> se va scrie o singură valoare, reprezentând numărul maxim de echipaje care se pot forma. </p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li>Un echipaj este format din <var>2</var> poliţişti: unul şofer, celălalt itist şi <var>3</var> echipamente: o maşină, un echipament radio şi un computer.</li>
+<li>O maşină, un echipament radio sau un computer nu pot fi folosite pentru a forma <var>2</var> echipaje diferite.</li>
+<li>Intr-un echipaj atat soferul cat si itistul trebuie sa stie sa foloseasca acelasi radio.</li>
+<li><var>1 ≤ N<sub>S</sub>, N<sub>I</sub>, M, R, C ≤ 200</var></li>
+<li><var>0 ≤ L<sub>i<sub>M</sub></sub> ≤ M</var></li>
+<li><var>0 ≤ L<sub>i<sub>R</sub></sub> ≤ R</var></li>
+<li><var>0 ≤ L<sub>i<sub>C</sub></sub> ≤ C</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>politia.in</th><th>politia.out</th></tr><tr><td>2 3 2 4 2<br>
+  1 1<br>
+  2 1 2<br>
+  2 1 2<br>
+  2 3 4<br>
+  1 1<br>
+  1 1<br>
+  2 2 3<br>
+  1 1<br>
+  1 4<br>
+  1 2<br></td><td>2<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Şoferul <var>1</var> ştie să folosească maşina <var>1</var> şi echipamentele radio <var>1</var> şi <var>2</var>.<br>
+Soferul <var>2</var> ştie să folosească maşinile <var>1</var> şi <var>2</var> şi echipamentele radio <var>3</var> şi <var>4</var>.<br>
+Itistul <var>1</var> ştie să folosească echimapentul radio <var>1</var> şi computerul <var>1</var>.<br>
+Itistul <var>2</var> ştie să folosească echimapentele radio <var>2</var> şi <var>3</var> şi computerul <var>1</var>.<br>
+Itistul <var>3</var> ştie să folosească echimapentul radio <var>4</var> şi computerul <var>2</var>.<br>
+O posibilitate de a forma echipajele este (şofer, itist, maşină, radio, computer): (<var>1</var>, <var>1</var>, <var>1</var>, <var>1</var>, <var>1</var>) (<var>2</var>, <var>3</var>, <var>2</var>, <var>4</var>, <var>2</var>)</p>
+
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

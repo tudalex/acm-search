@@ -1,0 +1,47 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>tric.in, tric.out</td><td><strong>Sursă</strong></td><td>ONI 2007, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=133">Stefan Ciobaca</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=tric">Vezi solutiile trimise</a></p>
+
+<h1>Tric<br></h1>
+
+<p>Din cei <var>n</var> participanti la olimpiada de informatica se pot distinge <var>m</var> perechi de prieteni. Aceste perechi au cateva proprietati interesante:</p>
+
+
+<ul><li>daca <var>A</var> este prieten cu <var>B</var>, atunci <var>B</var> este prieten cu <var>A</var>;</li>
+<li>daca <var>A<sub>1</sub></var> este prieten cu <var>A<sub>2</sub></var>, <var>A<sub>2</sub></var> cu <var>A<sub>3</sub></var>, ..., <var>A<sub>k-1</sub></var> cu <var>A<sub>k</sub></var> si <var>A<sub>k</sub></var> cu <var>A<sub>1</sub></var>, atunci exista cel putin o pereche (<var>i, j</var>), <var>1 ≤ i, j ≤ k</var>, astfel incat:
+<ul><li><var>A<sub>i</sub></var> si <var>A<sub>j</sub></var> sunt prieteni</li>
+<li><var>(i mod k) + 1 ≠ j</var> </li>
+<li><var>(j mod k) + 1 ≠ i</var></li>
+</ul></li>
+</ul><p>Se numeste triunghi de prieteni un set de <var>3</var> prieteni <var>A</var>, <var>B</var> si <var>C</var>, cu proprietatea ca <var>A</var> este prieten cu <var>B</var>, <var>B</var> cu <var>C</var> si <var>C</var> cu <var>A</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Aflati cate triunghiuri de prieteni exista.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>tric.in</var> se gasesc, separate prin spatii, numerele naturale <var>n</var> si <var>m</var>. Pe urmatoarele <var>m</var> linii se gasesc perechi de numere <var>A B</var>, intre <var>0</var> si <var>n-1</var>, cu semnificatia ca <var>A</var> este prieten cu <var>B</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe singura linie a fisierului de iesire <var>tric.out</var> afisati numarul de triunghiuri de prieteni.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ n ≤ 100 000</var></li>
+<li><var>1 ≤ m ≤ 100 000</var></li>
+<li>pentru <var>20%</var> din teste, <var>n ≤ 300</var></li>
+<li>pentru <var>50%</var> din teste, <var>n ≤ 1000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>tric.in</th><th>tric.out</th></tr><tr><td>4 4<br>
+0 1<br>
+1 2<br>
+2 0<br>
+2 3<br></td><td>1<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

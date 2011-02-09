@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>logs.in, logs.out</td><td><strong>Sursă</strong></td><td>CEOI 2009</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrei-alpha"><img src="/utilizator/andrei-alpha?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrei-alpha">Andrei-Bogdan Antonescu</a> <a title="Rating andrei-alpha: 700" class="rating-badge-1" href="http://infoarena.ro/utilizator/andrei-alpha?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrei-alpha">andrei-alpha</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.6 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=logs">Vezi solutiile trimise</a></p>
+
+<h1>Logs<br></h1>
+
+<p>Fiind dată o matrice binară de dimensiuni <var>N x M</var>, să se determine aria celui mai mare dreptunghi, care conţine numai valoarea <var>1</var>, cunoscând că puteţi permuta <b>coloanele</b> matricei.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fişierului de intrare <var>logs.in</var> conţine două numere întregi separate printr-un spaţiu: <var>N</var> şi <var>M</var>. Următoarele <var>N</var> linii vor conţine câte <var>M</var> caractere de <var>0</var> sau <var>1</var>, descriind matricea.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Singura linie a fişierului de intrare <var>logs.out</var> va conţine aria celui mai mare dreptunghi.</p>
+
+<h2>Restricţii şi precizări</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 15.000</var></li>
+<li><var>1 ≤ M ≤ 1.500</var></li>
+<li><var>30%</var> din teste vor avea <var>N, M ≤ 1.024</var>.</li>
+<li>Se recomandă parsarea fişierului de intrare folosind funcţiile <b>fgets</b> pentru <b>C/C++</b> respectiv <b>readln()</b> şi <b>settextbuf</b> pentru <b>Pascal</b>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>logs.in</th><th>logs.out</th></tr><tr><td>10 6<br>
+001010<br>
+111110<br>
+011110<br>
+111110<br>
+011110<br>
+111111<br>
+110111<br>
+110111<br>
+000101<br>
+010101<br></td><td>21<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Prin permutarea coloanelor astfel încât coloanele <var>2, 4</var> şi <var>5</var> devin adiacente se obţine un dreptunghi având aria <var>21</var> (liniile <var>2-8</var> şi coloanele <var>2, 4, 5</var>).</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

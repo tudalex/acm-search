@@ -1,0 +1,71 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>gard.in, gard.out</td><td><strong>Sursă</strong></td><td>ONI 2002</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><div class="hidden">5/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=gard">Vezi solutiile trimise</a></p>
+
+<h1>Gard<br></h1>
+
+<p>O echipa de <var>K</var> muncitori a fost angajata sa vopseasca un gard format din <var>N</var> scanduri numerotate de la <var>1</var> la <var>N</var>, de la stanga spre dreapta. Fiecare muncitor <var>i (1 ≤ i ≤ K)</var> se aseaza in fata scandurii <var>S<sub>i</sub></var> si poate vopsi numai un interval compact (adica numerele de ordine ale scandurilor din interval sunt consecutive) avand maxim <var>L<sub>i</sub></var> scanduri, interval care trebuie sa contina scandura <var>S<sub>i</sub></var>. Pentru fiecare scandura vopsita, acesta este platit cu suma <var>P<sub>i</sub></var>. Din motive de eficienta, oricare 2 muncitori din echipa trebuie sa vopseasca intervale de scanduri disjuncte (adica oricare scandura a gardului poate fi vopsita de cel mult un membru al echipei).<br>
+Fiind conducatorul echipei de muncitori, dumneavoastra doriti sa determinati pentru fiecare membru al echipei intervalul de scanduri pe care acesta va trebui sa il vopseasca, astfel incat castigul total sa fie maxim. Castigul total este egal cu suma castigurilor realizate de fiecare membru al echipei. Castigul realizat de fiecare muncitor este egal cu numarul de scanduri vopsite de acesta inmultit cu <var>P<sub>i</sub></var> (pentru muncitorul cu numarul <var>i</var>).</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care determina castigul maxim obtinut de cei <var>K</var> muncitori.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Fisierul de intrare <var>gard.in</var> contine:</p>
+
+<table class="example" cellspacing="0"><tr><td>gard.in</td><td>Semnificatie</td></tr><tr><td>N K <br>
+ L<sub>1</sub> P<sub>1</sub> S<sub>1</sub><br>
+ L<sub>2</sub> P<sub>2</sub> S<sub>2</sub><br>
+ ... <br>
+ L<sub>K</sub> P<sub>K</sub> S<sub>K</sub></td><td>N - numarul de scanduri; K - numarul de muncitori <br>
+ L<sub>i</sub> - numarul maxim de scanduri ce pot fi vopsite de muncitorul cu numarul <var>i</var> <br>
+ P<sub>i</sub> - suma primita de muncitorul <var>i</var> pentru fiecare scandura vopsita de acesta <br>
+ S<sub>i</sub> - scandura din gard in fata careia se aseaza muncitorul i</td></tr></table><h2>Date de Iesire</h2>
+
+<p>In fisierul <var>gard.out</var> veti afisa castigul maxim obtinut de intreaga echipa de muncitori.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 16.000</var></li>
+<li><var>1 ≤ K ≤ 100</var></li>
+<li><var>1 ≤ P<sub>i</sub> ≤ 10.000</var></li>
+<li><var>1 ≤ L<sub>i</sub>,S<sub>i</sub> ≤ N</var></li>
+<li>Toate numerele <var>S<sub>i</sub></var> vor fi distincte.</li>
+<li>Nu trebuie vopsite neaparat toate cele <var>N</var> scanduri ale gardului.</li>
+<li>Este permis ca unul sau mai multi dintre membrii echipei sa nu vopseasca nici o scandura, caz in care scandura in fata careia s-au asezat initial poate fi vopsita, eventual, de catre alt muncitor.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>gard.in</th><th>gard.out</th></tr><tr><td>8 4<br>
+3 2 2<br>
+3 2 3<br>
+3 3 5<br>
+1 1 7</td><td>17</td></tr></table><h3>Explicatie</h3>
+
+<p>Muncitorul <var>1</var> vopseste intervalul de scanduri <var>[1, 2]</var>; muncitorul <var>2</var> vopseste intervalul de scanduri <var>[3, 4]</var>; muncitorul <var>3</var> vopseste intervalul de scanduri <var>[5, 7]</var>; muncitorul <var>4</var> nu vopseste nici o scandura.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=94">Deque</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

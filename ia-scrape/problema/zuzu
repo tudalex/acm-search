@@ -1,0 +1,43 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>zuzu.in, zuzu.out</td><td><strong>Sursă</strong></td><td>Lot Suceava 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=184">Doru Popescu Anastasiu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/bogdan2412"><img src="/utilizator/bogdan2412?action=download&amp;file=avatar&amp;resize=L16x16" alt="bogdan2412">Bogdan-Cristian Tataroiu</a> <a title="Rating bogdan2412: 1162" class="rating-badge-4" href="http://infoarena.ro/utilizator/bogdan2412?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/bogdan2412">bogdan2412</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.75 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=zuzu">Vezi solutiile trimise</a></p>
+
+<h1>Zuzu<br></h1>
+
+<p><img src="http://infoarena.ro/problema/zuzu?action=download&amp;file=figura.jpg&amp;safe_only=true" alt="" class="right" style="float:right"> Pe planeta Zuzu toate obiectele sunt caracterizate prin faptul ca au forma paralelipipedica. Mai mult, chiar si norii au forma unor paralelipipede dreptunghice. La un moment dat cerul se intuneca si deasupra unei zone a planetei Zuzu apar <var>N</var> nori, evident toti in forma de paralelipiped dreptunghic. Considerand un sistem de axe tridimensional cu <var>Ox</var>, <var>Oy</var> si <var>Oz</var> perpendiculare, doua cate doua, se observa faptul ca toti norii au toate laturile paralele cu axele. Pentru fiecare nor se cunosc coordonatele (date in metri) a doua colturi: cel din stanga-sus-spate (punctul A), respectiv cel din dreapta-jos-fata (punctul B), ca in figura alaturata.</p>
+
+<p>Norii pot sa treaca unii prin altii si se pot deplasa doar in sase sensuri: in sensul axei <var>Ox</var> (sens notat cu <var>1</var>), in sens opus axei <var>Ox</var> (sens notat cu <var>2</var>), in sensul axei <var>Oy</var> (sens notat cu <var>3</var>), in sens opus axei <var>Oy</var> (sens notat cu <var>4</var>), in sensul axei <var>Oz</var> (sens notat cu <var>5</var>), in sens opus axei <var>Oz</var> (sens notat cu <var>6</var>). La fiecare unitate de timp fiecare nor se deplaseaza cu cate <var>1</var> metru pe directia sa de deplasare. Prin intrepatrunderea si lipirea norilor se pot forma formatiuni noroase (o formatiune noroasa poate fi formata si dintr-un singur nor). Un nor face parte dintr-o formatiune noroasa, daca are in comun cel putin un paralelipiped dreptunghic sau un dreptunghi cu alt nor din ea. Norii dispar, ca din senin, dupa <var>T</var> unitati de timp.</p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se determine volumul maxim al unei formatiuni noroase si dupa cat timp se realizeaza formatiunea respectiva. Daca exista mai multe formatiuni cu acelasi volum maxim, se cere timpul minim la care se obtine o astfel de formatiune.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>zuzu.in</var> contine pe prima linie numerele naturale <var>N</var> si <var>T</var> separate printr-un spatiu, iar pe urmatoarele <var>N</var> linii sapte numere reale <var>xA, yA, zA, xB, yB, zB, S</var> separate intre ele prin cate un spatiu. Primele trei numere sunt coordonatele coltului <var>A</var>, urmatoarele trei numere sunt coordonatele punctului <var>B</var>, iar <var>S</var> poate fi una dintre cifrele <var>1, 2, 3, 4, 5, 6</var> si este sensul de deplasare pentru un norul respectiv. </p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul <var>zuzu.out</var> se va scrie pe prima linie volumul (partea sa intreaga), iar pe a doua linie numarul de unitati de timp din cerinta.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 40</var></li>
+<li><var>1 ≤ T ≤ 15</var></li>
+<li>Coordonatele colturilor paralelipipedelor sunt numere reale cu maxim <var>5</var> zecimale si nu depasesc in valoare absoluta numarul <var>1000</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>zuzu.in</th><th>zuzu.out</th></tr><tr><td>3 15<br>
+0 0 30 10 10 20 6<br>
+20.05 0 5 25 5.3 0 1<br>
+10 0 10 20 10 0 2<br></td><td>2000<br>
+10<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Dupa <var>0</var> unitati de timp formatiunea noroasa cea mai mare are volumul <var>1000</var> si este alcatuita din norul <var>1</var>. Dupa <var>10</var> unitati de timp formatiunea noroasa cea mai mare are volumul <var>2000</var> si este alcatuita din norii <var>1</var> si <var>3</var> (au o fata comuna). Pentru <var>15</var> unitati de timp nu se mai determina formatiuni noroase, deoarece acestea dispar.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,48 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>adunare.in, adunare.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0 </td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=165">Din Folclor</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">1/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=adunare">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=adunare">Vezi solutiile trimise</a></p>
+
+<h1>A+B<br></h1>
+
+<p>Adunare simplă.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Datele de intrare se citesc din fişierul <var>adunare.in</var>:</p>
+
+
+<ul><li>pe prima linie un număr intreg <var>a</var></li>
+<li>pe a doua linie un număr intreg <var>b</var></li>
+</ul><h2>Date de ieşire</h2>
+
+<p>Datele de ieşire se tipăresc în fişierul <var>adunare.out</var></p>
+
+
+<ul><li>pe prima linie: suma celor două numere <var>a + b</var></li>
+</ul><h2>Restricţii</h2>
+
+
+<ul><li>Suma celor două numere nu va depăşi niciodată valoarea <var>2 000 000 000</var>.</li>
+</ul><h2>Precizare</h2>
+
+
+<ul><li>Problema e dată pentru a vă obişnui cu site-ul. Nu e nevoie să postaţi pe forum că e foarte uşoara, ştim cu toţii asta. :)</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>adunare.in</th><th>adunare.out</th></tr><tr><td>131<br>
+  245<br></td><td>376</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=100">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

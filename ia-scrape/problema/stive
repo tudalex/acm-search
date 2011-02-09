@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>stive.in, stive.out</td><td><strong>Sursă</strong></td><td>Lot Juniori 2008 - Baraj 5</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=171">Emanuela Cerchez</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=stive">Vezi solutiile trimise</a></p>
+
+<h1>Stive<br></h1>
+
+<p>Pe o masa se afla <var>N</var> stive (numerotate de la <var>1</var> la <var>N</var>). Stiva <var>i</var> contine <var>i</var> jetoane ( <var>1 ≤ i ≤ n</var> ). La o mutare se poate alege o multime de stive si se pot extrage din fiecare stiva care face parte din multimea aleasa acelasi numar de jetoane.</p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se determine o secventa cu numar minim de mutari care sa goleasca toate cele <var>N</var> stive.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>stive.in</var> contine pe prima linie numarul natural <var>N</var>. </p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>stive.out</var> va contine pe prima linie un numar natural <var><span class="caps">MIN</span></var> reprezentand minim de mutari efectuate. Pe urmatoarele <var><span class="caps">MIN</span></var> linii sunt descrise mutarile, cate o mutare pe o linie. Linia ce descrie o mutare are forma:</p>
+
+
+<ul><li>nr s1 s2 ... snr x<br>
+unde <var>nr</var> reprezinta numarul de stive din multimea selectata la mutarea respectiva; <var>s1, s2, ..., snr</var> sunt stivele selectate, iar <var>x</var> reprezinta numarul de jetoane extrase din fiecare stiva <var>s1, s2, ..., snr</var>. Valorile de pe aceeasi linie sunt separate prin spatii.</li>
+</ul><h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ n ≤ 30.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>stive.in</th><th>stive.out</th></tr><tr><td>3<br></td><td>2<br>
+  2 2 3 2<br>
+  2 1 3 1<br></td></tr></table><h3>Explicatie</h3>
+
+
+<ul><li>Configuratia initiala a stivelor este <var>1 2 3</var></li>
+<li>La prima mutare sunt selectate <var>2</var> stive ( <var>2</var> si <var>3</var>) si se extrag cate <var>2</var> jetoane din fiecare. Se obtine configuratia: <var>1 0 1</var></li>
+<li>La ultima mutare se aleg stivele <var>1</var> si <var>3</var>, se extrage cate un singur jeton din fiecare si astfel au fost golite toate stivele.</li>
+</ul><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

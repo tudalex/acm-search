@@ -1,0 +1,51 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>laser.in, laser.out</td><td><strong>Sursă</strong></td><td>preONI 2007, Runda 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=153">Adrian Diaconu</a>, <a href="/cauta-probleme?tag_id%5B%5D=152">Tiberiu-Lucian Florea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.6 sec</td><td><strong>Limită de memorie</strong></td><td>16000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=laser">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=laser">Vezi solutiile trimise</a></p>
+
+<h1>Laser<br></h1>
+
+<p>Gigel a terminat inca o zi de munca la magazinul tatalui sau. Acum nu mai trebuie decat sa stinga neoanele sa incuie vitrinele si poate pleca linistit acasa. Vom considera magazinul ca fiind planul de coordonate xOy. Neoanele vor fi date sub forma unor segmente in plan. Gigel se afla in punctul de coordonate (<var>0,0</var>) si dispune de o arma laser cu care poate trage in orice directie. In momentul in care Gigel trage cu laserul intr-o anumita directie toate neoanele care se intersecteaza cu semidreapta respectiva isi schimba starea(din inchise devin deschise si din deschise inchise).<br>
+Cunoscandu-se pozitia si starea initiala a neoanelor indicati-i lui Gigel in ce directii trebuie sa traga pentru a stinge toate neoanele. Se stie ca arma nu mai poate functiona dupa <var>10.000</var> de trageri deci trebuie o indicata o solutie cu numar mai mic sau egal de trageri.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>laser.in</var> contine un numar natural <var>N</var>, numarul de neoane. Pe urmatoarele <var>N</var> linii se afla cate patru numere naturale <var>x1</var> <var>y1</var> <var>x2</var> <var>y2</var>, punctele de coordonate (<var>x1,y1</var>) si (<var>x2,y2</var>) reprezentand capetele neoanelor. Pe ultima linie din fisier se afla <var>N</var> numere cu urmatoarea semnificatie: daca al <var>i</var>-lea numar este <var>1</var> atunci neonul <var>i</var> este aprins, altfel neonul este stins.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie din fisierul de iesire <var>laser.out</var> se afla <var>X</var>, numarul de trageri. Pe urmatoarele <var>X</var> linii se va afla cate un numar reprezentand unghiul pe care directia in care se face a <var>i</var>-a tragere il face cu axa <var>Ox</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>Pentru a primi punctaj pe un anumit test trebuie ca <var>X ≤ 10.000</var></li>
+<li><var>1 ≤ N ≤ 512</var></li>
+<li><var>-10.000 ≤ x1,y1,x2,y2 ≤ 10.000</var></li>
+<li>Coordonatele capetelor segmentelor vor fi numere intregi</li>
+<li>Solutia nu este unica, dar exista mereu cel putin o solutie</li>
+<li>Neoanele se pot intersecta intre ele</li>
+<li>Nu vor exista doua capete ale neoanelor coliniare cu originea</li>
+<li>Rezultatul va fi verificat cu o precizie de <var>0.00001</var> adica se va considera ca daca semidreapta care reprezinta directia in care trage Gigel va trece la distanta <var>0.00001</var> de neon acesta isi va schimba starea</li>
+<li>Recomandare: afisati unghiurile cu 6 zecimale</li>
+<li>Unghiurile in care se vor face tragerile vor fi exprimate in grade si vor fi din intervalul [<var>0,360</var>]</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>laser.in</th><th>laser.out</th></tr><tr><td>4<br>
+2 1 1 2<br>
+4 5 1 -3<br>
+3 -2 -3 -2<br>
+-1 3 -3 1<br>
+1 1 1 0<br></td><td>2<br>
+45.00000<br>
+270.0000<br></td></tr></table><h3>Explicatii</h3>
+
+<p><img src="http://infoarena.ro/problema/laser?action=download&amp;file=laser.jpg&amp;safe_only=true" alt=""></p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

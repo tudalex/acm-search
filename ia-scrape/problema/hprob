@@ -1,0 +1,53 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>hprob.in, hprob.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=hprob">Vezi solutiile trimise</a></p>
+
+<h1>Hprob<br></h1>
+
+<p>Intr-un magazin sunt <var>4</var> obiecte (<var>A</var>, <var>B</var>, <var>C</var> si <var>D</var>) asezate intr-o anumita ordine. Magazinul este vizitat pe rand de <var>N</var> clienti. Fiecare client se uita la obiecte si le probeaza. Dupa ce se uita la ele si le probeaza, incearca sa le aseze la loc in ordinea potrivita, dar - desigur - nu isi mai aminteste exact ordinea in care erau asezate la venirea sa.</p>
+
+<p>Pentru fiecare client exista probabilitatea <var>p1</var> ca acesta sa aseze toate obiectele permutate circular la dreapta cu o pozitie fata de ordinea originala. Daca initial ordinea obiectelor era (<var>A</var>, <var>B</var>, <var>C</var> si <var>D</var>), la sfarsit aceasta va fi (<var>D</var>, <var>A</var>, <var>B</var> si <var>C</var>).</p>
+
+<p>Pentru fiecare client exista probabilitatea <var>p2</var> ca acesta sa aranjeze obiectele in ordine inversa celei originale. Daca initial ordinea obiectelor era (<var>A</var>, <var>B</var>, <var>C</var> si <var>D</var>), la sfarsit aceasta va fi (<var>D</var>, <var>C</var>, <var>B</var> si <var>A</var>).</p>
+
+<p>Pentru fiecare client exista probabilitatea <var>p3</var> ca acesta sa aranjeze obiectele interschimband ordinea celor de la mijloc. Daca initial ordinea obiectelor era (<var>A</var>, <var>B</var>, <var>C</var> si <var>D</var>), la sfarsit aceasta va fi (<var>A</var>, <var>C</var>, <var>B</var> si <var>D</var>).</p>
+
+<p>Pentru fiecare client exista probabilitatea <var>p4 = 1.0 - p1 - p2 - p3</var> sa aseze obiectele inapoi in ordinea originala.</p>
+
+<h2>Cerinta</h2>
+
+<p>Dat fiind numarul <var>N</var> de clienti, calculati probabilitatea ca dupa ce acestia sa fi incercat toate obiectele pe rand, ordinea lor finala sa fie identica cu cea originala.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>hprob.in</var> va contine numarul <var>T</var> de teste, urmat de <var>T</var> linii, fiecare continand numarul <var>N</var> de clienti, urmat de <var>3</var> numere reale, <var>p1</var>, <var>p2</var> si <var>p3</var> cu semnificatiile de mai sus.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>hprob.out</var> va contine <var>T</var> linii, fiecare continand un numar real rotunjit la <var>5</var> zecimale in fuctie de ce-a de-a <var>6</var>-a, reprezentand probabilitatea ceruta.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>0 ≤ N ≤ 1000 000 000</var></li>
+<li><var>1 ≤ T ≤ 6</var></li>
+<li><var>0 ≤ p1, p2, p3 ≤ 1</var></li>
+<li><var>0 ≤ p1 + p2 + p3 ≤ 1</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>hprob.in</th><th>hprob.out</th></tr><tr><td>6<br>
+0 0.1 0.2 0.3<br>
+1 0.1 0.2 0.3<br>
+10 0.1 0.2 0.3<br>
+100 0.1 0.2 0.3<br>
+1000 0.1 0.2 0.3<br>
+1000000000 0.1 0.2 0.3<br></td><td>1.00000<br>
+0.40000<br>
+0.09719<br>
+0.04167<br>
+0.04167<br>
+0.04167</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

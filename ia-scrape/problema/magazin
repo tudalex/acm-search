@@ -1,0 +1,52 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>magazin.in, magazin.out</td><td><strong>Sursă</strong></td><td>preONI 2007, Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=magazin">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=magazin">Vezi solutiile trimise</a></p>
+
+<h1>Magazin<br></h1>
+
+<p>Nargy si Fumeanu si-au deschis magazin. Acesta este aranjat astfel: sunt <var>N-1</var> randuri de rafturi, intre rafturi existand <var>N</var> culoare. Fiecare rand este format din <var>M</var> rafturi de aceeasi marime. Distanta de la un raft la altul adiacent este de <var>1</var> metru, iar distanta intre un culoar si alt culoar adiacent este de <var>D</var> metri. De asemenea, distanta pentru a intra sau a iesi de pe culoar este de <var>1</var> metru. Mai jos este o diagrama a magazinului, punctele gri reprezentand locurile in care te poti opri pe culoar pentru a cumpara produse de pe un raft:</p>
+
+<p class="center" style="text-align:center"><img src="http://infoarena.ro/problema/magazin?action=download&amp;file=magazin.jpg&amp;safe_only=true" alt=""></p>
+
+<p>Zaharel vine intr-o zi la magazin cu o lista de <var>P</var> produse pe care vrea sa le cumpere. El intra in coltul stanga-jos al magazinului, cumpara cele <var>P</var> produse de pe lista (pentru fiecare produs stie exact culoarul si raftul unde trebuie sa se afle), si iese prin coltul dreapta-jos al magazinului. Determinati distanta minima a unui astfel de traseu.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>magazin.in</var> va contine prima linie numerele naturale <var>P, N, M, D</var> separate prin spatii. Urmatoarele <var>P</var> linii vor contine cate doua numere naturale <var>x y</var> cu semnificatia ca exista un produs pe care Zaharel vrea sa-l cumpere pe culoarul <var>x</var>, la raftul <var>y</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>magazin.out</var> va contine un singur numar natural reprezentand distanta minima pe care Zaharel trebuie s-o parcurga.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ P ≤ 50.000</var></li>
+<li><var>1 ≤ N ≤ 30.000</var></li>
+<li><var>1 ≤ M ≤ 25</var></li>
+<li><var>1 ≤ D ≤ 5</var></li>
+<li>Pentru <var>50%</var> din teste <var>P ≤ 300, N ≤ 350</var></li>
+<li>Pot exista mai multe produse pe acelasi culoar si acelasi raft</li>
+<li>Culoarele sunt numerotate cu numere de la <var>1</var> la <var>N</var> iar rafturile de pe un culoar cu numere de la <var>1</var> la <var>M</var>, ca in diagrama</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>magazin.in</th><th>magazin.out</th></tr><tr><td>7 5 10 3<br>
+2 8<br>
+3 3<br>
+3 5<br>
+3 7<br>
+4 10<br>
+5 10<br>
+4 3<br></td><td>54<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Ordinea in care Zaharel cumpara produsele este urmatoarea: <var>2, 3, 4, 1, 6, 5, 7</var> (produsele au fost numerotate in functie de ordinea din fisierul de intrare).</p>
+
+<p><img src="http://infoarena.ro/problema/magazin?action=download&amp;file=magazin2.jpg&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

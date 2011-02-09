@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>text4.in, text4.out</td><td><strong>Sursă</strong></td><td>OJI 2003, clasa a 9-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=171">Emanuela Cerchez</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/stocarul"><img src="/utilizator/stocarul?action=download&amp;file=avatar&amp;resize=L16x16" alt="stocarul">Cosmin Mihai Tutunaru</a> <a title="Rating stocarul: 725" class="rating-badge-1" href="http://infoarena.ro/utilizator/stocarul?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/stocarul">stocarul</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=text4">Vezi solutiile trimise</a></p>
+
+<h1>Text4<br></h1>
+
+<p>Vasile lucrează intens la un editor de texte. Un text este format din unul sau mai multe paragrafe. Orice paragraf se termină cu Enter şi oricare două cuvinte consecutive din acelaşi paragraf sunt separate prin spaţii (unul sau mai multe). În funcţie de modul de setare a paginii, numărul maxim de caractere care încap în pagină pe o linie este unic determinat (<var>Max</var>).</p>
+
+<p>Funcţia pe care Vasile trebuie să o implementeze acum este alinierea în pagină a fiecărui paragraf din text la stânga şi la dreapta. Pentru aceasta el va trebui să împartă fiecare paragraf în linii separate de lungime <var>Max</var> (fiecare linie terminată cu Enter). Împărţirea se realizează punând numărul maxim posibil de cuvinte pe fiecare linie, fără împărţirea cuvintelor în silabe. Pentru aliniere stânga-dreapta, el trebuie să repartizeze spaţii în mod uniform între cuvintele de pe fiecare linie, astfel încât ultimul caracter de pe linie să fie diferit de spaţiu, iar numărul total de caractere de pe linie să fie egal cu <var>Max</var>. Excepţie face numai ultima linie din paragraf, care rămâne aliniată la stânga (cuvintele fiind separate printr-un singur spaţiu, chiar dacă linia nu este plină).</p>
+
+<p>În general, este puţin probabil ca alinierea să fie realizabilă prin plasarea aceluiaşi număr de spaţii între oricare două cuvinte consecutive de pe linie. Vasile consideră că este mai elegant ca, dacă între unele cuvinte consecutive trebuie plasat un spaţiu în plus faţă de alte perechi de cuvinte consecutive, acestea să fie plasate la începutul liniei.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Scrieţi un program care să citească lungimea unei linii şi textul dat şi care să alinieze textul la stânga şi la dreapta.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>text4.in</var> conţine pe prima linie <var>Max</var>, lungimea maximă a unui rând. Pe următoarele linii este scris textul.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>text4.out</var> veţi scrie textul aliniat stânga-dreapta.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>2 ≤ Max ≤ 1000</var></li>
+<li>Lungimea maximă a oricărui cuvânt din text este <var>25</var> caractere şi nu depăşeşte <var>Max</var>.</li>
+<li>Lungimea unui paragraf nu depăşeşte <var>1000</var> de caractere.</li>
+<li>Soluţia este unică.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>text4.in</th><th>text4.out</th></tr><tr><td>20<br>
+  Vasile are multe bomboane bune.<br></td><td>Vasile   are   multe<br>
+  bomboane bune.<br></td></tr><tr><td>20<br>
+  Ana are mere.<br>
+  Ion are multe pere galbene?<br></td><td>Ana are mere.<br>
+  Ion  are  multe pere<br>
+  galbene?<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Pentru primul exemplu: Pe prima linie au fost plasate câte 3 spaţii între cuvintele consecutive.<br>
+Pentru al 2-lea exemplu: Între <strong>Ion</strong> şi <strong>are</strong> - 2 spaţii, între <strong>are</strong> şi <strong>multe</strong> - 2 spaţii, iar între <strong>multe</strong> şi <strong>pere</strong> - un spaţiu.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

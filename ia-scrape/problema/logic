@@ -1,0 +1,58 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>logic.in, logic.out</td><td><strong>Sursă</strong></td><td>ONI 2006, clasa 10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=190">Adrian Nita</a>, <a href="/cauta-probleme?tag_id%5B%5D=189">Maria Nita</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/marcelcodrea"><img src="/utilizator/marcelcodrea?action=download&amp;file=avatar&amp;resize=L16x16" alt="marcelcodrea">Codrea Marcel</a> <a title="Rating marcelcodrea: 492" class="rating-badge-3" href="http://infoarena.ro/utilizator/marcelcodrea?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/marcelcodrea">marcelcodrea</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>3072 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=logic">Vezi solutiile trimise</a></p>
+
+<h1>Logic<br></h1>
+
+<p>Mircea cel Tanar trebuie sa imbunatateasca permanent performantele calculatoarelor pe care le are in gestiune. Se intampla cateodata, ca unele componente noi pe care le foloseste sa nu fie compatibile cu vechile calculatoare. Din acest motiv functionarea calculatoarelor "imbunatatite" poate sa nu fie corecta. Pentru a verifica corectitudinea functionarii acestor calculatoare, Mircea isi propune sa le testeze cu ajutorul unui program care verifica echivalenta unor expresii logice. <br>
+Scrieti un program care determina daca doua expresii logice sunt echivalente sau nu. <br>
+Fiecare expresie este formata din: </p>
+
+
+<ul><li>variabile, cele <var>26</var> de litere mici ale alfabetului englez, de la "a"-"z"; </li>
+<li>operatori binari <var>|</var>, <var>&amp;</var>, <var>^</var> ( <var><span class="caps">SAU</span></var>, <var>SI</var> respectiv <var><span class="caps">SAU EXCLUSIV</span></var>); </li>
+<li>operatorul unar <var>~</var> ( <var><span class="caps">NEGATIE</span></var> ); </li>
+<li>paranteze rotunde. </li>
+</ul><p>Expresiile vor fi evaluate respectand regulile de prioritati ale operatorilor si parantezelor pentru evaluarea expresiilor logice in care intervin ca operanzi bitii <var>0</var> si <var>1</var>. Prioritatile in ordine descrescatoare sunt: parantezele rotunde " <var>(</var>", " <var>)</var>", operatorul unar " <var>~</var>", operatorii binari in ordine descrescatoare " <var>&amp;</var>", " <var>^</var>", " <var>|</var>".<br>
+Doua expresii sunt echivalente daca:</p>
+
+
+<ul><li>contin acelasi set de variabile indiferent de numarul de aparitii al acestora;</li>
+<li>pentru orice set de date de intrare pentru variabile (valori <var>0</var>, <var>1</var>) rezultatul obtinut este acelasi. </li>
+</ul><h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>logic.in</var> contine pe primul rand un numar natural <var>n</var>, ce reprezinta numarul testelor ce se vor evalua. Fiecare test reprezinta evaluarea a doua expresii. Pe urmatoarele <var>2*n</var> linii sunt siruri de caractere ce constituie expresiile. Acestea sunt scrise pe cate o linie fiecare. </p>
+
+
+<h2>Date de iesire</h2>
+
+
+<p>Fisierul de iesire <var>logic.out</var> va contine <var>n</var> linii, pe fiecare linie <var>k</var> fiind mesajul "egale" sau "diferite" in functie de rezultatul evaluarii expresiilor de pe liniile <var>2*k</var> si respectiv <var>2*k+1</var> din fisierul de intrare.</p>
+
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ n ≤ 50</var></li>
+<li><var>n</var> reprezinta numarul de perechi de expresii ce trebuie evaluate.</li>
+<li>O expresie contine cel mult <var>100</var> de operatii si maxim <var>10</var> variabile.</li>
+<li>O expresie poate avea cel mult <var>255</var> caractere. Spatiul nu este separator in interiorul unei expresii. </li>
+<li>Numele unei variabile este un singur caracter, litera mica a alfabetului englez.</li>
+<li>Expresiile date sunt corecte.</li>
+</ul><h2>Exemplu</h2>
+
+
+<table class="example" cellspacing="0"><tr><th>logic.in</th><th>logic.out</th></tr><tr><td><var>4</var><br><var>a&amp;(c|~c)</var><br><var>a</var><br><var>~(a|b|c|d)</var><br><var>~a&amp;~b&amp;~c&amp;~d</var><br><var>z&amp;b</var><br><var>a&amp;b</var><br><var>a|b</var><br><var>(a|~a)&amp;(a|~a)&amp;(a|~a)&amp;(a|b)</var><br></td><td>diferite<br>
+egale<br>
+diferite<br>
+egale</td></tr></table><h3>Explicatie</h3>
+
+<p>Pentru ultimul set de expresii tabelul este:</p>
+
+<table><tr><th>a</th><th>b</th><th>~a</th><th>a|~a</th><th>(a|~a)&amp;(a|~a)&amp;(a|~a)</th><th>a|b</th><th>E</th></tr><tr><td>0 </td><td>0 </td><td>1</td><td>1</td><td>1</td><td>0 </td><td>0 </td></tr><tr><td>0 </td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><td>1</td><td>0 </td><td>0 </td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><td>1</td><td>1</td><td>0 </td><td>1</td><td>1</td><td>1</td><td>1</td></tr></table><p> unde <var>E=(a|~a)&amp;(a|~a)&amp;(a|~a)&amp;(a|b)</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

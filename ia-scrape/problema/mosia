@@ -1,0 +1,46 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>mosia.in, mosia.out</td><td><strong>Sursă</strong></td><td>OJI 2004, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=177">Rodica Pintea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/pauldb"><img src="/utilizator/pauldb?action=download&amp;file=avatar&amp;resize=L16x16" alt="pauldb">Paul-Dan Baltescu</a> <a title="Rating pauldb: 792" class="rating-badge-4" href="http://infoarena.ro/utilizator/pauldb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/pauldb">pauldb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=mosia">Vezi solutiile trimise</a></p>
+
+<h1>Mosia<br></h1>
+
+<p>Pacala a primit, asa cum era invoiala, un petec de teren de pe mosia boierului. Terenul este imprejmuit complet cu segmente drepte de gard ce se sprijina la ambele capete de cate un par zdravan. La o noua prinsoare, Pacala iese iar in castig si primeste dreptul sa stramute niste pari, unul cate unul, cum i-o fi voia, astfel incat sa-si extinda suprafata de teren. Dar invoiala prevede ca fiecare par poate fi mutat in orice directie, dar nu pe o distanta mai mare decat o valoare data (scrisa pe fiecare par) si fiecare segment de gard, fiind cam subred, poate fi rotit si prelungit de la un singur capat, celalalt ramanand nemiscat.</p>
+
+<h2>Cerinta</h2>
+
+<p>Cunoscand pozitiile initiale ale parilor si valoarea inscrisa pe fiecare par, se cere suprafata maxima cu care poate sa-si extinda Pacala proprietatea. Se stie ca parii sunt dati intr-o ordine oarecare, pozitiile lor initiale sunt date prin numere intregi de cel mult <var>4</var> cifre, distantele pe care fiecare par poate fi deplasat sunt numere naturale strict pozitive si figura formata de terenul initial este un poligon neconcav.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>mosia.in</var> contine pe prima linie un numar intreg <var>N</var>, numarul de pari. Pe urmatoarele <var>N</var> linii, se afla cate <var>3</var> numere <var>x</var>, <var>y</var>, <var>d</var>, reprezentand coordonatele initiale si distanta cu care poate fi mutat fiecare par.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul <var>mosia.out</var> se scrie un numar real cu cel putin <var>4</var> zecimale ce reprezinta suprafata maxima cu care se poate mari mosia.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>3 &lt; N ≤ 1000</var></li>
+<li><var>-10000 &lt; x, y &lt; 10000</var></li>
+<li><var>0 &lt; d ≤ 20</var></li>
+<li><var>N</var>, <var>x</var>, <var>y</var>, <var>d</var> sunt numere intregi.</li>
+<li>Poligonul neconcav se defineste ca un poligon convex cu unele varfuri coliniare.</li>
+<li>Pozitiile parilor sunt date intr-o ordine oarecare.</li>
+<li>Poligonul obtinut dupa mutarea parilor poate fi concav.</li>
+<li>Pozitiile finale ale parilor nu sunt in mod obligatoriu numere naturale.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>mosia.in</th><th>mosia.out</th></tr><tr><td>4<br>
+-3 0 2<br>
+3 0 3<br>
+0 6 2<br>
+0 -6 6<br></td><td>30.0000<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Prin mutarea parilor <var>1</var> si <var>2</var> cu cate <var>2</var> si respectiv <var>3</var> unitati, se obtine un teren avand suprafata cu <var>30</var> de unitati mai mare decat terenul initial.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

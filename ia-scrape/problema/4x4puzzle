@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>4x4puzzle.in, 4x4puzzle.out</td><td><strong>Sursă</strong></td><td>Fall Contest #2, SGU 2002</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.8 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=4x4puzzle">Vezi solutiile trimise</a></p>
+
+<h1>4x4puzzle<br></h1>
+
+<p>Micutului Gigel ii plac puzzle-urile foarte mult. Acum cateva zile a descoperit traditionalul puzzle <var>4×4</var>. Acest puzzle consta din numerele de la <var>0</var> la <var>15</var>, aranjate intr-un patrat cu <var>4</var> linii si <var>4</var> coloane. O mutare consta din interschimbarea a <var>2</var> elemente adiacente pe orizontala sau verticala, cu conditia ca unul din elemente sa fie elementul <var>0</var>. Scopul puzzle-ului este de a ajunge in urmatoarea stare finala:</p>
+
+<p><var>1 2 3 4</var><br><var>5 6 7 8</var><br><var>9 10 11 12</var><br><var>13 14 15 0</var></p>
+
+<p>Fiind data starea initiala a puzzle-ului, determinati daca exista o secventa de mutari astfel incat puzzle-ul sa fie adus in starea finala.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>4×4puzzle.in</var> contine numarul <var>P</var> de puzzle-uri descrise in continuare. Fiecare puzzle consta din <var>4</var> linii, pe care sunt afisate cate <var>4</var> numere. Inaintea descrierii fiecarui puzzle exista o linie goala.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pentru fiecare din cele <var>P</var> puzzle-uri veti afisa in fisierul de iesire <var>4×4puzzle.out</var> cate o linie continand sirul <var>"DA"</var>, daca puzzle-ul poate fi adus in starea finala, respectiv sirul <var>"NU"</var> in caz contrar.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ P ≤ 100 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>4×4puzzle.in</th><th>4×4puzzle.out</th></tr><tr><td>2<br><br>
+1 2 3 4<br>
+5 6 7 8<br>
+9 10 11 0<br>
+12 13 14 15<br><br>
+1 2 3 4<br>
+5 6 7 8<br>
+9 10 11 0<br>
+13 12 14 15<br></td><td>NU<br>
+DA<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

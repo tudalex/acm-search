@@ -1,0 +1,60 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>peg.in, peg.out</td><td><strong>Sursă</strong></td><td>Lot 2006 Alba</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=171">Emanuela Cerchez</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=peg">Vezi solutiile trimise</a></p>
+
+<h1>Peg<br></h1>
+
+<p>Peg Solitaire este un joc pentru un singur jucator. Tabla de joc este o banda cu <var>N</var> pozitii. Pe fiecare pozitie poate fi plasat un singur jeton. <br>
+Orice configuratie de joc poate fi codificata ca o secventa binara de lungime <var>N</var>, unde <var>1</var> reprezinta un jeton, iar <var>0</var> reprezinta o pozitie libera.</p>
+
+<p>O mutare este un salt la stanga sau un salt la dreapta.</p>
+
+
+<ul><li>In saltul la dreapta jetonul de pe pozitia <var>i</var> sare peste jetonul de pe pozitia <var>i+1</var>; jetonul de pe pozitia <var>i+1</var> este eliminat; jetonul de pe pozitia <var>i</var> ajunge pe pozitia <var>i+2</var> (aceasta trebuie sa fie libera).</li>
+<li>In saltul la stanga jetonul de pe pozitia <var>i</var> sare peste jetonul de pe pozitia <var>i-1</var> ; jetonul de pe pozitia <var>i-1</var> este eliminat; jetonul de pe pozitia <var>i</var> ajunge pe pozitia <var>i-2</var> (aceasta trebuie sa fie libera).</li>
+</ul><p>De exemplu:</p>
+
+
+<ul><li>In configuratia <var>011</var> sare la stanga jetonul de pe pozitia <var>3</var> peste jetonul de pe pozitia <var>2</var> si se obtine configuratia <var>100</var>.</li>
+<li>In configuratia <var>110</var> sare la dreapta jetonul de pe pozitia <var>1</var> peste jetonul de pe pozitia <var>2</var> si se obtine configuratia <var>001</var>.</li>
+</ul><p>Jocul se termina cu succes atunci cand pe tabla ramane un singur jeton.</p>
+
+<h2>Cerinta</h2>
+
+<p>Dat fiind un set de configuratii, sa se determine pentru care configuratii din set jocul se termina cu succes.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>peg.in</var> contine pe prima linie un numar natural nenul <var>T</var>, reprezentand numarul de configuratii din fisier. Pe fiecare dintre urmatoarele <var>T</var> linii se afla cate o secventa binara reprezentand o configuratie de joc.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>peg.out</var> va contine <var>T</var> linii, cate una pentru fiecare configuratie. Pe linia <var>i</var> va fi scrisa cifra <var>1</var> daca pentru cea de a i-a configuratie din fisierul de intrare jocul se termina cu succes, respectiv cifra <var>0</var> in caz contrar.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 10</var></li>
+<li><var>1 ≤ Lungimea oricarei configuratii ≤ 150 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>peg.in</th><th>peg.out</th></tr><tr><td>5<br>
+  1<br>
+  110<br>
+  001111010<br>
+  1101110<br>
+  11<br></td><td>1<br>
+  1<br>
+  1<br>
+  0<br>
+  0<br></td></tr></table><h3>Explicatie</h3>
+
+
+<ol><li>Jocul se termina cu succes in <var>0</var> mutari.</li>
+<li>Jocul se termina cu succes intr-o singura mutare (primul jeton sare peste cel de al doilea).</li>
+<li>Jocul se termina cu succes in <var>4</var> mutari: <var>001111010-&gt;001100110-&gt;000010110-&gt;000011000-&gt;000100000</var></li>
+</ol><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

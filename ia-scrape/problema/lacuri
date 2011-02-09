@@ -1,0 +1,71 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>lacuri.in, lacuri.out</td><td><strong>Sursă</strong></td><td>ONI 2007, clasa 9</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=183">Dan Grigoriu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.25 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=lacuri">Vezi solutiile trimise</a></p>
+
+<h1>Lacuri<br></h1>
+
+<p>Pe un teren de forma patrata sunt zone de uscat si lacuri. Harta terenului este memorata intr-un tablou bidimensional <var>n*n</var> cu valori <var>1</var> (apa) sau <var>0</var> (uscat). Liniile sunt numerotate de la <var>1</var> la <var>n</var>, de sus in jos si coloanele de la <var>1</var> la <var>n</var>, de la stanga la dreapta. Fiecare lac este inconjurat de o suprafata de teren uscat. Exceptie fac doar lacurile situate la marginea terenului care sunt inconjurate de uscat doar prin interiorul terenului nu si prin afara acestuia.</p>
+
+<h2>Cerinta</h2>
+
+<p>Se doreste sa se traverseze terenul pe uscat, de la pozitia (<var>1,1</var>) la pozitia (<var>n,n</var>), pe un drum de lungime minima, mergand pas cu pas. La un pas, se ajunge de la un patratel la altul invecinat cu el spre nord, est, sud sau vest.<br>
+Sa se scrie un program care:</p>
+
+
+<ol><li>Determina numarul lacurilor care sunt de forma patrata si in acelasi timp sunt pline de <var>1</var>.</li>
+<li>In cazul in care toate lacurile sunt de forma patrata si in acelasi timp pline de <var>1</var>, determinati un drum cu proprietatea de mai sus.</li>
+</ol><h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>lacuri.in</var> are pe prima linie numarul <var>n</var>, iar pe urmatoarele <var>n</var> linii este harta terenului (fiecare linie are <var>n</var> valori <var>0</var> sau <var>1</var>, separate de cate un spatiu).</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>lacuri.out</var> va contine:</p>
+
+
+<ul><li>pe prima linie: numarul de lacuri ce sunt de forma patrata si in acelasi timp pline de <var>1</var>;</li>
+<li>in cazul in care toate lacurile sunt de forma patrata si in acelasi timp pline de <var>1</var>, urmeaza liniile ce descriu drumul de lungime minima ales. Fiecare linie din fisier contine cate o pereche de coordonate ale pozitiilor succesive prin care trece drumul (linia si coloana, separate cu un spatiu), incepand cu (<var>1,1</var>) si terminand cu (<var>n,n</var>). </li>
+</ul><h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ n ≤ 100</var></li>
+<li>In pozitiile (<var>1,1</var>) si (<var>n,n</var>) este uscat (valoarea <var>0</var>). </li>
+<li>Daca exista mai multe solutii se va afisa oricare dintre ele. </li>
+<li>Pot fi cel mult <var>100</var> de lacuri si cel putin unul; daca un lac este de forma patrata, atunci <var>1 ≤ latura ≤ n-1</var>. </li>
+<li>Indiferent de forma lor, lacurile sunt sigur izolate, adica nu se ating deloc de alt lac. De exemplu, daca un lac contine pozitia (<var>3,3</var>), atunci un alt lac nu poate contine vreuna din pozitiile invecinate cu (<var>3,3</var>), adica: (<var>2,3</var>), (<var>2,4</var>), (<var>3,4</var>), (<var>4,4</var>), (<var>4,3</var>), (<var>4,2</var>), (<var>3,2</var>) si (<var>2,2</var>).</li>
+<li>Pentru cerinta <var>1</var> se acorda <var>30%</var> din punctaj, iar pentru cerinta <var>2</var> se acorda <var>70%</var> din punctaj.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>lacuri.in</th><th>lacuri.out</th></tr><tr><td>6<br>
+0 0 0 0 0 0<br>
+0 1 0 1 1 1<br>
+0 0 0 1 1 1<br>
+0 0 0 1 1 1<br>
+1 1 0 0 0 0<br>
+1 1 0 0 1 0<br></td><td>4<br>
+1 1<br>
+1 2<br>
+1 3<br>
+2 3<br>
+3 3<br>
+4 3<br>
+5 3<br>
+5 4<br>
+5 5<br>
+5 6<br>
+6 6<br></td></tr></table><h3>Explicatie</h3>
+
+
+<ol><li>Prima linie contine <var>4</var> (sunt <var>4</var> lacuri de forma patrata si pline de <var>1</var>) </li>
+<li>Deoarece toate cele <var>4</var> lacuri sunt de forma patrata si pline de <var>1</var>, se scrie si drumul ales: de la (<var>1,1</var>), (<var>1,2</var>), (<var>1,3</var>), (<var>2,3</var>), (<var>3,3</var>), ...., (<var>6,6</var>).</li>
+</ol><h3>Observatii</h3>
+
+
+<ol><li>Daca in pozitia (<var>3,5</var>) ar fi fost un <var>0</var>, atunci lacul cu latura <var>3</var> nu ar mai fi fost plin de <var>1</var> si atunci prima linie ar fi continut doar valoarea <var>3</var> (ar fi fost doar <var>3</var> lacuri patrate si pline de <var>1</var>).</li>
+<li>In exemplul initial, daca in pozitia (<var>6,1</var>) ar fi fost valorea <var>0</var>, atunci nu ar fi fost toate lacurile patrate (cel din stanga-jos nu ar fi fost patrat) si s-ar fi afisat doar un <var>3</var> in fisierul de iesire.</li>
+<li>In exemplul initial, daca in pozitia (<var>5,2</var>) ar fi fost valoarea <var>0</var>, atunci s-ar fi afisat doar un <var>3</var>, pentru ca lacul din stanga-jos nu ar fi un lac patrat si plin de <var>1</var>.</li>
+</ol><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

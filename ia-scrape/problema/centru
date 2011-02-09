@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>centru.in, centru.out</td><td><strong>Sursă</strong></td><td>Lot Alba 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=124">Adrian Vladu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=centru">Vezi solutiile trimise</a></p>
+
+<h1>Centru<br></h1>
+
+<p>Sa umbli prin cartier dupa un meci de fotbal este periculos si de aceea in diverse puncte ale acestuia s-au infiintat centre de prim-ajutor. Cartierul poate fi considerat ca fiind un caroiaj de dimensiune <var>NxN</var>, nodurile caroiajului fiind puncte avand coordonatele (abscisa, ordonata) din multimea {<var>0, 1, ..., N-1</var>}. <br>
+In <var>K</var> noduri ale caroiajului s-au infiintat centre de prim-ajutor. Cand esti ranit in urma unei batai cu suporterii echipelor adverse (bataile au loc de asemenea numai in nodurile caroiajului) nu ai decat sa te duci la cel mai apropiat centru de prim-ajutor, unde vei primi ingrijiri medicale.<br>
+In urma conflictelor recente s-a decis infiintarea unui nou centru de prim-ajutor. Acesta trebuie sa fie plasat astfel incat sa se minimizeze distanta pana la cel mai apropiat centru in cazul cel mai defavorabil. Altfel spus, maximul dintre distantele de la un nod oarecare al caroiajului pana la cel mai apropiat centru de prim-ajutor sa fie minim.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care sa determine distanta maxima de la un nod al caroiajului la cel mai apropiat centru de prim-ajutor, dupa infiintarea noului centru.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>centru.in</var> contine pe prima linie doua numere naturale separate prin spatiu <var>N</var> si <var>K</var>, cu semnificatia din enunt. Pe fiecare dintre urmatoarele <var>K</var> linii se afla cate doua numere naturale cuprinse intre <var>0</var> si <var>N-1</var>, separate prin spatiu, reprezentand abscisa, respectiv ordonata cate unui centru de prim-ajutor.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>centru.out</var> va contine pe prima linie un singur numar natural reprezentand distanta maxima de la un nod al caroiajului la cel mai apropiat centru de prim-ajutor, dupa infiintarea noului centru.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1000</var></li>
+<li><var>1 ≤ K &lt; N*N</var></li>
+<li>Se considera ca distanta dintre doua noduri ale caroiajului (<var>x<sub>1</sub>,y<sub>1</sub></var>) si (<var>x<sub>2</sub>,y<sub>2</sub></var>) este distanta Manhattan <var>|x<sub>1</sub>-x<sub>2</sub>| + |y<sub>1</sub>-y<sub>2</sub>|</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>centru.in</th><th>centru.out</th></tr><tr><td>7 5<br>
+0 1<br>
+1 4<br>
+3 6<br>
+5 0<br>
+5 5<br></td><td>3<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Noul centru se poate infiinta in nodul de coordonate (<var>3,3</var>). Orice alta solutie nu micsoreaza distanta maxima pana la cel mai apropiat centru de prim-ajutor in cazul cel mai defavorabil.<br><img src="http://infoarena.ro/problema/centru?action=download&amp;file=centru.png&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

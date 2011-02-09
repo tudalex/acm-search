@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>caibicol.in, caibicol.out</td><td><strong>Sursă</strong></td><td>Romanian Open Contest, TIMUS 2001</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=caibicol">Vezi solutiile trimise</a></p>
+
+<h1>Caibicol<br></h1>
+
+<p>In fiecare zi, fermierul Ion isi scoate la aer toti caii, pentru ca acestia sa poata alerga si sa se poata juca. Cand caii termina cu distractia, fermierul Ion trebuie sa ii duca pe cai inapoi in grajduri. Pentru a realiza acest lucru, el ii aranjeaza intr-un sir si acestia il vor urma pana la grajduri. Deoarece caii sunt foarte obositi, fermierul Ion decide sa nu-i supuna la prea mult efort suplimentar, astfel ca inventeaza urmatorul algoritm: primii <var>P<sub>1</sub></var> cai vor intra in primul grajd, urmatorii <var>P<sub>2</sub></var> cai vor intra in al doilea grajd s.a.m.d. Nici unul din cele <var>K</var> grajduri nu trebuie sa ramana gol si nici un cal nu trebuie sa ramana pe afara. Acum ar fi bine sa stiti ca fermierul Ion are doar cai albi si negri, care nu se inteleg prea bine unii cu altii. Daca intr-un grajd intra <var>x</var> cai albi si <var>y</var> cai negri, atunci coeficientul de agresivitate din acel grajd este <var>x*y</var>. Coeficientul total de agresivitate este egal cu suma coeficientilor de agresivitate din fiecare grajd.</p>
+
+<p>Determinati o modalitate de a distribui cei <var>N</var> cai in cele <var>K</var> grajduri, in asa fel incat coeficientul total de agresivitate sa fie minim.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>caibicol.in</var> se afla numerele intregi <var>N</var> si <var>K</var>, separate printr-un spatiu. Urmatoarele <var>N</var> linii contin culorile cailor, in ordinea in care acestia sunt asezati in sir. Daca al <var>i</var>-lea cal este alb, atunci a <var>i</var>-a dintre aceste linii contine numarul <var>0</var>; in caz contrar, ea va contine numarul <var>1</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>caibicol.out</var> veti afisa coeficientul total de agresivitate minim posibil.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 500</var></li>
+<li><var>1 ≤ K ≤ N</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>caibicol.in</th><th>caibicol.out</th></tr><tr><td>6 3<br>
+1<br>
+1<br>
+0<br>
+1<br>
+0<br>
+1<br></td><td>2<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Primii <var>2</var> cai vor intra in primul grajd, urmatorii <var>3</var> cai vor intra in al doilea grajd, iar ultimul cal va intra in al <var>3</var>-lea grajd.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

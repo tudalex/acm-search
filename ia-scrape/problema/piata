@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>piata.in, piata.out</td><td><strong>Sursă</strong></td><td>OJI 2008, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=184">Doru Popescu Anastasiu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Florian"><img src="/utilizator/Florian?action=download&amp;file=avatar&amp;resize=L16x16" alt="Florian">Marcu Florian</a> <a title="Rating Florian: 667" class="rating-badge-1" href="http://infoarena.ro/utilizator/Florian?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Florian">Florian</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=piata">Vezi solutiile trimise</a></p>
+
+<h1>Piata<br></h1>
+
+<p>Ionut pleaca la sfarsit de saptamana sa se relaxeze intr-un parc de distractii. La intrarea in parc se afla o piata mare, pavata cu placi de marmura de aceeasi dimensiune. Fiecare placa are scris pe ea un singur numar dintre <var>f(1)</var>, <var>f(2)</var>, <var>f(3)</var>, . . . , <var>f(n)</var>, unde <var>f(k)</var> este suma cifrelor lui <var>k</var>, pentru <var>k</var> din multimea { <var>1</var> , <var>2</var> , . . ., <var>n</var> }. Piata are forma unui tablou bidimensional cu <var>n</var> linii si <var>n</var> coloane. Placile care alcatuiesc piata sunt asezate astfel:</p>
+
+
+<ul><li>pe prima linie sunt placi cu numerele <var>f(1)</var> , <var>f(2)</var> , ..., <var>f(n-2)</var>, <var>f(n-1)</var> , <var>f(n)</var> (in aceasta ordine de la stanga la dreapta);</li>
+<li>pe linia a doua sunt placi cu numerele <var>f(n)</var> , <var>f(1)</var> , <var>f(2)</var> , <var>f(3)</var> , ..., <var>f(n-1)</var> , (in aceasta ordine de la stanga la dreapta);</li>
+<li>pe linia a treia sunt placi cu numerele <var>f(n-1)</var> , <var>f(n)</var> , <var>f(1)</var> , <var>f(2)</var> , <var>f(3)</var> , ..., <var>f(n-2)</var> (in aceasta ordine de la stanga la dreapta);<br>
+...</li>
+<li>pe ultima linie sunt placi cu numerele <var>f(2)</var> , ..., <var>f(n-2)</var> , <var>f(n-1)</var> , <var>f(n)</var> , <var>f(1)</var> (in aceasta ordine de la stanga la dreapta).</li>
+</ul><p>Parintii lui Ionut vor ca si in aceasta zi, fiul lor sa rezolve macar o problema cu sume. Astfel acestia ii propun lui Ionut sa determine suma cifrelor numerelor aflate pe portiunea dreptunghiulara din piata avand colturile in pozitiile in care se gasesc asezati ei. Tatal se afla pe linia <var>iT</var> si coloana <var>jT</var> (coltul stanga-sus), iar mama pe linia <var>iM</var> si coloana <var>jM</var> (coltul dreapta-jos). Portiunea din piata pentru care se doreste suma este in forma dreptunghiulara, cu laturile paralele cu marginile pietei. Daca Ionut va calcula suma ceruta, atunci el va fi recompensat in parcul de distractii, de catre parintii lui.<br></p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>piata.in</var> contine pe prima linie numarul natural <var>n</var> reprezentand dimensiunea pietei. Pe linia a doua se afla despartite printr-un spatiu numerele naturale <var>iT</var> si <var>jT</var>. Pe linia a treia se afla despartite printr-un spatiu numerele naturale <var>iM</var> si <var>jM</var> .</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>piata.out</var> va contine pe prima linie suma ceruta.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2</var> ≤ n ≤ <var>40000</var>.</li>
+<li><var>1</var> ≤ <var>iT</var> , <var>jT</var> , <var>iM</var> , <var>jM</var> ≤ <var>n</var> .</li>
+<li><var>iT</var> ≤ <var>iM</var> .</li>
+<li><var>jT</var> ≤ <var>jM</var> .</li>
+<li>Suma ceruta de parintii lui Ionut nu depaseste niciodata valoarea <var>2100000000</var> .</li>
+<li><var>20%</var> din teste au <var>n</var> ≤ <var>250</var> .</li>
+<li><var>30%</var> din teste au <var>250</var> ≤ <var>n</var> ≤ <var>10000</var> .</li>
+<li><var>30%</var> din teste au <var>10001</var> ≤ <var>n</var> ≤ <var>28000</var> .</li>
+<li><var>20%</var> din teste au <var>28001</var> ≤ <var>n</var> ≤ <var>40000</var> .</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>piata.in</th><th>piata.out</th></tr><tr><td>6<br>
+2 3<br>
+6 5<br></td><td>51<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

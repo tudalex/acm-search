@@ -1,0 +1,63 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>coach.in, coach.out</td><td><strong>Sursă</strong></td><td>ONI 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=146">Radu Berinde</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=coach">Vezi solutiile trimise</a></p>
+
+<h1>Coach<br></h1>
+
+<p>Sunteti antrenorul ciclistului Adirem Onamihs care, in ciuda numelui ciudat, este foarte talentat. In curant va avea loc un eveniment sportiv, un prilej foarte bun de a-l antrena pe ciclist. Pentru organizarea evenimentului s-au amenajat <var>N</var> intersectii si <var>M</var> drumuri bidirectionale intre aceste intersectii. Pentru fiecare drum se cunosc numarul de minute necesare pentru parcurgerea lui. La fiecare intersectie ciclistul care trece pe acolo este obligat sa serveasca o bautura energizanta si racoritoare. Bautura difera de la intersectie la intersectie si se cunosc deja numarul de calorii ale fiecarei bauturi.</p>
+
+<p>Ca un mare antrenor, aveti un plan special pentru Adirem. Doriti ca durata traseului pe care il alege Adirem sa aiba exact <var>T</var> ore, insa nu vreti sa-i planuiti intregul traseu (Adirem trebuie sa isi antreneze si mintea, nu numai corpul). Ii veti preciza lui Adirem doar intersectia de unde isi incepe traseul si intersectia unde il termina. Adirem invata repede - el stie intotdeauna sa aleaga traseul optim (drumul cel mai scurt dintre cele doua intersectii). Atunci cum il puteti face sa mearga exact <var>T</var> ore? Dupa cateva portii de creatina, va vine ideea salvatoare: ii veti interzice trecerea prin anumite intersectii, sub pretextul ca valoarea calorica a bauturii servite in intersectia respectiva nu este benefica pentru antrenamentul lui. Astfel, ii veti preciza o limita inferioara si una superioara pentru numarul de calorii ale bauturilor pe care el are voie sa le bea. Adirem nu va trece decat prin intersectiile unde se serveste o bautura cu valoare calorica intre limitele date.</p>
+
+<p>Cum numarul de intersectii este destul de mare, va trebui sa scrieti un program care sa calculeze cele patru variabile in antrenamentul lui Adirem: intersectia de start, intersectia de finish, valoarea calorica minima pe care poate sa o consume si valoarea calorica maxima, astfel incat drumul cel mai scurt dintre cele doua intersectii (care sa respecte restrictiile) sa dureze <var>T</var> minute.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului <var>coach.in</var> contine trei numere intregi <var>N, M</var> si <var>T</var> reprezentand numarul de intersectii, drumuri, respectiv timpul dorit. Urmatoarele <var>N</var> linii contin cate un numar - valoarile calorice a bauturilor din intersectii, in ordine (de la <var>1</var> la <var>N</var>). Urmatoarele <var>M</var> linii contin cate un triplet de numere: doua intersectii si durata drumului dintre ele.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fiserul <var>coach.out</var> va contine o linie, pe care se vor afla cele patru valori gasite: nodul de start, nodul de finish, valoarea calorica minima si valoarea calorica maxima. Nodurile vor fi intregi intre <var>1</var> si <var>N</var>, iar valorile calorice vor fi intregi intre <var>1</var> si <var>10.000</var> (inclusiv).</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N &lt;= 100, 1 ≤ M ≤ 4.950, 1 ≤ T ≤ 1.000.000</var></li>
+<li>Costurile muchiilor sunt numere intregi intre <var>1</var> si <var>10.000</var> (inclusiv)</li>
+<li>Caloriile bauturilor sunt numere intregi intre <var>1</var> si <var>10.000</var> (inclusiv)</li>
+<li>Intersectiile gasite (de start si de finish) trebuie sa respecte si ele restrictiile calorice</li>
+<li>O bautura cu valoarea calorica <var>x</var> poate fi bauta daca si numai daca <var>cmin ≤ x ≤ cmax</var>, unde <var>cmin</var> si <var>cmax</var> sunt valorile calorice minime si maxime gasite</li>
+<li>Intre doua intersectii exista maxim un drum</li>
+<li>Valorile calorice sunt distincte</li>
+<li>Exista intotdeauna solutie</li>
+</ul><h2>Exemplu</h2>
+
+
+<table class="example" cellspacing="0"><tr><th>coach.in</th><th>coach.out</th></tr><tr><td>6 9 11<br>
+40<br>
+10<br>
+20<br>
+30<br>
+60<br>
+50<br>
+1 2 2<br>
+1 3 2<br>
+1 4 4<br>
+1 6 10<br>
+2 3 3<br>
+2 4 1<br>
+4 5 1<br>
+4 6 5<br>
+5 6 2<br></td><td>3 6 20 55</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=342">Algoritmul Roy-Floyd</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

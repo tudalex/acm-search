@@ -1,0 +1,70 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>soc.in, soc.out</td><td><strong>Sursă</strong></td><td>Lot 2003</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><div class="hidden">5/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=soc">Vezi solutiile trimise</a></p>
+
+<h1>Soc<br></h1>
+
+<p>Un grup de <var>N</var> oameni de afaceri s-au intalnit cu ocazia unei conferinte. Unii dintre ei sunt prieteni, altii nu. Fiecare dintre ei are un cont banca ce contine o anumita suma exprimata in euro. De fiecare data cand se intalnesc, se gandesc cum sa initieze o noua afacere. De data aceasta s-au decis sa infiinteze o societate, la care actionarii sa fie o parte dintre ei, astfel incat oricare doi oameni de afaceri care sunt actionari ai societatii sa fie prieteni, iar capitalul societatii (egal cu totalul sumelor din conturile actionarilor) sa fie maxim. Pentru a determina actionarii acestei societati, v-au angajat pe dumneavoastra si, daca le veti da raspunsul in timp util, veti fi recompensat cu o suma frumoasa.</p>
+
+<p>Inainte de a va apuca de treaba, cei <var>N</var> oameni de afaceri v-au pus la dispozitie informatii referitoare la conturile lor din banca si la relatiile de prietenie dintre ei. Analizand problema, ati ajuns la concluzia ca relatiile de prietenie pot fi reprezentate sub forma unui graf neorientat cu <var>N</var> varfuri (corespunzatoare celor <var>N</var> oameni de afaceri); intre doua varfuri diferite exista o muchie, daca cei doi oameni de afaceri corespunzatori celor doua varfuri din graf sunt prieteni (prietenia este reciproca). Graful are o structura speciala, mai exact el este un cograf. Un graf se numeste cograf daca indeplineste cel putin una dintre urmatoarele 3 conditii:</p>
+
+
+<ol><li>Este un graf cu un singur nod</li>
+<li>Este graful-reuniune a doua sau mai multe cografuri</li>
+<li>Este graful complementar al unui cograf</li>
+</ol><p>Prin reuniunea a doua grafuri, unul cu <var>i</var> noduri si muchii intre aceste <var>i</var> noduri, altul cu <var>j</var> noduri si muchii intre aceste <var>j</var> noduri, se obtine un graf cu <var>i+j</var> noduri, care contine toate muchiile din cele doua grafuri, fara a se introduce vreo muchie in plus. De exemplu, pentru doua grafuri, unul avand nodurile etichetate <var>1</var> si <var>2</var> si continand muchia <var>[1,2]</var>, iar altul avand nodurile etichetate <var>9</var>,<var>10</var>,<var>11</var> si continand muchiile <var>[9,10]</var>, <var>[9,11]</var>, graful-reuniune va contine <var>5</var> noduri etichetate <var>1</var>,<var>2</var>,<var>9</var>,<var>10</var>,<var>11</var> si <ins>exact</ins> trei muchii: <var>[1,2]</var>, <var>[9,10]</var>, <var>[9,11]</var>.</p>
+
+<p>Graful complementar al unui graf se obtine astfel:</p>
+
+<p>- pentru orice pereche de noduri distincte <var>[a,b]</var> intre care exista muchie in graful initial, NU va exista muchie in graful complementar;<br>
+- pentru orice pereche de noduri distincte <var>[a,b]</var> intre care NU exista muchie in graful initial, va exista muchie in graful complementar.</p>
+
+<p>De exemplu, pentru graful avand <var>3</var> noduri, etichetate <var>4</var>,<var>11</var>,<var>20</var>, si <var>2</var> muchii <var>[4,11]</var> si <var>[11,20]</var>, graful complementar va contine toate cele <var>3</var> noduri si o singura muchie: <var>[4,20]</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>soc.in</var> se afla numerele intregi <var>N</var> si <var>M</var>, separate printr-un spatiu. Pe urmatoarea linie se afla numerele intregi <var>E<sub>i</sub></var>, <var>i=1,2,..,N</var>, separate prin cate un spatiu, reprezentand sumele din conturile celor <var>N</var> oameni de afaceri. Numarul <var>E<sub>K</sub></var> reprezinta suma din contul afaceristului numerotat cu <var>K</var>. Pe urmatoarele <var>M</var> linii se afla cate doua numere intregi <var>a</var> si <var>b</var> din intervalul <var>[1,N]</var>, avand semnificatia ca oamenii de afaceri numerotati cu <var>a</var> si, respectiv, <var>b</var> sunt prieteni.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul <var>soc.out</var> veti afisa, pe prima linie, capitalul maxim al societatii. Pe urmatoarea linie veti afisa numarul <var>A</var>, reprezentand numarul de actionari ai societatii. Pe cea de-a treia linie veti afisa numerele oamenilor de afaceri care vor fi actionari, separate prin cate un spatiu. Daca exista mai multe posibilitati de a alege actionarii societatii astfel incat capitalul acesteia sa fie maxim, puteti afisa oricare din ele.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 256</var></li>
+<li><var>0 ≤ M ≤ N*(N-1)/2</var></li>
+<li><var>0 ≤ E<sub>i</sub> ≤ 1 000 000</var>, pentru <var>i=1,2,..,N</var></li>
+<li>Daca sunt mai multe solutii corecte, se va afisa oricare</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>soc.in</th><th>soc.out</th></tr><tr><td>5 4<br>
+5 4 3 3 3<br>
+2 1<br>
+3 4<br>
+4 5<br>
+5 3<br></td><td>9<br>
+3<br>
+3 4 5<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=45">Diverse</a></span>
+            <a href="javascript:show_tag_list(45)" id="tag_anchor_45" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_45"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=345">Recursivitate</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=277">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>comitat.in, comitat.out</td><td><strong>Sursă</strong></td><td>ONI 2002, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=177">Rodica Pintea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.25 sec</td><td><strong>Limită de memorie</strong></td><td>1000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=comitat">Vezi solutiile trimise</a></p>
+
+<h1>Comitat<br></h1>
+
+<p>Toate semintiile convietuitoare pe Terra au hotarat ca hobbitii, pastratorii Inelului Puterii, sa fie izolati intr-o zona a pamantului numita Comitat. Hotarele Comitatului trebuie sa fie reprezentate de un poligon convex cu cate un turn de paza in fiecare varf. Se cunosc pozitiile tuturor turnurilor din regiune (doua numere naturale raportate la un sistem de axe rectangulare). Un paznic pe cal alb vegheaza hotarele comitatului parcurgand, pe rand, toate distantele dintre doua turnuri succesive mergand pe drum minim, numai pe carari paralele cu axele sistemului de axe. Se cunoaste lungimea maxima a drumului pe care-l poate parcurge paznicul la un tur complet al hotarelor comitatului si se cere sa se determine un poligon cu un numar maxim de turnuri pe contur, poligon ce poate constitui hotarul comitatului. In plus, hotarul trebuie sa contina turnul din Mordor (de coordonate <var>0</var> si <var>0</var>) intr-un varf, in fiecare dintre celelalte varfuri aflandu-se obligatoriu unul din turnurile existente. De exemplu, pentru amplasamentul turnurilor ilustrat mai jos si pentru limita de <var>25</var> Km a unui tur efectuat de paznic, hotarul comitatului poate fi format, in aceasta ordine, din turnurile de coordonate <var>(0,0)</var>, <var>(4,1)</var>, <var>(8,3)</var>, <var>(4,4)</var>, <var>(1,4)</var>, <var>(0,0)</var>. Se observa ca poligonul determinat de aceste turnuri este un poligon convex cu 5 turnuri pe contur. Poligonul cu varfurile <var>(0,0)</var>, <var>(4,1)</var>, <var>(4,12)</var>, <var>(0,7)</var>, <var>(0,0)</var> are tot <var>5</var> turnuri pe contur, dar un tur complet al acestui poligon depaseste <var>25</var> Km.<br><img src="http://infoarena.ro/problema/comitat?action=download&amp;file=comitat.jpg&amp;safe_only=true" alt=""></p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>comitat.in</var> contine pe prima linie numarul intreg <var>N</var>, reprezentand numarul de turnuri din tinut. Pe urmatoarele <var>N</var> linii se afla cate <var>2</var> numere intregi, separate printr-un spatiu, reprezentand coordonatele <var>x</var> si <var>y</var> ale cate unui turn. Pe ultima linie a fisierului se afla numarul intreg <var>L</var>, reprezentand lungimea maxima a unui tur complet al poligonului.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului <var>comitat.out</var> se va afisa numarul maxim <var>T</var> de turnuri de pe conturul unui poligon avand proprietatile mentionate. Pe a doua linie veti afisa <var>T - 1</var> numere intregi, separate prin cate un spatiu, reprezentand numerele de ordine ale turnurilor de pe conturul poligonului, in sens trigonometric sau in sens invers trigonometric. Turnul din Mordor nu se afisaza, el fiind considerat asezat intre primul si ultimul din cele <var>T - 1</var> turnuri afisate.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 50</var></li>
+<li><var>0 ≤ coordonatele x si y ale oricarui punct ≤ 200</var></li>
+<li><var>1 ≤ L ≤ 1000</var></li>
+<li>Pot exista turnuri strict in interiorul poligonului, dar acestea nu sunt luate in considerare pentru criteriul de maxim.</li>
+<li>Se considera solutii si poligonul degenerat format dintr-un singur varf (Mordor) sau din doua varfuri (Mordor si un alt turn) sau din mai multe varfuri coliniare.</li>
+<li>Pot exista turnuri coliniare pe conturul poligonului determinat.</li>
+<li>Daca exista mai multe solutii ce respecta conditiile din enunt, se va furniza doar una dintre acestea.</li>
+<li>In fisierul de intrare nu exista doua turnuri ale caror pozitii sa coincida si nu exista un turn in pozitia <var>(0,0)</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>comitat.in</th><th>comitat.out</th></tr><tr><td>9 <br>
+0 7<br>
+1 4<br>
+2 2<br>
+4 1<br>
+4 4<br>
+4 9<br>
+8 3<br>
+9 9<br>
+10 5<br>
+25<br></td><td>5<br>
+4 7 5 2<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

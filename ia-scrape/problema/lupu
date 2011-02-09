@@ -1,0 +1,63 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>lupu.in, lupu.out</td><td><strong>Sursă</strong></td><td>preONI 2006 Runda Finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=153">Adrian Diaconu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=lupu">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=lupu">Vezi solutiile trimise</a></p>
+
+<h1>Lupul Urias si Rau<br></h1>
+
+<p>Lupul urias si rau isi doreste sa se poata juca cu prietenele sale oitele mici si pufoase. In calea fericirii sale sta insa ciobanasul Eduard care decide sa nu-l lase pe lup sa se joace cu toate oile sale, il lasa sa aleaga doar cateva. Lupul se afla intr-un punct fix pe pajiste, iar oile stau la diferite distante fata de el. Alegerea oilor se face in mai multe etape. Lupul urias si rau alege o oaie aflata la o distanta de maxim <var>X</var> si in acel moment toate celelalte oi se vor indeparta (la cerintele ciobanasului Eduard) cu distanta <var>L</var> fata de lup. Pentru fiecare oaie se cunoaste cantitatea de lana pe care o are, iar lupul isi doreste ca suma cantitatilor de lana pentru oile alese sa fie cat mai mare (ca sa fie cat mai pufoase).</p>
+
+<h2>Cerinta</h2>
+
+<p>Ajutati-l pe lupul urias si rau sa aleaga oile astfel incat sa aiba cat mai multa lana.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>lupu.in</var> contine trei numere intregi <var>N</var> , <var>X</var> si <var>L</var> reprezentand numarul de oi, distanta maxima de la care lupul poate alege oi si distanta cu care se departeaza oile de lup dupa fiecare alegere. Pe urmatoarele <var>N</var> linii se afla cate doua numere intregi <var>D</var> si <var>A</var> reprezentand distanta initiala si cantitatea de lana a fiecarei oi.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>In fisierul <var>lupu.out</var> veti afisa un singur numar intreg <var>S</var>, reprezentand cantitatea maxima de lana pe care o poate aduna lupul de la oile alese.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100.000</var></li>
+<li>Pentru <var>40%</var> din teste <var>N ≤ 1000</var></li>
+<li>Toate numerele din fisierul de intrare sunt intregi din intervalul [<var>0, 2<sup>31</sup>-1</var>]</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>lupu.in</th><th>lupu.out</th></tr><tr><td>10 6 2<br>
+1 13<br>
+4 14<br>
+4 3<br>
+6 7<br>
+0 7<br>
+5 16<br>
+3 16<br>
+4 10<br>
+4 18<br>
+3 16<br></td><td>54</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_1"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=61">Greedy</a></span>
+            <a href="javascript:show_tag_list(61)" id="tag_anchor_61" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_61"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=70">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=285">Heap</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=296">Multimi disjuncte</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>trenuri.in, trenuri.out</td><td><strong>Sursă</strong></td><td>Lot Cluj 2009, Baraj 5</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=246">Alexandru Tandrau</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Marius"><img src="/utilizator/Marius?action=download&amp;file=avatar&amp;resize=L16x16" alt="Marius">Marius Stroe</a> <a title="Rating Marius: 627" class="rating-badge-4" href="http://infoarena.ro/utilizator/Marius?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Marius">Marius</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>3.3 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=trenuri">Vezi solutiile trimise</a></p>
+
+<h1>Trenuri<br></h1>
+
+<p>Ivan trebuie să ajungă la Cluj-Napoca pentru a participa la pregatirile Lotului National de Informatică. Pentru aceasta, el a ales ca mijloc de transport trenul. El dispune de la Ministerul Educatiei, Cercetării şi Inovării de o sumă pentru transport pe care nu trebuie să o depaşească. Lui Ivan nu-i place să aştepte, aşa că ar dori ca timpul maxim de aşteptare între două trenuri să fie cât mai mic.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Fiind date bugetul lui Ivan şi lista tuturor trenurilor care circulă, împreună cu costul unui bilet, ora de plecare şi ora de sosire a trenului, să se găsească cel mai bun mod de a ajunge din oraşul <var>1</var> în oraşul <var>N</var>, conform cerinţelor lui Ivan.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului <var>trenuri.in</var> se află <var>3</var> numere întregi: <var>N</var> (numărul de oraşe), <var>M</var> (numărul de trenuri) şi <var>B</var> (bugetul lui Ivan). Pe următoarele <var>M</var> linii se găsesc descrierile trenurilor. Pe linia <var>i + 1</var> se găsesc numerele întregi <var>a</var>, <var>b</var>, <var>c</var>, <var>p</var>, <var>s</var> (separate prin câte un singur spaţiu) cu semnificaţia că există un tren care pleacă din oraşul <var>a</var> la momentul de timp <var>p</var>, ajunge în <var>b</var> la momentul de timp <var>s</var>, şi costul unui bilet la acest tren este <var>c</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul <var>trenuri.out</var> se vor scrie pe prima linie <var>2</var> numere întregi, <var>T</var> şi <var>C</var>, reprezentând timpul minim de aşteptare şi costul biletelor. În cazul mai multor soluţii cu acelaşi <var>T</var> se va afişa soluţia cu <var>C</var> minim.</p>
+
+<h2>Restricţii şi precizări</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 15 000</var></li>
+<li><var>2 ≤ M ≤ 200 000</var></li>
+<li><var>0 ≤ c ≤ 10 000</var></li>
+<li><var>0 ≤ B ≤ 2 000 000 000</var></li>
+<li>Pentru oricare tren <var>p &lt; s</var>.</li>
+<li>Timpul de aşteptare nu se contorizează în staţia de început. Ivan poate veni de acasă la orice oră doreşte.</li>
+<li>Un tren care pleacă la momentul <var>p</var> poate fi luat doar dacă Ivan ajunge în staţia de plecare la un moment de timp <var>s ≤ p</var>. Timpul de aşteptare este <var>p – s</var>.</li>
+<li>Există soluţie pentru toate testele, iar timpul maxim de asteptare este cel mult <var>200 000</var> unităţi.</li>
+<li>Ivan vă recomandă să parsaţi fişierul de intrare. Astfel, veţi avea mai mult timp să-l ajutaţi.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>trenuri.in</th><th>trenuri.out</th></tr><tr><td>5 6 20<br>
+1 2 4 2 8<br>
+2 4 5 9 11<br>
+1 3 5 1 5<br>
+3 4 1 2 6<br>
+4 5 13 12 14<br>
+4 5 10 15 20<br></td><td>4 19<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Ivan ia întâi trenul din oraşul <var>1</var> spre oraşul <var>2</var>. Din oraşul <var>2</var> ia trenul spre oraşul <var>4</var>, aşteptând o unitate de timp. Dupa aceea, ia trenul spre oraşul <var>5</var> la timpul <var>15</var>, asteptând <var>4</var> unităţi de timp. Timpul maxim de aşteptare este <var>4</var> unităţi de timp, iar costul total este <var>19</var>. </p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

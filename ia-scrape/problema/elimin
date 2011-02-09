@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>elimin.in, elimin.out</td><td><strong>Sursă</strong></td><td>preONI 2007, Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=elimin">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=elimin">Vezi solutiile trimise</a></p>
+
+<h1>Elimin<br></h1>
+
+<p>Se da o matrice cu <var>M</var> linii si <var>N</var> coloane cu elemente numere naturale. Sa se elimine exact <var>R</var> linii si <var>C</var> coloane din matrice astfel incat matricea rezultata sa aiba suma elementelor maxim posibila.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>elimin.in</var> are urmatoarea structura: pe prima linie se vor afla patru numere naturale despartite de exact un spatiu, <var>M</var>, <var>N</var>, <var>R</var> si <var>C</var>, cu semnificatia precizata mai sus. Fiecare din urmatoarele <var>M</var> linii contine cate <var>N</var> numere naturale.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Prima linie a fisierului de iesire <var>elimin.out</var> contine suma maxima obtinuta.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>0 ≤ R &lt; M</var></li>
+<li><var>0 ≤ C &lt; N</var></li>
+<li>Valorile elementelor matricii nu depasesc <var>32 000</var></li>
+<li>La corectare vor exista 10 teste, fiecare valorand 10 puncte. In tabelul de mai jos se regasesc ariile matricilor pentru fiecare test in parte:</li>
+</ul><table><tr><th>T1</th><th>T2</th><th>T3</th><th>T4</th><th>T5</th><th>T6</th><th>T7</th><th>T8</th><th>T9</th><th><span class="caps">T10</span></th></tr><tr><td>32</td><td>50</td><td>100</td><td>266</td><td>539</td><td>1630</td><td>3495</td><td>3653</td><td>5866</td><td>7294</td></tr></table><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>elimin.in</th><th>elimin.out</th></tr><tr><td>3 3 1 1<br>
+8 1 2<br>
+6 1 4<br>
+0 9 0<br></td><td>20</td></tr></table><h3>Explicatie</h3>
+
+<p>Suma maxima se obtine eliminand a doua coloana si ultima linie.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

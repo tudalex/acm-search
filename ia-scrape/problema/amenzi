@@ -1,0 +1,60 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>amenzi.in, amenzi.out</td><td><strong>Sursă</strong></td><td>Unirea 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=153">Adrian Diaconu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>16000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=amenzi">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=amenzi">Vezi solutiile trimise</a></p>
+
+<h1>Amenzi<br></h1>
+
+<p>Ion este politist intr-un mare oras. In oras exista <var>N</var> intersectii legate intre ele prin intermediul a <var>M</var> strazi pe care se poate circula in ambele sensuri. Pentru fiecare strada se stie timpul <var>C<sub>i</sub></var> necesar pentru a o parcurge. Informat de o sursa sigura Ion stie ca in cursul urmatoarei zile se vor petrece <var>K</var> infractiuni. Pentru fiecare infractiune <var>i</var> se cunosc urmatoarele date: <var>T<sub>i</sub></var> - timpul la care infractiunea are loc, <var>A<sub>i</sub></var> - intersectia in care infractiunea are loc, <var>S<sub>i</sub></var> - amenda pe care Ion o poate da daca se afla in intersectia <var>A<sub>i</sub></var> la momentul <var>T<sub>i</sub></var>.</p>
+
+<p>Stie ca in cursul zilei urmatoare trebuie sa se intalneasca cu sotia sa, dar nu mai stie exact nici timpul nici ora la care trebuie sa faca acest lucru. Tot ce isi aminteste sunt <var>P</var> perechi de forma <var>X<sub>i</sub></var>, <var>Y<sub>i</sub></var> care semnifica faptul ca s-ar putea sa trebuiasca sa se intalneasca cu sotia sa la momentul <var>Y<sub>i</sub></var> in intersectia <var>X<sub>i</sub></var>.</p>
+
+<p>Avand la dispozitie toate aceste date ajutati-l pe Ion sa afle valoare maxima totala a amenzilor pe care o poate da pentru fiecare din cele <var>P</var> perechi pe care si le aminteste. Din momentul in care se intalneste cu sotia sa Ion nu va mai da amenzi.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>amenzi.in</var> se afla patru numere intregi <var>N</var>, <var>M</var>, <var>K</var> si <var>P</var> cu semnificatia din enunt. Urmatoarele <var>M</var> linii contin cate trei numere <var>a</var>, <var>b</var> si <var>c</var> cu semnificatia ca exista o strada ce leaga intersectiile <var>a</var> si <var>b</var> si care poate fi parcursa in <var>c</var> unitati de timp. Urmatoarele <var>K</var> linii contin cate trei numere <var>a</var>, <var>b</var> si <var>c</var> cu semnificatia ca va avea loc o infractiune in intersectia <var>a</var>, la timpul <var>b</var> si pentru care se va da o amenda in valoare de <var>c</var> unitati monetare. Apoi urmeaza <var>P</var> linii cu cate doua numere <var>a</var> si <var>b</var> cu seminficatia ca este posibil ca Ion sa se intalneasca cu sotia sa in intersectia <var>a</var> la momentul <var>b</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>amenzi.out</var> vor exista <var>P</var> linii continand valoarea totala maxima pe care Ion o va obtine din amenzi in fiecare din cele <var>P</var> cazuri descrise in fisierul de intrare. Daca Ion nu poate ajunge sub nici o forma in intersectia respectiva la momenul stabilit afisati <var>-1</var> pe testul respectiv.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>Initial Ion se afla in intersectia <var>1</var> la momentul <var>0</var>.</li>
+<li>Timpii la care se petrec infractiunile si la care Ion se poate intalni cu sotia sa sunt in intervalul [<var>0, 3500</var>]</li>
+<li><var>0 ≤ K ≤ 12000</var></li>
+<li><var>0 ≤ P ≤ 8000</var></li>
+<li><var>1 ≤ N ≤ 150</var></li>
+<li><var>1 ≤ M ≤ 1500</var></li>
+<li>Timpul necesar parcurgerii unei strazi este un numar intreg strict pozitiv</li>
+<li>Costul unei amenzi va fi un intreg din intervalul [<var>1, 10000</var>]</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>amenzi.in</th><th>amenzi.out</th></tr><tr><td>5 7 4 2<br>
+5 4 4<br>
+4 3 5<br>
+2 3 7<br>
+3 1 3<br>
+5 2 3<br>
+4 1 10<br>
+4 2 1<br>
+2 6 5736<br>
+2 20 2567<br>
+5 6 1530<br>
+3 3 4067<br>
+1 50<br>
+3 15<br></td><td>6634<br>
+4067<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Pentru primul caz Ion va merge in intersectia 3 unde va ajunge la momentul 3 exact la timp pentru a da o amenda in valoare de 4067. Apoi merge in intersectia 2 unde ajunge la momentul 10. Aici asteapta pana la momentul 20 cand da amenda in valoare de 2567. El merge apoi la intersectia 1 unde isi va astepta sotia pana la momentul 50.</p>
+
+<p>Pentru al doilea caz Ion merge in intersectia 3 unde ajunge la momentul 3, da amenda in valoare de 4067 apoi isi asteapta sotia pana la momentul 15.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

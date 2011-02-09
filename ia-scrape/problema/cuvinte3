@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cuvinte3.in, cuvinte3.out</td><td><strong>Sursă</strong></td><td>.campion 2008, Runda 12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cuvinte3">Vezi solutiile trimise</a></p>
+
+<h1>Cuvinte 3<br></h1>
+
+<p>Fie <var>C</var> o multime de cuvinte, toate de o lungime fixa <var>L</var>. Spunem ca un sir de caractere <var>S</var> poate fi scris folosind multimea de cuvinte <var>C</var>, daca pentru orice caracter din <var>S</var> exista o secventa de <var>L</var> caractere din <var>S</var>, care este un cuvant din <var>C</var> si care contine caracterul respectiv. <br>
+Se da un sir de caractere <var>S</var> format numai din litere din alfabetul englez, in care marimea literelor alterneaza (Exemple: <var>aBcDeF, AbCd</var>). Sa se determine o multime <var>C</var> de cardinal minim care contine numai cuvinte de lungime <var>2</var>, multime cu care poate fi scris sirul <var>S</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>cuvinte3.in</var> se va gasi sirul <var>S</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Prima linie a fisierului <var>cuvinte3.out</var> va contine un singur numar natural <var>min</var> reprezentand cardinalul minim al multimii <var>C</var>. Urmatoarele <var>min</var> linii vor contine cate un cuvant de lungime <var>2</var> din multimea <var>C</var> determinata. Cuvintele se vor afisa in ordine alfabetica.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>Lungimea sirului <var>S</var> este mai mica sau egala cu <var>100 000</var></li>
+<li>Se considera ca <var>a &lt; b &lt; ... &lt; z &lt; A &lt; B &lt; ... &lt; Z</var></li>
+<li><var>C</var>, fiind o multime, va fi formata numai din cuvinte distincte</li>
+<li>Daca exista mai multe seturi de cardinal minim se va afisa acela care este minim lexicografic. Spunem ca un set <var>A=(A<sub>1</sub>,A<sub>2</sub>...A<sub>N</sub>)</var> de cuvinte este mai mic decat un set <var>B=(B<sub>1</sub>,B<sub>2</sub>...B<sub>N</sub>)</var> daca exista o pozitie <var>1 ≤ i ≤ N</var> astfel incat <var>A<sub>1</sub>=B<sub>1</sub>, A<sub>2</sub>=B<sub>2</sub> ... A<sub>i-1</sub>=B<sub>i-1</sub></var> si <var>A<sub>i</sub>&lt;B<sub>i</sub></var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>cuvinte3.in</th><th>cuvinte3.out</th></tr><tr><td>aAaAbAbAbBbB<br></td><td>3<br>
+aA<br>
+bA<br>
+bB</td></tr><tr><td>pQpQ<br></td><td>1<br>
+pQ</td></tr><tr><td>LoL<br></td><td>2<br>
+oL<br>
+Lo</td></tr></table><h3>Explicatie</h3>
+
+<p>Pentru primul test, o alta solutie, mai mare din punct de vedere lexicografic, este:<br><var>aA</var><br><var>bB</var><br><var>Ab</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

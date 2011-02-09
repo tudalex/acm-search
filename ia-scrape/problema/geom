@@ -1,0 +1,55 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>geom.in, geom.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil By Net 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=geom">Vezi solutiile trimise</a></p>
+
+<h1>Geometrie<br></h1>
+
+<p>Se considera <var>N</var> puncte in plan.</p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se determine distanta minima dintre doua drepte paralele care contin intre ele cel putin <var>K</var> puncte.</p>
+
+<h2>Date de intrare</h2>
+
+<p>In fisierul de intrare <var>geom.in</var> va avea pe prima linie doua numere intregi <var>N</var> si <var>K</var> reprezentand numarul de puncte din plan, respectiv numarul de puncte care trebuie sa se gaseasca intre cele doua drepte. Pe urmatoarele <var>N</var> linii se vor afla cate doua numere intregi, separate intre ele printr-un spatiu, <var>X</var> si <var>Y</var> care reprezinta coordonatele unui punct in plan.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>geom.out</var> va contine pe prima linie un singur numar real <var>D</var> cu trei zecimale exacte, care reprezinta distanta minima dintre doua drepte paralele care indeplinesc conditiile din enunt.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1</var> ≤ <var>N</var> ≤ <var>300</var></li>
+<li><var>1</var> ≤ <var>K</var> ≤ <var>N</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>geom.in</th><th>geom.out</th></tr><tr><td>5 4<br>
+0 0<br>
+1 0<br>
+0 1<br>
+1 1<br>
+1000 0</td><td>1.000</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=45">Diverse</a></span>
+            <a href="javascript:show_tag_list(45)" id="tag_anchor_45" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_45"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=448">Statistici de ordine</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=41">Geometrie</a></span>
+            <a href="javascript:show_tag_list(41)" id="tag_anchor_41" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_41"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=62">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

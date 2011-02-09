@@ -1,0 +1,36 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>maxsecv.in, maxsecv.out</td><td><strong>Sursă</strong></td><td>Unirea2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=143">Daniel Pasaila</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/danielp"><img src="/utilizator/danielp?action=download&amp;file=avatar&amp;resize=L16x16" alt="danielp">Daniel Pasaila</a> <a title="Rating danielp: 532" class="rating-badge-4" href="http://infoarena.ro/utilizator/danielp?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/danielp">danielp</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>16000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=maxsecv">Vezi solutiile trimise</a></p>
+
+<h1>Maxsecv<br></h1>
+
+<p>Johnie are un vector binar de <var>N</var> elemente. El poate extrage o anumita subsecventa din vector, ramanand astfel cu un vector mai mic. Apoi, el poate insera subsecventa extrasa la orice pozitie din vectorul rezultat.<br>
+Se cere sa se afle lungimea maxima a unei subsecvente pline de <var>1</var> pe care o poate obtine Johnie daca efectueaza o singura operatie.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>maxsecv.in</var> se afla <var>N</var>, dimensiunea vectorului. Urmeaza apoi pe urmatoarea linie <var>N</var> numere de <var>0</var> si <var>1</var>, reprezentand elementele vectorului.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>maxsecv.out</var> trebuie sa contina un singur numar, reprezentand valoarea ceruta.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>  <var>1 ≤ N ≤ 1 000 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>maxsecv.in</th><th>maxsecv.out</th></tr><tr><td>6<br>
+1 1 0 1 1 1<br></td><td>5</td></tr><tr><td>13<br>
+0 1 1 1 0 1 1 1 1 0 1 1 0<br></td><td>7</td></tr></table><h3>Explicatie</h3>
+
+<p>La primul exemplu Johnie poate muta subsecventa formata din ultimele 3 elemente ale vectorului la inceputul acestuia, obtinand o subsecventa formata din 5 de 1.<br>
+La al doilea exemplu Johnie poate selecta secventa de 4 de 1 din interiorul vectorului si o poate muta langa secventa de 3 de 1 de la inceput.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

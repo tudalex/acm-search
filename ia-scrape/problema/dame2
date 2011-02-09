@@ -1,0 +1,43 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>dame2.in, dame2.out</td><td><strong>Sursă</strong></td><td>Summer Challenge 2007, runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=dame2">Vezi solutiile trimise</a></p>
+
+<h1>Dame 2<br></h1>
+
+<p>Avem o tabla de sah (<var>8 X 8</var>) din care au fost distruse unele patratele. Pe patratele care nu sunt distruse trebuie plasat un numar minim de dame astfel incat fiecare patratel care nu e distrus sa fie atacat si oricare doua dame nu trebuie sa se atace intre ele. O dama ataca o patratica daca se afla pe aceeasi linie, coloana sau diagonala (chiar daca intre ele exista patratele distruse).</p>
+
+<h2>Cerinta</h2>
+
+<p>Calculati numarul minim de dame necesar si gasiti o pozitionare a acestora minim lexicografica.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>dame2.in</var> va contine 8 linii cu cate 8 caractere. Caracterul <var>i</var> de pe linia <var>j</var> va fi <var>0</var> in cazul in care patratica nu a fost distrusa si va fi <var>1</var> in caz contrar.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>dame2.out</var> se va afisa <var>X</var> numarul minim de dame necesar. Urmatoarea linie va contine <var>X</var> perechi de cifre <var>a</var> <var>b</var> semnificand ca trebuie pozitionata o dama pe linia <var>a</var> si coloana <var>b</var>. </p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>O pozitionare <var>a<sub>1</sub> b<sub>1</sub> a<sub>2</sub> b<sub>2</sub> ... a<sub>X</sub> b<sub>X</sub></var> este mai mica lexicografic decat <var>c<sub>1</sub> d<sub>1</sub> c<sub>2</sub> d<sub>2</sub> ... c<sub>X</sub> d<sub>X</sub></var> daca stringul obtinut prin concatenare este mai mic lexicografic. Perechile vor fi separate prin exact un spatiu. In cazul in care nu exita nici o solutie fisierul de iesire va contine cifra 0 pe prima linie.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>dame2.in</th><th>dame2.out</th></tr><tr><td>00000000<br>
+  00111111<br>
+  01011111<br>
+  01101111<br>
+  01110111<br>
+  01111011<br>
+  01111101<br>
+  00000000<br></td><td>2 <br>
+1 1 8 2<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Punem o regina pe prima linie si prima coloana si inca o regina pe ultimul rand si a doua coloana.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

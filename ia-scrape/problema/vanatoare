@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>vanatoare.in, vanatoare.out</td><td><strong>Sursă</strong></td><td>preONI 2008, Runda finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.6 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=vanatoare">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=vanatoare">Vezi solutiile trimise</a></p>
+
+<h1>Vanatoare<br></h1>
+
+<p>Pe un cunoscut domeniu de vanatoare privat a inceput vanatoarea de mistreti. Domeniul este liniar si are lungimea de <var>T</var> unitati. Astfel, el poate fi considerat ca un segment pe axa Ox a sistemului de coordonate, intre punctele de coordonate <var>0</var> si <var>T</var>. Sunt <var>N</var> mistreti care trebuie vanati. Fiecare mistret este caracterizat de o pereche de numere naturale <var>(c<sub>i</sub> v<sub>i</sub>)</var>, cu <var>0 ≤ c<sub>i</sub> &lt; v<sub>i</sub></var>, care are urmatoarea semnificatie: la momentul <var>0</var> (care reprezinta inceputul vanatorii) mistretul <var>i</var> se afla la coordonata <var>c<sub>i</sub></var> pe axa si alearga cu o viteza constanta de <var>v<sub>i</sub></var> metri pe secunda. Aceasta inseamna ca la secunda <var>p</var> ( <var>p ≥ 0</var> ) mistretul se va afla la coordonata <var>c<sub>i</sub> + v<sub>i</sub> * p</var>.<br>
+Desi cei care participa la vanatoare sunt foarte bogati, ei tin cont de resursele de care dispun si doresc sa impuste mistretii cu numar minim de vanatori. Un vanator se pozitioneaza la o coordonata numar natural ce se afla in interiorul domeniului (deci un vanator se poate pozitiona intre orice coordonata intre <var>0</var> si <var>T</var> inclusiv) si va impusca toti mistretii care trec prin dreptul sau la momente intregi de timp. Sa se precizeze numarul minim de vanatori necesari pentru a impusca toti mistretii, precum si pozitiile unde acestia trebuie sa se pozitioneze.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>vanatoare.in</var> contine pe prima linie numerele naturale <var>N</var> si <var>T</var>, separate printr-un spatiu. Fiecare din urmatoarele <var>N</var> linii contin descrierea cate unui mistret. Astfel, linia <var>i+1</var> va contine perechea de numere naturale <var>(c<sub>i</sub> v<sub>i</sub>)</var>, cu semnificatia din enunt.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>vanatoare.out</var> se va afisa pe prima linie numarul minim <var><span class="caps">MIN</span></var> de vanatori necesari pentru a impusca cei <var>N</var> mistreti. A doua linie contine exact <var><span class="caps">MIN</span></var> numere naturale cuprinse intre <var>0</var> si <var>T</var>, indicand pozitiile celor <var>N</var> vanatori.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 16</var></li>
+<li><var>1 ≤ T ≤ 2 000 000 000</var></li>
+<li>Pentru orice pereche din fisierul de intrare este indeplinita relatia: <var>0 ≤ c<sub>i</sub> &lt; v<sub>i</sub> ≤ 200 000 000</var></li>
+<li>Se considera ca un vanator poate impusca mai multi mistreti simultan</li>
+<li>Daca exista mai multe solutii optime se poate afisa oricare</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>vanatoare.in</th><th>vanatoare.out</th></tr><tr><td>3 10<br>
+3 5<br>
+1 3<br>
+2 3<br></td><td>2<br>
+7 8<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Primul vanator va impusca al doilea mistret in secunda <var>2</var>. Al doilea vanator va impusca mistretul <var>1</var> in secunda <var>1</var>, iar cel de-al treilea mistret in secunda <var>2</var>. Astfel sunt impuscati toti mistretii. Cei <var>3</var> mistreti nu pot fi impuscati cu un singur vanator, deci <var>2</var> vanatori reprezinta solutia optima.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

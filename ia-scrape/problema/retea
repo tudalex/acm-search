@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>retea.in, retea.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2010, Runda 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=223">Cosmin Gheorghe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gcosmin"><img src="/utilizator/gcosmin?action=download&amp;file=avatar&amp;resize=L16x16" alt="gcosmin">Gheorghe Cosmin</a> <a title="Rating gcosmin: 1142" class="rating-badge-4" href="http://infoarena.ro/utilizator/gcosmin?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gcosmin">gcosmin</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.6 sec</td><td><strong>Limită de memorie</strong></td><td>32000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=retea">Vezi solutiile trimise</a></p>
+
+<h1>Retea<br></h1>
+
+<p>Aurora Flash e conectata la o retea de bloc cu <var>N</var> calculatoare si <var>M</var> conexiuni bidirectionale. Fiecare conexiune intre doua calculatoare <var>x</var>, <var>y</var> are un cost asociat care reprezinta timpul necesar informatiei pentru a parcurge conexiunea respectiva. Calculatorul <var>1</var> este calculatorul Aurorei si calculatorul <var>N</var> este serverul. Aurora s-a saturat de atata lag (nu poate juca linistita Starcraft 2) asa ca si-a cumparat <var>K</var> acceleratoare. Un accelerator poate fi instalat pe o anumita conexiune pentru a injumatati costul acelei conexiuni. Daca pe o conexiune sunt instalate <var>k</var> acceleratoare costul conexiunii scade de <var>2<sup>k</sup></var> ori. Aurora vrea sa instaleze cele <var>K</var> acceleratoare pentru a minimiza timpul necesar calculatorului ei sa comunice cu serverul. Schimbul de informatii intre doua calculatoare se produce pe drumul de cost minim, ce uneste cele doua calculatoare. Costul unui drum este egal cu suma costurilor conexiunilor de pe acel drum. Ajutati-o pe Aurora Flash sa joace Starcraft 2.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>retea.in</var> va contine pe prima linie numerele <var>N</var>, <var>M</var> si <var>K</var> reprezentand numarul de calculatoare din retea, numarul de conexiuni intre cele <var>N</var> calculatoare si respectiv, numarul de acceleratoare cumparate de Aurora. Urmatoarele <var>M</var> linii vor contine fiecare cate <var>3</var> numere naturale <var>x</var>, <var>y</var> si <var>c</var> reprezentand faptul ca exista o conexiune bidirectionala de cost <var>c</var> intre calculatoarele <var>x</var> si <var>y</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>retea.out</var> veti afisa un singur numar <var>C</var> cu exact <var>4</var> zecimale, reprezentand costul minim al unui drum intre calculatoarele <var>1</var> si <var>N</var> dupa instalarea celor <var>K</var> acceleratoare.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1 000</var></li>
+<li><var>1 ≤ M ≤ 100 000</var></li>
+<li><var>1 ≤ K ≤ 10</var></li>
+<li>Costul oricarei conexiuni nu va depasi <var>1 000 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>retea.in</th><th>retea.out</th></tr><tr><td>5 5 2<br>
+1 2 1<br>
+2 3 9<br>
+3 5 1<br>
+1 4 5<br>
+4 5 5<br></td><td>4.2500<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Aurora instaleaza ambele acceleratoare pe conexiunea de cost 9 ceea ce produce un drum de cost <var>4.25</var>. Daca ar fi plasat cate un accelerator pe conexiunile de cost <var>5</var> drumul minim ar fi fost egal cu <var>5</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

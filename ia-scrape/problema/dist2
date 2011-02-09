@@ -1,0 +1,38 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>dist2.in, dist2.out</td><td><strong>Sursă</strong></td><td>ONI 2008 - baraj</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.15 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=dist2">Vezi solutiile trimise</a></p>
+
+<h1>Dist2<br></h1>
+
+<table style="margin:0.5em auto;" cellspacing="0"><tr><td align="center" style="background-color:#F8EABA;"><img src="http://infoarena.ro/template/badtests?action=download&amp;file=attention.gif&amp;safe_only=true" alt="" class="left" style="float:left"><em>Testele pentru aceasta problema nu sunt destul de bine construite pentru a departaja corect solutii ineficiente sau gresite.</em><br><a href="http://infoarena.ro/implica-te/imbunatatire-teste"><strong>Intra aici</strong></a> <em>daca vrei sa ne ajuti sa imbunatatim calitatea testelor pentru aceasta problema!</em></td></tr></table><p>Miruna a desenat in plan <var>N</var> puncte de coordonate intregi. Inventiva din fire, ea doreste sa dea un nou inteles notiunii de distanta intre doua puncte. Astfel, in viziunea ei, distanta dintre <var>2</var> puncte de coordonate ( <var>x1</var>, <var>y1</var> ) si ( <var>x2</var>, <var>y2</var> ) va fi egala cu min( <var>|x1 - x2|</var>, <var>|y1 - y2|</var> ).</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care determina pentru cele <var>N</var> puncte desenate distanta maxima intre oricare doua.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>dist2.in</var> va contine pe prima linie numarul natural <var>N</var> reprezentand numarul de puncte. Pe fiecare dintre urmatoarele <var>N</var> linii se vor afla doua numere intregi separate prin spatiu, reprezentand abscisele, respectiv ordonatele punctelor desenate.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>dist.out</var> va contine un singur numar intreg reprezentand distanta maxima intre oricare doua puncte, asa cum este ea definita de Miruna.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 10<sup>5</sup></var></li>
+<li>Coordonatele punctelor sunt numere intregi din intervalul [ <var>-10<sup>6</sup></var>, <var>10<sup>6</sup></var> ]</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>dist2.in</th><th>dist2.out</th></tr><tr><td>2<br>
+  1 2<br>
+  5 10<br></td><td>4<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Avem o singura pereche, distanta dintre cele doua puncte fiind egala cu min( | <var>1</var> - <var>5</var> |, | <var>2</var> - <var>10</var> |) = <var>4</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

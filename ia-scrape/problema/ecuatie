@@ -1,0 +1,55 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ecuatie.in, ecuatie.out</td><td><strong>Sursă</strong></td><td>preONI 2008 Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>1024 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=ecuatie">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ecuatie">Vezi solutiile trimise</a></p>
+
+<h1>Ecuatie<br></h1>
+
+<p>Zaharel a invatat la matematica cum sa rezolve ecuatii de gradul 2, de forma <var>Ax<sup>2</sup>+Bx+C = 0</var>. Pentru a le rezolva mai usor el obisnuieste sa rescrie o astfel de ecuatie sub forma <var>(P<sub>1</sub>x+Q<sub>1</sub>)(P<sub>2</sub>x+Q<sub>2</sub>) = 0</var> unde <var>P<sub>1</sub>,Q<sub>1</sub>,P<sub>2</sub>,Q<sub>2</sub></var> sunt numere intregi. In scurt timp, Zaharel a observat ca exista mai multe posibilitati de a scrie o ecuatie sub forma asta si le-a scris pe toate pe o foaie, ordonate crescator dupa <var>P<sub>1</sub></var>, iar in caz de egalitate crescator dupa <var>Q<sub>1</sub></var>. <br>
+Pentru a verifica daca a facut vreo greseala el are nevoie de un program care ii zice a <var>K</var>-a posibilitate in ordinea sortarii.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>ecuatie.in</var> va contine pe prima linie numerele intregi <var>A, B, C</var> si <var>K</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>ecuatie.out</var> se va scrie un sir de forma <var>(P<sub>1</sub>x+Q<sub>1</sub>)(P<sub>2</sub>x+Q<sub>2</sub>)</var> unde <var>P<sub>1</sub>,Q<sub>1</sub>,P<sub>2</sub>,Q<sub>2</sub></var> sunt numere intregi. La afisare trebuie sa respectati urmatoarele reguli de formatare:</p>
+
+
+<ul><li>daca <var>P<sub>1</sub></var> sau <var>P<sub>2</sub></var> sunt egale cu <var>1</var> nu se va mai afisa valoarea <var>1</var></li>
+<li>daca <var>P<sub>1</sub></var> sau <var>P<sub>2</sub></var> sunt egale cu <code>-1</code> nu se va mai afisa decat semnul <var>-</var></li>
+<li>daca <var>Q<sub>1</sub></var> sau <var>Q<sub>2</sub></var> sunt mai mici decat <var>0</var> se va afisa semnul <var>-</var> in loc de semnul <var>+</var></li>
+</ul><p>Daca nu exista <var>K</var> posibilitati de a scrie ecuatia data se va afisa in schimb valoarea <code>-1</code>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>-10<sup>9</sup> ≤ A, B, C ≤ 10<sup>9</sup></var></li>
+<li><var>A, C ≠ 0</var></li>
+<li><var>1 ≤ K ≤ 10<sup>9</sup></var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>ecuatie.in</th><th>ecuatie.out</th></tr><tr><td>4 8 -12 9<br></td><td>(2x-2)(2x+6)</td></tr></table><h3>Explicatie</h3>
+
+<p>Toate posibilitatile de a rescrie <var>4x<sup>2</sup>+8x-12</var> sunt:</p>
+
+
+<ol><li><code>(-4x-12)(-x+1)</code></li>
+<li><code>(-4x+4)(-x-3)</code></li>
+<li><code>(-2x-6)(-2x+2)</code></li>
+<li><code>(-2x+2)(-2x-6)</code></li>
+<li><code>(-x-3)(-4x+4)</code></li>
+<li><code>(-x+1)(-4x-12)</code></li>
+<li><code>(x-1)(4x+12)</code></li>
+<li><code>(x+3)(4x-4)</code></li>
+<li><strong><code>(2x-2)(2x+6)</code></strong></li>
+<li><code>(2x+6)(2x-2)</code></li>
+<li><code>(4x-4)(x+3)</code></li>
+<li><code>(4x+12)(x-1)</code> </li>
+</ol><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

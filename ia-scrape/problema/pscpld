@@ -1,0 +1,36 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>pscpld.in, pscpld.out</td><td><strong>Sursă</strong></td><td>Summer Challenge 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=pscpld">Vezi solutiile trimise</a></p>
+
+<h1>PScPld<br></h1>
+
+<p>Se da un sir de caractere mici ale alfabetului englez. O subsecventa a sirului contine cateva caractere consecutive in sir. Un sir de caractere este palindrom daca se citeste de la stanga la dreapta si de la dreapta la stanga la fel.</p>
+
+<h2>Cerinta</h2>
+
+<p>Numarati subsecventele palindrom pe care sirul de caractere le contine.</p>
+
+<h2>Date de intare</h2>
+
+<p>In fisierul de intrare <var>pscpld.in</var> vom avea pe prima linie sirul de caractere.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>pscpld.out</var> va contine numarul cerut.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1000000</var> , unde <var>N</var> este lungimea sirului.</li>
+<li><var>30%</var> din teste vor avea <var>N ≤ 30000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>pscpld.in</th><th>pscpld.out</th></tr><tr><td>abaaac</td><td>10</td></tr></table><h3>Explicatie</h3>
+
+<p>Sunt 6 subsecvente de lungime unu(<var><strong>a</strong>baaac</var>, <var>a<strong>b</strong>aaac</var>, <var>ab<strong>a</strong>aac</var>, <var>aba<strong>a</strong>ac</var>, <var>abaa<strong>a</strong>c</var>, <var>abaaa<strong>c</strong></var>), doua subsecvente de lungime doi (<var>ab<strong>aa</strong>ac</var>, <var>aba<strong>aa</strong>c</var>) si doua subsecvente de lungime trei (<var><strong>aba</strong>aac</var>, <var>ab<strong>aaa</strong>c</var>).</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

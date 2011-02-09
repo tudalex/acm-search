@@ -1,0 +1,55 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>zero2.in, zero2.out</td><td><strong>Sursă</strong></td><td>preONI 2007, Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=zero2">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=zero2">Vezi solutiile trimise</a></p>
+
+<h1>Zero 2<br></h1>
+
+<table style="margin:0.5em auto;" cellspacing="0"><tr><td align="center" style="background-color:#F8EABA;"><img src="http://infoarena.ro/template/badtests?action=download&amp;file=attention.gif&amp;safe_only=true" alt="" class="left" style="float:left"><em>Testele pentru aceasta problema nu sunt destul de bine construite pentru a departaja corect solutii ineficiente sau gresite.</em><br><a href="http://infoarena.ro/implica-te/imbunatatire-teste"><strong>Intra aici</strong></a> <em>daca vrei sa ne ajuti sa imbunatatim calitatea testelor pentru aceasta problema!</em></td></tr></table><p>Sa se determine numarul de zerouri terminale din scrierea valorii <var>1!*2!*...*N!</var> in baza <var>B</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>zero2.in</var> va contine <var>10</var> linii, fiecare continand doua numere naturale <var>N B</var>, separate prin spatii.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>zero2.out</var> va contine <var>10</var> linii fiecare continand raspunsul pentru linia corespunzatoare din fisierul de intrare.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ N, B ≤ 1.000.000.000</var></li>
+<li>Pentru <var>50%</var> din teste <var>N, B ≤ 100.000</var> iar pentru <var>70%</var> din teste <var>N, B ≤ 1.000.000</var></li>
+<li><var>N! = 1*2*3*...*N</var></li>
+<li>Pentru fiecare raspuns corect din fisierul de iesire se va acorda <var>10%</var> din punctajul unui test</li>
+<li>Se garanteaza ca rezultatul este mai mic ca <var>2<sup>63</sup></var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>zero2.in</th><th>zero2.out</th></tr><tr><td>5 10<br>
+5 9<br>
+5 8<br>
+5 7<br>
+5 6<br>
+5 5<br>
+5 4<br>
+5 3<br>
+5 2<br>
+5 2<br></td><td>1 <br>
+1 <br>
+2 <br>
+0<br>
+3 <br>
+1<br>
+4<br>
+3<br>
+8<br>
+8</td></tr></table><h3>Explicatie</h3>
+
+<p><var>1!*2!*3!*4!*5! = 3456<strong>0</strong></var> in baza <var>10</var><br><var>1!*2!*3!*4!*5! = 5236<strong>0</strong></var> in baza <var>9</var><br><var>1!*2!*3!*4!*5! = 1034<strong>00</strong></var> in baza <var>8</var><br><var>1!*2!*3!*4!*5! = 202521</var> in baza <var>7</var><br><var>1!*2!*3!*4!*5! = 424<strong>000</strong></var> in baza <var>6</var><br><var>1!*2!*3!*4!*5! = 210122<strong>0</strong></var> in baza <var>5</var><br><var>1!*2!*3!*4!*5! = 2013<strong>0000</strong></var> in baza <var>4</var><br><var>1!*2!*3!*4!*5! = 1202102<strong>000</strong></var> in baza <var>3</var><br><var>1!*2!*3!*4!*5! = 10000111<strong>00000000</strong></var> in baza <var>2</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

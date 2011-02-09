@@ -1,0 +1,43 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>pusculita.in, pusculita.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil 2008, clasele 7-8</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=140">Csaba Patcas</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=pusculita">Vezi solutiile trimise</a></p>
+
+<h1>Pusculita<br></h1>
+
+<p>Gigel a strans mai multe monede intr-o pusculita. Inainte sa inceapa sa stranga banii, el a masurat greutatea pusculitei goale, astfel acum Gigel cunoaste greutatea totala a monedelor din pusculita. El vrea sa-si cumpere o carte si ar dori sa determine suma de bani stransa in pusculita, fara sa o sparga, pentru a fi sigur ca are suficienti bani. Dandu-si seama ca pentru a fi posibila aflarea sumei din pusculita doar pe baza greutatii acesteia, o roaga pe Alina sa-i cantareasca cate-o moneda de tipul celor din pusculita.</p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati suma totala minima care se poate afla in pusculita.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>pusculita.in</var> se afla numarul natural <var>S</var>, reprezentand greutatea totala a monedelor, si numarul natural <var>N</var>, reprezentand numarul tipurilor de monede din pusculita. Pe urmatoarele <var>N</var> linii sunt scrise cate doua numere naturale semnificand greutatea si valoarea unui tip de moneda, separate printr-un spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>pusculita.out</var> se va scrie suma minima care se poate afla in pusculita.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100</var></li>
+<li><var>1 ≤ S ≤ 10000</var></li>
+<li><var>1 ≤ greutatea oricarei monede ≤ 100</var></li>
+<li><var>1 ≤ valoarea oricarei monede ≤ 100</var></li>
+<li>Se considera ca numarul de monede din fiecare tip este nelimitat</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>pusculita.in</th><th>pusculita.out</th></tr><tr><td>15 4<br>
+2 1<br>
+3 2<br>
+6 5<br>
+4 10<br></td><td>8<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Pusculita poate sa contina suma minima formata din <var>6</var> bucati din primul tip de moneda (<var>6 * 1 = 6</var>) si o bucata din al doilea tip (<var>2 * 1 = 2</var>), suma lor fiind <var>8</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

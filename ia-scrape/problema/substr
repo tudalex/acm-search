@@ -1,0 +1,67 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>substr.in, substr.out</td><td><strong>Sursă</strong></td><td>Lot 2003</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=155">Mihai Patrascu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.15 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=substr">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=substr">Vezi solutiile trimise</a></p>
+
+<h1>Substr<br></h1>
+
+<table style="margin:0.5em auto;" cellspacing="0"><tr><td align="center" style="background-color:#F8EABA;"><img src="http://infoarena.ro/template/badtests?action=download&amp;file=attention.gif&amp;safe_only=true" alt="" class="left" style="float:left"><em>Testele pentru aceasta problema nu sunt destul de bine construite pentru a departaja corect solutii ineficiente sau gresite.</em><br><a href="http://infoarena.ro/implica-te/imbunatatire-teste"><strong>Intra aici</strong></a> <em>daca vrei sa ne ajuti sa imbunatatim calitatea testelor pentru aceasta problema!</em></td></tr></table><p>Se da un text format din <var>N</var> caractere (litere mari, litere mici si cifre). Un <em>substring</em> al acestui text este o secventa de caractere care apar pe pozitii consecutive in text.</p>
+
+<h2>Cerinta</h2>
+
+<p>Fiind dat un numar <var>K</var>, sa se determine lungimea celui mai lung <em>substring</em> care apare in text de cel putin <var>K</var> ori.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>substr.in</var> contine pe prima linie numerele <var>N</var> si <var>K</var> separate prin spatiu. Pe cea de a doua linie se afla un text format din <var>N</var> caractere (litere mari, mici si cifre), fara spatii si terminat cu caracterul de linie noua.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>substr.out</var> trebuie sa contina o singura linie cu lungimea maxima a unui <em>substring</em> care apare de cel putin <var>K</var> ori in textul original.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 16 384</var></li>
+<li><var>1 ≤ K ≤ N</var></li>
+<li>Pentru <var>30%</var> din teste, <var>N ≤ 1 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>substr.in</th><th>substr.out</th></tr><tr><td>13 3<br>
+yabadabadooba<br></td><td>2</td></tr></table><p><em>Explicatie</em>: Substringul <em>ba</em> apare de trei ori in text. Orice substring de dimensiune mai mare (spre exemplu <em>aba</em>) apare de mai putin de trei ori.</p>
+
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 3 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=48">Cautare</a></span>
+            <a href="javascript:show_tag_list(48)" id="tag_anchor_48" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_48"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=49">Cautare binara</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_1"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=55">Siruri de caractere</a></span>
+            <a href="javascript:show_tag_list(55)" id="tag_anchor_55" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_55"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=431">Suffix array</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=432">Hash</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,32 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>binar.in, binar.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2010, Runda 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/wefgef"><img src="/utilizator/wefgef?action=download&amp;file=avatar&amp;resize=L16x16" alt="wefgef">Andrei Grigorean</a> <a title="Rating wefgef: 783" class="rating-badge-4" href="http://infoarena.ro/utilizator/wefgef?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/wefgef">wefgef</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=binar">Vezi solutiile trimise</a></p>
+
+<h1>Binar<br></h1>
+
+<p>Miruna are o matrice cu <var>N</var> linii si <var>M</var> coloane care contine doar elemente de <var>1</var> si <var>0</var>. Ea ar vrea sa sorteze coloanele matricei lexicografic si va roaga pe voi sa o ajutati.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>binar.in</var> va contine pe prima linie doua numere naturale <var>N</var> si <var>M</var> reprezentand dimensiunile matricei. Urmatoarele <var>N</var> linii vor contine cate <var>M</var> caractere <strong>nedespartite</strong> prin spatiu din multimea <var>{0, 1}</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>In fisierul de iesire <var>binar.out</var> veti afisa o permutare a numerelor de la <var>1</var> la <var>M</var>, reprezentand ordinea lexicografica a coloanelor. In cazul in care mai multe coloane vor fi identice, indicii corespunzatori vor fi afisati in ordine crescatoare.</p>
+
+<h2>Restricţii şi precizări</h2>
+
+
+<ul><li><var>1 ≤ N, M ≤ 2000</var></li>
+<li><strong>Cititi fiecare rand ca pe un sir. Evitati citirea caracter cu caracter!</strong></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>binar.in</th><th>binar.out</th></tr><tr><td>4 6<br>
+010111<br>
+010100<br>
+101111<br>
+110011<br></td><td>3 1 5 6 2 4<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

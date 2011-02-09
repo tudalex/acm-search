@@ -1,0 +1,57 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>concurs2.in, concurs2.out</td><td><strong>Sursă</strong></td><td>OJI 2008, clasa a 9-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=220">Radu Visinescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gabitzish1"><img src="/utilizator/gabitzish1?action=download&amp;file=avatar&amp;resize=L16x16" alt="gabitzish1">Gabriel Bitis</a> <a title="Rating gabitzish1: 658" class="rating-badge-1" href="http://infoarena.ro/utilizator/gabitzish1?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gabitzish1">gabitzish1</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=concurs2">Vezi solutiile trimise</a></p>
+
+<h1>Concurs2<br></h1>
+
+<p>La Olimpiada Nationala de Informatica participa elevi din mai multe judete, fiecare judet fiind identificat in mod unic printr-un numar natural. Elevii din fiecare judet au asociat cate un numar natural care permite identificarea in mod unic a elevului in cadrul judetului.<br>
+Astfel, orice participant la olimpiada poate fi identificat prin doua numere: identificatorul judetului si identificatorul elevului in cadrul judetului.</p>
+
+<p>Pentru a repartiza elevii la calculatoare, organizatorii au nevoie de o lista care sa respecte urmatoarele conditii:</p>
+
+
+<ul><li>Lista contine toti elevii participanti la olimpiada;</li>
+<li>Oricare doi elevi consecutivi in lista sunt din judete diferite;</li>
+<li>Elevii din orice judet apar in lista in ordinea crescatoare a numerelor de identificare.</li>
+</ul><h2>Cerinta</h2>
+
+<p>Scrieti un program care sa genereze lista necesara organizatorilor.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>concurs2.in</var> contine pe prima linie un numar natural <var>P</var> reprezentand numarul total de participanti la <span class="caps">ONI.</span> Pe urmatoarele <var>P</var> linii este descrisa lista participantilor, cate un participant pe o linie. Pentru fiecare participant sunt scrise doua numere naturale separate prin spatiu <var>J</var> si <var>E</var>, unde <var>J</var> reprezinta identificatorul judetului, iar <var>E</var> reprezinta identificatorul elevului in cadrul judetului.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>concurs2.out</var> va contine pe prima linie un numar natural <var>NJ</var>, reprezentand numarul de judete din care exista participanti la olimpiada. Pe cea de a doua linie sunt scrise <var>NJ</var> numere naturale nenule separate prin cate un spatiu reprezentand (in ordinea crescatoare a numerelor de identificare a judetelor) numarul de participanti din fiecare judet. Pe urmatoarele <var>P</var> linii este descrisa lista necesara organizatorilor, cate un elev pe o linie. Pentru fiecare elev este scris mai intai identificatorul judetului din care face parte, urmat de un spatiu, apoi de identificatorul elevului in cadrul judetului.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>Identificatorii judetelor sunt numere naturale cuprinse intre <var>1</var> si <var>50</var>.</li>
+<li>Identificatorii elevilor in cadrul judetelor sunt numere naturale cuprinse intre <var>1</var> si <var>1000</var>.</li>
+<li>Numarul total de elevi participanti la olimpiada nu depaseste <var>500</var>.</li>
+<li>Pentru datele de test exista intotdeauna solutie, nu neaparat unica.</li>
+<li>Pentru determinarea corecta a numarului de judete se acorda 20% din punctaj. Pentru determinarea corecta a numarului de judete, precum si a numarului de participanti din fiecare judet se acorda 30% din punctaj. Punctajul se acorda integral pentru rezolvarea tuturor celor 3 cerinte (numar de judete, numar de participanti din fiecare judet si lista necesara organizatorilor).</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>concurs2.in</th><th>concurs2.out</th></tr><tr><td>7<br>
+1 3<br>
+2 4<br>
+1 2<br>
+5 2<br>
+5 3<br>
+1 6<br>
+1 9<br></td><td>3<br>
+4 1 2<br>
+1 2<br>
+5 2<br>
+1 3<br>
+5 3<br>
+1 6<br>
+2 4<br>
+1 9<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

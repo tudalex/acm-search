@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>tcast.in, tcast.out</td><td><strong>Sursă</strong></td><td>ONI 2008 - baraj</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=tcast">Vezi solutiile trimise</a></p>
+
+<h1>Tcast<br></h1>
+
+<p>Reteaua de comunicatie a orasului Ploiesti este alcatuita din <var>N</var> noduri, numerotate de la <var>1</var> la <var>N</var>. Exista <var>N-1</var> perechi de noduri intre care exista conexiune directa (aceste noduri sunt denumite vecini). O conexiune directa asigura comunicare in ambele sensuri intre nodurile conectate. Conexiunile directe sunt construite astfel incat oricare doua noduri ale retelei pot comunica (direct, sau indirect, prin intermediul altor noduri). <br>
+La momentul de timp <var>0</var>, nodul <var>1</var> are un mesaj pe care doreste sa il trimita tuturor celorlalte noduri. Pentru aceasta, la orice moment de timp intreg t, orice nod <var>x</var> ( <var>1 ≤ x ≤ N</var> ) care a primit in prealabil mesajul (sau care l-a primit exact la momentul <var>t</var>), il poate trimite unui vecin <var>y</var> al sau care nu a primit inca mesajul. Transmisia mesajului dureaza <var>1</var> unitate de timp - asadar, nodul <var>y</var> va primi mesajul la momentul <var>t+1</var>. Un nod poate trimite mesajul catre mai multi vecini ai sai, dar nu simultan.<br>
+Din motive de securitate, la anumite momente de timp din intervalul [ <var>0</var> , <var>T</var> ), nodurile de comunicatie sunt verificate. Pentru fiecare nod <var>x</var> ( <var>1 ≤ x ≤ N</var> ) si fiecare moment de timp <var>t</var> ( <var>0 ≤ t ≤ T-1</var> ), se cunoaste daca nodul <var>x</var> este verificat sau nu la momentul <var>t</var>. Durata verificarii este de <var>1</var> unitate de timp (astfel, daca nodul <var>x</var> este verificat la momentul <var>t</var>, verificarea se termina la momentul <var>t+1</var> ). La fiecare moment de timp la care un nod este verificat, acesta nu poate trimite nici un mesaj (dar poate primi mesaje de la vecinii sai).</p>
+
+<p>Determinati durata de timp minima dupa care mesajul poate ajunge de la nodul <var>1</var> la toate nodurile (in cazul unei strategii optime de distributie a mesajului).</p>
+
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>tcast.in</var> contine <var>2</var> numere intregi, separate printr-un spatiu: <var>N</var> si <var>T</var>. Urmatoarele <var>N-1</var> linii contin cate doua numere intregi <var>x</var> si <var>y</var>, separate printr-un spatiu, avand semnificatia ca nodurile <var>x</var> si <var>y</var> sunt vecine in cadrul retelei de comunicatie. Urmatoarele <var>N</var> linii contin cate <var>T</var> numere intregi din multimea { <var>0</var>, <var>1</var> }. Al t-lea numar ( <var>1 ≤ t ≤ T</var> ) de pe a <var>i</var> -a dintre aceste linii este <var>1</var>, daca nodul <var>i</var> este verificat la momentul <var>t-1</var> (si <var>0</var> in caz contrar).</p>
+
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>tcast.out</var> va contine o singura linie pe care va fi scrisa durata de timp minima dupa care toate nodurile primesc mesajul, in cazul unei strategii optime de distributie a mesajului.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 2000</var></li>
+<li><var>1 ≤ T ≤ 1000</var></li>
+<li>Durata de timp dupa care toate nodurile primesc mesajul poate fi mai mare decat <var>T</var> </li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>tcast.in</th><th>tcast.out</th></tr><tr><td>6 5<br>
+  1 2<br>
+  2 3<br>
+  3 6<br>
+  1 4<br>
+  4 5<br>
+  1 0 0 0 0<br>
+  0 0 0 0 0<br>
+  0 0 0 0 0<br>
+  0 0 0 1 1<br>
+  0 0 0 0 0<br>
+  0 0 0 0 0<br></td><td>5<br></td></tr></table><h3>Explicatie</h3>
+
+<p>La momentul <var>0</var> nodul <var>1</var> este verificat si nu poate transmite mesajul nici unui vecin. La momentul <var>1</var>, nodul 1 trimite mesajul nodului <var>4</var>. La momentul <var>2</var>, nodul <var>1</var> trimite mesajul nodului <var>2</var>, iar nodul <var>4</var> trimite mesajul nodului <var>5</var>. La momentul <var>3</var>, nodul <var>2</var> trimite mesajul nodului <var>3</var>, iar la momentul <var>4</var> nodul <var>3</var> trimite mesajul nodului <var>6</var>. La momentul <var>5</var>, nodul <var>6</var> este ultimul nod care primeste mesajul.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

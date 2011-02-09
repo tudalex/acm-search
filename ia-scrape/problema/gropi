@@ -1,0 +1,51 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>gropi.in, gropi.out</td><td><strong>Sursă</strong></td><td>Junior Challenge 2008</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.8 sec</td><td><strong>Limită de memorie</strong></td><td>4096 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=gropi">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=gropi">Vezi solutiile trimise</a></p>
+
+<h1>Gropi<br></h1>
+
+<p>Datorita rezultatelor foarte bune pe care le obtinuse la Olimpiada Balcanica pentru Juniori in urma cu 5 ani, Danut primeste la majorat de la parintii sai o masina noua (nu de jucarie). Pentru ca e doritor sa o testeze, el hotaraste sa faca diferite trasee prin oras. Orasul lui Danut poate fi considerat, pentru simplitate, o matrice cu <var>2</var> linii si <var>C</var> coloane, in care fiecare zona a orasului corespunde unei casute din matrice. O astfel de zona este identificata prin coordonatele sale: numarul liniei si numarul coloanei pe care se afla. Deoarece orasul este unul in curs de dezvoltare, este deocamdata plin de gropi. Danut stie dinainte care dintre zonele din oras sunt bune, si care sunt pline de gropi. El nu vrea sa isi strice masina si de aceea nu va trece niciodata printr-o zona cu gropi. Danut are de gand sa faca <var>M</var> trasee intre zone cunoscute din oras si se intreaba, pentru fiecare din aceste <var>M</var> trasee pe care le planuieste, care este timpul minim in care poate fi parcurs, astfel incat zonele cu gropi sa fie ocolite. Se stie ca durata de deplasare printr-o zona fara gropi a orasului dureaza exact <var>1</var> minut (Danut merge cu o viteza constanta de <var>50</var> km/h).</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>gropi.in</var> contine pe prima linie doua numere naturale, <var>C</var>, care reprezinta numarul de coloane din reprezentarea schematica a orasului, si <var>N</var>, numarul de zone din oras care au gropi si trebuie ocolite. Pe fiecare din urmatoarele <var>N</var> linii se gaseste cate o pereche de numere naturale <var>(x y)</var>, <var>1 ≤ x ≤ 2, 1 ≤ y ≤ C</var>, care reprezinta coordonatele unei zone cu gropi. Urmatoarea linie contine numarul <var>M</var>, numarul de trasee pe care le efectueaza Danut. Fisierul contine apoi <var>M</var> linii, pe fiecare aflandu-se cate patru numere naturale, <var>(x<sub>1</sub> y<sub>1</sub> x<sub>2</sub> y<sub>2</sub>)</var>, <var>1 ≤ x1, x2 ≤ 2, 1 ≤ y1, y2 ≤ C</var>, cu semnificatia ca Danut doreste sa plece cu masina de la zona de coordonate <var>(x<sub>1</sub> y<sub>1</sub>)</var> si sa ajunga la zona de coordonate <var>(x<sub>2</sub> y<sub>2</sub>)</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>gropi.out</var> se vor afla exact <var>M</var> numere naturale. FIecare linie contine durata minima a traseului corespunzator din fisierul de intrare.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ minim(100 000, 2*C)</var></li>
+<li><var>1 ≤ M ≤ 100 000</var></li>
+<li><var>2 ≤ C ≤ 2 000 000 000</var></li>
+<li>Pentru 50% din teste, <var>C ≤ 250</var> si <var>M ≤ 200</var></li>
+<li>Cele <var>N</var> zone care contin gropi sunt distincte doua cate doua</li>
+<li>Se garanteaza ca se poate ajunge din orice zona in oricare alta fara a trece prin zone cu gropi</li>
+<li>Punctele de plecare si sosire pentru fiecare traseu nu sunt zone cu gropi</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>gropi.in</th><th>gropi.out</th></tr><tr><td>10 4<br>
+1 3<br>
+2 9<br>
+1 7<br>
+1 5<br>
+3<br>
+1 1 1 6<br>
+1 9 2 1<br>
+1 1 1 10<br></td><td>8<br>
+10<br>
+12<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Pentru primul traseu din cele doua, o posibila solutie este cea din desenul de mai jos. Zonele negre sunt cele care contin gropi si nu pot fi parcurse cu masina. Pentru ca sunt parcurse <var>8</var> zone (<var>8</var> patratele), traseul dureaza in total <var>8</var> minute.</p>
+
+<p><img src="http://infoarena.ro/problema/gropi?action=download&amp;file=oras.jpg&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,52 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>dist.in, dist.out</td><td><strong>Sursă</strong></td><td>Baraj ONI 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=171">Emanuela Cerchez</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=dist">Vezi solutiile trimise</a></p>
+
+<h1>Dist<br></h1>
+
+<p>Sa consideram doua propozitii formate din cuvinte scrise cu litere mari ale alfabetului englez, oricare doua cuvinte consecutive fiind separate de unul sau mai multe spatii. Sa consideram <var>c=c<sub>1</sub>c<sub>2</sub>...c<sub>n</sub></var> si <var>d=d<sub>1</sub>d<sub>2</sub>...d<sub>m</sub></var> doua cuvinte. Pentru a calcula distanta dintre cuvintele <var>c</var> si <var>d</var>, notata <var>dist(c,d)</var>, cuvantul mai scurt se completeaza la sfarsit cu caracterul <var>@</var> (care are codul <span class="caps">ASCII </span><var>64</var>), pana se obtin doua cuvinte de aceeasi lungime, apoi se calculeaza suma diferentelor absolute dintre codurile <span class="caps">ASCII </span>ale caracterelor situate in cuvintele <var>c</var> si <var>d</var> pe pozitii corespondente:<br><var>dist(c,d)=|c<sub>1</sub>-d<sub>1</sub>|+|c<sub>2</sub>-d<sub>2</sub>|+...+|c<sub>lg</sub>-d<sub>lg</sub>|</var>, unde <var>lg=max{n, m}</var>.</p>
+
+<p>Definim distanta dintre doua propozitii ca fiind suma distantelor dintre cuvintele situate in propozitii pe pozitii corespondente. Daca una dintre propozitii are mai putine cuvinte decat cealalta se considera ca la sfarsitul acestei propozitii se afla cuvinte vide (cuvinte de lungime <var>0</var>), pana la completarea numarului necesar de cuvinte.</p>
+
+<p>De exemplu, sa consideram propozitia <var>P<sub>1</sub>="ANA <span class="caps">ARE MERE</span>"</var> si propozitia <var>P<sub>2</sub>="VASILE NU"</var>. Distanta dintre propozitia <var>P<sub>1</sub></var> si propozitia <var>P<sub>2</sub></var> este:<br><var>dist(P<sub>1</sub>,P<sub>2</sub>)=dist("ANA", "VASILE")+dist("ARE", "NU")+dist("MERE","")</var>.<br><var>dist("ANA","VASILE")=|'A'<code>-</code>'V'|+|'N'<code>-</code>'A'|+|'A'<code>-</code>'S'|+|'@'<code>-</code>'I'|+|'@'<code>-</code>'L'|+|'@'<code>-</code>'E'|=</var><br><var>|65<code>-</code>86|+|78<code>-</code>65|+|65<code>-</code>83|+|64<code>-</code>73|+|64<code>-</code>76|+|64<code>-</code>69|=21+13+18+12+9+5=78</var><br><var>dist("ARE","NU")=|'A'<code>-</code>'N'|+|'R'<code>-</code>'U'|+|'E'<code>-</code>'@'|=|65<code>-</code>78|+|82<code>-</code>85|+|69<code>-</code>64|=13+3+5=21</var><br><var>dist("MERE","")=|'M'<code>-</code>'@'|+|'E'<code>-</code>'@'|+|'R'<code>-</code>'@'|+|'E'<code>-</code>'@'|=|77<code>-</code>64|+|69<code>-</code>64|+|82<code>-</code>64|+|69<code>-</code>64|=13+5+18+5=41.</var><br>
+Deci <var>dist(P1,P2)=78+21+41=140</var></p>
+
+<p>In scopul de a minimiza distanta dintre cele doua propozitii, asupra celei de a doua propozitii putem executa una sau mai multe operatii. O operatie consta in a muta prima litera dintr-un cuvant la sfarsitul cuvantului precedent (daca acesta exista) sau ultima litera dintr-un cuvant la inceputul cuvantului urmator.</p>
+
+<p>Cuvinte vide se pot afla doar la sfarsitul unei propozitii, nu si la inceputul sau in interiorul ei (nici in propozitiile date, nici in propozitiile obtinute in urma aplicarii operatiilor). In momentul in care se efectueaza o mutare asupra unui cuvant de lungime 1 din interiorul propozitiei si acesta devine vid, acesta continua sa existe si mutarile efectuate asupra cuvintelor adiacente nu vor trece peste el. Spre exemplu din propozitia "A", "A", "A" putem ajunge in propozitia "AA", "", "A" si apoi in "AA", "A", "".</p>
+
+<p>Cuvintele din propozitie si cuvintele obtinute in urma operatiilor nu pot sa depaseasca <var>20</var> de litere. </p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se determine distanta minima care se poate obtine intre cele doua propozitii efectuand operatii de tipul celor descrise in enunt. Se cere de asemenea sa se determine si numarul minim de operatii ce trebuie sa fie executate asupra celei de a doua propozitii pentru a obtine distanta minima.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>dist.in</var> contine pe prima linie prima propozitie, iar pe cea de a doua linie a doua propozitie.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>dist.out</var> va contine o singura linie pe care vor fi scrise doua numere naturale separate prin spatiu <var>dmin</var> <var>nrmin</var>, reprezentand in ordine distanta minima dintre cele doua propozitii, respectiv numarul minim de operatii ce trebuie sa fie executate asupra celei de a doua propozitii pentru a obtine distanta minima.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>Lungimea totala a unei propozitii nu depaseste <var>500</var> caractere.</li>
+<li>Lungimea maxima a unui cuvant nu depaseste nici in propozitiile date, nici in propozitia obtinuta in urma aplicarii operatiilor din enunt <var>20</var> de caractere.</li>
+<li>Numarul maxim de cuvinte dintr-o propozitie este <var>100</var>.</li>
+<li>Se acorda <var>60%</var> din punctaj pentru determinarea distantei minime si <var>100%</var> pentru rezolvarea ambelor cerinte.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>dist.in</th><th>dist.out</th></tr><tr><td><span class="caps">ANA ARE</span>  <span class="caps">MERE</span><br><span class="caps">VASILE</span> NU<br></td><td>62 9<br></td></tr><tr><td>AA<br>
+A A A<br></td><td>1 2<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Pentru primul exemplu propozitia a doua, dupa aplicarea celor <var>9</var> operatii, este:<br><var>V <span class="caps">ASI LENU</span></var></p>
+
+<p>Pentru al doilea exemplu, solutia optima pentru a doua propozitia este <var>AA A</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

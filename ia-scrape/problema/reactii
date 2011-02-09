@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>reactii.in, reactii.out</td><td><strong>Sursă</strong></td><td>ONI 2009, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=186">Marinel Serban</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrei-alpha"><img src="/utilizator/andrei-alpha?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrei-alpha">Andrei-Bogdan Antonescu</a> <a title="Rating andrei-alpha: 700" class="rating-badge-1" href="http://infoarena.ro/utilizator/andrei-alpha?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrei-alpha">andrei-alpha</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=reactii">Vezi solutiile trimise</a></p>
+
+<h1>Reactii<br></h1>
+
+<p>Să considerăm o secvenţă de <var>N</var> substanţe chimice <var>S</var> = s<sub>1</sub>,s<sub>2</sub>,…,s<sub>n</sub>. Substanţele sunt numerotate distinct de la <var>1</var> la <var>N</var> şi fiecare substanţă apare în secvenţa <var>S</var> o singură dată. Să considerăm o subsecvenţă s<sub>ij</sub> = (s<sub>i</sub>,s<sub>i+1</sub>,...,s<sub>j</sub>) şi să notăm cu <var>min</var><sub>ij</sub> şi <var>max</var><sub>ij</sub> cel mai mic, respectiv cel mai mare număr din subsecvenţă. Subsecvenţa respectivă constituie un interval dacă ea conţine toate numerele naturale cuprinse între <var>min</var><sub>ij</sub> şi <var>max</var><sub>ij</sub>. Cu substanţele din secvenţa s se vor efectua diferite experimente. În timpul unui experiment pot reacţiona două substanţe alăturate s<sub>i</sub> şi s<sub>i+1</sub> doar dacă numerele lor de ordine sunt consecutive. În urma reacţiei se obţine o nouă substanţă, formată din substanţele care au reacţionat, notată (s<sub>i</sub>,s<sub>i+1</sub>). Mai mult, substanţele obţinute pot reacţiona dacă ele sunt alăturate, iar prin reunirea subsecvenţelor de substanţe ce le compun se obţine un interval.<br>
+Experimentul este declarat reuşit dacă în final, urmând regulile de mai sus, se obţine o singură substanţă formată din toate cele <var>N</var> substanţe din secvenţa S, aceasta fiind declarată stabilă. </p>
+
+<p>De exemplu, pentru <var>N</var>=<var>6</var> substanţe şi secvenţa S=(<var>6</var>, <var>3</var>, <var>2</var>, <var>1</var>, <var>4</var>, <var>5</var>) se poate proceda astfel:</p>
+
+<table><tr><th>Etapa</th><th>Acţiune</th><th>Configuraţie</th></tr><tr><td>1</td><td>Secvenţa iniţială</td><td>6 3 2 1 4 5</td></tr><tr><td>2</td><td>Reacţionează substanţa 2 cu 1 şi se obţine substanţa (2,1)</td><td>6 3 (2,1) 4 5</td></tr><tr><td>3</td><td>Reacţionează substanţa 4 cu substanţa 5 şi se obţine substanţa (4,5)</td><td>6 3 (2,1)(4,5)</td></tr><tr><td>4</td><td>Reacţionează substanţa 3 şi (2,1) rezultând (3,2,1)</td><td>6 (3,2,1)(4,5)</td></tr><tr><td>5</td><td>Reacţionează substanţele (3,2,1) şi (4,5) rezultând substanţa (3,2,1,4,5)</td><td>6 (3,2,1,4,5)</td></tr><tr><td>6</td><td>Reacţionează substanţa 6 cu (3,2,1,4,5) şi rezultă substanţa stabilă (6,3,2,1,4,5).</td><td>(6,3,2,1,4,5)</td></tr></table><h2>Cerinta</h2>
+
+<p>Determinaţi pentru o secvenţă dată de substanţe, dacă în urma reacţiilor ce se pot produce conform regulilor din enunţ rezultă o substanţă stabilă.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>reactii.in</var> conţine pe prima linie numărul natural <var>N</var>, numărul de substanţe. Pe cea de a doua linie se află un număr natural <var>M</var>, reprezentând numărul de secvenţe de <var>N</var> substanţe din fişierul de intrare. Fiecare dintre următoarele <var>M</var> linii conţine câte <var>N</var> numere naturale distincte, separate prin câte un spaţiu, reprezentând o secvenţă de <var>N</var> substanţe.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>reactii.out</var> conţine, pentru fiecare secvenţă de substanţe din fişierul de intrare, câte o linie, pe care este afişată valoarea <var>1</var> dacă pentru secvenţa respectivă se poate obţine o substanţă stabilă sau valoarea <var>0</var> în caz contrar.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>2</var> ≤ <var>N</var> ≤ <var>15000</var></li>
+<li><var>1</var> ≤ <var>M</var> ≤ <var>20</var></li>
+<li>La un moment dat pot reacţiona doar două substanţe.</li>
+<li>Nu din orice secvenţă de substanţe se poate obţine în urma reacţiilor o substanţă finală stabilă. </li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>reactii.in</th><th>reactii.out</th></tr><tr><td>6<br>
+4<br>
+6 3 2 1 5 4<br>
+3 4 1 6 5 2<br>
+2 3 1 5 4 6<br>
+6 2 3 1 4 5<br></td><td>1<br>
+0<br>
+1<br>
+1<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

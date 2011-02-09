@@ -1,0 +1,77 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>palmieri.in, palmieri.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2010, Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=167">Paul-Dan Baltescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/pauldb"><img src="/utilizator/pauldb?action=download&amp;file=avatar&amp;resize=L16x16" alt="pauldb">Paul-Dan Baltescu</a> <a title="Rating pauldb: 792" class="rating-badge-4" href="http://infoarena.ro/utilizator/pauldb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/pauldb">pauldb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.7 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=palmieri">Vezi solutiile trimise</a></p>
+
+<h1>Palmieri<br></h1>
+
+<p>Pe o insulă tropicală, există o plajă cu <var>N</var> palmieri. Pentru simplitate, vom considera ţărmul axa Ox, plaja fiind semiplanul punctelor cu ordonata pozitivă, iar oceanul semiplanul opus. Palmierii sunt reprezentaţi prin nişte puncte de coordonate întregi. Laura doreşte să cumpere mai multe proprietăţi de formă dreptunghiulară cu laturile paralele cu axele de coordonate, fiecare să nu depăşească aria <var>A</var> şi toate să aibă deschidere la ocean. Mai mult, ea şi-ar mai dori ca toţi cei <var>N</var> palmieri să intre în proprietatea ei. Bineînţeles, Laura doreşte ca proprietăţile cumpărate să nu se intersecteze pentru a nu plăti de mai multe ori acelaşi teren. Aflaţi numărul minim de proprietăţi care trebuie achiziţionate, respectând condiţiile de mai sus.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>palmieri.in</var> conţine pe prima linie două numere întregi <var>N</var> şi <var>A</var>. Pe următoarele <var>N</var> linii se găsesc câte două numere întregi <var>x</var> si <var>y</var>, reprezentând coordonatele palmierilor.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>palmieri.out</var> se găseşte un singur număr întreg ce corespunde numărului minim de proprietăţi ce îndeplineşte condiţiile.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 250 000</var></li>
+<li><var>1 ≤ A ≤ 10<sup>9</sup></var></li>
+<li><var>-10<sup>9</sup> ≤ x ≤ 10<sup>9</sup></var></li>
+<li><var>1 ≤ y ≤ A</var></li>
+<li>Palmierii aflaţi pe marginea proprietăţilor se consideră în interiorul acestora.</li>
+<li>Două proprietăţi nu se pot atinge nici măcar pe margini.</li>
+<li>Pentru <var>30%</var> din teste, <var>N ≤ 5 000</var>.</li>
+<li>Pentru alte <var>30%</var> din teste, <var>N ≤ 50 000</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>palmieri.in</th><th>palmieri.out</th></tr><tr><td>12 10<br>
+3 1<br>
+11 3<br>
+13 4<br>
+7 2<br>
+-4 2<br>
+-1 5<br>
+6 3<br>
+13 3<br>
+12 5<br>
+4 2<br>
+1 3<br>
+-1 1<br></td><td>5<br></td></tr></table><h3>Explicaţii</h3>
+
+<p><img src="http://infoarena.ro/problema/palmieri?action=download&amp;file=palmieri.png&amp;resize=30%25" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 3 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=89">Divide et Impera</a></span>
+            <a href="javascript:show_tag_list(89)" id="tag_anchor_89" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_89"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=90">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=63">Sortare</a></span>
+            <a href="javascript:show_tag_list(63)" id="tag_anchor_63" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_63"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=64">Sortare</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=94">Deque</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

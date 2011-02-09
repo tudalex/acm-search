@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cifru4.in, cifru4.out</td><td><strong>Sursă</strong></td><td>Lot Juniori 2010 - Baraj 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=197">Carmen Popescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/GheorgheMihai"><img src="/utilizator/GheorgheMihai?action=download&amp;file=avatar&amp;resize=L16x16" alt="GheorgheMihai">Gheorghe Mihai</a> <a title="Rating GheorgheMihai: 787" class="rating-badge-1" href="http://infoarena.ro/utilizator/GheorgheMihai?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/GheorgheMihai">GheorgheMihai</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cifru4">Vezi solutiile trimise</a></p>
+
+<h1>Cifru4<br></h1>
+
+<p>Alibaba trebuie să descopere cifrul care deschide cufărul cu comoara cea mare. Cifrul este foarte greu de găsit. El a descoperit mai multe pietre, fiecare piatră având o altă culoare, pe fiecare piatră fiind scris un număr natural cu cel mult <var>4</var> cifre. Alibaba observă că numerele de pe fiecare piatră sunt distincte două câte două. Regula după care se formează cifrul este una foarte simplă, şi Alibaba a reuşit să o obţină destul de uşor: cifrul este format din alăturarea într-o anumită ordine a tuturor pietrelor. Ceea ce Alibaba mai ştie este că pe poziţia <var>P</var> din cifru se găseşte cu siguranţă cifra <var>K</var>.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Scrieţi un program care determină numărul de variante de cifruri pe care va trebui să le încerce Alibaba. Numărul fiind foarte mare se va calcula <strong>modulo <var>46337</var></strong>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>cifru4.in</var> conţine pe prima linie trei numere naturale <var>N</var>, <var>P</var> şi <var>K</var> separate printr-un spaţiu, reprezentând numărul total de numere de pe pergament, poziţia <var>P</var> şi respectiv cifra <var>K</var> care se găseşte pe poziţia <var>P</var> în cifru. Pe următoarele <var>N</var> linii se găseşte câte unul din cele <var>N</var> numere de pe pergament. </p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>cifru4.out</var> se va scrie un număr natural reprezentând numărul de variante <strong>modulo <var>46337</var></strong> de cifruri pe care va trebui să le încerce Alibaba.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 24</var></li>
+<li><var>0 ≤ K ≤ 9</var></li>
+<li>Numerele de pe fiecare piatră sunt strict pozitive mai mici decât 10000.</li>
+<li>Două cifruri diferă între ele prin ordinea de aşezare a pietrelor, chiar dacă numărul obţinut prin citirea numerelor de pe pietre este aceeaşi. De exemplu dacă există trei pietre având inscripţionate numerele 12, 3 şi respectiv 123, ele se pot lipi astfel: 12-3-123, 123-12-3, cele două cifruri considerându-se diferite, cifrele având culori diferite.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>cifru4.in</th><th>cifru4.out</th></tr><tr><td>7 6 2<br>
+12<br>
+56<br>
+3<br>
+214<br>
+523<br>
+6<br>
+2<br></td><td>1548<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

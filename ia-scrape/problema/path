@@ -1,0 +1,36 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>path.in, path.out</td><td><strong>Sursă</strong></td><td>Bursele Agora 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=path">Vezi solutiile trimise</a></p>
+
+<h1>Path<br></h1>
+
+<p>Se considera un graf orientat aciclic ce contine <var>N</var> noduri si <var>M</var> arce. Nodurile sunt identificate prin litere distincte ale alfabetului englezesc (sunt permise atat litere mari, cat si litere mici). Un drum este format dintr-o succesiune de arce, iar aceste drumuri sunt ordonate in ordine lexicografica (fiecarui drum ii corespunde un sir de caractere obtinut prin concatenarea literelor corespunzatoare nodurilor, in ordinea in care apar nodurile in drum; se considera ca toate literele mici sunt, din punct de vedere lexicografic, inaintea tuturor literelor mari).<br>
+Dintre toate drumurile din graf, sunt luate in considerare doar cele mai lungi (lungimea unui drum este data de numarul de arce care il formeaza). Se cere ca dintre acestea din urma sa se determine cel de-al k-lea in ordine lexicografica.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>path.in</var> contine trei numere intregi <var>N, M</var> si <var>k</var> separate intre ele printr-un singur spatiu.<br>
+Fiecare dintre urmatoarele <var>M</var> linii contine doua caractere ale alfabetului englezesc <var>c<sup class="footnote"><a href="#fn1">1</a></sup></var> si <var>c<sup class="footnote"><a href="#fn2">2</a></sup></var>, separate intre ele printr-un singur spatiu, cu semnificatia ca exista un arc care pleaca din nodul identificat prin <var>c<sup class="footnote"><a href="#fn1">1</a></sup></var> si ajunge in nodul identificat prin <var>c<sup class="footnote"><a href="#fn2">2</a></sup></var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>path.out</var> va contine pe o singura linie un sir de caractere care reprezinta drumul determinat. Caracterele acestui sir nu vor fi separate intre ele prin spatii.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li>Numarul de drumuri de lungime maxima este mai mare sau egal decat <var>k</var>.</li>
+<li><var>2 ≤ N ≤ 52</var></li>
+<li><var>1 ≤ M ≤ N(N-1) / 2</var></li>
+<li>Intre doua noduri poate exista cel mult o muchie.</li>
+<li><var>1 ≤ K ≤ 2.000.000.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>path.in</th><th>path.out</th></tr><tr><td>3 3 1<br>
+a b<br>
+b c<br>
+a c<br></td><td>abc</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

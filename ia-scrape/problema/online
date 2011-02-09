@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>online.in, online.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil 2008, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=159">Clara Ionescu</a>, <a href="/cauta-probleme?tag_id%5B%5D=140">Csaba Patcas</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/wefgef"><img src="/utilizator/wefgef?action=download&amp;file=avatar&amp;resize=L16x16" alt="wefgef">Andrei Grigorean</a> <a title="Rating wefgef: 783" class="rating-badge-4" href="http://infoarena.ro/utilizator/wefgef?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/wefgef">wefgef</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=online">Vezi solutiile trimise</a></p>
+
+<h1>Online<br></h1>
+
+<p>Intr-o tara imaginara trebuie construita o retea de drumuri intre <var>N</var> orase. Ministrul Transporturilor a apelat la <var>M</var> firme de constructii si le-a cerut sa estimeze costul unor drumuri care la randul lor sa lege doua orase, fara sa treaca prin altele. Din cele <var>M</var> oferte care se refereau la <var>M</var> drumuri diferite (posibile de construit), Ministrul Transporturilor a ales un numar minim de perechi de orase intre care se va construi un drum direct, astfel incat din orice oras sa se poata calatori in orice oras direct sau prin intermediul unor drumuri care trec prin alte orase cu cost minim.</p>
+
+<p>Constructia urma sa inceapa peste <var>K</var> saptamani. In aceasta perioada Ministrul Transporturilor a primit saptamanal cate o oferta noua, referitoare la alte posibile drumuri care vor lega in mod direct alte doua orase dar si la unele ofertate deja, dar cu alte costuri. Ministrul Transporturilor trebuie sa actualizeze proiectul si sa stabileasca - saptamanal - care dintre drumuri sa le construiasca peste cele <var>K</var> saptamani.</p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati proiectul initial. Apoi, pe baza ofertelor nou sosite pe parcursul celor <var>K</var> saptamani, determinati cate un proiect nou astfel incat costul total al productiei sa fie minim.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierul de intrare <var>online.in</var> se afla doua numere naturale <var>N</var> si <var>M</var>, separate printr-un spatiu, reprezentand numarul oraselor si numarul ofertelor. Pe fiecare dintre urmatoarele <var>M</var> linii se afla cate trei numere naturale, separate prin cate un spatiu, primele doua reprezentand numerele de ordine ale celor doua orase care s-ar lega direct prim drumul respectiv, si al treilea costul drumului respectiv. Pe urmatoarea linie se afla numarul natural <var>K</var>, reprezentand numarul de saptamani in care proiectul urmeaza sa fie imbunatatit. Pe urmatoarele <var>K</var> linii sunt scrie cate trei numere naturale, avand semnificatia scrisa mai sus.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>online.out</var> se vor scrie costurile proiectelor: a celui initial, apoi ale celor <var>K</var> actualizari. Prin cost intelegem suma costurilor drumurilor selectate.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 &lt; N ≤ 200</var></li>
+<li><var>1 &lt; M ≤ 10000</var></li>
+<li><var>1 &lt; K ≤ 10000</var></li>
+<li><var>1 ≤ costul unui drum intre doua orase ≤ 250</var></li>
+<li>Drumurile dintre orase sunt bidirectionale</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>online.in</th><th>online.out</th></tr><tr><td>5 7<br>
+1 2 1<br>
+2 3 7<br>
+1 5 5<br>
+3 4 3<br>
+4 5 4<br>
+1 3 2<br>
+2 4 6<br>
+2<br>
+3 5 2<br>
+1 4 3<br></td><td>10<br>
+8<br>
+8<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

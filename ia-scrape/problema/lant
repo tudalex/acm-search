@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>lant.in, lant.out</td><td><strong>Sursă</strong></td><td>OJI 2005, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=171">Emanuela Cerchez</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/pauldb"><img src="/utilizator/pauldb?action=download&amp;file=avatar&amp;resize=L16x16" alt="pauldb">Paul-Dan Baltescu</a> <a title="Rating pauldb: 792" class="rating-badge-4" href="http://infoarena.ro/utilizator/pauldb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/pauldb">pauldb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=lant">Vezi solutiile trimise</a></p>
+
+<h1>Lant<br></h1>
+
+<p>Ion este un lingvist pasionat. Recent el a descoperit un text scris intr-o limba necunoscuta. Textul este scris pe mai multe linii si este format din cuvinte scrise cu litere mici din alfabetul latin, separate prin spatii sau/si semne de punctuatie <var>(,:;.!?-)</var>.<br>
+Ion a fost frapat ca exista multe similitudini intre cuvintele din text. Fiind foarte riguros, Ion defineste similitudinea a doua cuvinte dupa cum urmeaza.<br>
+Fie <var>c</var><sub>1</sub> si <var>c</var><sub>2</sub> doua cuvinte. Cuvantul <var>c</var><sub>1</sub> poate fi obtinut din cuvantul <var>c</var><sub>2</sub> printr-o succesiune de operatii elementare. Operatiile elementare ce pot fi folosite sunt:</p>
+
+<table><tr><th>Operatia<br></th><th>Efect<br></th><th>Exemplu<br></th></tr><tr><td><var>move(c</var><sub>1</sub><var>,c</var><sub>2</sub><var>)</var><br></td><td>Muta primul caracter din <var>c</var><sub>1</sub> la sfarsitul cuvantului <var>c</var><sub>2</sub><br></td><td>Daca <var>c</var><sub>1</sub><var>="alba"</var> si <var>c</var><sub>2</sub><var>="neagra"</var>, dupa efectuarea operatiei<var>move(c</var><sub>1</sub><var>,c</var><sub>2</sub><var>)</var>, <var>c</var><sub>1</sub> va fi <var>"lba"</var>, iar <var>c</var><sub>2</sub> va fi <var>"neagraa"</var>.<br></td></tr><tr><td><var>insert(c</var><sub>1</sub><var>,x)</var><br></td><td>Insereaza caracterul <var>x</var> la inceputul lui <var>c</var><sub>1</sub><br></td><td>Daca <var>c</var><sub>1</sub><var>="alba"</var> si <var>x='b'</var>, dupa executarea operatiei <var>insert(c</var><sub>1</sub><var>,x)</var>, <var>c</var><sub>1</sub> va fi <var>"balba"</var>.<br></td></tr><tr><td><var>delete(c</var><sub>1</sub><var>)</var><br></td><td>Sterge primul caracter din <var>c</var><sub>1</sub><br></td><td>Daca <var>c</var><sub>1</sub><var>="alba"</var>, dupa executarea operatiei <var>delete(c</var><sub>1</sub><var>)</var>, <var>c</var><sub>1</sub> va fi <var>"lba"</var>.<br></td></tr></table><p>Definim similitudinea dintre <var>c</var><sub>1</sub> si <var>c</var><sub>2</sub> ca fiind numarul minim de operatii <var>insert</var> si <var>delete</var> ce trebuie sa fie executate pentru a transforma cuvantul <var>c</var><sub>1</sub> in cuvantul <var>c</var><sub>2</sub> (operatiile <var>move</var> nu se numara).<br>
+Fie <var>c</var><sub>0</sub> primul cuvant din text. Incepand cu <var>c</var><sub>0</sub> putem construi lanturi de <var>k-similitudine</var>. <br>
+Un lant de <var>k-similitudine</var> este o succesiune de cuvinte distincte din text cu urmatoarele proprietati:</p>
+
+
+<ul><li>daca cuvantul <var>x</var> apare in lant inaintea cuvantului <var>y</var>, atunci prima aparitie a lui <var>x</var> in text preceda prima aparitie a lui <var>y</var> in text;</li>
+<li>daca <var>x</var> si <var>y</var> sunt cuvinte consecutive in lant (in ordinea <var>x</var> <var>y</var>) , atunci similitudinea dintre <var>x</var> si <var>y</var> este mai mica sau egala cu <var>k</var>;</li>
+<li>lantul este maximal (adica nu putem adauga inca un cuvant la sfarsitul acestui lant, astfel incat sa fie respectate proprietatile precedente).</li>
+</ul><h2>Cerinta</h2>
+
+<p>Scrieti un program care sa determine numarul de lanturi de <var>k-similitudine</var> care incep cu <var>c</var><sub>0</sub>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>lant.in</var> contine pe prima linie valoarea <var>k</var>. Pe urmatoarele linii se afla textul dat.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>lant.out</var> va contine o singura linie pe care va fi scris numarul de lanturi de <var>k-similitudine</var> care incep cu <var>c</var><sub>0</sub>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>Lungimea unei linii din text nu depaseste <var>1000</var> de caractere.</li>
+<li>Lungimea unui cuvant nu depaseste <var>30</var> de caractere.</li>
+<li>Numarul total de cuvinte distincte <var>≤ 150</var>.</li>
+<li>Pentru datele de test, numarul de lanturi de <var>k-similitudine</var> care incep cu <var>c</var><sub>0</sub> va fi <var>≤2000000000</var> (doua miliarde).</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>lant.in</th><th>lant.out</th></tr><tr><td>5<br>
+ana are mere, banane,<br>
+pere si castane.<br></td><td>6<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Lanturile de <var>5-similitudine</var> care se pot forma sunt:<br><var>ana are mere pere</var><br><var>ana are pere</var><br><var>ana are banane castane</var><br><var>ana are si</var><br><var>ana banane castane</var><br><var>ana si</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

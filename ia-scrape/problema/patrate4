@@ -1,0 +1,69 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>patrate4.in, patrate4.out</td><td><strong>Sursă</strong></td><td>Lot Suceava 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=135">Stelian Ciurea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/bogdan2412"><img src="/utilizator/bogdan2412?action=download&amp;file=avatar&amp;resize=L16x16" alt="bogdan2412">Bogdan-Cristian Tataroiu</a> <a title="Rating bogdan2412: 1162" class="rating-badge-4" href="http://infoarena.ro/utilizator/bogdan2412?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/bogdan2412">bogdan2412</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>32000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=patrate4">Vezi solutiile trimise</a></p>
+
+<h1>Patrate4<br></h1>
+
+<p>Pe o foaie de matematica sunt <var>5000 × 5000</var> de patratele cu latura egala cu <var>1 cm</var>. Patratelele sunt evident organizate in <var>5000</var> de linii (numerotate de sus in jos de la <var>1</var> la <var>5000</var>) si <var>5000</var> de coloane (numerotate de la stanga la dreapta de la <var>1</var> la <var>5000</var>).</p>
+
+<p>Pozitia fiecarui patratel de pe foaie este caracterizata prin numarul liniei si numarul coloanei pe care se afla patratelul. Pe foaie sunt innegrite <var>N</var> patratele.</p>
+
+<p>Trebuie sa desenam pe foaia de matematica o multime de patrate care sa indeplineasca urmatoarele conditii:</p>
+
+
+<ul><li>aria intersectiei intre oricare doua patrate din aceasta multime este egala cu <var>0</var>;</li>
+<li>oricare dintre patratele acestei multimi este alcatuit doar din patratele intregi;</li>
+<li>oricare patratel negru apartine exact unuia dintre patratele multimii;</li>
+<li>pentru oricare dintre patratele acestei multimi, daca notam cu <var>S</var> aria patratului, atunci suprafata ocupata de patratelele negre din interiorul respectivului patrat apartine intervalului <var>[S / K, 4S / K)</var>, unde <var>K</var> este un numar natural nenul dat.</li>
+</ul><h2>Cerinta</h2>
+
+<p>Scrieti un program care determine o multime de patrate care sa respecte conditiile de mai sus.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>patrate4.in</var> contine pe prima linie doua numere naturale nenule separate prin spatiu <var>N</var> si <var>K</var>, cu semnificatia din enunt. Pe fiecare dintre urmatoarele <var>N</var> linii se afla cate doua numere naturale nenule separate prin spatiu, reprezentand pozitia unui patratel negru.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>patrate4.out</var> se va scrie pe prima linie un numar natural nenul <var>np</var>, reprezentand numarul de patrate din multime. Pe fiecare dintre urmatoarele <var>np</var> linii se vor afla trei numere naturale nenule separate prin cate un spatiu; primele doua valori vor reprezenta linia, respectiv coloana pe care se afla patratelul situat in coltul din stanga-sus al patratului respectiv, iar a treia valoare va reprezenta lungimea laturii respectivului patrat.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100 000</var></li>
+<li><var>5 ≤ K ≤ 10</var></li>
+<li>Coordonatele patratelelor negre (linie, coloana) sunt numere naturale din intervalul <var>[1, 1000]</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>patrate4.in</th><th>patrate4.out</th></tr><tr><td>19 5<br>
+1 1<br>
+1 2<br>
+2 1<br>
+2 2<br>
+3 1<br>
+3 3<br>
+4 3<br>
+5 5<br>
+5 6<br>
+5 7<br>
+6 6<br>
+6 7<br>
+10 7<br>
+10 8<br>
+7 9<br>
+8 10<br>
+8 9<br>
+9 9<br>
+10 9<br></td><td>2<br>
+1 1 4<br>
+5 5 6<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Exista mai multe solutii posibile. O alta solutie ar putea fi:</p>
+
+<p><var>4</var><br><var>1 1 4</var><br><var>5 5 4</var><br><var>7 9 4</var><br><var>10 7 2</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>parpal.in, parpal.out</td><td><strong>Sursă</strong></td><td>Lot Vrancea 2010, Baraj 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Mishu91"><img src="/utilizator/Mishu91?action=download&amp;file=avatar&amp;resize=L16x16" alt="Mishu91">Andrei Misarca</a> <a title="Rating Mishu91: 662" class="rating-badge-1" href="http://infoarena.ro/utilizator/Mishu91?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Mishu91">Mishu91</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.75 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=parpal">Vezi solutiile trimise</a></p>
+
+<h1>Parpal<br></h1>
+
+<p>Miruna are un şir de caractere şi ar vrea să ştie dacă acesta poate fi scris ca o concatenare a unor palindroame de lungime pară.</p>
+
+<p>Dându-se un şir de caractere de lungime <var>N</var>, să se afişeze <var>DA</var> în cazul în care şirul se poate scrie ca o concatenare de palindroame de lungime pară şi <var>NU</var> în caz contrar.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare <var>parpal.in</var> se află un număr natural <var>T</var> reprezentând numărul de teste. Pe fiecare dintre următoarele <var>T</var> linii se găseşte câte un şir de caractere format din literele mici ale alfabetului englez.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>parpal.out</var> se vor găsi <var>T</var> linii. Pe fiecare linie <var>i</var> se va scrie <var>DA</var> în cazul în care şirul de caractere corespunzător liniei <var>i + 1</var> din fişierul de intrare se poate scrie ca o concatenare de palindroame de lungime pară şi <var>NU</var> în caz contrar.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1.000.000</var></li>
+<li><var>1 ≤ T ≤ 10</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>parpal.in</th><th>parpal.out</th></tr><tr><td>5<br>
+aaaa<br>
+aabbaacbxxxxbc<br>
+abcabc<br>
+abbcca<br>
+cbaabccbaabc<br></td><td>DA<br>
+DA<br>
+NU<br>
+NU<br>
+DA<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

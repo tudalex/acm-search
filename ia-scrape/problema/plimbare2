@@ -1,0 +1,46 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>plimbare2.in, plimbare2.out</td><td><strong>Sursă</strong></td><td>.campion 2007-2008, Runda 8</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=plimbare2">Vezi solutiile trimise</a></p>
+
+<h1>Plimbare 2<br></h1>
+
+<p>Zaharel a iesit la o plimbare. El va merge de la punctul de coordonate <var>(0, 0, 0)</var> la punctul de coordonate <var>(X, Y, Z)</var>. Se stie ca Zaharel merge mai ciudat: dintr-o pozitie <var>(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>)</var> el va merge doar intr-o pozitie de forma <var>(x<sub>1</sub>±2<sup>n</sup>, y<sub>1</sub>±2<sup>n</sup>, z<sub>1</sub>±2<sup>n</sup>)</var> unde <var>n</var> este un numar natural. In plus, plimbarea de astazi este mai speciala, in sensul ca Zaharel nu va folosi decat valori distincte pentru <var>n</var>. Dandu-se numerele <var>X Y Z</var> sa se determine un traseu cu numar minim de pozitii pentru ca Zaharel sa ajunga de la <var>(0, 0, 0)</var> la <var>(X, Y, Z)</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>plimbare2.in</var> sunt se vor gasi numerele naturale <var>X Y Z</var>, separate prin spatii.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Prima linie a fisierului <var>plimbare2.out</var> va contine un singur numar natural <var>P<sub>min</sub></var> reprezentand numarul minim de pozitii. Urmatoarele <var>P<sub>min</sub></var> linii vor contine cate trei numere intregi pe o linie, reprezentand pozitiile <var>(X, Y, Z)</var> prin care trece Zaharel.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ X, Y, Z ≤ 10<sup>18</sup></var></li>
+<li>Se garanteaza ca pentru datele de test exista solutie.</li>
+<li>Daca exista mai multe trasee cu numar minim de pasi se va afisa acela care este minim lexicografic. Spunem ca un traseu <var>A=(A<sub>1</sub>, A<sub>2</sub>..., A<sub>n</sub>) (A<sub>i</sub>=(A<sub>i,X</sub>,A<sub>i,Y</sub>,A<sub>i,Z</sub>))</var> este mai mic din punct de vedere lexicografic decat un alt traseu <var>B=(B<sub>1</sub>, B<sub>2</sub>..., B<sub>n</sub>) (B<sub>i</sub>=(B<sub>i,X</sub>,B<sub>i,Y</sub>,B<sub>i,Z</sub>))</var> daca exista o pozitie <var>1≤i≤N</var> astfel incat <var>A<sub>1</sub>=B<sub>1</sub>, A<sub>2</sub>=B<sub>2</sub>, ..., A<sub>i-1</sub>=B<sub>i-1</sub></var> si <var>A<sub>i</sub>&lt;B<sub>i</sub></var>. </li>
+<li>O pozitie <var>A=(A<sub>X</sub>, A<sub>Y</sub>, A<sub>Z</sub>)</var> este mai mica din punct de vedere lexicografic decat o alta pozitie <var>B=(B<sub>X</sub>, B<sub>Y</sub>, B<sub>Z</sub>)</var> daca: 
+<ul><li><var>A<sub>X</sub>&lt;B<sub>X</sub></var> sau </li>
+<li><var>A<sub>X</sub>=B<sub>X</sub></var> si <var>A<sub>Y</sub>&lt;B<sub>Y</sub></var> sau </li>
+<li><var>A<sub>X</sub>=B<sub>X</sub></var> si <var>A<sub>Y</sub>=B<sub>Y</sub></var> si <var>A<sub>Z</sub>&lt;B<sub>Z</sub></var></li>
+</ul></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>plimbare2.in</th><th>plimbare2.out</th></tr><tr><td>16 16 16<br></td><td>2<br>
+0 0 0<br>
+16 16 16</td></tr><tr><td>123 213 321<br></td><td>10<br>
+0 0 0<br>
+-128 -128 128<br>
+-192 -64 64<br>
+-194 -62 62<br>
+-193 -63 61<br>
+-189 -67 57<br>
+-181 -59 49<br>
+-165 -75 33<br>
+-133 -43 65<br>
+123 213 321</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

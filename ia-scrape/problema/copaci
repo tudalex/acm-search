@@ -1,0 +1,64 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>copaci.in, copaci.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=118">Stefan Gheorghe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=copaci">Vezi solutiile trimise</a></p>
+
+<h1>Copaci<br></h1>
+
+<p>Macarie, dupa ce a muncit o viata intreaga, se decide la batranete sa se retraga pe o insula pentru a-si gasi linistea interioara si a se dedica naturii. Astfel el cumpara o insula pe care cultiva pomi fructiferi. Insula poate fi reprezentata ca un poligon (nu neaparat convex) intr-un sistem de axe de coordonate pozitive. Pomii sunt plantati doar la coordonate naturale.</p>
+
+<h2>Cerinta</h2>
+
+<p>Macarie este interesat de numarul de copaci pe care il poate planta strict in interiorul insulei. In acest scop el va furnizeaza copacii care determina insula (varfurile poligonului).</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului copaci.in contine numarul intreg <var>N</var> de copaci de pe linie. Urmatoarele <var>N</var> linii contin cate doua numere intregi seperate prin cate un spatiu care descriu coordonatele celor <var>N</var> pomi date intr-o anumita ordine (trigonometrica sau orara).</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Prima linie a fisierului copaci.out contine un numar care va reprezenta numarul de copaci strict in interiorul insula.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 100.000</var></li>
+<li>Coordonatele copacilor au valori intregi din intervalul [<var>0, 2.000.000</var>]</li>
+<li>pot fi dati mai mult de <var>2</var> copaci pe o latura a "poligonului" insulei (cum se vede si in exemplu, penultimul copac)</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>copaci.in</th><th>copaci.out</th></tr><tr><td>13<br>
+3 1<br>
+6 3<br>
+9 2<br>
+8 4<br>
+9 6<br>
+9 9<br>
+8 9<br>
+6 5<br>
+5 8<br>
+4 4<br>
+3 5<br>
+2 4<br>
+1 3<br></td><td>21</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=41">Geometrie</a></span>
+            <a href="javascript:show_tag_list(41)" id="tag_anchor_41" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_41"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=110">Aria unui poligon</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=111">Teorema lui Pick</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=43">Algoritmul lui Euclid</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

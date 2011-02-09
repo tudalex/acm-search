@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>nodiv.in, nodiv.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=124">Adrian Vladu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=nodiv">Vezi solutiile trimise</a></p>
+
+<h1>Nodiv<br></h1>
+
+<p>Aenag Lurtseam a ajuns in cele din urma la facultate, unde a si primit prima tema. De data aceasta el se confrunta cu o noua problema: primeste un numar natural <var>N</var> si i se cere sa il scrie ca suma de termeni de forma <var>2<sup>a</sup>3<sup>b</sup></var>. Desi tema i s-a parut initial usoara, s-a lovit de o noua constrangere - suma nu trebuie sa contina doi termeni diferiti astfel incat unul sa il divida pe celalalt. De exemplu <var>15 = 2<sup>1</sup>3<sup>1</sup> + 2<sup>0</sup>3<sup>2</sup></var> este o descompunere buna, dar <var>18 = 2<sup>1</sup>3<sup>1</sup> + 2<sup>2</sup>3<sup>1</sup></var> nu.</p>
+
+<h2>Cerinta</h2>
+
+<p>Va reusi Aenag Lurtseam sa treaca anul fara restante?</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare va contine numarul <var>T</var> de teste, urmat de <var>T</var> linii, fiecare continand cate un numar <var>N</var>, numarul ce trebuie descompus.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire va contine <var>T</var> linii, fiecare avand urmatorul format: un numar <var>K</var> , urmat de <var>K</var> perechi <var>(a, b)</var> reprezentand numarul de termeni din descompunere, respectiv exponentii acelor <var>K</var> termeni.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 2<sup>63</sup> - 1</var></li>
+<li><var>1 ≤ T ≤ 10 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>nodiv.in</th><th>nodiv.out</th></tr><tr><td>3<br>
+  15<br>
+  16<br>
+  17<br></td><td>2 1 1 0 2<br>
+  1 4 0<br>
+  2 3 0 0 2<br></td></tr></table><h3>Explicatii</h3>
+
+<p><var>15 = 2<sup>1</sup>3<sup>1</sup> + 2<sup>0</sup>3<sup>2</sup></var><br><var>16 = 2<sup>4</sup>3<sup>0</sup></var><br><var>17 = 2<sup>3</sup>3<sup>0</sup> + 2<sup>0</sup>3<sup>2</sup></var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

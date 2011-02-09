@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>rfinv.in, rfinv.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65535 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=rfinv">Vezi solutiile trimise</a></p>
+
+<h1>Rfinv<br></h1>
+
+<p>Probabil ati auzit cu totii de algoritmul Roy-Floyd. Acest algoritm determina distantele minime intre oricare doua noduri ale unui graf neorientat, avand costuri pozitive pe muchii. Dandu-se un graf neorientat conex, de pe muchiile caruia s-au sters costurile, precum si rezultatul aplicarii algoritmului Roy-Floyd pe acest graf (inainte de stergerea costurilor de pe muchii), trebuie sa determinati daca se pot asocia costuri tuturor muchiilor grafului astfel incat sa se obtina rezultatul dat.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>rfinv.in</var> contine numarul intreg <var>T</var>, reprezentand numarul de teste. In continuare, urmeaza cele <var>T</var> teste. Fiecare test are urmatoare structura. Prima linie a fiecarui test contine <var>2</var> numere intregi <var>N</var> si <var>M</var>, reprezentand numarul de noduri si numarul de muchii din graf. Urmatoarele <var>M</var> linii contin cate <var>2</var> numere intregi diferite <var>a</var> si <var>b</var>, avand semnificatia ca exista o muchie intre nodurile numerotate cu <var>a</var> si <var>b</var>. Urmatoarele <var>N</var> linii contin cate <var>N</var> numere intregi, reprezentand rezultatul algoritmului Roy-Floyd. A <var>i</var>-a linie dintre aceste <var>N</var> linii contine distantele minime dintre nodul <var>i</var> si fiecare din cele <var>N</var> noduri ale grafului.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pentru fiecare test afisati in fisierul de iesire <var>rfinv.out</var> cate o linie continand sirul <var>"DA"</var>, daca este posibil sa se asocieze costuri muchiilor grafului astfel incat rezultatul algoritmului Roy-Floyd sa fie cel precizat, sau sirul <var>"NU"</var>, in caz contrar.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 30</var></li>
+<li><var>1 ≤ N ≤ 50</var></li>
+<li><var>0 ≤ M ≤ N*(N-1)/2</var></li>
+<li>Fie <var>dmin(i,j)</var> distanta minima dintre nodurile <var>i</var> si <var>j</var>, rezultata prin aplicarea algoritmului Roy-Floyd. Se garanteaza ca <var>dmin(i,i)=0</var> si <var>dmin(i,j)=dmin(j,i)</var>.</li>
+<li>Distantele minime intre oricare <var>2</var> noduri diferite sunt numere intregi din intervalul <var>[1,10000]</var>. </li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>rfinv.in</th><th>rfinv.out</th></tr><tr><td>2<br>
+3 2<br>
+1 2<br>
+3 2<br>
+0 5 10<br>
+5 0 4<br>
+10 4 0<br>
+2 1<br>
+1 2<br>
+0 13<br>
+13 0<br></td><td>NU<br>
+DA<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

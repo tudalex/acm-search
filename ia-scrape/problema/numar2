@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>numar2.in, numar2.out</td><td><strong>Sursă</strong></td><td>OJI 2008, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=135">Stelian Ciurea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gabitzish1"><img src="/utilizator/gabitzish1?action=download&amp;file=avatar&amp;resize=L16x16" alt="gabitzish1">Gabriel Bitis</a> <a title="Rating gabitzish1: 658" class="rating-badge-1" href="http://infoarena.ro/utilizator/gabitzish1?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gabitzish1">gabitzish1</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=numar2">Vezi solutiile trimise</a></p>
+
+<h1>Numar2<br></h1>
+
+<p>Presupunem ca avem <var>N</var> numere prime notate <var>a<sub>1</sub></var>, <var>a<sub>2</sub></var>, ..., <var>a<sub>n</sub></var> sortate strict crescator. Formam un sir strict crescator <var>b</var> ale carui elemente sunt toti multiplii acestor <var>N</var> numere prime astfel incat multipli comuni apar o singura data. Presupunem ca numerotarea pozitiilor elementelor din sirul <var>b</var> incepe tot cu 1.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care citeste din fisierul de intrare valoarea lui <var>N</var> si apoi cele <var>N</var> elemente ale sirului <var>a</var>, determina elementul de pe pozitia <var>M</var> din sirul <var>b</var> si afiseaza in fisierul de iesire valoarea acestuia.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>numar2.in</var> contine pe prima linie doua numere naturale separate printr-un spatiu care reprezinta valoarea lui <var>N</var> si valoarea lui <var>M</var>. Pe a doua linie se afla <var>N</var> numere naturale prime separate prin cate un spatiu care reprezinta valorile elementelor sirului <var>a</var>. Aceste valori sunt dispuse in ordine strict crescatoare iar ultima dintre ele este mai mica decat un milion.</p>
+
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>numar2.out</var> va contine pe prima linie o singura valoare care reprezinta termenul de pe pozitia <var>M</var> din sirul <var>b</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>Pentru <var>30%</var> din teste <var>N ≤ 20</var> , <var>M ≤ 1000</var> , <var>a<sub>1</sub> ≤ 50</var></li>
+<li>Pentru celelalte <var>70%</var> din teste <var>21 ≤ N ≤ 100</var>, <var>1001 ≤ M ≤ 15000</var>, <var>51 ≤ <var>a<sub>1</sub></var> ≤ 1000</var></li>
+<li><var>a<sub>n</sub> &lt; 1000000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>numar2.in</th><th>numar2.out</th></tr><tr><td>3 10 <br>
+2 3 5<br></td><td>14</td></tr><tr><td>4 20<br>
+7 23 37 131<br></td><td>98</td></tr><tr><td>3 11111<br>
+977 1009 1031<br></td><td>3726237</td></tr></table><h3>Explicatie</h3>
+
+<p>In exemplul 1, sirul <var>b</var> e format din valorile: 2, 3, 4, 5, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20, 21, 22... Pe pozitia 10 se afla numarul 14.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

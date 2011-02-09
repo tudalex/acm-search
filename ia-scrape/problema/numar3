@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>numar3.in, numar3.out</td><td><strong>Sursă</strong></td><td>Lot Juniori 2009 - Baraj 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=177">Rodica Pintea</a>, <a href="/cauta-probleme?tag_id%5B%5D=135">Stelian Ciurea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/GavrilaVlad"><img src="/utilizator/GavrilaVlad?action=download&amp;file=avatar&amp;resize=L16x16" alt="GavrilaVlad">Gavrila Vlad</a> <a title="Rating GavrilaVlad: 973" class="rating-badge-1" href="http://infoarena.ro/utilizator/GavrilaVlad?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/GavrilaVlad">GavrilaVlad</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2.5 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=numar3">Vezi solutiile trimise</a></p>
+
+<h1>Numar3<br></h1>
+
+<p>Fie un număr natural <var>a</var> având <var>n</var> cifre.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Scrieţi un program care să determine un număr natural <var>x</var> cu proprietatea că este cel mai mic număr mai mare decât <var>a</var>, care are exact aceleaşi cifre ca şi numărul <var>a</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>numar.in</var> conţine două linii: </p>
+
+
+<ul><li>pe prima linie un număr natural reprezentând valoarea lui <var>n</var>;</li>
+<li>pe a doua linie, fără spaţii între ele, n cifre reprezentând numărul <var>a</var>. </li>
+</ul><h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>numar.out</var> va conţine o singură linie pe care se va afla numărul <var>x</var>. </p>
+
+<h2>Restricţii şi precizări: </h2>
+
+
+<ul><li><var>1 ≤ n ≤ 5 000 000</var></li>
+<li>Pentru <var>50%</var> dintre teste, <var>n ≤ 1 000 000</var>.</li>
+<li>Pentru toate datele de test există soluţie.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>numar3.in</th><th>numar3.out</th></tr><tr><td>6<br>
+204924<br></td><td>204942<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Există mai multe numere formate din exact aceleaşi cifre ca şi numărul <var>204924</var> mai mari decât el. Dintre acestea, <var>204942</var> este cel mai mic. </p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

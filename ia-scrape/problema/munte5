@@ -1,0 +1,47 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>munte5.in, munte5.out</td><td><strong>Sursă</strong></td><td>Lot Juniori 2008 - Baraj 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=221">Zoltan Szabo</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=munte5">Vezi solutiile trimise</a></p>
+
+<h1>Munte5<br></h1>
+
+<p>Gigel lucreaza intr-un depozit si trebuie sa aseze <var>n</var> lazi pe un singur rand. Inaltimile lazilor pot sa difere. Pentru a le gestiona mai usor, Gigel a hotarat ca le va aranja in forma de munte, astfel incat toate lazile sa fie vizibile fie din stanga, fie din dreapta, iar "varful" sa fie vizibil din ambele parti. Gigel doreste sa afle in cate moduri distincte ar putea aranja cele <var>n</var> lazi astfel ca toate sa fie vizibile. De exemplu, daca avem <var>5</var> lazi cu inaltimile <var>2</var>, <var>1</var>, <var>3</var>, <var>2</var>, <var>4</var> atunci exista <var>4</var> moduri de aranjare, dupa cum urmeaza:</p>
+
+<p>1 2 3 4 2; 1 2 4 3 2; 2 3 4 2 1; 2 4 3 2 1</p>
+
+<p>Sa observam ca, daca in exemplul de mai sus am avea doua lazi de inaltime maxima <var>4</var>, Gigel nu ar putea aseza lazile in forma de munte, intrucat el doreste ca varful muntelui de lazi sa fie unic, iar inaltimile lazilor de pe oricare latura a muntelui sa fie un sir strict crescator.</p>
+
+<h2>Cerinta</h2>
+
+<p>Realizati un program care determina numarul aranjarilor distincte posibile. Doua aranjari sunt considerate distincte, daca sirurile inaltimilor lazilor difera pe cel putin o pozitie.</p>
+
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>munte5.in</var> contine pe prima linie numarul natural <var>n</var> de lazi, iar pe urmatoarele <var>n</var> linii cate un numar natural reprezentand inaltimea unei lazi.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>munte5.out</var> va contine pe prima linie un singur numar, reprezentand numarul modalitatilor distincte de aranjare modulo <var>12343</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>3 ≤ n ≤ 64.000</var></li>
+<li><var>1 ≤ inaltimile lazilor  ≤ 64.000</var></li>
+<li>Un munte nu poate fi strict crescator sau descrescator</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>munte5.in</th><th>munte5.out</th></tr><tr><td>5<br>
+  3<br>
+  1<br>
+  3<br>
+  2<br>
+  4<br></td><td>4<br></td></tr><tr><td>4<br>
+  2<br>
+  4<br>
+  4<br>
+  2<br></td><td>0<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

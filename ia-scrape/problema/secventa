@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>secventa.in, secventa.out</td><td><strong>Sursă</strong></td><td>preOJI 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.18 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">2/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=secventa">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=secventa">Vezi solutiile trimise</a></p>
+
+<h1>Secventa<br></h1>
+
+<table style="margin:0.5em auto;" cellspacing="0"><tr><td align="center" style="background-color:#F8EABA;"><img src="http://infoarena.ro/template/badtests?action=download&amp;file=attention.gif&amp;safe_only=true" alt="" class="left" style="float:left"><em>Testele pentru aceasta problema nu sunt destul de bine construite pentru a departaja corect solutii ineficiente sau gresite.</em><br><a href="http://infoarena.ro/implica-te/imbunatatire-teste"><strong>Intra aici</strong></a> <em>daca vrei sa ne ajuti sa imbunatatim calitatea testelor pentru aceasta problema!</em></td></tr></table><p>Gigel are un sir de <var>N</var> numere intregi. Toata lumea stie ca o secventa este un subsir de numere care apar pe pozitii consecutive in sirul initial. Gigel a definit baza unei secvente ca fiind minimul valorilor elementelor din secventa respectiva.</p>
+
+<h2>Cerinta</h2>
+
+<p>Fiind dat un numar natural <var>K</var>, determinati pentru Gigel o secventa de lungime cel putin <var>K</var> cu baza maxima.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>secventa.in</var> contine pe prima linie numerele <var>N</var> si <var>K</var>, separate prin spatiu. Pe cea de a doua linie se afla elementele sirului separate prin cate un spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>secventa.out</var> trebuie sa contina o singura linie cu trei numere: pozitia de inceput si de sfarsit a secventei de lungime cel putin <var>K</var> cu baza maxima si valoarea maxima a bazei.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ K ≤ N ≤ 500 000</var></li>
+<li>Elementele din vector sunt numere intregi din intervalul <var>[-30 000, 30 000]</var></li>
+<li>Daca exista mai multe solutii pentru care se obtine baza maxima, atunci se va alege cea in care pozitia de inceput a secventei este cea mai mica, iar in caz de egalitate cea in care pozitia de sfarsit a secventei este cea mai mica</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>secventa.in</th><th>secventa.out</th></tr><tr><td>8 3<br>
+-1 2 3 1 0 4 8 6<br></td><td>6 8 4</td></tr></table><h3>Explicatii</h3>
+
+<p>Secventa care incepe pe pozitia <var>6</var> si se termina pe pozitia <var>8</var> (de lungime <var>3</var>) este <var>(4, 8, 6)</var> are baza <var>minim(4, 8, 6) = 4</var>. Nu mai exista o secventa cu lungime mai mare sau egala cu <var>3</var> care sa aiba baza mai mare.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=94">Deque</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

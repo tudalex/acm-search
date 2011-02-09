@@ -1,0 +1,51 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>imax.in, imax.out</td><td><strong>Sursă</strong></td><td>Lot Alba 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=125">Dana Lica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=imax">Vezi solutiile trimise</a></p>
+
+<h1>IMax<br></h1>
+
+<p>Sa consideram o matrice binara cu <var>n</var> linii (numerotate de la <var>1</var> la <var>n</var>) si <var>m</var> coloane (numerotate de la <var>1</var> la <var>m</var>). In interiorul acestei matrice se pot distinge unul sau mai multe obiecte de tip <var>"I"</var>.<br>
+Un obiect este considerat a fi de tip <var>"I"</var> daca:</p>
+
+
+<ul><li>este format din trei subtablouri (zone de forma dreptunghiulara din matrice) alaturate pe verticala (sa le numim subtabloul de sus, subtabloul de mijloc si subtabloul de jos);</li>
+<li>cele <var>3</var> subtablouri contin numai valoarea <var>0</var>;</li>
+<li>subtablourile pot fi identificate prin indicii elementelor ce reprezinta coltul stanga-sus, respectiv coltul dreapta-jos (pentru subtabloul de sus (<var>l<sub>1</sub>,c<sub>1</sub></var>) (<var>l<sub>2</sub>,c<sub>2</sub></var>), pentru subtabloul de mijloc (<var>l<sub>3</sub>,c<sub>3</sub></var>) (<var>l<sub>4</sub>,c<sub>4</sub></var>), iar pentru subtabloul de jos (<var>l<sub>5</sub>,c<sub>5</sub></var>) (<var>l<sub>6</sub>,c<sub>6</sub></var>)). Pentru ca obiectul sa respecte forma grafica a literei <var>"I"</var> trebuie sa fie respectate si relatiile urmatoare:
+<ul><li><var>1 ≤ l<sub>1</sub> ≤ l<sub>2</sub> &lt; l<sub>3</sub> ≤ l<sub>4</sub> &lt; l<sub>5</sub> ≤ l<sub>6</sub> ≤ n</var></li>
+<li><var>l<sub>3</sub> = l<sub>2</sub> + 1</var></li>
+<li><var>l<sub>5</sub> = l<sub>4</sub> + 1</var></li>
+<li><var>1 ≤ c<sub>1</sub> &lt; c<sub>3</sub> ≤ c<sub>4</sub> &lt; c<sub>2</sub> ≤ m</var></li>
+<li><var>1 ≤ c<sub>5</sub> &lt; c<sub>3</sub> ≤ c<sub>4</sub> &lt; c<sub>6</sub> ≤ m</var></li>
+</ul></li>
+</ul><table><tr><th>Obiecte de tip "I" corecte</th><th>Obiecte ce nu sunt de tip "I"</th></tr><tr><td><img src="http://infoarena.ro/problema/imax?action=download&amp;file=imax1.gif&amp;safe_only=true" alt=""></td><td><img src="http://infoarena.ro/problema/imax?action=download&amp;file=imax3.gif&amp;safe_only=true" alt=""></td></tr><tr><td><img src="http://infoarena.ro/problema/imax?action=download&amp;file=imax2.gif&amp;safe_only=true" alt=""></td><td><img src="http://infoarena.ro/problema/imax?action=download&amp;file=imax4.gif&amp;safe_only=true" alt=""></td></tr></table><h2>Cerinta</h2>
+
+<p>Sa se determine aria maxima a unui obiect de tip <var>"I"</var>. Aria unui obiect este egala cu numarul de elemente existente in cele <var>3</var> subtablouri ce constituie obiectul.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>imax.in</var> se afla doua numere naturale separate prin spatiu <var>n</var> si <var>m</var>, cu semnificatia din enunt. Pe urmatoarele <var>n</var> linii se afla cate <var>m</var> valori din multimea <var>{0, 1}</var>, separate prin cate un spatiu, reprezentand elementele matricei.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>imax.out</var> va contine o singura linie pe care se va scrie aria maxima a unui obiect <var>"I"</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 150</var></li>
+<li><var>1 ≤ M ≤ 150</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>imax.in</th><th>imax.out</th></tr><tr><td>4 4<br>
+0 0 0 0<br>
+1 0 0 1 <br>
+0 0 0 1<br>
+0 1 1 0<br></td><td>8<br></td></tr></table><h3>Explicatie</h3>
+
+<p><var><strong>0</strong> <strong>0</strong> <strong>0</strong> <strong>0</strong></var><br><var>1 <strong>0</strong> 0 1</var><br><var><strong>0</strong> <strong>0</strong> <strong>0</strong> 1</var><br><var>0 1 1 0</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

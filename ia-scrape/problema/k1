@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>k1.in, k1.out</td><td><strong>Sursă</strong></td><td>Lot Juniori 2009 - Baraj 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=158">Victor Manz</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/CezarMocan"><img src="/utilizator/CezarMocan?action=download&amp;file=avatar&amp;resize=L16x16" alt="CezarMocan">Cezar Mocan</a> <a title="Rating CezarMocan: 892" class="rating-badge-1" href="http://infoarena.ro/utilizator/CezarMocan?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/CezarMocan">CezarMocan</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=k1">Vezi solutiile trimise</a></p>
+
+<h1>K1<br></h1>
+
+<p>Pentru a diminua efectele crizei economice prin creşterea numărului de telespectatori (şi implicit a veniturilor provenite din publicitate), redacţia „Şocuri şi concursuri” a unei televiziuni selecte a decis să organizeze un turneu de lupte <span class="caps">K1.</span> La acesta vor lua parte <var>N</var> sportivi. Fiecare dintre aceştia are un rating, calculat pe baza rezultatelor sale anterioare. Suma de bani pe care o primeşte pentru fiecare luptă la care va lua parte este egală cu acest rating. În urma fiecărei lupte rating-ul învingătorului creşte cu valoarea rating-ului învinsului.</p>
+
+<h2>Cerinta</h2>
+
+<p>Cum televiziunea îşi doreşte un profit cât mai mare, conducătorii acesteia doresc să programeze meciurile astfel încât să plătească luptătorilor o sumă totală cât mai mică. Ştiind că nu există lupte încheiate la egalitate şi că turneul se termină doar după ce a fost stabilit un învingător, stabiliţi care este suma totală minimă pe care o pot plăti organizatorii. Suma totală plătită de televiziune este obţinută prin adunarea sumelor plătite tuturor luptătorilor pe parcursul turneului.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>k1.in</var> conţine pe prima linie o valoare <var>N</var>, reprezentând numărul de luptători invitaţi la turneu, iar pe următoarele <var>N</var> linii se află câte un număr natural nenul <var>x</var><sub>i</sub>, reprezentând rating-ul iniţial al celui de-al <var>i</var>-lea luptător.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>k1.out</var> conţine un singur număr natural <var>s</var>, reprezentând suma totală minimă pe care o poate plăti televiziunea luptătorilor. </p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>0 &lt; N ≤ 1 000 000</var></li>
+<li><var>1 ≤ x<sub>i</sub> ≤ 10 000</var> pentru orice <var>i</var> numar natural cu proprietatea <var>1 ≤ i ≤ N</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>k1.in</th><th>k1.out</th></tr><tr><td>3<br>
+1 <br>
+1 <br>
+1<br></td><td>5</td></tr></table><h3>Explicaţie</h3>
+
+<p>La prima luptă participă <var>2</var> sportivi având fiecare rating-ul <var>1</var>. În ultimul meci se vor întâlni un luptător cu rating-ul <var>2</var> (învingătorul primului meci) şi altul cu rating <var>1</var> (cel care nu a participat la prima luptă). Învingătorul primului meci primeşte în total <var>3</var> (<var>1</var> pentru prima luptă şi <var>2</var> pentru cea de a doua), cel care a pierdut prima luptă şi cel care a participat doar la ultima primesc câte <var>1</var>, deci televiziunea va plăti în total <var>5</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

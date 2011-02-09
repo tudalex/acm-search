@@ -1,0 +1,53 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>trilant.in, trilant.out</td><td><strong>Sursă</strong></td><td>.com 2009, Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=228">Serban Andrei Stan</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/savim"><img src="/utilizator/savim?action=download&amp;file=avatar&amp;resize=L16x16" alt="savim">Serban Andrei Stan</a> <a title="Rating savim: 783" class="rating-badge-1" href="http://infoarena.ro/utilizator/savim?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/savim">savim</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=trilant">Vezi solutiile trimise</a></p>
+
+<h1>Trilant<br></h1>
+
+<p>Într-un graf neorientat <var>G=(V,E)</var> cu costuri pe muchii, definim un lanţ ca fiind o succesiune de noduri <var>S={x<sub>1</sub>,x<sub>2</sub>...x<sub>k</sub>}</var>, cu condiţia să existe muchie între oricare două noduri consecutive, si toate nodurile să fie diferite. Costul unui lanţ este reprezentat de suma costurilor muchiilor alese pentru a uni <var>x<sub>1</sub></var> cu <var>x<sub>2</sub>, x<sub>2</sub> cu x<sub>3</sub> ... x<sub>k-1</sub></var> cu <var>x<sub>k</sub></var>. Vom nota un lanţ <var>(x<sub>1</sub>,x<sub>2</sub>...x<sub>k</sub>)</var> prin primul si ultimul său nod, adică : <var>(x<sub>1</sub>,x<sub>k</sub>)</var>. Definim un trilanţ ca fiind reuniunea a trei lanţuri <var>(A,X),(B,X),(C,X); <span class="caps">A,B,C,X </span>⊆ V</var>, <var>X</var> fiind singurul nod comun celor trei. Costul unui trilanţ este egal cu suma costurilor celor trei lanţuri care îl formează. Vom nota un trilanţ prin <var>(A,B,C)</var>.</p>
+
+<h2>Cerinţa</h2>
+
+<p>Dându-se un graf neorientat <var>G=(V,E)</var> şi trei noduri <var><span class="caps">A,B,C </span>⊆ V</var>, determinaţi costul minim al trilanţului <var>(A,B,C)</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului <var>trilant.in</var> se află două numere <var><span class="caps">N,M</span></var> separate printr-un spaţiu, reprezentând numărul de noduri, respectiv numărul de muchii din graf. Pe a doua linie a fişierului de intrare se vor afla numerele <var><span class="caps">A,B,C</span></var> cu semnificaţia din enunţ. Următoarele <var>M</var> linii vor conţine câte trei numere naturale <var><span class="caps">P,Q,T</span></var> descriind faptul ca există muchie de la nodul <var>P</var> la nodul <var>Q</var> cu costul <var>T</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul <var>trilant.out</var> va conţine pe prima linie costul minim găsit. Fiecare din următoarele trei linii va avea urmatorul format: <var>K</var>, urmat de <var>K</var> numere <var>x<sub>1</sub>,x<sub>2</sub>...x<sub>k</sub></var>, reprezentand unul din cele trei lanţuri ce formeză trilanţul cerut. Cele trei lanţuri vor fi afisate cu nodurile in ordine de la <var>X</var> la <var>A</var>, de la <var>X</var> la <var>B</var> si de la <var>X</var> la <var>C</var>. În cazul în care există mai multe soluţii, se poate afişa oricare.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ A, B, C ≤ N ≤ 100 000</var></li>
+<li><var>1 ≤ M ≤ 250 000</var></li>
+<li><var>1 ≤ costul unei muchii ≤ 4 000 000</var></li>
+<li>Pentru <var>50%</var> din teste <var>N ≤ 1 000</var> </li>
+<li>Lanţurile care formează un trilanţ pot avea lungimi diferite</li>
+<li>Oricare trei lanţuri <var>(A,X),(B,X),(C,X)</var> care formează un trilanţ vor fi disjuncte două cate două, mai puţin nodul <var>X</var> (singurul nod comun pe care îl vor avea va fi <var>X</var>)</li>
+<li>Intotdeauna va exista solutie</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>trilant.in</th><th>trilant.out</th></tr><tr><td>4 3<br>
+1 2 3<br>
+1 4 1<br>
+2 4 1<br>
+3 4 1<br></td><td>3<br>
+2 4 1<br>
+2 4 2<br>
+2 4 3<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=72">Algoritmul lui Dijkstra</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

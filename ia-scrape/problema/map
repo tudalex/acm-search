@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>map.in, map.out</td><td><strong>Sursă</strong></td><td>PACO 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=150">Sorin Stancu-Mara</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=map">Vezi solutiile trimise</a></p>
+
+<h1>Map<br></h1>
+
+
+<p>Max Damage, pentru a nu se pierde in calatoriile sale doreste sa isi faca o harta. Pentru a nu fi citita de oricine, el o codifica sub forma unei matrice cu <var>N</var> linii si <var>M</var> coloane. Pentru ca scrie urat, se duce la un prieten care are un tipar si il roaga sa ii tipareasca harta. Tiparul, fiind mai vechi, este stricat si tipareste harta de doua ori pe aceeasi foaie, dar cu o deplasare (spre dreapta).<br>
+Apare politia si Max fuge cu foaia prost tiparita. Ajuns la ascunzatoare el vede catastrofa: portiunea unde cele doua imprimari s-au suprapus se intampla sa coincida, astfel ca nu isi poate da seama unde se termina una si unde incepe cealalta. El vrea acum un program care, primind o astfel de matrice, sa returneze cea mai mica dimensiune a matricei originale astfel incat, suprapusa de doua ori cu o deplasare corecta spre dreapta, sa se obtina cea finala</p>
+
+<p>Ajutati-l pe Max sa rezolve si aceasta problema zdrobitoare.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie din fisierul <var>map.in</var> va contine numerele <var>M</var> si <var>N</var>, reprezetand dimensiunea matricei. Urmatoarele M linii vor contine cate <var>N</var> litere mici ale alfabetului englez (matricea prost tiparita).</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fiserul <var>map.out</var> va contine pe prima linie o singura valoare, reprezentand dimensiunea orizontala minima a matricei originale.</p>
+
+<h2>Restrictii si observatii</h2>
+
+
+<ul><li><var>1 ≤ N, M ≤ 2000</var></li>
+</ul><h2>Example</h2>
+
+<table class="example" cellspacing="0"><tr><th>map.in</th><th>map.out</th></tr><tr><td>3 5<br>
+  anana<br>
+  arara<br>
+  mamam<br></td><td>3</td></tr></table><h3>Explicatie<br></h3>
+
+<p>Pornind de la matricea de lungime 3<br><var>ana</var><br><var>ara</var> <br><var>mam</var><br>
+suprapusa de doua ori se obtine:<br><var>anana</var><br><var>arara</var><br><var>mamam</var></p>
+
+<table class="example" cellspacing="0"><tr><th>map.in</th><th>map.out</th></tr><tr><td>1 4<br>
+  abcd<br></td><td>4</td></tr></table><h3>Explicatie </h3>
+
+<p>Singura solutie este ca a doua imprimare sa fie perfect suprapusa peste prima. </p>
+
+<table class="example" cellspacing="0"><tr><th>map.in</th><th>map.out</th></tr><tr><td>1 4<br>
+  aaaa<br></td><td>3</td></tr></table><h3>Explicatie</h3>
+
+<p>Daca lungimea ar fi fost mai mica, nu se suprapunea. </p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

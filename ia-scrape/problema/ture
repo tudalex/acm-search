@@ -1,0 +1,35 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ture.in, ture.out</td><td><strong>Sursă</strong></td><td>.campion 2006-2007, Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=153">Adrian Diaconu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ture">Vezi solutiile trimise</a></p>
+
+<h1>Ture<br></h1>
+
+<p>Gigel are o tabla de sah cu <var>N</var> linii si <var>M</var> coloane. El vrea sa aseze pe tabla <var>K</var> ture astfel incat acestea sa nu se atace intre ele ( Spunem ca doua ture se ataca daca ele se afla pe aceeasi linie sau pe aceeasi coloana). Pentru a face lucrurile mai interesante Gigel a marcat anumite casute in care nu poate aseza nici o tura si acum vrea sa stie in cate moduri poate aseza turele.</p>
+
+<h2>Cerinta</h2>
+
+<p>Ajutati-l pe Gigel sa gaseasca numarul de posibilitati in care poate aseza cele <var>K</var> ture.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>ture.in</var> sunt scrise trei numere: <var>N</var>, <var>M</var> si <var>K</var> separate printr-un singur spatiu. Pe a doua linie se afla <var>P</var> numarul de casute marcate de Gigel. Urmeaza apoi <var>P</var> linii cu cate doua numere <var>x</var>, <var>y</var> cu semnificatia ca Gigel a marcat casuta de pe linia <var>x</var> si coloana <var>y</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Prima linie a fisierului <var>ture.out</var> va contine numarul de posibilitati de amplasare a turelor pe tabla de sah.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>0 ≤ N*M ≤ 250</var></li>
+<li><var>0 ≤ K ≤ 100</var></li>
+<li><var>0 ≤ P ≤ N*M</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>ture.in</th><th>ture.out</th></tr><tr><td>3 3 3<br>
+1<br>
+2 2<br></td><td>4<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

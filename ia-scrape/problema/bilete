@@ -1,0 +1,57 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>bilete.in, bilete.out</td><td><strong>Sursă</strong></td><td>Lista lui Francu</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=164">Catalin Francu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=bilete">Vezi solutiile trimise</a></p>
+
+<h1>Bilete<br></h1>
+
+<p>Intr-o mare metropola a unei tari din SE Europei inca se circula fara sa se plateasca biletele... Biletele de autobuz din orasul respectiv au o grila de <var>N x N</var> patratele, dintre care aparatele de taxat composteaza exact <var>K</var> patratele. Biletul poate fi introdus in aparat numai cu un capat (celalalt capat fiind prins in cotor), dar poate fi introdus fie pe fata, fie pe dos. In acest fel, unele din configuratiile posibile de K gauri in grila de <var>N x N</var> sunt oglindiri stanga - dreapta ale altor configuratii. Pentru <var>N = 3</var> si <var>K = 2</var>, biletele de mai jos sunt oglindiri unul pentru celalalt (patratelele negre se considera compostate):</p>
+
+<p><img src="http://infoarena.ro/problema/bilete?action=download&amp;file=bilete.jpg&amp;safe_only=true" alt=""></p>
+
+<p>Un blatist inveterat face colectie de bilete perforate si doreste sa catalogheze toate configuratiile posibile de gauri, ignorand insa oglindirile (pentru ca teoretic reprezinta aceeasi configuratie). In acest scop, el codifica fiecare configuratie printr-un sir de forma <var>l<sub>1</sub>c<sub>1</sub>l<sub>2</sub>c<sub>2</sub>...l<sub>k</sub>c<sub>k</sub></var>, unde (<var>l<sub>i</sub>, c<sub>i</sub></var>) sunt coordonatele gaurii a <var>i</var>-a relativ la coltul din stanga-sus al biletului. Gaurile sunt deci enumerate de la stanga la dreapta si de sus in jos. Daca blatistul intalneste doua configuratii care sunt una oglindirea celeilalte, dintre cele doua el va clasifica numai pe cea care este minim lexicografica. De exemplu, dintre cele doua bilete de mai sus, el il va pastra pe cel cu codul <var>1123</var>, pentru ca, alfabetic, este mai mic.</p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se tipareasca in ordine lexicografica (alfabetica) codurile biletelor pe care le catalogheaza blatistul.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>bilete.in</var> se vor afla doua numere naturale <var>N</var> si <var>K</var>, dimensiunea unui bilet, respectiv numarul de gauri pe care le poate da compostorul din orice autobuz al metropolei. Cele doua numere sunt despartite de exact un spatiu.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>bilete.out</var> va contine toate configuratiile posibile care sunt pastrate de catre blatist, ordonate alfabetic.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 9</var></li>
+<li><var>1 ≤ K ≤ 3</var></li>
+<li>Orice tentativa de a nu plati bilet se sanctioneaza cu amenda</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>bilete.in</th><th>bilete.out</th></tr><tr><td>3 2<br></td><td>1112<br>
+1113<br>
+1121<br>
+1122<br>
+1123<br>
+1131<br>
+1132<br>
+1133<br>
+1221<br>
+1222<br>
+1231<br>
+1232<br>
+2122<br>
+2123<br>
+2131<br>
+2132<br>
+2133<br>
+2231<br>
+2232<br>
+3132<br>
+3133</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

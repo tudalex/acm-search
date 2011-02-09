@@ -1,0 +1,52 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>plus.in, plus.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2007, clasele 9-10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=119">Silviu-Ionut Ganceanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/silviug"><img src="/utilizator/silviug?action=download&amp;file=avatar&amp;resize=L16x16" alt="silviug">Silviu-Ionut Ganceanu</a> <a title="Rating silviug: 624" class="rating-badge-4" href="http://infoarena.ro/utilizator/silviug?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/silviug">silviug</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=plus">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=plus">Vezi solutiile trimise</a></p>
+
+<h1>Plus<br></h1>
+
+<p>De data aceasta Algorel are de a face numai cu trei tipuri de bile cu care trebuie sa impodobeasca bradul. Normal, si acum Algorel stie cate bile are din fiecare tip: <var>NrBile<sub>1</sub>, NrBile<sub>2</sub>, NrBile<sub>3</sub></var>. Toate bilele de tipul <var>i</var> au inscrise pe ele acelasi numar intreg <var>Numar<sub>i</sub></var>. Pentru amuzamentul lui, Algorel a decis sa impodobeasca bradul astfel incat suma numerelor inscrise pe bilele agatate in pom sa fie exact <var>S</var>. Pentru ca poate gasi destul de rapid un astfel de aranjament si pentru ca nu are ce face pana vine Mosul, el s-a decis sa numere cate astfel de aranjamente exista. Doua aranajemente se considera identice daca folosesc exact acelasi numar de bile din fiecare tip.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>plus.in</var> contine pe prima linie un numar intreg <var>S</var> reprezentand suma numerelor inscrise pe bile dintr-un aranjament valid. Urmatoarele 3 linii descriu tipurile de bile: linia <var>i+1</var> contine doua numere intregi separate printr-un spatiu, <var>NrBile<sub>i</sub></var> si <var>Numar<sub>i</sub></var>, cu semnificatia de mai sus.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>plus.out</var> va contine un singur numar intreg reprezentand numarul de aranjamente distincte.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>-1 ≤ Numar<sub>i</sub> ≤ 1</var></li>
+<li><var>0 ≤ S, NrBile<sub>i</sub> ≤ 100000</var></li>
+<li>Pentru 40% din teste <var>0 ≤ S, NrBile<sub>i</sub> ≤ 300</var></li>
+<li>Pentru <strong>inca</strong> 30% din teste <var>0 ≤ S, NrBile<sub>i</sub> ≤ 5000</var></li>
+<li>Algorel va recomanda sa folositi numere intregi pe 64 de biti</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>plus.in</th><th>plus.out</th></tr><tr><td>1<br>
+1 0<br>
+1 -1<br>
+2 1<br></td><td>4<br></td></tr><tr><td>0<br>
+1 -1<br>
+2 -1<br>
+3 -1<br></td><td>1<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Aranjamentele posibile pentru primul test sunt urmatoarele (fiecare aranjament este specificat prin numarul de bile folosite din fiecare tip):</p>
+
+
+<ul><li>aranjament <var>1: 0, 0, 1</var></li>
+<li>aranjament <var>2: 1, 0, 1</var></li>
+<li>aranjament <var>3: 0, 1, 2</var></li>
+<li>aranjament <var>4: 1, 1, 2</var></li>
+</ul><p>Ultimul aranjament respecta regula deoarece <var>1*0 + 1*-1 + 2*1 = 1</var>.</p>
+
+<p>Pentru cel de-al doilea test exista un singur arajament cu suma <var>0</var>: cel in care nu punem nicio bila in pom.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

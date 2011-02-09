@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>conserve.in, conserve.out</td><td><strong>Sursă</strong></td><td>Lista lui Francu</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=163">Cristian Cadar</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/cos_min"><img src="/utilizator/cos_min?action=download&amp;file=avatar&amp;resize=L16x16" alt="cos_min">Bondane Cosmin</a> <a title="Rating cos_min: 528" class="rating-badge-2" href="http://infoarena.ro/utilizator/cos_min?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/cos_min">cos_min</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>18000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=conserve">Vezi solutiile trimise</a></p>
+
+<h1>Conserve<br></h1>
+
+<p>Farfurel doreste sa organizeze o excursie la munte. Pentru excursie, el invita <var>N</var> persoane. Stiind ca vor exista conflicte in ceea ce priveste transportul conservelor, Farfurel doreste sa imparta echitabil cele <var>P</var> conserve cumparate celor <var>N</var> participanti si totodata sa obtina o cantita maxima. Printr-o impartire echitabila se intelege selectarea unui subset de conserve astfel incat greutatea totala sa poata fi impartita celor <var>N</var> participanti in mod egal si greutatea transportata de fiecare sa fie numar intreg.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie se gaseste <var>N</var> si <var>P</var>, numarul de persoane invitate de Farfurel si numarul de conserve cumparate. Pe linia <var>i</var>, a urmatoarelor <var>P</var> linii, se afla un numar natural reprezentand greutatea conservei <var>i</var>. </p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie se va afla suma maxima ceruta. Pe linia a doua numarul de conserve necesare formarii acestei sume, iar pe linia a treia conservele folosite.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>3</var> ≤ <var>N</var>, <var>P</var> ≤ <var>4.096</var></li>
+<li>Daca exista mai multe solutii in ceea ce priveste alegerea conservelor, se va afisa oricare.</li>
+<li>Pentru afisarea sumei corecte se acorda <var>40</var>% din punctajul unui test.</li>
+<li>Greutatea unei conserve nu va depasi <var>500.000</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>conserve.in</th><th>conserve.out</th></tr><tr><td>6 7<br>
+   178<br>
+   25<br>
+   123<br>
+   34<br>
+   56<br>
+   79<br>
+   100<br></td><td>570 <br>
+   6<br>
+   1 3 4 5 6 7<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

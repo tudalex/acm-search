@@ -1,0 +1,60 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>horse.in, horse.out</td><td><strong>Sursă</strong></td><td>Lot Juniori 2009 - Baraj 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=221">Zoltan Szabo</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/GavrilaVlad"><img src="/utilizator/GavrilaVlad?action=download&amp;file=avatar&amp;resize=L16x16" alt="GavrilaVlad">Gavrila Vlad</a> <a title="Rating GavrilaVlad: 973" class="rating-badge-1" href="http://infoarena.ro/utilizator/GavrilaVlad?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/GavrilaVlad">GavrilaVlad</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=horse">Vezi solutiile trimise</a></p>
+
+<h1>Horse<br></h1>
+
+<p>Se consideră o tablă de şah cu n linii şi n coloane, unde <var>n = 4k + 1</var>. Liniile acestei table sunt numerotate de sus în jos începând cu linia <var>1</var>, iar coloanele sunt numerotate de la stânga la dreapta începând cu <var>1</var>. În fiecare dintre câmpurile acestei table se scrie câte un număr natural din mulţimea <var>{1, 2, …, n<sup>2</sup>}</var> după următoarele reguli: <br>
+a) se porneşte din colţul aflat în poziţia stânga sus al tablei şi se avansează utilizând săritura calului<br>
+b) se merge orizontal către dreapta şi în continuare, pe chenarul format din primele două linii, primele două coloane, ultimele două linii şi ultimele două coloane, în sensul acelor de ceasornic;<br>
+c) se efectuează mai multe tururi ale tablei, până ce se umple întregul chenar, fără să se sară de două ori în aceeaşi căsuţă, fără să se sară în afara acestui chenar şi fără să rămână vreun câmp liber;<br>
+d) din poziţia finală în care s-a ajuns, trebuie să fie posibilă săritura în colţul din stânga sus al pătratului rămas neacoperit;<br>
+e) se continuă deplasarea în interiorul pătratului rămas neacoperit, folosind regulile a), b), c), d) până ce se ajunge la pătratul interior de latură <var>1</var> care va conţine valoarea <var>n<sup>2</sup></var>.						<br><br>
+Amintim că o săritură a calului constă într-o deplasare de două căsuţe pe orizontală urmată de o deplasare de o căsuţă pe verticală sau într-o deplasare de două căsuţe pe verticală urmată de o deplasare de o căsuţă pe orizontală. Calul din figura următoare poate ajunge printr-o săritură în oricare dintre cele <var>8</var> poziţii haşurate:</p>
+
+<p><img src="http://infoarena.ro/problema/horse?action=download&amp;file=mutari.bmp&amp;safe_only=true" alt=""></p>
+
+<p>De exemplu, pentru <var>n=5</var>, după un tur al tablei, se obţine următoarea acoperire parţială:</p>
+
+<p><img src="http://infoarena.ro/problema/horse?action=download&amp;file=part1.bmp&amp;safe_only=true" alt=""></p>
+
+<p>Iar după al doilea tur, se obţine acoperirea parţială:</p>
+
+<p><img src="http://infoarena.ro/problema/horse?action=download&amp;file=part2.bmp&amp;safe_only=true" alt=""></p>
+
+<p>Pentru <var>n=9</var>, acoperirea se realizează astfel:</p>
+
+<p><img src="http://infoarena.ro/problema/horse?action=download&amp;file=comp.bmp&amp;safe_only=true" alt=""></p>
+
+<h2>Cerinţă</h2>
+
+<p>Cunoscând valoarea lui <var>n</var> ce reprezintă dimensiunea tablei şi un număr <var>p</var>, să se determine linia şi coloana căsuţei din tabelă unde este scris numărul <var>p</var>, după regulile de mai sus.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul <var>horse.in</var> conţine două numere:</p>
+
+
+<ul><li><var>n</var> – numărul liniilor şi coloanelor tablei, pe prima linie;</li>
+<li><var>p</var> – numărul dintr-o căsuţă a tablei, pe a doua linie.</li>
+</ul><h2>Date de ieşire</h2>
+
+<p>Fişierul <var>horse.out</var> va conţine două numere: linia şi respectiv coloana căsuţei unde este scris numărul <var>p</var>, cu un spaţiu între ele. </p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>4 &lt; n &lt; 46340</var></li>
+<li><var>n = 4k + 1</var></li>
+<li><var>1 ≤ p ≤ n<sup>2</sup></var></li>
+<li>Pentru <var>50%</var> dintre teste <var>n ≤ 1000</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>horse.in</th><th>horse.out</th><th>Explicatie</th></tr><tr><td>5<br>
+24<br></td><td>2 1<br></td><td>Pe o tablă 5×5 numărul 24 va ajunge pe linia 2 şi coloana 1.<br></td></tr><tr><td>9<br>
+36<br></td><td>8 9<br></td><td>Pe o tablă 9×9 numărul 36 va ajunge pe linia 8 şi coloana 9.<br></td></tr><tr><td>41<br>
+1000<br></td><td>14 7<br></td><td>Pe o tablă 41×41 numărul 1000 va ajunge pe linia 14 şi coloana 7.<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

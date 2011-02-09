@@ -1,0 +1,71 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>boom.in, boom.out</td><td><strong>Sursă</strong></td><td>Concurs de incalzire 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=119">Silviu-Ionut Ganceanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=boom">Vezi solutiile trimise</a></p>
+
+<h1>Boom<br></h1>
+
+<p>Va las sa ghiciti cine este protagonistul acestei probleme. Nu este foarte greu de imaginat ca numele lui va fi tot Petrica. Ce face el de data aceasta este ceva cu totul aparte: se joaca cu sobolanul cel ghidus. Acesta din urma este localizat intr-o galerie subterana care se prezinta ca o succesiune de <var>N</var> camere dispuse in linie si care sunt numerotate de la <var>1</var> la <var>N</var> in ordinea parcurgerii lor de la un capat la celalalt. Petrica nu stie unde este localizat sobolanul dar vrea cu orice pret sa-l rada de pe fata pamantului. Astfel, el poate detona bombe otravitoare in unele din camerele galeriei (uneori chiar in mai multe simultan) pentru a omori sobolanul. Daca acesta este intr-una din camerele gazate moare pe loc, daca nu camera nu pateste nimic si sobolanul poate circula prin ea imediat dupa detonarea bombei. Lucrurile stau in felul urmator: cei doi inamici joaca in mod cinstit astfel ca dupa ce Petrica detoneaza un set bombe care vor exploda simultan, sobolanul, daca nu a murit, se va muta intr-una din camerele vecine celei in care se afla (camerele de la capete au o singura camera vecina). Petrica a alcatuit un plan de atac compus din <var>M</var> sarje. Pentru fiecare sarja se cunosc pretul realizarii ei si camerele gazate daca ea este pusa in practica. La fiecare pas Petrica va alege doar una din cele <var>M</var> sarje pentru a gaza anumite camere.</p>
+
+<h2>Cerinta</h2>
+
+<p>Ajutati-l pe Petrica sa gaseasca o strategie de cost minim in urma careia sobolanul va fi omorat indiferent de pozitia initiala a acestuia.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie in fisierul de intrare <var>boom.in</var> se afla doua numere intregi separate de un singur spatiu <var>N</var> si <var>M</var>, reprezentand numarul de camere ale galeriei si numarul de sarje. Pe urmatoarele <var>M</var> linii sunt date informatiile cu privire la fiecare sarja (ele sunt numerotate de la <var>1</var> la <var>M</var> in ordinea in care se gasesc in fisierul de intrare). Astfel, pe fiecare linie sunt doi intregi <var>P</var> si <var>Q</var>, reprezentand pretul si numarul de camere gazete in sarja. Urmeaza <var>Q</var> numere (<var>Q</var> nu este mai mare decat <var>4</var>) reprezentand camerele gazate.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Pe prima linie din fisierul de iesire <var>boom.out</var> se va gasi un numar intreg reprezentand costul minim al unei strategii in urma careia sobolanul va fi mort. Pe urmatoarele linie se afla un numar <var>T</var> reprezentand numarul de sarje care il va omori in mod sigur. Urmatoarele <var>T</var> linii contin numerele sarjelor utilizate de Petrica (aceasta sunt date in ordinea in care au fost utilizate).</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 20</var></li>
+<li><var>1 ≤ M ≤ 50</var></li>
+<li>Sobolanul nu poate sta pe loc</li>
+<li>Daca exista mai multe solutii cu acelasi cost minim se poate afisa oricare dintre ele</li>
+<li>O sarja poate fi folosita de mai multe ori</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>boom.in</th><th>boom.out</th></tr><tr><td>3 2<br>
+1 2 1 3<br>
+2 1 2<br></td><td>2<br>
+2<br>
+1<br>
+1</td></tr></table><h3>Explicatii</h3>
+
+<p>Petrica detoneaza foloseste de doua ori sarja 1. Oriunde s-ar afla sobolanul acesta va muri: daca este in camera 1 sau 3 va muri dupa prima gazare daca se afla in a doua camera va fi obligat sa se mute intr-un din camerele 1 si 3 la urmatorul pas, fiind astfel prins de cea dea doua gazare. Costul total este 2 cel mai mic posibil.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 3 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=45">Diverse</a></span>
+            <a href="javascript:show_tag_list(45)" id="tag_anchor_45" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_45"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=73">Operatii pe biti</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=72">Algoritmul lui Dijkstra</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=59">Dinamica pe stari exponentiale</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

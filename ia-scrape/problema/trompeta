@@ -1,0 +1,34 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>trompeta.in, trompeta.out</td><td><strong>Sursă</strong></td><td>Autumn Warmup 2007, Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=165">Din Folclor</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/pauldb"><img src="/utilizator/pauldb?action=download&amp;file=avatar&amp;resize=L16x16" alt="pauldb">Paul-Dan Baltescu</a> <a title="Rating pauldb: 792" class="rating-badge-4" href="http://infoarena.ro/utilizator/pauldb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/pauldb">pauldb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=trompeta">Vezi solutiile trimise</a></p>
+
+<h1>Trompeta<br></h1>
+
+<p>Taranul Victor plictisit sa asculte atata rock si-a gasit o noua pasiune: jazz-ul. Astfel, el s-a tuns, s-a vopsit negru, iar apoi si-a procurat o trompeta. Pentru a-si demonstra calitatile muzicale, el s-a hotarat sa tina un concert live. Din pacate, alte activitati i-au consumat o parte din timpul pentru exersat si acum nu mai este capabil sa cante intreg concertul. Mai exact, din cele <var>N</var> note initiale, el mai poate canta <var>M</var>, deoarece apoi oboseste si incepe sa falseze. Fiecare nota este reprezentata de o valoare din intervalul <var>[0..9]</var> care indica gradul de placere pe care il produce publicului daca este cantata. Placerea totala a unui concert este egala cu alipirea notelor cantate privite ca un numar in baza <var>10</var>. Taranul Victor s-a gandit ca ar fi bine sa aleaga notele astfel incat concertul sa fie cat mai pe placul publicului, pentru a parea ca se descurca mai bine decat in realitate.</p>
+
+<h2>Cerinta</h2>
+
+<p>Fiind date cele <var>N</var> note initiale, gasiti concertul visat de taran.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>trompeta.in</var> se gasesc numerele <var>N</var> si <var>M</var>. Pe urmatoarea linie sunt date valorile corespunzatoare celor <var>N</var> note.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului <var>trompeta.out</var> se afla <var>M</var> cifre, reprezentand concertul care va fi cantat.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1000000</var></li>
+<li><var>1 ≤ M ≤ N</var></li>
+<li>Notele din concertul ales trebuie sa fie in ordinea initiala, pentru ca nu strica armonia concertului.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>trompeta.in</th><th>trompeta.out</th></tr><tr><td>5 4<br>
+19990<br></td><td>9990<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

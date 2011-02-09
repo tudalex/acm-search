@@ -1,0 +1,56 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>sirag2.in, sirag2.out</td><td><strong>Sursă</strong></td><td>ONI 2009, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=240">Catalin-Stefan Tiseanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Mishu91"><img src="/utilizator/Mishu91?action=download&amp;file=avatar&amp;resize=L16x16" alt="Mishu91">Andrei Misarca</a> <a title="Rating Mishu91: 662" class="rating-badge-1" href="http://infoarena.ro/utilizator/Mishu91?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Mishu91">Mishu91</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=sirag2">Vezi solutiile trimise</a></p>
+
+<h1>Sirag 2<br></h1>
+
+<p>În căutarea visului său de preamărire, Lunasorab a dat peste un şirag de perle de lungime <var>N</var>, de diferite tipuri, reprezentate printr-o literă mică a alfabetului latin. Dintre acestea, perlele marcate cu <var>*</var> sunt considerate magice. Ele se pot transforma (şi trebuie transformate) într-o perlă de orice tip nemagic. Acum Lunasorab a primit un număr natural <var>L</var>, şi ştie că dacă poate găsi o subsecvenţă de lungime cat mai mare în şiragul iniţial, formată din concatenarea repetată a unei subsecvenţe de lungime <var>L</var> a şiragului cu ea însăşi, o poate vinde pe piaţa neagră contra unei sume considerabile (Lunasorab nu se sfieşte în a folosi metode neconvenţionale pentru a-şi atinge scopurile). </p>
+
+<p>Deoarece Lunasorab nu stă prea bine la capitolul stiinţe exacte (are alte talente), vă cere vouă ajutorul. De asemenea, fiind mai neîncrezator din fire, Lunasorab vă cere răspunsul pentru mai multe şiraguri.</p>
+
+<p>Pentru fiecare şirag din fişierul de intrare, aflaţi cea mai lungă subsecvenţă a şiragului, care se poate obţine prin concatenarea unei subsecvenţe de lungime <var>L</var>.</p>
+
+
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>sirag2.in</var> va conţine pe prima linie numărul natural <var>T</var>, reprezentând numărul de teste.<br>
+Pe următoarele <var>2*T</var> linii vor urma cele <var>T</var> teste, formatate după cum urmează: pe prima linie corespunzătoare unui test vor fi numerele naturale <var>N</var> şi <var>L</var>, separate printr-un singur spatiu, reprezentând lungimea şiragului, respectiv lungimea subsecvenţei folosite în repetiţie. Pe a doua linie se vor afla <var>N</var> caractere, reprezentând tipul celor <var>N</var> perle.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>sirag2.out</var> va avea <var>T</var> linii, fiecare linie continând un număr natural <var>M</var>, ce reprezintă lungimea celei mai lungi subsecvenţe cu proprietatea menţionată pentru testul respectiv.</p>
+
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 10</var></li>
+<li><var>1 ≤ N ≤ 100.000</var></li>
+<li><var>1 ≤ L ≤ N</var></li>
+<li>Tipurile perlelor vor fi reprezentate ori printr-o literă mică a alfabetului latin, ori prin caracterul <var>*</var> pentru perle magice</li>
+<li>Pentru <var>10%</var> din teste <var>L = 1</var></li>
+<li>Pentru <var>30%</var> din teste <var>N ≤ 2000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>sirag2.in</th><th>sirag2.out</th></tr><tr><td>1<br>
+6 3<br>
+a*cab*<br></td><td>6<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Şirul se poate transforma în <var>abcabc</var>, înlocuind prima perlă magică cu <var>b</var>, iar a doua cu <var>c</var>. Atunci secvenţa <var>abc</var> se repetă de <var>2</var> ori, si deci se poate obţine o subsecvenţă de lungime <var>6</var> (tot şiragul) cu proprietatea menţionată.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=94">Deque</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

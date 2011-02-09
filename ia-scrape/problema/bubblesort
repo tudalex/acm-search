@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>bubblesort.in, bubblesort.out</td><td><strong>Sursă</strong></td><td>Lot Alba Iulia 2010, Baraj 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mathboy"><img src="/utilizator/mathboy?action=download&amp;file=avatar&amp;resize=L16x16" alt="mathboy">Dragos-Alin Rotaru</a> <a title="Rating mathboy: 510" class="rating-badge-3" href="http://infoarena.ro/utilizator/mathboy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mathboy">mathboy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=bubblesort">Vezi solutiile trimise</a></p>
+
+<h1>Bubblesort<br></h1>
+
+Miruna a învăţat recent la ora de informatică algoritmul <var>bubble sort</var>. Mai jos puteţi vedea codul algoritmului în limbajul <var>C++</var>:<br><div class="code"><textarea class="brush: cpp;" cols="60" rows="10">
+int steps = 0;
+while (true) {
+    ++steps;
+    bool isSorted = true;
+    for (int i = 1; i &lt; n; ++i)
+        if (v[i] &gt; v[i + 1]) {
+             swap(v[i], v[i + 1]);
+             isSorted = false;
+        }
+    if (isSorted) break;
+};
+</textarea></div>
+<br>
+Miruna defineşte ordinul unei permutări ca fiind egal cu numărul de paşi necesari algoritmului pentru a sorta permutarea (adică valoarea variabilei <var>steps</var> în codul de mai sus la sfârşitul execuţiei).
+
+<h2>Cerinţă</h2>
+
+<p>Dându-se trei numere naturale <var>N</var>, <var>M</var> şi <var>K</var> aflaţi care este cea de a <var>K</var>-a permutare în ordine lexicografică de lungime <var>N</var> şi ordin <var>M</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare <var>bubblesort.in</var> se vor afla trei numere naturale <var>N</var>, <var>M</var> şi <var>K</var>, având semnificaţia de mai sus.</p>
+
+
+<h2>Date de ieşire</h2>
+
+<p>Pe prima linie a fişierului de ieşire <var>bubblesort.out</var> veţi afişa N numere naturale despărţite prin spaţiu reprezentând permutarea cerută.</p>
+
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 300</var></li>
+<li><var>1 ≤ M ≤ N</var></li>
+<li>Se garantează existenţa soluţiei pe datele de test.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>bubblesort.in</th><th>bubblesort.out</th></tr><tr><td>7 4 123<br></td><td>1 5 3 6 2 4 7<br></td></tr><tr class="example"><td>20 5 1097525229548<br></td><td>2 7 1 3 4 6 5 10 13 11 9 8 15 12 19 17 16 14 20 18<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

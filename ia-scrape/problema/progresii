@@ -1,0 +1,46 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>progresii.in, progresii.out</td><td><strong>Sursă</strong></td><td>preONI 2008, Runda finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=161">Adrian Airinei</a>, <a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=progresii">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=progresii">Vezi solutiile trimise</a></p>
+
+<h1>Progresii<br></h1>
+
+<p>La o competitie sportivo-matematica denumita sugestiv "Progresii pentru toti" participa <var>N</var> concurenti. Pista pe care alearga acestia este dreapta si are lungimea de <var>L</var> metri. Pentru fiecare concurent <var>i</var> se cunoaste pozitia <var>P<sub>i</sub></var> de la care isi incepe alergarea, relativ cu capatul de start al pistei. Fiecare alergator poate alerga cu o viteza constanta intre <var>1</var> metru/secunda si <var>M</var> metri/secunda. Astfel, daca alergatorul <var>i</var> alearga cu <var>v<sub>i</sub></var> metri/secunda, la secunda <var>j</var> el se va afla la pozitia <var>P<sub>i</sub> + v<sub>i</sub> * j</var>. Deoarece caldura din ziua competitiei este inabusitoare, fiecare concurent bea un decilitru de suc energizant la fiecare secunda alergata pe pista.<br>
+Pentru ca este o competitie in scopuri caritabile, organizatorii doresc sa stranga un profit cat mai mare. De aceea ei doresc sa stabileasca pentru fiecare alergator viteza cu care trebuie sa alerge astfel incat cantitatea de suc energizant care este bauta in total de cei <var>N</var> alergatori sa nu depaseasca valoarea de <var>K</var> decilitri. Daca exista mai multe solutii se va afisa cea minim lexicografica.</p>
+
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>progresii.in</var> contine pe prima linie, separate printr-un spatiu, numerele naturale <var>N</var>, <var>M</var>, <var>K</var> si <var>L</var>, avand semnificatia din enunt. Fiecare din urmatoarele <var>N</var> linii contine cate un numar natural. Astfel, pe linia <var>i+1</var> se va afla <var>P<sub>i</sub></var>, pozitia de start a alergatorului cu numarul <var>i</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>progresii.out</var> va contine <var>N</var> linii. Pe a <var>i</var>-a dintre aceste linii va fi scris numarul natural <var>v<sub>i</sub></var>, viteza cu care alearga concurentul cu numarul <var>i</var> din fisierul de intrare. Daca nu exista solutie, fisierul de iesire va contine o singura linie pe care se va afla doar numarul <var>-1</var>. Daca exista mai multe solutii se va afisa cea minim lexicografica.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100 000</var></li>
+<li><var>1 ≤ M, P<sub>i</sub> ≤ 2 000 000 000</var></li>
+<li><var>1 ≤ K, L ≤ 2<sup>60</sup></var></li>
+<li>Pot exista doi alergatori cu aceeasi pozitie de start</li>
+<li>Pozitiile de start si vitezele cu care alearga participantii la competitie sunt numere naturale</li>
+<li>Un sir de viteze <var>(X<sub>1</sub>,X<sub>2</sub>...X<sub>N</sub>)</var> este mai mic din punct de vedere lexicografic decat un alt sir <var>(Y<sub>1</sub>,Y<sub>2</sub>...Y<sub>N</sub>)</var> daca exista o pozitie <var>p</var> astfel incat <var>X<sub>p</sub> &lt; Y<sub>p</sub></var> si <var>X<sub>1</sub> = Y<sub>1</sub></var>, <var>X<sub>2</sub> = Y<sub>2</sub></var> ... <var>X<sub>p-1</sub> = Y<sub>p-1</sub></var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>progresii.in</th><th>progresii.out</th></tr><tr><td>3 3 8 4<br>
+  1<br>
+  2<br>
+  3<br></td><td>1<br>
+  1<br>
+  2<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Sunt <var>3</var> alergatori care pot bea cel mult <var>8</var> decilitri de suc. Viteza unui alergator poate fi de maxim <var>3</var> metri/secunda, iar pista masoara <var>4</var> metri lungime. Primii doi concurenti vor alerga cu <var>1</var> metru pe secunda, in timp ce ultimul va alerga cu <var>2</var> metri/secunda. Primul concurent va bea un decilitru de suc in dreptul pozitiilor <var>1</var>, <var>2</var>, <var>3</var> si <var>4</var>, dupa care isi termina cursa. Concurentul al doilea va bea cate un decilitru in dreptul pozitiilor <var>2</var>, <var>3</var> si <var>4</var>. Ultimul concurent va bea un singur decilitru de suc in dreptul pozitiei <var>3</var>, la momentul 0, deoarece in secunda urmatoare el va termina cursa (se va afla la distanta <var>5</var> de capatul din stanga al pistei, care are lungimea <var>4</var>). In total s-au baut 8 decilitri de suc.<br>
+O alta solutie ar fi fost (<var>1, 1, 3</var>), dar aceasta este mai mare din punct de vedere lexicografic.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,57 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cub.in, cub.out</td><td><strong>Sursă</strong></td><td>ONI 2006, clasa 10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=188">Alin Burta</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/marcelcodrea"><img src="/utilizator/marcelcodrea?action=download&amp;file=avatar&amp;resize=L16x16" alt="marcelcodrea">Codrea Marcel</a> <a title="Rating marcelcodrea: 492" class="rating-badge-3" href="http://infoarena.ro/utilizator/marcelcodrea?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/marcelcodrea">marcelcodrea</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cub">Vezi solutiile trimise</a></p>
+
+<h1>Cub<br></h1>
+
+
+<p>Statia de cercetari astronomice <span class="caps">ONI</span>-2006 are forma unui cub cu latura de lungime <var>N</var> unitati. Fiecare dintre cele <var>6</var> fete ale statiei este impartita in <var>N x N</var> patrate cu latura unitate. Cosmonautii insarcinati cu intretinerea statiei se pot deplasa pe suprafata cubului, folosind sine speciale plasate in unele dintre patratelele unitate, pentru a efectua diverse reparatii. Unele patrate unitate, dintre cele prevazute cu sine, contin trape de intrare in interiorul statiei. <br>
+Din cauza radiatiilor cosmice nocive, cosmonautii trebuie sa petreaca un timp cat mai scurt in exteriorul statiei astfel incat, dupa terminarea unei reparatii, acestia trebuie sa se reintoarca in interiorul statiei utilizand cea mai apropiata trapa de acces. Cosmonautul se afla initial intr-un patratel prevazut cu sine. El se poate deplasa dintr-un patratel ce contine sine, in altul, aflat in vecinatatea pozitiei curente (pe orizontala sau verticala), patratel prevazut de asemenea cu sine. Cosmonautul se poate deplasa si de pe o fata a cubului pe o fata vecina, traversand latura comuna.<br>
+Fetele cubului sunt descrise conform figurii de mai jos.</p>
+
+<p><img src="http://infoarena.ro/problema/cub?action=download&amp;file=cubr.bmp&amp;safe_only=true" alt=""><br>
+Fata 1: <var><span class="caps">ABCD</span></var> - elementul <var>(1,1)</var> in <var>A</var> si elementul <var>(N,N)</var> in <var>C</var><br>
+Fata 2: <var><span class="caps">DCC'D'</span></var>- elementul <var>(1,1)</var> in <var>D</var> si elementul <var>(N,N)</var> in <var>C'</var><br>
+Fata 3: <var><span class="caps">B'A'D'C'</span></var>- elementul <var>(1,1)</var> in <var>B'</var> si elementul <var>(N,N)</var> in <var>D'</var><br>
+Fata 4: <var><span class="caps">BAA'B'</span></var>- elementul <var>(1,1)</var> in <var>B</var> si elementul <var>(N,N)</var> in <var>A'</var><br>
+Fata 5: <var><span class="caps">CBB'C'</span></var>- elementul <var>(1,1)</var> in <var>C</var> si elementul <var>(N,N)</var> in <var>B'</var><br>
+Fata 6: <var><span class="caps">ADD'A'</span></var>- elementul <var>(1,1)</var> in <var>A</var> si elementul <var>(N,N)</var> in <var>D'</var></p>
+
+
+<p>Scrieti un program care sa determine distanta minima de la pozitia initiala a cosmonautului pana la o trapa de acces, precum si numarul trapelor aflate la distanta minima.</p>
+
+
+<h2>Date de intrare</h2>
+
+<p>Datele de intrare se citesc din fisierul <var>cub.in</var>, care are urmatoarea structura:<br>
+Pe prima linie se afla doua numere naturale <var>N</var> si <var>K</var>, separate printr-un spatiu, reprezentand lungimea laturii cubului, respectiv numarul trapelor de acces.<br>
+Pe a doua linie avem numerele naturale <var>F</var>, <var>L</var>, <var>C</var>, separate prin spatiu, desemnand patratul unitate pe care se afla initial cosmonautul, unde <var>F</var> ∈ <var>{1,2,3,4,5,6}</var> reprezinta numarul unei fete a cubului, iar <var>L</var> si <var>C</var> reprezinta coordonatele pozitiei initiale a cosmonautului, relative la coltul <var>(1,1)</var> al fetei cu numarul <var>F</var> ( <var>L</var> - numarul liniei, <var>C</var> - numarul coloanei) <br>
+Pe urmatoarele <var>K</var> linii se afla cate <var>3</var> numere naturale, separate prin spatiu, reprezentand coordonatele celor <var>K</var> trape de acces (numarul fetei, numarul liniei, respectiv numarul coloanei).<br>
+Pe urmatoarele <var>6N</var> linii se afla cele <var>6</var> matrice patratice care descriu fetele cubului, avand elemente din multimea <var>{0, 1}</var> ( <var>0</var> - sina de acces, <var>1</var>- patrat inaccesibil). Elementele unei fete sunt date pe linii, de la <var>(1,1)</var> pana la <var>(N,N)</var>.</p>
+
+
+<h2>Date de iesire</h2>
+
+<p>Rezultatele se scriu in fisierul <var>cub.out</var>, care are urmatoarea structura:<br>
+Pe prima linie se va scrie numarul natural <var>LG</var>, reprezentand lungimea drumului minim parcurs de cosmonaut. Lungimea drumului este data de numarul patratelor unitate parcurse, inclusiv pozitia initiala si pozitia finala. Pe a doua linie se va afisa numarul natural <var>T</var>, reprezentand numarul trapelor de acces aflate la distanta minima fata de pozitia initiala a cosmonautului. </p>
+
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 50</var></li>
+<li><var>1 ≤ F ≤ 6</var></li>
+<li><var>1 ≤ <span class="caps">L,C </span>≤ N</var></li>
+<li>Cosmonautul se afla initial intr-o pozitie accesibila (prevazuta cu sina).</li>
+<li>Exista cel putin o trapa accesibila din pozitia initiala a cosmonautului.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>cub.in</th><th>cub.out</th></tr><tr><td><var>3 2</var><br><var>2 2 3</var><br><var>5 2 2</var><br><var>3 2 2</var><br><var>1 1 1</var><br><var>1 0 0</var><br><var>1 0 1</var><br><var>0 0 1</var><br><var>0 1 0</var><br><var>0 0 0</var><br><var>1 1 1</var><br><var>1 0 1</var><br><var>1 1 1</var><br><var>1 1 1</var><br><var>1 1 1</var><br><var>1 1 1</var><br><var>1 0 1</var><br><var>1 0 1</var><br><var>1 1 1</var><br><var>1 1 1</var><br><var>1 1 1</var><br><var>1 1 1</var><br></td><td><var>12</var><br><var>1</var><br></td></tr></table><h3>Explicatie</h3>
+
+<p>Traseul ilustrat are costul minim <var>12</var> si uneste elementul <var>(2,3)</var> de pe fata <var>2</var> cu elementul <var>(2,2)</var> de pe fata <var>5</var>. Cealalta trapa de acces se afla pe fata <var>3</var>, intr-o pozitie inaccesibila, deci numarul trapelor aflate la distanta minima fata de pozitia de start este <var>1</var>. <br><img src="http://infoarena.ro/problema/cub?action=download&amp;file=cub2.bmp&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

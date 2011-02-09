@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>sir3.in, sir3.out</td><td><strong>Sursă</strong></td><td>Lot Bistrita 2009, Baraj 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=231">Mircea Dima</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrei-alpha"><img src="/utilizator/andrei-alpha?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrei-alpha">Andrei-Bogdan Antonescu</a> <a title="Rating andrei-alpha: 700" class="rating-badge-1" href="http://infoarena.ro/utilizator/andrei-alpha?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrei-alpha">andrei-alpha</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=sir3">Vezi solutiile trimise</a></p>
+
+<h1>Sir3<br></h1>
+
+<p>Termopanes s-a plictisit de numerele mari dar nu şi-a pierdut entuziasmul pentru numere în general aşa că i-a cerut surorii sale o nouă provocare. El a primit un şir a de n numere naturale distincte două câte două şi un număr <var>S</var>.<br>
+Sora lui îi cere o subsecvenţă de lungime maximă care are următoarele proprietăţi (presupunem că subsecvenţa este <var>a<sub>i</sub></var>, <var>a<sub>i+1</sub></var>, ..., <var>a<sub>j</sub></var> ):</p>
+
+
+<ul><li><var>a<sub>i</sub></var> + <var>a<sub>j</sub></var> = <var>S</var></li>
+<li>dacă elementul <var>k</var> aparţine subsecvenţei atunci şi <var>S - k</var> aparţine subsecvenţei </li>
+</ul><p>Deoarece şir-ul poate fi foarte mare, Termopanes vă cere ajutorul.</p>
+
+<h2>Cerinta</h2>
+
+<p>Determinaţi o subsecvenţă de lungime maximă care să respecte proprietăţile din enunţ.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>sir3.in</var> va conţine pe prima linie numerele naturale <var>n</var> şi <var>S</var>, cu semnificaţiile din enunţ. Pe a <var>2</var>-a linie se vor afla cele <var>n</var> numere naturale ale şirului separate prin spaţii.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>sir3.out</var> va conţine o singură linie cu <var>3</var> numere naturale separate prin spaţii: <var>maxlen</var>, <var>pozfirst</var>, <var>pozlast</var> reprezentând lungimea maximă a subsecvenţei, poziţia de început şi poziţia de sfârşit a subsecvenţei. În cazul în care există mai multe subsecvenţe de lungime maximă se va lua cea cu pozfirst minimă.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ n ≤ 200 000</var></li>
+<li><var>1 ≤ S ≤ 2.000.000.000</var></li>
+<li><var>0 ≤ a<sub>i</sub> ≤ 1.000.000.000</var></li>
+<li>S este impar </li>
+<li>Se garantează că există întotdeauna soluţie.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>sir3.in</th><th>sir3.out</th></tr><tr><td>10 11<br>
+  2 3 1 4 7 10 0 11 8 5<br></td><td>8 2 9<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>2 <strong>3 1 4 7 10 0 11 8</strong> 5<br>
+3 + 8 = 11<br>
+1 + 10 = 11<br>
+4 + 7 = 11<br>
+0 + 11 = 11</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

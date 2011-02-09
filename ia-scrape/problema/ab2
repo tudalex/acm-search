@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ab2.in, ab2.out</td><td><strong>Sursă</strong></td><td>ONI 2008, clasa a 9-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gabitzish1"><img src="/utilizator/gabitzish1?action=download&amp;file=avatar&amp;resize=L16x16" alt="gabitzish1">Gabriel Bitis</a> <a title="Rating gabitzish1: 658" class="rating-badge-1" href="http://infoarena.ro/utilizator/gabitzish1?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gabitzish1">gabitzish1</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ab2">Vezi solutiile trimise</a></p>
+
+<h1>Ab2<br></h1>
+
+<p>Una din cele mai noi pasiuni ale lui Zaharel este sa studieze diverse proprietati ale permutarilor. De exemplu, este interesat de permutarile in care cel mai lung subsir crescator si cel mai lung subsir descrescator au lungimi date.</p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se scrie un program care determina o permutare de lungime <var>N</var> in care cel mai lung subsir crescator are lungime <var>A</var> si cel mai lung subsir descrescator are lungime <var>B</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>ab2.in</var> va contine pe prima linie numerele <var>N</var>, <var>A</var> si <var>B</var>. </p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>ab.out</var> va contine pe prima linie <var>N</var> numere separate prin cate un spatiu, reprezentand o permutare care respecta conditiile de mai sus. Daca exista mai multe solutii, se va afisa cea minima din punct de vedere lexicografic.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N, A, B ≤ 30 000</var></li>
+<li>Se garanteaza ca mereu exista solutie pentru datele de intrare.</li>
+<li>Se numeste subsir al sirului <var>X = (x <sub>1</sub>, x <sub>2</sub>...x <sub>N</sub>)</var>, un sir <var>Y = (x <sub>i1</sub>, x <sub>i2</sub>... x <sub>iM</sub>)</var> cu proprietatea <var>1 ≤ i1 &lt; i2 &lt; ... &lt; iM ≤ N</var>.</li>
+<li>Un sir <var>(x <sub>1</sub>, x <sub>2</sub> ... x <sub>K</sub>)</var> este mai mic din punct de vedere lexicografic decat un alt sir <var>(y <sub>1</sub>, y <sub>2</sub> ... y <sub>K</sub>)</var> daca exista o pozitie <var>p ≤ K</var>, astfel incat <var>x <sub>p</sub> &lt; y <sub>p</sub></var> si <var>x <sub>1</sub> = y <sub>1</sub>, x <sub>2</sub> = y <sub>2</sub> ... x <sub>p-1</sub> = y <sub>p-1</sub></var>.</li>
+<li>Pentru un test se va acorda 70% din punctaj daca permutarea afisata are cel mai lung subsir crescator de lungime <var>A</var> si cel mai lung subsir descrescator de lungime <var>B</var>, dar nu este minima lexicografic.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>ab2.in</th><th>ab2.out</th></tr><tr><td>4 2 3<br></td><td>1 4 3 2<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Cel mai lung subsir crescator are lungime 2 (1 4, 1 3 sau 1 2), iar cel mai lung subsir descrescator are lungime 3 (4 3 2). <br>
+O alta solutie posibila este 2 4 3 1, dar aceasta nu este minima din punct de vedere lexicografic.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

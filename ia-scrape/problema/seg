@@ -1,0 +1,43 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>seg.in, seg.out</td><td><strong>Sursă</strong></td><td>All You Can Code 2008</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=173">Andrei Paul Puni</a>, <a href="/cauta-probleme?tag_id%5B%5D=144">Mihai Ciucu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/crawler"><img src="/utilizator/crawler?action=download&amp;file=avatar&amp;resize=L16x16" alt="crawler">Puni Andrei Paul</a> <a title="Rating crawler: 635" class="rating-badge-4" href="http://infoarena.ro/utilizator/crawler?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/crawler">crawler</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>20000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=seg">Vezi solutiile trimise</a></p>
+
+<h1>Segmente<br></h1>
+
+<p>Se dau <var>N</var> segmente. Sa se afle lungime minima a unei linii frante inchise care contine segmentele date pe laturile ei. Linia franta trebuie sa se poata desena pornind de la un punct oarecare de pe ea, mergand pe fiecare latura o singura data si ajungand inapoi la punctul de pornire (linia se poate autointersecta).</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie va contine numarul <var>T</var> de teste, urmeaza <var>T</var> teste. Pe prima linie a unui test se va afla numarul <var>N</var>, pe urmatoarele <var>N</var> lini se vor vor afla coordonatele capetelor segmentelor.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pentru fiecare test se va afisa lungimea linilor care trebuie desenate, afisata cu <var>6</var> zecimale cu aproximare.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1</var> ≤ <var>N</var> ≤ <var>17</var></li>
+<li>Coordonatele punctelor se afla in intervalul <var>[ -2000 , 2000 ]</var></li>
+<li>In fisierul de intrare se vor afla maxim <var>500</var> teste dintre care cel mult <var>4</var> vor avea <var>N &gt; 10</var></li>
+<li>Pentru fiecare test raspunsul va fi considerat corect numai daca diferenta in valoare absoluta intre raspunsul oficial si cel al concurentului este mai mica sau egala cu 10<sup>-6</sup>.</li>
+</ul><h2>Exemplu</h2>
+
+
+<table class="example" cellspacing="0"><tr><th>seg.in</th><th>seg.out</th></tr><tr><td>2<br>
+ 2<br>
+ 1 1 1 2<br>
+ 1 1 2 2<br>
+ 3<br>
+ -931.693980 781.297764 -767.512077 1305.542158<br>
+ 933.100984 -166.303237 1225.734021 -125.170151<br>
+ 320.771418 -163.911119 -148.087080 -332.428961<br></td><td>1.000000<br>
+  4427.669962<br></td></tr></table><h3>Explicatie</h3>
+
+<p>la testul <var>1</var> se uneste <var>1 2</var> cu <var>2 2</var> si se obtine lungimea <var>1</var> </p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

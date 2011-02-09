@@ -1,0 +1,65 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>subgeom.in, subgeom.out</td><td><strong>Sursă</strong></td><td>ONI 2008, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/bogdan2412"><img src="/utilizator/bogdan2412?action=download&amp;file=avatar&amp;resize=L16x16" alt="bogdan2412">Bogdan-Cristian Tataroiu</a> <a title="Rating bogdan2412: 1162" class="rating-badge-4" href="http://infoarena.ro/utilizator/bogdan2412?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/bogdan2412">bogdan2412</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=subgeom">Vezi solutiile trimise</a></p>
+
+<h1>Subgeom<br></h1>
+
+<p>Miruna tocmai a invatat la ora de matematica despre progresii geometrice. Un sir de numere naturale nenule se numeste progresie geometrica daca este respectata una dintre urmatoarele doua conditii:</p>
+
+
+<ul><li>Sirul este format dintr-un singur element.</li>
+<li>Daca sirul este format din <var>N</var> <var>(N &gt; 1)</var> elemente <var>v<sub>1</sub>, v<sub>2</sub>, ..., v<sub>N</sub></var>, atunci exista un numar intreg <var>K</var> mai mare strict decat <var>1</var> astfel incat raportul oricaror doua elemente consecutive din sir este egal cu <var>K</var>. Altfel spus, oricare ar fi un indice <var>i</var>, <var>1 ≤ i &lt; N, v<sub>i+1</sub> / v<sub>i</sub> = K</var>.</li>
+</ul><p>Miruna are o imaginatie bogata, asa ca inventeaza o notiune nemaintalnita pana acum - cea de subsir geometric: dandu-se un sir de numere naturale nenule, un subsir care este progresie geometrica se numeste subsir geometric.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care pentru un sir de <var>N</var> elemente afiseaza lungimea celui mai lung subsir geometric al sau.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>subgeom.in</var> va contine pe prima linie numarul natural <var>T</var> reprezentand numarul de seturi de date din fisier. Fiecare dintre urmatoarele <var>T</var> linii contine un set de date, sub forma:</p>
+
+<p><var>N v<sub>1</sub> v<sub>2</sub> ... v<sub>N</sub></var></p>
+
+<p>Prima valoare este un numar natural <var>N</var>, reprezentand numarul de elemente din sir, urmat de cele <var>N</var> numere naturale nenule ce alcatuiesc sirul, separate prin cate un spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>subgeom.out</var> va contine <var>T</var> linii, cate o linie pentru fiecare set de date. Linia <var>i</var> contine un numar natural reprezentand lungimea maxima a unui subsir geometric al sirului descris pe linia <var>i + 1</var> in fisierul de intrare.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 10</var></li>
+<li><var>1 ≤ N ≤ 5000</var></li>
+<li>Pentru <var>40%</var> din teste <var>1 ≤ N ≤ 128</var></li>
+<li>Elementele sirului sunt numere naturale din intervalul <var>[1, 10<sup>5</sup>]</var></li>
+<li>Un subsir al unui sir <var>v<sub>1</sub> v<sub>2</sub> ...v<sub>N</sub></var> este format din elemente ale sirului considerate in ordinea in care acestea apar in sir: <var>v<sub>i1</sub> v<sub>i2</sub>... v<sub>ik</sub> (1 ≤ i1 &lt; i2 &lt; ... &lt; ik ≤ N)</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>subgeom.in</th><th>subgeom.out</th></tr><tr><td>6<br>
+3 5 3 7<br>
+3 8 4 2<br>
+3 4 4 4<br>
+3 5 1 10<br>
+4 1 2 3 9<br>
+5 6 2 8 6 18<br></td><td>1<br>
+1<br>
+1<br>
+2<br>
+3<br>
+3<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Pentru primele trei teste toate subsirurile geometrice au lungimea <var>1</var>.</p>
+
+<p>Pentru al patrulea test solutia este formata din subsirul <var>5, 10</var>.</p>
+
+<p>Pentru al cincilea test solutia este formata din subsirul <var>1, 3, 9</var>.</p>
+
+<p>Pentru ultimul test solutia este formata din subsirul <var>2, 6, 18</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

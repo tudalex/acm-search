@@ -1,0 +1,38 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>interclasare.in, interclasare.out</td><td><strong>Sursă</strong></td><td>Lista lui Francu</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=164">Catalin Francu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/devilkind"><img src="/utilizator/devilkind?action=download&amp;file=avatar&amp;resize=L16x16" alt="devilkind">Savin Tiberiu</a> <a title="Rating devilkind: 675" class="rating-badge-4" href="http://infoarena.ro/utilizator/devilkind?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/devilkind">devilkind</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.15 sec</td><td><strong>Limită de memorie</strong></td><td>5120 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=interclasare">Vezi solutiile trimise</a></p>
+
+<h1>Interclasare<br></h1>
+
+<p>Se dau doi vectori de numere intregi: <var>A</var> cu <var>N</var> elemente si <var>B</var> cu <var>M</var> elemente. Sa se afle cel mai lung subsir crescator ce se poate obtine prin interclasarea acestor doi vectori. Reamintim ca o interclasare a doi vectori <var>A</var>=( <var>a<sub>1</sub></var> , <var>a<sub>2</sub></var>, ..., <var>a<sub>m</sub></var>) si <var>B</var>=( <var>b<sub>1</sub></var>, <var>b<sub>2</sub></var>, ..., <var>b<sub>n</sub></var> ) este un vector <var>C</var>=( <var>c<sub>1</sub></var> , <var>c<sub>2</sub></var>, ..., <var>c<sub>m+n</sub></var> ) care contine toate elementele lui <var>A</var> si <var>B</var> astfel incat <var>a<sub>i</sub></var> apare inaintea lui <var>a<sub>j</sub></var> si <var>b<sub>i</sub></var> apare inaintea lui <var>b<sub>j</sub></var> in <var>C</var> pentru orice <var>i</var> &lt; <var>j</var> . Prin "subsir crescator" se intelege un subsir <var>D</var>=( <var>c<sub>i<sub>1</sub></sub></var>, <var>c<sub>i<sub>2</sub></sub></var>, ..., <var>c<sub>i<sub>k</sub></sub></var>) astfel incat <var>i<sub>1</sub></var>&lt;<var>i<sub>2</sub></var>&lt;...&lt;<var>i<sub>k</sub></var> si <var>c<sub>i<sub>1</sub></sub></var> ≤ <var>c<sub>i<sub>2</sub></sub></var> ≤...≤ <var>c<sub>i<sub>k</sub></sub></var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>interclasare.in</var> se va afla numarul <var>N</var> reprezentand numarul de elemente ale primului sir. Pe linia a doua se vor afla <var>N</var> numere reprezentand elementului primului sir. Pe linia a treia se va afla numarul <var>M</var> reprezentand numarul de elemente ale celui de-al doilea sir. Pe urmatoarea linie se vor afla cele <var>M</var> elemente ale celui de-al doilea sir.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului <var>interclasare.out</var> se va afla lungimea celui mai lung subsir crescator ce poate fi obtinut prin interclasarea celor doua siruri din fisierul de intrare. Pe linia a doua se vor afla <var>N+M</var> numere reprezentand sirul <var>C</var>, adica sirurile <var>A</var> si <var>B</var> interclasate in asa fel incat cel mai lung subsir comun din vectorul <var>C</var> sa aibe lungime maxima.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1</var> ≤ <var>N</var> , <var>M</var> ≤ <var>10 000</var></li>
+<li><var>0</var> ≤ <var>a<sub>i</sub></var> ≤ <var>30 000</var> ptr orice <var>1</var> ≤ <var>i</var> ≤ <var>N</var></li>
+<li><var>0</var> ≤ <var>b<sub>i</sub></var> ≤ <var>30 000</var> ptr orice <var>1</var> ≤ <var>i</var> ≤ <var>M</var></li>
+<li>In caz ca exista mai multe solutii afisati oricare dintre ele</li>
+<li>Veti primi punctaje partiale pe fiecare test astfel:
+<ul><li><var>40</var>% din punctaj daca prima linie este corecta.</li>
+<li><var>100</var>% din punctaj daca ambele linii sunt corecte</li>
+</ul></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>interclasare.in</th><th>interclasare.out</th></tr><tr><td>4<br>
+3 9 6 1<br>
+5<br>
+2 6 4 8 5</td><td>5<br>
+2 3 6 4 8 9 6 1 5</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

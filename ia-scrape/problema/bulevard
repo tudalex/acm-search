@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>bulevard.in, bulevard.out</td><td><strong>Sursă</strong></td><td>CCEX 2009</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>4096 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=bulevard">Vezi solutiile trimise</a></p>
+
+<h1>Bulevard<br></h1>
+
+<p>Pe un mare bulevard din localitatea <span class="caps">CCEX </span>se intampla numeroase incidente rutiere. Datorita experientei pe care a dobandit-o, politia locala poate preciza timpii la care au loc frecvent incidentele. Astfel, politia dispune de <var>N</var> timpi, numere naturale, la care se stie ca exista un grad crescut de pericol. Politia locala a angajat <var>2</var> noi politisti si doreste sa ii trimita pe teren, pentru a supraveghea traficul. Cei doi politisti au fiecare un timp de lucru de <var>T</var> unitati.</p>
+
+<p>Sa se determine cand trebuie sa isi inceapa programul fiecare dintre cei doi politisti astfel incat programul de lucru al celor doi sa cuprinda un numar maxim de incidente din cele date.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>bulevard.in</var> conţine pe prima linie un număr natural <var>N</var> care reprezintă numărul de timpi la care poate avea loc un incident. Urmatoarea linie contine exact <var>N</var> numere naturale, in ordine crescatoare, despartite prin cate un spatiu, reprezentand timpii la care au loc incidentele. Cea de a treia linie si ultima din fisier contine numarul natural <var>T</var>, timpul de lucru pentru fiecare politist.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fisierul de iesire <var>bulevard.out</var> va contine o singura linie pe care va fi scris numarul maxim de incidente ce pot fi acoperite prin programul de lucru al politistilor. A doua linie contine doua numere naturale, reprezentand timpii la care cei doi politisti incep programul. Daca sunt mai multe solutii, se va afisa cea in care primul numar este cat mai mic. Daca si in acest caz exista mai multe solutii, se va afisa cea in care suma celor doua numere este minima.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100 000</var></li>
+<li><var>1 ≤ T ≤ 1 000 000</var></li>
+<li>Timpii la care au loc incidentele sunt mai mici decat <var>100 000 001</var></li>
+<li>Pot exista doua incidente care sa aiba loc in acelasi timp</li>
+<li>Politistii nu isi pot incepe programul mai devreme de timpul 0</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>bulevard.in</th><th>bulevard.out</th></tr><tr><td>8<br>
+1 3 8 12 19 22 25 36<br>
+7<br></td><td>6<br>
+1 18</td></tr></table><h3>Explicaţie</h3>
+
+<p>Primul politist lucreaza in perioada <var>[1, 8]</var>, iar al doilea politist in perioada <var>[18, 25]</var>. Astfel, sunt supravegheate evenimentele de la timpii <var>1</var>, <var>3</var>, <var>8</var>, <var>19</var>, <var>22</var> si <var>25</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

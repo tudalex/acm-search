@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>submatrix.in, submatrix.out</td><td><strong>Sursă</strong></td><td>ONI 2010, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrei-alpha"><img src="/utilizator/andrei-alpha?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrei-alpha">Andrei-Bogdan Antonescu</a> <a title="Rating andrei-alpha: 700" class="rating-badge-1" href="http://infoarena.ro/utilizator/andrei-alpha?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrei-alpha">andrei-alpha</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=submatrix">Vezi solutiile trimise</a></p>
+
+<h1>Submatrix<br></h1>
+
+<p>Miruna a găsit pe fundul mării o matrice cu <var>N</var> linii şi <var>M</var> coloane având elementele numere naturale. Din motive necunoscute, Mirunel, prietenul misterios al Mirunei, vrea să afle care este latura celei mai mari submatrice pătratice care conţine maxim <var>K</var> numere distincte. Submatricea cu colţul stânga-sus <var>(xs, ys)</var> şi colţul dreapta-jos <var>(xd, yd)</var> este formată din toate elementele din matrice având indicele liniei în intervalul <var>[xs, xd]</var> şi indicele coloanei în intervalul <var>[ys, yd]</var>. </p>
+
+<h2>Cerinţă</h2>
+
+<p>Scrieţi un program care să determine latura maximă a unei submatrice care respectă condiţiile lui Mirunel.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>submatrix.in</var> conţine pe prima linie trei numere naturale <var>N, M şi K</var> separate prin câte un singur spaţiu având semnificaţia din enunţ. Pe următoarele <var>N</var> linii se găsesc câte <var>M</var> numere naturale separate prin spaţiu, reprezentând elementele matricei.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>submatrix.out</var> va conţine o singură linie pe care va fi scris un singur număr natural, reprezentând latura unei submatrice cu proprietatea din enunţ.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N, M ≤ 300</var></li>
+<li><var>1 ≤ K ≤ N * M</var></li>
+<li>Pentru <var>30%</var> din teste <var>1 ≤ N, M ≤ 30</var></li>
+<li>Pentru <var>70%</var> din teste <var>1 ≤ N, M ≤ 150</var></li>
+<li>Numerele din fişierul de intrare se vor incadra pe <var>32</var> de biţi cu semn.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>submatrix.in</th><th>submatrix.out</th></tr><tr><td>5 7 3<br>
+6 5 7 3 6 6 7<br>
+5 7 5 5 7 3 7<br>
+3 3 5 3 5 6 7<br>
+7 7 5 5 5 6 7<br>
+7 7 6 5 6 3 5<br></td><td>3<br></td></tr></table><h3>Explicatie</h3>
+
+<p>O soluţie este submatricea având colţul din stânga-sus pe poziţia (2, 3) şi latura 3, care conţine doar elementele 3, 5 şi 7. </p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

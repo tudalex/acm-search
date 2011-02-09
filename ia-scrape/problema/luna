@@ -1,0 +1,67 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>luna.in, luna.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=140">Csaba Patcas</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">1/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=luna">Vezi solutiile trimise</a></p>
+
+<h1>Luna<br></h1>
+
+<p>In anul 2507 colonizarea Lunii a luat sfarsit, fiecare tara detine cateva parcele din teritoriul planetei. Firmele de pe Pamant doresc construirea unor cladiri de forma dreptunghiulara pe Luna. Evident, fiecare firma va putea construi doar pe teritoriul care se afla in proprietatea tarii ei de provenienta.</p>
+
+<h2>Cerinta</h2>
+
+<p>Stabiliti in cazul fiecarei firme, daca este posibila satisfacerea cererii ei de construire!</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>luna.in</var> se afla doua numere naturale <var>N</var> si <var>M</var>, care reprezinta numarul de linii, respectiv numarul de coloane a matricei care descrie harta Lunii. Pe fiecare dintre urmatoarele <var>N</var> linii se afla <var>M</var> numere care indica numarul de ordine a tarii care este proprietara parcelei de pe linia si coloana respectiva de pe harta.</p>
+
+<p>Pe urmatoarea linie se afla numarul <var>K</var> al firmelor de pe Pamant, care doresc sa construiasca pe Luna. Pe urmatoarele <var>K</var> linii sunt scrise triplete de numere, care reprezinta cererile firmelor. Primul numar din triplet reprezinta tara de provenienta a firmei. Al doilea si al treilea numar reprezinta dimensiunile cladirii pe care, conform cererii respective firma ar dori s-o construiasca.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>luna.out</var> va contine exact <var>K</var> linii. </p>
+
+
+<ul><li>Daca a <var>i</var>-a cerere poate fi satisfacuta, pe a <var>i</var>-a linie se va scrie mesajul <var>Cererea poate fi satisfacuta</var>.</li>
+<li>Daca tara de provenienta a firmei nu are parcele pe Luna, in fisierul de iesire se va scrie mesajul <var>Tara de provenienta nu are parcele pe Luna!</var>.</li>
+<li>Daca nu se poate construi o cladire cu dimensiunile date, folosind doar parcelele tarii de provenienta, in fisierul de iesire se va scrie mesajul <var>Cererea nu poate fi satisfacuta!</var>.</li>
+</ul><h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N, M ≤ 50</var></li>
+<li>Numarul de ordine al unei tari este un numar natural cuprins intre <var>1</var> si <var>2500</var></li>
+<li><var>1 ≤ K ≤ 100 000</var></li>
+<li>Numarul de ordine a tarii de provenienta al unei firme este un numar natural cuprins intre <var>1</var> si <var>5000</var></li>
+<li>Dimensiunile unei cladiri sunt numere naturale cuprinse intre <var>1</var> si <var>100</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>luna.in</th><th>luna.out</th></tr><tr><td>5 10<br>
+1 1 1 2 2 2 2 3 3 4<br>
+1 1 1 2 2 2 2 3 3 4<br>
+5 5 5 2 2 2 2 7 7 4<br>
+5 5 5 6 6 6 6 7 7 4<br>
+5 5 5 6 6 6 6 7 7 4<br>
+6<br>
+1 2 3 <br>
+2 3 4<br>
+3 2 3<br>
+1 3 2<br>
+7 20 20<br>
+8 4 4<br></td><td>Cererea poate fi satisfacuta!<br>
+Cererea poate fi satisfacuta!<br>
+Cererea nu poate fi satisfacuta!<br>
+Cererea poate fi satisfacuta!<br>
+Cererea nu poate fi satisfacuta!<br>
+Tara de provenienta nu are parcele pe Luna!<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

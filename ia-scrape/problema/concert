@@ -1,0 +1,63 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>concert.in, concert.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=130">Andrei Gonczi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=concert">Vezi solutiile trimise</a></p>
+
+<h1>Concert<br></h1>
+
+<p>Un grup de <var>N</var> artisti a primit invitatii sa cante la un concert. Fiecarui artist i s-a trimis o invitatie pe care acesta era invitat sa cante intre orele <var>A</var> si <var>B</var>. Insa organizatorii acestui eveniment au gresit invitatiile si timpurile in care trebuiau sa cante anumiti artisti se suprapuneau. Artistii, fiind renumiti, nu accepta sa cante decat singuri. De asemenea ei cer despagubiri daca li se cere sa inceapa sa cante dupa ora <var>A+1</var> sau sa termine inainte de ora <var>B</var>. Un anumit artist poate sa cante doar intre orele <var>A</var> si <var>B</var> de pe invitatie. Unele invitatii pot fi anulate, asa ca unii artisti pot sa nu cante deloc.</p>
+
+<h2>Cerinta</h2>
+
+<p>Cunoscandu-se intervalele intre care poate sa cante fiecare artist, profitul pe care il aduce fiecare artist pe unitatea de timp si despagubirile cerut in ambele cazuri mentionate mai sus, voi trebuie sa aflati care este suma maxima care poate fi obtinuta in concertul respectiv, si cum poate fi ea obtinuta.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie a fisierul <var>concert.in</var> se va afla <var>N</var>. Pe urmatoarele <var>N</var> linii ale fisierulul se vor gasi cate 5 numere separate prin cate un spatiu. Ele reprezinta <var>A</var>, <var>B</var>, profitul pe unitatea de timp si despagubirile in cazul in care artistul nu incepe sa cante in <var>A+1</var> si respectiv daca nu termina de cantat in <var>B</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Pe prima linie a fisierul <var>concert.out</var> se va afla suma maxima care poate fi obtinuta din concert.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1.000</var></li>
+<li><var>1 ≤ A<sub>i</sub> &lt; B<sub>i</sub> ≤ 2.000.000.000</var></li>
+<li>profitul adus de fiecare artist sau despagubirile cerute de fiecare dintre ei nu vor trece de valoare 500. Despagubirile se platesc o data, nu pe unitate de timp.</li>
+<li>daca artistul <var>i</var> are in contract intervalul <var>(A<sub>i</sub>,B<sub>i</sub>)</var> el poate canta intre momentele <var>A<sub>i</sub>+1</var> si <var>B<sub>i</sub></var> inclusiv.</li>
+<li>oricare doi artisti au intervalele diferite</li>
+<li>solutia nu va trece de valoare 2<sup>31</sup>-1</li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>concert.in</th><th>concert.out</th></tr><tr><td>5 <br>
+0 5 10 10 15<br>
+3 8 8 8 20<br>
+4 10 12 4 10<br>
+8 16 7 4 7<br>
+12 20 10 5 50</td><td>189</td></tr></table><h3>Explicatie</h3>
+
+<p>Artistul <var>1</var> canta intre orele <var>1</var> si <var>5</var>, aducand un profit de <var>(5-1+1)*10 = 50</var> si nu cere despagubiri, pentru ca a cantat intre orele stabilite in invitatie. Artistul <var>2</var> nu canta de loc. Artistul <var>3</var> canta intre orele <var>6</var> si <var>10</var>, aducand un profit de <var>(10-6+1)*12 = 60</var>, insa i se platesc despagubiri in valoare de <var>4</var>, pentru ca nu a inceput la ora la care i s-a spus in invitatie ca va incepe, ora <var>A+1 = 4</var>. Astfel artistul <var>3</var> aduce un profit de <var>60-4 = 56</var>. Artistul <var>4</var> canta intre orele <var>11</var> si <var>12</var>. Aducand un profit de <var>2*7 = 14</var>, insa cere ambele despagubiri deci aduca un profit de <var>14-7-4 = 3</var>. Artistul cu numarul <var>5</var> aduce un profitde <var>8*10 = 80</var>, si nu cere despagubiri, pentru ca a cantat intre orele stabilite. Astfel, totalul se ridica la: <var>50+56+3+80=189</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=63">Sortare</a></span>
+            <a href="javascript:show_tag_list(63)" id="tag_anchor_63" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_63"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=64">Sortare</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

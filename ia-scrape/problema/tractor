@@ -1,0 +1,63 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>tractor.in, tractor.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2006, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=153">Adrian Diaconu</a>, <a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/bogdan2412"><img src="/utilizator/bogdan2412?action=download&amp;file=avatar&amp;resize=L16x16" alt="bogdan2412">Bogdan-Cristian Tataroiu</a> <a title="Rating bogdan2412: 1162" class="rating-badge-4" href="http://infoarena.ro/utilizator/bogdan2412?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/bogdan2412">bogdan2412</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>4 sec</td><td><strong>Limită de memorie</strong></td><td>32000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=tractor">Vezi solutiile trimise</a></p>
+
+<h1>Tractor<br></h1>
+
+<p>Zaharel si-a cumparat tractor si s-a inscris la un concurs de tractorit. La acest concurs sunt inscrisi <var>N = 2<sup>K</sup></var> participanti in total, iar concursul se desfasoara dupa sistemul eliminatoriu:</p>
+
+
+<ul><li>La inceput cei <var>N</var> participanti (numerotati convenabil de la <var>1</var> la <var>N</var>) sunt asezati de catre organizatorii intr-o ordine oarecare.</li>
+<li>In prima runda, participantul de pe pozitia <var>1</var> se intrece cu cel de pe pozitia <var>2</var>, cel de pe pozitia <var>3</var> cu cel de pe pozitia <var>4</var>, cel de pe pozitia <var>5</var> cu cel de pe pozitia <var>6</var> etc. Castigatorii avanseaza in runda urmatoare, pierzatorii sunt elimitati din concurs.</li>
+<li>In a doua runda, castigatorul dintre participantii de pe pozitiile <var>1</var> si <var>2</var> se intrece cu castigatorul dintre participantii de pe pozitiile <var>3</var> si <var>4</var>, etc., castigatorul dintre participantii de pe pozitiile <var>N - 3</var> si <var>N - 2</var> se intrece cu castigatorul dintre participantii de pe pozitiile <var>N - 1</var> si <var>N</var>.</li>
+<li>Concursul continua in acelasi mod, la fiecare runda eliminandu-se jumatate din participanti, pana cand mai ramane unul singur. Participantul care ramane singur va fi considerat castigatorul concursului.</li>
+</ul><p>La fiecare intrecere in tractorit in care participantul cu numarul <var>i</var> il bate pe participantul cu numarul <var>j</var> se aduna la premiu valoarea <var>A<sub>i, j</sub></var>. Premiul este luat de ultimul participant cara ramane in concurs.</p>
+
+<p>Fiecare din cei <var>N</var> jucatori isi imagineaza cel mai favorabil scenariu (care depinde de asezarea data de organizatori si de castigatorii fiecarei intreceri) in care el castiga turneul iar premiul strans este maxim posibil.</p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati pentru fiecare din cei <var>N</var> jucatori care este premiul maxim pe care il poate obtine, considerand ca el castiga turneul.</p>
+
+<h2>Date de intrare</h2>
+
+<p>In fisierul <var>tractor.in</var> se afla pe prima linie un numar natural <var>T</var> reprezentand numarul de teste. Urmeaza apoi descrierea celor <var>T</var> teste. Pe prima linie a unui test se va afla numarul <var>N</var> de participanti, iar pe urmatoarele <var>N</var> linii cate <var>N</var> numere naturale separate prin spatii reprezentand matricea <var>A</var> pentru testul respectiv.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>tractor.out</var> va contine cate <var>N</var> linii pentru fiecare test reprezentand premiile maxime care se pot obtine pentru fiecare jucator, in ordinea numerotarii de la <var>1</var> la <var>N</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 4</var></li>
+<li><var>1 ≤ N ≤ 16</var> (<var>N</var> este o putere a lui <var>2</var>)</li>
+<li><var>0 ≤ A<sub>i, j</sub> ≤ 1 000 000</var>, <var>A<sub>i, i</sub> = 0</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>tractor.in</th><th>tractor.out</th></tr><tr><td>2<br>
+2<br>
+0 2<br>
+3 0<br>
+4<br>
+0 6 3 5<br>
+2 0 5 1<br>
+3 5 0 2<br>
+4 1 3 0<br></td><td>2<br>
+3<br>
+16<br>
+12<br>
+13<br>
+13<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Vom considera exemplul cu <var>N = 4</var> in care jucatorul cu numarul <var>1</var> vrea sa stie premiul maxim pe care il poate obtine. Daca asezarea initiala este <var>1 4 2 3</var> iar intrecerile se desfasoara astfel:</p>
+
+<p><var>    [1]</var><br><var>   /   \</var><br><var>  1     2</var><br><var> / \   / \</var><br><var>1   4 2   3</var></p>
+
+<p>Premiul care se obtine este <var>A<sub>1, 4</sub> + A<sub>2, 3</sub> + A<sub>1, 2</sub> = 16</var>, iar acesta este maxim considerand toate cele <var>24</var> posibiltati pentru asezarea initiala si toate posibilitatile de desfasurare a meciurilor.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

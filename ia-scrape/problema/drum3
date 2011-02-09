@@ -1,0 +1,61 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>drum3.in, drum3.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2010, Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=223">Cosmin Gheorghe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gcosmin"><img src="/utilizator/gcosmin?action=download&amp;file=avatar&amp;resize=L16x16" alt="gcosmin">Gheorghe Cosmin</a> <a title="Rating gcosmin: 1142" class="rating-badge-4" href="http://infoarena.ro/utilizator/gcosmin?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gcosmin">gcosmin</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>32000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=drum3">Vezi solutiile trimise</a></p>
+
+<h1>Drum3<br></h1>
+
+<p>Tamara are o tabla patratica cu <var>N</var> coloane si <var>N</var> linii, si un pion in coltul stanga sus al tablei care poate fi deplasat doar la dreapta sau in jos. Tamara se intreaba prin cate drumuri posibile poate duce pionul in coltul dreapta jos al tablei facand exact <var>K</var> schimbari de directie? O schimbare de directie reprezinta schimbarea directiei miscarii pionului din jos in dreapta sau din dreapta in jos. Initial pionul se poate deplasa in orice directie (jos sau dreapta).</p>
+
+<p>Exemplu:</p>
+
+<p> 1 2 3 4 5 6 7 8<br>
+1 <b>x x S</b> o o o o o<br>
+2 o o <b>x</b> o o o o o<br>
+3 o o <b>x</b> o o o o o<br>
+4 o o <b>S x x S</b> o o<br>
+5 o o o o o <b>x</b> o o<br>
+6 o o o o o <b>x</b> o o<br>
+7 o o o o o <b>S x S</b><br>
+8 o o o o o o o <b>x</b></p>
+
+<p>Un drum cu <var>5</var> schimbari de directie intr-o tabla de <var>8×8</var>.<br>
+Schimbarile de directie sunt marcate cu <var><b>S</b></var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>drum3.in</var> va contine pe prima linie numerele <var>N</var> si <var>K</var> reprezentand dimensiunea tablei si respectiv numarul de schimbari de directie.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>In fisierul de iesire <var>drum3.out</var> veti afisa un singur numar <var>R</var>, reprezentand numarul de drumuri posibile ale pionului <b>modulo 30013</b>.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 5 000</var></li>
+<li><var>1 ≤ K &lt; 2 * (N-1)</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>drum3.in</th><th>drum3.out</th></tr><tr><td>4 2</td><td>4</td></tr><tr><td>4 3</td><td>8</td></tr><tr><td>5 3</td><td>18</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=100">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

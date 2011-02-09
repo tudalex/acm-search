@@ -1,0 +1,55 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>critice.in, critice.out</td><td><strong>Sursă</strong></td><td>preONI 2005 Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=119">Silviu-Ionut Ganceanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=critice">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=critice">Vezi solutiile trimise</a></p>
+
+<h1>Critice<br></h1>
+
+<p>Algorel are in pivnita o retea subterana prin care misuna sobolani. Reteau consta din <var>N</var> adaposturi numerotate de la <var>1</var> la <var>N</var> si <var>M</var> tunele intre acestea. Adaposturile <var>1</var> si <var>N</var> comunica cu suprafata fiind singurele locuri din retea cu aceasta propietate (nici un alt adapost sau tunel nu mai are iesire la suprafata). Algorel vrea sa trimita un numar maxim de pisici in retea. Pisicile intra prin adapostul <var>1</var> si ies prin adapostul <var>N</var>. Nici o pisica nu poate ramane in retea. Pentru fiecare tunel se stie rezistenta lui, adica numarul maxim de pisici care pot trece prin el fara ca sa se darame. Daca printr-un tunel cu rezistenta nenula a trecut o pisica atunci rezistenta acestuia scade cu o unitate. Algorel a observat ca exista anumite tunele care au propietatea ca daca rezistenta lor creste in timp ce rezistenta celorlalte tunele ramane la fel atunci va creste si numarul maxim de pisici pe care le poate trimite prin retea. El a denumit tunelele cu aceastra propietate tunele critice.</p>
+
+<h2>Cerinta</h2>
+
+<p>Fiind data reteaua din pivnita lui Algorel determinati tunelele critice.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie a fisierului <var>critice.in</var> se gasesc numerele naturale <var>N</var> si <var>M</var> reprezentand numarul de adaposturi si numarul de tunele din reteaua subterana. Urmeaza <var>M</var> linii continand trei numere naturale separate prin spatii, <var>A B C</var>, cu semnificatia: intre adaposturile <var>A</var> si <var>B</var> (<var>A != B</var>) exista un tunel cu rezistenta <var>C</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Prima linie a fisierului de iesire <var>critice.out</var> contine un numar natural <var>K</var> reprezentand numarul de tunele critice din reteaua lui Algorel. Urmatoarele <var>K</var> linii contin cate un numar natural reprezentand indicii muchiilor critice. Indicii vor fi sortati crescator. Muchiile sunt numerotate de la <var>1</var> la <var>M</var> dupa ordinea din fisierul de intrare.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1000</var></li>
+<li><var>1 ≤ M ≤ 10000</var></li>
+<li>Rezistentele sunt numere naturale mai mici sau egale cu <var>10000</var></li>
+<li>Intre oricare doua noduri exista cel mult un tunel</li>
+<li>Orice tunel poate fi parcurs in ambele sensuri</li>
+<li>Petru <var>50%</var> din teste <var>M &lt;= 1000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>critice.in</th><th>critice.out</th></tr><tr><td>5 6<br>
+2 1 2<br>
+2 3 3<br>
+3 5 4<br>
+1 4 7<br>
+4 3 2<br>
+4 5 6<br></td><td>2<br>
+1<br>
+4</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=268">Flux maxim</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,72 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>antitero.in, antitero.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=127">Mihai Stroe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65535 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=antitero">Vezi solutiile trimise</a></p>
+
+<h1>Antitero<br></h1>
+
+<p>Cei <var>N</var> membri ai unei echipe speciale de lupta antitero au fost trimisi intr-o misiune. Prima faza a acesteia implica deplasarea lor in anumite pozitii. Astfel, fiecare membru are o pozitie initiala si trebuie sa ajunga intr-o pozitie finala, eventual trecand prin pozitii intermediare. Dificultatea principala consta in faptul ca in zona respectiva se afla amplasati <var>P</var> soldati ai unei grupari teroriste. Acestia nu se deplaseaza, dar pot ameninta anumite pozitii; un soldat din echipa speciala nu poate trece printr-o pozitie amenintata sau printr-o pozitie in care se afla un terorist (viu). Solutia poate fi eliminarea unora dintre teroristi.<br>
+Daca este posibil, sa se elaboreze un plan pentru terminarea misiunii.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>antitero.in</var> contine:</p>
+
+
+<ul><li>pe prima linie <var>3</var> numere <var>X N P</var>, unde <var>X</var> reprezinta numarul de pozitii din zona respectiva, iar <var>N</var> si <var>P</var> au semnificatiile de mai sus</li>
+<li>pe urmatoarele <var>X</var> linii, o matrice <var>X*X</var>, care precizeaza pozitiile conectate intre ele (drumurile sunt cu dublu sens)</li>
+<li>pe urmatoarele <var>N</var> linii sunt precizate, pentru fiecare soldat din echipa speciala, punctul de plecare si destinatia</li>
+<li>pe linia urmatoare se dau pozitiile celor <var>P</var> soldati inamici</li>
+<li>pe urmatoarele linii pana la sfarsitul fisierului se dau perechi <var>i j</var> cu semnificatia ca un soldat aflat in punctul <var>i</var> poate impusca un inamic aflat in punctul <var>j</var>. Perechile <var>i j</var> si <var>j i</var> nu vor exista concomitent in fisierul de intrare.</li>
+</ul><h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>antitero.out</var> va contine planul misiunii. Liniile acestuia au urmatorul format:</p>
+
+
+<ul><li><var>"Success"</var> - prima linie</li>
+<li><var>M i j</var>    - soldatul <var>i</var> al echipei antitero se deplaseaza in pozitia <var>j</var> (fara a se preciza pozitiile intermediare)</li>
+<li><var>E i j</var>    - soldatul <var>i</var> il elimina pe teroristul <var>j</var>.</li>
+</ul><p>Actiunea trebuie prezentata cronologic. In cazul in care misiunea nu poate fi terminata se va afisa doar mesajul <var>"Mission aborted"</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ X ≤ 100</var></li>
+<li><var>1 ≤ N ≤ 10</var></li>
+<li><var>1 ≤ P ≤ 20</var></li>
+<li>In punctele initiale nu se gasesc teroristi si ele nu sunt amenintate de acestia.</li>
+<li>Mai multi soldati pot fi in aceeasi pozitie simultan. Afirmatia este valabila si pentru teroristi.</li>
+<li>Un test pentru care exista solutie este picat daca:
+<ul><li>cel putin una din liniile din fisierul de iesire nu respecta formatul anterior</li>
+<li>o linie <var>M</var> trimite un soldat intr-un punct care nu ii este accesibil, sau</li>
+<li>o linie <var>E</var> 'elimina' un terorist care nu este plasat intr-un punct in care soldatul respectiv poate trage, sau care a fost eliminat anterior, sau</li>
+<li>dupa terminarea mutarilor precizate cel putin un soldat nu se afla in pozitia sa finala.</li>
+</ul></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>antitero.in</th><th>antitero.out</th></tr><tr><td>8 2 2<br>
+0 0 1 0 0 0 0 0<br>
+0 0 0 1 0 0 0 0<br>
+1 0 0 0 1 0 0 0<br>
+0 1 0 0 0 1 0 0<br>
+0 0 1 0 0 0 0 0<br>
+0 0 0 1 0 0 0 0<br>
+0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0<br>
+1 5<br>
+2 6<br>
+7 8<br>
+7 3<br>
+4 7<br></td><td>Success<br>
+M 2 4<br>
+E 2 1<br>
+M 1 5<br>
+M 2 6<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Teroristii se afla amplasati in <var>7</var> si <var>8</var>, unul din soldati trebuie sa ajunga din <var>1</var> in <var>5</var> iar celalalt din <var>2</var> in <var>6</var>. Din punctul <var>7</var> se poate elimina un inamic aflat in <var>3</var>, iar din <var>4</var> un inamic aflat in <var>7</var>.<br>
+Soldatul <var>2</var> se deplaseaza in pozitia <var>4</var>. Soldatul <var>2</var> il elimina pe teroristul <var>1</var>. Soldatul <var>1</var> ajunge in <var>5</var>. Soldatul <var>2</var> ajunge in <var>6</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

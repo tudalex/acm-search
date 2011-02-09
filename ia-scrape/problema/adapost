@@ -1,0 +1,65 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>adapost.in, adapost.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=144">Mihai Ciucu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><div class="hidden">5/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=adapost">Vezi solutiile trimise</a></p>
+
+<h1>Adapost<br></h1>
+
+<p>Un batalion de <var>N</var> soldati a ajuns intr-o zona periculoasa si se afla sub un puternic bombardament din partea inamicului. Comandantul Gigel are o harta cu pozitiile soldatilor si coordonatele a <var>N</var> adaposturi, cu o capacitete de o persoana fiecare, la care trebuie sa ajunga soldatii. El doreste sa-si faca un plan de salvare a soldatilor care sa aiba un risc cat mai mic. Riscul unui soldat de a fi ranit este direct proportional cu timpul de care are nevoie sa ajunga la adapostul sau, deci este si direct proportional cu distanta parcursa de el, deoarece toti soldatii au viteza constanta.</p>
+
+<p>Gigel doreste ca fiecare soldat sa aiba sanse cat mai bune, astfel incat maximul distantelor care trebuie parcurse de fiecare soldat pana la adapostul sau sa fie minim. Desi maximul distantelor trebuie sa fie cat mai mic, el mai vrea ca suma distantelor parcurse de soldati sa fie cat mai mica deasemenea, pentru a micsora riscul total.</p>
+
+<h2>Cerinta</h2>
+
+<p>Alegeti pentru fiecare soldat un adapost, astfel incat in fiecare adapost sa fie un singur soldat si si ambele conditii de mai sus sa fie respectate.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului <var>adapost.in</var> contine un numar intreg <var>N</var> reprezentand numarul de soldati. Urmatoarele <var>N</var> linii contin coordonatele soldatilor iar urmatoarele <var>N</var> linii contin coordonatele adaposturilor.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>In fisierul <var>adapost.out</var> se vor scrie doua numere reale: valoarea maxima a distantelor soldat-adapost care satisface cerinta si suma minima a distantelor parcurse de soldati pana la adaposturile lor.</p>
+
+<h2>Restrictii si precizari:</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 400</var></li>
+<li>Pentru aflarea primului numar se acorda <var>40%</var> din valoarea unui test, restul de punctaj fiind acordat daca ambele numere sunt aflate.</li>
+<li>Este posibil ca suma distantelor soldat-adapost sa fie si mai mica decat cea cautata, dar in acea situatie maximul distantelor ar fi prea mare.</li>
+<li>Punctele au coordonate in intervalul <var>[0,1000]</var> si sunt date cu o precizie de <var>0,001</var></li>
+<li>Diferenta maxima cu care rezultatul final poate varia fata de cel corect este de <var>0,001</var></li>
+</ul><h2>Exemplu:</h2>
+
+<table class="example" cellspacing="0"><tr><th>adapost.in</th><th>adapost.out</th></tr><tr><td>5 <br>
+6.773 5.394<br>
+1.981 1.198<br>
+7.062 7.228<br>
+2.247 5.785<br>
+6.749 2.419<br>
+5.382 7.861<br>
+5.414 3.397<br>
+8.789 3.838<br>
+9.436 1.929<br>
+5.550 7.901<br></td><td>4.07690 14.76992</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=48">Cautare</a></span>
+            <a href="javascript:show_tag_list(48)" id="tag_anchor_48" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_48"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=49">Cautare binara</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=426">Cuplaj maxim</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=93">Flux maxim de cost minim</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

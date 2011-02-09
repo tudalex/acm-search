@@ -1,0 +1,78 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>atac.in, atac.out</td><td><strong>Sursă</strong></td><td>preONI 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=119">Silviu-Ionut Ganceanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>3 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=atac">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=atac">Vezi solutiile trimise</a></p>
+
+<h1>Atac<br></h1>
+
+<p>In tara Arboreea lucrurile au iesit de sub control. <span class="caps">OTPB </span>(Organizatia Terorista Petrica Bomba) a hotarat sa atace doua orase din aceasta tara deoarece liderul organizatiei, Petrica, a pierdut alegerile prezidentiale din anul 2004. Tara are <var>N</var> orase, numerotate de la <var>1</var> la <var>N</var>, iar reteaua oraselor si strazile dintre aceastea formeaza un arbore (graf neorientat conex ce nu contine cicluri). <span class="caps">OTPB </span>stie pentru fiecare strada cate bombe trebuie sa utilizeze pentru a o scoate din uz. Acum se pune problema determinarii numarului cel mai mic de bombe pe care trebuie sa-l utilizeze <span class="caps">OTPB </span>pentru ca intre cele doua orase alese (considerate de importanta majora in Arboreea) sa nu mai existe drum intre ele dupa bombardament. Cum importanta oraselor se schimba pe parcusul evolutiei tarii, <span class="caps">OTPB </span>vrea sa stie numarul minim de bombe pentru atacul asupra mai multor perechi de orase, mai exact <var>M</var>. Totusi se doreste comunicarea usoara a acestor <var>M</var> perechi intre organizatiile teroriste din tara. Astfel, nu se poate transmite intreaga lista a celor <var>M</var> perechi de orase asupra carora se doreste efectuarea unui atac deoarece reteaua de legatura dintre organizatii este cam inceata la capitolul trasmiterea datelor. Totusi s-a gasit o solutie: stiind prima pereche de orase <var>X</var> si <var>Y</var> asupra carora se va efectua un atac si numarul minim de bombe <var>Z</var> ce trebuie utilizate in cazul atacului in orasele <var>X</var> si <var>Y</var>, urmatoarea pereche de orase, a doua, se determina utilizand relatiile:</p>
+
+<p><var>X' = (X*A + Y*B) mod N + 1</var><br><var>Y' = (Y*C + Z*D) mod N + 1</var></p>
+
+<p>A treia pereche de orase se determina utilizand in formula perechea a doua si numarul minim de bombe ce trebuie utilizate pentru a o ataca, a patra din a treia si asa mai departe. Asadar este suficienta cunoasterea primei perechi de orase si a numerelor <var>A, B, C, D</var> pentru a determina toate cele <var>M</var> perechi. De asemenea, din aceeasi cauza - transmiterea greoaie a datelor - <span class="caps">OTPB </span>vrea sa afle rezultatele doar pentru ultimele <var>P</var> perechi de orase, considerate suficiente pentru a verifica corectitudinea programului dumneavoastra. Scrieti un program pentru organizatia lui Petrica care calculeaza numarul minim de bombe pentru atacul ultimelor <var>P</var> perechi de orase din cele <var>M</var> daca vreti sa mai ramaneti in viata !</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie a fisierului <var>atac.in</var> se afla trei numere reprezentand numarul de orase, numarul de perechi de orase pentru care organizatia vrea sa afle numarul minim de bombe in cazul unui atac asupra lor si numarul <var>P</var> de perechi pentru care programul vostru trebuie sa afiseze raspunsul. Pe urmatoarele <var>N-1</var> linii se afla cate doua numere naturale <var>U</var>, <var>V</var> cu semnificatia: exista o strada de la orasul <var>U</var> la orasul <var>i</var> (<var>i</var> este indicele liniei care va lua valori de la <var>2</var> la <var>N</var>) pentru care <span class="caps">OTPB </span>trebuie sa utilizeze <var>V</var> bombe pentru a o scoate din uz. Pe urmatoarea linie se afla <var>6</var> numere <var>X, Y, A, B, C, D</var> cu semnificatia din enunt.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul atac.out va avea <var>P</var> linii reprezentand numarul minim de bombe ce trebuie utilizat pentru a ataca ultimele <var>P</var> perechi de orase.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 32.000</var></li>
+<li><var>0 &lt; P &lt; M ≤ 500.000</var></li>
+<li><var>P ≤ 10.000</var></li>
+<li><var>0 ≤ A, B, C, D ≤ 10.000</var></li>
+<li>numarul de bombe pentru a scoate din uz o strada este un numar natural mai mic decat <var>100.000</var></li>
+<li><span class="caps">OTPB </span>nu va scoate din uz nici o strada; se doreste sondarea terenului si nimic mai mult, momentan; deci pentru fiecare pereche de orase din cele <var>M</var> se considera ca reteaua de strazi este intacta (nici o strada nu este bombardata).</li>
+<li>Se vor acorda puncte pe un test doar daca toate cele <var>P</var> numere din fisierul de iesire sunt corect aflate.</li>
+<li>Este clar ca pentru a afla corect cele <var>P</var> numere trebuie sa calculati numarul minim de bombe pentru toate cele <var>M</var> perechi de orase.</li>
+<li>Nu va bazati pe faptul ca perechile de orase se vor repeta iar setul de perechi distincte este mic! <span class="caps">OTPB </span>vrea sa studieze cat mai multe perechi de orase asa ca numerele <var>A, B, C, D</var> vor fi inteligent alese pentru a genera cat mai multe perechi distincte intre cele <var>M</var>.</li>
+<li>Daca <var>X</var> coincide cu <var>Y</var> atunci raspunsul este <var>0</var></li>
+<li>Pentru <var>40%</var> din teste <var>N</var> va fi mai mic sau egal <var>1000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>atac.in</th><th>atac.out</th></tr><tr><td>7 3 2<br>
+1 1<br>
+2 2<br>
+2 2<br>
+1 3<br>
+5 3<br>
+5 2<br>
+6 7 1 1 1 1<br></td><td>1<br>
+1</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 3 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=82">Lowest Common Ancestor</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=69">Parcurgere in adancime</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=71">Dinamica pe arbore</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=84">Arbori de intervale</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=83">Range Minimum Query</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>vrejuri.in, vrejuri.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2010, Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=223">Cosmin Gheorghe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gcosmin"><img src="/utilizator/gcosmin?action=download&amp;file=avatar&amp;resize=L16x16" alt="gcosmin">Gheorghe Cosmin</a> <a title="Rating gcosmin: 1142" class="rating-badge-4" href="http://infoarena.ro/utilizator/gcosmin?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gcosmin">gcosmin</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=vrejuri">Vezi solutiile trimise</a></p>
+
+<h1>Vrejuri<br></h1>
+
+<p>Ofelia are in gradina <var>N</var> vrejuri magice, fiecare avand o anumita inaltime <var>Hi</var>. Problema este ca vrejurile au inceput sa creasca, astfel, fiecare planta <var>i</var> isi va mari inaltimea cu <var>Pi</var> zilnic. Ofelia stie ca vrejurile vor creste doar in urmatoarele <var>K</var> zile iar dupa aceea se vor opri, si vrea ca la sfarsitul celor <var>K</var> zile suma inaltimilor tuturor vrejurilor sa fie cel mult <var>S</var>. Pentru aceasta, ea are o foarfeca magica cu ajutorul careia, la sfarsitul fiecarei zile, poate reduce inaltimea fiecarui vrej <var>i</var> cu <var>xi</var>. Dar foarfeca magica nu este usor de folosit, astfel pentru a taia o anumita valoare <var>xi</var> din vrejul <var>i</var> efortul depus este <var>xi<sup>2</sup></var> Jouli (Ofelia se pricepe la fizica, dar, bineinteles, nu si la informatica). Ofelia vrea sa afle care este efortul total minim <var>J</var> (suma tuturor eforturilor depuse in procesele de taiere), pe care il poate depune pentru ca suma inaltimilor vrejurilor la sfarsitul celor <var>K</var> zile sa fie cel mult <var>S</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>vrejuri.in</var> va contine pe prima linie numerele <var>N</var>, <var>K</var> si <var>S</var>. Urmatoarele <var>N</var> linii vor contine fiecare cate doua numere <var>Hi</var> si <var>Pi</var> reprezentand inaltimea initiala a vrejului <var>i</var> si respectiv, rata cu care acesta creste.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>vrejuri.out</var> veti afisa un singur numar <var>J</var> efortul minim pe care Ofelia il poate depune.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N, K ≤ 100 000</var></li>
+<li><var>0 ≤ S ≤ 10<sup>18</sup></var></li>
+<li><var>1 ≤ Hi, Pi ≤ 10<sup>9</sup></var></li>
+<li>Se garanteaza ca rezultatul <var>J</var> nu va depasi <var>10<sup>18</sup></var></li>
+<li>Se garanteaza ca suma inaltimilor tuturor vrejurilor <b>netaiate</b> la sfarsitul celor K zile nu va depasi <var>10<sup>18</sup></var></li>
+<li><b>Atentie</b>: Ofelia poate taia doar dupa ce prima zi se incheie. Adica vrejurile cresc in prima zi si abia apoi Ofelia poate taia din ele</li>
+<li><b>Atentie</b>: La sfarsitul fiecarei zile Ofelia poate taia orice valoare din oricate plante. Ea poate taia valori diferite din plante diferite in zile diferite.</li>
+<li>Chiar daca o planta este taiata pana la inaltimea <var>0</var>, ea tot va creste in urmatoarea zi (radacina nu se scoate).</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>vrejuri.in</th><th>vrejuri.out</th></tr><tr><td>2 2 1<br>
+1 1<br>
+2 2<br></td><td>18<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Ofelia poate taia in prima zi 1 din primul vrej si 2 din al doilea, iar in a doua zi 2 din primul si 3 din al doilea. Costul total este 18.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

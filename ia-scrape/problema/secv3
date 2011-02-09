@@ -1,0 +1,64 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>secv3.in, secv3.out</td><td><strong>Sursă</strong></td><td>preONI 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=secv3">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=secv3">Vezi solutiile trimise</a></p>
+
+<h1>Secventa 3<br></h1>
+
+<table style="margin:0.5em auto;" cellspacing="0"><tr><td align="center" style="background-color:#F8EABA;"><img src="http://infoarena.ro/template/badtests?action=download&amp;file=attention.gif&amp;safe_only=true" alt="" class="left" style="float:left"><em>Testele pentru aceasta problema nu sunt destul de bine construite pentru a departaja corect solutii ineficiente sau gresite.</em><br><a href="http://infoarena.ro/implica-te/imbunatatire-teste"><strong>Intra aici</strong></a> <em>daca vrei sa ne ajuti sa imbunatatim calitatea testelor pentru aceasta problema!</em></td></tr></table><p>Gigel este o persoana cu o imaginatie foarte bogata, mai ales cand doarme! Intr-o noapte a visat ca are de indeplinit o sarcina foarte bizara: trebuie sa aleaga o secventa (adica un subsir de elemente care apar pe pozitii consecutive in sirul initial) din <var>N</var> elemente pentru care se cunosc costul si timpul. Secventa aleasa trebuia sa fie de lungime minim <var>L</var> si maxim <var>U</var>, iar suma costurilor elementelor secventei impartita la suma timpurilor elementelor secventei sa fie maxima.</p>
+
+<h2>Cerinta</h2>
+
+<p>In scurt timp, visul lui Gigel s-a transformat intr-un cosmar deoarece nu poate sa rezolve sarcina! Scrieti un program care sa-l ajute!</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie in fisierul de intrare <var>secv3.in</var> se afla numere <var>N, L</var> si <var>U</var> separate prin cate un spatiu. Pe cea de a doua linie se vor gasi <var>N</var> numere naturale reprezentand costurile elementelor secventei, iar pe cea de a treia linie se vor gasi <var>N</var> numere naturale reprezentand timpurile elementelor secventei.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Pe prima linie din fisierul de iesire <var>secv3.out</var> se va gasi un numar real cu prezicie de doua zecimale, reprezentand valoarea maxima a sumei costurilor elementelor din secventa impartita la suma timpurilor elementelor din secventa.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ L ≤ U ≤ N ≤ 30.000</var></li>
+<li>Costul si timpul unui element sunt numere naturale din intervalul <var>[1, 1.000]</var></li>
+<li>Numarul scris in fisierul de iesire va fi considerat corect doar daca valoarea absoluta a diferentei dintre rezultatul tau si cel al comisiei este mai mica sau egala cu <var>10<sup>-2</sup></var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>secv3.in</th><th>secv3.out</th></tr><tr><td>5 1 2<br>
+1 1 3 2 5<br>
+4 2 5 3 6</td><td>0.83</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 3 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=48">Cautare</a></span>
+            <a href="javascript:show_tag_list(48)" id="tag_anchor_48" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_48"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=49">Cautare binara</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=100">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=94">Deque</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

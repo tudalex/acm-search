@@ -1,0 +1,58 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>perm2.in, perm2.out</td><td><strong>Sursă</strong></td><td>preOJI 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=117">Cristian George Strat</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">1/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=perm2">Vezi solutiile trimise</a></p>
+
+<h1>Permutari II<br></h1>
+
+<p>Se considera multimea <var>A</var> formata din elementele <var>1</var>, <var>2</var>, <var>3</var> … <var>N</var> (<var>1</var> ≤ <var>N</var> ≤ <var>20.000</var>).</p>
+
+<p>O permutare <var>P</var> este o functie bijectiva definita pe multimea <var>A</var>, cu valori in <var>A</var>. (adica asociaza in mod unic fiecarui element din <var>A</var> un element unic tot din <var>A</var>).</p>
+
+<p>Un exemplu de astfel de permutare este ilustrat de tabelul de mai jos</p>
+
+<table class="numbers" cellspacing="0"><tr><th><var>i</var></th><td><var>1</var></td><td><var>2</var></td><td><var>3</var></td><td><var>4</var></td></tr><tr><th><var>P(i)</var></th><td><var>2</var></td><td><var>3</var></td><td><var>4</var></td><td><var>1</var></td></tr></table><p>Definim permutarea <var>P<sup>k</sup></var> astfel:</p>
+
+<p><var>P<sup>k</sup>(i)</var> =</p>
+
+
+<ul><li><var>P(i)</var>, atunci cand <var>k=1</var></li>
+<li><var>P(P<sup>k-1</sup>(i))</var>, pentru <var>k &gt; 1</var></li>
+</ul><p>Tabelul de mai jos ilustreaza <var>P<sup>1</sup></var> si <var>P<sup>2</sup></var>:</p>
+
+<table class="numbers" cellspacing="0"><tr><th><var>i</var></th><td><var>1</var></td><td><var>2</var></td><td><var>3</var></td><td><var>4</var></td></tr><tr><th><var>P<sup>1</sup>(i)</var></th><td><var>2</var></td><td><var>3</var></td><td><var>4</var></td><td><var>1</var></td></tr><tr><th><var>P<sup>2</sup>(i)</var></th><td><var>3</var></td><td><var>4</var></td><td><var>1</var></td><td><var>2</var></td></tr></table><h2>Cerinta</h2>
+
+<p>Se da <var>N</var> si o permutare <var>P</var>. Sa se gaseasca cel mai mic numar natural <var>K</var> strict pozitiv, astfel incat oricare ar fi <var>1</var> ≤ <var>i</var> ≤ <var>N</var> avem <var>P<sup>k</sup>(i) = i</var> (in alte cuvinte, <var>P<sup>k</sup></var> sa fie <em>permutarea identica</em> ).</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul <var>perm2.in</var> va contine pe prima linie numarul intreg <var>N</var>.</p>
+
+<p>Pe urmatoarea linie se scriu <var>N</var> numere naturale distincte, fiecare in intervalul <var>1</var> … <var>N</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului <var>perm2.out</var> se va scrie acel numar <var>K</var> ce indeplineste condiitle impuse.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li>Pentru testele furnizate <var>1</var> ≤ <var>K</var> ≤ <var>100.000</var></li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>perm2.in</th><th>perm2.out</th></tr><tr><td>6<br>
+1 2 3 4 5 6</td><td>1</td></tr><tr><td>4<br>
+2 3 4 1</td><td>4</td></tr><tr><td>8<br>
+1 5 2 3 4 8 6 7</td><td>12</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=100">ad-hoc</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=43">Algoritmul lui Euclid</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

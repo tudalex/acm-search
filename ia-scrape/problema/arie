@@ -1,0 +1,48 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>arie.in, arie.out</td><td><strong>Sursă</strong></td><td>Happy Coding 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=arie">Vezi solutiile trimise</a></p>
+
+<h1>Arie<br></h1>
+
+<p>Se dau doua poligoane convexe avand <var>N</var>, respectiv <var>M</var> varfuri. Determinati aria intersectiei celor doua poligoane.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie a fisierului <var>arie.in</var> se afla numarul intreg <var>N</var>, reprezentand numarul de varfuri al primului poligon. Pe urmatoarele <var>N</var> linii se afla cate doua numere intregi, separate printr-un spatiu, reprezentand coordonatele <var>x</var> si <var>y</var> ale varfurilor primului poligon. Varfurile poligonului sunt date in ordine trigonometrica sau invers trigonometrica. Pe linia urmatoare se afla numarul intreg <var>M</var>, reprezentand numarul de varfuri al celui de-al doilea poligon. Pe urmatoarele <var>M</var> linii se afla cate doua numere intregi, separate printr-un spatiu, reprezentand coordonatele <var>x</var> si <var>y</var> ale varfurilor celui de-al doilea poligon. Varfurile poligonului sunt date in ordine trigonometrica sau invers trigonometrica.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>In fisierul <var>arie.out</var> veti afisa aria intersectiei celor doua poligoane, rotunjita la <var>3</var> zecimale.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 20</var></li>
+<li><var>3 ≤ M ≤ 20</var></li>
+<li><var>-50</var> ≤ abscisa oricarui varf al unui poligon ≤ <var>50</var></li>
+<li><var>-50</var> ≤ ordonata oricarui varf al unui poligon ≤ <var>50</var></li>
+<li>Pentru cei surprinsi de limitele mici ale datelor de intrare si limita mare de timp : de multe ori (TopCoder, <span class="caps">ACM, </span>etc.) un program cu o complexitate neoptima, dar scris repede si clar, este de preferat unuia cu o complexitate optima, dar a carui durata de scriere este mare si in care exista sanse mari sa aveti "bug"-uri!</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>arie.in</th><th>arie.out</th></tr><tr><td>4<br>
+-2 -2<br>
+2 -2<br>
+2 2<br>
+-2 2<br>
+3<br>
+0 3<br>
+3 0<br>
+0 -3<br></td><td>7.000</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=41">Geometrie</a></span>
+            <a href="javascript:show_tag_list(41)" id="tag_anchor_41" class="show_tag_anchor">
+                ... 4 taguri
+            </a>
+            <div style="display: none;" id="tag_list_41"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=110">Aria unui poligon</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=265">Infasuratoare convexa</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=295">Intersectie de poligoane</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=269">Punct in poligon</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

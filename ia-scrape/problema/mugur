@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>mugur.in, mugur.out</td><td><strong>Sursă</strong></td><td>CCEX 2009</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=224">Lucian Boca</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Marius"><img src="/utilizator/Marius?action=download&amp;file=avatar&amp;resize=L16x16" alt="Marius">Marius Stroe</a> <a title="Rating Marius: 627" class="rating-badge-4" href="http://infoarena.ro/utilizator/Marius?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Marius">Marius</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>4194 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=mugur">Vezi solutiile trimise</a></p>
+
+<h1>Mugur<br></h1>
+
+<p>Spunem că un şir <var>P</var> de paranteze rotunde constituie o parantezare corectă dacă <var>P = Ø</var> sau <var>P = M<sub>1</sub>M<sub>2</sub>..M<sub>K</sub></var>, adică este format prin concatenarea mugurilor <var>M<sub>1</sub></var>, <var>M<sub>2</sub></var>, .., <var>M<sub>K</sub></var> <var>(K ≥ 1)</var>.</p>
+
+<p>Spunem că un şir <var>M</var> de paranteze rotunde este un mugure dacă <var>M = (P)</var>, adică este format prin încadrarea unei parantezări corecte <var>P</var> între caracterele <var>(</var> şi <var>)</var>. Astfel, fiind dată o parantezare corectă, se poate spune din câţi muguri este alcătuită. Spre exemplu, parantezarea <var>S<sub>1</sub> = (())()</var> are doi muguri: <var>M<sub>1</sub> = (())</var> şi <var>M<sub>2</sub> = ()</var>. Şirul <var>S<sub>2</sub> = (()()(()))</var> are un singur mugure: <var>M<sub>1</sub> = (()()(()))</var>.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Fiind curios din fire, Amadaeus se întreabă câte parantezări corecte cu <var>K</var> muguri poate alcătui cu <var>N</var> perechi de paranteze. Deoarece rezultatul poate fi un număr foarte mare, Amadaeus se mulţumeşte (de aceasta dată) cu restul acestui număr la împărţirea cu <var>123457</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>mugur.in</var> conţine o singură linie cu numerele <var>N</var> şi <var>K</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>mugur.out</var> se va găsi numărul cerut.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ K ≤ N ≤ 500</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>mugur.in</th><th>mugur.out</th></tr><tr><td>4 2<br></td><td>5<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Avem şirurile:</p>
+
+<p><var>()(()())</var><br><var>()((()))</var><br><var>(())(())</var><br><var>((()))()</var><br><var>(()())()</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

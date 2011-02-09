@@ -1,0 +1,36 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>nrcuv1.in, nrcuv1.out</td><td><strong>Sursă</strong></td><td>ONI 2009, Baraj Gimnaziu</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=184">Doru Popescu Anastasiu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrici_cezar"><img src="/utilizator/andrici_cezar?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrici_cezar">Andrici Cezar</a> <a title="Rating andrici_cezar: 458" class="rating-badge-3" href="http://infoarena.ro/utilizator/andrici_cezar?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrici_cezar">andrici_cezar</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=nrcuv1">Vezi solutiile trimise</a></p>
+
+<h1>Nrcuv1<br></h1>
+
+<p>Se dă un alfabet format din <var>n</var> litere distincte. Cu aceste litere se pot forma cuvinte de <var>n</var> litere. Dintre acestea ne interesează cuvintele în care există cel puţin o literă care apare de cel puţin două ori. Notăm cu <var>nr</var> numărul acestor cuvinte.</p>
+
+<h2>Cerinţă </h2>
+
+<p>Să se scrie un program care cunoscând <var>n</var>, determină <var>nr</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>nrcuv1.in</var> conţine pe prima linie numărul natural <var>n</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>nrcuv1.out</var> conţine pe prima linie numărul <var>nr</var>.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ n ≤ 100</var></li>
+<li>Pentru <var>20%</var> din teste <var>n &lt; 11</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>nrcuv1.in</th><th>nrcuv1.out</th></tr><tr><td>2<br></td><td>2<br></td></tr><tr><td>11<br></td><td>285271753811<br></td></tr></table><h3>Explicaţie</h3>
+
+
+<ol><li>Dacă notăm cu <var>a</var> şi <var>b</var> cele două litere distincte, cuvintele care ne interesează sunt <var>aa</var> şi <var>bb</var>.</li>
+</ol><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

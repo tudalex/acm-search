@@ -1,0 +1,48 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>dunarea.in, dunarea.out</td><td><strong>Sursă</strong></td><td>ONI 2009, clasa a 8-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=158">Victor Manz</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrici_cezar"><img src="/utilizator/andrici_cezar?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrici_cezar">Andrici Cezar</a> <a title="Rating andrici_cezar: 458" class="rating-badge-3" href="http://infoarena.ro/utilizator/andrici_cezar?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrici_cezar">andrici_cezar</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=dunarea">Vezi solutiile trimise</a></p>
+
+<h1>Dunarea<br></h1>
+
+<p>Programul de reabilitare turistica a Dunării şi atragere a turiştilor a determinat autorităţile să decidă vânzarea de abonamente pe fiecare linie de croazieră existentă între porturile dunărene, la acelaşi preţ. Vasele unei linii de croazieră navighează între două porturi <var>X<sub>i</sub></var>, <var>Y<sub>i</sub></var> (1≤ <var>i</var> ≤ <var>N</var> ) şi opresc în toate porturile dintre acestea, <var>X<sub>i</sub>+1</var>, <var>X<sub>i</sub>+2</var>,..., <var>Y<sub>i</sub>-1</var>, <var>Y<sub>i</sub></var>. Un pescar gălăţean se deplasează zilnic din portul <var>A</var> în portul <var>B</var> folosind liniile de croazieră şi ar vrea să reducă cheltuielile cât mai mult. El a ajuns la concluzia că un număr de abonamente pe câte o linie de croazieră, alese eficient, este mai avantajos decât cumpărarea câte unui bilet pentru fiecare călătorie. Din păcate există mai multe combinaţii de linii de croazieră care parcurg traseul de la <var>A</var> la <var>B</var>. Pescar fiind, matematica nu este punctul său forte, deci vă cere ajutorul pentru a stabili care este numărul minim de abonamente necesare pentru a ajunge din portul <var>A</var> la <var>B</var></p>
+
+<h2>Cerinţă</h2>
+
+<p>Scrieţi un program care, pe baza traseelor liniilor de croazieră, să calculeze şi să afişeze numărul minim de abonamente necesare pentru a ajunge de la <var>A</var> la <var>B</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>dunarea.in</var> conţine pe prima linie trei numere naturale nenule <var>A</var>, <var>B</var> şi <var>N</var> separate prin câte un spaţiu. <var>A</var> şi <var>B</var> reprezintă porturile între care se deplasează zilnic pescarul. <var>N</var> este numărul de linii de croazieră.<br>
+Pe următoarele <var>N</var> linii se află câte <var>2</var> numere naturale nenule <var>X<sub>i</sub></var>, <var>Y<sub>i</sub></var> (<var>1 ≤ i ≤ N</var>)separate prin câte un spaţiu, reprezentând porturile între care navighează linia de croazieră <var>i</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>dunarea.out</var> va conţine un singur număr natural nenul, reprezentând numărul minim de abonamente necesare.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ A &lt; B ≤ 5.000</var></li>
+<li><var>1 ≤ N ≤ 5.000</var></li>
+<li><var>1 ≤ X<sub>i</sub> ≤ Y<sub>i</sub> ≤ 5.000</var></li>
+<li>Se garantează pentru fiecare set de date de intrare existenţa a cel puţin unei linii de croazieră care acoperă întreg traseul de la <var>A</var> la <var>B</var>.</li>
+<li>Pot să existe două sau mai multe linii de croazieră între aceleaşi porturi (cum se întâmplă în exemplul de mai jos cu liniile <var>1</var> şi <var>7</var>).</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>dunarea.in</th><th>dunarea.out</th></tr><tr><td>1 10 8<br>
+5 8<br>
+1 2<br>
+5 10<br>
+3 7<br>
+3 6<br>
+3 4<br>
+5 8<br>
+2 4<br></td><td>4<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Sunt suficiente <var>4</var> abonamente pentru liniile: <var>2</var>, <var>8</var>, <var>4</var> şi <var>3</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

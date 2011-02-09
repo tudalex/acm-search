@@ -1,0 +1,69 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>joc14.in, joc14.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil 2010, clasele 7-8</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=159">Clara Ionescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/savim"><img src="/utilizator/savim?action=download&amp;file=avatar&amp;resize=L16x16" alt="savim">Serban Andrei Stan</a> <a title="Rating savim: 783" class="rating-badge-1" href="http://infoarena.ro/utilizator/savim?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/savim">savim</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=joc14">Vezi solutiile trimise</a></p>
+
+<h1>Joc14<br></h1>
+
+<p>Jocul de simetrie al lui Stanislaw Ulam se joacă pe un caroiaj cu <var>50 × 50</var> de pătrăţele. Iniţial se aşează o literă sau două litere <var>'o'</var> mici pe una, respectiv pe două dintre pătrăţele. Apoi, la fiecare pas al jocului:</p>
+
+
+<ul><li>Pe fiecare pătrăţel vecin cu un <em>singur</em> pătrăţel pe care se află o literă mică <var>'o'</var> sau un caracter <var>'*'</var> şi care este gol, se aşează o literă mică <var>'o'</var>. </li>
+<li>Toate literele <var>'o'</var> mici de la pasul anterior se transformă în caractere <var>'*'</var>.</li>
+<li>Caracterele <var>'*'</var> existente anterior acestui pas dispar.</li>
+</ul><p>Două pătrăţele sunt vecine dacă au o singură latură în comun.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Scrieţi un program care simulează acest joc pe un caroiaj dat! Jocul se termină după un pas în care s-a aşezat cel puţin o literă pe prima sau pe ultima linie, respectiv pe prima sau pe ultima coloană a caroiajului. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare <var>joc14.in</var> se află un număr natural <var>n</var>, reprezentând dimensiunea caroiajului. Pe următoarea linie se află valoarea <var>1</var> sau <var>2</var>, reprezentând faptul că jocul începe cu o literă <var>'o'</var> sau cu două. Dacă această valoare este <var>1</var>, pe următoarea linie sunt scrise două numere naturale, despărţite printr-un spaţiu, reprezentând indicele de linie şi cel de coloană a poziţiei pe care se află litera. Dacă această valoare este <var>2</var>, pe următoarea linie sunt scrise patru numere naturale, despărţite prin câte un spaţiu, reprezentând indicele de linie şi cel de coloană ale poziţiilor pe care se află cele două litere. </p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>joc14.out</var> veţi „desena” caroiajul după efectuarea fiecărui pas, până se termină jocul. În fişier veţi afişa un tablou bidimensional de caractere, corespunzător fiecărui pas, în care pe poziţiile corespunzătoare pătrăţelelor goale se vor scrie caractere <var>'.'</var>, iar în rest se vor scrie caractere <var>'o'</var> sau <var>'*'</var>. Între două caroiaje diferite se va lăsa o linie vidă. Dacă prima literă <var>'o'</var> sau cel puţin una din primele două este poziţionată pe chenarul caroiajului, nu se efectuează niciun pas şi în fişier se va afişa caroiajul iniţial.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>5 ≤ n ≤ 50</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>joc14.in</th><th>joc14.out</th></tr><tr><td>7<br>
+1<br>
+4 4<br></td><td>.......<br>
+.......<br>
+.......<br>
+...o...<br>
+.......<br>
+.......<br>
+.......<br>
+ <br>
+.......<br>
+.......<br>
+...o...<br>
+..o*o..<br>
+...o...<br>
+.......<br>
+.......<br>
+ <br>
+.......<br>
+...o...<br>
+...*...<br>
+.o*.*o.<br>
+...*...<br>
+...o...<br>
+.......<br>
+ <br>
+...o...<br>
+..o*o..<br>
+.o...o.<br>
+o*...*o<br>
+.o...o.<br>
+..o*o..<br>
+...o...<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

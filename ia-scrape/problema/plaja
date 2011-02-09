@@ -1,0 +1,60 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>plaja.in, plaja.out</td><td><strong>Sursă</strong></td><td>ONI 2010, clasa a 9-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=194">Cristina Sichim</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/GavrilaVlad"><img src="/utilizator/GavrilaVlad?action=download&amp;file=avatar&amp;resize=L16x16" alt="GavrilaVlad">Gavrila Vlad</a> <a title="Rating GavrilaVlad: 973" class="rating-badge-1" href="http://infoarena.ro/utilizator/GavrilaVlad?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/GavrilaVlad">GavrilaVlad</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.6 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=plaja">Vezi solutiile trimise</a></p>
+
+<h1>Plaja<br></h1>
+
+<p>Primăria oraşului Constanţa reamenajează plaja din staţiunea Mamaia. Aceasta este reprezentată ca o zonă dreptunghiulară cu lăţimea de <var>a</var> unităţi şi lungimea de <var>b</var> unităţi. Pe plajă sunt trasate linii paralele cu laturile dreptunghiului astfel încât să formeze pătrate cu latura de o unitate, numite zone.</p>
+
+<p>Pe plajă se vor pune obiecte: umbrele şi prosoape. Se consideră că dacă un obiect intră în interiorul unei zone, o ocupă în întregime.<br>
+Se poziţionează u umbrele de soare. Într-o zonă se poate aşeza cel mult o umbrelă.</p>
+
+<p><var>N</var> turişti vin şi îşi aşează prosoapele pe plajă. Un prosop are formă dreptunghiulară şi va fi aşezat paralel cu laturile dreptunghiului. Turiştii îşi pot aşeza prosoapele pe zone libere sau peste prosoape deja aşezate. Un turist nu îşi poate aşeza însă prosopul pe plajă dacă suprafaţa acoperită de acesta include cel puţin o zonă în care se află o umbrelă.</p>
+
+<p><var>M</var> localnici au suprafeţe favorite pentru aşezarea prosoapelor. O suprafaţă favorită are forma unui dreptunghi cu laturile paralele cu laturile dreptunghiului care marchează plaja. După ce turiştii termină aşezarea prosoapelor, localnicii verifică dacă zonele din suprafaţa favorită sunt libere (neacoperite de prosoape aşezate de turişti sau de umbrele).</p>
+
+<h2>Cerinţă</h2>
+
+<p>Scrieţi un program care să determine:</p>
+
+
+<ul><li>numărul de turişti care au reuşit să îşi aşeze prosoapele pe plajă;</li>
+<li>numărul de localnici ale căror zone favorite sunt libere.</li>
+</ul><h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>plaja.in</var> conţine pe prima linie trei numere naturale, separate prin câte un spaţiu, <var>a</var>, <var>b</var> şi <var>u</var>, având semnificaţia din enunţ. Fiecare dintre următoarele <var>u</var> linii conţine o pereche de numere naturale <var>x</var>, <var>y</var>, reprezentând o zonă în care se găseşte o umbrelă. Următoarea linie din fişier conţine un număr natural <var>N</var>, reprezentând numărul de turişti. Următoarele <var>N</var> linii descriu prosoapele turiştilor. Fiecare linie conţine <var>4</var> numere naturale <var>x<sub>1</sub>, y<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub></var>, ce reprezintă colţurile unui prosop. Linia următoare conţine o singură valoare, <var>M</var>, reprezentând numărul de localnici. Pe următoarele <var>M</var> linii se află câte <var>4</var> numere, separate prin câte un spaţiu, <var>x'<sub>1</sub>, y'<sub>1</sub>, x'<sub>2</sub>, y'<sub>2</sub></var>, ce reprezintă colţurile unei suprafeţe favorite.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>plaja.out</var> conţine pe prima linie două numere naturale separate printr-un spaţiu. Primul număr reprezintă numărul de turişti care şi-au aşezat prosoapele pe plajă, iar cel de-al doilea număr reprezintă numărul de localnici ale căror zone favorite sunt libere.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li>Colţul din stânga sus al zonei dreptunghiulare are coordonatele <var>(1, 1)</var>.</li>
+<li><var>3 ≤ a, b ≤ 2 000</var>.</li>
+<li><var>0 ≤ u ≤ 100</var>.</li>
+<li><var>3 ≤ m, n ≤ 100 000</var>.</li>
+<li>Un prosop descris de <var>(x<sub>1</sub>, y<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub>)</var> va avea <var>1 ≤ x<sub>1</sub> ≤ x<sub>2</sub> ≤ a</var> şi <var>1 ≤ y<sub>1</sub> ≤ y<sub>2</sub> ≤ b</var>.</li>
+<li>O suprafaţă favorită descrisă de <var>(x'<sub>1</sub>, y'<sub>1</sub>, x'<sub>2</sub>, y'<sub>2</sub>)</var> va avea <var>1 ≤ x'<sub>1</sub> ≤ x'<sub>2</sub> ≤ a</var> şi <var>1 ≤ y'<sub>1</sub> ≤ y'<sub>2</sub> ≤ b</var>.</li>
+</ul><table class="example" cellspacing="0"><tr><th>plaja.in</th><th>plaja.out</th></tr><tr><td>12 13 1<br>
+6 11<br>
+4<br>
+3 4 7 7<br>
+5 6 8 8<br>
+9 2 10 3<br>
+5 10 8 12<br>
+3<br>
+1 8 3 13<br>
+10 3 12 4<br>
+2 10 5 12<br></td><td>3 2<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Ultimul turist nu îşi poate aşeza prosopul. Zona favorită al celui de-al doilea localnic nu este liberă.</p>
+
+<p><img src="http://infoarena.ro/problema/plaja?action=download&amp;file=plaja.jpg&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

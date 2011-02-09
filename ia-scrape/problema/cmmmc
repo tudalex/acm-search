@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cmmmc.in, cmmmc.out</td><td><strong>Sursă</strong></td><td>ONI 2010, clasa a 9-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=135">Stelian Ciurea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/GavrilaVlad"><img src="/utilizator/GavrilaVlad?action=download&amp;file=avatar&amp;resize=L16x16" alt="GavrilaVlad">Gavrila Vlad</a> <a title="Rating GavrilaVlad: 973" class="rating-badge-1" href="http://infoarena.ro/utilizator/GavrilaVlad?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/GavrilaVlad">GavrilaVlad</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cmmmc">Vezi solutiile trimise</a></p>
+
+<h1>Cmmmc<br></h1>
+
+<p>Definim noţiunea de pereche ordonată, perechea de numere naturale <var>(x, y)</var> cu <var>x ≤ y</var>. Definim cel mai mic multiplu comun al unei perechi ordonate ca fiind cel mai mic multiplu comun al numerelor care formează perechea.</p>
+
+<p>Se dau <var>k</var> numere naturale <var>n<sub>1</sub>, n<sub>2</sub>, ..., n<sub>k</sub></var>. </p>
+
+<h2>Cerinţă</h2>
+
+<p>Să se determine pentru fiecare dintre numerele <var>n<sub>i</sub> (i ∈ {1, 2, ..., k})</var>:<br>
+a) câte perechi ordonate au cel mai mic multiplu comun egal cu <var>n<sub>i</sub></var>.<br>
+b) dintre acestea, perechea ordonată care are suma minimă.</p>
+
+<h2>Date de intrare </h2>
+
+<p>Prima linie a fişierului <var>cmmmc.in</var> conţine un număr natural <var>k</var>. Următoarele <var>k</var> linii din acest fişier vor conţine câte un număr natural; linia <var>i+1</var> va conţine numărul <var>n<sub>i</sub> (i ∈ {1, 2, ..., k})</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul <var>cmmmc.out</var> va conţine <var>k</var> linii. Pe fiecare dintre acestea se vor afla trei numere. Cele trei numere de pe linia <var>i</var> vor reprezenta:</p>
+
+
+<ul><li>primul, numărul de perechi ordonate care au cel mai mic multiplu comun egal cu <var>n<sub>i</sub></var>;</li>
+<li>următoarele două, numerele care alcătuiesc perechea ordonată care are cel mai mic multiplu comun egal cu <var>n<sub>i</sub></var> şi a căror sumă este minimă, afişate în ordine crescătoare.</li>
+</ul><h2>Restricţii şi precizări</h2>
+
+
+<ul><li><var>1 ≤ k ≤ 100</var>.</li>
+<li><var>1 ≤ n<sub>i</sub> ≤ 2 000 000 000</var>.</li>
+<li>Pentru <var>20%</var> dintre teste, <var>k ≤ 100</var> şi <var>n<sub>i</sub> ≤ 1000</var>.</li>
+<li>Fiecare dintre cele <var>k</var> linii ale fişierului <var>cmmmc.out</var> trebuie să conţină exact trei numere separate prin câte un spaţiu; în caz contrar, soluţia se consideră greşită şi se obţin <var>0</var> puncte pentru testul respectiv. Rezolvarea corectă a cerinţei a) valorează <var>40%</var> din punctajul unui test iar rezolvarea corectă a cerinţei b) <var>60%</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>cmmmc.in</th><th>cmmmc.out</th></tr><tr><td>2<br>
+10<br>
+11<br></td><td>5 2 5<br>
+2 1 11<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Există cinci perechi distincte care au cel mai mic multiplu comun egal cu <var>10</var>: <var>(1, 10)</var>, <var>(2, 10)</var>, <var>(5, 10)</var>, <var>(2, 5)</var> si <var>(10, 10)</var>. Dintre acestea perechea cu cea mai mică sumă este <var>(2, 5)</var>.<br>
+Pentru <var>n = 11</var> există două perechi ordonate care au cel mai mic multiplu comun <var>11</var>: <var>(1, 11)</var>, <var>(11, 11)</var>. Dintre acestea perechea cu cea mai mică sumă este <var>(1, 11)</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

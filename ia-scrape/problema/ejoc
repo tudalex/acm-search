@@ -1,0 +1,38 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ejoc.in, ejoc.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2009, Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=223">Cosmin Gheorghe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gcosmin"><img src="/utilizator/gcosmin?action=download&amp;file=avatar&amp;resize=L16x16" alt="gcosmin">Gheorghe Cosmin</a> <a title="Rating gcosmin: 1142" class="rating-badge-4" href="http://infoarena.ro/utilizator/gcosmin?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gcosmin">gcosmin</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ejoc">Vezi solutiile trimise</a></p>
+
+<h1>Ejoc<br></h1>
+
+<p>Dalila si Denisa se plictisesc de moarte asa ca decid sa joace urmatorul joc. Ele au o multime initial cu doua numere. La fiecare mutare o fata alege doua numere <strong>diferite</strong> din multime a caror diferenta in modul nu apare in multime si insereaza diferenta respectiva (tot in modul) in multime. Dalila si Denisa muta alternativ. Fata care nu mai poate efectua nici o mutare pierde. Scrieti un program care sa determine care dintre fete castiga avand in vedere ca ambele joaca optim. Dalila efectueaza prima mutare.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>ejoc.in</var> va contine pe prima linie numarul <var>T</var> de jocuri ce urmeaza a fi jucate. Fiecare dintre urmatoarele <var>T</var> linii contine doua numere <var>A</var> si <var>B</var>, cele doua numere aflate initial in multime.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>ejoc.out</var> contine <var>T</var> linii. Pe a <var>i</var>-a linie se va afla numele fetei ce castiga al <var>i</var>-lea joc : "Dalila" sau "Denisa" (fara ghilimele).</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 30</var></li>
+<li><var>1 ≤ A, B ≤ 10<sup>18</sup></var></li>
+<li>Pentru teste in valoare de 20 de puncte <var>1 ≤ A, B ≤ 10<sup>2</sup></var></li>
+<li><var>A</var> diferit de <var>B</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>ejoc.in</th><th>ejoc.out</th></tr><tr><td>2<br>
+1 2<br>
+2 3<br></td><td>Denisa<br>
+Dalila<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>La primul joc Dalila nu poate efectua nicio mutare, deci pierde.<br>
+La al doilea joc Dalila insereaza <var>1</var> in multime ( <var>|2 - 3| = 1</var> ), si apoi Denisa nu mai poate efectua nici o mutare, deci pierde.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

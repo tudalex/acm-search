@@ -1,0 +1,58 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>pluton.in, pluton.out</td><td><strong>Sursă</strong></td><td>OJI 2006, clasa a 9-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=186">Marinel Serban</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Florian"><img src="/utilizator/Florian?action=download&amp;file=avatar&amp;resize=L16x16" alt="Florian">Marcu Florian</a> <a title="Rating Florian: 667" class="rating-badge-1" href="http://infoarena.ro/utilizator/Florian?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Florian">Florian</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>1024 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=pluton">Vezi solutiile trimise</a></p>
+
+<h1>Pluton<br></h1>
+
+<p>In timpul actiunii "Furtuna in desert" din cauza unei furtuni de nisip, <var>N</var> soldati s-au ratacit de plutoanele lor. Dupa trecerea furtunii se pune problema regruparii acestora pe plutoane. Pentru aceasta se folosesc placutele de identificare pe care soldatii le poarta la gat. Pe aceste placute sunt scrise numere care pot identifica fiecare soldat si plutonul din care acesta face parte. Astfel, soldatii din acelasi pluton au numarul de identificare format din aceleasi cifre, dispuse in alta ordine si numerele de identificare sunt unice. De exemplu, numerele de identificare <var>78003433</var>, <var>83043073</var>, <var>33347008</var> indica faptul ca cei trei soldati care le poarta fac parte din acelasi pluton.</p>
+
+<h2>Cerinta</h2>
+
+<p>Fiind date cele <var>N</var> numere de pe placutele de identificare, sa se regrupeze cei <var>N</var> soldati pe plutoane, indicandu-se numarul de plutoane gasite (un pluton refacut trebuie sa aiba minimum un soldat), numarul de soldati din cel mai numeros pluton, numarul de plutoane care au acest numar maxim de soldati precum si componenta unui astfel de pluton (cu numar maxim de soldati regrupati). </p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>pluton.in</var> contine pe prima linie numarul <var>N</var> de soldati recuperati, iar pe fiecare dintre urmatoarele <var>N</var> linii cate un numar de identificare a celor <var>N</var> soldati.  </p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>pluton.out</var> va contine pe prima linie numarul de plutoane refacute. Linia a doua va contine numarul de soldati din cel mai numeros pluton refacut. Linia a treia va contine numarul de plutoane care au numarul maxim de soldati recuperati. Linia a patra va contine componenta unui astfel de pluton, cu numar maxim de soldati recuperati, numerele de identificare ale soldatilor din componenta fiind scrise unul dupa altul separate prin cate un spatiu. </p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>0 &lt; <var>n</var> ≤ 4000</var>.</li>
+<li><var>0 &lt; numar de identificare &lt; 2000000000</var>.</li>
+</ul><h3>Observatie:</h3>
+
+<p>Se acorda punctaje partiale astfel:</p>
+
+
+<ul><li>Pentru prima linie corecta se acorda <var>30%</var> din punctaj.</li>
+<li>Pentru prima si a doua linie, corecte se acorda <var>50%</var> din punctaj.</li>
+<li>Pentru primele trei linii corecte se acorda <var>70%</var> din punctaj.</li>
+<li>Pentru toate cele patru linii corecte se acorda <var>100%</var> din punctaj </li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>pluton.in</th><th>pluton.out</th></tr><tr><td>10<br>
+1223 <br>
+123 <br>
+666 <br>
+321 <br>
+7890 <br>
+2213 <br>
+312 <br>
+655 <br>
+1000 <br>
+1322<br></td><td>6<br>
+3<br>
+2<br>
+321 312 123<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Au fost recuperati soldati din <var>6</var> plutoane distincte, cei mai multi soldati recuperati dintr-un pluton fiind in numar de <var>3</var>. Exista <var>2</var> plutoane cu numar maxim de soldati recuperati <var>(3)</var>, unul dintre ele fiind format din soldatii cu numerele <var>321 312 123</var>. De remarcat ca si solutia <var>1223 2213 1322</var> este corecta.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

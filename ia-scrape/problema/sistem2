@@ -1,0 +1,35 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>sistem2.in, sistem2.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=127">Mihai Stroe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65535 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=sistem2">Vezi solutiile trimise</a></p>
+
+<h1>Sistem2<br></h1>
+
+<p>Se da un numar <var>N</var>. Se cere o permutare a multimii <var>{1,2,...,N}</var> care respecta anumite constrangeri. Cele <var>M</var> constrangeri se dau sub forma unor expresii in variabilele <var>X<sub>1</sub>,...,X<sub>N</sub></var>. Fiecare expresie contine cel putin <var>1</var> si cel mult <var>4</var> operanzi, iar operatorii pot fi <var>+</var> , <var>-</var> , <var>*</var> , <var>/</var> , <var>=</var> . Nu apar paranteze. Ordinea operatiilor este cea cunoscuta. Operatorul <var>/</var> poate fi folosit doar cand rezultatul <strong><span class="caps">IMEDIAT</span></strong> al impartirii e intreg; de ex. putem scrie <var>2*6/4</var> dar nu <var>2/4*6</var>. Fiecare expresie se termina cu un singur <var>"="</var> urmat de un numar <strong><span class="caps">POZITIV</span></strong> (mai mare sau egal cu <var>0</var>). Intr-o constrangere, fiecare variabila apare <strong><span class="caps">CEL MULT</span> O <span class="caps">DATA</span></strong>. Se stie ca exista cel putin o solutie. Daca exista mai multe se cere numai una. Operatorii sunt delimitati de spatii, pentru a usura citirea datelor.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>sistem2.in</var> va contine numerele <var>N</var> si <var>M</var>. Urmatoarele <var>M</var> linii contin fiecare cate o constrangere.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>sistem2.out</var> veti afisa o singura linie continand valorile variabilelor <var>X<sub>1</sub>,...,X<sub>N</sub></var>, separate prin cate un spatiu.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 12</var></li>
+<li><var>1 ≤ M ≤ 20</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>sistem2.in</th><th>sistem2.out</th></tr><tr><td>4 3<br>
+X4 + X2 + X3 = 6<br>
+X4 * X3 = 6<br>
+X4 + X1 = 6<br></td><td>4 1 3 2<br></td></tr></table><h3>Explicatie</h3>
+
+<p><var>2 + 1 + 3 = 6</var><br><var>2 * 3 = 6</var><br><var>2 + 4 = 6</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>pari.in, pari.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil 2009, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=215">Marius Stroe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Marius"><img src="/utilizator/Marius?action=download&amp;file=avatar&amp;resize=L16x16" alt="Marius">Marius Stroe</a> <a title="Rating Marius: 627" class="rating-badge-4" href="http://infoarena.ro/utilizator/Marius?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Marius">Marius</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>1024 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=pari">Vezi solutiile trimise</a></p>
+
+<h1>Pari<br></h1>
+
+<p>Se consideră un şir <var>S</var> de <var>n</var> numere întregi şi un alt şir de lungime <var>n</var> format din cuvintele <var>par</var>, respectiv <var>impar</var>. Numerele din şir trebuie transformate conform regulilor de mai jos, astfel încât fiecare număr să devină de paritatea indicată:</p>
+
+
+<ul><li>se alege o pereche de indici <var>(i, j)</var> astfel încât <var>i</var> şi <var>j</var> să fie de parităţi diferite şi cel mai mare divizor comun al lor să fie mai mare sau egal cu un număr natural <var>d</var> dat. </li>
+<li>numerelor <var>S<sub>i</sub></var> şi <var>S<sub>j</sub></var> li se adună un număr întreg oarecare.</li>
+</ul><h2>Cerinţă</h2>
+
+<p>Determinaţi calea de transformare a şirului dat conform operaţiilor din enunţ.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare <var>pari.in</var> se află două numere naturale <var>n</var> şi <var>d</var>, reprezentând numărul de elemente ale şirului <var>S</var> şi valoarea minimă a celui mai mare divizor comun. Pe următoarele <var>n</var> linii se găsesc câte un număr întreg, un spaţiu şi un cuvânt, cuvânt ce poate fi <var>par</var>, respectiv <var>impar</var>, reprezentând paritatea ce trebuie să o aibă numărul.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>pari.out</var> se vor scrie pe câte un rând operaţiile aplicate asupra şirului. O operaţie este reprezentată de trei numere <var>i</var>, <var>j</var>, <var>k</var>, unde <var>i</var> şi <var>j</var> indică perechea de indici, iar <var>k</var> valoarea care se adună la numerele din şir de pe poziţiile <var>i</var> şi <var>j</var>. Cele trei numere se vor despărţi prin câte un spaţiu. Dacă nu există soluţie, în fişierul de ieşire se vor scrie trei numere <var>0</var>, despărţite prin câte un spaţiu. </p>
+
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>2 ≤ n ≤ 1 000</var></li>
+<li><var>1 ≤ d ≤ 1 000</var></li>
+<li><var>1 ≤ S<sub>i</sub> ≤ 30 000, i = 1, 2, .., n</var></li>
+<li>Se garantează că numărul total de perechi care se pot forma nu depăşeşte <var>10 000</var>.</li>
+<li>În cazul în care există mai multe soluţii se cere una singură.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>pari.in</th><th>pari.out</th></tr><tr><td>5 1<br>
+8 par<br>
+10 par<br>
+7 par<br>
+6 impar<br>
+7 impar<br></td><td>3 4 -3<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

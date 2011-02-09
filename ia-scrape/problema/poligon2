@@ -1,0 +1,62 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>poligon2.in, poligon2.out</td><td><strong>Sursă</strong></td><td>.campion 2003</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">2/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=poligon2">Vezi solutiile trimise</a></p>
+
+<h1>Poligon 2<br></h1>
+
+<p>Gigel a desenat pe hartie un poligon (nu neaparat convex si care se poate chiar autointersecta) cu <var>N</var> varfuri si a marcat mijlocul fiecarei laturi. Fratele lui, insa, a sters poligonul desenat, pe hartie ramanand marcate numai mijloacele laturilor. Gigel ar dori, totusi, sa redeseneze poligonul, asa cum era el initial. Se considera ca poligonul are varfurile numerotate de la <var>1</var> la <var>N</var>, in ordinea in care apar pe conturul poligonului. Cu aceasta numerotare a varfurilor, se defineste si o numerotare a laturilor. Latura <var>i (1 ≤ i ≤ N)</var> este segmentul ce uneste varfurile <var>i</var> si <var>i + 1</var>. Latura <var>N</var> uneste varfurile <var>1</var> si <var>N</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Dandu-se coordonatele mijloacelor laturilor unui poligon, determinati coordonatele varfurilor sale.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare poligon2.in se afla numarul intreg <var>N</var>, de laturi (si varfuri) ale poligonului. Pe urmatoarele <var>N</var> linii se afla cate doua numere reale (cu maxim trei zecimale), separate printr-un spatiu, <var>x</var> si <var>y</var>, reprezentand coordonatele mijloacelor fiecarei laturi, in ordine, de la <var>1</var> la <var>N</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>poligon2.out</var> va contine mesajul <var>fara solutie</var>, in cazul in care Gigel a marcat gresit mijloacele laturilor si nu se poate forma nici un poligon avand mijloacele laturilor date. In cazul in care exista cel putin o solutie, veti afisa <var>N</var> linii. Fiecare linie va contine doua numere reale, afisate cu trei zecimale, reprezentand coordonatele <var>(x,y)</var> ale unui varf. Pe prima linie se vor afisa coordonatele varfului numerotat cu <var>1</var>, pe a doua linie, coordonatele varfului numerotat cu <var>2</var> s.a.m.d.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 10.000</var></li>
+<li>Coordonatele mijloacelor laturilor sunt din intervalul <var>[0, 2.000.000.000]</var>.</li>
+<li>In cazul in care problema admite cel putin o solutie, cu coordonatele varfurilor afisate in fisierul de iesire, se va calcula, pentru fiecare latura, coordonatele mijlocului acesteia. Veti primi punctaj maxim pentru testul respectiv, daca diferenta dintre valoarile calculate ale coordonatelor mijlocului si cele date in fisierul de intrare este cel mult <var>0,001</var>, pentru oricare latura. Altfel, nu veti primi nici un punct.</li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>poligon2.in</th><th>poligon2.out</th></tr><tr><td>4<br>
+0 0<br>
+2 0<br>
+2 2<br>
+0 2<br></td><td>-1.000 1.000<br>
+ 1.000 -1.000<br>
+ 3.000 1.000<br>
+ 1.000 3.000</td></tr><tr><td>4<br>
+0 0<br>
+2 0<br>
+2 2<br>
+1 3<br></td><td>fara solutie</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=41">Geometrie</a></span>
+            <a href="javascript:show_tag_list(41)" id="tag_anchor_41" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_41"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=62">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=100">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

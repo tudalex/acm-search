@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>iv.in, iv.out</td><td><strong>Sursă</strong></td><td>preONI 2006 Runda Finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=124">Adrian Vladu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>3 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=iv">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=iv">Vezi solutiile trimise</a></p>
+
+<h1>Iv<br></h1>
+
+<p>Nu se stie de ce Igor si Vitalie s-au apucat de matematica. Cert e ca s-au lovit de o problema pentru care creionul si hartia nu sunt suficiente. Avand la dispozitie doua siruri de caractere, ei incearca sa le interclaseze astfel incat sa obtina un palindrom. Desi obtinerea unui singur palindrom este o treaba usoara, ei ar dori sa calculeze cate moduri diferite de a interclasa cele doua siruri exista astfel incat rezultatul sa fie palindrom.</p>
+
+<h2>Cerinta</h2>
+
+<p>Ajutati-i pe Igor si Vitalie sa rezolve aceasta problema ce le framanta spiritul..</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul <var>iv.in</var> contine doua linii, cate una pentru fiecare sir de caractere, fiecare format din cel mult <var>500</var> de litere mici ale alfabetului englez.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul <var>iv.out</var> va contine pe prima linie un singur numar, reprezentand numarul calculat de posibilitati modulo <var>3210121</var>.</p>
+
+<h2>Restrictii si observatii</h2>
+
+
+<ul><li>Lungimea fiecarui sir de caractere este cuprinsa intre <var>1</var> si <var>500</var></li>
+<li>Pentru <var>20%</var> din teste lungimea fiecaruia din cele doua siruri este cuprinsa intre <var>1</var> si <var>10</var></li>
+<li>Pentru <var>60%</var> din teste lungimea fiecaruia din cele doua siruri este cuprinsa intre <var>1</var> si <var>200</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>iv.in</th><th>iv.out</th></tr><tr><td>ab<br>
+ba<br></td><td>4</td></tr></table><h3>Explicatii</h3>
+
+<p>Exista <var>4</var> posibilitati de a interclasa cele doua siruri astfel incat sa se obtina un palindrom. Caracterele primului sir sunt marcate cu rosu, cele din al doilea sir sunt marcate cu albastru:<br><span style="color:red">ab</span><span style="color:blue">ba</span><br><span style="color:red">a</span><span style="color:blue">b</span><span style="color:red">b</span><span style="color:blue">a</span><br><span style="color:blue">b</span><span style="color:red">a</span><span style="color:blue">a</span><span style="color:red">b</span><br><span style="color:blue">ba</span><span style="color:red">ab</span></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

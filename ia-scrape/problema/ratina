@@ -1,0 +1,58 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ratina.in, ratina.out</td><td><strong>Sursă</strong></td><td>ONI 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=128">Dan-Ionut Fechete</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.6 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ratina">Vezi solutiile trimise</a></p>
+
+<h1>Ratina<br></h1>
+
+<p>Limba ratina are doar <var>N</var> cuvinte, numerotate de la <var>1</var> la <var>N</var>. Doua sau mai multe cuvinte se numesc <var>k-asemenea</var> daca au primele <var>k</var> litere identice. Gradul de asemanare intre <var>t</var> cuvinte este <var>k</var> daca cele <var>t</var> cuvinte sunt <var>k-asemenea</var>, dar nu sunt <var>(k+1)-asemenea</var>. </p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care pentru un set de <var>t</var> cuvinte dat, raspunde la interogari de genul: "Care este gradul de asemanare intre cuvintele <var>x<sub>1</sub> x<sub>2</sub> ... x<sub>t</sub></var>" ? </p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>ratina.in</var> va contine pe prima linie doua numere naturale <var>N M</var>, separate printr-un spatiu, reprezentand numarul de cuvinte din limba ratina, respectiv numarul de interogari. <br>
+Urmatoarele <var>N</var> linii vor contine cuvintele din limba ratina, cate un cuvant pe o linie. Mai exact, pe linia <var>i+1</var> este scris cuvantul cu numarul de ordine <var>i</var>. Cuvintele sunt formate din litere mici din alfabetul englez. Urmeaza <var>M</var> linii, fiecare linie reprezentand cate o interogare exprimata astfel: primul numar de pe linie este un numar natural <var>t</var> cuprins intre <var>2</var> si <var>10</var> reprezentand numarul de cuvinte din interogare, apoi vor urma cele <var>t</var> numere de ordine ale cuvintelor din interogare, separate prin cate un spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>ratina.out</var> va contine <var>M</var> linii, cate una pentru fiecare interogare din fisierul de intrare. Pe linia <var>i</var> va fi scris gradul de asemanare al cuvintelor din interogarea <var>i</var>. </p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 10000</var></li>
+<li><var>1 ≤ lungimea maxima a unui cuvant ≤ 2000</var></li>
+<li><var>1 ≤ suma lungimilor tuturor cuvintelor ≤ 200000</var></li>
+<li><var>1 ≤ M ≤ 100000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>ratina.in</th><th>ratina.out</th></tr><tr><td>6 5<br>
+  asdf<br>
+  asdeffff<br>
+  gata<br>
+  gara<br>
+  pesistem<br>
+  pestesistem<br>
+  2 1 2<br>
+  2 3 4<br>
+  2 5 6<br>
+  3 1 3 5<br>
+  2 1 1<br></td><td>3<br>
+  2<br>
+  3<br>
+  0<br>
+  4<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Prima interogare cere gradul de asemanare intre cuvintele <var>asdf</var> si <var>asdeffff</var>, care este 3 (deoarece cele doua cuvinte au primele 3 litere identice, dar nu si primele 4 litere).<br>
+Cea de a doua interogare cere gradul de asemanare intre cuvintele <var>gata</var> si <var>gara</var>, care este 2.<br>
+Cea de a treia interogare cere gradul de asemanare intre cuvintele <var>pesistem</var> si <var>pestesistem</var> care este 3.<br>
+Cea de a patra interogare cere gradul de asemanare intre cuvintele <var>asdf</var>, <var>gata</var> si <var>pesistem</var> care este 0.<br>
+Ultima interogare este evidenta: un cuvant este <var>k</var>-asemenea cu el insusi unde <var>k</var> este chiar lungimea cuvantului.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,62 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>zapada.in, zapada.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2005, clasele 9-10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=148">Alexandru Mosoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=zapada">Vezi solutiile trimise</a></p>
+
+<h1>Zapada<br></h1>
+
+<p>Alba-ca-zapada trebuie sa aiba grija de cei <var>N</var> pitici si a strans din padure <var>N*(N+1)/2</var> ciuperci pentru masa de pranz. Ea stie ca trebuie sa dea fiecarui pitic cate un numar de ciuperci astfel incat sa nu existe doi pitici care au acelasi numar de ciuperci. In plus, unii pitici merita mai multe ciuperci decat altii pentru ca au fost mai cuminti. Ea a notat in agenda ei <var>M</var> perechi (<var>u</var>, <var>v</var>) indicand faptul ca piticul <var>u</var> merita mai multe ciuperci decat piticul <var>v</var>. Imediat a realizat ca ea nu poate sa tina cont de toate notitele ei asa ca va elimina niste perechi cu urmatoarea coditie: daca piticul <var>u</var> merita mai multe ciuperci decat piticii <var>v<sub>1</sub></var>, <var>v<sub>2</sub></var>, ..., <var>v<sub>k</sub></var> atunci ea va alege o modalitate de impartire a ciupercilor astfel incat cel putin unul din piticii <var>v<sub>1</sub></var>, <var>v<sub>2</sub></var>, ..., <var>v<sub>k</sub></var> sa primeasca mai putin decat piticul <var>u</var>. Evident aceasta conditie nu poate fi satisfacuta de piticul care va primi cele mai putine ciuperci, dar Alba-ca-zapada stie ca acest lucru este inevitabil si il accepta atata timp cat pentru ceilalti pitici conditia e satisfacuta.</p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati cate ciuperci va primi fiecare pitic astfel incat dorinta Albei-ca-zapada sa fie indeplinita.</p>
+
+<h2>Date de intrare</h2>
+
+<p>In fisierul <var>zapada.in</var> se afla pe prima linie scris numarul <var>N</var> de pitici, iar pe cea de a doua linie numarul <var>M</var>. Pe urmatoarele <var>M</var> linii se vor afla cate doua numere intregi <var>u</var> si <var>v</var> cu semnificatia ca piticul <var>u</var> merita mai multe ciuperci decat piticul <var>v</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>zapada.out</var> contine <var>N</var> linii, linia <var>i</var> continand un numar intreg <var>X<sub>i</sub></var> reprezentand numarul de ciuperci primite de piticul numarul <var>i</var>.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>0 &lt; N &lt; 100 000</var></li>
+</ul><ul><li><var>0 &lt; M &lt; 350 000</var></li>
+</ul><ul><li><var>0 &lt; u, v ≤ N</var></li>
+</ul><ul><li>Piticii sunt numerotati cu numerele de la <var>1</var> la <var>N</var></li>
+</ul><ul><li>Pe toate testele de intrare va exista solutie. Daca exista mai mute solutii se va afisa doar una (oricare dintre ele)</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>zapada.in</th><th>zapada.out</th></tr><tr><td>5<br>
+8<br>
+1 2<br>
+1 4<br>
+1 3<br>
+5 2<br>
+2 5<br>
+3 5<br>
+4 3<br>
+2 3<br></td><td>5<br>
+3<br>
+1<br>
+2<br>
+4<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Piticul numarul 3 va primi o ciuperca, piticul numarul 4 va primi 2 ciuperci, piticul numarul 2 va primi 3 ciuperci, piticul numarul 5 va primi 4 ciuperci, piticul numarul 1 va primi 5 ciuperci. Piticul 3 a primit o ciuperca si deci nu va exista un alt pitic care sa primeasca mai putin decat el.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=69">Parcurgere in adancime</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,35 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>triticale.in, triticale.out</td><td><strong>Sursă</strong></td><td>Lista lui Francu</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=207">Valentin Gheorghita</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gabitzish1"><img src="/utilizator/gabitzish1?action=download&amp;file=avatar&amp;resize=L16x16" alt="gabitzish1">Gabriel Bitis</a> <a title="Rating gabitzish1: 658" class="rating-badge-1" href="http://infoarena.ro/utilizator/gabitzish1?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gabitzish1">gabitzish1</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=triticale">Vezi solutiile trimise</a></p>
+
+<h1>Triticale<br></h1>
+
+<p>In dorinta sa de a-l invinge pe fermierul Jim la concursul de vite, fermierul John s-a gandit sa gaseasca un surplus de grane triticale pentru vacile sale Holstein. Triticale este o grana (tribulus multiplicatus) care creste foarte repede. Spre surpriza sa, John descopera ca baloturile de triticale nu sunt create uniform de masina de balotat. Fiecare balot este un paralelipiped de dimensiuni <var>s1,s2,s3</var>. Din fiecare dimensiune, John are un numar mare de baloturi. Problema pe care si-o pune acum este cum sa le aseze in hambar. Fiind dat un set de dimensiuni de baloturi si o cantitate suficienta de baloturi de fiecare dimensiune, trebuie sa se determine cum se pot ele stoca pana la o inaltime maxima. Evident, baloturile pot fi rotite in orice pozitie. Aranjarea lor in stiva trebuie sa tina cont de faptul ca un balot nu poate fi pus decat peste unul care are grosimea si latimea strict mai mari. Aceasta inseamna ca nu se poate pune un balot <var>[3,4,4]</var> peste un balot <var>[4,4,4]</var>, deoarece oricum l-am orienta, nu vom obtine un balot cu grosime si latime strict mai mici de <var>4</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare, <var>triticale.in</var> contine <var>N</var>, numarul de tipuri diferite de baloturi. Pe fiecare din urmatoarele <var>N</var> linii se dau dimensiunile intregi ale baloturilor.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>triticale.out</var> se tipareste inaltimea maxima a unei stive de baloturi care se poate construi cu regulile date. Pe liniile urmatoare se tiparesc dimensiunile fiecarui balot din stiva care poate constitui o solutie a problemei. Dimensiunile baloturilor se tiparesc de la varful stivei catre baza. Pe fiecare linie, primele doua numere sunt dimensiunile fetei paralele cu solul, primul numar mai mare sau egal cu al doilea. Al treilea numar este inaltimea balotului.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1000</var></li>
+<li>Nici o dimensiune nu depaseste <var>16.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>triticale.in</th><th>triticale.out</th></tr><tr><td>3<br>
+4 3 1<br>
+2 6 5<br>
+9 9 8<br></td><td>21<br>
+3 1 4<br>
+5 2 6<br>
+6 5 2<br>
+9 8 9<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

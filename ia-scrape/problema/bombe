@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>bombe.in, bombe.out</td><td><strong>Sursă</strong></td><td>Lot Iasi 2008, Baraj 5</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=124">Adrian Vladu</a>, <a href="/cauta-probleme?tag_id%5B%5D=155">Mihai Patrascu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>3.8 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=bombe">Vezi solutiile trimise</a></p>
+
+<h1>Bombe<br></h1>
+
+<p>Ţara ta este în război, iar tu eşti şeful consiliului de apărare a ţării. Tocmai ai primit un mesaj îngrijorător: <var>N</var> nave inamice au invadat spaţiul marin al ţării. Fiecare dintre cele <var>N</var> nave se mişcă în linie dreaptă (mai exact de-a lungul axei <var>Ox</var> ), cu viteză constantă. <br>
+Prin satelit ţi-a fost transmisă o hartă, pe care sunt marcate poziţiile navelor la momentul <var>0</var> (distanţa faţă de origine exprimată în metri). Ai observat că la momentul <var>0</var> toate navele se află în puncte de coordonate întregi.</p>
+
+<p>Ai posibilitatea de a bombarda navele inamice utilizând un sistem special. Sistemul permite detonarea unor bombe, dar este posibilă doar detonarea tuturor bombelor exact în acelaşi timp. Când este detonată o bombă ea va distruge toate navele situate la o distanţă ≤ <var>R</var> metri (raza de acţiune a bombei). </p>
+
+<h2>Cerinţă</h2>
+
+<p>Misiunea ta este să detonezi un număr minim de bombe astfel încât să fie distruse toate navele. De asemenea, doreşti să detonezi acel număr minim de bombe în timpul cel mai scurt.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>bombe.in</var> conţine pe prima linie un număr natural <var>N</var>, reprezentând numărul de nave, urmat de un număr real <var>R</var>, reprezentând raza de acţiune a bombelor. Pe următoarele <var>N</var> linii sunt descrise cele <var>N</var> nave, câte o navă pe o linie. Pe o linie ce descrie o navă vor fi scrise două numere separate prin spaţiu <var>x</var> <var>v</var>, unde <var>x</var> reprezintă un număr natural indicând poziţia navei la momentul <var>0</var>, iar <var>v</var> este un număr real indicând viteza (în <var>m/s</var> ) cu care se deplasează nava. Dacă viteza este pozitivă, deplasarea navei se realizează în sensul axei <var>Ox</var>, iar dacă viteza este negativă, deplasarea navei se realizează în sensul invers al axei <var>Ox</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>bombe.out</var> va conţine o singură linie pe care vor fi scrise două numere separate prin spaţiu <var>nrmin tmin</var>, unde <var>nrmin</var> reprezintă numărul minim de bombe necesare pentru distrugerea tuturor navelor, iar <var>tmin</var> este timpul minim (exprimat în secunde) la care pot fi detonate cele <var>nrmin</var> bombe pentru a distruge toate navele. Timpul va fi afişat rotunjit la <var>3</var> zecimale.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 300</var></li>
+<li><var>0 &lt; R ≤ 5</var></li>
+<li><var>x ≤ 1.000.000</var> , pentru orice <var>1 ≤ i ≤ N</var></li>
+<li><var>|v| ≤ 100</var> , pentru orice <var>1 ≤ i ≤ N</var></li>
+<li>Este posibil ca la un moment dat două nave să se afle în acelaşi punct, dar niciodată nu vor exista <var>3</var> nave în acelaşi punct.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>bombe.in</th><th>bombe.out</th></tr><tr><td>6 0.25<br>
+  2 0.5<br>
+  3 -1<br>
+  5 -1<br>
+  5 0.333<br>
+  8 0.5<br>
+  10 -0.2<br></td><td>4 0.333<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

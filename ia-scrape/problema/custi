@@ -1,0 +1,61 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>custi.in, custi.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=157">Vlad Dumitriu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">1/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=custi">Vezi solutiile trimise</a></p>
+
+<h1>Custi<br></h1>
+
+<p>Directorul inchisorii a terminat cu refacerea gardului si acum lucreaza la proiectul "Custilor de caini", si l-a pus tot pe James Blond la partea cu calcule. Insa James se cam grabeste si nu va mai zice toata povestea cu cainii si cum trebuie sa fie custile, dar va trimis un email cu problema lui insa transformata in ceva mai simplu, partea din e-mail care contine exact problema arata cam asa: danduse o matrice patratica <var>NxN</var> care contine numai <var>0</var> si <var>1</var>, se cere determinarea numarului tuturor sub-matricelor <var>MxM</var> (<var>M ≤ N</var>) care contin numai elemente de <var>1</var>. Astfel pentru un anumit test trebuie sa afisati <var>N</var> linii, astfel:</p>
+
+<p>Linia <var>1</var>: cate submatrici de <var>1×1</var> cu proprietatea enuntzata exista<br>
+...<br>
+Linia <var>i</var>: cate submatrici de <var>ixi</var> cu proprietatea enuntzata exista<br>
+...<br>
+Linia <var>N</var>: cate submatrici de <var>NxN</var> cu proprietatea enuntzata exista</p>
+
+<h2>Date intrare</h2>
+
+<p>In fiserul <var>custi.in</var> se gasesc:</p>
+
+
+<ul><li>pe prima linie numarul <var>N</var></li>
+<li>pe urmatoarele linii e data matricea cu elementele despartite printr-un spatiu(vezi exemplu) cate <var>N</var> valori pe linie</li>
+</ul><h2>Date iesire</h2>
+
+<p>Fiserul <var>custi.out</var> are structura enuntata mai sus.</p>
+
+<h2>Restrictii si precizari:</h2>
+
+
+<ul><li><var>N&lt;1001</var></li>
+<li>Pentru <var>20%-30%</var> din teste <var>N&lt;101</var></li>
+<li>Sub-matricile se pot suprapune intre ele.</li>
+</ul><p>Exemple:</p>
+
+<table class="example" cellspacing="0"><tr><th>custi.in</th><th>custi.out</th></tr><tr><td>5<br>
+1 1 1 0 0<br>
+1 1 0 1 1<br>
+1 1 1 1 1<br>
+1 1 1 0 0<br>
+1 1 1 0 0<br></td><td>18<br>
+7<br>
+1<br>
+0<br>
+0</td></tr></table><h3>Explicatii</h3>
+
+<p><var>18</var> submatrici de <var>1×1</var><br><var>7</var> submatrici <var>2×2</var><br><var>1</var> sumatrice <var>3×3</var><br><var>0</var> submatrici <var>4×4</var> <br><var>0</var> sumatrici <var>5×5</var>, care contin numai elemente de <var>1</var></p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=79">Sume partiale</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

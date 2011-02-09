@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>pikachu.in, pikachu.out</td><td><strong>Sursă</strong></td><td>ONI 2009, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Mishu91"><img src="/utilizator/Mishu91?action=download&amp;file=avatar&amp;resize=L16x16" alt="Mishu91">Andrei Misarca</a> <a title="Rating Mishu91: 662" class="rating-badge-1" href="http://infoarena.ro/utilizator/Mishu91?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Mishu91">Mishu91</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=pikachu">Vezi solutiile trimise</a></p>
+
+<h1>Pikachu<br></h1>
+
+<p>Miruna şi partenerul ei de aventură, Pikachu, sunt în faţa unei noi provocări. Cele două personaje au ajuns lângă un lanţ muntos format din <var>N</var> vârfuri aşezate în linie dreaptă unul după altul. Pentru fiecare vârf muntos se cunoaşte înălţimea lui. Folosindu-se de puterile sale extraordinare, Pikachu este capabil sa scadă sau să crească înălţimea unui vârf muntos cu o unitate într-o secundă. Din motive necunoscute muritorilor de rând, cei doi prieteni vor să obţină cel puţin <var>K</var> vârfuri montane consecutive care au aceeaşi înălţime, într-un timp cât mai scurt. </p>
+
+<p>Determinaţi timpul minim în care Pikachu poate îndeplini această sarcină.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>pikachu.in</var> va conţine pe prima linie două numere <var>N</var> şi <var>K</var> având semnificaţia din enunţ. Pe cea de a doua linie se vor găsi <var>N</var> numere naturale reprezentând înălţimile vârfurilor muntoase.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>pikachu.out</var> va conţine un singur număr natural <var>T</var>, reprezentând timpul minim necesar pentru a obţine cel puţin <var>K</var> vârfuri consecutive cu aceeaşi înălţime.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 10<sup>5</sup></var></li>
+<li><var>1 ≤ K ≤ N</var></li>
+<li>Înălţimile munţilor sunt numere pozitive care se pot reprezenta pe întregi de <var>32</var> de biţi cu semn</li>
+<li><var>20%</var> din teste au <var>1 ≤ N, K ≤ 100</var>, iar înălţimile aparţin intervalului <var>[1, 100]</var></li>
+<li>Alte <var>20%</var> din teste au <var>1 ≤ N, K ≤ 5000</var></li>
+<li>Rezultatul se poate reprezenta pe un întreg de <var>64</var> biţi cu semn</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>pikachu.in</th><th>pikachu.out</th></tr><tr><td>5 3<br>
+5 2 4 3 7<br></td><td>2<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>În prima secundă se creşte înălţimea muntelui de pe poziţia a doua, iar în a doua secundă se scade înălţimea muntelui de pe poziţia a treia. În urma acestor operaţii subsevenţa care începe pe a doua poziţie şi se termină pe a patra poziţie va conţine doar vârfuri de înălţime <var>3</var>.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 4 taguri
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=84">Arbori de intervale</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=350">Arbori echilibrati</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=106">Arbori indexati binari</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=285">Heap</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,54 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>avere.in, avere.out</td><td><strong>Sursă</strong></td><td>ONI 2005</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=37">Emilian Miron</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=avere">Vezi solutiile trimise</a></p>
+
+<h1>Avere<br></h1>
+
+<p>Italag a fost toata viata pasionat de speculatii bursiere reusind sa adune o avere considerabila. Fiind un tip original si pasiont de matematica a scris un testament inedit. Testamentul contine doua numere naturale: <var>S</var> reprezentand averea ce trebuie impartita mostenitorilor si <var>N</var> reprezentand alegerea sa pentru impartirea averii. Italag decide sa-si imparta toata averea, iar sumele pe care le acorda mostenitorilor sa fie in ordine strict descrescatoare.<br>
+De exemplu daca averea ar fi <var>7</var> unitati monetare, ar putea fi impartita astfel:</p>
+
+
+<ul><li><var>4</var> (unitati primului mostenitor) <var>3</var> (unitati celui de-al doilea), sau</li>
+<li><var>6</var> (unitati primului mostenitor) <var>1</var> (unitati celui de-al doilea), sau</li>
+<li><var>7</var> (doar primului mostenitor), sau</li>
+<li><var>5</var> (unitati primului mostenitor) <var>2</var> (unitati celui de-al doilea), sau</li>
+<li><var>4</var> (unitati primului mostenitor) <var>2</var> (unitati celui de-al doilea) <var>1</var> ( unitate celui de-al treilea ).</li>
+</ul><p>Vazand ca ii este foarte greu sa verifice daca nu cumva a omis vreo varianta de impartire , Italag le-a scris in ordine lexicografica. Pentru exemplul de mai sus: <var>4 2 1</var>; <var>4 3</var>; <var>5 2</var>; <var>6 1</var>; <var>7</var>.<br>
+A hotarat ca banii sa fie distribuiti conform celei de a <var>N</var>-a posibilitati din ordinea lexicografica.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care pentru numerele <var>S</var>, <var>N</var> date sa calculeze si sa afiseze numarul total de posibilitati de impartire a averii, precum si modul in care se face aceasta impartire conform cu a <var>N</var>-a posibilitate din ordinea lexicografica.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Fisierul de intrare <var>avere.in</var> contine o singura linie pe care se afla doua numere naturale separate printr-un singur spatiu:</p>
+
+
+<ul><li>primul numar <var>S</var> reprezinta suma totala</li>
+<li>cel de-al doilea <var>N</var> reprezinta numarul de ordine al pozitiei cautate</li>
+</ul><h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>avere.out</var> va contine doua linii:</p>
+
+
+<ul><li>pe prima linie va fi afisat numarul total de modalitati de impartire a averii</li>
+<li>pe cea de a doua linie va fi afisata a <var>N</var>-a posibilitate de impartire a lui <var>S</var> conform cerintei in ordine lexicografica. Elementele sale vor fi separate prin cate un spatiu.</li>
+</ul><h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 &lt; S &lt; 701</var></li>
+<li><var>0 &lt; N &lt;</var> numarul total de posibilitati cu suma <var>S</var></li>
+<li>Se acorda punctaj partial pentru fiecare test: <var>5</var> puncte pentru determinarea corecta a numarului de posibilitati de impartire a lui <var>S</var> si <var>5</var> puncte pentru determinarea corecta a posibilitatii <var>N</var>, din ordinea lexicografica</li>
+<li>Posibilitatile de impartire a averii sunt numerotate incepand cu <var>1</var></li>
+<li>Fie <var>x = (x<sub>1</sub>, x<sub>2</sub> ..., x<sub>m</sub>)</var> si <var>y = (y<sub>1</sub>, y<sub>2</sub> ..., y<sub>p</sub>)</var> doua siruri. Spunem ca <var>x</var> preceda pe <var>y</var> din punct de vedere lexicografic, daca exista <var>1 ≤ k</var>, astfel incat <var>x<sub>i</sub> = y<sub>i</sub></var>, pentru orice <var>1 ≤ i ≤ k-1</var> si <var>x<sub>k</sub> &lt; y<sub>k</sub></var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>avere.in</th><th>avere.out</th></tr><tr><td>7 2<br></td><td>5<br>
+4 3</td></tr><tr><td>12 5<br></td><td>15<br>
+6 5 1</td></tr><tr><td>700 912345678912345678<br></td><td>962056220379782044<br>
+175 68 63 58 54 45 40 36 34 32 20 18 17 14 11 9 3 2 1</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

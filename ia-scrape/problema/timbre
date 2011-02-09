@@ -1,0 +1,65 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>timbre.in, timbre.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=252">Bogdan Alexandru Stoica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">2/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=timbre">Vezi solutiile trimise</a></p>
+
+<h1>Timbre<br></h1>
+
+<p>Dupa cum stiti cu totii, Adriana este o mare colectionara de timbre. In fiecare zi se duce la magazinul de pe strada ei pentru a-si mari colectia. Intr-o zi, vanzatorul (nimeni altul decat Balaurul Arhirel) s-a gandit sa-i faca o surpriza. A scos dintr-un dulap vechi niste timbre foarte valoroase pe care erau scrise cu fir de aur si de argint numere naturale. Stiind ca fetita nu are bani prea multi, Balaurul i-a spus urmatoarele: "Eu pot sa impart timbrele in <var>M</var> intervale de forma <var>[1,..,m<sub>i</sub>]</var>. Tu poti sa iei din orice interval o singura subsecventa de maxim <var>K</var> elemente. Desigur, daca ai ales o subsecventa din intervalul <var>i</var> vei plati o anumita suma..."</p>
+
+<p>Adriana s-a gandit ca ar fi frumos sa-si numeroteze toate cele <var>N</var> pagini ale clasorului ei cu astfel de timbre. Fiind si o fetita pofticioasa si-a zis : "Tare as vrea sa mananc o inghetata din banii pe care ii am la mine, dar nu stiu daca o sa-mi ajunga sa platesc timbrele. Cum sa fac?"</p>
+
+<h2>Cerinta</h2>
+
+<p>Stiind cele <var>M</var> intervale, precum si costurile acestora, ajutati-o pe Adriana sa cumpere timbrele necesare numerotarii clasorului, platind o suma cat mai mica.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>timbre.in</var> se afla <var>N</var>, <var>M</var>, si <var>K</var>. <var>N</var> reprezinta numarul de pagini ale clasorului, <var>M</var> reprezinta numarul de intervale, iar <var>K</var> lungimea maxima a unei subsecvente. Pe urmatoarele <var>M</var> linii se afla doua numere separate printr-un spatiu, <var>m<sub>i</sub></var> si <var>c<sub>i</sub></var>, unde <var>m<sub>i</sub></var> reprezinta marginea superioara a intervalului <var>i</var>, iar <var>c<sub>i</sub></var> costul acestuia.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului <var>timbre.out</var> se va afla <var>Smin</var>, reprezentand suma minima pe care trebuie sa o plateasca Adriana pentru a cumpara timbrele necesare numerotarii clasorului.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>0 &lt; N &lt; 1 001</var></li>
+<li><var>0 &lt; M &lt; 10 001</var></li>
+<li><var>0 &lt; K &lt; 1 001</var></li>
+<li><var>0 &lt; m<sub>i</sub> &lt; 100 000</var></li>
+<li><var>0 &lt; c<sub>i</sub> &lt; 10 000</var></li>
+<li>pentru a numerota toate cele <var>N</var> pagini ale clasorului, Adriana are nevoie de timbre cu numerele de la 1 la <var>N</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>timbre.in</th><th>timbre.out</th></tr><tr><td>4 3 2<br>
+5 3<br>
+2 1<br>
+6 2<br></td><td>3<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Luam subsecventa <var>{1, 2}</var> din al doilea interval si subsecventa <var>{3, 4}</var> din al treilea interval. Obtinem astfel costul minim <var>3</var>.</p>
+
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_1"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=61">Greedy</a></span>
+            <a href="javascript:show_tag_list(61)" id="tag_anchor_61" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_61"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=70">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=285">Heap</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,48 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cartele.in, cartele.out</td><td><strong>Sursă</strong></td><td>OJI 2007, clasa a 9-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=162">Constantin Galatan</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Florian"><img src="/utilizator/Florian?action=download&amp;file=avatar&amp;resize=L16x16" alt="Florian">Marcu Florian</a> <a title="Rating Florian: 667" class="rating-badge-1" href="http://infoarena.ro/utilizator/Florian?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Florian">Florian</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cartele">Vezi solutiile trimise</a></p>
+
+<h1>Cartele<br></h1>
+
+<p>In sediul unei firme se intra doar cu ajutorul cartelelor magnetice. De cate ori se schimba codurile de acces, cartelele trebuie formatate. Formatarea presupune imprimarea unui model prin magnetizare. Dispozitivul in care se introduc cartelele, numit cititor de cartele, verifica acest model. Toate cartelele au aceleasi dimensiuni, suprafata patrata si grosimea neglijabila. Cele doua fete plane ale unei cartele se impart fiecare in <var>N</var> x <var>N</var> celule patrate, identice ca dimensiuni. Prin formatare unele celule, marcate cu negru in exemplu, se magnetizeaza permitand radiatiei infrarosii sa treaca dintr-o parte in cealalta a cartelei. In interiorul cititorului de cartele se ilumineaza uniform una dintre fetele cartelei. De cealalta parte fasciculele de lumina care strabat cartela sunt analizate electronic. Pentru a permite accesul in cladire modelul imprimat pe cartela trebuie sa coincida exact cu modelul sablonului care memoreaza codul de intrare. Prin fanta dispozitivului nu se pot introduce mai multe cartele deodata. Cartela se poate introduce prin fanta cu oricare dintre muchii spre deschizatura fantei si cu oricare dintre cele doua fete orientate catre sablon. Dupa introducere cartela se dispune in plan paralel cu sablonul, lipit de acesta, astfel incat cele patru colturi ale cartelei se suprapun exact cu colturile sablonului. Modelele imprimate pe cele doua fete ale unei cartele sunt identice. Unei celule magnetizate ii corespunde pe fata opusa tot o celula magnetizata, iar unei celule nemagnetizate ii corespunde una nemagnetizata. O celula magnetizata este transparenta pentru radiatia infrarosie indiferent de fata care se ilumineaza.</p>
+
+<p>Un angajat al firmei are mai multe cartele. Pe unele dintre acestea a fost imprimat noul cod de intrare, iar pe altele sunt coduri mai vechi. Pentru a afla care sunt cartelele care-i permit accesul in sediul firmei angajatul este nevoit sa le verifice pe toate, introducandu-le pe rand, in toate modurile pe care le considera necesare, in fanta cititorului de cartele.<br><b>      Sablon          Cartela 1         Cartela 2</b><br><img src="http://infoarena.ro/problema/cartele?action=download&amp;file=patrate.gif&amp;safe_only=true" alt=""></p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care determina care dintre cartele permite accesul in sediul firmei.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>cartele.in</var> contine pe prima linie doua numere naturale <var>N</var> si <var>C</var> despartite printr-un spatiu. <var>N</var> este dimensiunea tablourilor care reprezinta modelul sablon si modelele cartelelelor. <var>C</var> reprezinta numarul de cartele. Urmeaza <var>C+1</var> blocuri de cate <var>N</var> linii fiecare. Primul bloc de <var>N</var> linii codifica sablonul. Urmatoarele <var>C</var> blocuri de cate <var>N</var> linii codifica fiecare cate o cartela. Pe fiecare linie sunt cate <var>N</var> valori intregi, despartite printr-un singur spatiu. Celulelor magnetizate le corespunde valoarea <var>1</var>, iar celorlalte, valoarea <var>0</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>cartele.out</var> se vor scrie <var>C</var> linii, cate o valoare pe linie. Pe linia <var>i</var> se va scrie valoarea <var>1</var> daca cartela <var>i</var> permite accesul in cladire sau valoarea <var>0</var>, in caz contrar. </p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 &lt; <var>N</var> ≤ 50</var></li>
+<li><var>1 ≤ <var>C</var> ≤ 50</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>cartele.in</th><th>cartele.out</th></tr><tr><td>3 2<br>
+0 1 0 <br>
+0 0 1 <br>
+1 0 0<br>
+1 0 0 <br>
+0 0 1 <br>
+0 1 0 <br>
+0 0 1 <br>
+0 0 1<br>
+0 1 0<br></td><td>1<br>
+0<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Datele de intrare corespund situatiei din figura. Cartela <var>1</var> se potriveste perfect sablonului, daca se roteste in sens trigonometric cu <var>90</var> de grade. Cartela <var>2</var> nu se potriveste sablonului, indiferent de modul in care se introduce in fanta.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,52 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cern.in, cern.out</td><td><strong>Sursă</strong></td><td>ONI 2010, clasa a 9-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=239">Ciprian Chesca</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/GavrilaVlad"><img src="/utilizator/GavrilaVlad?action=download&amp;file=avatar&amp;resize=L16x16" alt="GavrilaVlad">Gavrila Vlad</a> <a title="Rating GavrilaVlad: 973" class="rating-badge-1" href="http://infoarena.ro/utilizator/GavrilaVlad?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/GavrilaVlad">GavrilaVlad</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cern">Vezi solutiile trimise</a></p>
+
+<h1>Cern<br></h1>
+
+<p><img src="http://infoarena.ro/problema/cern?action=download&amp;file=cern1.jpg&amp;resize=200x200" alt="" class="right" style="float:right">
+„CERN este un acronim folosit pentru a desemna Laboratorul European pentru Fizica Particulelor Elementare. Acronimul s-a păstrat de la vechea denumire în limba franceză, şi anume Conseil Européen pour la Recherche Nucléaire. Acesta este cel mai mare laborator de cercetare a particulelor elementare din lume, situat în suburbia nord-vestică a Genevei, chiar pe graniţa dintre Elveţia şi Franţa. Funcţia primară a complexului <span class="caps">CERN </span>este de a furniza acceleratoare de particule elementare şi alte tipuri de infrastructuri necesare fizicii particulelor de energii înalte.” </p>
+
+<p>Acceleratorul de particule <span class="caps">CERN </span>este dispus sub forma a <var>3</var> cercuri cu aceeaşi rază, tangente exterioare două câte două, numerotate pe figură cu <var>1</var>, <var>2</var>, <var>3</var>. Traiectoria unei particule elementare porneşte din unul din punctele marcate pe figură cu <var>A, B, C, D, E, F</var> şi se deplasează cu viteză constantă de <var>1<sup>0</sup></var>/unitatea de timp numai pe circumferinţa cercurilor. La trecerea printr-un punct de tangenţă dintre două cercuri particula îşi schimbă atât sensul de deplasare, cât şi cercul pe care se deplasează. Astfel, dacă sensul de deplasare a fost la un moment dat trigonometric, la trecerea printr-un punct de tangenţă devine invers trigonometric şi dacă sensul de deplasare a fost invers trigonometric, la trecerea printr-un punct de tangenţă devine trigonometric.</p>
+
+<h2>Cerinţă</h2>
+
+<p><img src="http://infoarena.ro/problema/cern?action=download&amp;file=cern2.jpg&amp;safe_only=true" alt="" class="right" style="float:right">
+Ştiind că cercurile ce formează acceleratorul sunt marcate din grad în grad începând cu <var>0<sup>0</sup></var>, în sens trigonometric (aşa cum se indică în figura alăturată), să se scrie un program, care, cunoscând punctul iniţial şi sensul de deplasare al unei particule, să determine poziţia particulei în accelerator după un număr dat de unităţi de timp.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fişierului de intrare <var>cern.in</var> conţine un caracter <var>p</var> ce indică punctul de plecare al particulei.<br>
+A doua linie a fişierului de intrare conţine două numere întregi <var>s</var> şi <var>t</var>, separate printr-un spaţiu, ce indică sensul de deplasare (<var>1</var> pentru sens trigonometric şi <var>-1</var> pentru sens invers trigonometric), respectiv numărul de unităţi de timp cât durează deplasarea.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Pe prima linie a fişierului de ieşire <var>cern.out</var> se vor scrie două numere naturale <var>g</var> şi <var>c</var>, separate printr-un spaţiu, ce reprezintă numărul de grade, în sens trigonometric, respectiv cercul, corespunzătoare poziţiei finale unde se va găsi particula după trecerea celor <var>t</var> unităţi de timp.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>p ∈ {’A’,’B’,’C’,’D’,’E’,’F’}</var>.</li>
+<li><var>s ∈ {-1, 1}</var>.</li>
+<li><var>0 ≤ t ≤ 1.000.000.000</var>.</li>
+<li><var>0 ≤ g ≤ 359</var>.</li>
+<li><var>c ∈ {1, 2, 3}</var>.</li>
+<li>Pentru toate seturile de date de intrare, poziţia finală a particulei nu coincide cu unul dintre punctele de tangenţă dintre cercuri.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>cern.in</th><th>cern.out</th></tr><tr><td>A<br>
+1 320<br></td><td>200 3<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Particula pleacă din punctul <var>A</var> în sens trigonometric şi are traseul:</p>
+
+
+<ul><li><var>180<sup>0</sup></var> pe cercul <var>1</var> în sens trigonometric;</li>
+<li><var>60<sup>0</sup></var> pe cercul <var>2</var> în sens invers trigonometric;</li>
+<li><var>80<sup>0</sup></var> pe cercul <var>3</var> în sens trigonometric.</li>
+</ul><p>Poziţia finală este la <var>200<sup>0</sup></var> pe cercul <var>3</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,54 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>algola.in, algola.out</td><td><strong>Sursă</strong></td><td>Finala .campion 2005</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=119">Silviu-Ionut Ganceanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><div class="hidden">5/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=algola">Vezi solutiile trimise</a></p>
+
+<h1>Algola<br></h1>
+
+<p>In cadrul organizatiei Algola s-a declarat stare de urgenta. Toti membrii sai, aflati in diferite orase din tara, trebuie sa ajunga cat mai rapid la sediul central. Cele <var>N</var> orase de pe harta tarii sunt numerotate cu numerele de la <var>1</var> la <var>N</var>, orasul <var>1</var> fiind locatia sediului central. Strazile ce conecteaza orasele sunt bidirectionale si fiecare dintre strazi poate fi parcursa intr-o unitate de timp de oricare membru Algola. Fiecare strada are o limita de siguranta care indica numarul maxim de membri ce pot circula intr-o unitate de timp pe acea strada. Parcurgerea unei strazi poate incepe numai la momente de timp intregi.</p>
+
+<h2>Cerinta</h2>
+
+<p>Fiind data harta oraselor, precum si numarul de membrii ai organizatiei aflati in fiecare oras, sa se calculeze timpul minim <var>T</var> necesar acestora pentru a ajunge la sediul central (<var>T</var> va fi momentul la care ajunge ultimul membru la sediul central).</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului <var>algola.in</var> contine doua numere intregi separate printr-un spatiu, <var>N</var> si <var>M</var>, reprezentand numarul de orase de pe harta si numarul de strazi dintre ele. Pe cea de-a doua linie se vor afla N numere separate prin spatii, <var>A<sub>1</sub> A<sub>2</sub> ... A<sub>N</sub></var> unde <var>A<sub>i</sub></var> reprezinta numarul de membri din orasul <var>i</var>. Urmatoarele <var>M</var> linii contin cate trei numere intregi separate prin spatii, <var>X Y L</var>, cu semnificatia: intre orasele <var>X</var> si <var>Y</var> exista o strada a carei limita de siguranta este <var>L</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>algola.out</var> va contine o singura linie numarul <var>T</var> reprezentand timpul minim in care membrii organizatiei ajung la sediul central.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 50</var></li>
+<li><var>1 ≤ M ≤ 300</var></li>
+<li>Timpul de parcurgere al unui oras este <var>0</var></li>
+<li>Totii membrii vor putea ajunge la sediu central</li>
+<li>Limitele de siguranta ale strazilor sunt numere intregi pozitive din intervalul <var>[1,10]</var></li>
+<li>Toti membrii organizatiei afla de starea de urgenta la momentul <var>0</var></li>
+<li>Organizatia are cel mult <var>50</var> de membri</li>
+<li>Membrii organizatiei pot ramane in orice oras pe o perioada nelimitata de timp</li>
+<li>Pentru <var>20%</var> din teste drumul de la fiecare oras la sediu este unic; pentru inca <var>30%</var> din teste numarul total de membri ai organizatiei va fi maxim <var>4</var></li>
+</ul><h2>Exemplu</h2>
+
+
+<table class="example" cellspacing="0"><tr><th>algola.in</th><th>algola.out</th></tr><tr><td>4 4<br>
+0 5 6 5<br>
+1 2 3<br>
+1 3 5<br>
+4 2 2<br>
+4 3 5</td><td>2</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=268">Flux maxim</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

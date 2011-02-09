@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>gold.in, gold.out</td><td><strong>Sursă</strong></td><td>Summer Challenge 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=153">Adrian Diaconu</a>, <a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=gold">Vezi solutiile trimise</a></p>
+
+<h1>Gold<br></h1>
+
+<p>Fie <var>N</var> mine cu aur aflate la puncte de coordonate intregi in plan. Fiecare mina contine o cantitate cunoscuta de aur, exprimata in kilograme. Doi cautatori de aur au venit in zona si doresc sa imparta minele intre ei. Pentru a le fi mai simplu, se hotarasc sa aleaga doua din cele <var>N</var> mine. Astfel, unele dintre cele <var>N-2</var> mine ramase vor fi de o parte, iar altele de cealalta parte a dreptei formata de cele doua mine alese. Minele dintr-o zona vor fi repartizate primului cautator, urmand ca celelalte sa ajunga in posesia celui de-al doilea. Cantitatea de aur pentru fiecare cautator este data de suma cantitatilor de aur aflate in minele din posesia sa. Problema care se iveste este ca unul dintre cautatori poate avea mult mai mult aur decat celalalt. Totusi, cei doi ajung la un compromis: daca diferenta in modul dintre cele doua cantitati nu depaseste o valoare stabilita <var>P</var> , atunci impartirea se considera a fi una echitabila.</p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se determine in cate moduri pot fi stabilite cele doua mine astfel incat impartirea sa fie una echitabila.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului <var>gold.in</var> contine <var>N</var>, numarul de mine. Pe a doua linie se afla valoarea <var>P</var>, cu semnificatia din enunt. Linia a <var>3</var>-a va contine <var>N</var> numere naturale nenule, al <var>i</var>-lea numar reprezentand cantitatea de aur din mina a <var>i</var>-a. Incepand cu linia a <var>4</var>-a, vor fi descrise pozitiile minelor referitor la un sistem ortogonal de axe: pe fiecare linie se va gasi o pereche de numere intregi <var>(x y)</var>, mai precis pe linia <var>i+3</var> aflandu-se coordonatele pentru cea de a <var>i</var>-a mina.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Prima linie a fisierului <var>gold.out</var> contine numarul de moduri diferite de a alege doua mine dintre cele <var>N</var> pentru ca impartirea sa fie echitabila.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>4 ≤ N ≤ 1.024</var></li>
+<li><var>0 ≤ P ≤ 98.765</var></li>
+<li>Cantitatile de aur din mine sunt numere naturale cuprinse in [<var>1, 10.000</var>]</li>
+<li>Coordonatele minelor sunt numere intregi in [<var>-16.000, 16.000</var>]</li>
+<li>Oricare trei mine sunt necoliniare</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>gold.in</th><th>gold.out</th></tr><tr><td>7<br>
+5<br>
+4 7 8 6 4 6 7<br>
+3 10<br>
+2 3<br>
+8 1<br>
+10 4<br>
+7 1<br>
+7 3<br>
+9 8<br></td><td>3</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

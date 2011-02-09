@@ -1,0 +1,35 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>alice.in, alice.out</td><td><strong>Sursă</strong></td><td>preONI 2002</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=121">Dan Popovici</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>1000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=alice">Vezi solutiile trimise</a></p>
+
+<h1>Alice<br></h1>
+
+<p>Sa consideram urmatorul joc pentru o singura persoana: Alice are initial <var>X</var> <span class="caps">USD.</span> Dealer-ul are un pachet de <var>N</var> carti negre si <var>R</var> carti rosii, amestecate. Dealer-ul intoarce cartile din pachet una cate una. Dupa ce intoarce o carte, aceasta este inlaturata din pachet. Daca, la un moment dat, Alice are <var>X</var> <span class="caps">USD, </span>atunci chiar inainte de intoarcerea cartii urmatoare, ea poate paria pe culoarea cartii orice suma <var>S</var> din intervalul <var>[0,X]</var> (orice numar real din acest interval). In cazul in care cartea intoarsa are culoarea pe care a pariat Alice, atunci Alice castiga <var>S</var> <span class="caps">USD.</span> In caz contrar, ea pierde <var>S</var> <span class="caps">USD.</span></p>
+
+<p>Determinati suma maxima pe care Alice o poate obtine garantat dupa intoarcerea tuturor cartilor.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>alice.in</var> contine 3 numere intregi, separate prin cate un spatiu, <var>N</var>, <var>R</var> si <var>X</var>, reprezentand numarul de carti negre din pachet, numarul de carti rosii din pachet si suma initiala pe care o are Alice.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>alice.out</var> veti afisa suma maxima pe care o poate obtine Alice garantat. Daca aceasta suma nu este un numar intreg, afisati parte intreaga inferioara din suma respectiva.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>0 ≤ N ≤ 30</var></li>
+<li><var>0 ≤ R ≤ 30</var></li>
+<li>Rezultatul se va incadra intr-un intreg pe 32 de biti.</li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>alice.in</th><th>alice.out</th></tr><tr><td>0 1 300</td><td>600</td></tr><tr><td>1 2 300</td><td>800</td></tr><tr><td>8 2 3000</td><td>68266</td></tr></table><h3>Explicatie</h3>
+
+<p>Pentru al treilea exemplu, suma reala obtinuta este <var>68266.6666666667</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

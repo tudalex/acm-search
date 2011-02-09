@@ -1,0 +1,66 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>figuri.in, figuri.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil By Net 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=159">Clara Ionescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">1/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=figuri">Vezi solutiile trimise</a></p>
+
+<h1>Figuri<br></h1>
+
+<p>Se considera <var>N</var> bucati dreptunghiulare de hartie colorata, care sunt asezate una dupa alta pe o foaie alba dreptunghiulara. Stim ca sistemul de coordonate are originea in centrul hartiei albe si ca axele sunt paralele cu laturile foii de hartie albe. Astfel, aceasta foaie alba poate fi impartita in patratele de latura unitate. Bucatile de hartie au marginile paralele cu foaia alba, si incap in intregime pe foaie. In final, daca ne uitam de sus, se vor vedea diferite figuri de diferite culori. Doua regiuni de aceeasi culoare fac parte din aceeasi figura, daca au cel putin un patratel care are cel putin un patratel vecin dintre cele <var>8</var> ale sale, care face parte din cealalta regiune de aceeasi culoare.</p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se determine aria fiecarei figuri si numarul maxim de foi care se suprapun cel putin intr-un acelasi patratel comun.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie a fisierului <var>figuri.in</var> se afla trei numere naturale <var>a</var>, <var>b</var> si <var>N</var>, unde a reprezinta latimea foii de hartie (in figura de mai jos: numarul de patratele pe orizontala), <var>b</var> reprezinta lungimea foii de hartie (numarul de patratele pe verticala), iar <var>N</var> reprezinta numarul bucatilor de hartie colorata dreptunghiulara.<br>
+Urmatoarele <var>N</var> linii contin fiecare cate <var>5</var> numere intregi: <var>x<sub>1</sub>, y<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub></var> si <var>c</var>, unde <var>x<sub>1</sub></var> si <var>y<sub>1</sub></var> reprezinta coordonatele coltului din stanga jos al dreptunghiului respectiv, x<sub>2</sub> si y<sub>2</sub> reprezinta coordonatele punctului de pe hartie unde va fi plasat coltul din dreapta sus al dreptunghiului, iar c reprezinta culoarea acestuia. Culoarea este un numar natural.<br>
+Ordinea liniilor din fisierul de intrare corespunde ordinii de asezare a dreptunghiurilor.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>figuri.out</var> va contine cate o linie in care se descrie cate o figura "monocolora".<br>
+Pe fiecare linie se vor scrie doua numere intregi <var>c</var> si <var>d</var>, unde c reprezinta codul culorii figurii care se descrie, iar <var>d</var> reprezinta aria figurii respective.<br>
+Pe ultima linie a fisierului se va scrie un singur numar natural, reprezentand numarul maxim de bucati de hartie care se suprapun cel putin intr-un acelasi patratel comun. Vom numara si foaia alba data initial.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1000</var></li>
+<li><var>1 ≤ a, b ≤ 200</var></li>
+<li><var>a</var> si <var>b</var> sunt numere pare</li>
+<li><var>1 ≤ c ≤ 1000</var></li>
+<li>culoarea alba este codificata cu <var>1</var></li>
+<li><var>x<sub>1</sub> &lt; x<sub>2</sub></var>, <var>y<sub>1</sub> &lt; y<sub>2</sub></var>,</li>
+<li><var>[-a/2] ≤ x<sub>1</sub>, x<sub>2</sub> ≤ [a/2]</var></li>
+<li><var>[-b/2] ≤ y<sub>1</sub>, y<sub>2</sub> ≤ [b/2]</var></li>
+<li>Printre dreptunghiurile colorate putem avea si dreptunghiuri de culoare alba.</li>
+<li>Foaia alba initiala (parti din ea) poate face parte dintr-o figura.</li>
+<li>Numarul final de figuri nu depaseste <var>1000</var>.</li>
+<li>Figurile se vor descrie in fisierul de iesire in ordine crescatoare dupa codul culorii; daca exista mai multe astfel de figuri, ordinea va fi crescatoare dupa arie.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>figuri.in</th><th>figuri.out</th><th>Figura</th></tr><tr><td>20 12 6<br>
+-7 -5 -3 -1 4<br>
+-5 -3 5 3 2<br>
+-4 -2 -2 2 4<br>
+2 -2 3 -1 12<br>
+3 1 7 5 1<br>
+3 -3 4 -2 12<br></td><td>1 172<br>
+2 46<br>
+4 8<br>
+4 12<br>
+12 2<br>
+4<br></td><td><img src="http://infoarena.ro/problema/figuri?action=download&amp;file=figuri.gif&amp;safe_only=true" alt=""></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=47">Parcurgere in latime</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

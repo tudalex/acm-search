@@ -1,0 +1,68 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>eprubeta.in, eprubeta.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2007-2008, Clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=148">Alexandru Mosoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/alexandru.mosoi"><img src="/utilizator/alexandru.mosoi?action=download&amp;file=avatar&amp;resize=L16x16" alt="alexandru.mosoi">Alexandru Mosoi</a> <a title="Rating alexandru.mosoi: 598" class="rating-badge-2" href="http://infoarena.ro/utilizator/alexandru.mosoi?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/alexandru.mosoi">alexandru.mosoi</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>5 sec</td><td><strong>Limită de memorie</strong></td><td>128000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=eprubeta">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=eprubeta">Vezi solutiile trimise</a></p>
+
+<h1>Eprubeta<br></h1>
+
+<p>Bubu e la ora de chimie si are in fata un suport in forma de patrat pentru NxN eprubete. Eprubeta aflata pe coloana <var>x</var> si linia <var>y</var> contine un volum fixat de lichid <var>a<sub>x,y</sub></var>. Tocilar fiind, Bubu inventeaza un joc de o singura persoana. Intai fixeaza doua numere <var>i</var> ≤ <var>j</var>, iar asupra patratului cu coltul stanga-sus <var>(i, i)</var> si coltul dreapta <var>(j, j)</var> efectueaza operatii care pot fi de urmatoarele doua tipuri:</p>
+
+
+<ol><li>roteste patratul cu 180 grade</li>
+<li>calculeaza cat lichid se afla in eprubetele din patratul delimitat</li>
+</ol><p>Vi se cere sa scrieti un program care, dandu-se cat de mare e suportul si cat lichid este initial in fiecare eprubreta sa simuleze <var>M</var> operatii date. In final se va determina cat lichid este in fiecare eprubeta.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>eprubeta.in</var> are urmatorul format:</p>
+
+
+<ul><li>Pe prima linie se vor afla cinci numere numere <var>N</var>, <var>M</var>, <var>Z</var>, <var>A</var>, si <var>B</var>. <var>N</var> este descris din enunt, iar <var>M</var> este numarul de operatii. Pentru a nu avea un fisier de intrare de dimensiuni prea mari, valorile volumelor de lichid din fiecare eprubeta vor fi generate dupa formula: <var>a<sub>x, y</sub> = ((y + A) * (x + B) / 4) % Z</var>.</li>
+<li>Pe urmatoarele <var>M</var> linii se vor afla trei numere descriind codul operatiei (<var>1</var> sau <var>2</var>, ca mai sus), <var>i</var>, respectiv <var>j</var>, unde <var>i</var> si <var>j</var> au semnificatiile din cerinta.</li>
+</ul><h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>eprubeta.out</var> va avea urmatorul format:</p>
+
+
+<ul><li>Pentru fiecare operatie de tipul <var>2</var> se va afisa un numar reprezentand volumul total de lichid aflat in patratul descris in operatie.</li>
+<li>Pentru a evita un fisier de iesire de dimensiune mare, pe ultima linie se va scrie un numar <var>T</var>. <var>T</var> va fi egal cu <var>suma dupa linia u (0 ≤ u &lt; N) din (suma elementelor de pe linia u)<sup>2</sup> * (u + 1)</var>. <var>T</var> va fi scris modulo <var>2<sup>32</sup></var>.</li>
+</ul><h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>0 &lt; N ≤ 2000</var></li>
+<li><var>0 &lt; M ≤ 2000</var></li>
+<li><var>0 ≤ x, y &lt; N</var></li>
+<li><var>0 &lt; A, B ≤ 30000</var></li>
+<li><var>0 &lt; Z ≤ 100000</var></li>
+<li><var>0 ≤ a<sub>x, y</sub> &lt; Z</var></li>
+<li>Se garanteaza ca suma volumelor de lichid din toate eprubetele e strict mai mica decat <var>2<sup>31</sup></var></li>
+<li>Pentru a evita orice explozie continutul eprubetelor nu va fi alterat.</li>
+<li>Liniile si coloanele sunt indexate de la <var>0</var>.</li>
+<li>Daca rezultatul fiecarei operatii de tipul 2 este corect se va acorda <var>60%</var> din punctajul testului.</li>
+<li>Daca nu doriti sa calculati sumele intermediare, atunci pentru fiecare operatie de tipul 2 se va afisa 0.</li>
+<li>Daca numarul <var>T</var> este corect se va acorda <var>40%</var> din punctajul testului.</li>
+<li>Pentru <var>20%</var> din teste <var>N ≤ 400</var></li>
+<li>Pentru a nu avea probleme cu depasirea limitei de memorie, evitati alocarea dinamica a multor obiecte de acelasi fel prin folosirea unui vector alocat static.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>eprubeta.in</th><th>eprubeta.out</th></tr><tr><td>5 4 11 5 7<br>
+1 0 0<br>
+2 1 3<br>
+2 1 1<br>
+1 1 2<br></td><td>41<br>
+1<br>
+7489<br></td></tr></table><h3>Explicatie</h3>
+
+
+<ul><li>Patratul rezultat este<br><var>8 10 0 1 2</var><br><var>10 1 2 4 5</var><br><var>1 3 4 6 8</var><br><var>3 5 7 9 0</var><br><var>4 7 9 0 2</var></li>
+<li>Pentru prima operatie, (1 0 0), trebuie sa rotim coltul din stanga sus. Nu afecteaza patratul.</li>
+<li>Pentru a doua operatie, (2 1 3), valoarea corecta este: <var>1+2+4 + 3+4+6 + 5+7+9 = 41</var></li>
+<li>Pentru a treia operatie, (2 1 1), valoarea corecta este <var>1</var></li>
+<li>Ultima operatie, (1 1 2), transforma patratul initial in:<br><var>8 10 0 1 2</var><br><var>10 4 3 4 5</var><br><var>1 2 1 6 8</var><br><var>3 5 7 9 0</var><br><var>4 7 9 0 2</var></li>
+<li>Valoarea lui <var>T</var> este <var>21<sup>2</sup> * 1 + 26<sup>2</sup> * 2 + 18<sup>2</sup> * 3 + 24<sup>2</sup> * 4 + 22<sup>2</sup> * 5</var> = <var>441 + 1352 + 972 + 2304 + 2420</var> = <var>7489</var></li>
+</ul><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>paznici.in, paznici.out</td><td><strong>Sursă</strong></td><td>Algoritmus, runda 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/cromdioxid"><img src="/utilizator/cromdioxid?action=download&amp;file=avatar&amp;resize=L16x16" alt="cromdioxid">Sasa Pastor</a> <a title="Rating cromdioxid: 0" class="rating-badge-3" href="http://infoarena.ro/utilizator/cromdioxid?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/cromdioxid">cromdioxid</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>1024 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=paznici">Vezi solutiile trimise</a></p>
+
+<h1>Paznici<br></h1>
+
+<p>Dupa ce si-a achizitionat parcela de pamant, Vasilica doreste sa angajeze paznici care sa aiba grija de culturile acestuia. In parcela lui Vasilica exista un numar de puncte de interes. Mai exact, anumite plante la care Vasilica tine foarte mult. Suprafata se poate reprezenta sub forma unei matrice de dimensiuni <var>N x M</var>. Fiecare element al matricei apartine multimii <var>{0, 1}</var>. Valoarea <var>1</var> indica prezenta unui punct de interes. Paznicii pot fi asezati pe marginea parcelei. Ei au vizibilitate fie pe toata linia, fie pe toata coloana in dreptul careia acestia se afla. Se cere sa se determine numarul minim de paznici necesari astfel incat toate punctele de interes sa fie tinute sub observatie.<br>
+Intocmindu-si o harta a parcelei, Vasilica a etichetat liniile cu litere mari si coloanele cu litere mici ale alfabetului englez. Deasemenea, el a stabilit o relatie de ordine: <var>A &lt; B &lt; ... &lt; Z &lt; a &lt; b &lt; ... &lt; z</var>. Dupa ce a angajat paznicii, Vasilica a trecut pe o foaie pozitiile la care acestia se afla si a obtinut un sir de caractere, de exemplu: <var><span class="caps">BCET</span>abd</var>. Pornind de la aceste premise, eroul nostru ar dori sa afle primul sir de caractere, in ordine lexicografica (ordinea prezentata anterior), din care sa rezulte un amplasament optim al paznicilor.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>paznici.in</var> se afla <var>N</var> si <var>M</var> reprezentand numarul de linii, respectiv numarul de coloane ale matricei. Pe urmatoarele <var>N</var> linii se afla cate <var>M</var> elemente din multimea <var>{0, 1}</var> reprezentand elementele matricei. Elementele matricei nu sunt separate prin spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>paznici.out</var> se va afisa sirul de caractere corespunzator cerintei.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ <span class="caps">N,M </span>≤ 26</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>paznici.in</th><th>paznici.out</th></tr><tr><td>13 13<br>
+0000000000000<br>
+0010001010010<br>
+0000000000000<br>
+0000000000000<br>
+0010101010010<br>
+0000000000000<br>
+0000000010010<br>
+0000000000000<br>
+0000000000000<br>
+0000000000010<br>
+0000000000000<br>
+0000000000000<br>
+0000000010010<br></td><td>BEil<br></td></tr></table><h3>Explicatie</h3>
+
+<p><img src="http://infoarena.ro/problema/paznici?action=download&amp;file=paznic.gif&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

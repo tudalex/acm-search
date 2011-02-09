@@ -1,0 +1,69 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>secv8.in, secv8.out</td><td><strong>Sursă</strong></td><td>Lot Bistrita 2009, Baraj 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=215">Marius Stroe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Marius"><img src="/utilizator/Marius?action=download&amp;file=avatar&amp;resize=L16x16" alt="Marius">Marius Stroe</a> <a title="Rating Marius: 627" class="rating-badge-4" href="http://infoarena.ro/utilizator/Marius?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Marius">Marius</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>8 sec</td><td><strong>Limită de memorie</strong></td><td>65535 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=secv8">Vezi solutiile trimise</a></p>
+
+<h1>Secv8<br></h1>
+
+<p>Se consideră un şir <var>S</var>, iniţial vid. Asupra acestuia se efectuează patru operaţii:</p>
+
+
+<ol><li><var>insert(k, e)</var>: inserează în <var>S</var> elementul <var>e</var> pe poziţia <var>k</var>;</li>
+<li><var>access(k)</var>: întoarce elementul de pe poziţia <var>k</var>;</li>
+<li><var>reverse(i, j)</var>: schimbă ordinea elementelor din subşirul <var>S[i..j]</var>;</li>
+<li><var>delete(i, j)</var>: şterge subşirul <var>S[i..j]</var>.</li>
+</ol><h2>Cerinţă</h2>
+
+<p>Se cere să se răspundă la toate operaţiile de tipul <var>2</var> şi să se afişeze elementele şirului <var>S</var> după efectuarea tuturor operaţiilor.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare <var>secv8.in</var> se vor găsi două numere naturale, primul reprezentând numărul operaţiilor din fişier, iar al doilea va fi <var>1</var> dacă există operaţia <var>reverse</var> şi <var>0</var> dacă nu există. Următoarele linii vor fi de patru tipuri, corespunzătoare fiecărei operaţii:</p>
+
+
+<ol><li><var>I k e</var>: <var>insert(k, e)</var>, unde <var>e</var> este un număr natural cuprins în intervalul <var>[0, 10<sup>9</sup>]</var> iar <var>k</var> un număr natural cuprins în intervalul <var>[1, n+1]</var>.</li>
+<li><var>A k</var>: <var>acces(k)</var>, unde <var>1 ≤ k ≤ n</var>.</li>
+<li><var>R i j</var>: <var>reverse(i, j)</var>, unde <var>1 ≤ i ≤ j ≤ n</var>.</li>
+<li><var>D i j</var>: <var>delete(i, j)</var>, unde <var>1 ≤ i ≤ j ≤ n</var>.</li>
+</ol><p>Cu <var>n</var> am notat lungimea şirului.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>secv8.out</var> se vor tipări pe câte un rând răspunsurile operaţiilor de tipul <var>2</var> în ordinea în care apar în fişierul de intrare. Pe ultima linie se va tipări secvenţa <var>S</var> după efectuarea tuturor operaţiilor.</p>
+
+<h2>Restricţii şi precizări</h2>
+
+
+<ul><li>Numărul operaţiilor <var>insert</var> nu va depăşi <var>250 000</var>.</li>
+<li>Numărul total al operaţiilor nu va depăşi <var>750 000</var>.</li>
+<li>Operaţia <var>insert(k, e)</var> va transforma şirul <var>S: s<sub>1</sub>s<sub>2</sub>..s<sub>k</sub>..s<sub>n</sub></var> în <var>S’: s<sub>1</sub>s<sub>2</sub>..<strong>e</strong>s<sub>k</sub>..s<sub>n</sub></var>.</li>
+<li>Operaţia <var>reverse(i, j)</var> va transforma şirul <var>S: s<sub>1</sub>..s<sub>i-1</sub><strong>s<sub>i</sub>s<sub>i+1</sub>..s<sub>j-1</sub>s<sub>j</sub></strong>s<sub>j+1</sub>..s<sub>n</sub></var> în <var>S’: s<sub>1</sub>..s<sub>i-1</sub><strong>s<sub>j</sub>s<sub>j-1</sub>..s<sub>i+1</sub>s<sub>i</sub></strong>s<sub>j+1</sub>..s<sub>n</sub></var>.</li>
+<li>Operaţia <var>delete(i, j)</var> va transforma şirul <var>S: s<sub>1</sub>..s<sub>i-1</sub><strong>s<sub>i</sub>s<sub>i+1</sub>..s<sub>j-1</sub>s<sub>j</sub></strong>s<sub>j+1</sub>..s<sub>n</sub></var> în <var>S’: s<sub>1</sub>..s<sub>i-1</sub>s<sub>j+1</sub>..s<sub>n</sub></var>.</li>
+<li>Se garantează că operaţiile <var>2</var>, <var>3</var> şi <var>4</var> nu se vor efectua asupra unei secvenţe vide.</li>
+<li>Pentru <var>15%</var> din teste numărul operaţiilor <var>insert</var> nu va depăşi <var>35 000</var> iar numărul total al operaţiilor <var>100 000</var>. Pentru aceste teste va exista operaţia <var>reverse</var>.</li>
+<li>Pentru încă <var>25%</var> din teste operaţia <var>reverse</var> nu se va regăsi.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>secv8.in</th><th>secv8.out</th></tr><tr><td>13 1<br>
+I 1 1<br>
+I 2 2<br>
+I 3 3<br>
+R 2 3<br>
+I 4 4<br>
+I 3 5<br>
+A 4<br>
+R 1 3<br>
+D 2 3<br>
+A 3<br>
+I 2 1<br>
+R 1 3<br>
+D 3 3<br></td><td>2<br>
+4<br>
+2 1 4<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Şirul <var>S</var> devine succesiv: <var>1</var>, <var>1 2</var>, <var>1 2 3</var>, <var>1 3 2</var>, <var>1 3 2 4</var>, <var>1 3 5 <strong>2</strong> 4</var>, <var>5 3 1 2 4</var>, <var>5 2 <strong>4</strong></var>, <var>5 1 2 4</var>, <var>2 1 5 4</var>, <var>2 1 4</var>. Numerele îngroşate sunt răspunsurile operaţiilor de tipul <var>2</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

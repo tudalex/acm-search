@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>drum2.in, drum2.out</td><td><strong>Sursă</strong></td><td>ONI 2008, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=192">Carmen Minca</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/sima_cotizo"><img src="/utilizator/sima_cotizo?action=download&amp;file=avatar&amp;resize=L16x16" alt="sima_cotizo">Sima Cotizo</a> <a title="Rating sima_cotizo: 638" class="rating-badge-1" href="http://infoarena.ro/utilizator/sima_cotizo?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/sima_cotizo">sima_cotizo</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=drum2">Vezi solutiile trimise</a></p>
+
+<h1>Drum2<br></h1>
+
+<p>Fie <var>P</var>, de coordonate carteziene <var>(a,b,c)</var>, si <var>Q</var>, de coordonate carteziene <var>(x,y,z)</var>, doua puncte distincte din spatiul tridimensional. Pe multimea punctelor din spatiu se defineste relatia de ordine `&lt;` astfel: un punct <var>P</var> este mai mic decat un punct <var>Q</var> (adica <var>P&lt;Q</var>) daca este satisfacuta una dintre relatiile:</p>
+
+
+<ol><li><var>a&lt;x</var>;</li>
+<li><var>a=x</var> si <var>b&lt;y</var>;</li>
+<li><var>a=x, b=y</var> si <var>c&lt;z</var>.</li>
+</ol><p>Fie <var>n</var> un numar natural nenul si <var>M</var> multimea ordonata crescator, pe baza relatiei de ordine `&lt;`, a tuturor punctelor din spatiu ale caror coordonate <var>(k,i,j)</var> sunt numere naturale si satisfac conditiile: <var>1≤k≤n</var>, <var>1≤i≤k</var>, <var>1≤j≤k</var>. Numarul punctelor din multimea <var>M</var> este <var>m=1+4+9+...+n<sup>2</sup></var>. Punctele din multimea ordonata <var>M</var> se numeroteaza cu numerele distincte <var>1,2,...,m</var> in ordinea in care apar in aceasta.</p>
+
+<p>Fiecarui punct din multimea ordonata <var>M</var> i se asociaza cate o valoare naturala nenula. Astfel, primului punct <var>P</var><sub>1</sub>∈ <var>M</var> i se asociaza valoarea <var>c</var><sub>1</sub>, celui de-al doilea punct <var>P</var><sub>2</sub>∈ <var>M</var> i se asociaza valoarea <var>c</var><sub>2</sub>,..., celui de-al <var>m</var>-lea punct <var>P</var><sub>m</sub>∈ <var>M</var> i se asociaza valoarea <var>c</var><sub>m</sub>, iar <var>P</var><sub>1</sub><var>&lt;P</var><sub>2</sub><var>&lt;...&lt;P</var><sub>m</sub>.</p>
+
+<p>Pornind de la punctul <var>P</var><sub>1</sub> de coordonate <var>(1,1,1)</var>, se contruiesc drumuri astfel incat succesorul unui punct de pe drum, de coordonate carteziene <var>(k,i,j)</var>, poate fi unul dintre cele <var>3</var> puncte din <var>M</var> ale caror coordonate sunt: <var>(k+1,i,j+1)</var>, <var>(k+1,i+1,j)</var>, <var>(k+1,i+1,j+1)</var>, pentru <var>1 ≤ k &lt; n</var>. De exemplu, daca <var>n&gt;3</var> succesorul punctului de coordonate <var>(3,1,2)</var> poate fi oricare din punctele de coordonate: <var>(4,1,3)</var>, <var>(4,2,2)</var>, <var>(4,2,3)</var>. Daca <var>n=3</var> atunci punctul de coordonate <var>(3,1,2)</var> nu are succesor.</p>
+
+<p>Drumul <var>A</var><sub>1</sub>,<var>A</var><sub>2</sub>,<var>A</var><sub>3</sub>,...,<var>A</var><sub>n</sub> precede lexicografic drumul <var>B</var><sub>1</sub>,<var>B</var><sub>2</sub>,<var>B</var><sub>3</sub>,...,<var>B</var><sub>n</sub> daca exista un indice <var>j</var> <var>(1≤j≤n)</var> astfel incat <var>A</var><sub>i</sub><var>=B</var><sub>i</sub><var>(1≤i&lt;j)</var> si <var>A</var><sub>j</sub><var>&lt;B</var><sub>j</sub>.</p>
+
+<p>Scrieti un program care sa citeasca numarul natural nenul <var>n</var> si cele <var>m</var> numere naturale nenule <var>c</var><sub>1</sub>, <var>c</var><sub>2</sub>,...,<var>c</var><sub>m</sub> si apoi sa determine si sa afiseze suma maxima <var>S</var> care se poate obtine insumand toate valorile asociate punctelor de pe un drum construit in modul descris in enunt, precum si drumul pentru care se obtine suma maxima. Daca exista mai multe drumuri pentru care se obtine suma maxima, se va afisa primul drum din punct de vedere lexicografic.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>drum2.in</var> contine pe prima linie un numar natural nenul <var>n</var>. A doua linie contine <var>m</var> numere naturale nenule <var>c</var><sub>1</sub>,<var>c</var><sub>2</sub>,...,<var>c</var><sub>m</sub>, separate prin cate un spatiu, reprezentand valorile asociate punctelor din multimea ordonata <var>M</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>drum2.out</var> va contine pe prima linie un numar natural reprezentand suma maxima <var>S</var>. A doua linie va contine un drum pentru care se obtine suma maxima <var>S</var>, scriindu-se numarul fiecarui punct aflat pe drum, in ordinea parcurgerii acestora, numerele separandu-se prin cate un singur spatiu.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ n ≤ 30</var>;</li>
+<li><var>1 ≤ c</var><sub>i</sub><var>&lt; 100</var>, <var>1 ≤ i ≤ m</var>;</li>
+<li>Punctele de coordonate <var>(n,i,j)</var> nu au succesori <var>(1≤i≤n, 1≤j≤n)</var></li>
+<li>Pentru suma maxima <var>S</var> corecta se acorda 60% din punctaj; pentru un drum pentru care se obtine suma maxima <var>S</var> se acorda 20% din punctaj, iar pentru primul drum din punct de vedere lexicografic pentru care se obtine suma maxima <var>S</var> se acorda 40% din punctaj.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>drum2.in</th><th>drum2.out</th></tr><tr><td>3<br>
+3 6 5 7 2 4 5 8 7 6 1 7 8 13<br></td><td>18<br>
+1 4 13<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Sunt <var>14</var> puncte in multimea <var>M</var>. Suma maxima care se poate obtine este <var>18</var>, valoare ce se va scrie pe prima linie a fisierului <var>drum.out</var>. Sunt <var>2</var> drumuri pentru care se obtine suma maxima: <var>(P</var><sub>1</sub>,<var>P</var><sub>4</sub>,<var>P</var><sub>13</sub><var>)</var> si <var>(P</var><sub>1</sub>,<var>P</var><sub>5</sub>,<var>P</var><sub>14</sub><var>)</var>. Primul drum fiind cel mai mic (lexicografic) se vor scrie pe a doua linie a fisierului <var>drum.out</var> numerele <var>1 4 13</var>, obtinandu-se punctajul maxim.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

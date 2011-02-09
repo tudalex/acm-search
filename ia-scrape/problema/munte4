@@ -1,0 +1,37 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>munte4.in, munte4.out</td><td><strong>Sursă</strong></td><td>Lot 2005 Sibiu</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=118">Stefan Gheorghe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.9 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=munte4">Vezi solutiile trimise</a></p>
+
+<h1>Munte4<br></h1>
+
+<p>Mari iubitori de munte, Mars si Stefan hotarasc sa mearga intr-o excursie intr-un lant muntos, format din <var>N</var> munti. Acesti munti sunt situati unul dupa altul si sunt dispusi circular (al <var>i</var>-lea munte are ca vecini muntii <var>i-1</var> si <var>i+1</var>, si al <var>N</var>-lea munte este lipit de primul si de al <var>N-1</var>-lea). Sensul de deplasare este de la muntele <var>1</var> spre muntele <var>2</var>.</p>
+
+<p>Avand deja o mare experienta in domeniu, ei apreciaza foarte exact timpul necesar (exprimat in ore) pentru escaladarea fiecarui munte. <br>
+Totusi, cu fiecare munte escaladat, ei obosesc si timpul de escaladare initial estimat va creste. Astfel, dupa escaladarea muntelui de start, timpul de escaladare a muntelui urmator va creste cu o ora. Dupa escaladarea muntelui de start si a urmatorului, timpul de escaladare a celui de al treilea munte va creste cu doua ore. Astfel, dupa escaladarea a <var>i</var> munti, timpul necesar pentru escaladarea urmatorului munte va fi cu <var>i</var> ore mai mare decat timpul estimat initial.</p>
+
+<p>Excursia poate porni de la poalele oricarui munte astfel ca ei isi pun problema de unde sa inceapa excursia astfel incat la final, timpul maxim in care au escaladat un munte sa fie minim. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>munte4.in</var> contine pe prima linie un numar natural <var>N</var> reprezentand numarul de munti. A doua linie va contine un sir de <var>N</var> numere naturale, separate prin cate un spatiu. Al <var>i</var>-lea numar de pe linie reprezinta numarul de ore necesare pentru escaladarea muntelui <var>i</var> din lant, neluand in calcul si oboseala.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>munte4.out</var> va contine pe prima linie doua numere naturale separate printr-un spatiu: muntele de unde cei doi incep excursia si timpul maxim pentru a urca un munte in cadrul excursiei, timp minim avand in vedere celelalte variante de start.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ n ≤ 1 000 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>munte4.in</th><th>munte4.out</th></tr><tr><td>4<br>
+  5 9 10 3<br></td><td>2 11<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Pornim excursia de la muntele <var>2</var>. Timpii de escaladare sunt: <var>9</var>, <var>10 + 1</var>, <var>3 + 2</var>, <var>5 + 3</var> cu maximul <var>11</var>. Orice alta alegere a muntelui de start conduce la timpi maximi mai mari.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

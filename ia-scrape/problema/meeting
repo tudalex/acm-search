@@ -1,0 +1,30 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>meeting.in, meeting.out</td><td><strong>Sursă</strong></td><td>Fall Contest #2, SGU 2002</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=meeting">Vezi solutiile trimise</a></p>
+
+<h1>Meeting<br></h1>
+
+<p>Doi dintre cei <var>3</var> membri ai echipei castigatoare a unuia dintre concursurile regionale <span class="caps">ACM ICPC </span>urmeaza sa se intalneasca pentru a se antrena pentru finala. Ei au decis sa se intalneasca candva intre ora <var>X</var> si ora <var>Y</var>. Deoarece nu ajung niciodata nicaieri la timp, ei nu au stabilit o ora exacta cand se vor intalni. Insa au decis ca cel care ajunge primul la punctul de intalnire sa il astepte pe celalalt cel mult <var>Z</var> minute.</p>
+
+<p>Stiind ca, in cele din urma, amandoi vor ajunge la punctul de intalnire candva intre ora <var>X</var> si ora <var>Y</var> (nu neaparat dupa un numar intreg de minute), calculati care este probabilitatea ca cei doi sa se intalneasca.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>meeting.in</var> va contine <var>2</var> numere intregi, <var>X</var> si <var>Y</var>, si un numar real <var>Z</var>. Numerele vor fi separate prin cate un spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>meeting.out</var> veti afisa probabilitatea ceruta cu <var>7</var> cifre dupa virgula. O eroare de <var>10<sup>-7</sup></var> va fi acceptata.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>0 ≤ X &lt; Y ≤ 24</var></li>
+<li><var>0 &lt; Z ≤ 60*(Y-X)</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>meeting.in</th><th>meeting.out</th></tr><tr><td>11 12 20.0</td><td>0.5555556</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

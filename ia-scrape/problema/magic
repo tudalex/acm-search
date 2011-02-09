@@ -1,0 +1,60 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>magic.in, magic.out</td><td><strong>Sursă</strong></td><td>ONI 2009, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=221">Zoltan Szabo</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrei-alpha"><img src="/utilizator/andrei-alpha?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrei-alpha">Andrei-Bogdan Antonescu</a> <a title="Rating andrei-alpha: 700" class="rating-badge-1" href="http://infoarena.ro/utilizator/andrei-alpha?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrei-alpha">andrei-alpha</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=magic">Vezi solutiile trimise</a></p>
+
+<h1>Magic<br></h1>
+
+<p>Se dă o matrice cu <var>N</var> linii şi <var>N</var> coloane. Coloanele şi liniile sunt etichetate cu numere de la 1 la <var>2N</var>, folosind fiecare număr câte o singură dată (fig.<var>1</var> – <var>N</var>=<var>3</var>). Vom nota şirul etichetelor asociat liniilor matricei o<sub>1</sub>,o<sub>2</sub>,...,o<sub>n</sub>, iar şirul etichetelor asociat coloanelor matricei cu v<sub>1</sub>,v<sub>2</sub>,...,v<sub>n</sub> (fig.4).Trebuie să se completeze fiecare element al matricei cu una dintre cifrele <var>1</var> sau <var>9</var> (fig. <var>2</var>). Prin concatenarea cifrelor de pe o linie sau o coloană obţinem un număr de <var>N</var> cifre. În total se obţin <var>2N</var> numere. Aceste numere trebuie să fie distincte două câte două şi aranjându-le în ordinea etichetelor asociate liniilor şi coloanelor trebuie să fie în ordine crescătoare (fig. <var>3</var>). Vom concatena cele <var>2N</var> numere în ordinea etichetelor şi obţinem un singur număr de <var>2</var>(<var>N</var>^<var>2</var>) cifre. Acest număr îl vom denumi cheie magică. Pentru exemplul din fig. <var>3</var> obţinem cheia magică <var>111191199911919991</var>. </p>
+
+<p><img src="http://infoarena.ro/problema/magic/?action=download&amp;file=magic.jpg&amp;safe_only=true" alt=""></p>
+
+<h2>Cerinta</h2>
+
+<p>Se dau <var>x</var> un număr natural, dimensiunea <var>N</var> a matricei şi cele două şiruri de etichete o<sub>1</sub>,o<sub>2</sub>,...,o<sub>n</sub> respectiv v<sub>1</sub>,v<sub>2</sub>,...,v<sub>n</sub>. Să se tipărească numărul de chei magice distincte (dacă <var>x</var>=<var>1</var>) sau cea mai mică cheie magică ce se poate asocia matricei (dacă <var>x</var>=<var>2</var>). </p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>magic.in</var> conţine patru linii. Pe linia <var>1</var> se află numărul natural <var>x</var> (<var>1</var> sau <var>2</var>). Pe linia <var>2</var> se află numărul natural <var>N</var>. Pe linia <var>3</var> se află n numere naturale distincte separate prin câte un spaţiu reprezentând şirul o<sub>1</sub>,o<sub>2</sub>,...,o<sub>n</sub> iar pe linia <var>4</var> – <var>N</var> numere naturale distincte separate prin câte un spaţiu reprezentând şirul v<sub>1</sub>,v<sub>2</sub>,...,v<sub>n</sub>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire magic.out va conţine o singură linie pe care va fi scris un număr natural care reprezintă:</p>
+
+
+<ul><li>dacă <var>x</var>=<var>1</var>, numărul cheilor magice distincte;</li>
+<li>dacă <var>x</var>=<var>2</var>, cea mai mică cheie magică.</li>
+</ul><h2>Restricţii</h2>
+
+
+<ul><li><var>3</var> ≤ <var>N</var> ≤ <var>5</var></li>
+<li>Pentru fiecare fişier test există cel puţin o soluţie.</li>
+<li>Pentru <var>50</var>% dintre teste <var>x=1</var> (aflarea numărului de chei magice), iar pentru <var>50</var>% <var>x=2</var> (aflarea celei mai mici chei magice)</li>
+<li>Pentru <var>20</var>% dintre teste <var>N=3</var>, <var>30</var>% dintre teste <var>N=4</var> şi pentru <var>50</var>% dintre teste <var>N=5</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>magic.in</th><th>magic.out</th></tr><tr><td>1<br>
+3<br>
+2 4 6<br>
+3 5 1<br></td><td>2<br></td></tr></table><table class="example" cellspacing="0"><tr><th>magic.in</th><th>magic.out</th></tr><tr><td>2<br>
+3<br>
+2 4 6<br>
+3 5 1<br></td><td>111191199911919991<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Avem două soluţii :<br><br>
+1 9 1     1 9 1 <br>
+9 1 1     9 1 1<br>
+9 9 1     9 9 9</p>
+
+<p>Numerele obţinute în ordinea etichetărilor:</p>
+
+
+<ul><li>(<var>111</var>, <var>191</var>, <var>199</var>, <var>911</var>, <var>919</var>, <var>991</var>)</li>
+<li>(<var>119</var>, <var>191</var>, <var>199</var>, <var>911</var>, <var>919</var>, <var>999</var>)</li>
+</ul><p>Cele două chei magice sunt <var>111191199911919991</var> respectiv <var>119191199911919999</var>, dintre care prima e mai mică.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>spirala.in, spirala.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil By Net 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=159">Clara Ionescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">1/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=spirala">Vezi solutiile trimise</a></p>
+
+<h1>Spirala<br></h1>
+
+<p>Se considera un tablou bidimensional care contine numere intregi. Numim spirala acel drum prin matrice care, pornind din coltul stanga sus, traverseaza element dupa element prima linie, coboara pe ultima coloana, traverseaza ultima linie de la dreapta la stanga, urca pe prima coloana, apoi continua cu cea de-a doua linie, penultima coloana, penultima linie si a doua coloana etc. Drumul se opreste undeva in tablou, dupa ce toate elementele au fost traversate. Fiecare element se <em>atinge</em> o singura data.</p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se stabileasca daca spirala tabloului dat formeaza sau nu o progresie aritmetica. Prin progresie aritmetica intelegem o insiruire de numere in care diferenta dintre oricare doua numere consecutive este aceeasi (pentru un sir de <var>N</var> numere, <var>a<sub>i</sub> - a<sub>i+1</sub> = dif</var>, <var>i = 1, 2, ..., n - 1</var>).</p>
+
+<p>In cazul in care raspunsul este afirmativ, sa se determine valoarea ultimului element din spirala, in caz contrar sa se afiseze valorile primelor doua elemente din spirala ale caror diferenta nu este egala cu diferenta dintre valorile elementelor verificate.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>spirala.in</var> se afla doua numere naturale (<var>nrlin</var> si <var>nrcol</var>), reprezentand numarul liniilor, respectiv numarul coloanelor din tablou. Pe urmatoarele <var>nrlin</var> linii se afla cate <var>nrcol</var> numere intregi. Oricare doua numere din fisier sunt despartite prin cate un spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+
+<ul><li>Daca spirala formeaza progresie aritmetica, pe prima linie a fisierului de iesire <var>spirala.out</var> se va scrie cuvantul <var>DA</var>. Pe urmatoarea linie se va scrie valoarea ultimului element din spirala.</li>
+<li>Daca spirala nu formeaza progresie aritmetica, pe prima linie a fisierului de iesire <var>spirala.out</var> se va scrie cuvantul <var>NU</var>. Pe urmatoarea linie se vor scrie doua numere naturale, reprezentand primele doua numere din tabloul dat in cazul carora nu este indeplinita proprietatea de progresie aritmetica.</li>
+</ul><h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>2 ≤ nrlin, nrcol ≤ 100</var></li>
+<li><var>-32000 ≤ tablou<sub>i,j</sub> ≤ 32000 (i = 1, 2, ..., nrcol, j = 1, 2, ..., nrlin)</var></li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>spirala.in</th><th>spirala.out</th><th>spirala.in</th><th>spirala.out</th></tr><tr><td>3 3<br>
+1 3 5<br>
+15 17 7<br>
+13 11 9<br></td><td>DA<br>
+17<br></td><td>2 3<br>
+-1 -3 -5<br>
+-15 -5 -7<br></td><td>NU<br>
+-7 -5</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

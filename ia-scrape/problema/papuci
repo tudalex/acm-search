@@ -1,0 +1,67 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>papuci.in, papuci.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2009, Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=161">Adrian Airinei</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/stef2n"><img src="/utilizator/stef2n?action=download&amp;file=avatar&amp;resize=L16x16" alt="stef2n">Stefan Istrate</a> <a title="Rating stef2n: 644" class="rating-badge-4" href="http://infoarena.ro/utilizator/stef2n?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/stef2n">stef2n</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=papuci">Vezi solutiile trimise</a></p>
+
+<h1>Papuci<br></h1>
+
+<p>De ceva timp, Ionel isi doreste sa viziteze muzeul X, iar astazi tocmai s-a ivit aceasta ocazie. Ca orice vizitator, va trebui, insa, sa respecte regulamentul muzeului, astfel ca ghidul i-l explica la intrare. Baiatul va vizita cele <var>N</var> camere ale muzeului in ordine, de la camera <var>1</var> la camera <var>N</var>. In prima camera, va incalta o pereche de papuci (proprietarii muzeului vor sa protejeze astfel covoarele de o inestimabila valoare), iar in fiecare din camerele urmatoare va da jos perechea de papuci curenta si va lua alta pereche pe care o va purta doar in camera respectiva. Papucii sunt de <var>26</var> de tipuri (etichetate cu literele de la <var>'a'</var> la <var>'z'</var>), iar fiecare camera a muzeului dispune de o pereche dintr-unul din aceste tipuri. Timpul in care Ionel da jos papucii de tipul <var>i</var> si incalta papucii de tipul <var>j</var> este dat de elementul <var>A[i][j]</var> al unei matrice patratice <var>A</var> furnizate la intrarea in muzeu.</p>
+
+<p>Baiatul isi doreste o vizita cat mai lunga in muzeu, de aceea ghidul ii prezinta Regula Vizitatorilor Speciali. Ionel primeste o lista de <var>K</var> perechi <var>(a, b)</var> de camere. Pentru fiecare din acestea, el trebuie sa decida, inainte sa-si inceapa vizita in muzeu, daca solicita inversarea papucilor din camera <var>a</var> cu cei din camera <var>b</var> sau nu. Apoi se va bucura de vizita si va profita de timpul cat schimba papucii intre doua camere consecutive, punand cat mai multe intrebari ghidului.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>papuci.in</var> se vor afla numerele <var>N</var> si <var>K</var> cu semnificatiile de mai sus. Pe linia a doua se va afla un sir de <var>N</var> litere mici ale alfabetului englez, astfel incat al <var>i</var>-lea caracter sa reprezinte tipul initial de papuci din camera <var>i</var>. Pe urmatoarele <var>26</var> de linii se vor afla cate <var>26</var> de numere naturale reprezentand matricea <var>A</var> (<var>A[i][j]</var> = timpul de care are nevoie Ionel pentru a descalta papucii de tipul <var>i</var> si a incalta papucii de tipul <var>j</var>). Pe fiecare din urmatoarele <var>K</var> linii se vor afla cate 2 numere <var>a</var> si <var>b</var>, <var>1 ≤ a ≤ b ≤ N</var>, reprezentand o inversare de papuci pe care Ionel o poate face intre camerele <var>a</var> si <var>b</var> inainte de a-si incepe vizita.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>papuci.out</var> se va scrie timpul maxim obtinut de Ionel doar din descaltarea si incaltarea perechilor de papuci la trecerea dintr-o camera intr-alta pe parcursul intregii vizite.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N, K ≤ 100.000</var></li>
+<li>Elementele matricii <var>A</var> sunt numere naturale mai mici sau egale cu <var>1000</var>.</li>
+<li>Matricea <var>A</var> nu va fi neaparat simetrica fata de diagonala principala.</li>
+<li>Orice camera <var>i</var> apare in cel mult una din cele <var>K</var> inversari.</li>
+<li>Nu exista doua inversari <var>(a,b)</var> si <var>(c,d)</var>, <var>a ≤ b</var>, <var>c ≤ d</var>, astfel incat <var>c &gt; a</var>, <var>c &lt; b</var> si <var>b &lt; d</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>papuci.in</th><th>papuci.out</th></tr><tr><td>6 3<br>
+abccba<br>
+1 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+4 5 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+2 3 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>
+1 6<br>
+4 5<br>
+3 3<br></td><td>19<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Timpul maxim <var>19</var> se obtine interschimband papucii din camerele <var>4</var> si <var>5</var>. Asadar, sirul de papuci inainte de inceperea vizitei in muzeu este <var>abcbca</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

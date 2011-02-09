@@ -1,0 +1,57 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>br.in, br.out</td><td><strong>Sursă</strong></td><td>ONI 2009 clasa a 9 a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=117">Cristian George Strat</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=br">Vezi solutiile trimise</a></p>
+
+<h1>Bere<br></h1>
+
+<p><var>N</var> prieteni, numerotaţi de la <var>1</var> la <var>N</var>, beau bere fără alcool la o masă rotundă. Pentru fiecare prieten i se cunoaşte <var>C<sub>i</sub></var> – costul berii lui preferate. Din când în când, câte un prieten, fie el <var>k</var>, cumpără câte o bere pentru o secvenţă de prieteni aflaţi pe poziţii consecutive la masă, incepand cu el, în sensul acelor de ceasornic. El este dispus să cheltuiască <var>x</var> bani şi doreşte să facă cinste la un număr maxim posibil de prieteni.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Se cere numărul de beri pe care le va cumpăra fiecare prieten <var>k</var> în limita sumei x de bani de care dispune. În caz că x este mai mare decât costul berilor pentru toţi prietenii de la masă, se vor achiziţiona maxim N beri.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fişierului de intrare <var>br.in</var> conţine două numere naturale <var>N</var> şi <var>T</var> separate printr-un spaţiu reprezentând numărul de prieteni şi respectiv numărul de prieteni care doresc să facă cinste prietenilor săi.<br>
+A doua linie a fişierului de intrare conţine N numere naturale <var>C<sub>1</sub></var>, <var>C<sub>2</sub></var> ... <var>C<sub>N</sub></var>, separate prin câte un spaţiu, reprezentând costurile berilor preferate de fiecare prieten. Berea pentru prietenul i are costul Ci.<br>
+Fiecare din următoarele T linii conţine câte două numere separate printr-un spaţiu:<br><var>k<sub>1</sub></var> <var>x<sub>1</sub></var><br><var>k<sub>2</sub></var> <var>x<sub>2</sub></var><br>
+...<br><var>k<sub>T</sub></var> <var>x<sub>T</sub></var><br>
+precizând indicele câte unui prieten care face cinste şi respectiv suma de bani de care acesta dispune..</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>br.out</var> va conţine <var>T</var> linii, fiecare cu un singur număr <var>D<sub>i</sub></var> reprezentând numărul de beri pe care le va cumpăra prietenul <var>k<sub>i</sub></var> cu suma de bani <var>x<sub>i</sub></var> in condiţiile problemei.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 15.000</var></li>
+<li><var>1 ≤ T ≤ 10.000</var></li>
+<li><var>1 ≤ Ci ≤ 100</var></li>
+<li><var>1 ≤ ki ≤ N</var></li>
+<li><var>1 ≤ xi ≤ 3.000.000</var></li>
+<li>Un program corect, care se încadrează în timp pentru <var>T ≤ 4000</var>, va obţine cel puţin <var>30</var> de puncte</li>
+<li>Un program corect, care se încadrează în timp pentru <var>N ≤ 2000</var>, va obţine cel puţin <var>60</var> de puncte</li>
+<li>Prietenii beau numai berea lor preferată.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>br.in</th><th>br.out</th></tr><tr><td>5 4<br>
+  10 5 15 22 13<br>
+  1 32<br>
+  4 50<br>
+  1 9<br>
+  4 200<br></td><td>3<br>
+  4<br>
+  0<br>
+  5<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Prietenul <var>1</var> cumpără câte o bere pentru el şi pentru prietenii <var>2</var>, <var>3</var>. Costul celor <var>3</var> beri este <var>30</var>.<br>
+Prietenul <var>4</var> cumpără <var>4</var> beri: câte una pentru el şi pentru prietenii <var>5</var>, <var>1</var>, <var>2</var>. Costul celor <var>4</var> beri este <var>50</var>.<br>
+Cu <var>9</var> bani prietenul <var>1</var> nu poate cumpăra nici măcar berea lui.<br>
+Prietenul <var>4</var> cumpără <var>5</var> beri. Costul celor <var>5</var> beri este sub limita de cost <var>200</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

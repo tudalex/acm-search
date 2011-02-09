@@ -1,0 +1,53 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>planeta.in, planeta.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2009, clasele 9-10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/wefgef"><img src="/utilizator/wefgef?action=download&amp;file=avatar&amp;resize=L16x16" alt="wefgef">Andrei Grigorean</a> <a title="Rating wefgef: 783" class="rating-badge-4" href="http://infoarena.ro/utilizator/wefgef?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/wefgef">wefgef</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>1024 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=planeta">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=planeta">Vezi solutiile trimise</a></p>
+
+<h1>Planeta<br></h1>
+
+<p>Satula de atatea Stele, Miruna s-a mutat pe Planeta Moldova. Aici ea a auzit pentru prima data de notiunile de <em>arbore binar</em> si <em>arbore binar de cautare</em>. Un <em>arbore binar</em> este definit astfel in mod recursiv:</p>
+
+
+<ul><li>este un arbore fara niciun nod.</li>
+<li>este un arbore format dintr-un nod special numit <em>radacina</em> si alti doi <em>arbori binari</em>, numiti <em>subarborele stang</em> si <em>subarborele drept</em> ai <em>radacinii</em>.</li>
+</ul><p>Fiecare nod al unui arbore binar cu <var>N</var> noduri va contine un numar intre <var>1</var> si <var>N</var>. Vom considera ca un <em>arbore binar</em> este <em>arbore binar de cautare</em> daca sunt indeplinitie urmatoarele conditii <em>pentru fiecare nod al arborelui</em>:</p>
+
+
+<ul><li>toate valorile din <em>subarborele stang</em> sunt <em>mai mici strict</em> decat valoarea din nod</li>
+<li>toate valorile din <em>subarborele drept</em> sunt <em>mai mari strict</em> decat valoarea din nod</li>
+</ul><p>Mai jos avem un exemplu de arbore binar de cautare cu sase noduri:</p>
+
+<p><img src="http://infoarena.ro/problema/planeta?action=download&amp;file=BST.JPG&amp;resize=70%25" alt=""></p>
+
+<p><em>Parcurgerea in pre-ordine</em> a unui <em>arbore binar de cautare</em> este un sir de numere care se obtine astfel:</p>
+
+
+<ul><li>parcurgerea in pre-ordine a unui arbore fara niciun nod este un sir vid</li>
+<li>parcurgerea in pre-ordine a unui arbore nevid se obtine astfel: fie <var>L</var> sirul reprezentand parcurgerea in pre-ordine a subarborelui stang al radacinii, <var>V</var> valoarea din radacina si <var>R</var> sirul reprezentand parcurgerea in pre-ordine a subarborelui drept al radacinii. Parcurgerea in pre-ordine a arborelui se obtine concatenand <var>V</var>, <var>L</var> si <var>R</var>.</li>
+</ul><p>Pentru exemplul de mai sus <em>parcurgerea in pre-ordine</em> este sirul: <var>3 1 2 4 6 5</var>.</p>
+
+<p>Miruna analizeaza toti <em>arborii binari de cautare</em> cu <var>N</var> noduri care contin numerele <var>1, 2, ..., N</var> si ii parcurge in <em>pre-ordine</em>. Apoi sorteaza sirurile care reprezinta parcurgerile lexicografic. Voi va trebui sa ii raspundeti Mirunei la o intrebare foarte simpla: care este al <var>K</var>-lea sir in ordine lexicografica?</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima liniei a fisierului de intrare <var>planeta.in</var> contine doua numere intregi <var>N</var> si <var>K</var>, avand semnificatia din enunt.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>In fisierul de iesire <var>planeta.out</var> veti afisa o permutare a numerelor de la <var>1</var> la <var>N</var>, reprezentand cea de a <var>K</var>-a <em>parcurgere in pre-ordine</em> din punct de vedere lexicografic.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 30</var></li>
+<li><var>K</var> va fi un numar intreg ce se va incadra pe <var>64</var> de biti cu semn</li>
+<li>Se garanteaza ca exista cel putin <var>K</var> parcurgeri in pre-ordine</li>
+<li>Pentru 30% din teste <var>1 ≤ N ≤ 10</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>planeta.in</th><th>planeta.out</th></tr><tr><td>2 2<br></td><td>2 1</td></tr><tr><td>15 14023<br></td><td>1 2 3 4 5 15 8 7 6 14 9 12 10 11 13<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

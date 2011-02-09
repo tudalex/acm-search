@@ -1,0 +1,53 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>rutier.in, rutier.out</td><td><strong>Sursă</strong></td><td>All You Can Code 2008</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=144">Mihai Ciucu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gogu"><img src="/utilizator/gogu?action=download&amp;file=avatar&amp;resize=L16x16" alt="gogu">Gogu Marian</a> <a title="Rating gogu: 552" class="rating-badge-2" href="http://infoarena.ro/utilizator/gogu?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gogu">gogu</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=rutier">Vezi solutiile trimise</a></p>
+
+<h1>Transport Rutier<br></h1>
+
+<p>Ministrul Transportului, Braian Tasescu, a ajuns la concluzia ca are nevoie de o crestere a popularitatii sale pentru a aspira la functia de presedinte al tarii. De aceea, el vrea sa puna la punct un program prin care incearca intretinerea cat mai buna a unui sistem de transport rutier vital tarii.</p>
+
+<p>Deocamdata el este interesat de cele mai importante <var>N</var> orase ale tarii si vrea ca sistemul de transport sa fie format din <var>N-1</var> strazi astfel incat fiecare oras sa fie legat de capitala (orasul cu indicele <var>1</var>) si costul total de intretinere a strazilor sa fie cat mai mic. Desi el a gasit initial sistemul optim de transport, pe viitor se mai construiesc <var>M</var> strazi noi intre cele <var>N</var> orase asa ca de multe ori e mai bine sa modifici sistemul astfel incat costul intretinerii lui sa fie minim.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare contine numarul intreg <var>N</var> iar pe fiecare din urmatoarele <var>N-1</var> linii se vor afla informatii despre sistemul initial, pe linia <var>i</var> aflandu-se doua numere intregi <var>K</var> si <var>C</var>, reprezentand orasul cel mai apropiat de capitala de care este legat orasul <var>i</var> si respectiv costul anual de intretine a strazii care leaga cele doua orase. Daca un oras e legat direct de capitala atunci <var>K=1</var>.</p>
+
+<p>Linia <var>N+1</var> contine numarul <var>M</var> iar urmatoarele <var>M</var> linii contin 3 numere intregi <var>X</var>, <var>Y</var>, <var>C</var>, care reprezinta faptul ca tocmai a fost construit un drum intre orasele <var>X</var> si <var>Y</var> care are costul anual de intretinere <var>C</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire se vor scrie <var>M</var> linii, linia <var>i</var> continand un numar intreg reprezentant costul intretinerii sistemului dupa ce au mai fost construite <var>i</var> strazi.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 50.000</var></li>
+<li><var>1 ≤ M ≤ 150.000</var></li>
+<li>costul anual de intretinere al oricarei strazi este un numar natural cel mult egal cu <var>1.000.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>rutier.in</th><th>rutier.out</th></tr><tr><td>9<br>
+ 1 4<br>
+ 2 6<br>
+ 1 10<br>
+ 3 6<br>
+ 3 7<br>
+ 5 2<br>
+ 2 3<br>
+ 2 6<br>
+ 6<br>
+ 8 4 3<br>
+ 3 1 3<br>
+ 8 1 3<br>
+ 3 7 6<br>
+ 6 7 4<br>
+ 5 2 2<br></td><td>37<br>
+ 34<br>
+ 33<br>
+ 33<br>
+ 30<br>
+ 26<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

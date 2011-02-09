@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>pairs.in, pairs.out</td><td><strong>Sursă</strong></td><td>preONI 2008 Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=pairs">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=pairs">Vezi solutiile trimise</a></p>
+
+<h1>Pairs<br></h1>
+
+<p>Se da o multime <var>M</var> de numere naturale mai mari decat 1. Sa se determine numarul de perechi distincte (<var>x, y</var>) cu proprietatile:</p>
+
+
+<ul><li><var>x</var> diferit de <var>y</var></li>
+<li><var>x</var> si <var>y</var> apartin multimii <var>M</var></li>
+<li><var>x</var> si <var>y</var> sunt prime intre ele</li>
+</ul><h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>pairs.in</var> se da <var>N</var>, numarul de elemente ale multimii <var>M</var>. Fiecare din urmatoarele <var>N</var> linii contine cate un numar natural care apartine multimii <var>M</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Prima linie a fisierului <var>pairs.out</var> contine numarul de perechi (<var>x, y</var>) care indeplinesc simultan toate cerintele impuse.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 100 000</var></li>
+<li><var>M</var> este o multime ( numerele din <var>M</var> sunt distincte doua cate doua )</li>
+<li>Cel mai mare dintre numerele din <var>M</var> nu depaseste <var>1 000 000</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>pairs.in</th><th>pairs.out</th></tr><tr><td>5<br>
+2<br>
+6<br>
+15<br>
+7<br>
+10<br></td><td>5</td></tr></table><h3>Explicatie</h3>
+
+<p>Perechile care indeplinesc proprietatile din enunt sunt: (<var>2, 15</var>), (<var>2, 7</var>), (<var>6, 7</var>), (<var>15, 7</var>) si (<var>7, 10</var>).</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

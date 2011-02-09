@@ -1,0 +1,60 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>trapez.in, trapez.out</td><td><strong>Sursă</strong></td><td>preONI 2005 Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">2/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=trapez">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=trapez">Vezi solutiile trimise</a></p>
+
+<h1>Trapez<br></h1>
+
+<p>Zaharel este un tip care se plictiseste repede la scoala. Intr-o zi cu soare, cand n-avea chef sa asculte ce preda profesorul de matematica s-a apucat sa deseneze puncte pe o foaie de matematica. El a desenat <var>N</var> astfel de puncte si apoi si-a pus urmatoarea intrebare: cate trapeze se pot forma cu varfurile in aceste puncte? Un trapez este un patrulater convex cu cel putin doua laturi paralele.</p>
+
+<h2>Cerinta</h2>
+
+<p>Ajutati-l pe Zaharel sa determine cate trapeze poate forma cu cele <var>N</var> puncte de pe foaia de matematica.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>trapez.in</var> se gaseste numarul natural <var>N</var>. Pe urmatoarele <var>N</var> linii se gasesc perechi de numerele naturale reprezentand coordonatele punctelor.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie din fisierul de iesire <var>trapez.out</var> se va gasi numarul de trapeze care se pot forma.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>4 ≤ N ≤ 1 000</var></li>
+<li>Coordonatele punctelor sunt numere intregi din intervalul <var>[0, 2 000 000 000]</var></li>
+<li>Oricare trei puncte sunt necoliniare</li>
+<li>Paralelogramele trebuie numarate de doua ori, fiindca sunt trapeze dupa doua orientari</li>
+<li>Incercati sa evitati folosirea de numere reale in implementare deoarece pot cauza erori de precizie</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>trapez.in</th><th>trapez.out</th></tr><tr><td>5<br>
+0 0 <br>
+0 1<br>
+1 4<br>
+2 0 <br>
+3 1<br></td><td>1</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=41">Geometrie</a></span>
+            <a href="javascript:show_tag_list(41)" id="tag_anchor_41" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_41"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=62">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=63">Sortare</a></span>
+            <a href="javascript:show_tag_list(63)" id="tag_anchor_63" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_63"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=64">Sortare</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

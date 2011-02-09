@@ -1,0 +1,67 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>invers.in, invers.out</td><td><strong>Sursă</strong></td><td>preONI 2006 Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><div class="hidden">5/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=invers">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=invers">Vezi solutiile trimise</a></p>
+
+<h1>Invers<br></h1>
+
+<p>Zaharel, este mare pasionat de numere, si ii place sa studieze proprietatile ciudate ale acestora. Fie un numar <var>Nr</var> de forma <var>a<sub>n</sub>a<sub>n-1</sub>a<sub>n-2</sub>...a<sub>1</sub>a<sub>0</sub></var> (<var>a<sub>n</sub></var> reprezinta prima cifra, <var>a<sub>n-1</sub></var> a doua cifra, etc.). Se defineste inversul numarului <var>Nr</var> ca fiind <var>Inv(Nr)=a<sub>0</sub>a<sub>1</sub>a<sub>2</sub>...a<sub>n-1</sub>a<sub>n</sub></var>, adica numarul care se obtine scriind cifrele lui <var>Nr</var> in ordine inversa. Spre exemplu, <var>Inv(12345)=54321, Inv(740)=47</var>. Zaharel are pe hartie scrise mai multe numere naturale si vrea sa determine pentru fiecare dintre acestea daca exista un numar natural <var>x</var> astfel incat numarul respectiv sa fie egal cu <var>x+Inv(x)</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Ajutati-l pe Zaharel sa studieze proprietatea mai sus enuntata a numerelor de pe hartie realizand un program.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie din fisierul <var>invers.in</var> se va afla un numar natural <var>T</var>, care reprezinta cate numere sunt scrise pe hartie. Pe urmatoarele <var>T</var> linii se vor afla numerele naturale scrise pe hartie, cate unul pe o linie.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul <var>invers.out</var> va contine <var>T</var> linii, fiecare continand textul <var>"DA"</var> (daca numarul din fisierul de intrare de pe linia corespunzatoare poate fi scris ca <var>x+Inv(x)</var>) sau <var>"NU"</var> (altfel).</p>
+
+<h2>Restrictii si observatii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 10.000</var></li>
+<li><var>0 &lt; Nr &lt; 10<sup>10000</sup></var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>invers.in</th><th>invers.out</th></tr><tr><td>6<br>
+13<br>
+11<br>
+4774<br>
+2<br>
+1<br>
+120219482301</td><td>NU<br>
+DA<br>
+DA<br>
+DA<br>
+NU<br>
+DA</td></tr></table><h3>Explicatii</h3>
+
+<p><var>10+Inv(10)=11</var><br><var>4700+Inv(4700)=4774</var><br><var>1+Inv(1)=2</var><br><var>23918700369+Inv(23918700369)=120219482301</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=100">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_1"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=55">Siruri de caractere</a></span>
+            <a href="javascript:show_tag_list(55)" id="tag_anchor_55" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_55"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=67">Parsare</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

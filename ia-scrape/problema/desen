@@ -1,0 +1,43 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>desen.in, desen.out</td><td><strong>Sursă</strong></td><td>.campion 2007-2008, runda 8, grupa L</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/wefgef"><img src="/utilizator/wefgef?action=download&amp;file=avatar&amp;resize=L16x16" alt="wefgef">Andrei Grigorean</a> <a title="Rating wefgef: 783" class="rating-badge-4" href="http://infoarena.ro/utilizator/wefgef?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/wefgef">wefgef</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=desen">Vezi solutiile trimise</a></p>
+
+<h1>Desen<br></h1>
+
+<p>Miruna deseneaza in plan <var>N</var> puncte. Ea defineste notiunea de arbore partial pentru un set de <var>S</var> puncte ca fiind o submultime de exact <var>S-1</var> segmente avand capetele printre punctele date, astfel incat sa se poata ajunge dintr-un punct in oricare altul mergand pe segmentele alese. Miruna defineste si notiunea de arbore partial de cost minim ca fiind acel arbore partial pentru care suma lungimilor segmentelor din submultimea aleasa sa fie minima.</p>
+
+<h2>Cerinta</h2>
+
+<p>Dupa ce deseneaza un punct nou in plan, Miruna doreste sa afle care este suma lungimilor segmentelor ce alcatuiesc arborele partial de cost minim pentru toate punctele desenate pana in acel moment.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare desen.in este scris un singur numar intreg <var>N</var>, reprezentand numarul de puncte desenate de Miruna. Urmatoarele <var>N</var> linii vor contine cate <var>2</var> numere intregi, reprezentand coordantele unui nou punct desenat.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierului de iesire <var>desen.out</var> va contine <var>N</var> numere reale, reprezentand suma lungimilor segmentelor ce alcatuiesc un arbore partial de cost minim dupa fiecare punct desenat de Miruna.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1000</var></li>
+<li>Coordonatele punctelor vor fi numere intregi cuprinse intre <var>0</var> si <var>1000</var></li>
+<li>Exista posibilitatea ca unele puncte sa coincida</li>
+<li>Se va accepta o eroare de <var>0.001</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>desen.in</th><th>desen.out</th></tr><tr><td>5<br>
+0 0<br>
+0 2<br>
+2 0<br>
+2 2<br>
+1 1<br></td><td>0.000000<br>
+2.000000<br>
+4.000000<br>
+6.000000<br>
+5.656854<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

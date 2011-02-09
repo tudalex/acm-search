@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>numere8.in, numere8.out</td><td><strong>Sursă</strong></td><td>OJI 2003, clasa a 9-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=186">Marinel Serban</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/stocarul"><img src="/utilizator/stocarul?action=download&amp;file=avatar&amp;resize=L16x16" alt="stocarul">Cosmin Mihai Tutunaru</a> <a title="Rating stocarul: 725" class="rating-badge-1" href="http://infoarena.ro/utilizator/stocarul?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/stocarul">stocarul</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=numere8">Vezi solutiile trimise</a></p>
+
+<h1>Numere8<br></h1>
+
+<p>Gigel este un mare pasionat al cifrelor. Orice moment liber şi-l petrece jucându-se cu numere. Jucându-se astfel, într-o zi a scris pe hârtie <var>10</var> numere distincte de câte două cifre şi a observat că printre acestea există două submulţimi disjuncte de sumă egală. Desigur, Gigel a crezut că este o întâmplare şi a scris alte <var>10</var> numere distincte de câte două cifre şi spre surpriza lui, după un timp a găsit din nou două submulţimi disjuncte de sumă egală. </p>
+
+<h2>Cerinţă</h2>
+
+<p>Date <var>10</var> numere distincte de câte două cifre, determinaţi numărul de perechi de submulţimi disjuncte de sumă egală care se pot forma cu numere din cele date, precum şi una dintre aceste perechi pentru care suma numerelor din fiecare dintre cele două submulţimi este maximă.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>numere8.in</var> conţine pe prima linie <var>10</var> numere naturale distincte separate prin câte un spaţiu <var>x<sub>1</sub></var> <var>x<sub>2</sub></var> ... <var>x<sub>10</sub></var></p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>numere8.out</var> veţi afişa <var>3</var> linii. Pe prima linie se află numărul de perechi de submulţimi de sumă egală, precum şi suma maximă obţinută, separate printr-un spaţiu. Pe linia a doua se află elementele primei submulţimi, iar pe linia a treia se află elementele celei de a doua submulţimi, separate prin câte un spaţiu.<br><var>NrSol</var> <var>Smax</var> (<var>NrSol</var> – numărul de perechi; <var>Smax</var> – suma maximă)<br><var>x<sub>1</sub></var> ... <var>x<sub>k</sub></var> (elementele primei submulţimi)<br><var>y<sub>1</sub></var> ... <var>y<sub>p</sub></var> (elementele celei de a doua submulţimi)</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>10 ≤ x<sub>i</sub>,y<sub>i</sub> ≤ 99, pentru 1 ≤ i ≤ 10</var></li>
+<li><var>1 ≤ k,p ≤ 9</var></li>
+<li>Ordinea submulţimilor în perechi nu contează.</li>
+<li>Perechea de submulţimi determinată nu este obligatoriu unică.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>numere8.in</th><th>numere8.out</th></tr><tr><td>60 49 86 78 23 97 69 71 32 10<br></td><td>65 276<br>
+  78 97 69 32<br>
+  60 49 86 71 10<br></td></tr></table><h3>Explicaţie</h3>
+
+<p><var>65</var> de soluţii; suma maximă este <var>276</var>; s-au folosit <var>9</var> din cele <var>10</var> numere; prima submulţime are <var>4</var> elemente, a doua are <var>5</var> elemente.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,53 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>gol3d.in, gol3d.out</td><td><strong>Sursă</strong></td><td>ad-hoc</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=218">Eliana-Dina Tirsa</a>, <a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/silviug"><img src="/utilizator/silviug?action=download&amp;file=avatar&amp;resize=L16x16" alt="silviug">Silviu-Ionut Ganceanu</a> <a title="Rating silviug: 624" class="rating-badge-4" href="http://infoarena.ro/utilizator/silviug?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/silviug">silviug</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=gol3d">Vezi solutiile trimise</a></p>
+
+<h1>Gol3d<br></h1>
+
+<p>Gigel a inventat un nou joc: game of life 3d. Sa vedem care sunt regulile: jocul se desfasoară in interiorul unui cub impartit in celule cubice, de volum unitar, de dimensiune <var>NxNxN</var> (in total <var>N<sup>3</sup></var> celule). In fiecare celula exista un organism viu sau mort. Jocul consta din urmarirea evolutiei organismelor pentru mai multe generatii. In fiecare generatie unele organisme evolueaza dupa regulile urmatoare:</p>
+
+
+<ul><li>vecinii unei celule aflate la coordonatele <var>(i,j,k) (0 ≤ i, j, k ≤ n-1)</var> sunt acele celule <var>(i',j',k')</var> diferite de <var>(i,j,k)</var>, aflate la o distanta mai mica sau egala cu <var>d = [(i + j + k) / 5] + 1</var> de celula <var>(i,j,k)</var> (se considera parte intreaga inferioara la impartirea la 5)</li>
+</ul><ul><li>distanta dintre 2 celule <var>(a<sub>1</sub>,b<sub>1</sub>,c<sub>1</sub>)</var> si <var>(a<sub>2</sub>,b<sub>2</sub>,c<sub>2</sub>)</var> se defineste ca fiind <var>max{|a<sub>1</sub>-a<sub>2</sub>|, |b<sub>1</sub>-b<sub>2</sub>|, |c<sub>1</sub>-c<sub>2</sub>|}</var></li>
+</ul><ul><li>daca o celula are strict mai putin de <var>25%</var> vecini vii, ea va muri de singuratate in generatia urmatoare (in caz ca era vie)</li>
+</ul><ul><li>daca o celula are strict mai mult de <var>75%</var> vecini vii, ea va muri sufocata in generatia urmatoare (in caz ca era vie)</li>
+</ul><ul><li>daca o celula are intre <var>45%</var> si <var>55%</var> (interval deschis) vecini vii, ea isi va schimba starea (va invia daca era moarta / va muri daca era vie)</li>
+</ul><ul><li>daca procentul de vecini vii nu se incadreaza in regulile de mai sus, atunci celula va fi vie in generatia urmatoare indiferent de starea ei in generatia anterioara</li>
+</ul><ul><li>toate nasterile si mortile dintr-o generatie au loc simultan (altfel spus, modificarea unei celule intr-o generatie nu poate afecta evolutia, in aceeasi generatie, a niciunei alte celule)</li>
+</ul><p>Stiind numarul de generatii al jocului, Gigel va roaga sa calculati pentru fiecare generatie numarul de organisme vii.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>gol3d.in</var> va contine pe prima linie doua numere naturale: <var>N</var> si <var>G</var> reprezentand dimensiunea cubului si numarul de generatii al jocului (incluzand-o si pe prima). Apoi, pentru fiecare <var>i</var> de la <var>0</var> la <var>N-1</var> se dau cate <var>N</var> linii cu cate <var>N</var> elemente fiecare - elementul <var>(j,k)</var> din matrice va reprezenta starea organismului din celula <var>(i,j,k)</var> in prima generatie. Dupa fiecare matrice, mai putin ultima, va fi o linie goala. Se va folosi urmatoarea codificare: <var>0</var> - organism mort, <var>1</var> - organism viu.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>In fisierul de iesire <var>gol3d.out</var> va contine pe o singura linie <var>G</var> numere reprezentand numarul de organisme vii dupa fiecare generatie.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 64</var></li>
+<li><var>1 ≤ G ≤ 100</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>gol3d.in</th><th>gol3d.out</th></tr><tr><td>2 2<br>
+0 1<br>
+0 0<br>
+ <br>
+0 0<br>
+0 1<br></td><td>2 6</td></tr></table><h3>Explicatie</h3>
+
+<p>Prima generatie este chiar cea initiala unde avem numai <var>2</var> organisme vii. Urmatoarea generatie va fi:</p>
+
+<p><var>1 0</var><br><var>1 1</var></p>
+
+<p><var>1 1</var><br><var>1 0</var></p>
+
+<p>Toate celulele sunt vecine una cu alta (deoarece <var>d</var>-ul calculat dupa formula din enunt da <var>1</var> intotdeauna). Organismele din celulele <var>(1,1,1)</var> si <var>(0,0,1)</var> au cate un vecin viu din <var>7</var> (deci mai putin de <var>25%</var>) si mor de singuratate. Celelalte celule au <var>2</var> vecini vii din <var>7</var>, deci ~28% si vor fi vii conform penultimei reguli a jocului.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

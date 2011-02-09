@@ -1,0 +1,68 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>sortare.in, sortare.out</td><td><strong>Sursă</strong></td><td>preONI 2008, Runda finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>4096 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=sortare">toate sursele trimise</a></strong><em> este liber!</em><br><em>De asemenea, poti vedea si testele accesand </em><strong><a href="/problema/sortare?action=attach-list">atasamentele</a></strong>.</div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=sortare">Vezi solutiile trimise</a></p>
+
+<h1>Sortare<br></h1>
+
+<p>Sortarea rapida (sau QuickSort) este un bine cunoscut algoritm de sortare. Algortimul functioneaza astfel:</p>
+
+
+<ul><li>Se alege un element din sir, care se va numit pivot </li>
+<li>Se reordoneaza sirul astfel incat toate elementele care detin o valoare mai mica decat valoarea elementului pivot se vor pozitiona inaintea elementului pivot, si elementele care au o valoare mai mare decat valoarea elementului pivot se vor pozitiona dupa elementul pivot</li>
+<li>Se sorteaza recursiv cele doua bucati din sir</li>
+</ul><p>Cazul de baza a unei recursivitati sunt listele de dimensiune <var>0</var> sau <var>1</var>. Putem implementa in pseudocod acest algoritm astfel:</p>
+
+
+<div class="code"><textarea class="brush: cpp;" cols="60" rows="10">functie qsort(sir[])
+   var stanga[], dreapta[], pivot
+   daca lungimea(sir) &lt;= 1
+       returneaza sir
+   pivot = un element din sir
+   pentru fiecare x din sir
+       daca x &lt; pivot atunci insereaza x in stanga
+       daca x &gt; pivot atunci insereaza x in dreapta
+   returneaza concatenaeza(qsort(stanga), pivot, qsort(dreapta))
+</textarea></div>
+
+
+<p>Fumeanu a implementat acest algoritm si considera ca implementarea lui este foarte eficienta. Nargy este mai intelept si isi da seama ca performanta intregului algoritm depinde de modul in care se selecteaza pivotul. Metoda folosita de Fumeanu este urmatoarea: pentru un sir de lungime <var>i</var> el alege mediana elementelor de pe pozitiile <var>A<sub>i</sub>, B<sub>i</sub></var> si <var>C<sub>i</sub></var> (mediana reprezinta elementul mijlociu ca marime dintre cele <var>3</var>). <br>
+Ajutati-l pe Nargy sa gaseasca o permutare a numerelor de la <var>1</var> la <var>N</var> pentru care implementarea lui Fumeanu are adancimea recursivitatii maxima.</p>
+
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>sortare.in</var> contine pe prima linie numarul <var>N</var>. Pe urmatoarele <var>N-1</var> linii se vor gasi cate 3 numere naturale <var>A<sub>i</sub> B<sub>i</sub> C<sub>i</sub></var> separate prin spatii (<var>2≤i≤N</var>).</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>sortare.out</var> se va scrie pe prima linie <var>HMax</var> reprezentand adancimea maxima a recursivitatii. Pe urmatoarea linie se vor scrie <var>N</var> numere naturale reprezentand o permutare a numerelor de la <var>1</var> la <var>N</var> pentru care se obtine aceasta adancime.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 5.000</var></li>
+<li><var>1 ≤ A<sub>i</sub>,B<sub>i</sub>,C<sub>i</sub> ≤ i</var></li>
+<li>Pozitiile din sir sunt numerotate incepand cu <var>1</var></li>
+<li>Daca exista mai multe solutii se poate afisa oricare</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>sortare.in</th><th>sortare.out</th></tr><tr><td>5<br>
+1 2 2<br>
+1 2 3<br>
+1 3 4<br>
+1 3 5<br></td><td>3<br>
+1 2 3 4 5</td></tr></table><h3>Explicatie</h3>
+
+<p>Pentru permutarea <var>1 2 3 4 5</var> recursivitatea are <var>3</var> nivele, astfel: </p>
+
+<p><img src="http://infoarena.ro/problema/sortare?action=download&amp;file=qsort.jpg&amp;safe_only=true" alt=""></p>
+
+<p>Elementele ingrosate sunt cele care sunt folosite in determinarea pivotului, iar cele subliniate reprezinta pivotul. Nu exista nici o permutare de lungime <var>5</var> care sa produca o adancime mai mare pentru datele de intrare date.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

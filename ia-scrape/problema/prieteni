@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>prieteni.in, prieteni.out</td><td><strong>Sursă</strong></td><td>ONI 2006, clasa 10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=156">Roxana Tamplaru</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/marcelcodrea"><img src="/utilizator/marcelcodrea?action=download&amp;file=avatar&amp;resize=L16x16" alt="marcelcodrea">Codrea Marcel</a> <a title="Rating marcelcodrea: 492" class="rating-badge-3" href="http://infoarena.ro/utilizator/marcelcodrea?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/marcelcodrea">marcelcodrea</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=prieteni">Vezi solutiile trimise</a></p>
+
+<h1>Prieteni<br></h1>
+
+<p>Mai multi prieteni iubitori ai muntelui au parte de o adevarata aventura, intr-una din zilele vacantei de iarna. Surprinsi de dificultatea traseului ales spre parcurgere si de inrautatirea rapida a conditiilor meteo (ninsoare si viscol) isi dau seama, odata cu lasarea intunericului, ca ar fi mai bine sa se adaposteasca pe timpul noptii, urmand sa revina la cabana in dimineata zilei urmatoare. Norocul pare sa le surada in cele din urma. Pe partea cealalta a prapastiei la marginea careia se afla, se zareste un refugiu. Cercetand imprejurimile, descopera un podet din lemn care i-ar putea ajuta sa traverseze prapastia. Dupa o evaluare mai atenta, realizeaza ca traversarea nu va fi deloc usoara, pentru ca exista cateva traverse lipsa, iar starea podetului permite traversarea sa de catre cel mult <var>2</var> persoane, la un moment dat. Vizibilitatea este extrem de redusa si mai exista o singura lanterna functionala ce va trebui folosita judicios pentru traversarea in siguranta a tuturor membrilor grupului. Traversarea se va face alternativ in ambele sensuri, pentru a putea readuce lanterna celor care n-au traversat inca. <br>
+Cunoscand numarul membrilor grupului, timpul fiecaruia de traversare (exprimat in secunde) si stiind ca, la o traversare in care sunt angajati doi membri, timpul este dat de timpul de traversare al celui mai lent dintre ei, gasiti o strategie adecvata pentru ca toti membrii grupului sa traverseze prapastia in timpul cel mai scurt. Daca exista mai multe solutii cu acelasi timp minim de traversare, se va determina numai una, oricare dintre ele. </p>
+
+
+<h2>Date de intrare</h2>
+
+<p>Datele de intrare se preiau din fisierul <var>prieteni.in</var>. Acesta contine pe prima linie valoarea <var>n</var>, adica numarul prietenilor, iar pe urmatoarele <var>n</var> linii cate un numar pe linie, numarul <var>T<sub>i</sub></var> aflat pe linia <var>i</var>+1 din fisier, reprezentand timpul (exprimat in secunde) in care persoana <var>i</var> din grup poate traversa singura podetul.</p>
+
+
+<h2>Date de iesire</h2>
+
+
+<p>Solutia se va scrie in fisierul <var>prieteni.out</var>. Pe primele linii se va descrie strategia urmata pentru atingerea acestui timp minim: fiecare linie <var>i</var> va contine una sau doua valori, indicand persoana sau persoanele ce traverseaza podetul la pasul <var>i</var>. Fiecare persoana este indicata chiar prin timpul sau de traversare, specificat corespunzator in fisierul cu datele de intrare <var>prieteni.in</var>. <br>
+Pe ultima linie se va scrie valoarea ce reprezinta timpul minim total (exprimat in secunde) necesar pentru ca toti cei <var>n</var> membri ai grupului sa traverseze prapastia.</p>
+
+
+<h2>Restrictii si observatii</h2>
+
+
+<ul><li><var>1 ≤ n ≤ 1000</var></li>
+<li><var>1 ≤ T<sub>i</sub> ≤ 3000</var></li>
+<li>In orice moment pot traversa podetul cel mult 2 membri ai grupului.</li>
+<li>Pot exista mai multe persoane cu acelasi timp de traversare, dar in specificarea solutiei nu are importanta carei persoane ii apartine timpul respectiv.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>prieteni.in</th><th>prieteni.out</th></tr><tr><td><var>3</var><br><var>2</var><br><var>3</var><br><var>5</var><br></td><td><var>2</var> <var>3</var><br><var>2</var><br><var>2 5</var><br><var>10</var><br></td></tr></table><h3>Explicatie </h3>
+
+<p>Mai intai traverseaza persoanele <var>1</var> si <var>2</var>, avand timpii <var>2</var>, respectiv <var>3</var> secunde. Timpul de traversare la aceasta trecere este dat de timpul cel mai mare: <var>3</var> secunde. Se intoarce apoi persoana <var>1</var> cu lanterna, timpul de traversare fiind de <var>2</var> secunde. La a treia traversare, trec persoanele <var>1</var> si <var>3</var>, avand timpii <var>2</var>, respectiv <var>5</var> secunde. De data aceasta, timpul de traversare la aceasta trecere este dat de timpul cel mai mare: <var>5</var> secunde. Timp total: <var>3+2+5=10</var> secunde. <br>
+Aceasta este una dintre strategiile posibile. O alta solutie corecta: traverseaza mai intai persoana <var>1</var> cu persoana <var>3</var>, se intoarce persoana <var>1</var> si traverseaza apoi persoana <var>1</var> cu persoana <var>2</var>, si in acest caz se obtine acelasi timp minim de <var>10</var> secunde.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

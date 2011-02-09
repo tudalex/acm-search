@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>marmote.in, marmote.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2009, Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/wefgef"><img src="/utilizator/wefgef?action=download&amp;file=avatar&amp;resize=L16x16" alt="wefgef">Andrei Grigorean</a> <a title="Rating wefgef: 783" class="rating-badge-4" href="http://infoarena.ro/utilizator/wefgef?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/wefgef">wefgef</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=marmote">Vezi solutiile trimise</a></p>
+
+<h1>Marmote<br></h1>
+
+<p>Miruna a primit mostenire de la matusa Tamara o livada ce poate fi reprezentanta sub forma unei matrice cu <var>N</var> linii si <var>M</var> coloane. Livada se afla la baza unui munte locuit de <var>K</var> marmote. Deoarece a venit iarna, este timpul ca marmotele sa coboare la altitudini mai mici pentru a se adaposti de frig. In fiecare zi, cate o marmota soseste in livada Mirunei si vrea sa isi construiasca o vizuina. Fiecare marmota isi alege un punct de coordonate <var>X</var><var><sub>i</sub></var> si <var>Y</var><var><sub>i</sub></var>. Vizuina sa va fi formata din toate pozitiile campului aflate la o distanta Manhattan mai mica sau egala cu un numar dat <var>L</var> de pozitia (<var>X</var><var><sub>i</sub></var>, <var>Y</var><var><sub>i</sub></var>). In cazul in care exista cel putin o pozitie din vizuina care face deja parte dintr-o vizuina construita anterior, marmota va refuza sa se stabileasca in livada Mirunei si va pleca in lumea larga.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>marmote.in</var> va contine pe prima linie <var>4</var> numere intregi <var>N</var>, <var>M</var>, <var>K</var> si <var>L</var> avand semnficatia din enunt. Urmatoarele <var>K</var> linii vor contine cate doua numere intregi <var>X</var><var><sub>i</sub></var> si <var>Y</var><var><sub>i</sub></var>, valorile asociate marmotei cu indicele <var>i</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>marmote.out</var> veti afisa in ordine crescatoare indicii marmotelor care isi vor construi viziuna in livada Mirunei. Aceste valori vor fi afisate pe cate o linie.</p>
+
+<h2>Restricţii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1 000</var></li>
+<li><var>1 ≤ M ≤ 1 000</var></li>
+<li><var>1 ≤ K ≤ 100 000</var></li>
+<li><var>1 ≤ L ≤ N, M</var></li>
+<li><var>1 ≤ X<sub>i</sub> ≤ N</var></li>
+<li><var>1 ≤ Y<sub>i</sub> ≤ M</var></li>
+<li>Distanta Manhattan intre doua puncte <var>(X<sub>1</sub>, Y<sub>1</sub>)</var> si <var>(X<sub>2</sub>, Y<sub>2</sub>)</var> este egala cu <var>|X<sub>1</sub> - X<sub>2</sub>| + |Y<sub>1</sub> - Y<sub>2</sub>|</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>marmote.in</th><th>marmote.out</th></tr><tr><td>10 12 6 3<br>
+  3 6<br>
+  5 9<br>
+  7 1<br>
+  9 4<br>
+  4 11<br>
+  2 10<br></td><td>1<br>
+  3<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

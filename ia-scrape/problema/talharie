@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>talharie.in, talharie.out</td><td><strong>Sursă</strong></td><td>preONI 2008, Runda finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/wefgef"><img src="/utilizator/wefgef?action=download&amp;file=avatar&amp;resize=L16x16" alt="wefgef">Andrei Grigorean</a> <a title="Rating wefgef: 783" class="rating-badge-4" href="http://infoarena.ro/utilizator/wefgef?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/wefgef">wefgef</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=talharie">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=talharie">Vezi solutiile trimise</a></p>
+
+<h1>Talharie<br></h1>
+
+<p>Deoarece sunt atatea concerte in aceasta vara, Miruna are nevoie de bani pentru a-si cumpara bilete. Ce alta idee mai buna ar fi putut sa-i vina fetitei decat sa jefuiasca o banca? Zis si facut, iat-o in fata seifului. Dupa ca l-a amenintat cu pistolul la tampla pe directorul bancii, Miruna a reusit sa obtina codul special al seifului. Acesta este un sir cu <var>N</var> caractere ce sunt litere mici ale alfabetului. Lucrurile nu sunt insa atat de simple pe cat par, deoarece pentru a patrunde in camera cu bani codul trebuie descifrat. Miruna stie ca trebuie sa roteasca sirul de caractere cu exact <var>K</var> pozitii spre stanga, iar apoi sa repete acelasi procedeu pana ajunge din nou la sirul initial.<br>
+Pentru un sir de <var>N</var> caractere si un numar <var>K</var>, aflati cel mai mic sir din punct de vedere lexicografic pe care il putem obtine din sirul initial operand de mai multe ori rotatii circulare spre stanga cu cate <var>K</var> pozitii.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>talharie.in</var> contine pe prima linie un numar natural <var>T</var>, reprezentand numarul de teste. Urmatoarele <var>T</var> linii vor contine cate doua numere naturale <var>N</var> si <var>K</var>, avand semnficatia din enunt, urmate de un sir de <var>N</var> litere mici ale alfabetului.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul <var>talharie.out</var> va contine <var>T</var> linii, pe fiecare linie gasindu-se un sir de caractere reprezentand cel mai mic sir din punct de vedere lexicografic care se poate obtine pentru fiecare test.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 10</var></li>
+<li><var>1 ≤ N ≤ 100000</var></li>
+<li><var>0 ≤ K ≤ N</var></li>
+<li>Un sir <var>(x<sub>1</sub>,x<sub>2</sub>...x<sub>N</sub>)</var> este mai mic din punct de vedere lexicografic decat un alt sir <var>(y<sub>1</sub>,y<sub>2</sub>...y<sub>M</sub>)</var> daca exista o pozitie <var>p</var> astfel incat <var>x<sub>p</sub> &lt; y<sub>p</sub></var> si <var>x<sub>1</sub> = y<sub>1</sub></var>, <var>x<sub>2</sub> = y<sub>2</sub></var> ... <var>x<sub>p-1</sub> = y<sub>p-1</sub></var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>talharie.in</th><th>talharie.out</th></tr><tr><td>2<br>
+  4 0 abcd<br>
+  4 2 bbaa<br></td><td>abcd<br>
+  aabb<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Pentru primul test, singurul sir care poate fi obtinut este <var>abcd</var>. Pentru al doilea test putem obtine <var>bbaa</var> sau <var>aabb</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,56 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>mult.in, mult.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=144">Mihai Ciucu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=mult">Vezi solutiile trimise</a></p>
+
+<h1>Mult<br></h1>
+
+<p>Doi copii (a caror identitate nu va fi dezvaluita pentru a le proteja intimitatea) au ajuns sa se joace cu o foaia de hartie pe care era scris un numar cu <var>N</var> cifre. Primul dintre ei, din lipsa de ocupatie, anunta ca a aflat ca sunt <var>X</var> moduri prin care se poate obtine un multiplu al unui numar <var>K</var> din numarul de pe foaie, stergand una, mai multe sau nici o cifra din el. Cel de-al doilea sustine ca sunt <var>Y</var> moduri si in felul acesta cei doi copii au inceput sa se certe toata ziua.</p>
+
+<h2>Cerinta</h2>
+
+<p>Aflati numarul de posibilitati de a obtine un multiplu a lui <var>K</var> din numarul initial daca singura operatie permisa este stergerea unei cifre pentru ca cei doi copii sa se impace.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului <var>mult.in</var> contine doua numere intregi <var>N</var> si <var>K</var> cu semnificatia din enunt. Urmatoarea linie contine <var>N</var> cifre separate prin spatiu, care reprezinta numarul de pe foaie.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul <var>mult.out</var> se va scrie numarul pe care cei doi copii incearca sa-l afle.</p>
+
+<h2>Restrictii si precizari:</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 2500</var></li>
+<li><var>3 ≤ K ≤ 500</var></li>
+<li>Un numar se considera corect scris chiar daca are prima cifra <var>0</var>.</li>
+</ul><h2>Exemplu:</h2>
+
+<table class="example" cellspacing="0"><tr><th>mult.in</th><th>mult.out</th></tr><tr><td>5 3<br>
+  5 4 7 0 3<br></td><td>11</td></tr></table><h3>Explicatii</h3>
+
+<p>Multiplii care se pot obtine sunt: <var>0, 3, 03, 54 , 57, 540, 543, 570, 573, 5403, 5703</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=45">Diverse</a></span>
+            <a href="javascript:show_tag_list(45)" id="tag_anchor_45" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_45"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=104">Operatii pe numere mari</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

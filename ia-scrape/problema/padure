@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>padure.in, padure.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2006, clasele 9-10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=119">Silviu-Ionut Ganceanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/bogdan2412"><img src="/utilizator/bogdan2412?action=download&amp;file=avatar&amp;resize=L16x16" alt="bogdan2412">Bogdan-Cristian Tataroiu</a> <a title="Rating bogdan2412: 1162" class="rating-badge-4" href="http://infoarena.ro/utilizator/bogdan2412?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/bogdan2412">bogdan2412</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.75 sec</td><td><strong>Limită de memorie</strong></td><td>16000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=padure">Vezi solutiile trimise</a></p>
+
+<h1>Padure<br></h1>
+
+<p>Daca va intrebati ce mai face printul Algorel, acum puteti afla. El se afla pierdut undeva prin Padurea Magica si cauta cu disperare drumul inapoi spre castelul sau. Padurea Magica poate fi reprezentata ca o matrice cu <var>N</var> linii si <var>M</var> coloane, pentru fiecare celula din padure stiindu-se tipul copacilor care o acopera (numar natural mai mic decat <var>104</var>). O celula este acoperita numai cu copaci de acelasi tip. Printul Algorel se afla undeva in celula <var>(pl, pc)</var> (<var>pl</var> reprezinta linia, <var>pc</var> coloana) iar castelul se afla situat in celula <var>(cl, cc)</var>. Printul Algorel se poate deplasa in cele patru directii: Nord, Sud, Est si Vest, dar nu poate sa iasa din padure fiindca dincolo de padure e taramul Spanului cel Rau. In drumul sau catre castel, el trebuie sa plateasca Paduralului Magician un diamant pentru fiecare trecere dintr-o celula in alta in care se schimba tipul copacilor (adica daca cele doua celule sunt acoperite cu tipuri diferite de copaci). Pentru trecerile intre celule acoperite de acelasi tip de copaci el nu plateste nimic. Cum diamantele sunt resursa cea mai importanta in regat, el vrea sa stie numarul minim de diamante pe care trebuie sa-l plateasca pentru a ajunge la castel.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului <var>padure.in</var> se afla <var>6</var> numere naturale <var>N</var> <var>M</var> <var>pl</var> <var>pc</var> <var>cl</var> <var>cc</var>, cu semnificatia de mai sus. Urmatoarele <var>N</var> linii contin cate <var>M</var> numere naturale separate prin spatii, reprezentand tipul copacilor care acopera fiecare celula din Padurea Magica.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>padure.out</var> trebuie sa contina pe prima linie un singur numar intreg <var>D</var> reprezentand numarul minim de diamante pe care Algorel este nevoit sa-l plateasca pentru a ajunge la castel.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N, M ≤ 1000</var></li>
+<li><var>1 ≤ pl, cl ≤ N</var> si <var>1 ≤ pc, cc ≤ M</var></li>
+<li>Pozitia initiala a lui Algorel nu coincide cu cea a castelului</li>
+<li>Pentru <var>50%</var> din teste <var>N, M ≤ 100</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>padure.in</th><th>padure.out</th></tr><tr><td>6 5 1 1 5 4<br>
+0 0 0 5 6<br>
+7 7 1 1 1<br>
+1 1 1 3 1<br>
+1 1 2 2 1<br>
+0 0 9 0 0<br>
+0 0 0 0 9<br></td><td>2<br></td></tr></table><h3>Explicatie</h3>
+
+<p><var><strong>0</strong> <strong>0</strong> <strong>0</strong> 5 6</var><br><var>7 7 <strong>1</strong> <strong>1</strong> <strong>1</strong></var><br><var>1 1 1 3 <strong>1</strong></var><br><var>1 1 2 2 <strong>1</strong></var><br><var>0 0 9 <strong>0</strong> <strong>0</strong></var><br><var>0 0 0 0 9</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>garaj.in, garaj.out</td><td><strong>Sursă</strong></td><td>preONI 2008, Runda 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=161">Adrian Airinei</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=garaj">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=garaj">Vezi solutiile trimise</a></p>
+
+<h1>Garaj<br></h1>
+
+<p>Intr-un garaj se afla <var>N</var> camioane, iar la usa garajului asteapta sa fie transportate la adapost <var>M</var> sticle cu suc natural de struguri. Fiecare camion <var>i</var> are o capacitate maxima <var>C<sub>i</sub></var> care reprezinta numarul maxim de sticle care pot fi la un moment dat in camion si un timp <var>T<sub>i</sub></var> minute in care parcurge distanta de la garaj la adapost (deci ca sa ajunga de la garaj la adapost si inapoi la garaj va circula <var>2*T<sub>i</sub></var> minute). Proprietarul garajului, Samson, vrea sa transporte toate sticlele la adapost. El va alege anumite camioane pe care le va folosi la transport si fiecare camion dintre cele alese va face oricate drumuri <var>garaj-&gt;adapost-&gt;garaj</var> este nevoie pentru a transporta toate sticlele (camioanele trebuie sa se intoarca tot timpul la garaj pentru a fi finalizat cu succes transportul). El vrea sa minimizeze timpul maxim in care circula un camion, altfel spus vrea sa termine de transportat toate sticlele intr-un timp minim. Dupa ce a gasit acest timp minim, el vrea sa foloseasca si un numar minim de camioane din garaj pe care sa le utilizeze la tranport pentru a obtine acel timp minim. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>garaj.in</var> contine pe prima linie numerele naturale <var>N</var> si <var>M</var>, avand semnificatia din enunt. Pe urmatoarele <var>N</var> linii urmeaza cate o pereche de numere naturale <var>C T</var> reprezentand capacitatea maxima si timpul in care un camion efectueaza distanta <var>garaj-&gt;adapost</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>garaj.out</var> se afla pe prima linie doua numere naturale <var>Tmin</var> si <var>Nrmin</var>, timpul minim in care se efectueaza transportul si numarul minim de camioane care trebuiesc folosite.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100 000</var></li>
+<li><var>1 ≤ M ≤ 10<sup>9</sup></var></li>
+<li><var>1 ≤ C, T ≤ 1000</var></li>
+<li>Toate numerele din fisierul de intrare sunt numere naturale</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>garaj.in</th><th>garaj.out</th></tr><tr><td>3 16<br>
+  5 3<br>
+  6 2<br>
+  4 1<br></td><td>6 2<br></td></tr></table><h3>Explicatie</h3>
+
+<p>O solutie posibila este urmatoarea: camionul <var>2</var> efectueaza un transport ducand <var>6</var> sticle la adapost iar camionul <var>3</var> realizeaza <var>3</var> transporturi, la primul si al doilea transporta cate <var>4</var> sticle iar la ultimul <var>2</var> sticle. Al doilea camion circula timp de <var>4</var> minute iar al treilea timp de <var>6</var> minute, deci dupa <var>6</var> minute toate sticlele au fost transportate. O alta solutie in care se obtine timpul minim <var>6</var> ar fi sa se foloseasca toate cele <var>3</var> camioane la tranport, dar nu ar mai fi folosite un numar minim de camioane.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,46 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>zeroc.in, zeroc.out</td><td><strong>Sursă</strong></td><td>Lot Cluj 2009, Baraj 6</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/sima_cotizo"><img src="/utilizator/sima_cotizo?action=download&amp;file=avatar&amp;resize=L16x16" alt="sima_cotizo">Sima Cotizo</a> <a title="Rating sima_cotizo: 638" class="rating-badge-1" href="http://infoarena.ro/utilizator/sima_cotizo?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/sima_cotizo">sima_cotizo</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=zeroc">Vezi solutiile trimise</a></p>
+
+<h1>Zeroc<br></h1>
+
+<p>Se dă un graf orientat cu <var>N</var> noduri (numerotate de la <var>1</var> la <var>N</var>) şi <var>M</var> muchii (numerotate de la <var>1</var> la <var>M</var>). Fiecare muchie <var>i</var> <var>(1 ≤ i ≤ M)</var> este orientată de la <var>a<sub>i</sub></var> la <var>b<sub>i</sub></var> şi are un cost <var>c<sub>i</sub></var> (pozitiv, zero sau negativ). Un ciclu este o secvenţă de muchii distincte <var>mu(1), mu(2), ..., mu(q)</var>, astfel încât <var>b<sub>mu(i)</sub> = a<sub>mu(i+1)</sub></var> <var>(1 ≤ i ≤ q-1)</var> şi <var>b<sub>mu(q)</sub> = a<sub>mu(1)</sub></var>. Costul unui ciclu este egal cu suma costurilor muchiilor ce formează ciclul. </p>
+
+<h2>Cerinţă</h2>
+
+<p>Ştiind că nu există cicluri de cost negativ în graf, determinaţi câte dintre cele M muchii ale grafului fac parte din cel puţin un ciclu de cost zero.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare <var>zeroc.in</var> se află numerele naturale <var>N</var> şi <var>M</var>, separate printr-un spaţiu. Pe a <var>i</var>-a linie din următoarele <var>M</var> linii se află câte <var>3</var> numere întregi, <var>a<sub>i</sub></var>, <var>b<sub>i</sub></var>, şi <var>c<sub>i</sub></var>, separate prin câte un spaţiu şi având semnificaţia că există o muchie orientată de la nodul <var>a<sub>i</sub></var> la nodul <var>b<sub>i</sub></var>, având costul <var>c<sub>i</sub></var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>zeroc.out</var> veţi afişa un singur număr, reprezentând numărul de muchii ale grafului care fac parte din cel puţin un ciclu de cost zero.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 2000</var></li>
+<li><var>0 ≤ M ≤ 15 000</var></li>
+<li>Costul unei muchii este un număr întreg între <var>-10 000</var> si <var>+10 000</var>.</li>
+<li>Pot exista mai multe muchii între aceeaşi pereche de noduri, eventual chiar şi orientate în acelaşi sens (şi putând avea costuri diferite).</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>zeroc.in</th><th>zeroc.out</th></tr><tr><td>6 8<br>
+1 2 -2<br>
+2 3 6<br>
+3 4 -2<br>
+4 1 -2<br>
+4 5 -7<br>
+5 2 7<br>
+5 6 3<br>
+6 1 8<br></td><td>4<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Singurele muchii care aparţin unui ciclu de cost zero sunt primele 4 muchii din fişier.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

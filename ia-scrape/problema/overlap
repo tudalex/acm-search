@@ -1,0 +1,56 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>overlap.in, overlap.out</td><td><strong>Sursă</strong></td><td>preONI 2006 Runda Finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=153">Adrian Diaconu</a>, <a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a>, <a href="/cauta-probleme?tag_id%5B%5D=152">Tiberiu-Lucian Florea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=overlap">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=overlap">Vezi solutiile trimise</a></p>
+
+<h1>Overlap<br></h1>
+
+<p>Fie <var>N</var> puncte in plan cu coordonate intregi <var>x<sub>i</sub> , y<sub>i</sub></var>. Acestea sunt rotite cu <var>k*90</var> grade (<var>k = 0 , 1 , 2</var> sau <var>3</var>) si/sau translatate, astfel incat se obtin alte <var>N</var> puncte, diferite doua cate doua de primele.</p>
+
+<h2>Cerinta</h2>
+
+<p>Dandu-se <var>N</var>(numar par) puncte, determinati o impartire a lor in doua submultimi de cardinal <var>N/2</var> astfel incat a doua sa poata fi obtinuta din prima prin operatiile descrise.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>overlap.in</var> se afla <var>N</var>, numarul de puncte, iar pe urmatoarele <var>N</var> linii se afla cate o pereche <var>x<sub>i</sub></var>, <var>y<sub>i</sub></var> - pe cea de-a <var>i-a</var> linie se afla coordonatele punctului <var>i</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>overlap.out</var> va contine <var>N</var> linii, iar pe fiecare linie va exista un singur caracter <var>1</var> sau <var>2</var> cu semnificatia ca punctele etichetate cu <var>1</var> fac parte din prima multime, iar punctele etichetate cu <var>2</var> fac parte din cea de-a doua multime. Daca exista mai multe solutii se cere oricare dintre acestea; se garanteaza existenta cel putin a unei solutii.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 800</var></li>
+<li><var>0 ≤ x<sub>i</sub>, y<sub>i</sub> ≤ 100.000</var></li>
+<li>Prin "rotatie" se intelege fixarea unui punct oarecare in plan si rotirea tuturor punctelor initiale fata de acesta.</li>
+<li>Prin "translatie" se intelege alegerea numerelor constante <var>shift_x</var> si <var>shift_y</var>, si transformarea coordonatelor <var>(Pi<sub>x</sub>, Pi<sub>y</sub>)</var> in <var>(Pi<sub>x</sub>+shift_x, Pi<sub>y</sub>+shift_y)</var> pentru orice punct <var>i</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>overlap.in</th><th>overlap.out</th></tr><tr><td>6<br>
+  5 5<br>
+  9 1<br>
+  6 1<br>
+  3 2<br>
+  6 3<br>
+  3 5<br></td><td>1<br>
+  2<br>
+  2<br>
+  1<br>
+  2<br>
+  1</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=41">Geometrie</a></span>
+            <a href="javascript:show_tag_list(41)" id="tag_anchor_41" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_41"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=444">Transformari geometrice</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

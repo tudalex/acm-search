@@ -1,0 +1,52 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>pipe.in, pipe.out</td><td><strong>Sursă</strong></td><td>Lot Juniori 2008 - Baraj 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=125">Dana Lica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=pipe">Vezi solutiile trimise</a></p>
+
+<h1>Pipe<br></h1>
+
+<p>Gigel trebuie sa proiecteze instalatia de apa din propria curte. Curtea are dimensiuni infinite si nu este imprejmuita. El cunoaste coordonatele punctului in care se afla sursa de apa si coordonatele punctului unde va instala un robinet. Conducta trebuie proiectata astfel incat cele doua puncte sa fie unite. Pentru aceasta dispune de <var>n</var> tevi sub forma unor segmente ale caror lungimi se cunosc, dar care nu pot fi taiate. Doua tevi se vor conecta astfel incat unghiul dintre ele sa fie de <var>90</var>°, 180° , 270° sau 360°, adica orice cuplare pe orizontala sau verticala(sus, jos, stanga, dreapta). Unele tevi sunt rosii iar altele sunt vopsite in albastru. Cele rosii se pot conecta doar pe verticala iar cele albastre doar pe orizontala. Pot exista tevi de aceeasi culoare si lungimi egale, dar fiecare teava se va folosi in instalatie o singura data. </p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care sa determine lungimea minima de teava necesara pentru a uni cele doua puncte.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>pipe.in</var> are urmatorul format :</p>
+
+
+<ul><li>pe prima linie numarul <var>n</var>;</li>
+<li>pe urmatoarea linie coordonatele carteziene ale sursei de apa <var>xi</var> <var>yi</var>, numere naturale separate printr-un spatiu;</li>
+<li>pe urmatoarea linie coordonatele carteziene ale punctului unde va fi plasat robinetul <var>xf</var> <var>yf</var>,numere naturale separate printr-un spatiu;</li>
+<li>pe urmatoarele <var>n</var> linii descrierea fiecarei tevi realizata astfel: caracterul <var>A</var> pentru culoarea albastru sau <var>R</var> pentru culoarea rosu, urmat de spatiu si apoi de un numar natural reprezentand lungimea tevii.</li>
+</ul><h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>pipe.out</var> va contine pe prima linie un numar reprezentand lungimea minima determinata sau cuvantul imposibil daca nu se poate realiza conectarea cu tevile disponibile.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ n ≤ 100</var></li>
+<li><var>1 ≤ lungimea fiecarei tevi ≤ 290</var></li>
+<li><var>1 ≤ xi, yi, xf, yf ≤ 32.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>pipe.in</th><th>pipe.out</th></tr><tr><td>8<br>
+  2 3<br>
+  6 8<br>
+  A 9<br>
+  R 3<br>
+  R 13<br>
+  R 8<br>
+  A 2<br>
+  R 4<br>
+  A 15<br>
+  R 12<br></td><td>37<br></td></tr></table><h3>Explicatie</h3>
+
+<p><img src="http://infoarena.ro/problema/pipe?action=download&amp;file=img.jpg&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

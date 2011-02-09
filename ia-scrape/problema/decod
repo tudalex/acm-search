@@ -1,0 +1,56 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>decod.in, decod.out</td><td><strong>Sursă</strong></td><td>ONI 2009, Baraj Gimnaziu</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=233">Ana Intuneric</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrici_cezar"><img src="/utilizator/andrici_cezar?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrici_cezar">Andrici Cezar</a> <a title="Rating andrici_cezar: 458" class="rating-badge-3" href="http://infoarena.ro/utilizator/andrici_cezar?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrici_cezar">andrici_cezar</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=decod">Vezi solutiile trimise</a></p>
+
+<h1>Decod<br></h1>
+
+<p>Numim <var>k-p-platou</var> un număr <var>n</var> de forma c<sub>1</sub>c<sub>2</sub>...c<sub>p</sub> cu proprietatea că cifrele sale sunt distincte şi aparţin mulţimii { <var>k,k+1,...,k+p-1</var> }. O <var>α-codificare</var> constă în transformarea numărului <var>n</var> în numărul <var>d<sub>1</sub>d<sub>2</sub>...d<sub>p</sub></var>, unde <var>d<sub>i</sub></var> = <var>1+</var>numărul de cifre din stânga cifrei c<sub>i</sub> care sunt mai mici decât <var>c<sub>i</sub></var> pentru <var>1 ≤ i ≤ p</var>. Aplicând o <var>α-codificare</var> unui număr obţinem un <var>α-cod</var>.Fie <var>s</var> un şir format din secvenţe de cifre, în care fiecare secvenţă are aceeaşi lungime <var>p</var> . Un <var>val</var> este o succesiune de astfel de secvenţe în care orice secvenţă care este un <var>α-cod</var>, este urmată de o secvenţă care nu este un <var>α-cod</var> şi orice secvenţă care nu este un <var>α-cod</var>, este urmată de o secvenţă care este un <var>α-cod</var>, cu excepţia ultimei secvenţe. Un <var>val</var> începe obligatoriu cu o secvenţă ce reprezintă un <var>α-cod</var> şi se termină cu o secvenţă care nu este un <var>α-cod</var> . Primul caracter al unui <var>val</var> se poate afla pe o poziţie din <var>s</var> care aparţine mulţimii { <var>1,1+p,1+2p,1+3p,…</var> }.</p>
+
+<h2>Cerinţe</h2>
+
+<p>Scrieţi un program care:</p>
+
+
+<ol><li>cunoscând numerele <var>k</var>, <var>p</var> şi un <var>α-cod</var> , determină <var>k-p-platoul</var> căruia <var>i</var> s-a aplicat <var>α-codificarea</var> .</li>
+<li>pentru un şir de cifre <var>s</var> dat, determină lungimea celui mai lung <var>val</var> . </li>
+</ol><h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>decod.in</var> conţine:</p>
+
+
+<ul><li>pe prima linie cifrele <var>k</var> şi <var>p</var> separate printr-un spaţiu</li>
+<li>pe a doua linie un <var>α-cod</var> a unui <var>k-p-platou</var></li>
+<li>pe a treia linie un şir de cifre <var>s</var> </li>
+</ul><h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>decod.out</var> va conţine:</p>
+
+
+<ul><li>pe prima linie <var>k-p-platoul</var> căruia i s-a aplicat <var>α-codificarea</var></li>
+<li>pe a doua linie lungimea celui mai lung <var>val</var></li>
+</ul><h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ k ≤ 9</var></li>
+<li><var>1 ≤ p ≤ 9</var></li>
+<li><var>k+p-1 ≤ 9</var></li>
+<li><var>1 ≤ di ≤ 9</var></li>
+<li>şirul <var>s</var> are cel mult <var>800.000</var> de caractere</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>decod.in</th><th>decod.out</th></tr><tr><td>3 5<br>
+12124<br>
+1111012124100111234511151<br></td><td>57346<br>
+20<br></td></tr><tr><td>8 2<br>
+12<br>
+10121011101012101110111011101110<br></td><td>89<br>
+20<br></td></tr></table><h3>Explicaţie</h3>
+
+
+<ol><li>Numărul <var>57346</var> este un <var>3-5-platou</var> , deoarece cifrele sale aparţin mulţimii { <var>3,4,5,6,7</var> }. Aplicându-i o <var>α-codificare</var> se obţine <var>12124</var> , <var>1</var> deoarece în stânga lui <var>5</var> nu există nici o cifră mai mică decât <var>5</var> ( <var>1+0</var> ), <var>2</var> deoarece în stânga lui <var>7</var> există o cifră mai mică decât <var>7</var> ( <var>1+1</var> ) etc. În şirul 11110<strong>12124<ins>10011</ins><strong>12345</strong><ins>11151</ins></strong> avem un val de lungime 20.</li>
+<li>Numărul <var>12</var> este un α-cod a numărului <var>89</var>. În şirul 10<strong>12<ins>10</ins><strong>11</strong><ins>10</ins></strong>10<strong>11<ins>10</ins><strong>11</strong><ins>10</ins><strong>11</strong><ins>10</ins><strong>11</strong><ins>20</ins><strong>11</strong><ins>10</ins></strong> avem două valuri, iar valul maxim are lungimea egală cu <var>20</var>.</li>
+</ol><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

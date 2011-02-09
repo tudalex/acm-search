@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>biscuiti.in, biscuiti.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=161">Adrian Airinei</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=biscuiti">Vezi solutiile trimise</a></p>
+
+<h1>Biscuiti<br></h1>
+
+<p>Gardul fabricii de biscuiti este cam subred. Conducerea ia decizia de a remedia acest lucru si contacteaza doi muncitori amatori. Ajunsi la fata locului, muncitorii constata ca gardul este format din <var>N</var> scanduri (pe care le numeroteaza 1, 2, 3 ... <var>N</var> de la stanga la dreapta) de diferite lungimi. Ei stabilesc ca primul lucru care trebuie facut este demontarea celor <var>N</var> scanduri. Astfel, decid ca in fiecare din urmatoarele <var>N</var> zile sa demonteze scandura cu lungimea cea mai mica. Pe masura ce avanseaza cu munca, constientizeaza un lucru mai mult decat bizar. Daca in ziua <var>T</var> au demontat scandura aflata pe pozitia <var>X</var> lungimea tuturor scandurilor aflate in stanga scandurii <var>X</var> creste cu <var>T</var> unitati.</p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se afle diferenta dintre suma lungimilor scandurilor demontate si suma lungimilor scandurilor initiale.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie a fisierului <var>biscuiti.in</var> se afla numarul <var>N</var>. Urmeaza <var>N</var> linii, pe linia <var>i</var> aflandu-se lungimea initiala a scandurii <var>i-1</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Pe prima linie a fisierului <var>biscuiti.out</var> se afla numarul <var>K</var> cerut.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100.000</var></li>
+<li><var>1 ≤ X<sub>i</sub> ≤ 1.000, X<sub>i</sub></var> este lungimea initiala a scandurii <var>i</var></li>
+<li>Daca au de ales intre mai multe scanduri de lungimi egale, muncitorii o vor alege pe cea mai din stanga</li>
+<li>Ziua initiala este ziua 1</li>
+<li>Scandura <var>i (i ≥ 2)</var> are in stanga ei scandurile 1, 2, 3 ... <var>i-1</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>biscuiti.in</th><th>biscuiti.out</th></tr><tr><td>7 <br>
+9 <br>
+10<br>
+6<br>
+6<br>
+4<br>
+9<br>
+8</td><td>36</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,56 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>xor.in, xor.out</td><td><strong>Sursă</strong></td><td>ONI 2010 - Baraj</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Mishu91"><img src="/utilizator/Mishu91?action=download&amp;file=avatar&amp;resize=L16x16" alt="Mishu91">Andrei Misarca</a> <a title="Rating Mishu91: 662" class="rating-badge-1" href="http://infoarena.ro/utilizator/Mishu91?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Mishu91">Mishu91</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.5 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=xor">Vezi solutiile trimise</a></p>
+
+<h1>Xor<br></h1>
+
+<p>Lui Hadrianus îi plac matricele infinite care sunt generate după o anumită regulă. Înainte de primul baraj, el se gândeşte la o astfel de matrice, în care elementul de pe linia <var>i</var> şi coloana <var>j</var> este egal cu <var>i xor j</var>. Hadrianus doreşte să determine suma elementelor pentru unele submatrici ale matricii formate după regula de mai sus. Se numeşte submatrice de coordonate <var>(L1, <span class="caps">C1, L2,</span> C2)</var>, cu <var>1 ≤ L1 ≤ L2</var> şi <var>1 ≤ C1 ≤ C2</var>, o zonă dreptunghiulară din matrice care are colţul stânga-sus pe linia <var>L1</var> şi coloana <var>C1</var> şi colţul dreapta-jos pe linia <var>L2</var> şi coloana <var>C2</var>.</p>
+
+<p><img src="http://infoarena.ro/problema/xor?action=download&amp;file=xor.png&amp;resize=70%25" alt="" class="right" style="float:right"></p>
+
+<p>Operaţia <var>xor</var> reprezintă operaţia de disjuncţie exclusivă realizată pe biţii operanzilor. În Pascal, operatorul corespunzător este <var>xor</var>, iar în C/C++ acest operator este <var>^</var>. De exemplu, <var>20 xor 14 = 26</var>. Matricea formată are primele elemente conform figurii alăturate.</p>
+
+<p>Scrieţi un program care citeşte coordonatele a <var>T</var> submatrice şi afişează pentru fiecare dintre aceste submatrice suma elementelor sale modulo <var>P</var> (restul împărţirii sumei la <var>P</var>), unde <var>P</var> este un număr prim.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>xor.in</var> conţine pe prima linie <var>T</var> şi <var>P</var>, cu semnificaţia de mai sus. Fiecare din următoarele <var>T</var> linii conţine câte <var>4</var> numere naturale <var>L1 C1 L2 C2</var>, despărţite printr-un spaţiu, reprezentând coordonatele unei submatrice.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>xor.out</var> conţine exact <var>T</var> linii. Linia cu numărul <var>i</var> conţine suma modulo <var>P</var> a elementelor celei de a <var>i</var>-a submatrice din fişierul de intrare.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 20 000</var></li>
+<li>Pentru fiecare submatrice din cele <var>T</var>, <var>1 ≤ L1 ≤ L2 ≤ 10<sup>8</sup></var> şi <var>1 ≤ C1 ≤ C2 ≤ 10<sup>8</sup></var></li>
+<li><var>P</var> este număr prim mai mic sau egal decât <var>30 000</var></li>
+<li>Liniile şi coloanele matricei sunt numerotate începând cu <var>1</var></li>
+<li>La evaluare se vor folosi <var>10</var> teste. Ele vor avea următoarea structură:
+<ul><li>Pentru primele <var>2</var> teste, <var>T ≤ 100</var> şi <var><span class="caps">L2,</span> C2 ≤ 100</var></li>
+<li>Pentru testele <var>3</var> şi <var>4</var>, <var><span class="caps">L2,</span> C2 ≤ 1000</var></li>
+<li>Pentru testele <var>5</var> şi <var>6</var>, <var>L1 = L2</var></li>
+<li>Pentru testele <var>7</var> şi <var>8</var>, <var>P = 2</var></li>
+<li>Celelalte două teste respectă limitele de mai sus şi nu au nicio particularitate specială</li>
+</ul></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>xor.in</th><th>xor.out</th></tr><tr><td>5 29473<br>
+1 3 2 4<br>
+2 2 12 15<br>
+10000 10000 11000 11000<br>
+123 51 54667341 1878099<br>
+1234567 1234567 1234678 1234678<br></td><td>14<br>
+1165<br>
+23799<br>
+18591<br>
+549<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Prima submatrice este formată din elementele <var>2</var>, <var>5</var>, <var>1</var> şi <var>6</var>. Suma modulo <var>29473</var> a acestor elemente este: <var>(2 + 5 + 1 + 6) % 29473 = 14</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

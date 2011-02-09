@@ -1,0 +1,67 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>bile5.in, bile5.out</td><td><strong>Sursă</strong></td><td>ONI 2009, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrei-alpha"><img src="/utilizator/andrei-alpha?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrei-alpha">Andrei-Bogdan Antonescu</a> <a title="Rating andrei-alpha: 700" class="rating-badge-1" href="http://infoarena.ro/utilizator/andrei-alpha?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrei-alpha">andrei-alpha</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=bile5">Vezi solutiile trimise</a></p>
+
+<h1>Bile5<br></h1>
+
+<p><var>N</var> prieteni stau în jurul a <var>N</var> urne cu bile. Prietenii şi urnele sunt numerotate cu numere de la <var>0</var> la <var>N-1</var>. Fiecare urnă <var>i (0 ≤ i ≤ N-1)</var> conţine <var>S<sub>i</sub></var> bile. Prietenii doresc să extragă bile din urne şi să le pună în buzunare. Datorită aşezării, din urna <var>i</var> pot extrage bile doar prietenii <var>i</var> şi <var>((i+1) mod N)</var>. Fiecare prieten <var>i</var> <var>(0 ≤ i ≤ N-1)</var> are o capacitate a buzunarelor de <var>P<sub>i</sub></var> bile (adică nu poate extrage mai mult de <var>P<sub>i</sub></var> bile în total). Prietenul <var>0</var> este liderul lor şi îşi pune întrebări de forma: dacă eu extrag exact <var>x</var> bile din urna <var>0</var>, atunci care este numărul maxim de bile pe care le pot extrage în total toţi prietenii, folosind o strategie adecvată şi considerând limitările problemei? O strategie adecvată determină câte bile extrage fiecare prieten din fiecare urnă din care poate extrage bile, considerând că prietenul <var>0</var> extrage neapărat <var>x</var> bile din urna <var>0</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Pentru fiecare valoare posibilă a lui <var>x</var> (de la <var>0</var> la <var>min(S<sub>0</sub>, P<sub>0</sub>))</var>, determinaţi numărul maxim de bile pe care le pot extrage cei <var>N</var> prieteni în total din cele <var>N</var> urne.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fişierului <var>bile5.in</var> conţine numărul de teste <var>T</var> descrise în continuare. Prima linie a fiecărui test conţine numărul <var>N</var> de prieteni. Urmează apoi <var>N</var> linii. Linia <var>i</var> dintre acestea <var>(0 ≤ i ≤ N-1)</var> conţine numerele întregi <var>S<sub>i</sub></var> şi <var>P<sub>i</sub></var>, separate printr-un spaţiu.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>bile5.out</var> veţi afişa răspunsurile pentru fiecare test, în ordinea în care acestea sunt date în fişierul de intrare. Pentru fiecare valoare posibilă a lui <var>x</var> (considerând ordinea crescătoare a valorilor) pentru testul respectiv, veţi afişa o linie conţinând numărul maxim total de bile pe care îl pot extrage prietenii din urne. </p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 10</var></li>
+<li><var>2 ≤ N ≤ 15 000</var></li>
+<li><var>1 ≤ Si ≤ 16 000</var></li>
+<li><var>1 ≤ Pi ≤ 16 000</var></li>
+<li><var>40%</var> dintre teste au <var>N ≤ 500</var> şi <var>max(Si,Pi) ≤ 500 (0 ≤ i ≤ N-1)</var></li>
+<li><var>A mod B</var> reprezintă restul împărţirii întregi a lui <var>A</var> la <var>B</var>.</li>
+<li>O bilă poate fi extrasă o singură dată, de un singur prieten.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>bile5.in</th><th>bile5.out</th></tr><tr><td>2<br>
+4<br>
+5 5<br>
+3 4<br>
+8 6<br>
+3 4<br>
+4<br>
+2 3<br>
+6 5<br>
+2 4<br>
+3 1<br></td><td>17<br>
+18<br>
+19<br>
+19<br>
+19<br>
+18<br>
+13<br>
+13<br>
+12<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Pentru primul test <var>x</var> poate lua valori între <var>0</var> şi <var>min(S0, P0)=5</var>.<br>
+Pentru <var>x=0</var>, cei <var>4</var> prieteni pot extrage în total <var>17</var> bile. <br>
+Pentru <var>x=1</var>, cei <var>4</var> prieteni pot extrage în total <var>18</var> bile. <br>
+Pentru <var>x=2</var>, cei <var>4</var> prieteni pot extrage în total <var>19</var> bile. <br>
+Pentru <var>x=3</var>, cei <var>4</var> prieteni pot extrage în total <var>19</var> bile. <br>
+Pentru <var>x=4</var>, cei <var>4</var> prieteni pot extrage în total <var>19</var> bile. <br>
+Pentru <var>x=5</var>, cei <var>4</var> prieteni pot extrage în total <var>18</var> bile. <br>
+Valoarea lui <var>x</var> a fost inclusă de fiecare dată în numărul total de bile ce pot fi extrase de cei <var>4</var> prieteni.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

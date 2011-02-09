@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>bmap.in, bmap.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2008</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>5 sec</td><td><strong>Limită de memorie</strong></td><td>131072 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=bmap">Vezi solutiile trimise</a></p>
+
+<h1>Bmap<br></h1>
+
+<p>Se da o matrice binara (elementele sunt 0 sau 1) avand M linii si N coloane. O componenta <strong>neagra</strong> este o submultime de elemente cu valoarea 1, cu proprietatea ca se poate ajunge de la orice element din componenta la orice alt element al componntei, direct sau prin intermediul altor elemente din componenta, efectuand deplasari pe directiile orizontala si/sau verticala (asadar, dintr-un element se poate ajunge direct intr-unul din cele maxim 4 elemente vecine din jurul sau). O componenta neagra se numeste <strong>compacta</strong> daca nu contine nici un element alb in interiorul acesteia (mai exact, daca exista un ciclu format din o parte din elemente componentei, mergand doar pe directiile orizontala si verticala, care sa contina un element alb in interior, atunci componenta <strong>NU</strong> este compacta). Dimensiunea unei componente negre este egala cu numarul de elemente din care este compusa. Se defineste <strong>adancimea</strong> unei componente negre ca fiind egala cu <strong>1 +</strong> numarul de componente negre in interiorul careia aceasta este inclusa.</p>
+
+<p>Determinati numarul total de componente negre, dimensiunea celei mai mari componente negre, numarul total de componente negre compacte si dimensiunea celei mai mari componente negre compacte. De asemenea, determinati adancimea maxima a unei componente negre.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>bmap.in</var> contine doua numere intregi, separate printr-un spatiu: <var>M</var> si <var>N</var>. Urmatoarele <var>M</var> linii contin cate <var>N</var> caractere din multimea <var>{'0','1'}</var>, neseparate prin spatii <var>('0'</var>=element alb, <var>'1'</var>=element negru).</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>bmap.out</var> veti afisa <var>2</var> numere intregi, separate printr-un spatiu: numarul total de componente negre si dimensiunea celei mai mari componente negre. Pe a doua linie veti afisa alte <var>2</var> numere intregi, separate printr-un spatiu: numarul de componente negre compacte si dimensiunea celei mai mari componente negre compacte. Pe a treia linie veti afisa adancimea maxima a unei componente negre.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ M ≤ 10000</var></li>
+<li><var>1 ≤ N ≤ 1000</var></li>
+<li>Daca nu exista nicio componenta neagra compacta, dimensiunea celei mai mari componente nerge compacte se considera a fi <var>0</var>.</li>
+<li>Daca nu exista nicio componenta neagra, dimensiunea celei mai mari componente negre se considera a fi <var>0</var> (la fel si adancimea maxima).</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>bmap.in</th><th>bmap.out</th></tr><tr><td>10 20<br>
+00001111111000011110<br>
+11110111101111010111<br>
+01110000111111001111<br>
+11111110000000001111<br>
+10000111111111010000<br>
+10111011111111011111<br>
+10101011111111010001<br>
+10111010001001010001<br>
+10000010111111010001<br>
+11111110001111010001<br></td><td>5 65<br>
+2 16<br>
+2</td></tr></table><h3>Explicatie</h3>
+
+<p>Matricea binara din exemplu este desenata in figura de mai jos. Se observa ca exista <var>5</var> componente negre (numerotate de la <var>1</var> la <var>5)</var>, din care componentele <var>1</var>, <var>2</var> si <var>3</var> NU sunt compacte. Componenta <var>4</var> este compacta, deoarece nu contine nici un patratel alb in interior. Cea mai mare componenta neagra are dimensiunea <var>65</var> (componenta <var>3)</var>, iar cea mai mare componenta neagra compacta are dimensiunea <var>16</var> (componenta <var>4)</var>. Componenta <var>2</var> are adancimea <var>2</var> (fiind inclusa in componenta <var>3)</var>, iar celelalte componente au adancimea <var>1</var>.</p>
+
+<p><img src="http://infoarena.ro/problema/bmap?action=download&amp;file=bmap.jpg&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

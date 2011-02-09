@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>easychoice.in, easychoice.out</td><td><strong>Sursă</strong></td><td>Summer Challenge 2009, Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=165">Din Folclor</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/stef2n"><img src="/utilizator/stef2n?action=download&amp;file=avatar&amp;resize=L16x16" alt="stef2n">Stefan Istrate</a> <a title="Rating stef2n: 644" class="rating-badge-4" href="http://infoarena.ro/utilizator/stef2n?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/stef2n">stef2n</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=easychoice">Vezi solutiile trimise</a></p>
+
+<h1>Easy Choice<br></h1>
+
+<p>Anul acesta, colonelul James a primit sarcina de a recruta soldaţi pentru armata ţării sale. La recrutare se prezintă <var>N</var> candidaţi, fiecare fiind caracterizat prin înălţimea sa (număr natural). Colonelul James vrea sa formeze <var>R</var> divizii, fiecare cu câte <var>C</var> soldaţi, iar restul de candidaţi să fie refuzaţi. În cadrul unei divizii, definim "dezechilibrul" ca fiind maximul dintre diferenţele înălţimilor a 2 soldaţi. "Dezechilibrul" întregii armate reprezintă maximul dintre dezechilibrele celor <var>R</var> divizii. Din motive de performanţă, colonelul doreşte să recruteze soldaţii astfel încât armata să aibă dezechilibrul minim. Ajutaţi-l să işi îndeplinească sarcina!</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>easychoice.in</var> conţine pe prima linie numerele <var>N</var>, <var>R</var> şi <var>C</var> separate prin câte un spaţiu, având semnificaţiile de mai sus. Pe linia a doua se vor găsi <var>N</var> numere reprezentând înălţimile candidaţilor.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>easychoice.out</var> se va scrie un singur număr natural reprezentând dezechilibrul minim obţinut la recrutarea soldaţilor.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1.000.000</var></li>
+<li><var>1 ≤ R x C ≤ N</var></li>
+<li>Înălţimea <var>H</var> a unui candidat respectă restricţia <var>1 ≤ H ≤ 1.000.000.000</var>. Trebuie făcut ceva împotriva meselor bogate în calorii.</li>
+<li>Pentru 50% din teste, <var>N ≤ 1.000</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>easychoice.in</th><th>easychoice.out</th></tr><tr><td>8 2 3<br>
+  183 218 238 203 273 143 238 173<br></td><td>30<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Se pot alege următorii soldaţi:</p>
+
+
+<ul><li><var>Divizia 1: 238 218 238</var> (dezechilibru <var>20</var>)</li>
+<li><var>Divizia 2: 173 203 183</var> (dezechilibru <var>30</var>)</li>
+</ul><p>Dezechilibrul armatei este <var>max(20, 30) = 30</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,54 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>triunghi3.in, triunghi3.out</td><td><strong>Sursă</strong></td><td>ONI 2010, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=232">Marius Nicoli</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mathboy"><img src="/utilizator/mathboy?action=download&amp;file=avatar&amp;resize=L16x16" alt="mathboy">Dragos-Alin Rotaru</a> <a title="Rating mathboy: 510" class="rating-badge-3" href="http://infoarena.ro/utilizator/mathboy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mathboy">mathboy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>20000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=triunghi3">Vezi solutiile trimise</a></p>
+
+<h1>Triunghi3<br></h1>
+
+<p>Se consideră o placă de dimensiune <var>n</var>, de forma unui triunghi echilateral, ale cărui laturi sunt denumite <var>A</var>, <var>B</var> şi <var>C</var> şi au lungimea egală cu <var>n</var>. Pe laturile <var>A</var> şi <var>B</var> sunt marcate câte <var>n - 1</var> puncte care împart laturile în <var>n</var> porţiuni egale. Din fiecare punct marcat de pe latura <var>A</var> se trasează un segment paralel cu latura <var>B</var>, iar din fiecare punct marcat de pe latura <var>B</var> se trasează un segment paralel cu latura <var>A</var>. Celălalt capăt al fiecărui segment trasat se află pe latura <var>C</var>. În felul acesta, placa triunghiulară conţine <var>n * (n + 1) / 2</var> plăci elementare (care nu sunt traversate de niciun segment). Astfel, pe o placă triunghiulară de dimensiune <var>n = 4</var>, ca în figură, avem <var>6</var> plăci elementare în formă de romb şi <var>4</var> în formă de triunghi (cele cu o latură pe latura <var>C</var> a plăcii triunghiulare).</p>
+
+<p><img src="http://infoarena.ro/problema/triunghi3?action=download&amp;file=tringuh.jpg&amp;safe_only=true" alt="" class="right" style="float:right"></p>
+
+<p>Se doreşte împărţirea triunghiului în plăci elementare cu cost total minim. Dacă <var>n = 1</var> costul împărţirii este <var>0</var>. Pentru <var>n ≥ 2</var> singura operaţie permisă este tăierea de la un capăt la altul de-a lungul unui segment de lungime maximă, obţinându-se un triunghi de dimensiune <var>n - 1</var> şi o bandă. Banda va fi împărţită în plăci elementare prin tăieri de-a lungul segmentelor de lungime <var>1</var> ce separă plăcile elementare care o compun. Triunghiul obţinut va fi împărţit mai departe în plăci elementare folosind în mod repetat operaţia descrisă mai sus. Costul total al împărţirii triunghiului de dimensiune <var>n</var> în plăci elementare este egal cu costul tăierii de-a lungul segmentului de lungime maximă, plus costurile împărţirii benzii şi triunghiului de dimensiune <var>n - 1</var> obţinute, în plăci elementare.</p>
+
+<p>Pe fiecare placă elementară este scris un număr. Costul unei tăieturi (fie că are loc într-un triunghi sau într-o bandă) este egal cu suma valorilor din plăcile elementare care au o latură comună cu segmentul pe care se face tăietura, înmulţită cu lungimea segmentului. Pentru un triunghi de dimensiune <var>n ≥ 2</var> există exact <var>2</var> posibilităţi de a efectua o operaţie (corespunzătoare celor <var>2</var> segmente de lungime maximă, unul paralel cu latura <var>A</var>, iar celălalt paralel cu latura <var>B</var>). O tăiere pe direcţia <var>NV - SE</var> (paralelă cu latura <var>B</var>) în triunghiul din figură are costul <var>(8 + 10 + 3 + 6 + 6 + 12) * 3 = 135</var>. Costul împărţirii în plăci elementare a benzii obţinute este egal cu <var>(10 + 6) * 1 + (6 + 12) * 1 + (12 + 5) * 1 = 51</var>.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Să se determine costul total minim necesar împărţirii plăcii triunghiulare în plăci elementare.</p>
+
+<h2>Date de intrare</h2>
+
+<p>În fişierul <var>triunghi3.in</var> pe prima linie se află un număr natural nenul <var>n</var>, reprezentând dimensiunea plăcii. Pe a doua linie apar separate prin câte un spaţiu <var>n * (n + 1) / 2</var> numere naturale, reprezentând valorile plăcilor elementare în ordinea parcurgerii de sus în jos şi apoi de la stânga la dreapta, conform figurii de mai sus.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul <var>triunghi3.out</var> se va scrie pe prima linie costul total minim cerut.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ n ≤ 1000</var></li>
+<li><var>0 ≤ numărul de pe o placă elementară ≤ 2 000 000 000</var></li>
+<li>Se garantează că rezultatul se va încadra pe <var>32</var> biţi.</li>
+<li>Pentru <var>50%</var> din teste vom avea <var>n ≤ 400</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>triunghi3.in</th><th>triunghi3.out</th></tr><tr><td>4<br>
+10 8 6 4 3 12 3 1 6 5<br></td><td>235<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Pentru a asigura costul total minim se poate realiza o tăietură pe direcţia <var>NE - SV</var> de cost <var>3 * (10 + 6 + 8 + 3 + 4 + 1) = 96</var> la care se adaugă costul tăierii benzii în plăci elementare <var>3 + 4 + 4 + 8 + 8 + 10 = 37</var>. Placa triunghiulară rămasă va fi tăiată pe direcţia <var>NE - SV</var>. Costul tăieturii este <var>2 * (3 + 6 + 6 + 12) = 54</var>, tăierea benzii în plăci elementare are costul <var>1 + 3 + 3 + 6 = 13</var>. Placa triunghiulară rămasă poate fi tăiată pe direcţia <var>NV - SE</var>. Costul tăieturii este <var>6 + 12 = 18</var>, tăierea benzii în plăci elementare are costul <var>12 + 5 = 17</var>, costul total minim este <var>235</var>. </p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

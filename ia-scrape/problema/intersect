@@ -1,0 +1,46 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>intersect.in, intersect.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2010, Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=223">Cosmin Gheorghe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gcosmin"><img src="/utilizator/gcosmin?action=download&amp;file=avatar&amp;resize=L16x16" alt="gcosmin">Gheorghe Cosmin</a> <a title="Rating gcosmin: 1142" class="rating-badge-4" href="http://infoarena.ro/utilizator/gcosmin?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gcosmin">gcosmin</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=intersect">Vezi solutiile trimise</a></p>
+
+<h1>Intersect<br></h1>
+
+<p>Venus are o coala alba de hartie de dimensiune infinita pe care ii place sa deseneze drepte. Astazi Venus se intreaba daca poate desena <var>N</var> drepte astfel incat numarul de intersectii dintre acestea sa fie exact <var>M</var>. Si daca da, care este numarul maxim de zone (finite si infinite) in care poate fi impartita foaia de cele <var>N</var> drepte?</p>
+
+<p>Un exemplu de <var>5</var> linii cu <var>8</var> intersectii.<br><img src="http://infoarena.ro/problema/intersect?action=download&amp;file=intersect.jpg&amp;safe_only=true" alt=""></p>
+
+<p>Foaia este impartita in <var>14</var> zone.</p>
+
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>intersect.in</var> va contine pe prima linie numarul <var>T</var> reprezentand numarul de teste. Urmatoarele <var>T</var> linii vor contine cate doua numere <var>N</var> si <var>M</var> reprezentand numarul dreptelor si respectiv numarul intersectiilor.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>intersect.out</var> veti afisa <var>T</var> numere, fiecare pe cate o linie reprezentand raspunsul la cele <var>T</var> intrebari: <var>0</var> daca nu se pot desena cele <var>N</var> drepte astfel incat sa aiba exact <var>M</var> intersectii sau, in caz contrar, numarul maxim de zone in care poate fi impartita foaia.</p>
+
+<h2>Restricţii si precizari</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 100</var></li>
+<li><var>1 ≤ N ≤ 150</var></li>
+<li><var>0 ≤ M ≤ N * (N-1) / 2</var></li>
+<li>Pentru teste in valoare de 70 de puncte, <var>N ≤ 100</var>.</li>
+<li><b>Atentie</b>: Oricare <var>3</var> drepte desenate <b>nu</b> sunt concurente.</li>
+<li><b>Atentie</b>: Oricare doua drepte nu coincid.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>intersect.in</th><th>intersect.out</th></tr><tr><td>3<br>
+5 8<br>
+3 0<br>
+3 1<br></td><td>14<br>
+4<br>
+0<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Primul test este cel din imagine. Al doilea este cu toate 3 liniile paralele. Al treilea test este imposibil pentru ca oricare 3 linii nu pot fi concurente.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

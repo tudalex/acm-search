@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ppcover.in, ppcover.out</td><td><strong>Sursă</strong></td><td>Lot Vrancea 2010, Baraj 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Mishu91"><img src="/utilizator/Mishu91?action=download&amp;file=avatar&amp;resize=L16x16" alt="Mishu91">Andrei Misarca</a> <a title="Rating Mishu91: 662" class="rating-badge-1" href="http://infoarena.ro/utilizator/Mishu91?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Mishu91">Mishu91</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>6 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ppcover">Vezi solutiile trimise</a></p>
+
+<h1>Ppcover<br></h1>
+
+<p>Să considerăm un cub de latură <var>N</var>, compus din <var>NxNxN</var> celule. O celulă <var>(i,j,k)</var> <var>(0≤i,j,k≤N-1)</var> conţine o valoare <var>C(i,j,k)</var> care poate fi ori <var>0</var>, ori <var>1</var>. Dorim să amplasăm în interiorul cubului două paralelipipede, astfel încât fiecare celulă <var>(i,j,k)</var> cu <var>C(i,j,k)=1</var> să se afle în interiorul cel puţin unui paralelipiped. Cele două paralelipipede se pot intersecta.</p>
+
+<p>Un paralelipiped este definit de <var>3</var> intervale <var>[a<sub>1</sub> ,b<sub>1</sub>]</var>, <var>[a<sub>2</sub> ,b<sub>2</sub>]</var>, <var>[a<sub>3</sub> ,b<sub>3</sub>]</var> şi conţine în interiorul său toate celulele <var>(i,j,k)</var> cu <var>a<sub>1</sub>≤i≤b<sub>1</sub></var>, <var>a<sub>2</sub>≤j≤b<sub>2</sub></var> şi <var>a<sub>3</sub>≤k≤b<sub>3</sub></var>. Volumul paralelipipedului este <var>(b<sub>1</sub>-a<sub>1</sub>+1)*(b<sub>2</sub>-a<sub>2</sub>+1)*(b<sub>3</sub>-a <sub>3</sub>+1)</var>.</p>
+
+<p>Determinaţi o amplasare a două paralelipipede care să respecte condiţiile specificate, astfel încât suma volumelor celor două paralelipipede să fie minimă.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fişierului de intrare <var>ppcover.in</var> conţine numărul <var>T</var> de teste descrise în continuare. Prima linie a fiecărui test conţine numărul <var>N</var>, reprezentând dimensiunea laturii cubului. Următoarele <var>N<sup>2</sup></var> linii conţin câte <var>N</var> caractere fiecare (plus caracterul de linie nouă la sfârşitul fiecărei linii). A <var>L</var>-a astfel de linie <var>(1≤L≤N<sup>2</sup>)</var> corespunde celulelor <var>(i,j,k)</var> pentru care <var>i=(L-1) div N</var> şi <var>j=(L-1) mod N</var>. Al k-lea caracter <var>(1≤k≤N)</var> de pe a <var>L</var>-a linie dintre cele <var>N<sup>2</sup></var> corespunde valorii <var>C(i,j,k-1)</var>; dacă acest caracter este <var>‘0’</var> atunci <var>C(i,j,k-1)=0</var> şi dacă acest caracter este <var>‘1’</var> atunci <var>C(i,j,k-1)=1</var>.</p>
+
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>ppcover.out</var> veţi afişa câte o linie pentru fiecare test dat în fişierul de intrare, conţinând suma minimă a volumelor celor două paralelipipede.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 40</var></li>
+<li><var>1 ≤ N ≤ 40</var></li>
+<li>Este permis ca paralelipipedele (unul dintre ele sau ambele) să aibă volumul <var>0</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>ppcover.in</th><th>ppcover.out</th></tr><tr><td>2<br>
+2<br>
+11<br>
+00<br>
+10<br>
+01<br>
+3<br>
+001<br>
+100<br>
+101<br>
+011<br>
+000<br>
+000<br>
+000<br>
+011<br>
+100<br></td><td>5<br>
+22<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

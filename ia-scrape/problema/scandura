@@ -1,0 +1,37 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>scandura.in, scandura.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2009, Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=200">Bogdan-Cristian Tataroiu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/bogdan2412"><img src="/utilizator/bogdan2412?action=download&amp;file=avatar&amp;resize=L16x16" alt="bogdan2412">Bogdan-Cristian Tataroiu</a> <a title="Rating bogdan2412: 1162" class="rating-badge-4" href="http://infoarena.ro/utilizator/bogdan2412?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/bogdan2412">bogdan2412</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.7 sec</td><td><strong>Limită de memorie</strong></td><td>32000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=scandura">Vezi solutiile trimise</a></p>
+
+<h1>Scandura<br></h1>
+
+<p>G. Tamplaru' I vrea sa-si faca un birou nou. El cunoaste dimensiunile finale ale tuturor scandurilor de care are nevoie pentru a construi biroul si a cumparat o scandura de lungime <var>L</var> egala cu suma lungimilor tuturor scandurilor necesare. El are o masina speciala in care poate introduce o scandura de orice lungime si aceasta o taie in maxim <var>M</var> bucati. Efortul depus de G. Tamplaru' I pentru a taia o scandura de lungime <var>X</var> este egal cu <var>X</var>. El nu vrea sa munceasca prea mult si va cere voua sa determinati efortul minim necesar taierii scandurii mari in lungimile dorite. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>scandura.in</var> va contine pe prima linie doua numere naturle <var>N</var> si <var>M</var>. Pe a doua linie se vor afla, separate prin spatii, <var>N</var> numere naturale <strong>in ordine crescatoare</strong>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>scandura.out</var> se va afisa pe prima linie efortul minim necesar.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 10<sup>6</sup></var></li>
+<li><var>2 ≤ M ≤ N</var></li>
+<li><var>1 ≤ lungimile scandurilor ≤ 2 * 10<sup>9</sup></var></li>
+<li>Rezultatul se va incadra intotdeauna in tipuri de date intregi pe <var>64</var> de biti cu semn</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>scandura.in</th><th>scandura.out</th></tr><tr><td>4 2<br>
+1 2 3 4<br></td><td>19<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Scandura initiala are lungime <var>10</var>. G. Tamplaru' I efectueaza o taiere cu costul <var>10</var> si obtine 2 scanduri de lungime <var>4</var> si <var>6</var>. Scandura de lungime <var>6</var> o taie apoi in 2 scanduri de lungme <var>3</var>. In final, una din cele 2 scanduri de lungime <var>3</var> este taiata intr-o scandura de lungime <var>1</var> si una de lungime <var>2</var>.</p>
+
+<p>Efortul total este egal cu <var>10 + 6 + 3 = 19</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

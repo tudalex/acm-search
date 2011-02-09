@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>minuni.in, minuni.out</td><td><strong>Sursă</strong></td><td>ONI 2010, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=161">Adrian Airinei</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrei-alpha"><img src="/utilizator/andrei-alpha?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrei-alpha">Andrei-Bogdan Antonescu</a> <a title="Rating andrei-alpha: 700" class="rating-badge-1" href="http://infoarena.ro/utilizator/andrei-alpha?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrei-alpha">andrei-alpha</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.7 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=minuni">Vezi solutiile trimise</a></p>
+
+<h1>Minuni<br></h1>
+
+<p>Regele Gefghev s-a gândit să viziteze o ţară în care se întâmplă multe minuni, Ţara Minunilor. Această ţară este alcătuită din <var>N</var> oraşe, numerotate de la <var>1</var> la <var>N</var>. Între oraşele <var>i</var> şi <var>i+1</var> <var>(1 ≤ i &lt; N)</var> există o stradă modernă pe care se poate circula doar de la oraşul <var>i</var> la oraşul <var>i+1</var>. Fiind un tip isteţ, Gefghev şi-a dat seama că el poate ajunge de la orice oraş <var>i</var> la un oraş <var>j (j &gt; i)</var> mergând în total pe <var>j-i</var> străzi. Tronomir, angajat al direcţiei de întreţinere a drumurilor, a pus la cale un plan de construcţie a <var>M</var> noi străzi pentru a-i fi mai uşor lui Gefghev să călătorească. Străzile vor fi construite rând pe rând, în M zile consecutive, în ziua i fiind construită cea de-a i-a stradă. O stradă va fi construită de la oraşul <var>a</var> la oraşul <var>b</var> <var>(1 ≤ a &lt; b – 1 &lt; N)</var> şi pe această stradă se va putea circula doar de la oraşul a către oraşul b. Fiind un tip preocupat de călătorii, Gefghev se gândeşte acum să afle, după fiecare stradă construită, între care oraşe poate ajunge acum mai repede decât putea înainte de construcţia străzii. Altfel spus, el vrea să ştie câte perechi de oraşe <var>(x, y)</var> <var>(1 ≤ x &lt; y ≤ N)</var> şi-au schimbat distanţa minimă dintre ele. Distanţa minimă dintre două oraşe <var>x</var> şi <var>y</var> este numărul minim de străzi care trebuie să fie parcurse pentru a ajunge din oraşul <var>x</var> în oraşul <var>y</var>.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Scrieţi un program care determină pentru regele Gefghev, după fiecare stradă construită, numărul de perechi de oraşe <var>(x,y)</var> <var>(1 ≤ x &lt; y ≤ N)</var> pentru care distanţa minimă de la <var>x</var> la <var>y</var> s-a modificat după construirea străzii respective.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare <var>minuni.in</var> se află două numere întregi <var>N</var> şi <var>M</var> separate printr-un singur spaţiu, cu semnificaţia din enunţ. Pe următoarele <var>M</var> linii se află câte două numere naturale separate de un singur spaţiu, <var>a</var> şi <var>b</var>, cu semnificaţia că s-a construit o stradă de la oraşul <var>a</var> la oraşul <var>b</var>. Străzile sunt construite în ordinea din fişierul de intrare.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>minuni.out</var> se vor afla <var>M</var> numere naturale, câte un număr pe o linie. Pe linia <var>i</var> se va scrie numărul de perechi de oraşe <var>(x,y) (1 ≤ x &lt; y ≤ N)</var> pentru care distanţa minimă de la <var>x</var> la <var>y</var> s-a modificat, după construirea celei de a <var>i-a</var> străzi din fişierul de intrare.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1 000 000 000</var></li>
+<li><var>1 ≤ M ≤ 100 000</var></li>
+<li>Toate oraşele între care s-au construit străzi noi sunt distincte.</li>
+<li>Nu există două străzi dintre cele nou construite, una <var>(a, b)</var> şi cealaltă <var>(c, d)</var> astfel încât <var>a ≤ c ≤ b ≤ d</var>.</li>
+<li>Pentru <var>30%</var> din teste <var>M ≤ 1000</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>minuni.in</th><th>minuni.out</th></tr><tr><td>8 3<br>
+2 4<br>
+1 5<br>
+6 8<br></td><td>10<br>
+4<br>
+6<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Există <var>8</var> oraşe. Se vor construi <var>3</var> noi străzi. După construcţia străzii <var>2 4</var>, se vor modifica distanţele dintre următoarele perechi de oraşe: <var>(1 4)</var>, <var>(1 5)</var>, <var>(1 6)</var>, <var>(1 7)</var>, <var>(1 8)</var>, <var>(2 4)</var>, <var>(2 5)</var>, <var>(2 6)</var>, <var>(2 7)</var>, <var>(2 8)</var>. </p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

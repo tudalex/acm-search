@@ -1,0 +1,35 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cinema.in, cinema.out</td><td><strong>Sursă</strong></td><td>Lista lui Francu</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=163">Cristian Cadar</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/pauldb"><img src="/utilizator/pauldb?action=download&amp;file=avatar&amp;resize=L16x16" alt="pauldb">Paul-Dan Baltescu</a> <a title="Rating pauldb: 792" class="rating-badge-4" href="http://infoarena.ro/utilizator/pauldb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/pauldb">pauldb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cinema">Vezi solutiile trimise</a></p>
+
+<h1>Cinema<br></h1>
+
+<p>Un grup de <var>N</var> prieteni se duc la cinema. Fiecare dintre ei si-a cumparat bilet separat, insa conform intelegerii initiale toti si-au luat bilete in acelasi rand. Ajungand dupa inceputul filmului, ei se aseaza la intamplare pe acel rand. Fiecare dintre cei <var>N</var> prieteni considera ca locul de pe biletul sau este cel mai bun, asa ca fiecare doreste sa ajunga pe locul sau. Pentru a nu deranja prea tare restul spectatorilor ei se hotarasc ca in fiecare minut, mai multe perechi de persoane sa-si schimbe locurile intre ele. La fiecare minut, numarul de schimbari de locuri poate fi oricat de mare, insa o persoana nu poate participa decat la o singura astfel de schimbare. Pentru simplitate, consideram ca persoana <var>1</var> are biletul cu locul <var>1</var>, persoana <var>2</var> are biletul cu locul <var>2</var>, si asa mai departe, persoana <var>N</var> are biletul cu locul <var>N</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Aflati numarul minim de minute necesare pentru ca fiecare persoana sa ajunga pe locul sau.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>cinema.in</var> este scris numarul de prieteni <var>N</var>. Pe urmatoarea linie se afla <var>N</var> numere reprezentand locul pe care s-a asezat initial fiecare prieten. Mai exact, a <var>i</var>-a valoare reprezinta locul pe care s-a asezat persoana <var>i</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Prima linie a fisierului <var>cinema.out</var> va contine numarul minim <var>M</var> de minute necesare pentru ca fiecare persoana sa ajunga pe locul sau. Urmeaza <var>M</var> linii cu urmatoarea structura: numarul <var>R</var> de mutari care sunt executate la minutul respectiv, iar apoi <var>R</var> perechi de numere <var>i</var> <var>j</var>, separate printr-un spatiu, avand semnificatia ca in minutul respectiv persoana <var>i</var> isi schimba locul cu persoana <var>j</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 1000</var></li>
+<li>Evaluarea se face pe <var>10</var> teste. Punctajul primit pentru fiecare test ordonat corect este <br><var>[M <sub>Ok</sub> /M <sub>ultilizator</sub> * 10]</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>cinema.in</th><th>cinema.out</th></tr><tr><td>3<br>
+3 1 2<br></td><td>2<br>
+1 1 2<br>
+1 2 3<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

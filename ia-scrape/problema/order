@@ -1,0 +1,34 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>order.in, order.out</td><td><strong>Sursă</strong></td><td>Bursele Agora 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=order">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=order">Vezi solutiile trimise</a></p>
+
+<h1>Order<br></h1>
+
+<table style="margin:0.5em auto;" cellspacing="0"><tr><td align="center" style="background-color:#F8EABA;"><img src="http://infoarena.ro/template/badtests?action=download&amp;file=attention.gif&amp;safe_only=true" alt="" class="left" style="float:left"><em>Testele pentru aceasta problema nu sunt destul de bine construite pentru a departaja corect solutii ineficiente sau gresite.</em><br><a href="http://infoarena.ro/implica-te/imbunatatire-teste"><strong>Intra aici</strong></a> <em>daca vrei sa ne ajuti sa imbunatatim calitatea testelor pentru aceasta problema!</em></td></tr></table><p>Se considera <var>n</var> copii asezati in cerc si numerotati de la <var>1</var> la <var>n</var> in sens trigonometric. Copiii joaca urmatorul joc: jocul incepe de la primul copil (cel al carui numar de ordine este 1); la fiecare al <var>i-lea</var> pas al jocului se numara <var>i</var> copii in sens trigonometric si este eliminat copilul la care se ajunge; la pasul urmator numaratoarea incepe de la copilul care urmeaza dupa cel eliminat.<br>
+Asadar, daca numarul copiilor este suficient de mare, la primul pas este eliminat al doilea copil, la al doilea pas al patrulea, la al treilea pas al saptelea, apoi la al patrulea pas al unsprezecelea si asa mai departe.</p>
+
+<h2>Cerinta</h2>
+
+<p>Va trebui sa determinati ordinea in care vor fi eliminati copiii.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Fisierul de intrare <var>order.in</var> contine pe prima linie un numar intreg <var>n</var>, care reprezinta numarul de copii.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>order.out</var> trebuie sa contina o singura linie pe care se vor afla <var>n</var> numere distincte cuprinse intre <var>1</var> si <var>n</var> care reprezinta numerele de ordine ale copiilor in ordinea in care au fost eliminati.</p>
+
+<p>Restrictie</p>
+
+
+<ul><li><var>2 ≤ n ≤ 30.000.</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>order.in</th><th>order.out</th></tr><tr><td>6<br></td><td>2 4 1 3 5 6</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

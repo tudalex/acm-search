@@ -1,0 +1,32 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>nrbanda.in, nrbanda.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>65535 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=nrbanda">Vezi solutiile trimise</a></p>
+
+<h1>Nrbanda<br></h1>
+
+<p>Se da o permutare a numerelor <var>1,...,N</var>. Sa se sorteze crescator aceasta permutare, efectuand numai operatii de tipul celei descrise in continuare: se sectioneaza permutarea intre <var>2</var> pozitii consecutive, <var>i</var> si <var>i+1</var>. Toate numerele de la inceputul permutarii pana la pozitia <var>i</var> (inclusiv) se rotesc o pozitie la stanga, si toate numerele incepand cu pozitia <var>i+1</var> si pana la pozitia <var>N</var>, se rotesc cu o pozitie la dreapta. Permutarea poate fi sectionata si intre pozitia fictiva <var>0</var> si pozitia <var>1</var> (caz in care intreaga permutare este rotita o pozitie la dreapta), precum si intre pozitia <var>N</var> si pozitiva fictiva <var>N+1</var> (caz in care intreaga permutare este rotita la stanga).</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului <var>nrbanda.in</var> contine pe prima linie numarul <var>N</var> de elemente ale permutarii, iar pe a doua linie cele <var>N</var> numere, separate prin spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul <var>nrbanda.out</var> veti afisa mai multe linii (posibil <var>0</var>, una sau mai multe). Pe fiecare linie veti afisa cate un numar <var>p</var>, cu semnificatia ca s-a efectuat o operatie descrisa conform regulii mentionate, cu sectionarea intre pozitiile <var>p</var> si <var>p+1</var>. Operatiile din fisierul de iesire se considera ca se executa in ordinea in care sunt tiparite.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 256</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>nrbanda.in</th><th>nrbanda.out</th></tr><tr><td>5<br>
+2 1 4 5 3<br></td><td>2</td></tr></table><h3>Explicatie</h3>
+
+<p>Permutarea a fost sectionata intre pozitiile <var>2</var> si <var>3</var>. Primele <var>2</var> elemente sunt rotite la stanga (si devin <var>1 2</var>), iar ultimele elemente sunr rotite la dreapta (si devin <var>3 4 5</var>). In felul acesta, permutarea devine <var>1 2 3 4 5</var> si este sortata.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

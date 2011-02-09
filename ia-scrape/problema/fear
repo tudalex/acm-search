@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>fear.in, fear.out</td><td><strong>Sursă</strong></td><td>Winter Challange, Runda 01, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=150">Sorin Stancu-Mara</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/fireatmyself"><img src="/utilizator/fireatmyself?action=download&amp;file=avatar&amp;resize=L16x16" alt="fireatmyself">Bogdan A. Stoica</a> <a title="Rating fireatmyself: 536" class="rating-badge-2" href="http://infoarena.ro/utilizator/fireatmyself?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/fireatmyself">fireatmyself</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=fear">Vezi solutiile trimise</a></p>
+
+<h1>Fear<br></h1>
+
+<table style="margin:0.5em auto;" cellspacing="0"><tr><td align="center" style="background-color:#F8EABA;"><img src="http://infoarena.ro/template/badtests?action=download&amp;file=attention.gif&amp;safe_only=true" alt="" class="left" style="float:left"><em>Testele pentru aceasta problema nu sunt destul de bine construite pentru a departaja corect solutii ineficiente sau gresite.</em><br><a href="http://infoarena.ro/implica-te/imbunatatire-teste"><strong>Intra aici</strong></a> <em>daca vrei sa ne ajuti sa imbunatatim calitatea testelor pentru aceasta problema!</em></td></tr></table><p>Desi Max Damage a plecat de mult din oras, reputatia lui este nestirbita, iar locuitorilor inca le este frica de posibila sa reintoarcere. Bineinteles, nimanui nu ii este mai frica decat sefului politiei. De aceea, Damage s-a gandit sa testeze cat de adanc a ramas in constiinta acestuia. El are harta orasului, care este format din <var>N</var> intersectii si <var>M</var> strazi bidirectionate, putand sa se ajunga dintr-o intersectie in oricare alta. Initial, eroul nostru se afla la poarta orasului (intersectia cu numarul <var>1</var>) si vrea sa trimita zvonul reintoarcerii sale pana la casa sefului politiei (intersectia cu numarul <var>N</var>). Din pacate, pe o strada, frica nu se raspandeste de capul ei, ci nu poate depasi o anumita valoare reala (calculata, pentru strada respectiva, in functie de numarul de locuitor, media de varsta, speranta de viata, etc.). Chiar daca sunt strazi bidirectionate, frica nu se poate raspandi in ambele sensuri, simultan. Mai mult, frica ce "iese" dintr-o intersectie se poate imprastia pe fiecare din strazile incidente, dar produsul valorilor fricii de pe fiecare strada nu depaseste valoarea fricii din intersectie. De asemenea, valoarea fricii dintr-o intersectie este numeric egala cu produsul valorilor fricii care "intra" in aceasta, de pe fiecare strada incidenta in parte.<br>
+Cunoscand acestea, ajutati-l pe Max Damage sa determine valoarea maxima a fricii care poate ajunge in intersectia <var>N</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>fear.in</var> se afla <var>N</var> si <var>M</var>. pe urmatoarele <var>M</var> linii se gasesc cate 3 numare <var>A</var>, <var>B</var> si <var>C</var>, reprezentand ca pe o strada intre orasele <var>A</var> si <var>B</var> frica se poate raspandi cu maxim valoarea <var>C</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Rezultatul se afiseaza in <var>fear.out</var>, pe o singura linie, cu 4 zecimale.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1</var> ≤ <var>N</var> ≤ <var>200</var></li>
+<li><var>1</var> ≤ <var>M</var> ≤ <var>19.900</var></li>
+<li><var>1</var> ≤ <var>C</var> ≤ <var>200.256</var></li>
+<li><var>1</var> ≤ factorul de frica maxim dintr-o intersectie ≤ <var>2.147.483.647</var></li>
+<li>Frica nu se mai poate raspandi din intersectia <var>N</var> (ca sa nu complicam lucrurile)</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>fear.in</th><th>fear.out</th></tr><tr><td>3 3<br>
+1 2 5.3<br>
+1 3 7<br>
+2 3 4.5<br></td><td>31.5</td></tr><tr><td>4 4<br>
+1 4 10<br>
+2 4 5<br>
+2 3 5<br>
+3 4 5<br></td><td>10</td></tr></table><h3>Explicatie</h3>
+
+<p>Pentru primul exemplu, de la 1 la 3 frica se transimte cu valoarea 7, de la 1 la 2 cu valoarea 5.3 iar de la 2 la 3 cu valoarea 4.5, 7*4.5 = 31.5.<br>
+Pentru al doilea exemplu, desi daca Damage trimite frica si prin ciclul 4 3 2 4 am obtine un factor de frica mai mare de 10, dar trebuie sa ne oprim in 4.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

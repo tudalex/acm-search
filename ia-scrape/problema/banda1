@@ -1,0 +1,64 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>banda1.in, banda1.out</td><td><strong>Sursă</strong></td><td>ONI 2009, Baraj Gimnaziu</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=236">Florentina Ungureanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrici_cezar"><img src="/utilizator/andrici_cezar?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrici_cezar">Andrici Cezar</a> <a title="Rating andrici_cezar: 458" class="rating-badge-3" href="http://infoarena.ro/utilizator/andrici_cezar?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrici_cezar">andrici_cezar</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=banda1">Vezi solutiile trimise</a></p>
+
+<h1>Banda 1<br></h1>
+
+<p>Într-o matrice pătratică având toate elementele egale cu <var>0</var> sau <var>1</var>, definim segmentul complet ca fiind un segment de dreaptă cu extremităţile pe conturul matricei. </p>
+
+
+<ul><li>Segmentul complet de rang <var>1</var> este format dintr-o linie a matricei având toate elementele egale cu <var>1</var>.</li>
+<li>Segmentul complet de rang <var>2</var> este format dintr-o coloană a matricei având toate elementele egale cu <var>1</var>;</li>
+<li>Segmentul complet de rang <var>3</var> este format dintr-o semidiagonală a matricei, paralelă cu diagonala principală (inclusiv aceasta) şi având toate elementele egale cu <var>1</var>;</li>
+<li>Segmentul complet de rang <var>4</var> este format dintr-o semidiagonală a matricei, paralelă cu diagonala secundară (inclusiv aceasta) şi având toate elementele egale cu <var>1</var>;</li>
+</ul><p>Două sau mai multe segmente alăturate de acelaşi tip formează o bandă de acelaşi rang cu acestea. </p>
+
+<h2>Cerinţă</h2>
+
+<p>Fiind dată o matrice binară <var>n</var>, să se determine banda maximă a matricei. Dacă există mai multe astfel de benzi, se va afişa cea de rang maxim (<var>4 &gt; 3 &gt; 2 &gt; 1</var>), iar dintre acestea, cea cu suma indicilor elementelor maximă.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>banda1.in</var> conţine pe prima linie valoarea <var>n</var> reprezentând numărul de linii; pe fiecare din următoarele <var>n</var> linii se vor memora elementele unei linii, separate prin spaţii. </p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>banda1.out</var> va conţine pe primul rând rangul benzii, pe al doilea rând numărul de segmente complete ce formează banda, pe a treia linie numărul de elemente din bandă. </p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>0 &lt; n ≤ 1000</var></li>
+<li>Se garantează existenţa unei benzi în fiecare test.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>banda1.in</th><th>banda1.out</th></tr><tr><td>10<br>
+1 1 1 1 1 1 1 1 1 1<br>
+1 1 1 1 1 1 1 1 1 1<br>
+0 0 1 1 1 1 1 1 1 0<br>
+0 0 0 0 1 1 1 1 1 0<br>
+0 0 0 1 1 1 1 1 0 0<br>
+0 0 1 1 1 1 1 1 1 0<br>
+1 1 1 1 1 1 1 1 1 1<br>
+1 1 1 1 1 1 1 1 1 1<br>
+0 1 1 0 1 1 1 1 1 1<br>
+1 1 1 0 1 0 1 0 0 1<br></td><td>3<br>
+3<br>
+24<br></td></tr></table><h3>Explicaţie</h3>
+
+<p><img src="http://infoarena.ro/problema/banda1?action=download&amp;file=poz.bmp&amp;safe_only=true" alt=""></p>
+
+<p>Matricea conţine:</p>
+
+
+<ul><li>rang <var>1</var> : <var>2</var> benzi cu câte <var>2</var> drepte şi <var>20</var> valori <var>1</var>;</li>
+<li>rang <var>3</var> : <var>2</var> benzi cu <var>3</var> drepte şi <var>24</var> valori <var>1</var> , respectiv <var>2</var> drepte şi <var>3</var> valori <var>1</var>;</li>
+<li>rang <var>4</var> : o bandă cu <var>2</var> drepte şi <var>19</var> de <var>1</var> , respectiv una cu <var>2</var> drepte şi <var>3</var> de <var>1</var>.</li>
+</ul><p>Banda maximă are rangul <var>3</var>, conţine <var>3</var> drepte şi are <var>24</var> valori <var>1</var>. </p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

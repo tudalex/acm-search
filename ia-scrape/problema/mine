@@ -1,0 +1,48 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>mine.in, mine.out</td><td><strong>Sursă</strong></td><td>PACO 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=150">Sorin Stancu-Mara</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=mine">Vezi solutiile trimise</a></p>
+
+<h1>Mine<br></h1>
+
+<p>Dupa ce si-a recuperat harta, Max Damage se gaseste din nou in masina urmarit de politisti. Pentru a scapa se hotaraste sa se ascunda intr-o mina parasita. Problema e ca inauntru este intuneric, iar de la atatea "acrosari" farurile nu mai lumineaza. El pune in functiune un vechi generator de electricitate pentru a lumina galeriile minei, insa acesta functioneaza ciudat si uneori ofera mai multa electricitate, alteori mai putina. Din fericire, Damage stie cum variaza cantitatea de energie electrica. El are de asemenea o harta a minei. Aceasta este formata din galerii care se unesc in intersectii. Intre doua intersectii pot exista oricate galerii, doua galerii nu se intalnesc decat in intersectii, iar o galerie poate fi parcursa in ambele directii. De asemenea Max stie pentru fiecare galerie care trebuie sa fie cantitatea minima de elecricitate produsa de generator pentru a fi parcursa in siguranta. Toate galeriile au aceeasi lungime si pot fi parcurse intr-un singur interval de timp (evident, daca este destula lumina). Deci tot ce-i trebuie acum este un plan.</p>
+
+<h2>Cerinta</h2>
+
+<p>Max vrea sa ajunga de la intrarea principala (intersectia numarul <var>1</var>) la iesirea de urgenta (intersectia numarul <var>N</var>), iar voi va trebui sa ii spuneti cat de repede poate face asta.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Din fisierul <var>mine.in</var> se citesc pe prima linie <var>N</var>(numarul de intersectii) si <var>M</var>( numarul de galerii).<br>
+Pe urmatoarele <var>M</var> linii se citesc cate <var>3</var> numere <var>i j k</var> cu semnificatia ca exista o galerie de la intersectia <var>i</var> la intersectia <var>j</var> iar cantitatea minima de electricitate necesara este <var>k</var>.<br>
+Pe linia urmatoare se gaseste <var>W</var>, urmata de <var>W</var> valori. A <var>q-a</var> valoare reprezinta cantitatea de energie electrica generata la momentul <var>q</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>In fisierul <var>mine.out</var> se va scrie un singur numar <var>t</var>, timpul minim in care Max poate iesi din mina, sau <var>-1</var> daca nu are nici o sansa.</p>
+
+<h2>Restrictii si observatii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 10<sup>4</sup></var></li>
+<li><var>1 ≤ M ≤ 10<sup>5</sup></var></li>
+<li><var>1 ≤ W ≤ 10<sup>6</sup></var></li>
+<li>Capacitatea minima de electricitate pentru o muchie este cuprinsa intre <var>0</var> si <var>10<sup>9</sup></var></li>
+<li>Max Damage poate astepta oricat timp intr-o intersectie</li>
+<li>Daca sirul de <var>W</var> valori se termina, generatorul se opreste si nimeni nu vrea sa ramana intr-o mina parasita pe intuneric (chiar daca ultimele galerii pana la iesire au valoarea <var>k</var> egala cu <var>0</var>)</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>mine.in</th><th>mine.out</th></tr><tr><td>3 2<br>
+  1 2 5<br>
+  2 3 10<br>
+  5<br>
+  2 6 9 10 0<br></td><td>4</td></tr></table><h3>Explicatie</h3>
+
+<p>Max ramane la timpul 1 in intersectia 1, la timpul 2 se deplaseaza in intersectia 2, la timpul 3 sta pe loc, iar la timpul 4 se deplaseaza in intersectia 3. </p>
+
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>subsir.in, subsir.out</td><td><strong>Sursă</strong></td><td>preONI 2005 Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=subsir">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=subsir">Vezi solutiile trimise</a></p>
+
+<h1>Subsir<br></h1>
+
+<p>Zaharel incearca s-o invete pe prietena lui Eugenia informatica. Astazi a invat-o programare dinamica si anume a inceput cu problema celui mai lung subsir comun: dandu-se doua siruri, sa se determine cel mai lung subsir comun al celor doua siruri. Un subsir al unui sir este format din caractere (nu neaparat consecutive) ale sirului respectiv, in ordinea in care acestea apar in sir.</p>
+
+<p>Eugenia a inteles rezolvarea problemei dar i-a pus urmatoarea intrebare lui Zaharel: cate subsiruri comune de lungime maxima distincte exista pentru cele doua siruri? Doua subsiruri sunt distincte daca exista cel putin un caracter in unul din ele care difera de caracterul din celalat subsir de pe aceeasi pozitie.</p>
+
+<h2>Cerinta</h2>
+
+<p>Ajutati-l pe Zaharel si determinati restul impartirii numarului de subsiruri comune de lungime maxima distincte pentru doua siruri date, la numarul <var>666013</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare se gaseste primul sir, iar pe a doua linie cel de-al doilea sir.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire se va gasi numarul cerut.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>fiecare sir are lungime mai mica sau egala cu <var>500</var></li>
+<li>sirurile contin doar litere mici ale alfabetului englez</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>subsir.in</th><th>subsir.out</th></tr><tr><td>banana<br>
+oana<br></td><td>1</td></tr></table><h3>Explicatii</h3>
+
+<p>Sigurul subsir comun de lungime maxima care se poate forma este <code>ana</code>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

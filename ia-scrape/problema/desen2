@@ -1,0 +1,54 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>desen2.in, desen2.out</td><td><strong>Sursă</strong></td><td>Lot Juniori 2008 - Baraj 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=186">Marinel Serban</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.6 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=desen2">Vezi solutiile trimise</a></p>
+
+<h1>Desen2<br></h1>
+
+<p>Gigel a desenat pe o foaie de matematica un poligon ale carui laturi sunt asezate de-a lungul liniilor caroiajului foii. Niciuna dintre laturile poligonului nu se afla pe marginea foii de hartie.<br>
+Gigel a notat in fiecare patratel al foii de hartie cate dintre cele <var>4</var> laturi ale sale se afla pe conturul poligonului.</p>
+
+<h2>Cerinta</h2>
+
+<p>Cunoscand valorile scrise in patratelele foii de hartie, sa se reconstituie poligonul.</p>
+
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>desen2.in</var> contine pe prima linie doua numere naturale <var>N</var> <var>M</var>, separate prin spatiu, reprezentand numarul de linii si respectiv numarul de coloane ale caroiajului de pe foaia de matematica. Pe fiecare dintre urmatoarele <var>N</var> linii se afla cate <var>M</var> numere din multimea { <var>0</var>, <var>1</var>, <var>2</var>, <var>3</var>, <var>4</var> }, separate prin cate un spatiu, reprezentand valorile scrise in patratelele foii de matematica.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>desen2.out</var> va contine desenul reconstituit. In fisier se vor afla <var>N</var> linii, fiecare linie continand exact <var>2M-1</var> caractere care pot fi:</p>
+
+
+<ul><li><var>.</var> (punct, caracterul cu codul <span class="caps">ASCII</span> 46)</li>
+<li><var>|</var> (bara verticala, caracterul cu codul <span class="caps">ASCII</span> 124)</li>
+<li><var>_</var> (liniuta de subliniere, caracterul cu codul <span class="caps">ASCII</span> 95). </li>
+</ul><p>Prima linie a fisierului de iesire ilustreaza aspectul primei linii de pe foaia de matematica (mai exact, laturile de jos ale patratelelor de pe prima linie), a doua linie din fisier aspectul celei de a doua linii de pe foaie (laturile de jos, precum si eventualele laturi verticale), etc. Fie <var>c<sub>1</sub>c<sub>2</sub>...c<sub>2M-1</sub></var> caracterele de pe o linie a fisierului de iesire. Intotdeauna <var>c<sub>1</sub>='.'</var>. Caracterul <var>c<sub>i</sub></var> ( <var>i</var> impar, <var>i&gt;2</var> ) este liniuta de subliniere daca latura de jos a patratelului <var>(i+1)/2</var> de pe foaie apartine poligonului si <var>'.'</var> in caz contrar. Caracterul <var>c<sub>i</sub></var> ( <var>i</var> par) este bara verticala daca latura din dreapta a patratelului <var>i/2</var> a patratelului de pe foaie apartine poligonului, respectiv <var>'.'</var> in caz contrar. </p>
+
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>3 ≤ N, M ≤ 1000</var></li>
+<li>Se garanteaza ca exista solutie pentru datele de test.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>desen2.in</th><th>desen2.out</th></tr><tr><td>4 4<br>
+  0 0 1 0<br>
+  0 2 3 1<br>
+  1 3 2 1<br>
+  0 1 1 0<br></td><td>...._..<br>
+  .._|.|.<br>
+  .|_._|.<br>
+  .......<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Desenul corespunzator</p>
+
+<p><img src="http://infoarena.ro/problema/desen2?action=download&amp;file=desen.jpg&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

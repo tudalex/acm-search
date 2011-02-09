@@ -1,0 +1,31 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>sosete.in, sosete.out</td><td><strong>Sursă</strong></td><td>ad-hoc</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=180">Marcel Codrea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/marcelcodrea"><img src="/utilizator/marcelcodrea?action=download&amp;file=avatar&amp;resize=L16x16" alt="marcelcodrea">Codrea Marcel</a> <a title="Rating marcelcodrea: 492" class="rating-badge-3" href="http://infoarena.ro/utilizator/marcelcodrea?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/marcelcodrea">marcelcodrea</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>1024 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=sosete">Vezi solutiile trimise</a></p>
+
+<h1>Sosete<br></h1>
+
+<p>Familia Ionescu se pregateste sa plece la teatru. Mama, cauta grabita hainele pentru copii. Intre timp tatal, nemultumit de rezultatul meciului pe care-l viziona, arunca televizorul pe geam, intrerupand astfel electricitatea in locuinta (pe planeta Tarra sistemele electrice functioneaza diferit fata de cele de aici).<br>
+Mama, aflata in fata sertarului cu sosete, fara nicio sursa de iluminat, nu isi permite din cauza lipsei de timp sa caute o lanterna. Se hotaraste sa aleaga un numar minim de sosete astfel incat sa fie sigura ca-i multumeste pe toti copiii familiei (fiecare doreste o pereche de sosete de aceeasi culoare cu perechile fratilor sai).   </p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>sosete.in</var> se afla doua numere naturale separate prin spatiu: <var>N</var> - numarul de membri ai familiei Ionescu si <var>C</var> - numarul de culori distincte ale sosetelor din sertar.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul <var>sosete.out</var> se va afla un singur numar natural reprezentand numarul minim de sosete pe care doamna Ionescu trebuie sa le aleaga.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ C ≤ 10<sup>1000</sup></var></li>
+<li><var>3 ≤ N ≤ 10<sup>1000</sup></var></li>
+<li>Pentru <var>50%</var> din datele de test numarul care trebuie afisat in fisierul de iesire nu va depasi <var>2</var><sup>63</sup>-<var>1</var></li>
+<li>Se considera ca doamna Ionescu are un numar nelimitat de sosete de orice culoare</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>sosete.in</th><th>sosete.out</th></tr><tr><td><var>27 1</var></td><td><var>50</var></td></tr><tr><td><var>19 3</var></td><td><var>100</var></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

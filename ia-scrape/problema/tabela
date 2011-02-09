@@ -1,0 +1,57 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>tabela.in, tabela.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=118">Stefan Gheorghe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">2/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=tabela">Vezi solutiile trimise</a></p>
+
+<h1>Tabela<br></h1>
+
+<p>Macarie, pasionat de numere, si mai ales de matrici, incepe intr-o zi sa umple o foaie infinita de matematica cu numere astfel: in coltul cel mai de sus stanga (1, 1) pune 0, apoi scrie de la stanga la dreapta si de sus in jos cel mai mic numar care nu apare pe linia si coloana respectiva. Dandu-se linia si coloana unei casute din tabela aflati numarul de la acea pozitie.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>tabela.in</var> contine pe prima si singura linie numerele <var>L</var> si <var>C</var>, linia si coloana patratelului a carui valoare dorim sa o determinam.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>tabela.out</var> contine pe prima linie numarul scris pe foaie la linia <var>L</var> si coloana <var>C</var>.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li>L si C sunt numere naturale din intervalul <var>[1, 2 000 000 000]</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>tabela.in</th><th>tabela.out</th><th>tabela.in</th><th>tabela.out</th></tr><tr><td>2 3</td><td>3</td><td>4 5</td><td>7</td></tr></table><p><em>Explicatie</em>: Prima parte a tabelei va arata in felul urmator:<br><img src="http://infoarena.ro/problema/tabela?action=download&amp;file=tabela.jpg&amp;safe_only=true" alt=""></p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 3 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=45">Diverse</a></span>
+            <a href="javascript:show_tag_list(45)" id="tag_anchor_45" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_45"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=73">Operatii pe biti</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=89">Divide et Impera</a></span>
+            <a href="javascript:show_tag_list(89)" id="tag_anchor_89" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_89"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=90">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=105">Formula</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

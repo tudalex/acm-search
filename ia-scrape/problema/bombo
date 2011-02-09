@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>bombo.in, bombo.out</td><td><strong>Sursă</strong></td><td>ONI 2006, clasa 10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/marcelcodrea"><img src="/utilizator/marcelcodrea?action=download&amp;file=avatar&amp;resize=L16x16" alt="marcelcodrea">Codrea Marcel</a> <a title="Rating marcelcodrea: 492" class="rating-badge-3" href="http://infoarena.ro/utilizator/marcelcodrea?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/marcelcodrea">marcelcodrea</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>5120 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=bombo">Vezi solutiile trimise</a></p>
+
+<h1>Bombo<br></h1>
+
+<p>Gigel este un baiat foarte pofticios. El are acasa <var>N</var> stive, fiecare continand cate <var>M</var> cutii cu bomboane. La inceputul fiecarei zile, Gigel ia o singura cutie din varful uneia dintre stive si mananca instantaneu toate bomboanele din ea, dupa care o arunca la gunoi (deoarece o cutie cu bomboane fara bomboane in ea il deprima). El executa aceasta activitate (de a manca toate bomboanele din cutia din varful unei stive) in fiecare zi, pana cand se golesc toate stivele. Gigel ar fi foarte multumit daca numarul de bomboane din fiecare cutie ar ramane constant, pana cand ar ajunge el la cutia respectiva pentru a manca bomboanele. Realitatea, insa, nu corespunde dorintelor lui Gigel. Fiecare cutie cu bomboane este caracterizata de doi parametri: <var>Z</var> si <var>B</var>. Initial (la inceputul primei zile), cutia contine <var>Z*B</var> bomboane. La sfarsitul fiecarei zile, numarul de bomboane din cutie scade cu <var>B</var>. Dupa <var>Z</var> zile, numarul de bomboane din cutie devine <var>0</var>. Cand numarul de bomboane dintr-o cutie devine <var>0</var>, se intampla ceva spectaculos: cutia dispare, iar toate cutiile cu bomboabe de deasupra ei, daca ea nu este, in acel moment, cutia din varful stivei in care se afla, coboara cu o pozitie mai jos in stiva; daca ea se afla in varful stivei, dar este si ultima cutie din stiva, atunci stiva se goleste; daca ea se afla in varful stivei si stiva contine si alte cutii cu bomboane, atunci cutia de sub ea devine noua cutie din varful stivei (in cazul in care aceasta cutie dispare si ea in aceeasi zi, se considera cutia de dedesubtul acesteia s.a.m.d.).<br>
+Cunoscand numarul de stive, numarul de cutii de bomboane din fiecare stiva si parametrii <var>Z</var> si <var>B</var> pentru fiecare cutie de bomboane, determinati care este numarul maxim total de bomboane pe care le poate manca Gigel.</p>
+
+
+
+<h2>Date de intrare</h2>
+
+
+<p>Prima linie a fisierului de intrare <var>bombo.in</var> contine numerele intregi <var>N</var> si <var>M</var>. Urmatoarele <var>N</var> linii contin cate <var>M</var> perechi de numere, descriind cutiile de bomboane din fiecare stiva, de la baza catre varful stivei. O astfel de pereche contine numerele <var>Z</var> si <var>B</var>, avand semnificatia precizata mai sus. Oricare doua numere de pe aceeasi linie din fisierul de intrare sunt separate printr-un singur spatiu.</p>
+
+
+<h2>Date de iesire</h2>
+
+
+<p>In fisierul <var>bombo.out</var> veti afisa un singur numar, reprezentand numarul maxim de bomboane pe care le poate manca Gigel.</p>
+
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 4</var></li>
+<li><var>1 ≤ M ≤ 10</var></li>
+<li>Pentru fiecare cutie de bomboane: <var>1 ≤ Z ≤ 50</var> si <var>1 ≤ B ≤ 1 000 000</var>.</li>
+<li>Cel putin <var>30%</var> din fisierele de test vor avea <var>N ≤ 2</var>.</li>
+<li>Cel putin <var>65%</var> din fisierele de test vor avea <var>M ≤ 6</var>.</li>
+<li>Cel putin <var>55%</var> din fisierele de test vor avea pentru fiecare cutie cu bomboane <var>Z &gt; N*M</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>bombo.in</th><th>bombo.out</th></tr><tr><td><var>2</var> <var>3</var><br><var>50</var> <var>1000</var> <var>1</var> <var>3</var> <var>1</var> <var>100</var><br><var>2</var> <var>3000</var> <var>1</var> <var>10</var> <var>1</var> <var>20</var><br></td><td><var>51100</var><br></td></tr><tr><td><var>4</var> <var>6</var><br><var>3</var> <var>1</var> <var>2</var> <var>2</var> <var>3</var> <var>3</var> <var>2</var> <var>4</var> <var>2</var> <var>5</var> <var>2</var> <var>6</var><br><var>2</var> <var>1</var> <var>3</var> <var>2</var> <var>2</var> <var>3</var> <var>3</var> <var>4</var> <var>1</var> <var>5</var> <var>3</var> <var>6</var><br><var>1</var> <var>1</var> <var>2</var> <var>2</var> <var>2</var> <var>3</var> <var>2</var> <var>4</var> <var>3</var> <var>5</var> <var>1</var> <var>6</var><br><var>2</var> <var>1</var> <var>2</var> <var>2</var> <var>3</var> <var>3</var> <var>2</var> <var>4</var> <var>2</var> <var>5</var> <var>2</var> <var>6</var><br></td><td><var>32</var><br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

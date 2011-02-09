@@ -1,0 +1,61 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>arbore.in, arbore.out</td><td><strong>Sursă</strong></td><td>preONI 2006 Runda Finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=143">Daniel Pasaila</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><div class="hidden">5/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=arbore">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=arbore">Vezi solutiile trimise</a></p>
+
+<h1>Arbore<br></h1>
+
+<p>O firma are <var>N</var> angajati numerotati de la <var>1</var> la <var>N</var>. Angajatii sunt ierarhizati sub forma de arbore (graf conex fara cicluri). Astfel, fiecare angajat are exact un sef direct (cu exceptia patronului firmei), iar un anumit angajat poate avea mai multi subordonati directi. Patronul firmei este numerotat cu <var>1</var>. Un angajat <var>A</var> este subordonatul unui alt angajat <var>B</var> daca una din urmatoarele conditii este indeplinita:</p>
+
+
+<ul><li><var>A</var> este subordonat direct al lui <var>B</var></li>
+<li><var>A</var> este unul dintre subordonatii unui alt subordonat de-al lui <var>B</var></li>
+</ul><p>Datorita profiturilor foarte mari obtinute de firma, angajatii vor primi anumite sume de bani drept bonus. Pentru a avea o evidenta stricta, contabilul firmei trebuie sa efectueze M operatii de doua tipuri:</p>
+
+
+<ol><li>dandu-se <var>p</var> si <var>s</var>, toti subordonatii nodului <var>p</var> (inclusiv nodul <var>p</var>) vor primi suma de bani <var>s</var></li>
+<li>dandu-se un numar <var>s</var>, el trebuie sa afle un angajat care a primit pana la momentul respectiv suma <var>s</var></li>
+</ol><p>Mentionam ca unii angajati pot fi recompensati de mai multe ori, iar altii pot sa nu primeasca nimic.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care primeste <var>N</var>, <var>M</var>, structura angajatilor si cele <var>M</var> operatii iar pentru fiecare operatie de tipul <var>2</var> afiseaza valoarea ceruta.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Fisierul <var>arbore.in</var> contine pe prima linie numerele <var>N</var> si <var>M</var> separate printr-un spatiu.<br>
+Urmatoarele <var>N-1</var> linii contin cate doua numere intregi <var>p</var> si <var>q</var> cu semnificatia ca "exista relatie directa intre angajatul <var>p</var> si angajatul <var>q</var>". <br>
+Urmatoarele <var>M</var> linii cotin cate o operatie pe linie. Primul numar de pe linie este <var>1</var> sau <var>2</var>, si semnifica tipul operatiei ce va fi descrisa. In cazul unei operatii de tip <var>1</var> vor urma numerele <var>p</var> si <var>s</var>, iar in cazul unei operatii de tip <var>2</var> va urma un singur numar <var>s</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul <var>arbore.out</var> contine pentru fiecare operatie de tip <var>2</var> indicele unui angajat care a primit suma respectiva de bani pana la momentul respectiv. In cazul in care nu exista un asemenea angajat, se cere sa se afiseze <var>-1</var>. Nu are importanta indicele carui angajat il veti afisa, atata timp cat acesta a primit suma <var>s</var>.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N, M ≤ 100 000</var></li>
+<li>pentru o operatie de tipul <var>1</var> avem <var>1 ≤ s ≤ 10</var></li>
+<li>pentru o operatie de tipul <var>2</var> avem <var>0 ≤ s ≤ 1 000 000</var></li>
+<li><var>50%</var> dintre testele folosite la evaluare nu vor contine mai mult de <var>100</var> de operatii de tip <var>2</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>arbore.in</th><th>arbore.out</th></tr><tr><td>6 6<br>
+1 2<br>
+1 3<br>
+3 4<br>
+3 5<br>
+4 6<br>
+1 1 1<br>
+1 2 4<br>
+2 5<br>
+2 1<br>
+1 3 3<br>
+2 4<br></td><td>2<br>
+1<br>
+3</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

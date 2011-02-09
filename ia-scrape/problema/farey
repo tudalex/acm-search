@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>farey.in, farey.out</td><td><strong>Sursă</strong></td><td>BOI 2003</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=155">Mihai Patrascu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><div class="hidden">5/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=farey">Vezi solutiile trimise</a></p>
+
+<h1>Secventa Farey<br></h1>
+
+<p>O secventa farey de ordinul <var>N</var> este secventa tuturor fractiilor ireductibile <var><sup>P</sup>/<sub>Q</sub></var> cu <var>0 &lt; P &lt; Q ≤ N</var>, aranjate in ordine crescatoare. De exemplu, secventa Farey de ordinul 5 este:</p>
+
+<p class="center" style="text-align:center"><var><sup>1</sup>/<sub>5</sub><sup>1</sup>/<sub>4</sub><sup>1</sup>/<sub>3</sub><sup>2</sup>/<sub>5</sub><sup>1</sup>/<sub>2</sub><sup>3</sup>/<sub>5</sub><sup>2</sup>/<sub>3</sub><sup>3</sup>/<sub>4</sub><sup>4</sup>/<sub>5</sub></var></p>
+
+<p>Vom numerota fractiile din secventa incepand cu <var>1</var>. De exemplu, a <var>6</var>-a fractie din secventa Farey de ordin <var>5</var> este <var><sup>3</sup>/<sub>5</sub></var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Dandu-se <var>N</var> si un numar <var>K</var>, aflati a <var>K</var>-ua fractie dintr-o secventa Farey de ordin <var>N</var>.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Fisierul de intrare <var>farey.in</var> contine o singura linie cu numerele <var>N</var> si <var>K</var> separate prin spatiu. <var>K</var> va fi mereu un index valid, adica va fi cel putin <var>1</var> si nu va fi mai mare decat numarul de fractii din secventa Farey de ordin <var>N</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>farey.out</var> va contine o singura linie cu doua numere intregi <var>P</var> si <var>Q</var> separate prin spatiu. Fractia <var><sup>P</sup>/<sub>Q</sub></var> trebuie sa fie a <var>K</var>-ua fractie din secventa Farey de ordin <var>N</var>. Fractia trebuie sa fie ireductibila, adica cel mai mare divizor comun dintre <var>P</var> si <var>Q</var> trebuie sa fie <var>1</var>.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 &lt; N ≤ 40 000</var></li>
+<li><var>40%</var> din teste vor avea <var>K ≤ 50 000</var></li>
+<li>toate datele de test folosite pentru evaluare vor avea <var>N ≥ 10 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>farey.in</th><th>farey.out</th></tr><tr><td>5 6</td><td>3 5</td></tr></table><h3>Sfat prietenesc </h3>
+
+<p>Aceasta nu este o problema de matematica; pentru a o rezolva sunt necesare doar cunostiinte matematice elementare. Trebuie in schimb sa gasiti un algoritm performant pentru a o rezolva.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

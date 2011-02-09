@@ -1,0 +1,73 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>dmin.in, dmin.out</td><td><strong>Sursă</strong></td><td>preONI 2006 Runda 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=143">Daniel Pasaila</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=dmin">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=dmin">Vezi solutiile trimise</a></p>
+
+<h1>Drumuri minime<br></h1>
+
+<p>In anul 3000 oamenii locuiesc pe <var>N</var> planete. Pentru a putea calatori mai usor, oamenii au construit legaturi galactice bidirectionale intre anumite perechi de planete. Aceste legaturi sunt alimentate de un generator spatial, si se stie cate unitati energetice consuma transportul prin fiecare legatura. Se poate calatori intre oricare doua planete fie prin legaturi directe, fie trecand prin planete intermediare. Totusi, din motive inca necunoscute, se intampla ca atunci cand se circula consecutiv prin mai multe legaturi se consuma o cantitate de energie egala cu produsul costului energetic al fiecarei legaturi in parte. Pentru a face o statistica, conducatorul fortelor armate doreste sa stie cate drumuri distincte cu consum minim de energie exista intre planeta <var>1</var> si celelalte planete. Doua drumuri sunt distincte daca difera prin cel putin o legatura.</p>
+
+<h2>Cerinta</h2>
+
+<p>Cunoscand numarul de planete, precum si legaturile dintre acestea impreuna cu costurile lor energetice, se cere sa afisati numarul de drumuri minime intre planeta <var>1</var> si celelalte planete. Fiecare numar va fi afisat modulo <var>104659</var>.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie a fisierului dmin.in se afla numerele <var>N</var> si <var>M</var> reprezentand numarul de planete, respectiv numarul de legaturi. Urmeaza <var>M</var> linii ce descriu legaturile dintre planete. Pe fiecare linie <var>i</var> sunt afisate cate trei numere <var>x<sub>i</sub>, y<sub>i</sub>, c<sub>i</sub></var> cu semnificatia "exista o legatura intre planetele <var>x<sub>i</sub></var> si <var>y<sub>i</sub></var> ce are costul energetic <var>c<sub>i</sub></var>".</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Pe prima linie a fisierului dmin.out sunt afisate <var>N-1</var> numere ce reprezinta numarul de drumuri minime intre planeta <var>1</var> si celelalte planete, numarul <var>i</var> reprezentand restul impartirii numarului de drumuri minime dintre planeta <var>1</var> si planeta <var>i+1</var> la <var>104659</var>.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1500</var></li>
+<li><var>1 ≤ M ≤ 2500</var></li>
+<li>costul energetic al unei legaturi este un numar intreg din intervalul [<var>2, 10<sup>9</sup></var>]</li>
+<li>intre oricare doua planete poate exista cel mult o legatura</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>dmin.in</th><th>dmin.out</th></tr><tr><td>8 9<br>
+1 2 2<br>
+1 3 3<br>
+2 4 3<br>
+3 4 2<br>
+4 5 4<br>
+5 6 2<br>
+5 7 3<br>
+6 8 3<br>
+7 8 2<br></td><td>1 1 2 2 2 2 4</td></tr></table><h3>Explicatie</h3>
+
+
+<ul><li>Intre planetele <var>1</var> si <var>2</var> exista un singur drum minim de cost <var>2</var>.</li>
+<li>Intre planetele <var>1</var> si <var>3</var> exista un singur drum minim de cost <var>3</var>.</li>
+<li>Intre planetele <var>1</var> si <var>4</var> exista <var>2</var> drumuri minime de cost <var>6</var>.</li>
+<li>Intre planetele <var>1</var> si <var>5</var> exista <var>2</var> drumuri minime de cost <var>24</var>.</li>
+<li>Intre planetele <var>1</var> si <var>6</var> exista <var>2</var> drumuri minime de cost <var>48</var>.</li>
+<li>Intre planetele <var>1</var> si <var>7</var> exista <var>2</var> drumuri minime de cost <var>72</var>.</li>
+<li>Intre planetele <var>1</var> si <var>8</var> exista <var>4</var> drumuri minme de cost <var>144</var>.</li>
+</ul><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=72">Algoritmul lui Dijkstra</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=437">Logaritmare</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

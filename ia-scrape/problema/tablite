@@ -1,0 +1,33 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>tablite.in, tablite.out</td><td><strong>Sursă</strong></td><td>Lista lui Francu</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=206">Bogdan Dumitru</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/cos_min"><img src="/utilizator/cos_min?action=download&amp;file=avatar&amp;resize=L16x16" alt="cos_min">Bondane Cosmin</a> <a title="Rating cos_min: 528" class="rating-badge-2" href="http://infoarena.ro/utilizator/cos_min?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/cos_min">cos_min</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=tablite">Vezi solutiile trimise</a></p>
+
+<h1>Tablite<br></h1>
+
+<p>Seful penitenciarului a hotarat sa schimbe toate tablitele de identificare a puscariasilor. Aceasta operatie presupune scrierea unui numar natural pe fiecare tablita, care se respecte anumite reguli. Se doreste ca numarul de pe fiecare tablita sa aiba exact <var>N</var> cifre a caror suma sa fie exact <var>S</var>. Totodata seful impune ca doua cifre vecine <var>a</var> si <var>b</var> sa nu fie divizibile, Maxim(a,b) modulo Minim(a,b) diferit de 0, cu exceptia cifrelor 0 si 1 care pot aparea in vecinatatea oricarei cifre.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe singura linie a fisierului de intrare se va afla <var>N</var> si <var>S</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe singura linie a fisierului de iesire se va afla restul numarului de tablite care respecta cerintele impuse de sef la 60106.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1</var> ≤ <var>N</var> ≤ <var>1.000</var></li>
+<li><var>1</var> ≤ <var>S</var> ≤ <var>1.000</var></li>
+<li>Atentie, numerele nu pot incepe cu cifra 0!</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>tablite.in</th><th>tablite.out</th></tr><tr><td>3 5<br></td><td>13<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Tablitele pot avea unul din numerele urmatoare : 104, 113, 131, 140, 203, 212, 230, 302, 311, 320, 401, 410 si 500.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

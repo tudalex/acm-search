@@ -1,0 +1,73 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>superp.in, superp.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2005, clasele 9-10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=149">Marius Dumitran</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">2/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=superp">Vezi solutiile trimise</a></p>
+
+<h1>SuperP<br></h1>
+
+<p>Dupa cum bine stiti Ileana Cosanzeana a fost pasionata inca de mica de numerele prime. De cand a aflat ce este un numar prim ea s-a tot jucat cu ele si mai ales i-a placut sa faca probleme cu numere prime pe care le-a dat tuturor din marele ei regat. Ileana a inventat si numerele <var><span class="caps">SUPERPRIME</span></var>. Ea considera ca un numar este <var><span class="caps">SUPERPRIM</span></var> daca el si orice prefix a lui sunt numere prime (<var>373</var> e superprim pentru ca <var>3</var> e prim, <var>37</var> e prim si <var>373</var> e prim, iar <var>43</var> nu e superprim pentru ca <var>4</var> nu e prim). Ileana a crescut mare si a venit momentul in care trebuia sa-si gaseasca alesul. Multi printi din toate colturile lumii au venit s-o peteasca pe frumoasa Ileana dar n-au reusit sa-i descifreze codurile. In ziua de <var>29-7-2333</var> a venit si Fat Frumos la poarta regatului. Pe usa se aflau <var>N ≤ 100</var> numere, fiecare mai mic decat <var>10<sup>12</sup></var> acestea reprezentand renumitele coduri ale Ilenei. Ca sa intre in regat Fat Frumos trebuie, pentru fiecare cod, sa gaseasca cel mai mare <span class="caps">SUPERPRIM </span>ce poate fi format cu cifrele lui. Ajutati-l pe Fat Frumos sa intre in regat.</p>
+
+<h2>Cerinta</h2>
+
+<p>Pentru fiecare din cele <var>N</var> coduri gasiti cel mai mare numar <var><span class="caps">SUPERPRIM</span></var> ce poate fi format cu cifrele lui.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>In fisierul superp.in se afla pe prima linie un numar intreg pozitiv <var>N</var>, reprezentand numarul de coduri de pe usa Ileanei, iar fiecare din urmatoarele <var>N</var> linii contine cate un cod.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>superp.out</var> contine <var>N</var> linii, linia <var>i</var> continand un numar <var><span class="caps">SUPERPRIM</span></var> rezentand raspunsul pentru al <var>i</var>-lea cod al Ileanei.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>0 &lt; N ≤ 100</var></li>
+<li>Pentru fiecare cod va exista un numar superprim ce poate fi format cu cifrele lui</li>
+<li>Codurile Ileanei sunt numere intregi din intervalul <var>[1,10<sup>12</sup>]</var></li>
+<li>Pentru <var>50%</var> din teste codurile Ileanei sunt mai mici decat <var>10<sup>8</sup></var></li>
+<li>Cifrele unui cod pot fi folosite in orice ordine la formarea unui numar <var><span class="caps">SUPERPRIM</span></var> si nu este obligatoriu ca numarul <var><span class="caps">SUPERPRIM</span></var> sa foloseasca toate cifrele codului respectiv.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>superp.in</th><th>superp.out</th></tr><tr><td>4<br>
+321<br>
+13<br>
+357<br>
+22<br></td><td>31<br>
+31<br>
+73<br>
+2</td></tr></table><h3>Explicatie</h3>
+
+<p><var>321</var> nu e superprim pentru ca <var>321</var> e divizibil cu <var>3</var> la fel si orice numar format cu cele toate <var>3</var> cifre. Se vor putea forma doua superprime de doua cifre <var>31</var> si <var>23</var>, asadar <var>31</var> va fi raspunsul fiind cel mai mare.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 3 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=96">Backtracking</a></span>
+            <a href="javascript:show_tag_list(96)" id="tag_anchor_96" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_96"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=107">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=47">Parcurgere in latime</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=429">Coada</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

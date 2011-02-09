@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>fractal.in, fractal.out</td><td><strong>Sursă</strong></td><td>preONI 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">1/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=fractal">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=fractal">Vezi solutiile trimise</a></p>
+
+<h1>Fractal<br></h1>
+
+<p>Hilbert a gasit o curba care poate trece prin fiecare punct al spatiului, aceasta curba se bazeaza pe o constructie recursiva. Numim curba de ordin Hilbert de ordinul <var>K</var> curba curba realizata dupa urmatoarele reguli ce trece prin fiecare nod al unei grile de <var>2<sup>K</sup>*2<sup>K</sup></var> noduri si trece prin noduri vecine ale grilei.<br>
+Curba Hilbert de ordinu 1 este o curba simpla:<br><img src="http://infoarena.ro/problema/fractal?action=download&amp;file=image001.gif&amp;safe_only=true" alt=""></p>
+
+<p>Vor fi descries in urmatoarele imagini trecerile de la o curba de ordin x la o curba de ordin x+1:<br>
+Ordin <var>1</var> -&gt; Ordin <var>2</var><br><img src="http://infoarena.ro/problema/fractal?action=download&amp;file=image001.gif&amp;safe_only=true" alt=""><img src="http://infoarena.ro/problema/fractal?action=download&amp;file=image002.gif&amp;safe_only=true" alt=""><img src="http://infoarena.ro/problema/fractal?action=download&amp;file=image003.gif&amp;safe_only=true" alt=""><img src="http://infoarena.ro/problema/fractal?action=download&amp;file=image004.gif&amp;safe_only=true" alt=""><img src="http://infoarena.ro/problema/fractal?action=download&amp;file=image005.gif&amp;safe_only=true" alt=""><br>
+Ordin <var>2</var> -&gt; Ordin <var>3</var><br><img src="http://infoarena.ro/problema/fractal?action=download&amp;file=image006.gif&amp;safe_only=true" alt=""><img src="http://infoarena.ro/problema/fractal?action=download&amp;file=image007.gif&amp;safe_only=true" alt=""><img src="http://infoarena.ro/problema/fractal?action=download&amp;file=image008.gif&amp;safe_only=true" alt=""><img src="http://infoarena.ro/problema/fractal?action=download&amp;file=image009.gif&amp;safe_only=true" alt=""><img src="http://infoarena.ro/problema/fractal?action=download&amp;file=image010.gif&amp;safe_only=true" alt=""><br>
+Ordin <var>3</var> -&gt; Ordin <var>4</var><br><img src="http://infoarena.ro/problema/fractal?action=download&amp;file=image011.gif&amp;safe_only=true" alt=""><img src="http://infoarena.ro/problema/fractal?action=download&amp;file=image012.gif&amp;safe_only=true" alt=""><img src="http://infoarena.ro/problema/fractal?action=download&amp;file=image013.gif&amp;safe_only=true" alt=""><img src="http://infoarena.ro/problema/fractal?action=download&amp;file=image014.gif&amp;safe_only=true" alt=""><img src="http://infoarena.ro/problema/fractal?action=download&amp;file=image015.gif&amp;safe_only=true" alt=""><br>
+Ordin <var>4</var> -&gt; Ordin <var>5</var><br><img src="http://infoarena.ro/problema/fractal?action=download&amp;file=image016.gif&amp;safe_only=true" alt=""><img src="http://infoarena.ro/problema/fractal?action=download&amp;file=image017.gif&amp;safe_only=true" alt=""><img src="http://infoarena.ro/problema/fractal?action=download&amp;file=image018.gif&amp;safe_only=true" alt=""><img src="http://infoarena.ro/problema/fractal?action=download&amp;file=image019.gif&amp;safe_only=true" alt=""><img src="http://infoarena.ro/problema/fractal?action=download&amp;file=image020.gif&amp;safe_only=true" alt=""></p>
+
+<p>Se dau ca date de intrare din fisierul <var>fractal.in</var> numerele <var>K, x</var> si <var>y</var>, unde <var>K</var> este ordinul unei curbe, iar <var>x</var> si <var>y</var> sunt coordanate intregi in interiorul unui patrat de dimensiune <var>2<sup>K</sup>*2<sup>K</sup></var>. Se cere sa scrieti in fisierul de iesire <var>fractal.out</var> in cati pasi se ajunge la coordonatele <var>(x,y)</var> daca punctele din patrat sunt parcurse in ordinea data de curba Hilbert de ordin <var>K</var>.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ k ≤ 15</var></li>
+<li><var>1 ≤ x,y ≤ 2<sup>K</sup></var></li>
+<li>Coordonatele <var>x</var> si <var>y</var> sunt intre <var>1</var> si <var>2<sup>K</sup></var> inclusiv (<var>x</var> reprezinta coloana, <var>y</var> linia), iar coltul din stanga sus are coordonatele <var>(1,1)</var>.</li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>fractal.in</th><th>fractal.out</th></tr><tr><td>1 1 1</td><td>0 </td></tr><tr><td>3 2 3</td><td>13</td></tr><tr><td>2 4 1</td><td>15</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=89">Divide et Impera</a></span>
+            <a href="javascript:show_tag_list(89)" id="tag_anchor_89" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_89"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=90">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=100">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

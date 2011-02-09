@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>matricen.in, matricen.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2010, Runda Finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=161">Adrian Airinei</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=matricen">Vezi solutiile trimise</a></p>
+
+<h1>Matricen<br></h1>
+
+<p>Anul acesta Mos Craciun v-a facut un cadou mai ciudat, anume o matrice binara <var>A</var> cu <var>N</var> linii si <var>N</var> coloane. Totusi, matricele interesante sunt acele matrice care pe fiecare linie au numai elemente egale. Dan Craciun, fratele lui Mos Craciun va roaga sa il ajutati cu o problema pentru a va pune o vorba buna la mos. Dan va pune la dispozitie <var>Q</var> submatrice ale matricei initiale si va roaga sa aflati pentru fiecare submatrice numarul minim de operatii care trebuie efectuate astfel incat submatricea rezultata in urma efectuarii operatiilor sa fie interesanta. In cadrul unei operatii puteti interschimba oricare doua elemente din submatrice. Dan va furnizeaza coltul stanga-sus al submatricei precum si coltul dreapta-jos al ei. Daca <var>(L1, C1)</var> este coltul stanga-sus si <var>(L2, C2)</var> este coltul dreapta jos, atunci submatricea este formata din elemetele <var>A<sub>i,j</sub></var>, unde <var>L1 ≤ i ≤ L2</var> si <var>C1 ≤ j ≤ C2</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>matricen.in</var> contine pe prima linie doua numere naturale <var>N</var> si <var>Q</var>, separate printr-un singur spatiu, avand seminificatia din enunt. Urmeaza apoi <var>N</var> linii cu cate <var>N</var> elemente <var>0</var> sau <var>1</var> reprezentand matricea <var>A</var>. Elementele unei linii sunt separate de cate un singur spatiu. In continuare se gasesc <var>Q</var> linii reprezentand intrebarile lui Dan Craciun. Fiecare astfel de linie contine patru numere naturale <var>L1</var>, <var>C1</var>, <var>L2</var> si <var>C2</var>, separate printr-un singur spatiu. Primele doua numere reprezinta linia si coloana corespunzatoare coltului stanga-sus al submatricei, iar ultimele doua linia si coloana coltului dreapta-jos.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>matricen.out</var> veti afisa <var>Q</var> linii, pe fiecare linia <var>i</var> aflandu-se numarul minim de interschimbari ce trebuie realizat pentru cea de <var>i</var>-a submatrice din fisierul de intrare. Daca nu exista solutie se va afisa <var>-1</var>.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 300</var></li>
+<li><var>1 ≤ Q ≤ 50 000</var></li>
+<li>Pentru <var>50%</var> din teste <var>Q ≤ 1000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>matricen.in</th><th>matricen.out</th></tr><tr><td>3 3<br>
+  0 0 0 <br>
+  0 1 0 <br>
+  1 1 0 <br>
+  2 1 3 3<br>
+  1 2 2 3<br>
+  1 1 1 3<br></td><td>1<br>
+  -1<br>
+  0<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Pentru prima submatrice se poate interschimba elementul de pe pozitia <var>(2, 2)</var> cu cel de pe pozitia <var>(3, 3)</var>. Pentru a doua submatrice nu avem solutie de aceea afisam <var>-1</var>. A treia submatrice contine deja o linie in care toate elementele sunt egale, deci nu mai trebuie sa efectuam nicio operatie.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

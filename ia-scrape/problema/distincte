@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>distincte.in, distincte.out</td><td><strong>Sursă</strong></td><td>preONI 2007, Runda 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.75 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=distincte">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=distincte">Vezi solutiile trimise</a></p>
+
+<h1>Distincte<br></h1>
+
+<p>Zaharel are un vector de <var>N</var> elemente cu valori numere naturale intre <var>1</var> si <var>K</var>. El isi pune <var>M</var> intrebari de forma: care este suma elementelor distincte aflate intre pozitiile <var>i</var> si <var>j</var> din vector?</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>distincte.in</var> contine pe prima linie numerele <var>N, K, M</var> separate prin spatii. Urmatoarele <var>N</var> linii vor contine elemente din vector. Urmatoarele <var>M</var> linii vor descrie intrebarile: cate doua numere <var>i, j (1 ≤ i ≤ j ≤ N)</var> separate prin spatii pe fiecare linie.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>distincte.out</var> se vor scrie <var>M</var> numere, al <var>i</var>-lea numar reprezentand raspunsul pentru a <var>i</var>-a intrebare. Rezultatul se va afisa modulo <var>666013</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N, M ≤ 100.000</var></li>
+<li><var>1 ≤ K ≤ N</var></li>
+<li>Elementele din vector sunt numerotate de la <var>1</var> la <var>N</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>distincte.in</th><th>distincte.out</th></tr><tr><td>6 3 2<br>
+1<br>
+2<br>
+2<br>
+1<br>
+3<br>
+1<br>
+2 5<br>
+1 4<br></td><td>6 <br>
+3<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Elementele din vector intre pozitiile <var>2</var> si <var>5</var> sunt <var>2 2 1 3</var> iar suma celor distincte este <var>2+1+3 = 6</var>.<br>
+Elementele din vector intre pozitiile <var>1</var> si <var>4</var> sunt <var>1 2 2 1</var> iar suma celor distincte este <var>1+2 = 3</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

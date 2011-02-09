@@ -1,0 +1,47 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>aladdin.in, aladdin.out</td><td><strong>Sursă</strong></td><td>Bursele Agora 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><div class="hidden">5/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=aladdin">Vezi solutiile trimise</a></p>
+
+<h1>Aladdin<br></h1>
+
+<table style="margin:0.5em auto;" cellspacing="0"><tr><td align="center" style="background-color:#F8EABA;"><img src="http://infoarena.ro/template/badtests?action=download&amp;file=attention.gif&amp;safe_only=true" alt="" class="left" style="float:left"><em>Testele pentru aceasta problema nu sunt destul de bine construite pentru a departaja corect solutii ineficiente sau gresite.</em><br><a href="http://infoarena.ro/implica-te/imbunatatire-teste"><strong>Intra aici</strong></a> <em>daca vrei sa ne ajuti sa imbunatatim calitatea testelor pentru aceasta problema!</em></td></tr></table><p>Aladdin, asa cum stiati, este un mare magnat in afacerea de comercializare a covoarelor magice. Acesta doreste sa o cucereasca pe printesa Iasmina, iar aceasta, pentru a-i testa inteligenta il roaga sa ii faca un covor dreptunghiular impartit in patratele, asemanator unei table de sah cu <var>N</var> linii si <var>M</var> coloane. Fiecare patratel de pe covor trebuie colorat cu alb sau cu negru. Pentru fiecare patrat care contine patru patratele Iasmina pune conditia sa aiba un numar fixat de patratele colorate cu negru.</p>
+
+<h2>Cerinta</h2>
+
+<p>Ajutati-l pe Aladdin sa realizeze un covor care satisface conditiile impuse de printesa Iasmina!</p>
+
+<h2>Date de intare</h2>
+
+<p>In fisierul de intrare <var>aladdin.in</var> vom avea pe prima linie doua numere intregi <var>N</var> si <var>M</var>. Pe urmatoarele <var>N - 1</var> linii vom avea cate <var>M - 1</var> numere intregi, separate intre ele prin spatii, astfel incat al <var>j</var>-lea numar intreg de pe linia <var>i + 1</var> a fisierului reprezinta numarul de patratele al patratului care ocupa patratelele care au coordonatele <var>(i, j), (i + 1, j), (i, j+1)</var> si <var>(i + 1, j + 1)</var> care trebuie sa fie colorate cu negru.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In cazul in care nu se poate construi niciun covor care sa satisfaca cerintele Iasminei, fisierul de iesire <var>aladdin.out</var> va contine pe prima linie numarul <var>-1</var>.<br>
+In cazul in care exista solutii atunci poate fi afisata oricare. In fisierul de iesire se vor scrie <var>N</var> linii si <var>M</var> elemente pe fiecare linie separate prin cate un spatiu; <var>0</var> va reprezenta un patratel colorat cu alb si <var>1</var> un patratel colorat cu negru.</p>
+
+<h2>Restrictie</h2>
+
+
+<ul><li><var>1 ≤ N, M ≤ 1000</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>aladdin.in</th><th>aladdin.out</th></tr><tr><td>4 4<br>
+3 2 3<br>
+2 3 3<br>
+1 2 1<br></td><td>1 1 0 1 <br>
+1 0 1 1<br>
+0 1 1 0<br>
+0 0 0 0</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=87">2-SAT</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

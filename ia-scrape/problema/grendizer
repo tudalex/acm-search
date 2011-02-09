@@ -1,0 +1,52 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>grendizer.in, grendizer.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2009, clasele 9-10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=119">Silviu-Ionut Ganceanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/silviug"><img src="/utilizator/silviug?action=download&amp;file=avatar&amp;resize=L16x16" alt="silviug">Silviu-Ionut Ganceanu</a> <a title="Rating silviug: 624" class="rating-badge-4" href="http://infoarena.ro/utilizator/silviug?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/silviug">silviug</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=grendizer">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=grendizer">Vezi solutiile trimise</a></p>
+
+<h1>Grendizer<br></h1>
+
+<p>Grendizer, robotul din serialul de desene animate urmărit de Algorel, are o nouă armă. Această armă funcţionează în felul următor: Grendizer işi stabileşte un punct de detonare şi o rază de acţiune <var>r</var>; toate obiectivele aflate la distanţa Manhattan exact <var>r</var> faţă de punctul de detonare vor fi lovite.</p>
+
+<p>Algorel a inventariat cele <var>N</var> obiective pe care Grendizer le are de distrus într-unul din episoade. Acum îşi pune întrebări de genul: dacă Grendizer ar detona arma în punctul <var>(x, y)</var> cu o rază de acţiune <var>r</var>, câte din obiective vor fi lovite?</p>
+
+<p>Cred că deja ştiţi cine trebuie să rezolve problema în locul obraznicului Algorel - care nu îşi mai aduce aminte niciun algoritm de când cu desenele animate.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>grendizer.in</var> conţine pe prima linie două numere naturale, <var>N</var> şi <var>M</var>, reprezentând numărul de obiective respectiv numărul de întrebări pentru care Algorel vrea sa afle răspunsul. Urmează <var>N</var> linii ce conţin câte două numere întregi reprezentând coordonatele unui obiectiv. Următoarele <var>M</var> linii descriu câte o întrebare prin trei numere separate prin spaţii: <var>x y r</var> având semnificaţia de mai sus.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>grendizer.out</var> veţi afişa pe câte o linie răspunsul pentru fiecare din cele <var>M</var> întrebări.</p>
+
+<h2>Restricţii şi precizări</h2>
+
+
+<ul><li>Obiectivele se pot suprapune</li>
+<li>Distanţa Manahattan între două puncte <var>(x<sub>1</sub>, y<sub>1</sub>)</var> şi <var>(x<sub>2</sub>, y<sub>2</sub>)</var> este <var>|x<sub>1</sub> - x<sub>2</sub>| + |y<sub>1</sub> - y<sub>2</sub>|</var></li>
+<li>Razele de acţiune sunt numere naturale din intervalul [1, 10<sup>9</sup>]</li>
+<li>Coordonatele obiectivelor şi punctelor de lansare vor fi numere întregi din intervalul <var>[-MAX_MOD, +MAX_MOD]</var></li>
+<li>Următorul tabel specifică valorile pentru <var>N</var>, <var>M</var> şi <var><span class="caps">MAX</span>_MOD</var> pentru fiecare test:</li>
+</ul><table class="numbers" cellspacing="0"><tr><th>Test</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><th>N</th><td>8</td><td>500</td><td>20 000</td><td>30 000</td><td>40 000</td><td>50 000</td><td>60 000</td><td>70 000</td><td>90 000</td><td>10<sup>5</sup></td></tr><tr><th>M</th><td>4</td><td>500</td><td>20 000</td><td>30 000</td><td>40 000</td><td>50 000</td><td>60 000</td><td>70 000</td><td>90 000</td><td>10<sup>5</sup></td></tr><tr><th><span class="caps">MAX</span>_MOD</th><td>10</td><td>100</td><td>300</td><td>300</td><td>300</td><td>10<sup>5</sup></td><td>10<sup>5</sup></td><td>10<sup>5</sup></td><td>10<sup>8</sup></td><td>10<sup>8</sup></td></tr></table><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>grendizer.in</th><th>grendizer.out</th></tr><tr><td>8 4<br>
+2 0<br>
+1 -1<br>
+0 -2<br>
+-1 -1<br>
+-2 0<br>
+-1 1<br>
+0 2<br>
+1 1<br>
+0 0 2<br>
+1 1 2<br>
+-1 -1 4<br>
+0 0 1000000000<br></td><td>8<br>
+4<br>
+3<br>
+0<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

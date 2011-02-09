@@ -1,0 +1,32 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>compact.in, compact.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2010, Runda 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=compact">Vezi solutiile trimise</a></p>
+
+<h1>Compact<br></h1>
+
+<p>Fie <var>P</var> o permutare cu <var>N</var> elemente. Se numeste secventa a permutarii un sir de elemente aflate pe pozitii consecutive. O astfel de secventa de cel putin <var>3</var> elemente este compacta daca si numai daca primul element al secventei este minim, in timp ce ultimul element e maxim in raport cu toate elementele secventei. Sa se determine numarul de secvente compacte pentru permutarea <var>P</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>compact.in</var> contine pe prima linie <var>N</var>, numarul de elemente ale permutarii. Cea de a doua linie a fisierului contine <var>N</var> numere naturale distincte, reprezentand elementele permutarii.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>compact.out</var> se va afla un singur numar natural reprezentand numarul secventelor compacte ale permutarii.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 1 000 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>compact.in</th><th>compact.out</th></tr><tr><td>8<br>
+3 2 7 5 4 8 1 6<br></td><td>1</td></tr></table><h3>Explicatie</h3>
+
+<p>Singura secventa compacta este <var>(2, 7, 5, 4, 8)</var>. Aceasta secventa este compacta deoarece primul element, <var>2</var>, este minim, iar ultimul, <var>8</var>, este maxim intre numerele secventei.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

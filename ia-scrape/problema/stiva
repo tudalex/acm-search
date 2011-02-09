@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>stiva.in, stiva.out</td><td><strong>Sursă</strong></td><td>ONI 2008 - baraj</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=171">Emanuela Cerchez</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=stiva">Vezi solutiile trimise</a></p>
+
+<h1>Stiva<br></h1>
+
+<p>Sa consideram o stiva, initial vida. Putem efectua urmatoarele operatii:</p>
+
+
+<ul><li><var>push(X)</var> - se introduce in stiva litera <var>X</var> (evident, in varful stivei);</li>
+<li><var>pop</var> - se extrage litera aflata la varful stivei (operatia <var>pop</var> se executa atunci cand stiva este nevida);</li>
+<li><var>top</var> - se afiseaza litera aflata la varful stivei (operatia <var>top</var> se executa atunci cand stiva este nevida).</li>
+</ul><p>O secventa de operatii este considerata corecta daca:</p>
+
+
+<ul><li>initial stiva este vida;</li>
+<li>se executa o serie de operatii <var>push</var>, <var>pop</var>, <var>top</var>, fara a executa <var>pop</var> sau <var>top</var> cand stiva este vida;</li>
+<li>la final stiva este vida.</li>
+</ul><p>Utilizand secvente corecte de operatii, putem afisa diferite siruri de caractere.<br>
+De exemplu, sirul <var><span class="caps">ABDADBA</span></var> poate fi generat astfel: <var>push(A)</var>, <var>top</var>, <var>pop</var>, <var>push(B)</var>, <var>top</var>, <var>pop</var>, <var>push(D)</var>, <var>top</var>, <var>pop</var>, etc.<br>
+O alta secventa de operatii corecta, dar mai scurta ar fi: <var>push(A)</var>, <var>top</var>, <var>push(B)</var>, <var>top</var>, <var>push(D)</var>, <var>top</var>, <var>push(A)</var>, <var>top</var>, <var>pop</var>, <var>top</var>, <var>pop</var>, <var>top</var>, <var>pop</var>, <var>top</var>, <var>pop</var>. </p>
+
+<h2>Cerinta</h2>
+
+<p>Dat fiind un sir format din litere mari, sa se determine numarul minim de operatii dintr-o secventa corecta care afiseaza sirul dat.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>stiva.in</var> contine pe prima linie un sir format numai din litere mari.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>stiva.out</var> va contine o singura linie pe care va fi scris numarul minim de operatii dintr-o secventa corecte care afiseaza sirul din fisierul de intrare.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>Lungimea sirului este ≤ <var>500</var> .</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>stiva.in</th><th>stiva.out</th></tr><tr><td><span class="caps">ABCACBA</span><br></td><td>15<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

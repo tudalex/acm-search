@@ -1,0 +1,33 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>mate.in, mate.out</td><td><strong>Sursă</strong></td><td>Lot Bistrita 2009, Baraj 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=161">Adrian Airinei</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrei-alpha"><img src="/utilizator/andrei-alpha?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrei-alpha">Andrei-Bogdan Antonescu</a> <a title="Rating andrei-alpha: 700" class="rating-badge-1" href="http://infoarena.ro/utilizator/andrei-alpha?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrei-alpha">andrei-alpha</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=mate">Vezi solutiile trimise</a></p>
+
+<h1>Mate<br></h1>
+
+<table style="margin:0.5em auto;" cellspacing="0"><tr><td align="center" style="background-color:#F8EABA;"><img src="http://infoarena.ro/template/badtests?action=download&amp;file=attention.gif&amp;safe_only=true" alt="" class="left" style="float:left"><em>Testele pentru aceasta problema nu sunt destul de bine construite pentru a departaja corect solutii ineficiente sau gresite.</em><br><a href="http://infoarena.ro/implica-te/imbunatatire-teste"><strong>Intra aici</strong></a> <em>daca vrei sa ne ajuti sa imbunatatim calitatea testelor pentru aceasta problema!</em></td></tr></table><p>Mirunel, fratele Mirunei, a dezvoltat o adevarată pasiune pentru matematică. Jucându-se cu şiruri de numere naturale, a întalnit o problemă pentru care abilităţile sale de matematician nu sunt suficiente. El a descoperit un şir <var>S</var> format din <var>N</var> numere naturale cuprinse între <var>1</var> şi <var>N</var> şi trebuie să determine lungimea cea mai mare a unei subsecvenţe care conţine un element majoritar. Într-o subsecvenţă de lungime <var>L</var>, un element este majoritar dacă apare de cel puţin <var>[(L+1)/2]</var> ori (partea întreagă a lui <var>(L+1)/2</var> ). </p>
+
+<h2>Cerinta</h2>
+
+<p>Determinaţi lungimea maximă a unei subsecvenţe care conţine un element majoritar.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>mate.in</var> va conţine pe prima linie un singur număr natural, <var>N</var>, având semnificaţia din enunţ. Pe urmatoarea linie se află <var>N</var> numere naturale separate printr-un singur spaţiu, reprezentând şirul de numere.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>mate.out</var> va conţine un singur număr natural, reprezentând lungimea maximă a unei subsecvenţe care conţine un element majoritar.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 500.000</var></li>
+<li><var>1 ≤ S<sub>i</sub> ≤ N</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>mate.in</th><th>mate.out</th></tr><tr><td>5<br>
+4 1 1 2 3<br></td><td>4<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

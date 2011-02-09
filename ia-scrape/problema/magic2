@@ -1,0 +1,46 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>magic2.in, magic2.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil 2010, clasa a 9-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=159">Clara Ionescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/savim"><img src="/utilizator/savim?action=download&amp;file=avatar&amp;resize=L16x16" alt="savim">Serban Andrei Stan</a> <a title="Rating savim: 783" class="rating-badge-1" href="http://infoarena.ro/utilizator/savim?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/savim">savim</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=magic2">Vezi solutiile trimise</a></p>
+
+<h1>Magic2<br></h1>
+
+<p>Vom numi <em>pătrat magic</em> un tablou de dimensiune <var>n × n</var> având elemente numere naturale, care are următoarea proprietate: suma elementelor unei linii este egală cu suma elementelor oricărei linii şi cu suma elementelor oricărei coloane. </p>
+
+<h2>Cerinţă</h2>
+
+<p>Stabiliţi despre tabloul bidimensional dat, dacă acesta este sau nu pătrat magic, ştiind că, dacă nu este magic, ar trebui corectate <em>exact două</em> elemente. În cazul în care pătratul nu este magic, găsiţi poziţia elementelor eronate şi determinaţi valorile corecte. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare <var>magic2.in</var> se află un număr natural <var>n</var>, reprezentând dimensiunea tabloului dat. Pe următoarele <var>n</var> linii se află câte <var>n</var> numere naturale, separate prin câte un spaţiu, reprezentând elementele tabloului. </p>
+
+<h2>Date de ieşire</h2>
+
+<p>În cazul în care tabloul dat este pătrat magic, pe prima linie a fişierului de ieşire <var>magic2.out</var> se va scrie <var>magic</var>. În cazul în care pătratul nu este magic, pe prima linie a fişierului de ieşire se va scrie <var>nu este magic</var>. În acest caz, pe următoarea linie se vor scrie patru numere naturale, despărţite prin câte un spaţiu, reprezentând indicele de linie şi indicele de coloană ale primului element greşit, apoi indicele de linie şi indicele de coloană ale celui de-al doilea element greşit. Cele patru numere se vor despărţi prin câte un spaţiu. Pe cea de a treia linie a fişierului se vor scrie valorile corecte care ar trebui să fie în locul celor două elemente greşite pentru ca pătratul să fie magic.</p>
+
+<h2>Restricţii şi precizări</h2>
+
+
+<ul><li><var>5 ≤ n ≤ 100</var></li>
+<li>Elementele tabloului sunt numere naturale <var>≤ 100</var>.</li>
+<li>În fişierul de ieşire veţi scrie mai întâi datele care descriu acel element care se află pe o linie având număr de ordine mai mic, iar în cazul în care cele două numere se află pe aceeaşi linie, le scrieţi în ordinea indicilor de coloană.</li>
+<li>Se garantează că nu există situaţii ambigue (de exemplu, nu pot fi toate sumele pe linii egale şi totodată sumele pe coloane să difere).</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>magic2.in</th><th>magic2.out</th></tr><tr><td>5<br>
+1 2 3 2 7<br>
+5 1 4 3 1<br>
+3 2 2 4 1<br>
+2 7 1 2 2<br>
+3 2 2 3 4<br></td><td>nu este magic<br>
+1 5 3 3<br>
+6 4<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Suma magică este <var>14</var>, deci pe poziţia <var>(1, 5)</var> în loc de <var>7</var> ar trebui să fie <var>6</var> şi pe poziţia <var>(3, 3)</var> în loc de <var>2</var> ar trebui să fie <var>4</var>.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

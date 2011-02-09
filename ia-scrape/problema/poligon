@@ -1,0 +1,70 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>poligon.in, poligon.out</td><td><strong>Sursă</strong></td><td>preONI 2005 Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><div class="hidden">5/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=poligon">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=poligon">Vezi solutiile trimise</a></p>
+
+<h1>Poligon<br></h1>
+
+<p>Dupa o noapte dementa, plina de infractiuni, un ofiter de politie lucreaza la elaborarea unor statistici. El are in fata harta orasului cu punctele unde s-au intamplat infractiuni precum si o zona in forma de poligon (nu neaparat convex) din harta care prezinta interes maxim.</p>
+
+<h2>Cerinta</h2>
+
+<p>Fiind dat poligonul ce descrie zona de interes si punctele infractionale trebuie sa aflati numarul de infractiuni petrecute in acea zona.</p>
+
+<h2>Date de intrare</h2>
+
+<p>In fisierul de intrare <var>poligon.in</var> se vor afla pe prima linie numerele intregi <var>N</var> si <var>M</var> separate printr-un spatiu, <var>N</var> e numarul de varfuri ale zonei poligonale iar <var>M</var> numarul total de infractiuni desfasurate noaptea trecuta. Pe urmatoarele <var>N</var> linii se vor afla cate doi intregi reprezentand coordonatele varfurilor poligonului date in ordinea parcurgerii lor mergand numai intr-o directie (din cele doua posibile) pe laturile sale. Pe urmatoarele <var>M</var> linii se vor afla coordonatele infractiunilor desfasurate in noaptea anterioara.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>poligon.out</var> se va afla pe prima linie numarul de puncte interioare sau pe marginea zonei date. Linia se termina cu caracterul "end of line".</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 800</var></li>
+<li><var>1 ≤ M ≤ 60.000</var></li>
+<li>Coordonatele punctelor vor fi numere intregi intre <var>0</var> si <var>60.000</var></li>
+<li>Poligonul nu se auto-intersecteaza</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>poligon.in</th><th>poligon.out</th></tr><tr><td>4 3<br>
+0 0<br>
+0 100<br>
+100 100<br>
+100 0<br>
+50 50<br>
+100 50<br>
+100 110</td><td>2</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 3 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=48">Cautare</a></span>
+            <a href="javascript:show_tag_list(48)" id="tag_anchor_48" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_48"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=49">Cautare binara</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=41">Geometrie</a></span>
+            <a href="javascript:show_tag_list(41)" id="tag_anchor_41" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_41"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=269">Punct in poligon</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=63">Sortare</a></span>
+            <a href="javascript:show_tag_list(63)" id="tag_anchor_63" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_63"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=64">Sortare</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

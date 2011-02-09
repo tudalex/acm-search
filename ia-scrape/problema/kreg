@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>kreg.in, kreg.out</td><td><strong>Sursă</strong></td><td>.campion 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=kreg">Vezi solutiile trimise</a></p>
+
+<h1>Kreg<br></h1>
+
+<p>Cele <var>N</var> noduri ale unui graf neorientat sunt numerotate cu numere intregi de la <var>1</var> la <var>N</var>. Gradul unui nod <var>X</var> al grafului este egal cu numarul de muchii care au unul din cele <var>2</var> capete in <var>X</var>. Un graf neorientat se numeste <strong>K-regulat</strong> daca gradul fiecarui nod este egal cu <var>K</var>. Un graf neorientat se numeste conex daca se poate ajunge de la orice nod la oricare alt nod mergand numai pe muchiile grafului.</p>
+
+<p>Dandu-se <var>K</var> si <var>N</var>, construiti un graf neorientat, conex si K-regulat.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>kreg.in</var> contine numerele intregi <var>K</var> si <var>N</var>, separate printr-un spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>kreg.out</var> veti afisa <var>N*K/2</var> linii. Fiecare linie corespunde unei muchii a grafului construit si va contine doua numere intregi <var>A</var> si <var>B</var>, separate printr-un spatiu, reprezentand capetele muchiei (<var>1 ≤ A, B ≤ N</var> , <var>A</var> diferit de <var>B</var>).</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ K ≤ 50</var></li>
+<li><var>K</var> este un numar par.</li>
+<li><var>K+1 ≤ N ≤ 10 000</var></li>
+<li>In general, exista multe grafuri K-regulate conexe. Puteti determina oricare dintre ele.</li>
+<li>Muchiile grafului pot fi afisate in orice ordine.</li>
+<li><var>2</var> noduri distincte ale grafului pot fi conectate prin cel mult <var>1</var> muchie.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>kreg.in</th><th>kreg.out</th></tr><tr><td>4 6<br></td><td>1 2<br>
+1 6<br>
+5 4<br>
+6 3<br>
+5 1<br>
+2 5<br>
+5 3<br>
+2 6<br>
+3 4<br>
+4 1<br>
+6 4<br>
+2 3<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

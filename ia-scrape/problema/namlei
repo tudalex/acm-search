@@ -1,0 +1,66 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>namlei.in, namlei.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2006, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=152">Tiberiu-Lucian Florea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/bogdan2412"><img src="/utilizator/bogdan2412?action=download&amp;file=avatar&amp;resize=L16x16" alt="bogdan2412">Bogdan-Cristian Tataroiu</a> <a title="Rating bogdan2412: 1162" class="rating-badge-4" href="http://infoarena.ro/utilizator/bogdan2412?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/bogdan2412">bogdan2412</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.1 sec</td><td><strong>Limită de memorie</strong></td><td>32000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=namlei">Vezi solutiile trimise</a></p>
+
+<h1>Namlei<br></h1>
+
+<p>Exista <var>N + 1</var> orase dispuse in linie, numerotate in intervalul <var>[0..N]</var>, fiecare avand cate <var>K</var> obiective strategice numerotate in intervalul <var>[0..K - 1]</var>. Astfel, orice obiectiv poate fi identificat printr-o pereche <var>(i, j)</var>, <var>i</var> reprezentand numarul orasului in care se afla respectivul obiectiv, iar <var>j</var> numarul de ordine al obiectivului. Avand in vedere aceste notatii, pot exista muchii doar intre un obiectiv <var>(i, x)</var> si un obiectiv <var>(i + 1, y)</var> (adica din orase consecutive).</p>
+
+<p>Intre doua obiective <var>(i, x)</var> si <var>(i + 1, y)</var> exista cel putin o muchie (posibil mai multe).</p>
+
+<p>Operatiile care se pot face sunt urmatoarele:</p>
+
+
+<ul><li>U: Toate muchiile dintre orasele <var>i</var> si <var>i + 1</var> sunt eliminate. Se introduc alte muchii, astfel incat sa se pastreze conditia precedenta.</li>
+<li>Q: Se calculeaza si se afiseaza numarul de drumuri distincte formate din <var>j - i</var> muchii intre obiectivele <var>(i, x)</var> si <var>(j, y)</var>.</li>
+</ul><h2>Date de intrare si de iesire</h2>
+
+<p>Pe prima linie a fisierului <var>namlei.in</var> se afla numerele <var>N</var> si <var>K</var>, separate de un spatiu. Pe a doua linie a fisierului se afla numerele <var>X</var> si <var>Y</var>, separate de un spatiu. Pe fiecare din urmatoarele <var>N</var> linii se afla cate un triplet de numere <var>(cnt, j, k)</var>. Acest triplet de pe linia a <var>i</var>-a (<var>i</var> intre <var>0</var> si <var>N - 1</var>) inseamna ca intre orasele <var>i</var> si <var>i + 1</var> exista (in afara de cele <var>K * K</var> muchii obligatorii) <var>cnt</var> muchii dintre care prima este <var>(i, j) - (i + 1, k)</var>. Daca a <var>(w - 1)</var>-a muchie este <var>(i, j) - (i + 1, k)</var>, a <var>w</var>-a muchie <var>(i, j') - (i + 1, k')</var> se calculeaza dupa urmatoarea formula:</p>
+
+<p><var>j' = (j * X + k * w * Y) <code>%</code> K</var><br><var>k' = (j * w * X + k * Y) <code>%</code> K</var></p>
+
+<p>Cele <var>cnt</var> muchii sunt numerotate <var>0 .. cnt - 1</var>.</p>
+
+<p>Pana la sfarsitul fisierului, fiecare pereche de doua linii reprezinta o operatie <var>U</var> sau <var>Q</var>. Pe prima dintre linii se afla tipul operatei, iar pe a doua parametrii care determina aceasta operatie.</p>
+
+<p><strong>In cazul unei operatii de tipul U:</strong></p>
+
+<p>A doua linie contine numerele <var>i, cnt, j, k</var> separate prin cate un spatiu. Acest cvadruplet inseamna ca (dupa eliminarea muchiilor care existau deja) intre orasele <var>i</var> si <var>i + 1</var> exista (in afara de cele <var>K * K</var> muchii obligatorii) <var>cnt</var> muchii dintre care prima este <var>(i, j) - (i + 1, k)</var>. Daca a <var>(w - 1)</var>-a muchie este <var>(i, j) - (i + 1, k)</var>, a <var>w</var>-a muchie <var>(i, j') - (i + 1, k')</var> se calculeaza dupa urmatoarea formula:</p>
+
+<p><var>j' = (j * X + k * w * Y + 1) <code>%</code> K</var><br><var>k' = (j * w * X + k * Y + 1) <code>%</code> K</var></p>
+
+<p>Cele <var>w</var> muchii sunt numerotate <var>0 .. cnt - 1</var>.</p>
+
+<p><strong><span class="caps">ATENTIE </span>!</strong> Din cauza unor considerente intim legate de natura problemei, aceste formule difera printr-un <strong>+1</strong> de formulele precedente.</p>
+
+<p><strong>In cazul unei operatii de tipul Q:</strong></p>
+
+<p>A doua linie contine numerele <var>i, x, j, y</var> separate prin cate un spatiu. In acest caz trebuie afisat numarul de drumuri distincte de exact <var>j - i</var> muchii intre obiectivele <var>(i, x)</var> si <var>(j, y)</var>. <var>i</var> este strict mai mic decat <var>j</var>. Toate rezultatele se vor afisa modulo <var>997</var>. Raspunsurile vor fi afisate in fisierul <var>namlei.out</var> in ordinea in care sunt puse intrebarile, fiecare raspuns pe o linie separata.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 30 000</var></li>
+<li><var>3 ≤ K ≤ 8</var></li>
+<li><var>1 ≤ cnt ≤ 120</var></li>
+<li>Exista cel mult <var>1 000</var> de operatii din fiecare tip</li>
+<li><var>X</var> si <var>Y</var> sunt numere naturale strict pozitive reprezentabile pe variabile de 32 biti.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>namlei.in</th><th>namlei.out</th></tr><tr><td>4 3<br>
+17 19<br>
+3 1 0<br>
+3 2 2<br>
+4 0 2<br>
+4 2 2<br>
+Q<br>
+1 2 3 0<br>
+U<br>
+1 4 1 0<br>
+Q<br>
+0 2 3 0<br></td><td>4<br>
+21<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

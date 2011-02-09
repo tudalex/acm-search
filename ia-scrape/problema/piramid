@@ -1,0 +1,82 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>piramid.in, piramid.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2010, Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=223">Cosmin Gheorghe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gcosmin"><img src="/utilizator/gcosmin?action=download&amp;file=avatar&amp;resize=L16x16" alt="gcosmin">Gheorghe Cosmin</a> <a title="Rating gcosmin: 1142" class="rating-badge-4" href="http://infoarena.ro/utilizator/gcosmin?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gcosmin">gcosmin</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.8 sec</td><td><strong>Limită de memorie</strong></td><td>64000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=piramid">Vezi solutiile trimise</a></p>
+
+<h1>Piramid<br></h1>
+
+<p>Zoe are o matrice patratica cu <var>N</var> linii si <var>N</var> coloane plina cu <var>0</var> sau <var>1</var>. Ea vrea sa numere cate piramide avand pe <strong>margine</strong> doar elemente egale cu <var>1</var> exista in matrice. O piramida este un triunghi dreptunghic isoscel cu ipotenuza paralela cu doua dintre marginile matricei.</p>
+
+<p>Mai jos se afla cateva exemple de piramide de diverse laturi. Observati ca o piramida se poate roti de oricate ori cu 90 de grade.</p>
+
+<table class="example" cellspacing="0"><tr><th>Latura 1</th><th>Latura 2</th><th>Latura 3</th><th>Latura 4</th><th>Latura 2</th><th>Latura 3</th><th>Latura 1</th></tr><tr><td>0 0 0 0 0<br>
+0 0 <b>1</b> 0 0<br>
+0 <b>1 1 1</b> 0<br>
+0 0 0 0 0<br></td><td>0 0 0 0 0<br>
+0 0 <b>1</b> 0 0<br>
+0 <b>1</b> 0 <b>1</b> 0<br><b>1 1 1 1 1</b><br>
+0 0 0 0 0<br></td><td>0 0 0 0 0 0 0<br>
+0 0 0 <b>1</b> 0 0 0<br>
+0 0 <b>1</b> 0 <b>1</b> 0 0<br>
+0 <b>1</b> 0 0 0 <b>1</b> 0<br><b>1 1 1 1 1 1 1</b><br>
+0 0 0 0 0 0 0<br></td><td>0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 <b>1</b> 0 0 0 0<br>
+0 0 0 <b>1</b> 0 <b>1</b> 0 0 0<br>
+0 0 <b>1</b> 0 0 0 <b>1</b> 0 0<br>
+0 <b>1</b> 0 0 0 0 0 <b>1</b> 0<br><b>1 1 1 1 1 1 1 1 1</b><br>
+0 0 0 0 0 0 0 0 0<br></td><td>0 0 0 0 0<br>
+0 <b>1</b> 0 0 0<br>
+0 <b>1 1</b> 0 0 <br>
+0 <b>1</b> 0 <b>1</b> 0<br>
+0 <b>1 1</b> 0 0<br>
+0 <b>1</b> 0 0 0<br>
+0 0 0 0 0<br></td><td>0 0 0 0 0 0 0<br><b>1 1 1 1 1 1 1</b><br>
+0 <b>1</b> 0 0 0 <b>1</b> 0<br>
+0 0 <b>1</b> 0 <b>1</b> 0 0<br>
+0 0 0 <b>1</b> 0 0 0<br>
+0 0 0 0 0 0 0<br></td><td>0 0 0 0 <br>
+0 0 <b>1</b> 0<br>
+0 <b>1 1</b> 0<br>
+0 0 <b>1</b> 0<br>
+0 0 0 0<br></td></tr></table><h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>piramid.in</var> va contine pe prima linie numarul natural <var>N</var> reprezentand dimensiunea matricei. Urmatoarele <var>N</var> linii vor contine fiecare cate <var>N</var> caractere <var>0</var> sau <var>1</var>, <b>nedespartite prin spatii</b>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>piramid.out</var> veti afisa un singur numar <var>M</var>, reprezentand numarul total de piramide ce respecta conditiile din enunt care se afla in matricea din fisierul de intrare.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1000</var></li>
+<li>Se garanteaza ca rezultatul nu va depasi <var>10<sup>9</sup></var></li>
+<li>Piramida minima este cea de latura 1 din exemplul de mai sus</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>piramid.in</th><th>piramid.out</th></tr><tr><td>10<br>
+0000001000<br>
+0000101100<br>
+0001011010<br>
+0010001100<br>
+0111111100<br>
+0000100000<br>
+0001111100<br>
+0010101000<br>
+0110010000<br>
+0010000000<br></td><td>15</td></tr><tr><td>7<br>
+1111111<br>
+1111111<br>
+1111111<br>
+1111111<br>
+1111111<br>
+1111111<br>
+1111111<br></td><td>196</td></tr></table><h3>Explicaţie</h3>
+
+<p>Primul exemplu: Sunt <var>3</var> piramide de latura mai mare ca <var>1</var>, si inca <var>12</var> (mai greu de observat) de latura <var>1</var>.<br>
+Al doilea exemplu: <strong>Atentie!</strong> Se vor numara piramidele indiferent de ceea ce contin in interior. Singura restrctie impusa este ca marginile sa fie formate doar din elemente de <var>1</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

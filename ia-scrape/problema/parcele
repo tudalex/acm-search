@@ -1,0 +1,89 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>parcele.in, parcele.out</td><td><strong>Sursă</strong></td><td>Lot 2003</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=127">Mihai Stroe</a>, <a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><div class="hidden">5/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=parcele">Vezi solutiile trimise</a></p>
+
+<h1>Parcele<br></h1>
+
+<p>Pe o campie intinsa se afla <var>N</var> copaci situati in puncte de coordonate intregi. Fermierul Ion doreste sa cumpere cateva parcele pe acea campie. Ion poate cumpara numai parcele de forma dreptunghiulara, cu laturile paralele cu axele de coordonate de pe harta zonei, cu dimensiunile intregi fixate (<var>DX</var> pentru axa <var>OX</var> si <var>DY</var> pentru axa <var>OY</var>) si avand colturile situate in puncte de coordonate intregi. Cumpararea unei parcele va trece in proprietatea lui Ion interiorul ei (se considera ca laturile parcelei fac parte din interior).<br>
+Numarandu-si banii, Ion s-a hotarat sa cumpere exact <span class="caps">DOUA </span>parcele care, evident, sa nu aiba nici un punct comun. Deoarece lui Ion ii plac foarte mult copacii, el isi va alege o modalitate de amplasare a celor doua parcele astfel incat in interiorul lor (inclusiv pe laturi) sa se afle cat mai multi copaci. In acest scop, Ion va cere ajutorul.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care sa determine o modalitate de amplasare a parcelelor, astfel incat Ion sa detina cat mai multi copaci!</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>parcele.in</var> contine:<br>
+- pe prima linie doua numere intregi <var>DX</var> si <var>DY</var>, reprezentand dimensiunile unei parcele;<br>
+- pe cea de a doua linie un numar intreg <var>N</var>, reprezentand numarul de copaci;<br>
+- pe fiecare dintre urmatoarele <var>N</var> linii cate doua numere intregi <var>X<sub>i</sub></var> si <var>Y<sub>i</sub></var>, reprezentand coordonatele copacului cu numarul <var>i</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>parcele.out</var> veti afisa pe prima linie numarul maxim de copaci pe care ii poate detine Ion.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ <span class="caps">DX,</span> DY ≤ 99.999</var></li>
+<li><var>1 ≤ N ≤ 100.000</var></li>
+<li>coordonatele copacilor sunt numere intregi intre <var>0</var> si <var>99999</var> inclusiv</li>
+<li>nu exista doi copaci situati in acelasi punct</li>
+<li>parcelele pot fi plasate oriunde, cu conditia ca sa nu se intersecteze</li>
+</ul><h2>Exemplu</h2>
+
+
+<table class="example" cellspacing="0"><tr><th>parcele.in</th><th>parcele.out</th></tr><tr><td>2 1<br>
+7<br>
+0 0<br>
+1 0<br>
+1 1<br>
+3 0<br>
+3 1<br>
+4 0<br>
+1000 1000<br></td><td>6</td></tr></table><h3>Explicatii</h3>
+
+<p>O solutie posibila este: prima parcela are colturile <var>(-1, 0)</var> si <var>(1, 1)</var> iar a doua parcela are colturile <var>(3, 0)</var> si <var>(5, 1)</var></p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 4 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=41">Geometrie</a></span>
+            <a href="javascript:show_tag_list(41)" id="tag_anchor_41" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_41"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=80">Baleiere</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=63">Sortare</a></span>
+            <a href="javascript:show_tag_list(63)" id="tag_anchor_63" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_63"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=64">Sortare</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=84">Arbori de intervale</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

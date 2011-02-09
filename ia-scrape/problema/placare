@@ -1,0 +1,61 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>placare.in, placare.out</td><td><strong>Sursă</strong></td><td>OJI 2009, clasa a 9-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=220">Radu Visinescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gabitzish1"><img src="/utilizator/gabitzish1?action=download&amp;file=avatar&amp;resize=L16x16" alt="gabitzish1">Gabriel Bitis</a> <a title="Rating gabitzish1: 658" class="rating-badge-1" href="http://infoarena.ro/utilizator/gabitzish1?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gabitzish1">gabitzish1</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=placare">Vezi solutiile trimise</a></p>
+
+<h1>Placare<br></h1>
+
+<p>O suprafaţă dreptunghiulară de înălţime <var>N</var> şi lăţime <var>M</var> unităţi trebuie acoperită perfect (placată) prin utilizarea unor plăci de formă dreptunghiulară de dimensiune <var>1xP</var> sau <var>Px1</var>, unde <var>P</var> este un număr natural nenul. Suprafaţa dată poate fi privită ca un caroiaj cu <var>NxM</var> pătrăţele egale cu unitatea. O placare corectă a suprafeţei iniţiale se memorează într-un fişier text folosind următoarele convenţii de codificare:</p>
+
+
+<ul><li>pe prima linie se precizează dimensiunile <var>N</var> şi <var>M</var> ale suprafeţei;</li>
+<li>o placă dreptunghiulară de lăţime <var>P</var> este codificată prin numărul natural <var>P</var>, iar o placă de înalţime <var>P</var> se codifică prin numărul întreg <var>–P</var>;</li>
+<li>convenim că placa având ambele dimensiuni egale cu unitatea să se codifice cu valoarea <var>1</var>;</li>
+<li>pe fiecare din cele <var>N</var> linii ale codificării se află câte un şir de valori întregi reprezentând, în ordine de la stânga la dreapta, codurile plăcilor care se găsesc amplasate începând de la respectiva linie;</li>
+<li>codul <var>P</var> strict mai mare ca <var>1</var> al unei placi orizontale apare o singură dată pe linia corespunzătoare pe care se află placa, iar codul <var>–P</var> al unei plăci verticale va apare o singură dată şi anume pe prima linie de la care placa respectivă este amplasată în jos pe o anumita coloană a suprafeţei;</li>
+<li>dacă pe o anumită linie a suprafeţei nu există astfel de coduri de plăci, atunci pe respectiva linie din fişier este o singură valoare de <var>0</var>.</li>
+</ul><p>Folosind codificarea unei placări a suprafeţei iniţiale, se poate determina imaginea acestei placări sub forma unui tablou bidimensional <var>A</var>, cu <var>N</var> linii şi <var>M</var> coloane, unde <var>A<sub>ij</sub></var> = valoarea absolută a codului plăcii care se suprapune peste pătrăţelul de pe linia <var>i</var> şi coloana <var>j</var>.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Cunoscând codificarea unei placări corecte a suprafeţei date să se obţină imaginea acestei placări (matricea de valori corespunzătoare codificării suprafeţei).</p>
+
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>placare.in</var> va avea pe prima linie valorile naturale <var>N</var> si <var>M</var>, separate printr-un spaţiu, unde <var>N</var> este înălţimea suprafeţei, <var>M</var> este lăţimea suprafeţei. Pe fiecare din următoarele <var>N</var> linii se află un şir de valori întregi, separate prin câte un spaţiu, reprezentând codificarea respectivei linii a placării.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>placare.out</var> se va tipări tabloul bidimensional ce reprezintă imaginea placării, compus din <var>N</var> linii, pe fiecare dintre ele aflându-se <var>M</var> valori naturale separate prin câte un spaţiu, cu semnificaţia din enunţ.</p>
+
+<h2>Restricţii şi precizări</h2>
+
+
+<ul><li><var>1 ≤ N, M ≤ 300</var></li>
+<li>pentru <var>80%</var> din teste <var>1 ≤ N, M ≤ 100</var></li>
+<li>dimensiunea <var>P</var> sau <var>–P</var> a unei plăci este aleasă astfel încât acoperirea obţinută să nu depăşească înălţimea <var>N</var> sau latimea <var>M</var> a suprafeţei.</li>
+<li>datele din fişierul de intrare sunt corecte în sensul că reprezintă codificarea unei acoperiri a zonei dreptunghiulare de dimensiuni <var>N</var> şi <var>M</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>placare.in</th><th>placare.out</th></tr><tr><td>4 4<br>
+-4 1 1 1<br>
+1 2<br>
+2 1<br>
+3<br></td><td>4 1 1 1<br>
+4 1 2 2<br>
+4 2 2 1<br>
+4 3 3 3<br></td></tr></table><table class="example" cellspacing="0"><tr><th>placare.in</th><th>placare.out</th></tr><tr><td>3 2<br>
+-3 -2<br>
+0<br>
+1<br></td><td>3 2<br>
+3 2<br>
+3 1<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Pentru primul exemplu, valoarea <var>-4</var> codifică o placă de înălţime <var>4</var> şi laţime <var>1</var> plasată începând din pătratul de coordonate <var>(1,1)</var> şi pînă în pătratul de coordonate <var>(4,1)</var>. Valoarea <var>3</var> de pe ultima linie a codificării desemnează o placă de lăţime <var>3</var> şi înălţime <var>1</var>, plasată orizontal, începând din pătrăţelul de coordonate <var>(4,2)</var>.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

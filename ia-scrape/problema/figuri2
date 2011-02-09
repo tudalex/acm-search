@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>figuri2.in, figuri2.out</td><td><strong>Sursă</strong></td><td>preONI 2002</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.05 sec</td><td><strong>Limită de memorie</strong></td><td>1000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=figuri2">Vezi solutiile trimise</a></p>
+
+<h1>Figuri2<br></h1>
+
+<p>Gigel tocmai a invatat la ora de geometrie definitia patratului: un paralelogram cu toate laturile si unghiurile egale. In problema care i s-a pus lui Gigel, se va considera ca orice patrat are laturile paralele cu axele de coordonate (cu laturile matricii descrise in fisierul de intrare). De asemenea, el a invatat si definita rombului: un paralelogram cu toate laturile egale. In problema pe care o are de rezolvat, se va considera ca un romb este, de fapt, tot un patrat, rotit insa cu <var>45<sup>0</sup></var>.</p>
+
+<p>Lui Gigel i se pune la dispozitie (pe langa definitiile celor 2 figuri geometrice descrise mai sus) o matrice patratica binara (adica formata din elementele 0 si 1) si i se cere sa afle latura maxima a unui patrat format complet din elemente de 1 si continut in matrice, numarul de patrate de latura maxima continute in matrice, latura maxima a unui romb format complet din elemente de 1 si continut in matrice, precum si numarul de romburi de latura maxima.</p>
+
+<p>Scrieti un program care sa rezolve problema lui Gigel.</p>
+
+<p><img src="http://infoarena.ro/problema/figuri2?action=download&amp;file=p.jpg&amp;safe_only=true" alt=""></p>
+
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>figuri2.in</var> se afla un numar intreg <var>N</var>, reprezentand numarul de linii si de coloane ale matricii binare. Pe urmatoarele <var>N</var> linii se vor afla cate <var>N</var> valori intregi din multimea <var>{0,1}</var>, neseparate prin spatii.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>figuri2.out</var> se vor afisa <var>2</var> valori: <var>LP</var> si <var>NP</var>, separate printr-un singur spatiu, reprezentand latura maxima a unui patrat format numai din elemente de <var>1</var> si inclus in matricea descrisa in fisierul de intrare si numarul patratelor de latura maxima incluse in matrice.</p>
+
+<p>Pe a doua linie a fisierului se vor afisa alte <var>2</var> valori: <var>LR</var> si <var>NR</var>, separate tot printr-un singur spatiu, reprezentand latura maxima a unui romb format numai din elemente de <var>1</var> si inclus in matricea descrisa in fisierul de intrare si numarul romburilor de latura maxima incluse in matrice.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 255</var></li>
+<li>Un patrat cu coltul stanga-sus la coordonatele <var>(i,j)</var> si latura <var>L</var> are proprietatea ca toate patratelele unitare din matrice cu coordonate de tipul <var>(i+p,j+q)</var>, cu <var>0≤p,q&lt;L</var>, au valoarea <var>1</var>.</li>
+<li>Un romb de centru <var>(i,j)</var> si latura <var>L</var> are proprietatea ca toate patratelele unitare din matrice cu coordonate de tipul <var>(i+p,j+q)</var>, cu <var>|p|+|q|&lt;L</var>, au valoarea <var>1</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>figuri2.in</th><th>figuri2.out</th></tr><tr><td>6	<br>
+001101<br>
+111111<br>
+111111<br>
+011111<br>
+001110<br>
+111100<br></td><td>3 4<br>
+3 3<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Patratele de latura <var>3</var> au colturile stanga-sus la coordonatele (linie,coloana): <var>(2,2)</var> ; <var>(2,3)</var> ; <var>(2,4)</var> ; <var>(3,3)</var>. Romburile de latura <var>3</var> au centrele la coordonatele (linie,coloana): <var>(3,3)</var> ; <var>(3,4)</var> ; <var>(4,4)</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

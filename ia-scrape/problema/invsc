@@ -1,0 +1,60 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>invsc.in, invsc.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=154">Andrei Teodorescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">2/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=invsc">Vezi solutiile trimise</a></p>
+
+<h1>Invsc<br></h1>
+
+<p>Gigel tocmai invatase la scoala algoritmul de calcul a celui mai lung subsir crescator a unui sir de numere naturale. Si atat de mult i-a placut, incat a stat cateva zile si a aplicat acest algoritm pe mai multe siruri de numere( distincte doua cate doua). Pentru asta el se folosea de un vector auxiliar <var>v</var> cu semnficatia <var>v<sub>i</sub></var>= lungimea celui mai lung subsir crescator din sirul initial care se termina pe pozitia <var>i</var>( evident rezultatul era reprezentat de maximul din acest vector). Vrand sa ia o nota buna pentru efortul depus e a vrut sa duca profesorului sau de informatica toate calculele sale. Doar ca exact inainte sa plece Gigel de acasa ,sora sa, Georgiana, a luat toate foile cu sirurile pe care acesta aplicase alogitmul tocmai invatat si le-a rupt in bucatele. Lui Gigel i-au ramas astfel doar foile cu vectorii auxiliari folositi.</p>
+
+<h2>Cerinta</h2>
+
+<p>Neavand timp sa asambleze la loc toate foile, Gigel are nevoie de ajutorul vostru pentru a reconstitui vectorii initiali.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>invsc.in</var> va contine numarul natural nenul <var>N</var> reprezentand lungimea unui sir pe care Gigel a aplicat algoritmul tocmai invatat. Pe urmatoarele <var>N</var> linii este dat vectorul auxiliar <var>v</var> calculat de Gigel.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>invsc.out</var> va contine sirul initial de la care a plecat Gigel, adica <var>N</var> numere naturale nenule distincte cu maxim <var>8</var> cifre, fiecare numar pe o linie separata.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>N ≤ 200.000</var></li>
+<li>se garanteaza ca pentru fiecare test va exista cel putin o solutie</li>
+<li>in cazul in care exista mai multe solutii se poate afisa oricare dintre ele</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>invsc.in</th><th>invsc.out</th></tr><tr><td>5<br>
+1<br>
+2<br>
+2<br>
+2<br>
+3<br></td><td>5<br>
+10<br>
+7<br>
+6<br>
+12</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=89">Divide et Impera</a></span>
+            <a href="javascript:show_tag_list(89)" id="tag_anchor_89" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_89"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=90">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=63">Sortare</a></span>
+            <a href="javascript:show_tag_list(63)" id="tag_anchor_63" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_63"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=64">Sortare</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

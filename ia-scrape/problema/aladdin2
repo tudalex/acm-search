@@ -1,0 +1,31 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>aladdin2.in, aladdin2.out</td><td><strong>Sursă</strong></td><td>Bursele Agora 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=aladdin2">Vezi solutiile trimise</a></p>
+
+<h1>Aladdin2<br></h1>
+
+<p>Aladdin s-a gandit la un moment dat sa intre in afaceri cu covoare, deoarece crede ca acestea sunt foarte profitabile. El a reusit sa rezolve toate problemele tehnice si acum poate sa realizeze covoare de dimensiune <var>m x n</var>. Aceste covoare sunt impartite in <var>m x n</var> celule de dimensiune <var>1 × 1</var>. Fiecare celula va fi colorata cu alb sau cu negru. Datorita faptului ca vrea sa obtina covoare cu anumite proprietati magice este necesar ca orice patrat, de dimensiune <var>2 × 2</var>, sa contina doua celule colorate cu alb si doua celule colorate cu negru.</p>
+
+<h2>Cerinta</h2>
+
+<p>Aladdin doreste sa stie cate covoare diferite, de dimensiune <var>m x n</var>, care sa beneficieze de proprietatile magice se pot construi.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Fisierul de intrare <var>aladdin2.in</var> contine pe prima linie doua numere intregi <var>m</var> si <var>n</var>, separate printr-un singur spatiu, care reprezinta dimensiunile pentru un covor.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>aladdin2.out</var> trebuie sa contina o singura linie pe care se va afla un singur numar care reprezinta numarul de covoare de dimensiune <var>m x n</var> care se pot construi astfel incat acestea sa beneficieze de proprietatile magice.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>2 ≤ m, n ≤ 10000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>aladdin2.in</th><th>aladdin2.out</th></tr><tr><td>4 2</td><td>18</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

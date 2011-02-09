@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>razboi2.in, razboi2.out</td><td><strong>Sursă</strong></td><td>Lista lui Francu</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=163">Cristian Cadar</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gabitzish1"><img src="/utilizator/gabitzish1?action=download&amp;file=avatar&amp;resize=L16x16" alt="gabitzish1">Gabriel Bitis</a> <a title="Rating gabitzish1: 658" class="rating-badge-1" href="http://infoarena.ro/utilizator/gabitzish1?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gabitzish1">gabitzish1</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=razboi2">Vezi solutiile trimise</a></p>
+
+<h1>Razboi 2<br></h1>
+
+<p>In timpul razboiului, impartirea hranei poate crea numeroase probleme. Se stie ca fiecare soldat poate cara un anumit numar de pachete de hrana. Pentru a nu se crea conflicte, soldatii trebuie impartiti in <var>b</var> bastioane, astfel incat, in cazul distrugerii primelor <var>d</var> bastioane (pentru orice <var>d</var> de la <var>0</var> la <var>b-1</var>) proviziile de hrana din bastionul <var>d+1</var> sa poata fi impartite in mod exact la numarul de soldati ramasi.</p>
+
+<h2>Cerinta</h2>
+
+<p>Dandu-se <var>N</var> soldati, acestia trebuie impartiti in <var>b</var> bastioane, bastioane ce vor fi plasate de-a lungul frontului de lupta. </p>
+
+<h2>Date de intrare</h2>
+
+<p>In fisierul <var>razboi2.in</var> se afla pe prima linie <var>N</var>, iar pe linia urmatoare se gasesc <var>N</var> valori reprezentand numarul de pachete de hrana carate de fiecare soldat.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul <var>razboi2.out</var> va contine <var>b</var> linii ( <var>b</var> numarul de bastioane).Pe linia <var>i</var> se vor scrie datele despre bastionul <var>i</var>. Datele despre un bastion vor fi de forma <var>x</var><sub>i1</sub>, <var>x</var><sub>i2</sub>, ..., <var>x</var><sub>ir</sub>, unde <var>i1, i2, ...., ir</var> sunt soldatii grupati in respectivul bastion.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1000</var></li>
+<li>Un soldat va cara cel putin un pachet de hrana si cel mult <var>1000</var> de pachete</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>razboi2.in</th><th>razboi2.out</th></tr><tr><td>6<br>
+4 2 3 9 10 3<br></td><td>9 3<br>
+4<br>
+10 2<br>
+3<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Avem 6 soldati care cara cantitatile 4, 7, 3, 9, 10 si respectiv 3 pachete de hrana. Acestia au fost impartiti in 4 bastioane, astfel: In primul bastion se afla 2 soldati,unul carand 9 pachete de hrana, sicelalalt 3 pachete. Analog in bastionul 2 se afla un singur soldat care cara 4 pachete, in bastionul 3 se afla 2 soldati ce cara 10 respectiv 2 pachete, iar in bastionul 4 se afla un singur soldat ce cara 3 pachete.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

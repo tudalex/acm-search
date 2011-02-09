@@ -1,0 +1,38 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>eval.in, eval.out</td><td><strong>Sursă</strong></td><td>preONI 2007 Runda Finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=201">Constantin Jucovschi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=eval">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=eval">Vezi solutiile trimise</a></p>
+
+<h1>Eval<br></h1>
+
+<p>Se da o expresie matematica care va contine <var>N</var> variabile, numele variabilelor fiind litere mici din alfabetul englez. Expresia va contine variabile, paranteze (<var>(, )</var>), operatori binari (<code>+, -, *</code>) si operatori unari (<code>-, +, []</code>). Cu exceptia operatorului unar <var>[]</var> care semnifica operatia de ridicare la patrat, toti ceilalti operatori au semnificatia clasica. Operatorii unari au prioritatea cea mai mare, urmati de operatorul <var>*</var>; operatorii binari <var>+, -</var> au prioritatea cea mai mica. Scrieti un program care evalueaza o astfel de expresie.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie din fisierul de intrare <var>eval.in</var> se va afla numarul <var>N</var> de variabile din expresie. Urmatoarele <var>N</var> vor contine cate un numar intreg reprezentand valorile variabilelor din expresie: prima linie va reprezenta valoarea variabilei <var>a</var>, a doua linie va reprezenta valoarea variabilei <var>b</var>, etc.. Urmatoarea linie va contine un sir de caractere reprezentand expresia care trebuie evaluata.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>eval.out</var> se va afla un singur numar intreg reprezentand valoarea expresiei.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 26</var></li>
+<li>Lungimea expresie este un numar natural din intervalul <var>[1, 100.000]</var></li>
+<li>Valoarea fiecarei variabile este un numar intreg din intervalul <var>[-10<sup>1.000</sup>, 10<sup>1.000</sup>]</var></li>
+<li>Se garanteaza ca expresia este corecta din punct de vedere matematic</li>
+<li>Se garanteaza ca valoarea expresiei va fi un numar intreg din intervalul <var>[-10<sup>1.000</sup>, 10<sup>1.000</sup>]</var></li>
+<li>Pentru <var>70%</var> din teste variabilele si rezultatul expresiei vor fi numere naturale</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>eval.in</th><th>eval.out</th></tr><tr><td>3<br>
+1<br>
+2<br>
+3<br>
+[a]*(b+c)*(a*a+b*--+c)-c<br></td><td>32<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,60 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>redu.in, redu.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2010, Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=223">Cosmin Gheorghe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gcosmin"><img src="/utilizator/gcosmin?action=download&amp;file=avatar&amp;resize=L16x16" alt="gcosmin">Gheorghe Cosmin</a> <a title="Rating gcosmin: 1142" class="rating-badge-4" href="http://infoarena.ro/utilizator/gcosmin?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gcosmin">gcosmin</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=redu">Vezi solutiile trimise</a></p>
+
+<h1>Redu<br></h1>
+
+<p>Rebeca are un sir de caractere <var>S</var> de lungime <var>N</var> para, ce contine litere mici ale alfabetului englez. Rebeca poate efectua asupra sirului oricate operatii de reducere. O operatie de reducere consta in alegerea a doua caractere <var>x</var> si <var>y</var> <b>consecutive</b> (adica apar unul dupa celalat) si eliminarea lor din sir; cele doua siruri posibil ramase se lipesc la loc. Fiecare operatie are un cost ce depinde de perechea ( <var>x</var>, <var>y</var> ) aleasa, determinat de matricea <var>C</var> cu <var>26</var> de linii si <var>26</var> de coloane unde <var>C[x][y]</var> este egal cu costul eliminarii perechii ( <var>x</var>, <var>y</var> ). Rebeca vrea sa reduca tot sirul cu un cost total cat mai mic.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>redu.in</var> va contine pe prima linie numarul <var>N</var> reprezentand lungimea sirului <var>S</var>. A doua linie va contine sirul <var>S</var>. Urmatoarele <var>26</var> de linii vor contine cate <var>26</var> de numere separate prin spatii reprezentand matricea <var>C</var>. A <var>i</var>-a linie si a <var>j</var>-a coloana reprezinta costul unei operatii ( <var>x</var>, <var>y</var> ) unde <var>x</var> este a <var>i</var>-a litera mica din alfabetul englez iar <var>y</var> este a <var>j</var>-a litera mica din alfabetul englez.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>In fisierul de iesire <var>redu.out</var> veti afisa un sigur numar reprezentand costul total minim cu care Rebeca poate reduce intreg sirul <var>S</var>.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 500</var></li>
+<li><var>N</var> este par</li>
+<li><var>0 ≤ C[i][j] ≤ 10 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>redu.in</th><th>redu.out</th></tr><tr><td>4<br>
+acab<br>
+4 2 3 5 9 1 6 9 2 4 1 3 7 8 8 4 7 3 9 6 3 4 5 6 3 9<br>
+1 5 0 3 7 7 9 9 4 0 2 1 0 4 5 1 9 4 2 8 8 1 3 8 7 7<br>
+1 4 5 6 3 8 3 6 1 0 5 1 9 9 1 2 0 3 8 6 5 8 0 9 6 1<br>
+0 1 9 0 0 1 6 5 9 0 4 3 8 7 5 3 0 7 2 4 1 5 7 9 3 2<br>
+7 5 3 5 6 6 7 5 8 7 9 4 3 0 6 9 3 4 6 9 9 7 8 4 1 9<br>
+9 8 8 2 3 6 7 8 3 6 4 0 1 2 0 2 9 5 3 5 4 8 2 2 9 1<br>
+9 7 5 2 6 6 1 5 0 6 3 0 4 8 6 1 1 9 5 1 2 4 8 7 0 4<br>
+5 2 6 5 5 8 2 3 0 1 9 3 8 0 9 1 2 6 1 8 9 2 9 4 3 1<br>
+9 1 8 1 5 6 3 4 1 0 2 5 3 2 6 3 8 4 5 9 7 7 7 9 7 6<br>
+1 6 1 7 0 2 0 0 3 8 6 8 2 9 8 6 7 2 0 3 7 8 0 4 8 9<br>
+3 5 0 0 4 4 8 5 3 0 9 3 1 2 1 9 2 5 9 0 1 6 4 2 1 1<br>
+2 3 7 2 5 0 0 5 2 4 1 1 9 4 1 8 8 4 2 1 4 4 9 5 6 2<br>
+3 1 6 6 4 9 2 2 1 7 4 1 4 7 7 6 8 8 0 1 8 0 8 0 4 2<br>
+6 3 9 3 7 2 6 4 0 2 3 2 6 6 1 1 0 6 8 7 4 8 6 6 1 4<br>
+7 9 7 3 1 5 6 2 8 3 6 6 9 7 9 2 1 5 1 3 8 1 9 6 0 3<br>
+6 8 9 8 5 8 7 2 1 1 7 9 5 8 5 2 6 4 9 5 9 0 3 0 5 1<br>
+3 6 0 5 9 6 4 1 6 9 1 6 3 5 7 2 4 2 2 1 6 9 6 5 6 7<br>
+8 1 9 5 3 2 2 5 7 3 3 1 4 0 2 8 8 7 3 5 0 9 9 2 3 8<br>
+3 1 3 0 8 3 1 7 9 6 9 3 3 8 6 7 2 3 9 4 1 7 2 6 4 4<br>
+7 5 8 0 3 2 1 9 4 9 4 5 6 5 4 7 8 7 8 5 6 0 8 5 6 1<br>
+4 0 7 0 4 4 6 3 5 1 7 6 0 1 8 5 8 6 0 2 4 1 2 4 6 8<br>
+4 6 6 0 7 2 3 4 3 7 0 1 2 5 2 9 4 5 2 2 0 1 8 2 5 4<br>
+3 9 8 1 0 4 7 8 7 4 0 0 0 5 7 1 6 2 8 1 3 2 6 6 6 8<br>
+9 7 0 6 1 6 6 2 9 6 6 7 4 3 3 6 3 4 2 3 7 0 7 5 1 0<br>
+0 7 8 6 5 9 3 8 6 7 6 4 9 5 0 7 4 6 1 8 2 6 4 4 1 3<br>
+7 8 0 8 1 0 6 1 9 3 1 2 1 9 1 7 3 2 3 5 0 9 1 3 9 5<br></td><td>3<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Rebeca va efectua operatia <var>a <b>c a</b> b</var> cu costul <var>C[ 3 ][ 1 ] = 1</var>, iar sirul ramas va fi <var>ab</var>. Apoi va efectua operatia <var><b>a b</b></var> cu costul <var>C[ 1 ][ 2 ] = 2</var>, pentru a reduce tot sirul. Costul total este egal cu <var>3</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

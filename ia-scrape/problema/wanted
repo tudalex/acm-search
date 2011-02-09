@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>wanted.in, wanted.out</td><td><strong>Sursă</strong></td><td>preONI 2008, Runda finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=153">Adrian Diaconu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=wanted">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=wanted">Vezi solutiile trimise</a></p>
+
+<h1>Wanted<br></h1>
+
+<p>Dupa ce unii din voi l-au ajutat pe Gigel sa iasa din inchisoare rezolvand problema <a href="http://infoarena.ro/problema/gather">gather</a> acum politia este pe urmele lui. Exista <var>N</var> orase si se stie ca Gigel este ascuns in unul din ele. Avem o strada infinita care pentru simplitate o vom considera identica cu axa <var>Ox</var> a unui sistem cartezian de coordonate. Pentru fiecare oras <var>i</var> se stiu coordonatele (<var>X<sub>i</sub></var>,<var>Y<sub>i</sub></var>). Fiecare oras are o poteca care este paralela cu axa <var>Oy</var> si care il leaga de strada principala. Politistul Eduard se afla in acest moment in punctul de coordonate (<var>0</var>,<var>0</var>) si poate merge in orice oras folosind strada principala si potecile respective. In momentul in care ajunge intr-un oras intreaba locuitorii despre Gigel. Acestia ii vor spune daca Gigel este in orasul respectiv, daca el se afla intr-un oras cu coordonata <var>X</var> mai mare sau mai mica.<br>
+Ajutati-l pe Eduard spunandu-i care este distanta minima pe care trebuie sa o parcurga pe cazul cel mai defavorabil alegand o strategie optima de a vizita orasele. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>wanted.in</var> contine pe prima linie <var>N</var>, numarul de orase. Pe urmatoarele <var>N</var> linii se afla cate doua numere intregi <var>X<sub>i</sub></var>, <var>Y<sub>i</sub></var> reprezentand coordonatele oraselor.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>wanted.out</var> se va scrie distanta ceruta.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 200</var></li>
+<li><var>-10.000 ≤ X<sub>i</sub> ≤ 10.000</var></li>
+<li><var>0 ≤ Y<sub>i</sub> ≤ 10.000</var></li>
+<li>Nu vor exista doua orase la coordonate <var>X</var> egale</li>
+<li>Rezultatul nu va fi mai mare de <var>2 000 000 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>wanted.in</th><th>wanted.out</th></tr><tr><td>4<br>
+-10 3<br>
+-5 2<br>
+5 4<br>
+8 2<br></td><td>32<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Eduard merge in orasul <var>2</var>. Daca i se spune ca Gigel se afla intr-un oras cu coordonata <var>X</var> mai mica se va duce in <var>1</var> unde il va gasi pe Gigel. In acest caz costul va fi <var>5+2=7</var> pentru a ajunge in orasul <var>2</var> si <var>2+5+3</var> pentru a ajunge in orasul 1 deci total <var>17</var>. Altfel va merge in orasul <var>3</var> de unde, in cazul in care nu il va gasi pe Gigel trebuie sa mearga si in orasul <var>4</var>. Costul total pentru acest caz va fi <var>32</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

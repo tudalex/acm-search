@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>permutare.in, permutare.out</td><td><strong>Sursă</strong></td><td>Lot Vrancea 2010, Baraj 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=399">Andrei Dragus</a>, <a href="/cauta-probleme?tag_id%5B%5D=210">Marius Dragus</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Mishu91"><img src="/utilizator/Mishu91?action=download&amp;file=avatar&amp;resize=L16x16" alt="Mishu91">Andrei Misarca</a> <a title="Rating Mishu91: 662" class="rating-badge-1" href="http://infoarena.ro/utilizator/Mishu91?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Mishu91">Mishu91</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=permutare">Vezi solutiile trimise</a></p>
+
+<h1>Permutare<br></h1>
+
+<p>Lavinia are o afinitate pentru permutări, aşa că ea împreună cu Andrei au propus următorul joc:<br>
+Dându-se un număr <var>N</var> şi <var>N+1</var> elemente din mulţimea <var>{0, 1, -1}</var> trebuie să generaţi o permutare de lungime <var>2*N+1</var>, care să respecte următoarele condiţii:</p>
+
+
+<ul><li>Dacă elementul <var>x</var> din şirul dat este <var>0</var>, mediana primelor <var>2*x-1</var> elemente din permutare trebuie să fie egală cu media primelor <var>2*x-1</var> elemente din permutare.</li>
+<li>Dacă elementul <var>x</var> din şirul dat este <var>1</var>, mediana primelor <var>2*x-1</var> elemente din permutare trebuie să fie mai mică decât media primelor <var>2*x-1</var> elemente din permutare.</li>
+<li>Dacă elementul <var>x</var> din şirul dat este <var>-1</var>, mediana primelor <var>2*x-1</var> elemente din permutare trebuie să fie mai mare decât media primelor <var>2*x-1</var> elemente din permutare.</li>
+</ul><h2>Date de intrare</h2>
+
+<p>În fişierul de intrare <var>permutare.in</var> se găseşte numărul natural <var>N</var> cu semnificaţia din enunţ. Pe următoarea linie se vor afla <var>N+1</var> numere din mulţimea <var>{0, 1, -1}</var> având seminificaţia din enunţ.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>permutare.out</var> se vor găsi <var>2*N+1</var> numere naturale reprezentând elementele permutării cerute.</p>
+
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>N ≤ 100.000</var></li>
+<li>Pentru <var>50%</var> din teste <var>N ≤ 2.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>permutare.in</th><th>permutare.out</th></tr><tr><td>4<br>
+0 -1 0 1 0<br></td><td>3 5 6 7 4 9 2 1 8<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Pentru primele <var>3</var> elemente media este <var>14/3 = 4.66</var>, iar mediana <var>5</var>, deci mediana este mai mare decât media.<br>
+Pentru primele <var>5</var> elemente media este <var>25/5</var>, iar mediana <var>5</var>, deci mediana este egală cu media.<br>
+Pentru primele <var>7</var> elemente media este <var>36/7 = 5.1</var>, iar mediana este <var>5</var>, deci media este mai mare decât mediana.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

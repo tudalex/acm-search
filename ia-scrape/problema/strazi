@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>strazi.in, strazi.out</td><td><strong>Sursă</strong></td><td>preONI 2008 Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=161">Adrian Airinei</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=strazi">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=strazi">Vezi solutiile trimise</a></p>
+
+<h1>Strazi<br></h1>
+
+<p>Bursuc nu mai scrie poezii, nu mai canta la chitara, nici macar nu mai rezolva probleme de info si de aceea va roaga pe voi sa-l ajutati cu urmatoarea problema. Un prieten de-al lui din satul Fribsd l-a rugat sa-l ajute sa fluidizeze circulatia din sat. In sat exista <var>N</var> case numerotate de la <var>1</var> la <var>N</var> si <var>M</var> poteci pe care se poate circula doar intr-un singur sens. O poteca ce leaga casa <var>A</var> si casa <var>B</var> permite oamenilor sa ajunga de la casa <var>A</var> la casa <var>B</var> (sensul este unic, deci mergand pe aceasta poteca nu se poate ajunge de la casa <var>B</var> la casa <var>A</var>). Bursuc mai stie ca nu este posibil ca plecand de la o casa oarecare <var>A</var> si mergand doar pe potecile existente momentan sa se ajunga tot la casa <var>A</var>. Cateodata vin oaspeti in sat si acestia ar dori sa viziteze toate casele exact o singura data plimbandu-se numai pe poteci. Altfel spus ar dori sa existe o insiruire de case <var>X<sub>1</sub>, X<sub>2</sub>, X<sub>3</sub> .. X<sub>N</sub></var> astfel incat sa existe o poteca intre casele <var>X<sub>i</sub></var> si <var>X<sub>i+1</sub></var> pentru fiecare <var>i≤N-1</var>. Momentan acest lucru nu este posibil, de aceea trebuie construite un numar minim de poteci astfel incat sa existe un asemenea drum. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>strazi.in</var> contine pe prima linie doua numere <var>N</var> si <var>M</var> avand semnificatia din enunt. Urmeaza <var>M</var> linii care contin cate doua numere <var>A</var> si <var>B</var> cu semnificatia ca exista o poteca de la casa <var>A</var> la casa <var>B</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>strazi.out</var> se afla numarul <var><span class="caps">MIN</span></var> care reprezinta numarul minim de poteci ce trebuie construite. Urmeaza apoi <var><span class="caps">MIN</span></var> linii, fiecare continand cate doua numere <var>X</var> si <var>Y</var> cu semnificatia ca s-a construit o poteca de la casa <var>X</var> la casa <var>Y</var>. Pe ultima linie a fisierului se afla <var>N</var> numere naturale distincte cu valori intre <var>1</var> si <var>N</var>, reprezentand un traseu pe care oaspetii l-ar putea urma.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 255</var></li>
+<li><var>1 ≤ M ≤ 7000</var></li>
+<li>Daca exista mai multe solutii posibile, se poate afisa oricare</li>
+<li>Pentru cel putin 20% din teste <var>N ≤ 10</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>strazi.in</th><th>strazi.out</th></tr><tr><td>3 2<br>
+  1 2<br>
+  1 3<br></td><td>1<br>
+  2 3<br>
+  1 2 3<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Daca se construieste poteca de la <var>2</var> la <var>3</var> se pot vizita in ordine casele <var>1</var>, <var>2</var> si <var>3</var>, intre doua case consecutive existand o poteca ce le leaga.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

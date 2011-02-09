@@ -1,0 +1,54 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cerere.in, cerere.out</td><td><strong>Sursă</strong></td><td>preONI 2005 Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=128">Dan-Ionut Fechete</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=cerere">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cerere">Vezi solutiile trimise</a></p>
+
+<h1>Cerere<br></h1>
+
+<p>In tara maimutelor scotiene arborele genealogic este bine definit deoarece de o bucata buna de timp nu mai murit nici o maimuta. Maimutele au adesea nemultumiri insa numai anumite maimute sunt destul de inteligente incat sa le rezolve. In momentul in care maimuta numarul <var>i</var> are o nemultumire si nu o poate rezolva ea trebuie sa prezinte o cerere in scris celui de-al <var>K<sub>i</sub></var>-lea stramos al ei si numai acestuia. La randul lui, acesta (sa-l numim <var>j</var>) trebuie sa o trimita celui de-al <var>K<sub>j</sub></var>-lea stramos al sau, in cazul in care n-o poate rezolva, si tot asa pana cand o maimuta inteligenta va primi cererea.</p>
+
+<h2>Cerinta</h2>
+
+<p>Dandu-se arborele genealogic al maimutelor sa se gaseasca pentru fiecare dintre ele pe la cate maimute trece cererea pana va fi rezolvata.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare se afla un numar intreg N reprezentand numarul de maimute. A doua linie a fisierului contine <var>N</var> numere, <var>K<sub>1</sub> K<sub>2</sub> ... K<sub>n</sub></var> cu semnificatia din enunt (se garateaza ca exista al <var>K<sub>i</sub></var>-lea stramos pentru fiecare maimuta <var>i</var>). Daca <var>K<sub>i</sub></var> este <var>0</var> atunci maimuta numarul <var>i</var> poate rezolva cereri. Maimuta care este stramosul tuturor celorlalte maimute (radacina arborelui genealogic) este cea mai inteleapta maimuta si deci va putea rezolva cereri.</p>
+
+<p>Urmatoarele <var>N-1</var> linii vor contine cate doua numere, separate printr-un spatiu, <var>A</var> si <var>B</var> cu semnificatia: maimuta <var>A</var> este tatal maimutei <var>B</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fiserului de iesire se vor gasi <var>N</var> numere <var>G<sub>1</sub> G<sub>2</sub> ... G<sub>n</sub>, G<sub>i</sub></var> reprezentand numarul de maimute pe la care trece cererea maimutei numarul <sub>i</sub> (excluzand-o pe aceasta).</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 100 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>cerere.in</th><th>cerere.out</th></tr><tr><td>10<br>
+0 1 0 2 2 0 2 2 1 2<br>
+1 2<br>
+1 6<br>
+2 3<br>
+2 4<br>
+4 5<br>
+6 7<br>
+6 8<br>
+7 9<br>
+7 10<br></td><td>0 1 0 1 2 0 1 1 2 1</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=69">Parcurgere in adancime</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

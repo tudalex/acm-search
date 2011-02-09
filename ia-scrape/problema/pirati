@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>pirati.in, pirati.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2010, Runda 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/wefgef"><img src="/utilizator/wefgef?action=download&amp;file=avatar&amp;resize=L16x16" alt="wefgef">Andrei Grigorean</a> <a title="Rating wefgef: 783" class="rating-badge-4" href="http://infoarena.ro/utilizator/wefgef?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/wefgef">wefgef</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.8 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=pirati">Vezi solutiile trimise</a></p>
+
+<h1>Pirati<br></h1>
+
+<p>Piratii cei fiorosi au ajuns in Arhipelagul Mirunelor. Ei sunt in cautarea unei comori scufundate, si au la dispozitie o harta care sa-i ajute. Zona in care se afla piratii este codificata sub forma unei matrice cu <var>N</var> linii si <var>M</var> coloane, avand elementele din multimea <var>{0, 1}</var>. O zona de pamant va fi reprezentata de valoarea <var>1</var>, iar una de apa de valoarea <var>0</var>. Vom considera ca doua zone de pamant fac parte din aceeasi insula daca se poate ajunge de la o zona la cealalta mergand doar pe pamant, deplasarea facandu-se pe <var>8</var> directii. Piratii se afla in zona corespunzatoare pozitiei <var>(x1, y1)</var> de pe harta, iar comoara sa afla in zona <var>(x2, y2)</var>. Pentru a ajunge la comoara, piratii vor fi nevoiti sa traverseze anumite insule (posibil niciuna). Deoarece serviciile secrete isi desfasoara activitatea doar pe pamant, trebuie sa ii ajutati pe pirati sa ajunga la comoara traversand un numar minim de insule. Veti fi nevoiti sa raspundeti la <var>Q</var> astfel de scenarii.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>pirati.in</var> contine pe prima linie <var>3</var> numere naturale <var>N</var>, <var>M</var> si <var>Q</var>, avand semnificatia din enunt. Urmatoarele <var>N</var> linii vor contine cate <var>M</var> caractere <strong>nedespartite</strong> prin spatiu reprezentand codificarea hartii. Fiecare din urmatoarele <var>Q</var> linii vor contine <var>4</var> numere naturale <var>x1</var>, <var>y1</var>, <var>x2</var> si <var>y2</var> - coordonatele piratilor, respectiv ale comorii scufundate.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>pirati.out</var> veti afisa <var>Q</var> numere naturale, cate unul pe linie, reprezentand raspunsurile pentru fiecare scenariu posibil.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N, M ≤ 1000</var></li>
+<li><var>1 ≤ Q ≤ 2500</var></li>
+<li><var>1 ≤ x1, x2 ≤ N</var></li>
+<li><var>1 ≤ y1, y2 ≤ M</var></li>
+<li><var>Atat piratii, cat si comoara, se vor afla intr-o zona cu apa.</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>pirati.in</th><th>pirati.out</th></tr><tr><td>3 7 1<br>
+1110111<br>
+1010101<br>
+1110111<br>
+2 2 2 6<br></td><td>2<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Piratii vor fi obligati sa traverseze ambele insule.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

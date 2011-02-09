@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>dr.in, dr.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2008</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=dr">Vezi solutiile trimise</a></p>
+
+<h1>Dr<br></h1>
+
+<p>Se dau <var>N</var> puncte in plan, incluse intr-un dreptunghi <var>D=[0,Xmax]x[0,Ymax]</var> (avand coltul stanga jos la <var>(0,0)</var> si cel dreapta-sus la <var>(Xmax,Ymax)</var>). Determinati aria maxima a unui dreptunghi avand laturile paralele cu axele de coordonate, care este inclus complet in dreptunghiul <var>D</var> si care nu contine nici unul din cele <var>N</var> puncte in interior (dar poate avea puncte pe laturi).</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>dr.in</var> contine numarul intreg <var>T</var>, reprezentand numarul de teste descrise in continuare. Prima linie a unui test contine <var>3</var> numere intregi, separate prin cate un spatiu: <var>N</var>, <var>Xmax</var> si <var>Ymax</var>. Urmatoarele <var>N</var> linii din cadrul testului contin cate <var>2</var> numere intregi <var>X</var> si <var>Y</var>, reprezentand coordonatele <var>(X,Y)</var> ale cate unui punct.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>dr.out</var> veti afisa pentru fiecare test, in ordinea in care apar testele in fisierul de intrare, aria maxima a unui dreptunghi complet inclus in dreptunghiul <var>[0,Xmax]x[0,Ymax]</var> si care nu contine nici unul din cele <var>N</var> puncte in interiorul sau (decat, eventual, pe laturi).</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 10</var></li>
+<li><var>0 ≤ N ≤ 1000</var></li>
+<li><var>1 ≤ Xmax, Ymax ≤ 10000</var></li>
+<li>Coordonatele fiecarui punct sunt numere intregi din dreptunghiul <var>[0,Xmax]x[0,Ymax]</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>dr.in</th><th>dr.out</th></tr><tr><td>3<br>
+0 10 20<br>
+1 10000 10000<br>
+997 3456<br>
+4 999 88<br>
+10 40<br>
+990 40<br>
+500 80<br>
+500 8<br></td><td>200<br>
+90030000<br>
+70560</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

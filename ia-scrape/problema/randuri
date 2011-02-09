@@ -1,0 +1,51 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>randuri.in, randuri.out</td><td><strong>Sursă</strong></td><td>ONI 2007, clasa 10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=162">Constantin Galatan</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=randuri">Vezi solutiile trimise</a></p>
+
+<h1>Randuri<br></h1>
+
+<p>Andrei, un tanar cu un real talent literar, va recita la urmatoarea intalnire a cenaclului literar ultimul sau poem. O singura problema are Andrei: poemul are prea multe randuri si este constient ca nimeni nu va avea rabdare sa-l asculte pana la capat. Pentru ca nu mai are timp sa-l rescrie, Andrei s-a hotarat sa elimine randuri din poem. Totusi, nu va elimina randuri la intamplare, ci le va alege astfel incat valoarea artistica a poemului sa nu se diminueze. Dupa indelungi framantari, poetul a descoperit criteriul de eliminare: un rand se poate elimina doar daca imediat inaintea sa se afla un rand (sa-l notam <var>p</var>), iar imediat dupa el se afla un alt rand (sa-l notam <var>u</var>) astfel incat randurile <var>p</var> si <var>u</var> au muzicalitatea strict mai mare decat <var>6</var>. Nu intrebati de ce <var>6</var>, doar Andrei stie de ce. </p>
+
+<p>Ce intelege poetul prin muzicalitatea a doua randuri ? <br>
+Fie randurile: <var><ins>alin</ins>uta<ins><code> </code>e</ins>st<ins>e<code> </code></ins> a<ins>c</ins>asa</var> si <var><ins>alin<code> </code></ins>m<ins>e</ins>rg<ins>e<code> </code>c</ins>u noi</var>. Muzicalitatea este egala cu <var>9</var>, adica exact numarul caracterelor subliniate: <var>alin ee c</var>. Asadar, muzicalitatea reprezinta dimensiunea celei mai lungi succesiuni formata din caractere ce apar in ordinea din succesiune atat in primul rand, cat si in cel de al doilea, pe pozitii nu neaparat consecutive.<br>
+Astfel, randul care este precedat, respectiv urmat de acestea doua poate fi eliminat, pentru ca <var>9&gt;6</var>. Evident, daca eliminam randul existent intre <var>p</var> si <var>u</var>, randurile <var>p</var> si <var>u</var> devin consecutive.</p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati numarul maxim de randuri care pot fi eliminate, respectand criteriul stabilit de poet.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>randuri.in</var> contine randurile poemului, cate unul pe linie. </p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>randuri.out</var> va contine o singura linie pe care va fi scris numarul maxim de randuri care pot fi eliminate, respectand criteriul stabilit de poet.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>Randurile sunt formate din maxim <var>100</var> caractere cu codul <span class="caps">ASCII </span>&lt; <var>127</var>.</li>
+<li>Nu exista randuri goale.</li>
+<li>Fisierul de intrare contine cel mult <var>100</var> de randuri.</li>
+<li>Orice linie din fisierul de intrare se termina cu marcajul de sfarsit de linie (<code>newline</code>).</li>
+<li>Caracterul <code>newline</code> nu va fi va fi considerat ca facand parte din rand. </li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>randuri.in</th><th>randuri.out</th></tr><tr><td>Te-nalta pana-n nori<br>
+Tot mai sus,<br>
+Tot mai departe<br>
+Ca siragul de cocori<br></td><td>2<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Muzicalitatea randurilor:<br><var><ins>T</ins>e-nal<ins>ta<code> </code>pa</ins>na-n no<ins>r</ins>i</var><br><var><ins>T</ins>o<ins>t</ins> m<ins>a</ins>i<ins> </ins>de<ins>par</ins>te</var><br>
+este <var>7</var> (vezi caracterele subliniate).<br>
+Prin urmare poate fi eliminat randul<br><var>Tot mai sus,</var><br>
+Dupa eliminarea acestui rand, obtinem:<br><var>Te-nalta pana-n nori</var><br><var>Tot mai departe</var><br><var>Ca siragul de cocori</var><br>
+Muzicalitatea randurilor:<br><var>Te-n<ins>al</ins>ta<ins> </ins>pana-n<ins> </ins>n<ins>ori</ins></var><br><var>Ca sir<ins>a</ins>gu<ins>l</ins><ins> </ins>de<ins> </ins>coc<ins>ori</ins></var><br>
+este <var>7</var>. Prin urmare, se poate elimina si randul:<br><var>Tot mai departe</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

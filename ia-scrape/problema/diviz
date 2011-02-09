@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>diviz.in, diviz.out</td><td><strong>Sursă</strong></td><td>preONI 2007, Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=diviz">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=diviz">Vezi solutiile trimise</a></p>
+
+<h1>Diviz<br></h1>
+
+<p>Fie un numar natural <var>N</var> dat. Sa se determine cate numere naturale distincte nenule sunt subsiruri ale numarului <var>N</var>, sunt divizibile cu <var>K</var> si au intre <var>A</var> si <var>B</var> cifre.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului <var>diviz.in</var> contine trei numere naturale, <var>K</var>, <var>A</var> si <var>B</var>. Pe a doua linie se gaseste numarul <var>N</var> de cel mult <var>200</var> de cifre.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Prima linie a fisierului <var>diviz.out</var> contine numarul de subsiruri existente cu proprietatile cerute, modulo <var>30103</var> ( adica restul impartirii numarului de subsiruri la <var>30103</var> ).</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 &lt; K ≤ 100</var></li>
+<li><var>0 &lt; A ≤ B ≤ numarul de cifre ale numarului N</var></li>
+<li>Orice numar natural trebuie sa inceapa cu cifra nenula</li>
+<li>Un numar <var>X</var> este subsir al numarului <var>Y</var> daca si numai daca <var>X</var> se poate obtine din <var>Y</var> in urma stergerii unor cifre din acesta. De exemplu, numarul 508 este subsir al numarului 1530998, pentru ca se poate obtine din 1530998 prin stergerea cifrelor 1, 3, 9 si 9.</li>
+<li>Orice numar <var>X</var> este propriul lui subsir</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>diviz.in</th><th>diviz.out</th><th>diviz.in</th><th>diviz.out</th></tr><tr><td>8 1 2<br>
+24<br></td><td>1<br></td><td>3 3 5<br>
+12055<br></td><td>4</td></tr></table><h3>Explicatie</h3>
+
+<p>Pentru primul exemplu, singurul numar posibil este <var>24</var>. Cele 4 posibilitati pentru al doilea exemplu sunt <var>105</var>, <var>120</var>, <var>255</var>, <var>2055</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

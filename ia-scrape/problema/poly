@@ -1,0 +1,35 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>poly.in, poly.out</td><td><strong>Sursă</strong></td><td>Autumn Warmup 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=157">Vlad Dumitriu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=poly">Vezi solutiile trimise</a></p>
+
+<h1>Poly<br></h1>
+
+
+<p>Poly, o fetita careia ii place matematica, a vazut urmatoarea multime: <var>{2, 3, 7, 11, 19, 23, 37}</var>. La un moment dat ea scrie pe o foaie <var>N</var> numere intregi oarecare. Poly, vazand multimea gasita de ea si sirul de <var>N</var> numere s-a intrebat care ar fi subsirul de lungime maxima, unde oricare doua elemente adiacente (din subsir) au cel mai mare divizor comun un numar care nu se divide cu nici un numar din multimea vazuta de ea: <var>{2, 3, 7, 11, 19, 23, 37}</var>. Chiar daca este talentata la matematica, si-a dat seama ca are nevoie de un program pe calculator.</p>
+
+<h2>Cerinta</h2>
+
+<p>Dandu-se <var>N</var>, numarul de elemente ale sirului scris de ea si sirul propriu-zis, se cere lungimea subsirului maximal cu proprietatile de mai sus.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fiserului <var>poly.in</var> se gaseste numarul <var>N</var>. A doua linie contine <var>N</var> numere separate printr-un singur spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fiserul <var>poly.out</var> v-a contine un singur numar care reprezinta raspunsul.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 30000</var></li>
+<li>Numerele din sir sunt cuprinse intre <var>2</var> si <var>10<sup>8</sup></var></li>
+<li>Pentru <var>40%</var> din teste, <var>N ≤ 1000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>poly.in</th><th>poly.out</th></tr><tr><td>5<br>
+2 2 3 4 5<br></td><td>4</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

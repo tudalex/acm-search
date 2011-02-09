@@ -1,0 +1,81 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>delay.in, delay.out</td><td><strong>Sursă</strong></td><td>Lot 2002</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><div class="hidden">5/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=delay">Vezi solutiile trimise</a></p>
+
+<h1>Delay<br></h1>
+
+<table style="margin:0.5em auto;" cellspacing="0"><tr><td align="center" style="background-color:#F8EABA;"><img src="http://infoarena.ro/template/badtests?action=download&amp;file=attention.gif&amp;safe_only=true" alt="" class="left" style="float:left"><em>Testele pentru aceasta problema nu sunt destul de bine construite pentru a departaja corect solutii ineficiente sau gresite.</em><br><a href="http://infoarena.ro/implica-te/imbunatatire-teste"><strong>Intra aici</strong></a> <em>daca vrei sa ne ajuti sa imbunatatim calitatea testelor pentru aceasta problema!</em></td></tr></table><p>Gigel a cumparat <var>N</var> calculatoare cu care vrea sa deschida un Internet Cafe. Pentru aceasta, el trebuie sa conecteze toate calculatoarele in retea, in asa fel incat oricare doua calculatoare sa poata comunica intre ele, direct sau indirect. Comunicatia dintre calculatoare se realizeaza prin intermediul cablurilor de legatura. Un cablu leaga doua calculatoare, iar transferul de date prin cablu se poate realiza in ambele sensuri. Fiind la inceput si neavand prea multi bani, Gigel a legat calculatoarele intre ele astfel incat intre oricare doua calculatoare exista un singur traseu pe care se pot transmite date.<br>
+Curand si-a dat seama ca transferul de date se realizeaza cu viteza foarte mica. Acest lucru se datoreaza faptului ca fiecare pachet de date care trece prin calculatorul <var>i</var> este pus sa astepte un timp <var>T<sub>i</sub></var>. In aceste conditii, timpul dupa care un pachet de date ajunge de la un calculator la altul este egal cu suma timpilor de asteptare ai fiecarui calculator de pe traseu (inclusiv ai calculatoarelor sursa si destinatie).<br>
+Din cand in cand, configuratia anumitor calculatoare este modificata si timpii de asteptare corespunzatori acelor calculatoare se schimba. Cum Gigel are grija foarte mare de calculatoarele sale, el trebuie sa fie mereu informat in legatura cu starea retelei. Mai precis, el trebuie sa poata afla repede care este timpul de transmitere a unui pachet de date intre oricare doua calculatoare din reteaua sa.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care trateaza in mod eficient urmatoarele doua tipuri de operatii:</p>
+
+
+<ul><li>tipul 1: modificarea timpului de asteptare al unui calculator</li>
+<li>tipul 2: determinarea timpului de transmitere a unui pachet de date intre doua calculatoare specificate.</li>
+</ul><h2>Date de Intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>delay.in</var> se afla numarul <var>N</var> de calculatoare. Pe fiecare dintre urmatoarele <var>N</var> linii se afla cate un numar intreg <var>T<sub>i</sub></var>, reprezentand timpul initial de asteptare al calculatorului corespunzator. Pe urmatoarele <var>N-1</var> linii se afla cate doua numere intregi <var>a</var> si <var>b</var>, reprezentand numerele a doua calculatoare legate printr-un cablu direct. Pe urmatoarea linie se afla numarul intreg <var>M</var>, reprezentand numarul de operatii descrise in continuare. Fiecare dintre urmatoarele <var>M</var> linii contine cate <var>3</var> numere intregi separate prin spatii: <var>a b c</var>.</p>
+
+
+<ul><li>Daca <var>a=1</var>, atunci <var>b</var> reprezinta numarul de ordine al unui calculator nou configurat, iar <var>c</var> reprezinta noul timp de asteptare al calculatorului <var>b</var></li>
+<li>Daca <var>a=2</var>, atunci <var>b</var> si <var>c</var> reprezinta numerele de ordine a doua calculatoare diferite, iar programul va trebui sa afiseze in fisierul de iesire timpul de transmitere a unui pachet de date intre calculatoarele <var>b</var> si <var>c</var></li>
+</ul><h2>Date de Iesire</h2>
+
+<p>In fisierul <var>delay.out</var> veti afisa, pe cate o linie separata, timpii determinati in cazul fiecarei operatii de tipul <var>2</var>, in ordinea in care sunt intalnite in fisierul de intrare. Atunci cand calculati timpul de transmitere a unui pachet de date intre doua calculatoare, trebuie sa considerati timpii de asteptare de la momentul respectiv (care sunt determinati de valorile initiale sau de operatiile de tipul <var>1</var> descrise in fisierul de intrare inaintea operatiei curente).</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 16.000</var></li>
+<li><var>0 ≤ T<sub>i</sub> ≤ 1.000</var></li>
+<li><var>2 ≤ M ≤ 200.000</var></li>
+<li>Calculatoarele sunt numerotate de la <var>1</var> la <var>N</var></li>
+<li>In fisierul de intrare va exista cel putin o operatie de tipul <var>2</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>delay.in</th><th>delay.out</th></tr><tr><td>5<br>
+1<br>
+2<br>
+3<br>
+4<br>
+5<br>
+1 2<br>
+1 3<br>
+2 4<br>
+3 5<br>
+6<br>
+2 1 4<br>
+2 3 1<br>
+1 1 100<br>
+2 1 4<br>
+2 2 4<br>
+2 2 3<br></td><td>7<br>
+4<br>
+106<br>
+6<br>
+105</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=82">Lowest Common Ancestor</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=69">Parcurgere in adancime</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=84">Arbori de intervale</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=83">Range Minimum Query</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

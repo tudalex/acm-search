@@ -1,0 +1,37 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cabane.in, cabane.out</td><td><strong>Sursă</strong></td><td>Lot 2005</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=120">Marius Andrei</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>5 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cabane">Vezi solutiile trimise</a></p>
+
+<h1>Cabane<br></h1>
+
+<p>Balaurul Arhirel este pus in fata unei mari dileme. Fara sa vrea, a ajuns in muntii Romaniei si trebuie sa parcurga un traseu de-a lungul caruia sa viziteze <var>N</var> cabane. El poate porni de la orice cabana, dar trebuie sa treaca pe la fiecare cabana exact o data. <br>
+Cabanele sunt numerotate de la <var>1</var> la <var>N</var>, iar fiecare se afla la o inaltime egala cu indicele sau exprimat in metri. Deplasarea intre oricare doua cabane se face in linie dreapta (creste sau scade constant). Problema este ca Balaurul nu poate urca sau cobori mai mult de <var>K</var> metri intre oricare doua cabane consecutive de pe traseu, deci traseul trebuie sa fie bine ales. <br>
+Norocul Balaurului este ca exista multe posibilitati. Ghinionul vostru este ca Balaurul stie cate posibilitati sunt si vrea sa vada daca si voi stiti.<br>
+Pentru valorile <var>N</var> si <var>K</var> date, determinati numarul de posibilitati de a vizita fiecare dintre cele <var>N</var> cabane exact o data, astfel incat diferenta de nivel (in valoare absoluta) dintre oricare doua cabane vizitate consecutiv sa fie de maxim <var>K</var> metri. Rezultatul trebuie sa fie dat modulo <var>30103</var> (restul impartirii la <var>30103</var>).</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>cabane.in</var> va contine pe prima linie valorile <var>N</var> si <var>K</var> separate printr-un spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>cabane.out</var> va contine o singura linie pe care va fi scris numarul total de posibilitati modulo <var>30103</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>K ≤ N ≤ 200</var></li>
+<li><var>1 ≤ K ≤ 6</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>cabane.in</th><th>cabane.out</th></tr><tr><td>4 2<br></td><td>12<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Din cele 24 de trasee posibile 12 sunt valide:<br><var>1 2 3 4, 1 2 4 3, 1 3 2 4, 1 3 4 2,</var><br><var>2 1 3 4, 2 4 3 1, 3 1 2 4, 3 4 2 1,</var><br><var>4 2 1 3, 4 2 3 1, 4 3 1 2, 4 3 2 1</var><br>
+Iar celelalte 12 nu sunt. De exemplu <var>2 1 4 3</var> nu e valid pentru ca intre cabana 1 si cabana 4 este o diferenta de 3 metri.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>v2d.in, v2d.out</td><td><strong>Sursă</strong></td><td>ONI 2010 - Baraj</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Mishu91"><img src="/utilizator/Mishu91?action=download&amp;file=avatar&amp;resize=L16x16" alt="Mishu91">Andrei Misarca</a> <a title="Rating Mishu91: 662" class="rating-badge-1" href="http://infoarena.ro/utilizator/Mishu91?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Mishu91">Mishu91</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>4 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=v2d">Vezi solutiile trimise</a></p>
+
+<h1>V2d<br></h1>
+
+<p>Cei <var>N<sup>2</sup></var> vrăjitori de la Universitatea Nevăzută îşi au birourile într-o matrice pătratică având latura egală cu <var>N</var>. În fiecare celulă <var>(i, j)</var> a matricei <var>(0 ≤ i, j ≤ N - 1)</var> se află biroul unui vrăjitor. În continuare vom identifica vrăjitorii prin coordonatele biroului lor. Vrăjitorii se află în conflict permanent, deoarece fiecare vrea să ocupe poziţia de Arhicancelar al universităţii. Acest conflict se desfăşoară pe parcursul a <var>T</var> zile (numerotate de la <var>1</var> la <var>T</var>).</p>
+
+<p>În fiecare zi <var>z</var> <var>(1 ≤ z ≤ T)</var>, fiecare vrăjitor <var>(i, j)</var> are o putere de atac <var>P(z, i, j)</var>. Un vrăjitor <var>(i, j)</var> atacă toţi ceilalţi <var>N<sup>2</sup> - 1</var> vrăjitori, iar puterea cu care vrăjitorul <var>(i, j)</var> atacă un vrăjitor <var>(p, q)</var> în ziua <var>z</var> este <var><acronym title="z, i, j, p, q">PA</acronym> = P(z, i, j) - dist(i, j, p, q)</var>. <var>dist(i, j, p, q)</var> reprezintă distanţa dintre vrăjitorii <var>(i, j)</var> şi <var>(p, q)</var>, şi este definită ca <var>|i - p| + |j - q|</var>. Efectul atacurilor resimţit de un vrăjitor <var>(p, q)</var> în ziua <var>z</var> este <var>Pmax(z, p, q) = max{<acronym title="z, i, j, p, q">PA</acronym> | (i, j) ≠ (p, q) şi 0 ≤ i, j ≤ N - 1}</var>. Puterea de atac a unui vrăjitor <var>(i, j)</var> în ziua <var>z + 1</var> va fi: <var>P(z + 1, i, j) = z + 1 + ((P(z, i, j) + z * Pmax(z, i, j)) modulo Q)</var>. </p>
+
+<p>Fie <var>S</var> suma valorilor <var>P(T + 1, i, j) (0 ≤ i, j ≤ N - 1)</var>. Determinaţi valoarea <var>(S modulo Q)</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fişierului de intrare <var>v2d.in</var> conţine numerele naturale <var>N</var>, <var>T</var> şi <var>Q</var>, separate prin câte un spaţiu. Următoarele <var>N</var> linii conţin valorile puterilor de atac ale vrăjitorilor la începutul zilei <var>1</var>. Fiecare dintre aceste linii conţine <var>N</var> numere naturale, separate prin spaţii. Al <var>C</var>-lea număr <var>(1 ≤ C ≤ N)</var> de pe a <var>L</var>-a <var>(1 ≤ L ≤ N)</var> dintre aceste linii reprezintă valoarea <var>P(1, L - 1, C - 1)</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>v2d.out</var> veţi afişa suma valorilor <var>P(T + 1, i, j) (0 ≤ i, j ≤ N - 1)</var>, <var>modulo Q</var>.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 500</var></li>
+<li><var>1 ≤ T ≤ 50</var></li>
+<li><var>2 ≤ Q ≤ 30 000</var></li>
+<li><var>1 ≤ P(1, i, j) ≤ Q + T</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>v2d.in</th><th>v2d.out</th><th>v2d.in</th><th>v2d.out</th></tr><tr><td>3 10 10<br>
+1 2 3<br>
+4 5 6<br>
+7 8 9<br></td><td>2<br></td><td>5 50 30000<br>
+1000 900 800 700 30050<br>
+900 800 700 600 1000<br>
+800 700 600 1000 900<br>
+700 600 1000 900 800<br>
+600 1000 900 800 700<br></td><td>24385<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

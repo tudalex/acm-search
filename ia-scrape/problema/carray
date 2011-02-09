@@ -1,0 +1,63 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>carray.in, carray.out</td><td><strong>Sursă</strong></td><td>Lot Alba Iulia 2010, Baraj 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mathboy"><img src="/utilizator/mathboy?action=download&amp;file=avatar&amp;resize=L16x16" alt="mathboy">Dragos-Alin Rotaru</a> <a title="Rating mathboy: 510" class="rating-badge-3" href="http://infoarena.ro/utilizator/mathboy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mathboy">mathboy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=carray">Vezi solutiile trimise</a></p>
+
+<h1>Carray<br></h1>
+
+<p>Un vector este o secvenţă de numere naturale. Iniţial se dau <var>N</var> vectori, numerotaţi de la <var>1</var> la <var>N</var>, fiecare din ei conţinând câte un singur număr natural. Apoi se definesc alţi <var>M</var> vectori (numerotaţi de la <var>N+1</var> la <var>N+M</var>). Vectorul <var>i</var> <var>(N+1≤i≤N+M)</var> se obţine prin concatenarea vectorilor cu numerele <var>a(i)</var> şi <var>b(i)</var>. Prin concatenare înţelegem adăugarea elementelor lui <var>b(i)</var>, în ordine, după ultimul element din <var>a(i)</var>. În urma concatenării vectorii <var>a(i)</var> şi <var>b(i)</var> nu se modifică (practic, doar se creează un vector nou fără modificarea vectorilor existenţi).</p>
+
+<p>Considerând cei <var>N+M</var> vectori definiţi anterior, trebuie să răspundeţi la <var>Q</var> întrebări de tipul <var>(i,p)</var>, având semnificaţia:<br>
+Care este numărul de pe poziţia <var>p</var> din vectorul cu numărul <var>i</var> ? Numerele dintr-un vector sunt numerotate de la <var>1</var> la numărul de elemente din cadrul vectorului.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fişierului de intrare <var>carray.in</var> conţine trei numere naturale: <var>N</var>, <var>M</var> şi <var>Q</var>. Următoarele <var>N</var> linii conţin fiecare câte un număr natural. Numărul de pe a <var>i</var>-a dintre aceste linii reprezintă numărul conţinut în vectorul <var>i</var>. Următoarele <var>M</var> linii conţin fiecare câte două numerele naturale. A <var>i</var>-a dintre aceste <var>M</var> linii conţine valorile <var>a(N+i)</var> şi <var>b(N+i)</var> (pe baza cărora se construieşte vectorul <var>N+i</var>). Următoarele <var>Q</var> linii conţin fiecare câte două numere naturale <var>i</var> şi <var>p</var>, reprezentând o întrebare <var>(i,p)</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>carray.out</var> veţi afişa, în ordine, pentru fiecare întrebare <var>(i,p)</var> din fişierul de intrare, numărul care se află pe poziţia <var>p</var> din vectorul <var>i</var>.</p>
+
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 20 000</var></li>
+<li><var>0 ≤ M ≤ 500 000</var></li>
+<li><var>1 ≤ Q ≤ 20 000</var></li>
+<li><var>1 ≤ a(i) &lt; i</var> şi <var>1 ≤ b(i) &lt; i</var> <var>(pentru N+1 ≤ I ≤ N + M)</var></li>
+<li>În teste, numărul de elemente ale fiecărui vector va fi cel mult egal cu <var>10<sup>16</sup></var>.</li>
+<li>Argumentul <var>i</var> al unei întrebări <var>(i, p)</var> este cuprins între <var>1</var> şi <var>N+M</var>.</li>
+<li>Argumentul <var>p</var> al unei întrebări <var>(i, p)</var> este cuprins între <var>1</var> şi numărul de elemente din vectorul <var>i</var>.</li>
+<li>Numărul natural conţinut de fiecare din vectorii <var>1,...,N</var> este între <var>0</var> şi <var>100 000 000</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>carray.in</th><th>carray.out</th></tr><tr><td>3 4 5 <br>
+3 <br>
+6 <br>
+9<br>
+1 2<br>
+4 2<br>
+5 5<br>
+6 3<br>
+1 1<br>
+4 2<br>
+5 2<br>
+6 4<br>
+7 6<br></td><td>3<br>
+6<br>
+6<br>
+3<br>
+6<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Vectorii <var>4, 5, 6 şi 7</var> conţin următoarele elemente, in ordine:</p>
+
+
+<ul><li>vectorul <var>4: 3, 6</var></li>
+<li>vectorul <var>5: 3, 6, 6</var></li>
+<li>vectorul <var>6: 3, 6, 6, 3, 6, 6</var></li>
+<li>vectorul <var>7: 3, 6, 6, 3, 6, 6, 9</var></li>
+</ul><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

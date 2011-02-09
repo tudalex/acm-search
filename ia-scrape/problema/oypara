@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>oypara.in, oypara.out</td><td><strong>Sursă</strong></td><td>Lot 2006 Alba</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=148">Alexandru Mosoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=oypara">Vezi solutiile trimise</a></p>
+
+<h1>Oypara<br></h1>
+
+<p>In sistemul cartezian <var>xOy</var> se dau <var>N</var> segmente paralele cu axa <var>Oy</var>. Fiecare segment este determinat de extremitatile sale ( <var>x</var>, <var>y1</var> ) si ( <var>x</var>, <var>y2</var>).</p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se determine o dreapta care intersecteaza fiecare segment in exact cate un punct.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>oypara.in</var> contine pe prima linie un numar natural <var>N</var>, reprezentand numarul de segmente. Pe urmatoarele <var>N</var> linii sunt descrise cele <var>N</var> segmente. Mai exact, pe linia <var>i+1</var>, se afla <var>3</var> numere intregi separate prin cate un spatiu <var>x</var> <var>y1</var> <var>y2</var> care reprezinta segmentul <var>i</var>, avand extremitatile ( <var>x</var>, <var>y1</var> ) si ( <var>x</var>, <var>y2</var> ).</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului <var>oypara.out</var> se vor scrie patru numere intregi separate prin cate un spatiu <var>A1</var> <var>B1</var> <var>A2</var> <var>B2</var>. Punctele distincte ( <var>A1</var>, <var>B1</var> ) si ( <var>A2</var>, <var>B2</var> ) determina dreapta ceruta.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>Pot exista trei extremitati de segmente coliniare.</li>
+<li><var>3</var> ≤ <var>N</var> ≤ <var>100 000</var></li>
+<li><var>1</var> ≤ <var>x</var> ≤ <var>1 000 000 000</var></li>
+<li><var>1</var> ≤ <var>y1</var> &lt; <var>y2</var> ≤ <var>1 000 000 000</var></li>
+<li><var>1</var> ≤ <var>A1</var>, <var>B1</var>, <var>A2</var>, <var>B2</var> ≤ <var>100 000 000</var></li>
+<li>Punctele ( <var>A1</var>, <var>B1</var> ) si ( <var>A2</var>, <var>B2</var> ) trebuie sa fie distincte.</li>
+<li><var>A1</var>, <var>A2</var> reprezinta abscisele (coordonatele pe axa Ox).</li>
+<li><var>B1</var>, <var>B2</var> reprezinta ordonatele (coordonatele pe axa Oy).</li>
+<li>Daca dreapta trece printr-o extremitate a unui segment, se considera ca intersecteaza segmentul respectiv.</li>
+<li>Pentru datele de test exista intotdeauna solutie.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>oypara.in</th><th>oypara.out</th></tr><tr><td>5<br>
+  3 1 5<br>
+  7 6 12<br>
+  9 3 9<br>
+  10 8 10<br>
+  14 8 14<br></td><td>1 3 14 12<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

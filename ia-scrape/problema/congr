@@ -1,0 +1,48 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>congr.in, congr.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2010</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=215">Marius Stroe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Marius"><img src="/utilizator/Marius?action=download&amp;file=avatar&amp;resize=L16x16" alt="Marius">Marius Stroe</a> <a title="Rating Marius: 627" class="rating-badge-4" href="http://infoarena.ro/utilizator/Marius?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Marius">Marius</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.8 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=congr">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=congr">Vezi solutiile trimise</a></p>
+
+<h1>Congr<br></h1>
+
+<p>Se dau <var>2P - 1</var> numere naturale <var>a<sub>1</sub></var>, <var>a<sub>2</sub></var>, ..., <var>a<sub>2P-1</sub></var>. Se cere să se determine <var>P</var> dintre acestea astfel încât suma lor să fie divizibilă cu <var>P</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>congr.in</var> conţine pe prima linie numărul natural <var>P</var>. Următoarea linie conţine cele <var>2P - 1</var> numere separate printr-un spaţiu.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>congr.out</var> conţine o singură linie cu <var>P</var> numere, separate printr-un spaţiu, reprezentând indexul elementelor alese din şirul dat.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>P</var> este un număr prim.</li>
+<li><var>1 ≤ P ≤ 300 000</var>.</li>
+<li><var>0 ≤ a<sub>i</sub> &lt; 10<sup>6</sup></var>.</li>
+<li>Pentru <var>20%</var> din punctaj <var>P &lt; 300</var>.</li>
+<li>Pentru <var>50%</var> din punctaj <var>P &lt; 2000</var>.</li>
+<li>Numerele din fişierul de ieşire pot fi afişate în orice ordine.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>congr.in</th><th>congr.out</th></tr><tr><td>5<br>
+8 7 9 2 4 5 7 2 8<br></td><td>1 2 3 8 5<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Au fost alese numerele de pe poziţiile <var>1</var>, <var>2</var>, <var>3</var>, <var>5</var> şi <var>8</var> având suma <var>8 + 7 + 9 + 4 + 2 = 30</var>, sumă ce este divizibilă cu <var>5</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=45">Diverse</a></span>
+            <a href="javascript:show_tag_list(45)" id="tag_anchor_45" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_45"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=344">Algoritmi randomizati</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

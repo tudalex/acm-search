@@ -1,0 +1,38 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cd.in, cd.out</td><td><strong>Sursă</strong></td><td>Lot Juniori 2010 - Baraj 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=184">Doru Popescu Anastasiu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/GheorgheMihai"><img src="/utilizator/GheorgheMihai?action=download&amp;file=avatar&amp;resize=L16x16" alt="GheorgheMihai">Gheorghe Mihai</a> <a title="Rating GheorgheMihai: 787" class="rating-badge-1" href="http://infoarena.ro/utilizator/GheorgheMihai?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/GheorgheMihai">GheorgheMihai</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cd">Vezi solutiile trimise</a></p>
+
+<h1>Cd<br></h1>
+
+<p>Ionică a strâns foarte multe CD-uri cu jocuri, muzică, filme, etc. pe care le are aşezate în <var>N</var> cutii, codificate prin <var>1, 2, ..., N</var>. Pe la Ionică vine în vizită vărul lui, Florin, care tocmai câştigase un concurs de matematică. Ca să-i mai taie din elan, Ionică îi propune lui Florin să pună o parte din CD-uri într-o ladă mai mare, astfel încât să se ia din fiecare cutie cel puţin câte un CD şi la sfârşit să rămână în fiecare cutie cel puţin un <span class="caps">CD.</span><br>
+Pentru a complica problema, Ionică nu îi spune lui Florin câte CD-uri sunt în fiecare cutie, ci îi spune că are în total <var>S</var> CD-uri şi că, dacă ia din fiecare cutie un număr de CD-uri şi le pune în altă cutie va obţine în final acelaşi număr de CD-uri în toate cutiile.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Să se scrie un program care cunoscând <var>N</var>, <var>S</var> şi numărul de CD-uri mutate din fiecare cutie, determină numărul <var>K</var> de modalităţi distincte de introducere a CD-urilor în ladă, respectând regula din enunţ.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>cd.in</var> conţine pe prima linie numerele naturale <var>N</var> şi <var>S</var> separate printr-un spaţiu, iar pe următoarele <var>N</var> linii perechile de numere naturale <var>y<sub>i</sub> c<sub>i</sub></var> separate printr-un spaţiu, corespunzătoare numărului de CD-uri <var>y<sub>i</sub></var>, care se pun din cutia <var>i</var> în cutia <var>c<sub>i</sub></var>, <var>i = 1, 2, ..., N</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>cd.out</var> se va afişa pe prima linie numărul <var>K</var> modulo 9901.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 300</var></li>
+<li>În fiecare cutie sunt cel mult 1000 CD-uri.</li>
+<li>S modulo N = 0</li>
+<li>O modalitate de alegere a CD-urilor ce vor fi puse în ladă diferă de o altă modalitate, dacă din cel puţin o cutie se alege un număr diferit de CD-uri.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>cd.in</th><th>cd.out</th></tr><tr><td>3 12<br>
+3 2<br>
+2 3<br>
+1 1<br></td><td>20<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

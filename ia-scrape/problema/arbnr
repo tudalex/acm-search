@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>arbnr.in, arbnr.out</td><td><strong>Sursă</strong></td><td>Lot Iasi 2008, Baraj 6</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=37">Emilian Miron</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>3 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=arbnr">Vezi solutiile trimise</a></p>
+
+<h1>Arbnr<br></h1>
+
+<p>Un arbore cu radacina este format dintr-o multime de noduri, dintre care un nod special denumit radacina. Fiecare nod are precizata o lista ordonata de noduri fiu, iar fiecare nod diferit de radacina este fiul al exact unui alt nod denumit parinte. Radacina nu are parinte. Subarborele unui nod <var>X</var> este un arbore cu radacina obtinut eliminand orice nod care nu este fiu direct sau indirect al nodului <var>X</var> si considerand nodul <var>X</var> radacina. Fie doi arbori cu radacina <var>A</var>, <var>B</var> cu radacinile <var>rA</var> si respectiv <var>rB</var>. Fie <var>a<sub>1</sub>a<sub>2</sub>a<sub>3</sub>...a<sub>k</sub></var> lista ordonata a fiilor lui <var>rA</var>, <var>b<sub>1</sub>b<sub>2</sub>b<sub>3</sub>...b<sub>p</sub></var> lista ordonata a fiilor lui <var>rB</var>. Spunem ca arborii <var>A</var>, <var>B</var> sunt egali daca <var>p=k</var> si pentru orice <var>1 ≤ i ≤ k</var> subarborii cu radacinile <var>a<sub>i</sub></var> si <var>b<sub>i</sub></var> sunt egali. Spunem ca arborele <var>A</var> apare in arborele <var>B</var> daca exista un nod <var>nB</var> din <var>B</var> astfel incat subarborele cu radacina <var>nB</var> este egal cu arborele <var>A</var>.</p>
+
+<p>Gigel are o afacere cu o multime de <var>T</var> arbori cu radacina (denumiti model) <var>A<sub>1</sub></var>, <var>A<sub>2</sub></var>, ..., <var>A<sub>T</sub></var>. Gigel vinde numai arbori cu radacina avand <var>N</var> noduri in care nu apar nici unul dintre arborii model.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care sa calculeze cati arbori cu radacina cu <var>N</var> noduri distincti poate vinde Gigel.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>arbnr.in</var> contine pe prima linie numerele naturale <var>N</var> si <var>T</var> reprezentand numarul de noduri din arborii vanduti de Gigel si respectiv numarul de arbori model. In continuare urmeaza <var>T</var> blocuri de date, fiecare bloc reprezentand descrierea unui arbore model. Blocul care descrie un arbore model contine pe prima linie un numar natural <var>M</var> reprezentand numarul de noduri din arbore. Pe cea de a doua linie sunt scrise <var>M-1</var> numere naturale separate prin spatiu. Al <var>i</var>-lea numar de pe linie este nodul parinte al nodului <var>i+1</var> (<var>1 ≤ i ≤ M-1</var>). Radacina este nodul cu numarul <var>1</var>. Ordinea fiilor este considerata ordinea crescatoare a numerelor lor de ordine.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul <var>arbnr.out</var> va contine o singura linie pe care va fi scris un numar natural reprezentand numarul de arbori cu radacina distincti cu <var>N</var> noduri in care nu apare nici unul dintre arborii model modulo <var>9907</var>.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 10.000</var></li>
+<li><var>0 ≤ T ≤ 40</var></li>
+<li><var>2 ≤ M ≤ 10.000</var></li>
+<li><var>30% din punctaj se acorda pentru <span class="caps">N,M </span>≤ 100 si T ≤ 10</var></li>
+<li><var>65% din punctaj se acorda pentru M ≤ 500</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>arbnr.in</th><th>arbnr.out</th></tr><tr><td>4 2<br>
+3<br>
+1 2<br>
+3<br>
+1 1<br></td><td>3<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

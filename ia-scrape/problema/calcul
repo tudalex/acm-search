@@ -1,0 +1,80 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>calcul.in, calcul.out</td><td><strong>Sursă</strong></td><td>preONI 2006 Runda 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=calcul">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=calcul">Vezi solutiile trimise</a></p>
+
+<h1>Calcul<br></h1>
+
+<p>Bronzarel a crescut mare si in curand va merge la facultate. Totusi, admiterea la facultate nu este asa de simpla, avand probe dificile precum matematica. Ca sa se pregateasca, Bronzarel lucreaza zilnic la matematica, efectuand diverse calcule. Zaharel vrea sa-i arate lui Bronzarel ca poate rezolva orice problema de matematica cu ajutorul calculatorului si a indemanarii lui de programator, si i-a cerut acestuia sa-i dea sa rezolve cea mai grea problema pe care o stie! Bronzarel a scris imediat pe o foaie de hartie urmatoarea suma:<br><var>S(A,B) = A<sup>1</sup> + A<sup>2</sup> + A<sup>3</sup> + ... A<sup>B</sup></var><br>
+si i-a spus ca trebuie doar sa calculeze valoarea ei. Fiindca rezultatul poate fi un numar foarte mare, Bronzarel se multumeste daca Zaharel determina doar ultimele <var>C</var> cifre ale sumei.</p>
+
+<h2>Cerinta</h2>
+
+<p>Imaginati-va ca sunteti in locul lui Zaharel si scrieti programul care ii va arata lui Bronzarel ca problemele dificile de matematica pot fi rezolvate cu ajutorul calculatorului!</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului <var>calcul.in</var> va contine numarul natural <var>A</var>, in baza <var>10</var>. A doua linie va contine numarul natural <var>B</var>, care va fi dat in baza <var>16</var>, iar a treia linie va contine numarul natural <var>C</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Prima linie a fisierului <var>calcul.out</var> va contine ultimele <var>C</var> cifre ale sumei mentionate mai sus.</p>
+
+<h2>Restrictii si observatii</h2>
+
+
+<ul><li><var>0 ≤ A ≤ 10<sup>100.000</sup></var></li>
+<li><var>1 ≤ B ≤ 16<sup>50.000</sup></var></li>
+<li><var>1 ≤ C ≤ 9</var></li>
+<li>Cifrele in baza <var>16</var> sunt <var>0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F</var> (doar majuscule)</li>
+<li>Pentru <var>20%</var> din teste <var>A ≤ 10<sup>9</sup></var> si <var>B ≤ 16<sup>4</sup></var></li>
+<li>Pentru <var>60%</var> din teste <var>B ≤ 16<sup>1.000</sup></var></li>
+<li>Pentru <var>50%</var> din teste <var>cmmdc(A-1, 10<sup>C</sup>)=1</var></li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>calcul.in</th><th>calcul.out</th></tr><tr><td>2<br>
+7<br>
+2<br></td><td>54</td></tr></table><h3>Explicatii</h3>
+
+<p>2<sup>1</sup> + 2<sup>2</sup> + 2<sup>3</sup> + 2<sup>4</sup> + 2<sup>5</sup> + 2<sup>6</sup> + 2<sup>7</sup> = 254</p>
+
+<table class="example" cellspacing="0"><tr><th>calcul.in</th><th>calcul.out</th></tr><tr><td>47<br>
+C<br>
+6<br></td><td>851680</td></tr></table><h3>Explicatii</h3>
+
+<p>47<sup>1</sup>+47<sup>2</sup>+47<sup>3</sup>+47<sup>4</sup>+47<sup>5</sup>+47<sup>6</sup>+47<sup>7</sup>+47<sup>8</sup>+47<sup>9</sup>+47<sup>10</sup>+47<sup>11</sup>+47<sup>12</sup> = 118.717.384.915.664.851.680 </p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 3 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=45">Diverse</a></span>
+            <a href="javascript:show_tag_list(45)" id="tag_anchor_45" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_45"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=104">Operatii pe numere mari</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=89">Divide et Impera</a></span>
+            <a href="javascript:show_tag_list(89)" id="tag_anchor_89" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_89"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=90">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=283">Exponentiere rapida de matrice</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

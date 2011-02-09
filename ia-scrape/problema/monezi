@@ -1,0 +1,64 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>monezi.in, monezi.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2005, clasele 9-10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=119">Silviu-Ionut Ganceanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.75 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">2/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=monezi">Vezi solutiile trimise</a></p>
+
+<h1>Monezi<br></h1>
+
+<p>Printul Algorel are in trezoreria castelului <var>N</var> tipuri de monezi de aur. Pentru fiecare tip se stie valoarea monezilor de tipul respectiv. Averea printului este imensa, deci se poate considera ca are un numar infinit de monezi de fiecare tip. Pentru a elibera printesa din mainile spanului cel lacom el nu trebuie sa faca vreun act de vitejie ci doar sa-i dea spanului monezi cu valoarea totala <var>S</var>. Desi doreste sa-si vada printesa cat mai repede, Algorel incepe sa se gandeasca la tot felul de probleme legate de trezoreria lui. De exemplu, el defineste pentru un subset de tipuri de monede, sa-l numim <var>X</var>, capacitatea de acoperire a acestuia ca fiind numarul de sume cuprinse intre <var>1</var> si <var>S</var> (inclusiv) pe care le poate obtine folosind numai monede de tipuri aflate in subsetul <var>X</var>. De la acest gand si pana la a calcula suma capacitatilor de acoperire a tutoror subseturilor de monede posibile nu a mai fost decat un pas.</p>
+
+<h2>Cerinta</h2>
+
+<p>Calculati pentru Algorel suma capacitatilor de acoperire a tuturor subseturilor de tipuri de monede din trezoreria sa (in total sunt <var>2<sup>N</sup>-1</var> seturi posibile). Numai dupa ce afla raspunsul la problema aceasta Algorel se poate ocupa de eliberarea printesei.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului <var>monezi.in</var> contine doua numere intregi separate printr-un spatiu, <var>N</var> si <var>S</var>, reprezentand numarul de tipuri de monezi si suma ce trebuie platita spanului. Urmatoarele <var>N</var> linii contin cate un numar intreg, <var>V[i]</var>, reprezintand valoarea unei monezi din tipul <var>i</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>monezi.out</var> va contine numarul pe care Algorel vrea sa-l afle, reprezentand suma capacitatilor de acoperire a tuturor subseturile de monede din trezoreria sa.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 17</var></li>
+<li><var>1 ≤ S ≤ 512</var></li>
+<li>Valorile monezilor vor fi numere naturale intre <var>1</var> si <var>500</var></li>
+<li>Nu vor exista doua tipuri de monezi cu aceeasi valoare</li>
+<li>Se pot utiliza mai multe monezi de acelasi tip</li>
+<li>Pentru <var>50%</var> din teste <var>N ≤ 10</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>monezi.in</th><th>monezi.out</th></tr><tr><td>2 10<br>
+  2<br>
+  3<br></td><td>17</td></tr></table><h3>Explicatii</h3>
+
+<p>Cu subsetul {2} se pot obtine 5 sume: 2, 4, 6, 8, 10<br>
+Cu subsetul {3} se pot obtine 3 sume: 3, 6, 9<br>
+Cu subsetul {2,3} se pot obtine 9 sume: 2, 3, 4, 5, 6, 7, 8, 9, 10<br>
+Observati ca nu e obligatoriu ca toate tipurile de moneda dintr-un subset sa fie folosite: de exemplu suma 6 pentru ultimul subset se obtine folosind numai monede de tip “2” sau numai monede de tip “3” (daca le folosim pe amandoua nu putem obtine suma 6).<br>
+Numarul cautat de Algorel va fi astfel 5+3+9=17.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=96">Backtracking</a></span>
+            <a href="javascript:show_tag_list(96)" id="tag_anchor_96" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_96"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=98">Generarea tuturor submultimilor</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=77">Memoizare</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

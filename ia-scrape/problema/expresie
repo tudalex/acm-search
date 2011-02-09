@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>expresie.in, expresie.out</td><td><strong>Sursă</strong></td><td>OJI 2009, clasa a 9-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=188">Alin Burta</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gabitzish1"><img src="/utilizator/gabitzish1?action=download&amp;file=avatar&amp;resize=L16x16" alt="gabitzish1">Gabriel Bitis</a> <a title="Rating gabitzish1: 658" class="rating-badge-1" href="http://infoarena.ro/utilizator/gabitzish1?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gabitzish1">gabitzish1</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=expresie">Vezi solutiile trimise</a></p>
+
+<h1>Expresie<br></h1>
+
+<p>Costel are de rezolvat o temă grea la matematică: având la dispoziţie <var>N</var> numere naturale nenule trebuie să aşeze între acestea 2 operaţii de înmulţire şi <var>N - 3</var> operaţii de adunare, astfel încât rezultatul calculelor să fie cel mai mare posibil. Nu este permisă modificarea ordinii numerelor date. De exemplu, dacă <var>N = 5</var> şi numerele sunt <var>4</var>, <var>7</var>, <var>1</var>, <var>5</var>, <var>3</var>, operaţiile pot fi aşezate <var>4 + 7 * 1 + 5 * 3, 4 * 7 *1 + 5 + 3</var> etc.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Scrieţi un program care să aşeze două operaţii de înmulţire şi <var>N - 3</var> operaţii de adunare între cele <var>N</var> valori date astfel încât valoarea expresiei obţinute să fie maximă. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>expresie.in</var> va contine pe prima linie un număr natural <var>N</var>, reprezentând numărul elementelor date. Pe următoarele linii se află cele <var>N</var> numere naturale date, fiecare pe câte o linie.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>expresie.out</var> va conţine, pe prima linie, valoarea maximă obţinută prin evaluarea expresiei</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>4 ≤ N ≤ 1.000</var></li>
+<li>Numerele date sunt numere naturale între <var>1</var> şi <var>10.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>expresie.in</th><th>expresie.out</th></tr><tr><td>5<br>
+4<br>
+7<br>
+1<br>
+5<br>
+3<br></td><td>44<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Valoarea maximă se obţine prin aşezarea operaţiilor sub forma: <var>4 * 7 + 1 + 5 * 3</var></p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

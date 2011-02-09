@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>numere5.in, numere5.out</td><td><strong>Sursă</strong></td><td>OJI 2005, clasa a 9-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=184">Doru Popescu Anastasiu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Florian"><img src="/utilizator/Florian?action=download&amp;file=avatar&amp;resize=L16x16" alt="Florian">Marcu Florian</a> <a title="Rating Florian: 667" class="rating-badge-1" href="http://infoarena.ro/utilizator/Florian?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Florian">Florian</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=numere5">Vezi solutiile trimise</a></p>
+
+<h1>Numere 5<br></h1>
+
+<p>Mircea este pasionat de programare. El a inceput sa rezolve probleme din ce in ce mai grele. Astfel a ajuns la o problema, care are ca date de intrare un tablou patratic cu <var>N</var> linii si <var>N</var> coloane, componente tabloului fiind toate numerele naturale distincte de la <var>1</var> la <var>N * N</var>. Pentru a verifica programul pe care l-a scris ii trebuie un fisier care sa contina tabloul respectiv. Dupa ce a creat acest fisier, fratele sau, pus pe sotii, ii umbla in fisier si ii schimba cateva numere consecutive, cu numarul <var>0</var>. Cand se intoarce Mircea de la joaca constata cu stupoare ca nu ii merge programul pentru testul respectiv. Dupa cateva ore de depanare isi da seama ca programul lui este corect si ca fisierul de intrare are probleme. </p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care sa-l ajute pe Mircea, gasindu-i cel mai mic si cel mai mare dintre numerele consecutive schimbate de fratele sau.</p>
+
+<h2>Date de intrare</h2>
+
+<p>In fisierul <var>numere5.in</var> se da pe prima linie <var>N</var>, iar pe urmatoarele <var>N</var> linii elementele tabloului, cate <var>N</var> elemente pe o linie, separate intre ele prin cate un spatiu, dupa modificarile facute de fratele lui Mircea.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul <var>numere5.out</var> se va scrie pe un singur rand cu un singur spatiu intre ele numerele cerute (primul fiind cel mai mic).</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>0 &lt; <var>N</var> ≤ 1000</var></li>
+<li>Fratele lui Mircea schimba cel putin un numar in fisier.</li>
+<li>Numerele schimbate de fratele lui Mircea sunt mai mici sau cel mult egale cu <var>500.000</var> .</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>numere5.in</th><th>numere5.out</th></tr><tr><td>3<br>
+5 0 7<br>
+0 0 1<br>
+6 9 8<br></td><td>2 4<br></td></tr></table><h3>Explicatie</h3>
+
+<p>In fisierul de intrare au fost inlocuite cu 0 numerele <var>2</var>, <var>3</var> si <var>4</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>floare.in, floare.out</td><td><strong>Sursă</strong></td><td>.com 2009, Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=209">Cezar Mocan</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/CezarMocan"><img src="/utilizator/CezarMocan?action=download&amp;file=avatar&amp;resize=L16x16" alt="CezarMocan">Cezar Mocan</a> <a title="Rating CezarMocan: 892" class="rating-badge-1" href="http://infoarena.ro/utilizator/CezarMocan?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/CezarMocan">CezarMocan</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=floare">Vezi solutiile trimise</a></p>
+
+<h1>Floare<br></h1>
+
+<p>Intr-o zi cand se plictiseau, Ana si prietenele ei au inventat un nou joc, pe care l-au jucat de <var>T</var> ori. Fetele au o floare cu <var>N</var> petale si la o mutare au voie sa rupa minim una si maxim <var>K</var> dintre ele. Traditia spune ca norocoasa care ia ultimele petale ale florii va primi <var>A</var><sub>0</sub> trandafiri rosii, cea care ar fi trebuit sa mute urmatoarea va primi <var>A</var><sub>1</sub> trandafiri rosii si asa mai departe pana la cea care a mutat exact inainte de castigatoare, care primeste <var>A</var><sub>M-1</sub> trandafiri. Ana poate stabili ordinea in care fetele vor rupe petalele. Ajutati-o, pentru fiecare dintre cele <var>T</var> jocuri, sa castige cat mai multi trandafiri.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>floare.in</var> contine pe prima linie cele <var>3</var> numere, <var>M</var> - numarul de jucatoare, <var>K</var> - numarul maxim de petale care pot fi luate la o mutare si <var>T</var> - numarul de jocuri. Pe cea de-a doua linie se gaseste sirul <var>A</var>. Pe fiecare dintre urmatoarele <var>T</var> linii se gaseste <var>N</var> - numarul de petale ale florii pentru jocul respectiv. </p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>floare.out</var> se vor afla <var>T</var> numere, pozitia fetei castigatoare pentru fiecare dintre cele <var>T</var> runde de joc.</p>
+
+<h2>Restricţii si precizari</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 100</var></li>
+<li><var>1 ≤ M ≤ 200 000</var></li>
+<li><var>1 ≤ N ≤ 200 000</var></li>
+<li><var>1 ≤ K ≤ 200 000</var></li>
+<li>Se stie ca fiecare fata joaca optim, adica vrea sa castige cat mai multi trandafiri</li>
+<li>Valorile din sirul <var>A</var> sunt distincte</li>
+<li>Pentru teste in valoare de cel putin <var>30</var> de puncte valorile pentru <var>N</var> vor fi mai mici sau egale cu <var>1 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>floare.in</th><th>floare.out</th></tr><tr><td>2 3 1<br>
+2 1<br>
+6<br></td><td>1<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>O strategie castigatoare pentru prima jucatoare in exemplul de mai sus ar putea fi: ia <var>2</var> petale, floarea ramane cu <var>4</var> petale. De aici oricate petale ar rupe a <var>2</var>-a jucatoare ( <var>1</var>, <var>2</var> sau <var>3</var>), prima jucatoare va putea sa ia tot ce a ramas.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

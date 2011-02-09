@@ -1,0 +1,47 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>pav.in, pav.out</td><td><strong>Sursă</strong></td><td>Lot Juniori 2008 - Baraj 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=184">Doru Popescu Anastasiu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=pav">Vezi solutiile trimise</a></p>
+
+<h1>Pav<br></h1>
+
+<p>Ionica, tanar inginer constructor vrea sa-si schimbe locul de munca cu unul mai bine platit. Pentru a ocupa acest nou post trebuie sa prezinte un CV si sa sustina o proba teoretica. Daca la CV sta foarte bine, datorita seriozitatii de care a dat dovada la vechiul loc de munca, hopul cel mai mare este proba teoretica. La acesta proba el primeste ca sarcina pavarea pietei din centrul orasului, de forma patratica, avand latura de <var>2<sup>n</sup></var> metri. Acesteia ii asociem un tablou bidimensional cu <var>2<sup>n</sup></var> linii si <var>2<sup>n</sup></var> coloane, atat liniile cat si coloanele fiind numerotate cu numere de la <var>1</var> la <var>2<sup>n</sup></var>. Dalele care vor fi folosite la pavare sunt formate din <var>3</var> patrate, fiecare de latura <var>1</var> m, ca in figura:</p>
+
+<p><img src="http://infoarena.ro/problema/pav?action=download&amp;file=imag.jpg&amp;safe_only=true" alt=""></p>
+
+<p>Piata contine un pom vechi de cateva sute de ani, care trebuie sa ramana si dupa pavare. Acest pom ocupa un singur patrat de latura <var>1</var> m din piata (cat un element din tabloul bidimensional asociat pietei). <br>
+Prin pavarea pietei se intelege acoperirea fiecarui patrat de latura <var>1</var> m al pietei cu exact o singura dala, exceptand patratul unde se gaseste pomul. Pentru a vizualiza modalitatea de pavare a pietei, Ionica va numerota dalele cu numere naturale consecutive incepand de la <var>1</var>. Numarul asociat unei dale va fi scris in fiecare patrat din piata acoperit de dala respectiva. </p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care sa determine o modalitate de pavare a pietei, care sa respecte conditiile de mai sus.</p>
+
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>pav.in</var> va contine pe prima linie numarul <var>n</var>, iar pe linia a doua pozitia pomului descrisa prin indicii liniei si coloanei corespunzatoare, separate printr-un spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>pav.out</var> va contine <var>2<sup>n</sup></var> linii, pe fiecare linie fiind scrise <var>2<sup>n</sup></var> numere naturale separate prin cate un spatiu. Valorile scrise in fisierul de iesire sunt numere consecutive incepand cu <var>1</var> asociate dalelor care acopera piata. Pentru elementul din tablou unde se gaseste pomul se va folosi cifra <var>0</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ n ≤ 9</var></li>
+<li>solutia nu este unica, se poate afisa orice solutie.</li>
+<li>o dala poate fi rotita cu 90°, 180°, respectiv 270°.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>pav.in</th><th>pav.out</th></tr><tr><td>2<br>
+  1 4<br></td><td>2 2 5 0<br>
+  2 1 5 5<br>
+  3 1 1 4<br>
+  3 3 4 4<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Am pavat o piata cu <var>4</var> linii si <var>4</var> coloane, avand pomul pe linia <var>1</var> si coloana <var>4</var>. Pentru pavare s-au utilizat <var>5</var> dale (numerotate cu <var>1</var>, <var>2</var>, <var>3</var>, <var>4</var>, <var>5</var>).<br></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>tabara.in, tabara.out</td><td><strong>Sursă</strong></td><td>Lot Juniori 2008 - Baraj 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=162">Constantin Galatan</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=tabara">Vezi solutiile trimise</a></p>
+
+<h1>Tabara<br></h1>
+
+<p>Intr-o tabara la munte s-au intalnit copii veniti din <var>n</var> regiuni diferite ale tarii. Tabara are in dotare suficiente cabane identice cu cate <var>n</var> paturi. Directorul taberei a stabilit, pentru o cat mai buna socializare, urmatoarele reguli:</p>
+
+
+<ul><li>in fiecare cabana trebuie sa fie cazate exact <var>n</var> persoane, dintre care cel putin <var>n-1</var> trebuie sa fie copii si cel mult un profesor; </li>
+<li>copiii cazati in fiecare cabana trebuie sa provina din regiuni diferite ale tarii; </li>
+<li>nici un copil sau profesor nu poate fi cazat in mai multe cabane.</li>
+</ul><h2>Cerinta</h2>
+
+<p>Sa se gaseasca numarul maxim <var>M</var> de cabane care pot fi completate respectand restrictiile de mai sus.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>tabara.in</var> contine pe prima linie doua numere naturale <var>n</var> si <var>p</var>, unde <var>n</var> este numarul de regiuni, iar <var>p</var> este numarul de profesori. Pe linia a doua, se gasesc <var>n</var> numere naturale, <var>c<sub>1</sub></var>, <var>c<sub>2</sub></var>, ... <var>c<sub>n</sub></var> separate prin cate un spatiu. Valoarea <var>c<sub>i</sub></var> reprezinta numarul copiilor venii din regiunea <var>i</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>tabara.out</var> se va scrie pe prima linie numarul natural <var>M</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ n, p ≤ 50.000</var></li>
+<li><var>1 ≤ c<sub>1</sub>, c<sub>2</sub>, ... c<sub>n</sub> ≤ 50.000</var></li>
+<li>Este posibil ca dupa completarea celor <var>M</var> cabane, nu toti elevii si/sau profesorii sa fie cazati	</li>
+<li>Numarul total de persoane care trebuie cazate nu va depasi pe nici un test <var>2.000.000.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>tabara.in</th><th>tabara.out</th></tr><tr><td>2 2<br>
+  1 3<br></td><td>3<br></td></tr><tr><td>3 4<br>
+  2 3 4<br></td><td>4<br></td></tr></table><h3>Explicatie</h3>
+
+
+<ol><li>Codificand cele doua regiuni cu x si y, se pot completa maxim 3 cabane in felul urmator: [ <var>x<sub>1</sub></var>, <var>y<sub>1</sub></var> ], [ <var>p<sub>1</sub></var>, <var>y<sub>2</sub></var> ], [ <var>p<sub>2</sub></var>, <var>y<sub>3</sub></var> ] . <var>x<sub>1</sub></var> reprezinta singurul copil din regiunea <var>1</var>, <var>y<sub>1</sub></var>, <var>y<sub>2</sub></var>, <var>y<sub>3</sub></var> reprezinta cei trei copii din regiunea <var>2</var>, iar <var>p<sub>1</sub></var>, <var>p<sub>2</sub></var> sunt cei doi profesori.</li>
+<li>Daca cele 3 regiuni sunt <var>x</var>, <var>y</var>, <var>z</var>, atunci se pot completa <var>4</var> cabane in felul urmator: [ <var>x<sub>1</sub></var>, <var>Y<sub>1</sub></var>, <var>Z<sub>1</sub></var> ], [ <var>x<sub>2</sub></var>, <var>p<sub>1</sub></var>, <var>z<sub>2</sub></var> ], [ <var>p<sub>2</sub></var>, <var>y<sub>2</sub></var>, <var>z<sub>3</sub></var> ], [ <var>p<sub>3</sub></var>, <var>y<sub>3</sub></var>, <var>z<sub>4</sub></var> ]. <var>x<sub>1</sub></var>, <var>x<sub>2</sub></var> identifica cei doi copii din regiunea <var>1</var>, etc. Profesorul <var>p<sub>4</sub></var> nu va fi cazat.</li>
+</ol><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

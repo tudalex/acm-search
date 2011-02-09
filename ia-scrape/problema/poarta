@@ -1,0 +1,46 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>poarta.in, poarta.out</td><td><strong>Sursă</strong></td><td>ONI 2008, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=220">Radu Visinescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/bogdan2412"><img src="/utilizator/bogdan2412?action=download&amp;file=avatar&amp;resize=L16x16" alt="bogdan2412">Bogdan-Cristian Tataroiu</a> <a title="Rating bogdan2412: 1162" class="rating-badge-4" href="http://infoarena.ro/utilizator/bogdan2412?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/bogdan2412">bogdan2412</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=poarta">Vezi solutiile trimise</a></p>
+
+<h1>Poarta<br></h1>
+
+<p>Harta Galaxiei este reprezentata ca o matrice cu <var>N</var> linii (numerotate de la <var>1</var> la <var>N</var>) si <var>M</var> coloane (numerotate de la <var>1</var> la <var>M</var>). Orice element al matricei reprezinta o zona de forma patrata cu latura de <var>1 an lumina</var> (denumita quadrant) si poate fi identificat prin coordonatele sale (numarul liniei si respectiv numarul coloanei pe care afla).</p>
+
+<p>Nava Enterprise se afla intr-un quadrant de coordonate cunoscute si trebuie sa ajunga la destinatie (un alt quadrant, diferit de cel de plecare, de coordonate de asemenea cunoscute).</p>
+
+<p>Nava se poate deplasa de la un quadrant la unul dintre cei invecinati pe orizontala sau verticala intr-o unitate de timp (mai exact, din zona de coordonate <var>(L,C)</var> nava se poate deplasa in una dintre zonele de coordonate <var>(L-1,C), (L+1,C), (L,C-1), (L,C+1)</var>, fara a iesi de pe harta).</p>
+
+<p>In plus, in unele zone (quadranti) se gasesc porti stelare. O poarta stelara permite deplasarea navei intr-o unitate de timp in oricare alta zona in care se gaseste o alta poarta stelara. Daca in drumul sau nava ajunge intr-o zona cu o poarta stelara, nava se poate deplasa intr-o alta zona cu poarta stelara sau poate sa-si continue drumul in una dintre zonele invecinate.</p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati timpul minim in care nava poate ajunge din zona initiala in cea finala, precum si numarul de trasee de durata minima.</p>
+
+<h2>Datele de intrare</h2>
+
+<p>Fisierul de intrare <var>poarta.in</var> contine pe prima linie numerele naturale <var>N M K</var>, reprezentand in ordine, numarul de linii, numarul de coloane si respectiv numarul de porti stelare de pe harta. Pe cea de-a doua linie, se afla <var>4</var> numere naturale <var>L1 C1 L2 C2</var>, reprezentand coordonatele zonei de plecare, respectiv coordonatele zonei destinatie. Pe urmatoarele <var>K</var> linii sunt scrise coordonatele zonelor in care se afla porti stelare, cate o poarta pe o linie. Numerele de pe aceeasi linie sunt separate prin cate un spatiu.</p>
+
+<h2>Datele de iesire</h2>
+
+<p>Fisierul de iesire <var>poarta.out</var> va contine doua linii. Pe prima linie va fi scris numarul natural <var>D</var>, reprezentand timpul minim in care nava ajunge din zona initiala la destinatie. Pe cea de-a doua linie va fi scris numarul natural <var>Nr</var>, reprezentand numarul de trasee de durata minima. Deoarece numarul <var>Nr</var> poate fi foarte mare, trebuie sa afisati restul impartirii lui <var>Nr</var> la <var>997</var>.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N, M ≤ 100</var></li>
+<li><var>0 ≤ K ≤ 1000</var></li>
+<li>Pentru <var>20%</var> dintre teste <var>1 ≤ N, M ≤ 10, 0 ≤ K ≤ 10</var></li>
+<li>Pentru determinarea corecta a timpului minim se acorda <var>30%</var> din punctaj. Pentru determinarea corecta a timpului minim si a numarului de trasee de durata minima se acorda punctajul maxim.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>poarta.in</th><th>poarta.out</th></tr><tr><td>6 7 4<br>
+2 5 6 2<br>
+1 1<br>
+5 1<br>
+1 6<br>
+4 5<br></td><td>5<br>
+6<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

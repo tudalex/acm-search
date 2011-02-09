@@ -1,0 +1,85 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>robot.in, robot.out</td><td><strong>Sursă</strong></td><td>Lot 2005</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=133">Stefan Ciobaca</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><div class="hidden">5/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=robot">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=robot">Vezi solutiile trimise</a></p>
+
+<h1>Robot<br></h1>
+
+<p>Gigel tocmai si-a cumparat un joc de strategie. Actiunea jocului ia loc pe o harta plana. Pe harta se gaseste un mic robotel si cateva obstacole. Scopul jocului este de a muta robotelul intr-un anumit loc. Fiindca nu se pricepe prea bine la jocuri pe calculator, Gigel va roaga sa-l ajutati.</p>
+
+<p>Robotelul si obstacolele sunt reprezentate de poligoane convexe, cu varfurile in puncte de coordonate intregi. Spunem ca robotelul se afla intr-o pozitie valida pe harta daca poligonul care il reprezinta nu se intersecteaza cu interiorul nici unui obstacol. Daca robotelul este tangent la unul sau mai multe obstacole, fara a intersecta insa interiorul nici unuia dintre ele, pozitia lui este valida.</p>
+
+<p>Pe tot parcursul jocului obstacolele raman nemiscate si nerotite. De asemenea, robotelul nu se poate roti, insa acesta se poate misca in orice directie. Pe tot parcursul miscarii sale, robotelul trebuie sa ramana intr-o pozitie valida.</p>
+
+<p>Pozitia robotelului pe harta se defineste ca fiind punctul (<var>x,y</var>), cu <var>y</var> egal cu minimul ordonatelor varfurilor robotelului si cu <var>x</var> egal cu minimul absciselor varfurilor robotelului. Curba desenata de pozitia robotelului in timpul miscarii sale in plan se numeste drumul robotelului.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care citeste configuratia initiala a hartii si care calculeaza lungimea unui drum minim parcurs de robotel pentru a ajunge intr-o pozitie finala.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>robot.in</var> se gaseste numarul <var>N</var> de varfuri ale poligonului reprezentand robotelul. Pe urmatoarele <var>N</var> linii se gasesc coordonatele <var>x</var> si <var>y</var> ale varfurilor robotelului, coordonate separate printr-un spatiu. Pe urmatoarea linie se gaseste numarul <var>M</var> de obstacole. Apoi urmeaza <var>M</var> blocuri reprezentand cate un obstacol, fiecare bloc avand urmatoarea structura:</p>
+
+
+<ul><li>pe prima linie a blocului numarul de varfuri <var>P</var> ale poligonului ce reprezinta obstacolul</li>
+<li>pe urmatoarele <var>P</var> linii, coordonatele <var>x</var> si <var>y</var> ale varfurilor obstacolului, coordonate separate printr-un spatiu.<br>
+Pe ultima linie a fisierului de intrare, se gasesc coordonatele <var>x</var> si <var>y</var> ale pozitiei in care trebuie sa ajunga robotelul.</li>
+</ul><h2>Date de iesire</h2>
+
+<p>Pe singura linie a fisierului de iesire <var>robot.out</var> afisati cu doua zecimale exacte distanta minima parcursa de robot pana la pozitia finala pe un drum care respecta cerintele de mai sus. Daca nu exista nici un astfel de drum afisati <var>-1</var>.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>N ≤ 10</var></li>
+<li><var>M ≤ 25</var></li>
+<li>toate coordonatele sunt din intervalul (<var>-5000,5000</var>)</li>
+<li>numarul de varfuri de pe poligoanele tuturor obstacolelor nu depaseste <var>250</var></li>
+<li>puteti presupune ca pozitia initiala a robotelului este valida.</li>
+<li>in fisierul de intrare, pentru toate poligoanele, punctele sunt date in sens trigonometric.</li>
+<li>solutia afisata de voi este considerata corecta daca difera de solutia comisiei in valoare absoluta prin cel mult <var>0.02</var></li>
+<li>unii sustin ca adevaratul campion este cel care rezolva <strong>ivv</strong> adevarul este insa ca singurul care poate determina adevaratul campion este robotelul</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>robot.in</th><th>robot.out</th></tr><tr><td>3<br>
+0 0<br>
+2 0<br>
+0 2<br>
+1<br>
+4<br>
+3 0<br>
+5 0<br>
+5 2<br>
+3 2<br>
+6 2<br></td><td>7.24</td></tr></table><h3>Explicatii</h3>
+
+<p> <img src="http://infoarena.ro/problema/robot?action=download&amp;file=robot.gif&amp;safe_only=true" alt=""></p>
+
+<p>Robotelul apare punctat si obstacolul este desenat cu linie ingrosata. Cerculetul reprezinta pozitia finala a robotelului. Cu o linie usor ingrosata este marcat si un drum de lungime minima.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=41">Geometrie</a></span>
+            <a href="javascript:show_tag_list(41)" id="tag_anchor_41" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_41"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=259">No fit polygon</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=72">Algoritmul lui Dijkstra</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

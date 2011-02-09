@@ -1,0 +1,48 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>joc11.in, joc11.out</td><td><strong>Sursă</strong></td><td>Summer Challenge 2009, Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=165">Din Folclor</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Marius"><img src="/utilizator/Marius?action=download&amp;file=avatar&amp;resize=L16x16" alt="Marius">Marius Stroe</a> <a title="Rating Marius: 627" class="rating-badge-4" href="http://infoarena.ro/utilizator/Marius?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Marius">Marius</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>4 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=joc11">Vezi solutiile trimise</a></p>
+
+<h1>Joc11<br></h1>
+
+<p>Doi participanţi, A şi B, joacă un joc pe o tablă de dimensiuni <var>N x N</var>. Pătratele tablei sunt fie de culoare albă, fie de culoare neagră. Participanţii vor folosi doar pătratele albe, cele negre fiind excluse din joc. Fiecare jucător are o piesă aşezată pe un pătrat alb numit <em>locul de start</em> al jucătorului. Locurile de start ale celor doi jucători sunt diferite.</p>
+
+<p>O mutare constă în deplasarea piesei unui jucător într-unul din pătratele de culoare albă adiacente pe una din direcţiile: nord, est, sud, vest. Dacă un jucător mută piesa într-o locaţie ocupată deja de oponentul său, atunci câştigă o mutare în plus (în acest fel sare peste oponent). În acest caz, direcţia mutării doi poate fi alta decât cea a mutării întâi.</p>
+
+<p>Participanţii vor muta alternativ, jucătorul A fiind cel care mută primul. Scopul jocului este să se ajungă la locul de start al adversarului. Jucătorul care atinge primul acest scop va câştiga. Chiar dacă un jucător trebuie să efectueze două mutări, sărind peste locul de start al adversarului, acesta va câştiga jocul. </p>
+
+<h2>Cerinţă</h2>
+
+<p>Se cere să se determine care jucător are strategie sigură de câştig. Un jucător are strategie sigură de câştig dacă va câştiga indiferent de mutările adversarului.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>joc11.in</var> conţine pe prima linie un număr <var>T</var>, numărul testelor. Descrierile testelor vor fi pe liniile următoare. Pe prima linie a fiecărui test se găseşte un număr întreg <var>N</var>, lungimea laturii tablei. Fiecare din următoarele <var>N</var> linii conţin câte <var>N</var> caractere, fără spaţiu alb între acestea. Fiecare caracter este unul din următoarele: <var>'.'</var> (un pătrat alb), <var>'#'</var> (un pătrat negru), <var>'A'</var> (locul de start al jucătorului A), <var>'B'</var> (locul de start al jucătorului B).</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>joc11.out</var>, pentru fiecare test, se va scrie câte o linie cu unul din caracterele <var>'A'</var> sau <var>'B'</var>, indicând jucătorul care are strategie sigură de câştig.</p>
+
+<h2>Restricţii şi precizări</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 6</var></li>
+<li><var>2 ≤ N ≤ 300</var></li>
+<li>Între locurile de start ale celor doi jucători va exista întotdeauna un drum pe pătrate albe.</li>
+<li>Pentru <var>40%</var> din teste <var>N ≤ 40</var>.</li>
+<li>Pentru <var>60%</var> din teste <var>N ≤ 150</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>joc11.in</th><th>joc11.out</th></tr><tr><td>1<br>
+5<br>
+.....<br><span class="caps">A....</span><br>
+..###<br>
+.#...<br>
+....B<br></td><td>A<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Între cei doi jucători există un singur drum de lungime <var>7</var>. Dacă jucătorul B nu va alege drumul cel mai scurt atunci el va efectua mai mult de <var>7</var> mutări, deci A va câştiga. Dacă va alege drumul cel mai scurt, jucătorul A va fi cel care va sări peste B câştigând astfel două căsuţe avans datorită cărora va câştiga.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

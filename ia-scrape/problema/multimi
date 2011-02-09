@@ -1,0 +1,31 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>multimi.in, multimi.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=151">Florin Manea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65535 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=multimi">Vezi solutiile trimise</a></p>
+
+<h1>Multimi<br></h1>
+
+<p>Consideram multimea <var>[n]</var>=<var>{1,...,n}</var> a primelor <var>n</var> numere naturale nenule. Multimile <var>A<sub>1</sub>,..., A<sub>m</sub></var> acopera <var>[n]</var> daca si numai daca oricare ar fi <var>1 ≤ i ≤ n</var> exista <var>1 ≤ j ≤ m</var> astfel incat <var>A<sub>j</sub></var> sa contina pe <var>i</var>. Multimile <var>A<sub>1</sub>,...,A<sub>m</sub></var> separa pe <var>[n]</var> daca si numai daca oricare ar fi <var>1 ≤ k,p ≤ n</var> exista <var>1 ≤ j ≤ m</var> astfel incat cardinalul intersectiei dintre <var>A<sub>j</sub></var> si <var>{k,p}</var> sa fie <var>1</var> (practic exista cel putin o multime in care nu se afla ambele elemente simultan). Pentru <var>n</var> dat, sa se gaseasca <var>m</var> minim astfel incat <var>A<sub>1</sub>,...,A<sub>m</sub></var> sa acopere si sa separe multimea <var>[n]</var>. De asemenea sa se afiseze <var>m</var> multimi <var>A<sub>1</sub>,...,A<sub>m</sub></var> care verifica aceasta proprietate.</p>
+
+<h2>Date de intrare</h2>
+
+<p>In fisierul de intrare <var>multimi.in</var> se gaseste numarul intreg <var>n</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>multimi.out</var> veti afisa numarul minim <var>m</var> de multimi. Pe urmatoarele <var>m</var> linii veti afisa elementele cate unei multimi. Elementele unei multimi pot fi afisate in orice ordine si trebuie separate intre ele prin cate un spatiu.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ n ≤ 100 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>multimi.in</th><th>multimi.out</th></tr><tr><td>10<br></td><td>4<br>
+8 9 10<br>
+4 5 6 7<br>
+2 3 6 7 10<br>
+1 3 5 7 9<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

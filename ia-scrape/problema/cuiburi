@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cuiburi.in, cuiburi.out</td><td><strong>Sursă</strong></td><td>ONI 2010 - Baraj</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=149">Marius Dumitran</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrei-alpha"><img src="/utilizator/andrei-alpha?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrei-alpha">Andrei-Bogdan Antonescu</a> <a title="Rating andrei-alpha: 700" class="rating-badge-1" href="http://infoarena.ro/utilizator/andrei-alpha?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrei-alpha">andrei-alpha</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.7 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cuiburi">Vezi solutiile trimise</a></p>
+
+<h1>Cuiburi<br></h1>
+
+<p>În ţara Nicăieri există <var>N</var> cuiburi. Cuiburile sunt reprezentate în plan fie prin cercuri, fie prin dreptunghiuri cu laturile paralele cu axele. Pentru două cuiburi <var>A</var> şi <var>B</var> spunem că <var>A</var> se cuibăreşte în <var>B</var> dacă orice punct din interiorul sau de pe marginea cuibului <var>A</var> se află în interiorul sau pe marginea cuibului <var>B</var>. Numim o cuibăreală o submulţime de cuiburi <var>A<sub>1</sub>, A<sub>2</sub>, A<sub>3</sub>, ..., A<sub>k</sub></var>, în care <var>A<sub>i</sub></var> este cuibărit în <var>A<sub>i+1</sub></var>, pentru fiecare <var>1 &lt;= i &lt; k</var>. </p>
+
+<h2>Cerinta</h2>
+
+<p>Pentru cele N cuiburi date, scrieţi un program care găseşte cardinalul maxim al unei cuibăreli. Cardinalul unei cuibăreli este egal cu numărul de cuiburi care alcătuiesc cuibăreala.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare <var>cuiburi.in</var> se găseşte numărul natural <var>N</var>, reprezentând numărul de cuiburi. Pe următoarele <var>N</var> linii vor fi descrise cele <var>N</var> cuiburi astfel: primul număr <var>t</var> de pe fiecare linie va fi <var>0</var> sau <var>1</var>. Dacă <var>t</var> este <var>0</var>, atunci pe linie se vor mai găsi <var>4</var> numere naturale <var>lx ly rx ry</var>, separate prin câte un spaţiu. Perechea <var>(lx, ly)</var> reprezintă colţul stânga-jos al dreptunghiului, iar perechea <var>(rx, ry)</var> colţul dreapta sus al dreptunghiului. Dacă <var>t</var> este <var>1</var>, atunci pe linie se mai găsesc încă <var>3</var> numere naturale <var>x y r</var>, unde <var>(x, y)</var> reprezintă centrul cercului, iar <var>r</var> raza cercului.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>cuiburi.out</var> va conţine un singur număr natural reprezentând cardinalul maxim al unei cuibăreli.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li>Cuiburile se pot intersecta.</li>
+<li><var>1 ≤ N ≤ 2000</var></li>
+<li><var>lx ≤ rx</var></li>
+<li><var>ly ≤ ry</var></li>
+<li>Pentru <var>20%</var> din teste, <var>N ≤ 20</var></li>
+<li>Pentru <var>30%</var> din teste, toate cuiburile vor fi dreptunghiuri</li>
+<li>Pentru <var>30%</var> din teste, toate cuiburile vor fi cercuri</li>
+<li>Coordonatele şi razele sunt numere naturale mai mici sau egale cu <var>30 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>cuiburi.in</th><th>cuiburi.out</th></tr><tr><td>8<br>
+0 1 1 5 5<br>
+0 6 1 8 2<br>
+1 9 9 2<br>
+0 3 1 5 3<br>
+0 2 2 4 4<br>
+1 3 3 1<br>
+0 2 2 4 4<br>
+0 9 9 11 15<br></td><td>4<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Cuibăreala de cardinal maxim este alcătuită din cuiburile cu indicii 6, 5, 7, 1</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,56 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>bridge.in, bridge.out</td><td><strong>Sursă</strong></td><td>Autumn Warmup 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=166">Tiberiu Savin</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=bridge">Vezi solutiile trimise</a></p>
+
+<h1>Bridge<br></h1>
+
+<p>Fat-Frumos a plecat in cautarea iubirii sale, fiica imparatului, Simona, care a fost rapita de balaurul cel rau si dusa in pestera acestuia. Acesta s-a pregatit intens de lupta insa el nu a stiut ca balaurul ii pregatise o surpriza, si astfel l-a atras pe acesta pe un pod. Pe pod Fat-Frumos se poate deplasa pasind (se va deplasa o scandura la dreapta), sarind (se va deplasa <var>2</var> scanduri la dreapta), stationand (va ramane pe aceeasi scandura) sau teleportandu-se (vezi scandura teleportoare). Insa podul este putin mai ciudat fiind format din <var>4</var> tipuri de scanduri astfel:</p>
+
+
+<ul><li><var>0</var> - scandura buna (pe o astfel de scandura se poate stationa, pasi, sari sau teleporta, si se poate ajunge oricum pe ea)</li>
+<li><var>1</var> - scandura subreda (la fel ca la o scandura buna, numai ca pe acest tip de scandura nu se poate ajunge decat prin pasire)</li>
+<li><var>2</var> - scandura lipsa (Daca Fat-Frumos va ajunge pe o astfel de scandura el va ajunge felul principal al crocodililor de sub pod)</li>
+<li><var>3</var> - scandura teleportoare (pe astfel de scandura se poate ajunge oricum, iar o astfel de scandura il va teleporta pe eroul nostru pe o alta scandura numita scandura destinatie)</li>
+</ul><h2>Cerinta</h2>
+
+<p>Fat-Frumos va trebui sa isi coordoneze miscarile cat mai bine pe pod de aceea va roaga pe voi sa ii raspunde-ti la <var>M</var> intrebari de forma "In cate moduri pot ajunge pe scandura <var>X</var> in <var>K</var> pasi?"</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie a fisierului <var>bridge.in</var> vor fi scrise <var>2</var> numere <var>N</var> si <var>M</var> reprezentand numarul de scanduri respective numarul de intrebari. Pe urmatoarea linie vor fi scrise N numere cuprinse intre <var>0</var> si <var>3</var> reprezentand configuratia podului, corespondenta fiind cea de mai sus. Pe urmatoarele linii vor fi scrise scandurile destinatie pentru fiecare scandura teleportoare in ordinea aparitiei acestora pe pod, si, in final, pe urmatoarele <var>M</var> linii vor fi scrise cate <var>2</var> numere <var>X</var> si <var>K</var> care definesc o intrebare de genul "In cate moduri se poate ajunge pe scandura <var>X</var> in <var>K</var> pasi?".</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>bridge.out</var> va contine <var>M</var> linii reprezentand raspunsul pentru fiecare intrebare din fisierul de intrare in ordine.</p>
+
+<h2>Restrictii si Precizari</h2>
+
+
+<ul><li><var>1 &lt; N &lt; 4001</var></li>
+<li><var>1 &lt; M &lt; 30001</var></li>
+<li>Numarul maxim de pasi dintr-o intrebare nu va depasi valoarea <var>4000</var></li>
+<li>Daca scandura <var>x</var> este teleportoare si are ca destinatie scandura <var>y</var> atunci vom avea urmatoarea relatie <var>x &lt; y</var></li>
+<li>Mai multe scanduri teleportoare pot avea ca destinatie aceeasi scandura<br>
+ In momentul in care Fat-Frumos ajunge pe o scandura teleportoare el va fi teleportat pe scandura destinatie indiferent daca el vrea sau nu (nu poate stationa, sari sau pasi de pe ea)</li>
+<li>Teleportarea se considera pas</li>
+<li>Raspunsurile se vor afisa modulo <var>666013</var></li>
+<li>Numarul de moduri de a ajunge pe o scandura lipsa sau pe o scandura teleportoare care are ca destinatie o scandura lipsa sau subreda este 0</li>
+<li>Fat-Frumos nu se poate deplasa inapoi (el la un pas se va deplasa <var>0</var>,<var>1</var> sau <var>2</var> scanduri la dreapta sau va fi teleportat in cazul in care scandura respective are aceasta propietate)</li>
+<li>Initial Fat-Frumos se afla in afara podului pozitie pe care nu poate stationa, la primul pas el ori va pasi pe prima scandura ori va sari pe cea de-a doua daca acest lucru este posibil</li>
+<li>Prima scandura nu este niciodata lipsa</li>
+<li>Pe o scandura teleportoare se poate ajunge ca si pe o scandura buna</li>
+<li>Daca o scandura teleportoare nu are ca scandura destinatie o scandura lipsa sau subreda atunci numarul de moduri de a ajunge pe aceasta in K pasi nu este neaparat <var>0</var> (vezi exemplu)</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>bridge.in</th><th>bridge.out</th></tr><tr><td>5 3<br>
+0 0 3 1 2<br>
+4<br>
+4 4<br>
+2 3<br>
+3 2<br></td><td>0<br>
+3<br>
+0</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

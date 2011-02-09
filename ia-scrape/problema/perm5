@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>perm5.in, perm5.out</td><td><strong>Sursă</strong></td><td>Lot Suceava 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=171">Emanuela Cerchez</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/bogdan2412"><img src="/utilizator/bogdan2412?action=download&amp;file=avatar&amp;resize=L16x16" alt="bogdan2412">Bogdan-Cristian Tataroiu</a> <a title="Rating bogdan2412: 1162" class="rating-badge-4" href="http://infoarena.ro/utilizator/bogdan2412?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/bogdan2412">bogdan2412</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=perm5">Vezi solutiile trimise</a></p>
+
+<h1>Perm 5<br></h1>
+
+<p>Fie <var>N</var> un numar natural si <var>p = (p1, p2, ..., pN)</var> o permutare de ordin <var>N</var>.<br>
+Numim grad al unei permutari cel mai mic numar natural <var>k &gt; 0</var>, astfel incat</p>
+
+
+<ul><li><var>p<sup>k</sup> = popop...op (de k ori) = e</var></li>
+</ul><p>(unde cu <var>e</var> am notat permutare identica, deci permutarea pentru care <var>e(i) = i</var>, pentru orice <var>i = 1, 2, ..., n</var>).</p>
+
+<h2>Cerinta</h2>
+
+<p>Pentru un <var>N</var> dat, sa se determine o permutare de ordin <var>N</var> avand grad maxim. Daca exista mai multe solutii se va determina prima in ordine lexicografica.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>perm5.in</var> contine pe prima linie numarul natural nenul <var>N</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>perm5.out</var> va contine o singura linie pe care vor fi scrise <var>N</var> numere naturale distincte cuprinse intre <var>1</var> si <var>N</var>, separate prin cate un spatiu, reprezentand prima permutare de grad maxim in ordine lexicografica.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 2000</var></li>
+<li>Prin operatia <var>o</var> intelegem compunerea functiilor. Mai exact <var>pop(i) = p(p(i))</var>, pentru orice <var>i = 1, 2, ..., N</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>perm5.in</th><th>perm5.out</th></tr><tr><td>5</td><td>2 1 4 5 3</td></tr><tr><td>14</td><td>2 3 1 5 6 7 4 9 10 11 12 13 14 8</td></tr></table><h3>Explicatie</h3>
+
+<p>Permutarea <var>(2, 1, 4, 5, 3)</var> are gradul <var>6</var> (maxim posibil).<br>
+Exista si alte solutii, dar aceasta este cea mai mica din punct de vedere lexicografic.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

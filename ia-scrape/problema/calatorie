@@ -1,0 +1,55 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>calatorie.in, calatorie.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">2/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=calatorie">Vezi solutiile trimise</a></p>
+
+<h1>Calatorie interplanetara<br></h1>
+
+<p>O nava spatiala trebuie sa calatoreasca de la planeta <var>1</var> la planeta <var>2</var>, apoi de la planeta <var>2</var> la planeta <var>3</var> si tot asa pana cand ajunge la planeta <var>N</var>. Cand calatoreste de la planeta <var>K</var> la planeta <var>K+1</var> nava spatiala are doua optiuni: viteza normala sau superviteza. Folosind viteza normala, timpul calatoriei de la planeta <var>K</var> la planeta <var>K+1</var> este <var>N<sub>k</sub></var> unitati de timp. Folosind superviteza, timpul calatoriei dintre planetele <var>K</var> si <var>K+1</var> este <var>H<sub>k</sub></var> unitati de timp. Pilotul navei spatiale este interesat sa consume cat mai putin combustibil in calatoria sa. El stie ca formula pentru consumul de combustibil este: <var>N<sub><span class="caps">TOTAL</span></sub> + H<sub><span class="caps">TOTAL</span></sub><sup>4</sup></var>, unde <var>N<sub><span class="caps">TOTAL</span></sub></var> este totalul unitatilor de timp in care a folosit viteza normala, iar H<sub><span class="caps">TOTAL</span></sub> este totalul unitatilor de timp in care a folosit superviteza. De exemplu, sa presupunem ca sunt <var>5</var> planete. De la planeta <var>1</var> la planeta <var>2</var> nava spatiala calatoreste <var>60</var> unitati de timp folosind viteza normala. De la planeta <var>2</var> la planeta <var>3</var> nava spatiala calatoreste <var>3</var> unitati de timp folosind superviteza.<br>
+De la planeta <var>3</var> la planeta <var>4</var> nava spatiala calatoreste <var>40</var> de unitati de timp folosind viteza normala. De la planeta <var>4</var> la planeta <var>5</var> nava spatiala calatoreste <var>7</var> unitati de timp folosind superviteza. <var>N<sub><span class="caps">TOTAL</span></sub> = 60 + 40 = 100</var> si <var>H<sub><span class="caps">TOTAL</span></sub> = 3 + 7 = 10</var>. Consumul de combustibil este <var>100 + 10<sup>4</sup> = 10100</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati Consumul minim de combustibil necesar calatoriei de la planeta <var>1</var> la planeta <var>N</var>.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>calatorie.in</var> contine numarul de teste <var>T</var>. Urmatoarele linii descriu cele <var>T</var> teste. Prima linie a fiecarui test contine numarul de planete <var>N</var>. Urmatoarele <var>N-1</var> linii contin <var>2</var> numere intregi, <var>N<sub>K</sub></var> si <var>H<sub>K</sub></var>, pentru <var>K = 1,2,..,N-1</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Pentru fiecare test afisati in fisierul <var>calatorie.out</var> o singura linie care sa respecte urmatorul format: <var>Consumul minim = <span class="caps">XXX.</span></var>, unde <var><span class="caps">XXX</span></var> trebuie inlocuit cu numarul gasit de programul vostru.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 50</var></li>
+<li><var>1 ≤ T ≤ 155</var></li>
+<li><var>1 ≤ N<sub>k</sub> ≤ 10<sup>8</sup></var></li>
+<li><var>1 ≤ H<sub>k</sub> ≤ 10</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>calatorie.in</th><th>calatorie.out</th></tr><tr><td>2<br>
+4<br>
+1000 3<br>
+5000 2<br>
+8000 4<br>
+6<br>
+10000 1<br>
+3547 2<br>
+36782 7<br>
+2178 4<br>
+67428 9<br></td><td>Consumul minim = 2296.<br>
+Consumul minim = 52507.</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=95">Problema rucsacului</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,30 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>take5.in, take5.out</td><td><strong>Sursă</strong></td><td>All You Can Code 2008</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=144">Mihai Ciucu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gogu"><img src="/utilizator/gogu?action=download&amp;file=avatar&amp;resize=L16x16" alt="gogu">Gogu Marian</a> <a title="Rating gogu: 552" class="rating-badge-2" href="http://infoarena.ro/utilizator/gogu?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gogu">gogu</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>4 sec</td><td><strong>Limită de memorie</strong></td><td>5555 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=take5">Vezi solutiile trimise</a></p>
+
+<h1>Take 5<br></h1>
+
+<p>Se da un sir de <var>N</var> numere naturale si un numar <var>S</var>. Sa se afle in cate moduri se pot lua <var>5</var> elemente de pe pozitii diferite din sir care sa aiba suma <var>S</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare contine numerele <var>N</var> si <var>S</var> iar urmatoarea linie contine cele <var>N</var> numere.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire trebuie sa contina numarul cerut.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1.000</var></li>
+<li>numerele din sir sunt intregi intre <var>0</var> si <var>400.000.000</var></li>
+<li>numarul de posibilitati este mai mic ca <var>2<sup>31</sup></var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>take5.in</th><th>take5.out</th></tr><tr><td>6 5<br>
+ 1 1 1 1 1 1<br></td><td>6<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

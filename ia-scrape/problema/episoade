@@ -1,0 +1,76 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>episoade.in, episoade.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2009, clasele 9-10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=119">Silviu-Ionut Ganceanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/silviug"><img src="/utilizator/silviug?action=download&amp;file=avatar&amp;resize=L16x16" alt="silviug">Silviu-Ionut Ganceanu</a> <a title="Rating silviug: 624" class="rating-badge-4" href="http://infoarena.ro/utilizator/silviug?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/silviug">silviug</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=episoade">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=episoade">Vezi solutiile trimise</a></p>
+
+<h1>Episoade<br></h1>
+
+<p>Au venit Stelele şi e timpul ca Algorel să apară iar în viaţa mondenă. Ziarele au scris zilele trecute că Algorel în loc să se pregătescă pentru Stele se uită de zor la un serial de desene animate. Şi chiar aşa este... Tocmai a făcut rost de un nou sezon ce are <var>N</var> episoade şi Algorel vrea să ştie în ce ordine ar putea să le vadă (fiindcă nu-i place ordinea originală). El are de la un prieten o expresie care descrie cum se leagă episoadele între ele. Expresia dată respectă anumite reguli:</p>
+
+
+<ul><li>într-o expresie pot apărea numerele de la <var>1</var> la <var>N</var> precum şi caracterele: <var>()&gt;#</var></li>
+<li>fiecare număr între <var>1</var> şi <var>N</var> apare o singură dată în expresie; fiecărui episod îi corespunde în mod unic un număr</li>
+<li>un grup de episoade este definit ca un singur episod sau o subexpresie ce decrie relaţii între mai multe episoade</li>
+<li><var>&gt;</var> şi <var>#</var> sunt operatori pe grupuri de episoade şi au următoarele proprietăţi:
+<ul><li><var>ge<sub>1</sub> &gt; ge<sub>2</sub></var> - grupul de episoade <var>ge<sub>2</sub></var> trebuie văzut imediat după grupul de episoade <var>ge<sub>1</sub></var></li>
+<li><var>ge<sub>1</sub> # ge<sub>2</sub></var> # ... # ge<sub>k</sub> - grupurile de episoade pot fi văzute în orice ordine dar fără să se intercalaze</li>
+<li><var>&gt;</var> are prioritate mai mare faţă de <var>#</var></li>
+</ul></li>
+<li>parantezele pot apărea oriunde în expresie cu condiţia să fie bine închise</li>
+</ul><p>Pentru a vă ajuta să înţelegeţi regulile mai bine, Algorel vă pune la dispoziţie şi câteva exemple:</p>
+
+<table class="example" cellspacing="0"><tr><th>Expresie</th><th>Ordini posibile</th></tr><tr><td>1#2&gt;3&gt;4<br></td><td>1 2 3 4<br>
+  2 3 4 1</td></tr><tr><td>((3&gt;(4#5)&gt;(1#(2&gt;6))))<br></td><td>3 4 5 1 2 6<br>
+  3 4 5 2 6 1<br>
+  3 5 4 1 2 6<br>
+  3 5 4 2 6 1</td></tr><tr><td>1&gt;2#3&gt;4#5&gt;6<br></td><td>1 2 3 4 5 6<br>
+  1 2 5 6 3 4<br>
+  3 4 1 2 5 6<br>
+  3 4 5 6 1 2<br>
+  5 6 1 2 3 4<br>
+  5 6 3 4 1 2<br></td></tr></table><p>Algorel are nişte ordini în care ar vrea să vadă episoadele. El vrea să ştie care din aceste ordini sunt posibile luând în considerare regulile descrise de expresie. Cum în ultimul timp s-a tot uitat la desene, nu prea ştie să rezolve problema şi a propus-o la concurs.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>episoade.in</var> va conţine pe prima linie expresia care descrie relaţiile dintre episoade. Pe a doua linie se află două numere: <var>T</var> - numărul de ordini preferate de Algorel şi <var>N</var> - numărul de episoade. Fiecare din următoarele <var>T</var> linii descriu o anumită ordine: pe fiecare linie se află o permutare a numerelor de la <var>1</var> la <var>N</var>; numerele sunt separate prin spaţii.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>episoade.out</var> veţi afişa <var>T</var> linii: pe linia <var>i</var> veţi scrie <var>1</var> dacă ordinea <var>i</var> din fişierul de intrare este posibilă conform regulilor expresiei sau <var>0</var> în caz contrar.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100</var></li>
+<li><var>1 ≤ T ≤ 20</var></li>
+<li>Lungimea expresiei nu depăşeşte <var>1000</var> caractere</li>
+<li>Expresia nu conţine spaţii</li>
+<li>Pentru <var>50%</var> din teste nu vor aparea paranteze în expresie</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>episoade.in</th><th>episoade.out</th></tr><tr><td>1#2&gt;3&gt;4<br>
+  3 4<br>
+  1 2 3 4<br>
+  2 1 3 4<br>
+  2 3 4 1<br></td><td>1<br>
+0<br>
+1</td></tr><tr><td>((3&gt;(4#5)&gt;(1#(2&gt;6))))<br>
+3 6<br>
+1 2 3 4 5 6<br>
+3 5 4 1 2 6<br>
+3 5 1 4 2 6<br></td><td>0<br>
+1<br>
+0</td></tr><tr><td>3#(2#1)<br>
+4 3<br>
+1 2 3<br>
+3 2 1<br>
+3 1 2<br>
+1 3 2<br></td><td>1<br>
+1<br>
+1<br>
+0<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

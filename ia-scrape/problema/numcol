@@ -1,0 +1,27 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>numcol.in, numcol.out</td><td><strong>Sursă</strong></td><td>Selectie echipe ACM ICPC, UPB 2009</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=numcol">Vezi solutiile trimise</a></p>
+
+<h1>Numcol<br></h1>
+
+<p>Lui Gigel ii place sa coloreze numerele naturale de la <var>1</var> la <var>N</var>, fiecare numar fiind colorat cu o culoare. Pentru aceasta, el are la dispozitie <var>16</var> culori, numerotate cu cifre, de la <var>0</var> la <var>9</var>, respectiv cu litere mari, de la <var>A</var> la <var>F</var>. In fiecare zi, Gigel coloreaza numerele intr-un mod diferit, iar astazi s-a gandit sa introduca o restrictie suplimentara: daca doua numere <var>A</var> si <var>B</var> ( <var>A</var> si <var>B</var> pot fi egale) sunt colorate cu aceeasi culoare, atunci suma lor (in caz ca nu depaseste valoarea <var>N</var>) trebuie neaparat sa fie colorata cu o alta culoare decat numerele <var>A</var> si <var>B</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>numcol.in</var> contine numarul natural <var>N</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>numcol.out</var> veti afisa <var>N</var> caractere, reprezentand culoarea fiecarui numar, in ordine, de la <var>1</var> la <var>N</var>. In caz ca exista mai multe solutii, puteti afisa oricare dintre ele.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 60.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>numcol.in</th><th>numcol.out</th></tr><tr><td>16<br></td><td>0123456789ABCDEF<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

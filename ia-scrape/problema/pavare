@@ -1,0 +1,59 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>pavare.in, pavare.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.8 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=pavare">Vezi solutiile trimise</a></p>
+
+<h1>Pavare<br></h1>
+
+<p>Gigel, primar in orasul sau, s-a gandit sa renoveze strada principala, strada de dimensiuni <var>M*N</var> compusa din bucati de dimensiuni <var>1*1</var>. Majoritatea bucatilor sunt stricate, dar mai exista <var>K</var> bucati care sunt considerate bune. Dorind sa plateasca cat mai putini bani, Gigel a luat de la un negustor blocuri de dimensiuni <var>2*2</var> la pretul unui bloc de dimensiuni <var>1*1</var>. Pentru a pava strada trebuie sa amplaseze cat mai multe din aceste blocuri pe bucati stricate, fara sa paveze vreo bucata buna deoarece ar aparea denivelari, si fara sa se suprapuna blocurile <var>2*2</var>. El si-a dat seama ca mai bine ar fi cumparat blocuri <var>1*1</var>, pentru ca ar fi acoperit toata strada fara batai de cap, dar acum nu mai are de ales si are nevoie de ajutorul tau!</p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati numarul maxim de blocuri <var>2*2</var> pe care le poate pune primarul pentru a repara strada.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie din fisierul <var>pavare.in</var> se vor afla trei numere intregi separate prin cate un spatiu: <var>N, M</var> si <var>K</var>. Pe urmatoarele <var>K</var> linii se vor afla perechi de numere intregi reprezentand linia si coloana pe care se afla o bucata buna.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Pe prima linie in fisierul <var>pavare.out</var> se va afla un numar natural reprezentand numarul maxim de blocuri <var>2*2</var> care pot fi amplasate pe strada.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 150</var></li>
+<li><var>1 ≤ M ≤ 15</var></li>
+<li><var>1 ≤ K ≤ N*M</var></li>
+<li>Liinile sunt numerotate de la <var>1</var> la <var>N</var>, iar coloanele de la <var>1</var> la <var>M</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>pavare.in</th><th>pavare.out</th></tr><tr><td>4 6 3<br>
+1 1<br>
+2 6<br>
+3 3</td><td>4</td></tr></table><h3>Explicatie</h3>
+
+<p>Acesta este un amplasament posibil al blocurilor:<br><img src="http://infoarena.ro/problema/pavare?action=download&amp;file=untitled.gif&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=96">Backtracking</a></span>
+            <a href="javascript:show_tag_list(96)" id="tag_anchor_96" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_96"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=98">Generarea tuturor submultimilor</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=59">Dinamica pe stari exponentiale</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

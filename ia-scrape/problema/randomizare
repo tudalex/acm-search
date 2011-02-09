@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>randomizare.in, randomizare.out</td><td><strong>Sursă</strong></td><td>Lot Alba Iulia 2010, Baraj 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a>, <a href="/cauta-probleme?tag_id%5B%5D=173">Andrei Paul Puni</a>, <a href="/cauta-probleme?tag_id%5B%5D=223">Cosmin Gheorghe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mathboy"><img src="/utilizator/mathboy?action=download&amp;file=avatar&amp;resize=L16x16" alt="mathboy">Dragos-Alin Rotaru</a> <a title="Rating mathboy: 510" class="rating-badge-3" href="http://infoarena.ro/utilizator/mathboy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mathboy">mathboy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=randomizare">Vezi solutiile trimise</a></p>
+
+<h1>Randomizare<br></h1>
+
+<p>Qwerty se joacă foarte mult cu numere aleatoare. Recent şi-a combinat pasiunea pentru numere aleatoare cu pasiunea pentru permutări. Qwerty are un şir de numere distincte <var>V</var> şi o permutare <var>P</var>. El a început să aplice permutarea asupra şirului. Ar vrea să aplice permutarea de un număr infinit de ori asupra şirului, dar din cauză că lumea se va sfârşi în anul <var>2012</var> s-a gândit să-ţi ceară ajutorul ca să îşi satisfacă curiozitatea bolnavă.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Qwerty te roagă să îi spui care este cel mai mic şir din punct de vedere lexicografic pe care îl poate obţine aplicând permutarea <var>P</var> asupra şirului <var>V</var> de un număr oarecare de ori şi în schimb îţi oferă <var>100</var> de puncte şi o şansă în plus pentru <var><span class="caps">IOI</span></var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>randomizare.in</var> conţine pe prima linie numărul natural <var>N</var> reprezentând lungimea permutării <var>P</var> şi a şirului <var>V</var>, pe a doua linie se vor afla <var>N</var> numere naturale distincte reprezentând elementele şirului <var>V</var>, iar pe a treia linie se vor afla <var>N</var> numere naturale distincte cuprinse între <var>1</var> şi <var>N</var> reprezentând elementele permutării <var>P</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>randomizare.out</var> se vor afişa <var>N</var> numere naturale distincte reprezentând cel mai mic şir din punct de vedere lexicografic ce poate fi obţinut.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 200 000</var></li>
+<li>Elementele şirului <var>V</var> pot fi memorate în variabile de tip intreg, pe <var>32</var> de biţi cu semn.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>randomizare.in</th><th>randomizare.out</th></tr><tr><td>10<br>
+18 5 67 25 4 68 34 65 74 82<br>
+4 3 8 7 1 5 2 10 6 9<br></td><td>4 34 5 18 68 74 25 67 82 65<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Şirurile pe care le poate obţine Qwerty sunt:<br><var>1.      18 5 67 25 4 68 34 65 74 82</var><br><var>2.      25 67 65 34 18 4 5 82 68 74</var><br><var>3.      34 65 82 5 25 18 67 74 4 68</var><br><var>4.      5 82 74 67 34 25 65 68 18 4</var><br><var>5.      67 74 68 65 5 34 82 4 25 18</var><br><var>6.      65 68 4 82 67 5 74 18 34 25</var><br><var>7.      82 4 18 74 65 67 68 25 5 34</var><br><var>8.      74 18 25 68 82 65 4 34 67 5</var><br><var>9.      68 25 34 4 74 82 18 5 65 67</var><br><var>10.     4 34 5 18 68 74 25 67 82 65</var></p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

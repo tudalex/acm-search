@@ -1,0 +1,58 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>evo.in, evo.out</td><td><strong>Sursă</strong></td><td>Baraj ONI 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=151">Florin Manea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2.2 sec</td><td><strong>Limită de memorie</strong></td><td>18000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=evo">Vezi solutiile trimise</a></p>
+
+<h1>Evo<br></h1>
+
+<p>Este binecunoscut faptul ca informatia genetica a unui organism poate fi codificata sub forma unui sir format din simboluri din multimea <var>{g, a, t, c}</var>. Pornind de la aceasta codificare, biologii au identificat 3 operatii asupra sirurilor de simboluri, operatii care pot modela evolutia anumitor organisme.</p>
+
+<p>1. <strong>Complementaritate</strong>. Simbolul <var>a</var> este complementarul lui <var>t</var> (si reciproc), iar simbolul <var>c</var> este complementarul lui <var>g</var> (si reciproc). Pentru un simbol <var>x</var> vom nota cu <var>c(x)</var> complementarul sau. Prin extensie, daca <var>w</var> este un sir de simboluri din multimea <var>{a, c, g, t}</var> notam cu <var>c(w)</var> sirul obtinut prin complementarea simbolurilor lui <var>w</var>. De exemplu, pentru <var>w=aaactg</var>, avem <var>c(w)=tttgac</var>. <br>
+2. <strong>Oglindire</strong>. Vom nota prin <var>w<sup>R</sup></var> sirul obtinut prin oglindirea lui <var>w</var>. De exemplu, pentru <var>w=aaagatat</var>, <var>w<sup>R</sup>=tatagaaa</var>.<br>
+3. <strong>Hairpin</strong>. Pentru un sir de simboluri <var>w</var>, care poate fi descompus in patru subsiruri <var>w<sub>1</sub>w<sub>2</sub>w<sub>3</sub>w<sub>4</sub></var> (unele dintre cele patru siruri pot fi vide) prin operatia hairpin se obtine: <var>w<sub>1</sub>w<sub>2</sub>w<sub>3</sub>w<sub>4</sub>c(w<sub>1</sub>)<sup>R</sup></var>, daca <var>w<sub>2</sub>=c(w<sub>4</sub>)<sup>R</sup></var> si lungimea lui <var>w<sub>2</sub></var> este mai mare sau egala cu <var>1</var>, sau <var>c(w<sub>4</sub>)<sup>R</sup>w<sub>1</sub>w<sub>2</sub>w<sub>3</sub>w<sub>4</sub></var>, daca <var>w<sub>1</sub>=c(w<sub>3</sub>)<sup>R</sup></var> si lungimea lui <var>w<sub>1</sub></var> este mai mare sau egala cu <var>1</var>. <br>
+Daca ambele conditii sunt verificate, oricare dintre cele doua siruri se poate obtine.</p>
+
+<p>In gradina Acolor a fost descoperita o specie de omizi cu simt artistic. Informatia genetica a omizilor este codificata printr-o multime <var>S</var> formata din <var>n</var> siruri de simboluri din multimea <var>{a, c, g, t}</var>. Multimea <var>S</var> este denumita multime initiala. In evolutia omizilor, informatia genetica initiala a suferit o serie de modificari. Pentru omizi, toate aceste modificari pot fi descrise prin aplicarea operatiei hairpin de un numar arbitrar de ori asupra sirurilor din multimea initiala <var>S</var>.</p>
+
+<p>Date fiind cele <var>n</var> siruri din multimea initiala <var>S</var> si o succesiune de <var>m</var> siruri de simboluri, sa se decida care dintre cele <var>m</var> siruri poate reprezenta codul genetic al unei omizi, cod obtinut prin aplicarea unor operatii hairpin.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>evo.in</var> contine <var>n+m+2</var> linii. Pe prima linie este scris numarul natural <var>n</var> reprezentand numarul de siruri din multimea initiala <var>S</var>. Urmeaza <var>n</var> linii, pe fiecare linie fiind scris un sir din multimea <var>S</var>. Pe linia <var>n+2</var> este scris numarul natural <var>m</var>, reprezentand numarul de siruri care trebuie sa fie analizate. Pe urmatoarele <var>m</var> linii sunt scrise cele <var>m</var> siruri care trebuie analizate, cate un sir pe o linie.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>evo.out</var> va contine <var>m</var> linii, cate una pentru fiecare sir de analizat. Pe linia <var>i</var> se va scrie cuvantul <var>da</var>, daca al <var>i</var>-lea sir dintre cele <var>m</var> siruri de analizat poate fi codul genetic al unei omizi, respectiv cuvantul <var>nu</var>, in caz contrar.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>0 &lt; n &lt; 5</var></li>
+<li><var>0 &lt; m &lt; 1001</var></li>
+<li>Lungimea unui sir din multimea initiala <var>S</var> este mai mica decat <var>101</var>.</li>
+<li>Lungimea totala a sirurilor de analizat este mai mica decat <var>16001</var>.</li>
+<li>Lungimea fiecarui sir de analizat este mai mica decat <var>4001</var>.</li>
+<li>In <var>55%</var> din teste lungimea maxima a unui sir de analizat este <var>700</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>evo.in</th><th>evo.out</th></tr><tr><td>2<br>
+acgtcg<br>
+gaaaat<br>
+4<br>
+gaaaat<br>
+gaaaatcc<br>
+gaaaattc<br>
+cgacgtcgtcg<br></td><td>da <br>
+nu<br>
+da<br>
+da<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Primul sir de analizat este <var>gaaaat</var>. Acesta poate fi obtinut din <var>gaaaat</var> fara a aplica vreo operatie hairpin.<br>
+Al doilea sir de analizat este <var>gaaatcc</var>. Acesta nu poate fi obtinut prin aplicarea operatiei hairpin asupra sirurilor <var>acgtcg</var> sau <var>gaaaat</var>.<br>
+Al treilea sir de analizat este <var>gaaaattc</var>. Acesta se obtine aplicand operatia hairpin o singura data asupra sirului <var>gaaaat</var> (considerand <var>w<sub>1</sub>=ga</var>, <var>w<sub>2</sub>=a</var>, <var>w<sub>3</sub>=aa</var>, <var>w<sub>4</sub>=t</var>).<br>
+Al patrulea sir de analizat este <var>cgacgtcgtcg</var>. Acesta se poate obtine din <var>acgtcg</var> aplicand de doua ori operatia hairpin (din <var>acgtcg</var> obtinem <var>cgacgtcg</var> pentru <var>w<sub>1</sub>=ac</var>, <var>w<sub>2</sub>=sir vid</var>, <var>w<sub>3</sub>=gt</var>, <var>w<sub>4</sub>=cg</var>, operatia de hairpin adaugand <var>c(w<sub>4</sub>)<sup>R</sup></var> la inceputul sirului, si apoi din <var>cgacgtcg</var> obtinem <var>cgacgtcgtcg</var> pentru <var>w<sub>1</sub>=cga</var>, <var>w<sub>2</sub>=c</var>, <var>w<sub>3</sub>=gtc</var> si <var>w<sub>4</sub>=g</var>, operatia de hairpin adaugand <var>c(w<sub>1</sub>)<sup>R</sup></var> la sfarsitul sirului.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

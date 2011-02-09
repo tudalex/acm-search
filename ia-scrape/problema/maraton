@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>maraton.in, maraton.out</td><td><strong>Sursă</strong></td><td>ONI gimnaziu 2010, clasa a 7-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=311">Cristina Iordaiche</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/miculprogramator"><img src="/utilizator/miculprogramator?action=download&amp;file=avatar&amp;resize=L16x16" alt="miculprogramator">A Cosmina - vechi</a> <a title="Rating miculprogramator: 508" class="rating-badge-3" href="http://infoarena.ro/utilizator/miculprogramator?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/miculprogramator">miculprogramator</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>1024 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=maraton">Vezi solutiile trimise</a></p>
+
+<h1>Maraton<br></h1>
+
+<p>Pentru desfăşurarea probei de maraton a poştaşilor, organizatorii au plasat pe traseu <var>n+2</var> semafoare, la distanţe egale unul de celălalt. Primul semafor e plasat pe linia de start, iar ultimul semafor este plasat pe linia de sosire şi ambele vor avea aprinsă culoarea verde din momentul în care se dă startul şi până la sfârşitul cursei. Pentru fiecare semafor întâlnit pe traseu, cele trei culori ale sale: roşu, galben şi verde se aprind succesiv astfel: întotdeuna după roşu se face galben, după galben se face verde, iar după verde urmează roşu, şi aşa mai departe. Culoarea roşie a fiecărui semafor se schimbă în galben după <var>5</var> secunde, galbenul se schimbă în verde după <var>3</var> secunde, iar verdele în roşu după <var>2</var> secunde. </p>
+
+<p>În momentul în care se dă startul şi se porneşte cronometrul toate cele <var>n</var> semafoare de pe traseu se aprind. La unele va fi culoarea roşie, la altele galben, iar la altele verde, nefiind sincronizate la acest moment. Fiecare poştaş înscris la maraton trebuie să parcurgă traseul de la linia de start până la linia de sosire şi să treacă pe rând de cele <var>n</var> semafoare, doar pe culoarea verde a fiecăruia dintre ele. Dacă un concurent ajunge în dreptul semaforului şi acesta este verde va trece obligatoriu mai departe. Dacă ajunge în dreptul unui semafor chiar în secunda în care se schimbă culoarea acestuia, atunci concurentul poate trece mai departe doar dacă această schimbare s-a facut de la galben la verde, nu şi de la verde la roşu sau de la roşu la galben.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Ştiind că poştaşul Andrei parcurge distanţa dintre două semafoare succesive în <var>k</var> secunde, să se scrie un program care să determine numărul minim de secunde necesar pentru ca el să treacă linia de sosire.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>maraton.in</var> conţine pe prima linie numerele naturale <var>n</var> şi <var>k</var> despărţite printr-un spaţiu. Valoarea <var>n</var> reprezintă numărul de semafoare plasate între cele două linii, cea de start şi cea de sosire, iar numărul <var>k</var> reprezintă timpul necesar, exprimat în secunde, pentru parcurgerea distanţei dintre oricare două semafoare succesive de pe traseu. Pe următoarea linie se află <var>n</var> valori întregi despărţite prin câte un spaţiu, ce reprezintă culoarea pe care o are fiecare semafor în momentul startului. Vom codifica cu <var>-2</var> culoarea roşie, <var>-1</var> culoarea galbenă şi cu <var>0</var> culoarea verde a semaforului.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>maraton.out</var> va conţine o singură linie pe care se va scrie numărul natural <var>s</var>, care reprezintă numărul minim de secunde necesar pentru ca Andrei să treacă de linia de sosire.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ n ≤ 5000</var></li>
+<li><var>1 ≤ k ≤ 600</var></li>
+<li>Linia de sosire este plasată imediat după ultimul semafor.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>maraton.in</th><th>maraton.out</th></tr><tr><td>3 2<br>
+0 0 -1<br></td><td>25<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Se dă startul şi după <var>2</var> secunde poştaşul ajunge în dreptul primului semafor. La acesta tocmai se schimbă culoarea din verde în roşu şi ca urmare poştaşul nu poate trece. Aşteaptă <var>8</var> secunde, se face verde iar după alte <var>2</var> secunde ajunge în dreptul celui de-al doilea semafor (au trecut <var>12</var> secunde de la start). Aici mai aşteaptă <var>8</var> secunde, se face verde şi poate trece. Parcurge în <var>2</var> secunde distanţa până în dreptul celui de-al treilea semafor. Când ajunge în dreptul acestui semafor (după <var>22</var> secunde de la start) mai aşteaptă o secundă (<var>1</var>), se face verde şi peste <var>2</var> secunde trece linia de sosire (<var>22 + 1 + 2 = 25</var> secunde).</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

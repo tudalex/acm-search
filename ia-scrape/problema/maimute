@@ -1,0 +1,52 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>maimute.in, maimute.out</td><td><strong>Sursă</strong></td><td>Lista lui Francu</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=164">Catalin Francu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/devilkind"><img src="/utilizator/devilkind?action=download&amp;file=avatar&amp;resize=L16x16" alt="devilkind">Savin Tiberiu</a> <a title="Rating devilkind: 675" class="rating-badge-4" href="http://infoarena.ro/utilizator/devilkind?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/devilkind">devilkind</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.8 sec</td><td><strong>Limită de memorie</strong></td><td>6144 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=maimute">Vezi solutiile trimise</a></p>
+
+<h1>Maimute<br></h1>
+
+<p>Odata cu aparitia antidotului impotriva maimutei nebune rata mortalitatii a scazut foarte mult printre maimute, cunoscandu-se astfel foarte bine arborele genealogic al familiei acestora. Din pacate insa varsta inaintata si-a pus amprenta pe memoria acestora si pe viteza lor de reactie si din cand in cand apar certuri pe tema structurii arborelui genealogic. Motivul certurilor este relatia de descendenta, deoarece unele maimute sunt mai destepte, alte maimute vor sa stie daca sunt sau nu descendenti ale acelor maimute.</p>
+
+<h2>Cerinta</h2>
+
+<p>Maimutele au scos din biblioteca lor un document vechi cu arborele genealogic a celor <var>N</var> maimute care fac parte din tribul cu probleme si de asemenea v-au inmanat <var>M</var> intrebari de genul "Exista o relatie ascendent-descendent intre maimuta <var>X</var> si maimuta <var>Y</var>?". Tu trebuie sa raspunzi cat mai repede la aceste intrebari altfel maimutele vor incepe sa se incaiere iar violenta nu duce la nimic bun :).</p>
+
+<h2>Date de intrare</h2>
+
+<p>In fisierul de intrare <var>maimute.in</var> se vor gasi pe prima linie numarul <var>N</var> cu semnificatia din enunt. Pe urmatoarele <var>N-1</var> linii se vor afla cate 2 numere <var>X</var> si <var>Y</var> reprezentand faptul ca intre maimuta <var>X</var> si <var>Y</var> exista o relatie directa. Pe linia <var>N+1</var> se va afla numarul <var>M</var> cu semnificatia din enunt. Pe urmatoarele <var>M</var> linii se vor afla intrebarile maimutelor descrise prin doua numere <var>X</var> si <var>Y</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>maimute.out</var> se vor afla <var>M</var> linii. Pe linia <var>i</var> se va afla cuvantul "<var>DA</var>" daca raspunsul la intrebarea <var>i</var> este da, in caz contrar linia <var>i</var> va contine cuvantul "<var>NU</var>"</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1</var> ≤ <var>N</var> ≤ <var>100 000</var></li>
+<li><var>1</var> ≤ <var>M</var> ≤ <var>500 000</var></li>
+<li>Maimuta <var>1</var> este maimuta cea mai batrana si cea mai inteleapta din tot tribul, toate celelalte maimute fiind descendente ale acesteia.</li>
+<li>Relatia ascendent-descendent nu este neaparat directa (vezi exemplu)</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>maimute.in</th><th>maimute.out</th></tr><tr><td>7<br>
+6 4<br>
+4 7<br>
+3 1<br>
+2 5<br>
+1 2<br>
+4 1<br>
+6<br>
+4 6<br>
+3 5<br>
+6 7<br>
+7 1<br>
+4 6<br>
+6 4<br></td><td>DA<br>
+NU<br>
+NU<br>
+DA<br>
+DA<br>
+DA</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

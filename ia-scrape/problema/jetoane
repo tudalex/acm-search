@@ -1,0 +1,35 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>jetoane.in, jetoane.out</td><td><strong>Sursă</strong></td><td>ONI 2007, clasa 7</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=195">Adrian Pintea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/peanutz"><img src="/utilizator/peanutz?action=download&amp;file=avatar&amp;resize=L16x16" alt="peanutz">Andrei Homorodean</a> <a title="Rating peanutz: 544" class="rating-badge-2" href="http://infoarena.ro/utilizator/peanutz?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/peanutz">peanutz</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>1024 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=jetoane">Vezi solutiile trimise</a></p>
+
+<h1>Jetoane<br></h1>
+
+<p>Ionel si Georgel colectioneaza jetoane care se gasesc in revistele Scooby-Doo. Jetoanele au inscrise pe ele diferite valori, numere naturale distincte, un copil neputand avea doua sau mai multe jetoane cu aceeasi valoare. Ei propun urmatorul joc: avand in fata jetoanele proprii, determina impreuna care este jetonul de valoare comuna cu cea mai mica valoare inscrisa si jetonul de valoare comuna cu cea mai mare valoare inscrisa. Dupa ce au identificat aceste jetoane, castigatorul este acela care va avea cele mai multe jetoane dupa eliminarea acelora cu valori cuprinse intre minimul si maximul comun, inclusiv minimul si maximul.</p>
+
+<h2>Cerinta </h2>
+
+<p>Determinati valorile minima si maxima comune, precum si castigatorul jocului.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul <var>jetoane.in</var> contine pe prima linie doua numere naturale separate printr-un singur spatiu, <var>m</var> si <var>n</var> reprezentand numarul de jetoane ale primului copil si respectiv numarul de jetoane ale celui de-al doilea copil. Pe urmatoarea linie sunt <var>m</var>+<var>n</var> valori separate prin cate un spatiu, ce reprezinta jetoanele primului si apoi jetoanele celui de-al doilea copil.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul <var>jetoane.out</var> contine pe prima linie trei valori intregi <var>Min Max C</var> separate prin cate un spatiu, unde <var>Min</var> este valoarea minima comuna, <var>Max</var> este valoarea maxima comuna, iar <var>C</var> va fi 0, daca jocul se incheie la egalitate, 1 daca va castiga primul copil, sau 2, daca va castiga cel de-al doilea copil.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ <var>n</var>, <var>m</var> ≤ 28 000</var></li>
+<li><var>1 ≤ valoarea de pe jeton ≤ 50 000</var></li>
+<li>Vor exista cel putin <var>2</var> valori comune</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th><var>jetoane.in</var></th><th><var>jetoane.out</var></th></tr><tr><td>10 6<br>
+1 3 2 4 7 5 8 19 27 9 3 8 80 6 18 19<br></td><td>3 19 1<br></td></tr><tr><td>4 5<br>
+6 7 1 90 6 7 68 1 3<br></td><td>1 7 0<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

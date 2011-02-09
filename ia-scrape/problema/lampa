@@ -1,0 +1,37 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>lampa.in, lampa.out</td><td><strong>Sursă</strong></td><td>preONI 2008, Runda 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=161">Adrian Airinei</a>, <a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>4096 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=lampa">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=lampa">Vezi solutiile trimise</a></p>
+
+<h1>Lampa<br></h1>
+
+<p>Astro si Buru sunt in criza de idei. Ei trebuie sa gaseasca rapid probleme pentru ultima runda a concursului preONI. Pentru ca nu au nici o idee, se hotarasc sa cumpere o lampa fermecata. Totusi, dupa ce o cumpara, acestia isi dau seama ca lampa este de fapt o lampa obisnuita, si nu una fermecata. De suparare, cei doi incep sa joace urmatorul joc: Buru scrie pe o foaie de hartie un cuvant format din litere mici ale alfabetului englez. Astro scrie si el alt cuvant. Cei doi vor scrie alternativ cuvinte pe hartie, iar cuvantul scris la fiecare pas incepand cu al <var>3</var>-lea va fi concatenarea celor doua cuvinte anterioare. La un moment dat Buru se opreste dupa ce sunt scrise pe hartie <var>N</var> cuvinte si il intreaba pe Astro: "care sunt cele doua cuvinte de la care am plecat?". Pentru ca au scris atat de multe cuvinte, cei doi au uitat cuvintele de la care s-a plecat.<br>
+Dandu-se <var>N</var> si al <var>N</var>-lea cuvant de pe hartie, sa se determine cele doua cuvinte initiale. Daca sunt mai multe solutii posibile se va afisa cea in care primul cuvant este minim lexicografic. Daca nu exista nici o solutie se va afisa numarul <var>0</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>lampa.in</var> contine pe prima linie numerele <var>N</var> si <var>M</var>, unde <var>N</var> este numarul de ordine al cuvantului dat iar <var>M</var> este lungimea acestuia. Cea de a doua linie va contine <var>M</var> caractere reprezentand cel de-al <var>N</var>-lea cuvant de pe hartie.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>lampa.out</var> se va scrie pe prima linie primul cuvant de pe foaie ( cel scris de Buru ). A doua linie va contine cel de-al doilea cuvant de pe foaie ( cel scris de Astro ). In cazul in care nu exista nici o solutie, fisierul de iesire va contine doar o singura linie pe care va fi afisat numarul <var>0</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>La corectare vor fi folosite 10 teste. Ele vor avea urmatoarele valori pentru <var>N</var> si <var>M</var>:</li>
+</ul><table class="example" cellspacing="0"><tr><th>T1</th><th>T2</th><th>T3</th><th>T4</th><th>T5</th><th>T6</th><th>T7</th><th>T8</th><th>T9</th><th><span class="caps">T10</span></th></tr><tr><td>8 523</td><td>8 4200</td><td>10 5001</td><td>9 8910</td><td>7 46189</td><td>6 88600</td><td>25 346468</td><td>14 590005</td><td>15 1010860</td><td>17 3027197</td></tr></table><ul><li>Cele doua cuvinte initiale trebuie sa aiba lungime nenula</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>lampa.in</th><th>lampa.out</th></tr><tr><td>5 22<br>
+astroburuburuastroburu<br></td><td>astro<br>
+buru<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Cuvintele scrise pe foaie sunt: <var>astro</var>, <var>buru</var>, <var>astroburu</var>, <var>buruastroburu</var>, <var>astroburuburuastroburu</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

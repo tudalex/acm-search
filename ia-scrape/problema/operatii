@@ -1,0 +1,38 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>operatii.in, operatii.out</td><td><strong>Sursă</strong></td><td>preONI 2008 Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.9 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=operatii">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=operatii">Vezi solutiile trimise</a></p>
+
+<h1>Operatii<br></h1>
+
+<p>Consideram un vector nul cu <var>N</var> elemente ( fiecare element este egal cu <var>0</var> ). Asupra vectorului se efectueaza un numar de operatii de forma: se selecteaza doi indici <var>i</var> si <var>j</var>, <var>i ≤ j</var>, si se incrementeaza cu o unitate toate elementele din vector dintre pozitiile <var>i</var> si <var>j</var> inclusiv. <br>
+Dandu-se un vector <var>v</var> cu <var>N</var> elemente, sa se precizeze care este numarul minim de operatii de tipul celei precizate mai sus care trebuiesc efectuate pentru a ajunge de la vectorul nul la vectorul <var>v</var>. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>operatii.in</var> contine pe prima linie numarul <var>N</var>. Cea de a doua linie contine <var>N</var> numere naturale, reprezentand elementele vectorului <var>v</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>operatii.out</var> se va scrie pe prima linie numarul minim de operatii care trebuiesc efectuate asupra vectorului nul pentru a obtine vectorul <var>v</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1 000 000</var></li>
+<li>Fiecare numar din <var>v</var> este mai mic sau egal cu <var>100 000</var></li>
+<li>Se considera ca primul element al oricarui vector este situat pe pozitia <var>1</var></li>
+<li>Pentru 10% din teste, <var>N ≤ 10</var></li>
+<li>Pentru 30% din teste, <var>N ≤ 1 000</var></li>
+<li>Pentru 40% din teste se garanteaza ca rezultatul nu va depasi <var>3 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>operatii.in</th><th>operatii.out</th></tr><tr><td>7<br>
+0 2 2 1 0 1 2<br></td><td>4</td></tr></table><h3>Explicatie</h3>
+
+<table class="example" cellspacing="0"><tr><th>vector</th><th>operatia efectuata</th></tr><tr><td>0 0 0 0 0 0 0</td><td>i = 2, j = 4</td></tr><tr><td>0 1 1 1 0 0 0</td><td>i = 2, j = 3</td></tr><tr><td>0 2 2 1 0 0 0</td><td>i = 6, j = 7</td></tr><tr><td>0 2 2 1 0 1 1</td><td>i = 7, j = 7</td></tr><tr><td colspan="2">0 2 2 1 0 1 2</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

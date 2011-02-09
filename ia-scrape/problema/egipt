@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>egipt.in, egipt.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil 2010, Clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=159">Clara Ionescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Marius"><img src="/utilizator/Marius?action=download&amp;file=avatar&amp;resize=L16x16" alt="Marius">Marius Stroe</a> <a title="Rating Marius: 627" class="rating-badge-4" href="http://infoarena.ro/utilizator/Marius?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Marius">Marius</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=egipt">Vezi solutiile trimise</a></p>
+
+<h1>Egipt<br></h1>
+
+<p>În Egiptul antic se va construi o piramidă. Pe terenul respectiv au fost cărate multe blocuri de piatră şi aşezate de-a lungul unei linii drepte. Blocurile de piatră au fost prelucrate în prealabil, astfel încât acestea au trei dimensiuni diferite. Constructorul şef al faraonului vrea să micşoreze efortul de a construi piramida şi astfel el ar vrea să aranjeze blocurile de piatră în ordine crescătoare după mărime. </p>
+
+<h3>Cerinţă</h3>
+
+<p>Determinaţi numărul minim de interschimbări de blocuri de piatră pe care sclavii faraonului va trebui să le efectueze în scopul aranjării acestora în ordine crescătoare. Stabiliţi şi numerele de ordine din configuraţia iniţială ale blocurilor de piatră care se vor interschimba!</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>egipt.in</var> conţine pe prima linie numărul natural <var>n</var>, reprezentând numărul blocurilor de piatră. Pe următoarele <var>n</var> linii se află câte un număr natural, reprezentând tipul blocului de piatră. Acestea fiind de trei dimensiuni, tipul va fi <var>1</var>, <var>2</var> sau <var>3</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>egipt.out</var> se va scrie pe prima linie un număr natural <var>m</var>, reprezentând numărul interschimbărilor necesare. Pe fiecare dintre următoarele <var>m</var> linii se va descrie câte o interschimbare, necesară de realizat pentru a obţine şirul de blocuri de piatră ordonat în felul următor: fiecare linie va conţine două numere naturale <var>i</var> <var>j</var>, având semnificaţia că se va interschimba blocul de pe poziţia <var>i</var> cu blocul de pe poziţia <var>j</var>.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ n ≤ 10 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>egipt.in</th><th>egipt.out</th></tr><tr><td>5<br>
+3<br>
+2<br>
+1<br>
+1<br>
+2<br></td><td>3<br>
+2 3<br>
+1 4<br>
+4 5<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>bazaconii.in, bazaconii.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2009, Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=161">Adrian Airinei</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.6 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=bazaconii">Vezi solutiile trimise</a></p>
+
+<h1>Bazaconii<br></h1>
+
+<p>Andrei si Maria sunt doi copii care se tin mereu de bazaconii. Ultima bazaconie facuta de cei doi a fost sa piarda o foaie pe care era scris un sir de <var>N</var> numere naturale. Ei nu isi mai amintesc acum ce numere erau in sir, dar isi amintesc in schimb <var>M</var> relatii de forma <var>i j k</var> cu semnificatia ca suma xor a numerelor din sir aflate pe pozitiile <var>i</var> si <var>j</var> este <var>k</var>. Copiii au incercat sa reconstituie sirul initial pe baza acestor relatii, dar nu au reusit si de aceea va cer voua ajutorul. Ei isi mai doresc ca in cazul in care exista mai multe siruri de numere care satisfac toate relatiile sa stie doar sirul cel mai mic din punct de vedere lexicografic.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>bazaconii.in</var> contine pe prima linie numarul <var>T</var>, reprezentand numarul de teste ce urmeaza a fi descrise. In continuare urmeaza cele <var>T</var> teste, pe prima linie aflandu-se <var>N</var> si <var>M</var>, separate de un singur spatiu, avand semnificatia din enunt. Urmeaza apoi <var>M</var> linii, pe fiecare aflandu-se trei numere naturale separate de un singur spatiu, <var>i</var>, <var>j</var> si <var>k</var>, avand semnificatia din enunt.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>bazaconii.out</var> se vor afisa <var>T</var> linii, pe linia <var>i</var> aflandu-se raspunsul pentru al <var>i</var>-lea test din fisierul de intrare. Daca nu exista niciun sir care sa respecte conditiile se va afisa doar numarul <var>-1</var>, altfel se vor afisa <var>N</var> numere naturale separate de un singur spatiu, reprezentand cel mai mic sir din punct de vedere lexicografic care respecta toate conditiile.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li>Pentru <var>20%</var> din teste <var>N ≤ 7</var> si se garanteaza ca solutia optima va avea toate valorile mai mici sau egale decat <var>20</var></li>
+<li><var>1 ≤ T ≤ 10</var></li>
+<li><var>1 ≤ N, M ≤ 10 000</var></li>
+<li>Pentru fiecare triplet <var>i j k</var>, <var>1 ≤ i, j ≤ N</var> si <var>0 ≤ k ≤ 2 000 000 000</var></li>
+<li>Pentru a obtine suma xor a doua numere naturale se scriu numerele in reprezentare binara, apoi fiecare bit al rezultatului va fi <var>1</var> numai daca bitii corespunzatori ai celor doua numere sunt diferiti, altfel va fi <var>0</var>. Exemplu: <var>0 xor 1 = 1</var>, <var>1 xor 0 = 1</var>, <var>1001 xor 1100 = 0101</var>. In C/C++ exista operatorul "<var>^</var>" care face aceasta operatie, iar in pascal exista operatorul "<var>xor</var>".</li>
+<li>Un sir <var>X</var> este mai mic din punct de vedere lexicografic decat un sir <var>Y</var> daca exista un <var>k</var> astfel incat <var>X<sub>i</sub>=Y<sub>i</sub></var> pentru orice <var>i&lt;k</var> si <var>X<sub>k</sub>&lt;Y<sub>k</sub></var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>bazaconii.in</th><th>bazaconii.out</th></tr><tr><td>2<br>
+  2 2<br>
+  1 2 3<br>
+  1 2 1<br>
+  2 1<br>
+  1 2 1<br></td><td>-1<br>
+  0 1<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Pentru al doilea test o solutie posibila era si <var>1 0</var>, dar sirul <var>0 1</var> este cel mai mic din punct de vedere lexicografic.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

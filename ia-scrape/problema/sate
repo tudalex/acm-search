@@ -1,0 +1,43 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>sate.in, sate.out</td><td><strong>Sursă</strong></td><td>preONI 2007 Runda Finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=sate">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=sate">Vezi solutiile trimise</a></p>
+
+<h1>Sate<br></h1>
+
+<p>Intr-o tara pitoreasca, intr-un judet de munte, sunt <var>N</var> sate coliniare numerotate cu numere naturale de la <var>1</var> la <var>N</var>. Satele sunt asezate in ordine, de la stanga la dreapta, conform numerelor care le identifica. Astfel, satul <var>1</var> este cel mai din stanga, in timp ce satul <var>N</var> este cel mai din dreapta. Sunt exact <var>M</var> perechi de sate intre care distanta este cunoscuta ( exprimata in kilometri ). Pe baza acestor informatii, trebuie determinata distanta intre satele <var>X</var> si <var>Y</var>, daca acest lucru este posibil. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>sate.in</var> se afla <var>N</var>, <var>M</var>, <var>X</var> si <var>Y</var>, unde <var>N</var> este numarul de sate si <var>M</var> este numarul de relatii de forma precizata mai sus. Pe fiecare din urmatoarele <var>M</var> linii se gaseste cate un triplet (<var>i j D</var>), cu semnificatia ca distanta intre satele <var>i</var> si <var>j</var> (<var>i &lt; j</var>) este de <var>D</var> kilometri.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>sate.out</var> contine o valoare indicand distanta determinata intre satele <var>X</var> si <var>Y</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 30 000</var></li>
+<li><var>1 ≤ M ≤ 100 024</var></li>
+<li>Pentru cel putin <var>45%</var> din teste, <var>N ≤ 300</var></li>
+<li>Relatiile date nu sunt contradictorii</li>
+<li>Se garanteaza ca distanta intre satele <var>X</var> si <var>Y</var> este determinata in mod unic de relatiile date</li>
+<li>Distanta dintre oricare doua sate este un numar natural exprimat in kilometri</li>
+<li>Se garanteaza ca distanta intre satele <var>1</var> si <var>N</var> nu depaseste <var>20</var> de milioane</li>
+<li>Intotdeauna va putea fi determinata distanta dintre <var>X</var> si <var>Y</var> pe baza informatiilor primite</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>sate.in</th><th>sate.out</th></tr><tr><td>11 7 1 11<br>
+1 7 10<br>
+4 6 4<br>
+5 7 4<br>
+6 8 5<br>
+2 10 15<br>
+4 11 13<br>
+5 8 8<br></td><td>18<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,65 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>bcolor.in, bcolor.out</td><td><strong>Sursă</strong></td><td>Lot 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=37">Emilian Miron</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=bcolor">Vezi solutiile trimise</a></p>
+
+<h1>Bcolor<br></h1>
+
+<p>Omida Smith s-a apucat din nou de colorat. De data aceasta s-a gandit sa incerce cu grafuri neorientate cu <var>N</var> noduri etichetate de la <var>1</var> la <var>N</var> si <var>M</var> muchii numerotate de la <var>1</var> la <var>M</var>.</p>
+
+<p>La o plimbare, Smith porneste din nodul etichetat cu <var>1</var>, se plimba pe muchiile grafului, dupa care se intoarce in nodul de plecare. Astfel, drumul parcurs de Smith incepe si se termina cu nodul <var>1</var>, poate trece de mai multe prin acelasi nod si de asemenea poate trece de mai multe ori prin aceeasi muchie. Muchiile grafului sunt initial colorate in alb, iar la fiecare trecere a omizii peste o muchie aceasta isi schimba culoarea: din alba devine rosie si din rosie devine alba.</p>
+
+<p>Fiecarui drum ii corespunde astfel o colorare finala a muchiilor, pe care vom numi configuratie posibila si o vom reprezenta ca un sir de <var>M</var> elemente reprezentand in ordine culorile finale ale muchiilor (<var>A</var> pentru alb, respectiv <var>R</var> pentru rosu). Omida a observat ca din toate configuratiile posibile, nu toate sunt frumoase. Exista unele muchii speciale care nu arata bine decat daca au o anumita culoare.</p>
+
+<p>Smith vrea sa dea lovitura pe piata de grafuri de arta, asa ca genereaza pentru un graf dat toate configuratiile frumoase posibile in ordine lexicografica. Va lansa pe piata cea de a <var>K</var>-a configuratie generata, configuratiile fiind numerotate incepand cu <var>1</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se determine cea de a <var>K</var>-a configuratie frumoasa posibila, in ordine lexicografica.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>bcolor.in</var> se vor afla numerele naturale <var>N, M, K</var> separate prin cate un spatiu. Pe urmatoarele <var>M</var> linii se vor afla descrierile muchiilor grafului.</p>
+
+<p>Pe linia <var>i+1</var> se va afla descrierea muchiei <var>i</var>, formata din <var>3</var> numere naturale <var>x, y, z</var> separate prin cate un spatiu. Numerele <var>x</var> si <var>y</var> reprezinta nodurile care sunt extremitatile muchiei, iar <var>z</var> este un numar care poate lua valorile cu semnificatia de mai jos:</p>
+
+
+<ul><li><var>z=0</var>     muchia nu este speciala</li>
+<li><var>z=1</var>     muchia este speciala, trebuie neaparat colorata in alb</li>
+<li><var>z=2</var>     muchia este speciala, trebuie neaparat colorata in rosu.</li>
+</ul><h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>bcolor.out</var> va contine o singura linie formata din <var>M</var> caractere din multimea <var>{A, R}</var> reprezentand in ordine culorile muchiilor din cea de a <var>K</var>-a configuratie frumoasa posibila pentru graful din fisierul de intrare.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N, M ≤ 200</var></li>
+<li><var>1 ≤ K ≤ 10<sup>8</sup></var></li>
+<li>Exista minim <var>K</var> configuratii frumoase posibile pentru graful dat.</li>
+<li>Muchiile din fisierul de intrare sunt distincte.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>bcolor.in</th><th>bcolor.out</th></tr><tr><td>10 10 2<br>
+1 2 0<br>
+3 5 1<br>
+2 3 0<br>
+3 4 0<br>
+4 5 0<br>
+5 2 0<br>
+2 4 0<br>
+6 7 0<br>
+7 8 0<br>
+8 6 0<br></td><td><span class="caps">AAAARRRAAA</span></td></tr></table><h3>Explicatii</h3>
+
+<p>Configuratiile frumoase posibile in ordine lexicografica sunt:</p>
+
+
+<ol><li><var><span class="caps">AAAAAAAAAA</span></var></li>
+<li><var><span class="caps">AAAARRRAAA</span></var></li>
+<li><var><span class="caps">AARRAARAAA</span></var></li>
+<li><var><span class="caps">AARRRRAAAA</span></var></li>
+</ol><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

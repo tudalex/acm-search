@@ -1,0 +1,52 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>densitate.in, densitate.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2009, Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=253">Stefan Alexandru Filip</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Prostu"><img src="/utilizator/Prostu?action=download&amp;file=avatar&amp;resize=L16x16" alt="Prostu">Filip Stefan A.</a> <a title="Rating Prostu: 650" class="rating-badge-4" href="http://infoarena.ro/utilizator/Prostu?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Prostu">Prostu</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.25 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=densitate">Vezi solutiile trimise</a></p>
+
+<h1>Densitate<br></h1>
+
+<p>Oaia Dubota a invatat de la oaia profesoara de matematica despre numerele prime. Pe langa definitia numerelor prime (un numar prim se divide numai cu <var>1</var> si cu el insusi), profesoara le-a spus si doua cuvinte despre <a href="http://en.wikipedia.org/wiki/Prime_number_theorem" class="wiki_link_external">teorema numerelor prime</a>. Un rezultat al acestei teoreme este ca aproximativ unul din <var>13</var> numere intre <var>1</var> si <var>500000</var> sunt prime. Lui Dubota nu ii vine sa creada ca sunt atat de multe numere prime si nici nu are inceredere in profesoara si a decis sa investigheze problema prin metode normale, folosind calculatorul (pentru ca nu stie matematica). Dubota este insa un programator incepator si va roaga sa il ajutati sa raspunda repede la <var>Q</var> intrebari de tipul: Cate numere prime sunt intre <var>a</var> si <var>b</var>, unde <var>a, b ≤ N</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>densitate.in</var> va contine pe prima linie <var>N</var> si <var>Q</var>. Pe urmatoarele <var>Q</var> linii se afla cate 2 numere <var>a<sub>i</sub></var>, <var>b<sub>i</sub></var> cu semnificatia din enunt.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>densitate.out</var> se scrie <var>Q</var> linii, pe care sunt afisate, in ordine, raspunsurile intrebarilor lui Dubota.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>N &lt; 500000</var></li>
+<li><var>Q &lt; 100000</var></li>
+<li><var>1 ≤ a ≤ b ≤ N</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>densitate.in</th><th>densitate.out</th></tr><tr><td>30 10<br>
+1 4<br>
+1 10<br>
+1 11<br>
+1 12<br>
+1 13<br>
+1 30<br>
+7 19<br>
+8 18<br>
+7 20<br>
+8 29<br></td><td>2<br>
+4<br>
+5<br>
+5<br>
+6<br>
+10<br>
+5<br>
+3<br>
+5<br>
+6<br></td></tr></table><h3>Explicatii</h3>
+
+<p>Numerele prime intre <var>1</var> si <var>30</var> sunt: <var>2, 3, 5, 7, 11, 13, 17, 19, 23</var> si <var>29</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,47 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>radio.in, radio.out</td><td><strong>Sursă</strong></td><td>Romanian Open Contest, TIMUS 2001</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.6 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=radio">Vezi solutiile trimise</a></p>
+
+<h1>Radio<br></h1>
+
+<p>Pe suprafata Romaniei exista <var>K</var> statii radio pozitionate la coordonate si altitudini diferite. Fiecare dintre aceste statii are o anumita raza de transmisie, adica o distanta maxima pana la care poate trimite semnalul radio. Guvernul dorste sa amplaseze o antena radio undeva pe harta, in asa fel incat sa receptioneze semnalele tuturor celor <var>K</var> statii radio (adica distanta pana la fiecare statie radio sa fie mai mica sau egala cu raza de transmisie a statiei respective).</p>
+
+<p>Harta Romaniei poate fi privita ca o matrice cu <var>M</var> linii si <var>N</var> coloane, unde valoarea de pe linia <var>i</var> si coloana <var>j</var> reprezinta altitudinea zonei respective. Lungimea laturii unui patrat din matrice este <var>1</var>. Toate cele <var>K</var> statii radio sunt amplasate in zone distincte de pe harta si la inaltimea corespunzatoare zonei unde sunt amplasate. In plus, ele sunt pozitionate exact in centrul zonei (in centrul patratelului respectiv din matrice). Antena radio poate fi amplasata in centrul oricarei zone care in care nu se afla o statie radio, la aceeasi altitudine cu cea a zonei sau la o altitudine mai mare (dar care sa fie neaparat un numar intreg).</p>
+
+<p>Determinati cate posibilitati de amplasare a antenei radio exista. Daca antena poate fi amplasata in centrul zonei de pe linia <var>i</var> si coloana <var>j</var> la altitudinile <var>h1</var> si <var>h2</var> (cu <var>h1 &lt;&gt; h2</var>), acestea sunt considerate doua posibilitati diferite.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>radio.in</var> contine <var>3</var> numere intregi, separate prin cate un spatiu: <var>M</var>, <var>N</var> si <var>K</var>. <var>M</var> si <var>N</var> reprezinta numarul de linii si de coloane ale hartii, iar <var>K</var> reprezinta numarul de statii radio. Urmatoarele <var>M</var> linii contin cate <var>N</var> numere intregi, reprezentand altitudinile zonelor respective de pe harta. Dupa aceasta, urmeaza <var>K</var> linii, fiecare continand cate <var>3</var> numere, separate prin cate un spatiu: <var>i</var>, <var>j</var> si <var>R</var>. <var>i</var> si <var>j</var> reprezinta linia si coloana zonei in care este amplasata o statie radio, iar <var>R</var> reprezinta raza de transmisie a statiei respective. <var>i</var> si <var>j</var> sunt numere intregi, iar <var>R</var> este un numar real.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>radio.out</var> veti afisa numarul total de posibilitati de a amplasa antena radio pe harta.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ M, N ≤ 50</var></li>
+<li><var>1 ≤ K ≤ min{M*N-1, 1000}</var></li>
+<li><var>0 ≤ inaltimea oricarei zone ≤ 32 000</var></li>
+<li>Nu vor exista <var>2</var> statii radio amplasate in aceeasi zona de pe harta.</li>
+<li>La calculul distantelor, aveti grija ca sunt distante intr-un spatiu 3D.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>radio.in</th><th>radio.out</th></tr><tr><td>5 5 3<br>
+1 2 3 4 5<br>
+6 7 8 9 10<br>
+1 2 3 4 5<br>
+6 7 8 9 10<br>
+5 4 3 2 1<br>
+1 1 4.3<br>
+5 5 4.3<br>
+5 1 4.3<br></td><td>4<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Antena radio poate fi amplasata in zona de pe linia <var>3</var> si coloana <var>2</var>, la aceeasi inaltime cu cea a zonei sau la o inaltime cu <var>1</var> mai mare. De asemenea, antena radio poate fi amplasata in zona de pe linia <var>3</var> si coloana <var>3</var>, la aceeasi inaltime cu cea a zonei sau la o inaltime cu <var>1</var> mai mare.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

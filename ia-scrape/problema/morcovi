@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>morcovi.in, morcovi.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2009, Runda Finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.2 sec</td><td><strong>Limită de memorie</strong></td><td>20000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=morcovi">Vezi solutiile trimise</a></p>
+
+<h1>Morcovi<br></h1>
+
+<p>Fermierul Ion are o gradina formata din <var>N</var> zone patratice cu latura de <var>1</var> metru, asezate una dupa alta, in linie. In fiecare astfel de zona creste cate un morcov magic. Pentru fiecare morcov este cunoscuta valoarea sa energetica. Rila Iepurila, iepurele buclucas, a invadat gradina fermierului si a inceput sa manance morcovii. Iepurasul urmeaza un anumit traseu si mananca integral morcovii din zonele prin care trece. Dupa ce un morcov este mancat, creste altul in loc, de aceeasi valoare energetica (nu uitati ca morcovii sunt magici iar gradina este una imaginara). Gradul de satisfactie al lui Rila este dat de suma valorilor energetice ale morcovilor pe care ii mananca.<br>
+Pentru ca iepurele este un animal destept, traseul acestuia are anumite caracteristici. Rila incepe dintr-o zona oarecare si executa un numar <var>P</var> de salturi iepuresti, astfel incat prin salturile sale sa nu paraseasca niciodata gradina. Fermierul, dupa ce a studiat comportamentul iepurelui pentru o perioada lunga de timp, cunoaste acum lungimile celor <var>P</var> salturi ale iepurelui si stie ca acesta executa toate aceste salturi intr-o ordine oarecare.<br>
+Sa se determine gradul de satisfactie maxim pe care il poate obtine iepurele.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>morcovi.in</var> contine pe prima linie <var>N</var>, numarul de zone ale gradinii. Pe a doua linie din fisier se gasesc <var>N</var> numere naturale, al <var>i</var>-lea numar de pe aceasta linie indicand valoarea energetica a morcovilor ce cresc in zona a <var>i</var>-a. Cea de a treia linie din fisier contine numarul <var>P</var>, numarul de salturi pe care le face iepurele. Ultima linie contine <var>P</var> numere naturale, intr-o ordine oarecare, indicand lungimile salturilor iepurelui.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>morcovi.out</var> se gaseste un singur numar natural, reprezentand gradul maxim de satisfactie ce poate fi obtinut de iepurele Rila in traseul sau prin gradina fermierului.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 1 000</var></li>
+<li><var>1 ≤ P ≤ 12</var></li>
+<li>Valoarea energetica a unui morcov este un numar natural din intervalul <var>[1, 100 000 000]</var></li>
+<li>Fiecare lungime din cele <var>P</var> este mai mica decat <var>N</var></li>
+<li>Un salt din zona <var>x</var> in zona <var>y</var> are lungimea <var>|x-y|</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>morcovi.in</th><th>morcovi.out</th></tr><tr><td>7<br>
+1 20 3 1 1 40 10<br>
+3<br>
+1 2 4<br></td><td>71</td></tr></table><h3>Explicatie</h3>
+
+<p>Iepurele porneste din casuta <var>4</var>. De acolo executa un salt de lungime <var>2</var> spre stanga, pana in casuta cu morcovul de valoare <var>20</var>. Apoi executa pe rand salturile de lungime <var>4</var> si <var>1</var> spre dreapta, mancand si morcovii cu valorile <var>40</var> si <var>10</var>. Gradul de satisfactie este <var>1+20+40+10 = 71</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

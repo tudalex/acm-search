@@ -1,0 +1,63 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>dmg.in, dmg.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2005, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=150">Sorin Stancu-Mara</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><div class="hidden">5/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=dmg">Vezi solutiile trimise</a></p>
+
+<h1>Dmg<br></h1>
+
+<p>Max Damage s-a trezit intr-o zi pe varful stancii sale ... s-a uitat in zare si a vazut ca politia i-a dat de urma. Fuga nu ar fi o problema, oricum are o masina mai buna, dar Max doreste sa se distreze un pic. El stie ca daca ar merge de-a lungul unei drepte, politistii (care pot fi considerati niste puncte) ar cauta drumul minim pana la directia sa de mers, chiar daca s-ar intersecta cu aceasta mult dupa ce Max a trecut. Asa ca Max se gandeste daca nu cumva ii poate face pe politisti sa se loveasca doi cate doi, unul de celalalt (drumurile celor doi sa aiba directii opuse si sa se intersecteze cu drumul lui Damage in acelasi timp si in acelasi loc). Evident ca Max nu isi pune pune problema daca isi strica masina, deci drumul sau poate trece si prin politististi; evident, acestia sunt loviti de Damage deci nu mai trebuie sa se loveasca de nimeni. Din fericire, Max are un calculator de bord si ne-a trimis un email cuprinzand pozitiile politistilor. El cere un program care sa ii spuna in cate feluri poate<br>
+realiza ceea ce si-a propus.</p>
+
+<h2>Cerinta</h2>
+
+<p>Cate traiectorii care satisfac cerintele lui Max Damage exista si care sunt acestea.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului <var>dmg.in</var> contine un numar intreg <var>N</var> reprezentand numarul de politisti. Urmatoarele <var>N</var> linii contin cate doua numere reale cu <var>8</var> zecimale, <var>X<sub>i</sub>, Y<sub>i</sub></var> reprezintand pozitia unui politist.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>dmg.out</var> va contine numarul de traiectorii posibile pentru masina lui Max. Urmatoarele linii contin fiecare cate trei numere reale cu <var>8</var> zecimale, <var>A</var>, <var>B</var> si <var>C</var>, ce descriu o traiectorie de ecuatie <var>A*X + B*Y + C = 0</var>, ce indeplineste conditiile dorite de Max.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 1500</var></li>
+<li><var>|X<sub>i</sub>| ≤ 1000, |Y<sub>i</sub>| ≤ 1000</var></li>
+<li>Max Damage nu e foarte "stiintific" si va verifica daca dreapta indeplineste conditiile sale cu o precizie de <var>0.01</var></li>
+<li>Pentru <var>25%</var> din teste <var>N ≤ 100</var></li>
+<li>Ce se intampla daca doi politisti sunt in acelasi punct ?</li>
+<li>Politistii se deplaseaza cu aceeasi viteza constanta</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>dmg.in</th><th>dmg.out</th></tr><tr><td>2<br>
+0 0<br>
+10 0<br></td><td>2<br>
+-10.00000000 -0.00000000 50.00000000<br>
+0.00000000 -5.00000000 0.00000000</td></tr></table><h3>Explicatii</h3>
+
+<p>Max Damage poate merge perpendicular pe dreapta Ox, iar cei doi politisti se vor lovi la pozitia <var>(0,5)</var>, sau poate merge pe dreapta Ox lovind masinile celor doi politisti. Orice alta dreapta nu indeplineste cerintele lui Max.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=41">Geometrie</a></span>
+            <a href="javascript:show_tag_list(41)" id="tag_anchor_41" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_41"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=265">Infasuratoare convexa</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=432">Hash</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

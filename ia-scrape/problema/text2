@@ -1,0 +1,57 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>text2.in, text2.out</td><td><strong>Sursă</strong></td><td>ONI 2009, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=171">Emanuela Cerchez</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrei-alpha"><img src="/utilizator/andrei-alpha?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrei-alpha">Andrei-Bogdan Antonescu</a> <a title="Rating andrei-alpha: 700" class="rating-badge-1" href="http://infoarena.ro/utilizator/andrei-alpha?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrei-alpha">andrei-alpha</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=text2">Vezi solutiile trimise</a></p>
+
+<h1>Text2<br></h1>
+
+<p>Dintr-o regretabilă eroare, redactorul Vasile a şters toate spaţiile din textul la care lucra. Textul este scris într-o limbă necunoscută, numai cu litere mici ale alfabetului englez. Vasile ştie că un cuvânt trebuie să conţină cel puţin o vocală şi că nu poate avea lungimea mai mare de <var>20</var> de litere. De asemenea, fiind un tip meticulos, el ştie că în text erau (înainte de ştergerea spaţiilor) exact <var>N</var> cuvinte.</p>
+
+<p>Vasile trebuie să restaureze textul, inserând spaţii între cuvinte. Cum există numeroase modalităţi de restaurare a textului, Vasile a hotărât să aleagă varianta în care literele sunt distribuite în cuvinte într-un mod cât mai armonios. Pentru a măsura armonia, Vasile a calculat suma pătratelor lungimilor cuvintelor. Textul este cu atât mai armonios, cu cât suma obţinută este mai mică.</p>
+
+<h2>Cerinta</h2>
+
+<p>Dat fiind textul fără spaţii, să se determine câte posibilităţi de restaurare există (în total, indiferent de armonia lor), precum şi cea mai armonioasă modalitate de restaurare.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>text2.in</var> conţine pe prima linie textul fără spaţii. Pe cea de a doua linie este scris numărul natural <var>N</var>, reprezentând numărul de cuvinte din textul iniţial.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>text2.out</var> va conţine pe prima linie un număr natural reprezentând numărul total de posibilităţi de restaurare modulo <var>1000003</var> (restul împărţirii la <var>1000003</var>). Pe cea de-a doua linie va fi scrisă măsura armoniei textului restaurat (suma minimă a pătratelor lungimilor cuvintelor din text). Pe a treia linie va fi scris cel mai armonios text obţinut după restaurare. Între orice două cuvinte consecutive va fi scris un singur spaţiu.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1</var> ≤ Lungimea şirului ≤ <var>200</var></li>
+<li>Vocalele alfabetului englez sunt <var>{'a', 'e', 'i', 'o', 'u', 'y'}</var>.</li>
+<li>Pentru datele de test există întotdeauna soluţie.</li>
+<li>Dacă există mai multe soluţii optime de restaurare, va fi scrisă prima variantă în ordine lexicografică (se ştie că ' '&lt;'a'). </li>
+<li>Şirul (<var>x</var><sub>1</sub>, <var>x</var><sub>2</sub>, ..., <var>x</var><sub>n</sub>) este mai mic lexicografic decât (y<sub>1</sub>, y<sub>2</sub>, ..., y<sub>n</sub>) dacă există <var>k</var> (<var>1</var> ≤ k ≤ <var>N</var>) a.i x<sub>i</sub> = y<sub>i</sub> (pentru orice <var>1</var> ≤ <var>i</var> &lt; <var>k</var>) şi x<sub>k</sub> &lt; y<sub>k</sub>. </li>
+<li>Pentru <var>40</var>% dintre teste lungimea textului este &lt; <var>70</var> şi <var>N</var> ≤ <var>7</var>.</li>
+<li>Punctajul pe test se va acorda astfel: 
+<ul><li><var>50</var>% pentru numărul total de modalităţi de restaurare modulo <var>1000003</var>;</li>
+<li><var>80</var>% pentru numărul de modalităţi de restaurare modulo <var>1000003</var> şi suma minimă; </li>
+<li><var>100</var>% pentru rezolvarea corectă a tuturor cerinţelor.</li>
+</ul></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>text2.in</th><th>text2.out</th></tr><tr><td>bcaeiouxtz<br>
+3<br></td><td>6<br>
+34<br>
+bca eio uxtz<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Posibilităţile de restaurare sunt:<br>
+bca eio uxtz (armonie: <var>9</var> + <var>9</var> + <var>16</var> = <var>34</var>)<br>
+bca ei ouxtz (armonie: <var>9</var> + <var>4</var> + <var>25</var> = <var>38</var>)<br>
+bca e iouxtz (armonie: <var>9</var> + <var>1</var> + <var>36</var> = <var>46</var>)<br>
+bcae io uxtz (armonie: <var>16</var> + <var>4</var> + <var>16</var> = <var>36</var>)<br>
+bcae i ouxtz (armonie: <var>16</var> + <var>1</var> + <var>25</var> = <var>42</var>)<br>
+bcaei o uxtz (armonie: <var>25</var> + <var>1</var> + <var>16</var> = <var>42</var>)<br>
+Varianta cea mai armonioasă este bca eio uxtz</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

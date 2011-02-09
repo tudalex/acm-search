@@ -1,0 +1,47 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>tango.in, tango.out</td><td><strong>Sursă</strong></td><td>ONI 2010, clasa a 9-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=140">Csaba Patcas</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/GavrilaVlad"><img src="/utilizator/GavrilaVlad?action=download&amp;file=avatar&amp;resize=L16x16" alt="GavrilaVlad">Gavrila Vlad</a> <a title="Rating GavrilaVlad: 973" class="rating-badge-1" href="http://infoarena.ro/utilizator/GavrilaVlad?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/GavrilaVlad">GavrilaVlad</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=tango">Vezi solutiile trimise</a></p>
+
+<h1>Tango<br></h1>
+
+<p>Un tango este format din fraze muzicale, fiecare dintre acestea având <var>8</var> timpi muzicali. Timpii muzicali au aceeaşi durată. La fel de importantă ca melodia unui tango este şi dansul asociat ei. Mişcările efectuate în timpul dansului se numesc figuri. Succesiunea de figuri efectuate în timpul dansului formează o coregrafie. Două coregrafii se consideră diferite dacă succesiunea figurilor care le alcătuiesc este diferită. O coregrafie frumoasă asociată unui tango are particularitatea următoare: atunci când se termină o frază muzicală trebuie să se termine şi o figură.</p>
+
+<p>D şi S se pregătesc pentru primul lor concurs de dans şi ei lucreaza momentan la coregrafia de tango. Chiar dacă va fi primul lor concurs, ei deja ştiu <var>n</var> figuri de dans şi au calculat pentru fiecare dintre aceste figuri câţi timpi muzicali durează. Fiindcă le place foarte mult să danseze împreună, ei vor să pregătească o coregrafie frumoasă pentru o piesă care durează exact <var>k</var> timpi muzicali.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Determinaţi numărul coregrafiilor frumoase modulo <var>999983</var> pentru o piesă, care: durează exact <var>k</var> timpi muzicali, respectă condiţiile de mai sus şi sunt formate doar din cele <var>n</var> figuri cunoscute de D şi S (mai este prea puţin timp până la concurs, ca ei să inveţe şi figuri noi). </p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare <var>tango.in</var> se află numerele naturale nenule <var>n</var> şi <var>k</var>, separate printr-un singur spaţiu. Pe a doua linie se află exact <var>n</var> numere separate prin câte un spaţiu, reprezintând lungimile figurilor.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>tango.out</var> se va afişa numărul de coregrafii posibile modulo <var>999983</var>.</p>
+
+<h2>Restricţii şi precizări</h2>
+
+
+<ul><li><var>n ≤ 100 000</var>.</li>
+<li><var>k ≤ 2 000 000 000</var>.</li>
+<li><var>k</var> va fi întotdeauna divizibil cu <var>8</var>.</li>
+<li><var>1 ≤ lungimea unei figuri ≤ 8</var>.</li>
+<li>Pentru <var>30%</var> din teste va exista o singură figură de o anumită lungime.</li>
+<li>Pentru <var>50%</var> din teste <var>n ≤ 30</var>.</li>
+<li>Pentru <var>70%</var> din teste lungimile figurilor vor fi numai valori din mulţimea <var>{2, 4, 6, 8}</var>.</li>
+<li>Prin <var>a</var> modulo <var>b</var> se înţelege restul împărţirii lui <var>a</var> la <var>b</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>tango.in</th><th>tango.out</th></tr><tr><td>3 16<br>
+1 1 8<br></td><td>66049<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Sunt <var>16</var> timpi muzicali deci o coregrafie frumoasă se va dansa pe <var>16 / 8 = 2</var> fraze muzicale.<br>
+Dacă notăm figurile cu litere, avem figura <var>A</var> de lungime <var>1</var>, figura <var>B</var> de lungime <var>1</var> şi figura <var>C</var> de lungime <var>8</var>. Prima frază muzicală poate fi alcătuită din orice secvenţă alcătuită din opt bucăţi de <var>A</var> sau <var>B</var>, deci în total <var>28 = 256</var> posibilităţi. Încă o posibilitate de alcătuire a primei fraze este printr-un singur <var>C</var>. Rezultă un total de <var>257</var> posibilităţi. Pentru a doua frază avem tot atâtea posibilităţi, deci în total există <var>257 * 257 = 66049</var> coregrafii frumoase posibile. <br>
+Cum <var>66049</var> modulo <var>999983 = 66049</var>, se obţine rezultatul <var>66049</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

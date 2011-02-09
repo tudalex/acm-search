@@ -1,0 +1,47 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>parcele1.in, parcele1.out</td><td><strong>Sursă</strong></td><td>ONI 2009, clasa a 8-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=234">Claudia Puia</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrici_cezar"><img src="/utilizator/andrici_cezar?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrici_cezar">Andrici Cezar</a> <a title="Rating andrici_cezar: 458" class="rating-badge-3" href="http://infoarena.ro/utilizator/andrici_cezar?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrici_cezar">andrici_cezar</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=parcele1">Vezi solutiile trimise</a></p>
+
+<h1>Parcele1<br></h1>
+
+<p>Bătrân fiind, ţăranul Florea este nevoit să lase terenul său moştenire celor <var>P</var> fii ai săi. Fiecare fiu are doi copii, nepoţi ai lui Florea. Terenul ţăranului reprezintă o matrice cu <var>N</var> linii şi <var>M</var> coloane numerotate de la <var>1</var> la <var>N</var>, respectiv de la <var>1</var> la <var>M</var>. Fiecare element al matricei reprezintă câştigul obţinut la cultivarea cu produse agricole. Terenul poate fi împărţit în parcele. Parcela este o succesiune de linii învecinate din matrice. Fiecare parcelă, ce revine unui fiu, trebuie împărţită celor doi nepoţi în loturi. Primul lot este format din primele <var>K</var> coloane ale parcelei, iar al doilea lot din ultimele <var>M</var> - <var>K</var> coloane ale fiecărei parcele. Ţăranul împarte terenul în <var>P</var> parcele, fiecare fiind la rândul ei împărţită în două loturi.</p>
+
+<p>Câştigul unui lot este suma câştigurilor din acea bucată de pământ. Înţeleptul bătrân Florea doreşte să facă o împărţire cât mai echilibrată între nepoţii săi. El doreşte ca suma diferenţelor dintre câştigurile de pe loturile a doi nepoţi, copii ai aceluiaşi fiu, să fie cât mai mică (diferenţa este considerată în modul, deci un număr pozitiv sau nul).</p>
+
+<h2>Cerinţă</h2>
+
+<p>Dându-se configuraţia terenului ţăranului Florea şi câştigul ce poate fi obţinut la cultivarea cu produse agricole, calculaţi suma cerută şi numărul de posibilităţi de a împărţi terenul astfel încât să se obţină această valoare.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului <var>parcele1.in</var> se află trei numere naturale <var>N</var> <var>M</var> <var>P</var> ( <var>N</var> respectiv <var>M</var> coordonatele terenului ţăranului, <var>P</var> numărul de fii). Următoarele <var>N</var> linii conţin <var>M</var> valori naturale, reprezentând câştigurile obţinute la cultivare. </p>
+
+<h2>Date de ieşire</h2>
+
+<p>Prima linie a fişierului <var>parcele1.out</var> va conţine valoarea sumei cerute. Următoarea linie va conţine numărul de posibilităţi pe care le are Florea pentru a realiza împărţirea terenului său astfel încât să asigure acestă valoare minimă.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>2 &lt; N, M ≤ 20</var></li>
+<li><var>2 ≤ P ≤ N</var></li>
+<li>Câştigul la cultivare este cel mult <var>99</var>.</li>
+<li>Câştigul total al unui lot nu poate fi nul.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>parcele1.in</th><th>parcele1.out</th></tr><tr><td>4 4 3<br>
+3 3 4 3<br>
+1 4 3 3<br>
+2 4 3 4<br>
+1 3 2 4<br></td><td>5<br>
+ 5<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Diferenţa minimă este 5. Sunt cinci soluţii de împărţire a terenului, soluţii care sunt ilustrate în continuare.</p>
+
+<p><img src="http://infoarena.ro/problema/parcele1?action=download&amp;file=poza1.bmp&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

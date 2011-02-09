@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>gorilla.in, gorilla.out</td><td><strong>Sursă</strong></td><td>Selectie echipe ACM ICPC, UPB 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>65535 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=gorilla">Vezi solutiile trimise</a></p>
+
+<h1>Gorilla<br></h1>
+
+<p>Poate va amintiti de vechiul joc in QBasic, <var>gorilla.bas</var>. In caz ca nu va amintiti, jocul era despre 2 gorile care aruncau banane explozive una intr-alta. Fiecare gorila era controlata de unul din cei <var>2</var> jucatori. Fiecare jucator putea alege unghiul si viteza aruncarii, iar banana urma o traiectorie parabolica. Ca si cum gasirea unghiului si vitezei potrivite pentru a lovi gorila adversarului nu era destul de greu, in joc existau de asemenea si niste cladiri, care puteau bloca traiectoria bananei.<br><img src="http://infoarena.ro/problema/gorilla?action=download&amp;file=g1.jpg&amp;safe_only=true" alt=""></p>
+
+<p>De data aceasta va aflati aproape de sfarsitul unui joc unde, din intamplare, ambele gorile au fost localizate la aceeasi inaltime (egala cu 0). Pentru a fi mai exacti, gorila dumneavostra este un punct localizat la coordonatele <var>(0,0)</var>, oar gorila adversarului este un punct localizat la coordonatele <var>(d,0)</var>. Intre cele 2 gorile exista <var>N</var> cladiri (segmente verticale) care au diverse inaltimi. Dumneavoastra doriti sa terminati jocul cat mai repede, astfel ca aruncarea urmatoare vreti sa fie ultima. Prin urmare, banana (care este tot un punct) trebuie aruncata in asemenea fel incat sa loveasca gorila adversarului, dar nu si cladirile (desi poate atinge varful oricarei cladiri). Mai mult, pentru a va etala calitatile superioare adversarului dumneavoastra, doriti ca viteza <var>v</var> cu care aruncati banana sa fie minima (dar puteti alege orice unghi intre 0 si <img src="http://infoarena.ro/problema/gorilla?action=download&amp;file=pip2.jpg&amp;safe_only=true" alt="">).</p>
+
+<p>Cand veti rezolva aceasta problema, veti folosi valoarea acceleratiei gravitationale <var>g</var> (data in fisierul de intrare), precum si urmatoarele legi de miscare:<br><img src="http://infoarena.ro/problema/gorilla?action=download&amp;file=g2.jpg&amp;safe_only=true" alt=""></p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>gorilla.in</var> contine un numar intreg <var>T</var>, reprezentand numarul de teste ce urmeaza. Prima linie a fiecarui test contine <var>3</var> numere, separate prin spatii: un numar intreg <var>d</var>, un numar real <var>g</var> si un numar intreg <var>N</var>. A <var>i</var>-a din urmatoarele <var>N</var> linii contine <var>2</var> numere intregi, separate printr-un spatiu: <var>X<sub>i</sub></var> si <var>H<sub>i</sub></var>. <var>X<sub>i</sub></var> este coordonata X a celei de-a <var>i</var>-a cladiri, iar <var>H<sub>i</sub></var> este inaltimea acesteia. In plus, <var>X<sub>i</sub></var> &lt; <var>X<sub>i+1</sub></var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pentru fiecare din cele <var>T</var> teste, in ordinea din fisierul de intrare, afisati in fisierul de iesire <var>gorilla.out</var> cate o linie continand valoarea minima a vitezei necesare pentru a arunca banana. Afisati aceasta valoare cu 3 zecimale, rotunjite (in sus sau in jos) in functie de a patra zecimala.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 10</var></li>
+<li><var>0 ≤ g ≤ 10</var></li>
+<li><var>1 ≤ d ≤ 1 000 000</var></li>
+<li><var>0 ≤ N ≤ 50 000</var></li>
+<li><var>1 ≤ X<sub>i</sub> &lt; d</var></li>
+<li><var>1 ≤ H<sub>i</sub> ≤ 1 000 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>gorilla.in</th><th>gorilla.out</th></tr><tr><td>2<br>
+1 9.8 0<br>
+1000 1 1<br>
+500 10000<br></td><td>3.130<br>
+141.466<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

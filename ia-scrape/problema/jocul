@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>jocul.in, jocul.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil By Net 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=159">Clara Ionescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">1/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=jocul">Vezi solutiile trimise</a></p>
+
+<h1>Jocul<br></h1>
+
+
+<p>Gigel a primit in cadou o cutie de betisoare. Betisoarele au diferite lungimi, nu neaparat distincte. Gigel vrea sa imparta betisoarele in doua grupuri, astfel incat betisoarele dintr-un grup, puse unele in continuarea celorlalte sa formeze o "linie" a carei lungime sa fie cat mai apropiata de "linia" formata din betisoarele din celalalt grup. Lungimea liniei de betisoare este egala cu suma lungimilor betisoarelor care formeaza linia.</p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se stabileasca lungimea celor doua linii formate din betisoarele asezate in doua grupuri, astfel incat diferenta dintre lungimea "liniei" formate din betisoarele din primul grup si lungimea "liniei" formate din betisoarele din al doilea grup sa fie cat mai mica.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>jocul.in</var> se afla numarul natural <var>n</var>, reprezentand numarul total al betisoarelor. Pe urmatoarele <var>n</var> linii se afla cate un numar natural, care reprezinta lungimile betisoarelor primite de Gigel.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>jocul.out</var> se vor scrie doua numere naturale, corespunzatoare lungimii primei, respectiv celei de a doua "linii" de betisoare dupa repartizarea lor in cele doua grupuri.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>5 ≤ n ≤ 1000</var></li>
+<li><var>1 ≤ lungime<sub>i</sub> ≤ 100</var> (<var>i = 1, 2, ..., n</var>, lungimile sunt date in mm)</li>
+<li>Daca cele doua numere difera, ele se vor scrie in fisier in ordine crescatoare.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>jocul.in</th><th>jocul.out</th></tr><tr><td>7<br>
+28<br>
+7<br>
+11<br>
+8<br>
+9<br>
+7<br>
+27<br></td><td>48 49</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=95">Problema rucsacului</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

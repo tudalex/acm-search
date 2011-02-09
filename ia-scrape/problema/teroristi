@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>teroristi.in, teroristi.out</td><td><strong>Sursă</strong></td><td>ONI 2010 - Baraj</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a>, <a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrei-alpha"><img src="/utilizator/andrei-alpha?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrei-alpha">Andrei-Bogdan Antonescu</a> <a title="Rating andrei-alpha: 700" class="rating-badge-1" href="http://infoarena.ro/utilizator/andrei-alpha?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrei-alpha">andrei-alpha</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=teroristi">Vezi solutiile trimise</a></p>
+
+<h1>Teroristi<br></h1>
+
+<p>Inspiraţi de faimoasa grupare Al-Qaeda, teroriştii din oraşul Tomis s-au hotărât să saboteze Olimpiada Naţională de Informatică. Pentru a-şi pune planul în aplicare ei au răpit-o pe Miruna şi au trimis o scrisoare concurenţilor în care cer o răscumpărare foarte mare. Ca măsură de siguranţă, scrisoarea nu a fost scrisă de mână, ci a fost compusă lipind pe o foaie litere decupate dintr-un ziar. Detectivul Mirunel are un plan pentru a determina identitatea teroriştilor. Primul lucru pe care vrea să îl facă Mirunel este să demonstreze că teroriştii citesc <em>Dilema veche</em>. Detectivul are ultimul număr al revistei şi vrea să ştie dacă scrisoarea teroriştilor putea fi scrisă decupând litere doar din această ediţie. Din păcate sarcina este prea grea pentru Mirunel, deoarece atunci când decupează o bucată dintr-un ziar, aceasta va conţine 2 litere, câte una pe fiecare faţă. Fiecare bucată de ziar poate fi utilizată în două moduri, în funcţie de litera care va fi folosită la reconstituirea scrisorii trimise, iar acest lucru l-a încurcat de tot pe Mirunel.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieţi un program care să determine o modalitate validă de reconstituire a scrisorii trimise de terorişti, folosind doar bucăţile de ziar decupate de Mirunel.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>teroristi.in</var> conţine pe prima linie două numere naturale <var>N</var> şi <var>M</var>, reprezentând lungimea scrisorii trimise de terorişti, respectiv numărul de bucăţi de ziar decupate. Pe a doua linie se află mesajul scrisorii sub forma unui şir de <var>N</var> litere mici aparţinând alfabetului englez. Fiecare din următoarele <var>M</var> linii conţine exact <var>2</var> caractere din alfabetul englez separate prin spaţiu, reprezentând literele înscrise pe cele două feţe ale unei bucăţi de ziar.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>teroristi.out</var> va conţine o singură linie pe care se va găsi un şir de <var>N</var> numere distincte din mulţimea <var>{1, 2, ... M}</var>. Pe poziţia <var>i</var> din şirul afişat se va afla indicele bucăţii de ziar (în ordinea în care acestea apar în fişierul de intrare) folosite pentru a reprezenta cea de a <var>i</var>-a literă din scrisoare.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1 000 000</var></li>
+<li><var>1 ≤ M ≤ 1 000 000</var></li>
+<li>Pentru <var>10%</var> din teste <var>N, M = 3</var> </li>
+<li>Pentru alte <var>10%</var> din teste <var>N, M ≤ 15</var> </li>
+<li>Pentru alte <var>30%</var> din teste <var>N, M ≤ 1000</var> </li>
+<li>Dacă există mai multe soluţii, poate fi afişată oricare dintre ele.</li>
+<li>Se garantează că pe datele de test există întotdeauna soluţie.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>teroristi.in</th><th>teroristi.out</th></tr><tr><td>6 8<br>
+miruna<br>
+b a<br>
+m i<br>
+f a<br>
+u g<br>
+f m<br>
+a g<br>
+b r<br>
+n a<br></td><td>5 2 7 4 8 3<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Se vor folosi următoarele bucăţi:<br><var>5 – f <strong>m</strong></var><br><var>2 – m <strong>i</strong></var><br><var>7 – b <strong>r</strong></var><br><var>4 – <strong>u</strong> g</var><br><var>8 – <strong>n</strong> a</var><br><var>3 – f <strong>a</strong></var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

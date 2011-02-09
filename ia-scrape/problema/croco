@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>croco.in, croco.out</td><td><strong>Sursă</strong></td><td>.campion 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=128">Dan-Ionut Fechete</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.5 sec</td><td><strong>Limită de memorie</strong></td><td>16000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=croco">Vezi solutiile trimise</a></p>
+
+<h1>Croco<br></h1>
+
+<table style="margin:0.5em auto;" cellspacing="0"><tr><td align="center" style="background-color:#F8EABA;"><img src="http://infoarena.ro/template/badtests?action=download&amp;file=attention.gif&amp;safe_only=true" alt="" class="left" style="float:left"><em>Testele pentru aceasta problema nu sunt destul de bine construite pentru a departaja corect solutii ineficiente sau gresite.</em><br><a href="http://infoarena.ro/implica-te/imbunatatire-teste"><strong>Intra aici</strong></a> <em>daca vrei sa ne ajuti sa imbunatatim calitatea testelor pentru aceasta problema!</em></td></tr></table><p>Profesorul Utonium a facut o descoperire uimitoare, a reusit sa creeze cele mai dragalase animale de casa pe care le-a numit crocobauzeri. Profesorul a creat prin experimente <var>N</var> crocobauzeri si intentioneaza sa-i lase sa se reproduca un an dupa care sa-i ofere prietenilor lui. Dupa mult studiu asupra celor <var>N</var> crocobauzeri, profesorul a descoperit ca oricare pereche poate sa se reproduca si, mai mult, stie si cati pui va avea fiecare pereche intr-un an. Evident daca profesorul ar pastra crocobauzerii in aceeasi incapere toate perechile s-ar reproduce si ar avea numarul maxim de pui posibil la sfarsitul anului. Din pacate acest lucru nu este posibil pentru ca incaperile sunt prea mici si daca ar pune toti crocobauzerii intr-o incapere acestia ar muri. Totusi se pare ca sunt suficiente doua incaperi pentru a-i pastra. Dupa ce profesorul va imparti crocobauzerii, acestia vor sta asa pana la sfarsitul anului si oricare doi crocobauzeri din aceeasi camera se vor reproduce.</p>
+
+<h2>Cerinta</h2>
+
+<p>Daca vreti ca un crocobauzer sa ajunga si la voi trebuie sa-l ajutati pe profesor sa imparta crocobauzerii astfel incat la sfarsitul anului sa aiba un numar maxim de pui de crocobauzer.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>croco.in</var> este scris numarul natural <var>N</var> reprezentand numarul de crocobauzeri. Urmatoarele <var>N</var> linii contin cate <var>N</var> numere naturale separate prin spatii; al <var>j</var>-lea numar de pe cea de-a <var>i</var>-a linie reprezinta numarul de pui pe care crocobauzerii <var>i</var> si <var>j</var> i-ar face daca ar fi in aceeasi camera, evident daca <var>i</var> este egal cu <var>j</var> valoarea este <var>0</var>, iar daca <var>j</var> este mai mic decat <var>i</var> valoarea este egala cu a <var>i</var>-a valoare de pe linia <var>j</var>. </p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>croco.out</var> va contine pe prima linie numarul maxim de crocobauzeri pe care poate sa-i aibe profesorul la sfarsitul anului, precum si numarul de crocobauzeri din prima camera, separate printr-un spatiu. Pe cea de a doua linie vor fi scrise numerele de ordine ale crocobauzerilor din prima camera, separate prin cate un spatiu.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 110</var></li>
+<li><var>0 ≤ numarul de pui al unei perechi de crocobauzeri ≤ 221</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>croco.in</th><th>croco.out</th></tr><tr><td>5<br>
+  0 4 1 1 0<br>
+  4 0 0 0 1<br>
+  1 0 0 4 0<br>
+  1 0 4 0 4<br>
+  0 1 0 4 0<br></td><td>12 2<br>
+  1 2<br></td></tr></table><h3>Explicatie</h3>
+
+<p>In prima camera se afla crocobauzerii <var>1</var> si <var>2</var> care vor face impreuna <var>4</var> pui.<br>
+In cea de a doua camera se vor afla crocobauzerii <var>3</var>, <var>4</var> si <var>5</var>.<br>
+Crocobauzerii <var>3</var> si <var>4</var> vor face impreuna <var>4</var> pui, crocobauzerii <var>3</var> si <var>5</var> vor face <var>0</var> pui, iar crocobauzerii <var>4</var> si <var>5</var> vor face <var>4</var> pui.<br>
+In total vor fi <var>12</var> pui.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,65 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>sir2.in, sir2.out</td><td><strong>Sursă</strong></td><td>Lot 2006 Ploiesti</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=148">Alexandru Mosoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=sir2">Vezi solutiile trimise</a></p>
+
+<h1>Sir 2<br></h1>
+
+<p>Asupra unui sir format doar din cifrele <var>1</var>, <var>2</var> si <var>3</var> se aplica o transformare <var>T</var>, prin aplicarea simultana a urmatoarelor <var>3</var> operatii:</p>
+
+
+<ol><li>O secventa maximala formata din <var>n</var> de <var>1</var> consecutivi se transforma in <var>n1</var><br>
+De exemplu: 
+<ul><li><var>1</var> se transforma in <var>11</var></li>
+<li><var>11</var> se transforma in <var>21</var></li>
+<li><var>111</var> se transforma in <var>31</var></li>
+</ul></li>
+<li>O secventa maximala formata din <var>n</var> de <var>2</var> consecutivi se transforma in <var>n2</var><br>
+De exemplu:
+<ul><li><var>2</var> se transforma in <var>12</var></li>
+<li><var>22</var> se transforma in <var>22</var></li>
+<li><var>222</var> se transforma in <var>32</var></li>
+</ul></li>
+<li>Un <var>3</var> se transforma in <var>13</var><br>
+De exemplu:
+<ul><li><var>3</var> se transforma in <var>13</var></li>
+<li><var>33</var> se transforma in <var>1313</var></li>
+<li><var>333</var> se transforma in <var>131313</var></li>
+</ul></li>
+</ol><p>De exemplu: </p>
+
+
+<ul><li><var>T(3113) = 132113</var></li>
+<li><var>T(3) = 13</var></li>
+<li><var>T(1331) = 11131311</var></li>
+</ul><p>Sa consideram sirul <var>S</var> definit prin recurenta astfel: <var>S<sub>1</sub></var> = <var>3</var> si <var>S<sub>k</sub> = T(S<sub>k-1</sub>)</var>, <var>k &gt; 1</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Se da <var>N</var> un numar natural, sa se determine lungimea sirului <var>S<sub>N</sub></var>. Pentru ca lungimea poate fi foarte mare se cere afisarea rezultatului modulo <var>37781</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>In fisierul de intrare <var>sir2.in</var> se afla pe prima linie numarul natural <var>N</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>sir2.out</var> va contine o singura linie pe care veti scrie lungimea lui <var>SN</var> modulo <var>37781</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>S<sub>i</sub></var> va fi format numai din <var>1</var>, <var>2</var> si <var>3</var> pentru orice <var>i &gt; 0</var></li>
+<li><var>0 &lt; N &lt; 2<sup>60</sup></var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>sir2.in</th><th>sir2.out</th></tr><tr><td>1<br></td><td>1<br></td></tr><tr><td>6<br></td><td>10<br></td></tr><tr><td>71<br></td><td>13391<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Primii termeni ai sirului <var>S</var> sunt: <var>3, 13, 1113, 3113, 132113, 1113122113, 311311222113,</var> etc.</p>
+
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

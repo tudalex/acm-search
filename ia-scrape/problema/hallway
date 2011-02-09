@@ -1,0 +1,33 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>hallway.in, hallway.out</td><td><strong>Sursă</strong></td><td>Bursele Agora 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=hallway">Vezi solutiile trimise</a></p>
+
+<h1>Hallway<br></h1>
+
+<p>Se considera un coridor dreptunghiular de dimensiuni <var>M*N</var>. In acest coridor exista mai multe coloane drepte de dimensiune neglijabila.<br>
+Se cere sa se determine raza celei mai mari mingi sferice care poate strabate coridorul din capatul de vest pana in capatul de est. Pentru minge se poate alege orice punct de pornire aflat in capatul din vest si orice punct final aflat in capatul de est. Inaltimea coridorului este intotdeauna suficient de mare.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Fisierul de intrare <var>hallway.in</var> contine doua numere intregi <var>M</var> si <var>N</var>, separate intre ele printr-un singur spatiu, care reprezinta dimensiunile coridorului pe directiile est-vest, respectiv nord-sud. Cea de-a doua linie contine un singur numar <var>K</var>, care reprezinta numarul de coloane care se afla in acest coridor.<br>
+Fiecare dintre urmatoarele <var>K</var> linii contine doua numere intregi, separate intre ele printr-un singur spatiu, care reprezinta coordonatele la care se afla o coloana.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>hallway.out</var> trebuie sa contina un singur numar care reprezinta raza celei mai mari mingi sferice care poate strabate coridorul din capatul de vest pana in capatul de est.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ M, N, K ≤ 1000</var></li>
+<li>directia est-vest este reprezentata de prima coordonata</li>
+<li>raza determinata a mingii trebuie scrisa cu <var>8</var> zecimale unde ultima este rotunjita.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>hallway.in</th><th>hallway.out</th></tr><tr><td>5 2<br>
+1<br>
+1 1<br></td><td>0.50000000</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

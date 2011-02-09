@@ -1,0 +1,48 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>colier.in, colier.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2009, Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=223">Cosmin Gheorghe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gcosmin"><img src="/utilizator/gcosmin?action=download&amp;file=avatar&amp;resize=L16x16" alt="gcosmin">Gheorghe Cosmin</a> <a title="Rating gcosmin: 1142" class="rating-badge-4" href="http://infoarena.ro/utilizator/gcosmin?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gcosmin">gcosmin</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=colier">Vezi solutiile trimise</a></p>
+
+<h1>Colier<br></h1>
+
+<p>Catrinel are un colier cu <var>N</var> perle magice ce pot avea doua culori (rosu sau negru). Catrinel isi iubeste mult colierul, dar ei ii place si diversitatea, asa ca ea isi poate schimba colierul folosind urmatoarea operatie: alege o perla neagra, schimba culorile perlelor vecine (colierul este circular iar o perla poate avea cel mult doi vecini; vecinul din stanga si cel din dreapta) in culoarea opusa (din rosu in negru si invers) si elimina perla neagra aleasa din colier. Curioasa din fire Catrinel se intreaba daca folosind operatia descrisa mai sus poate sa elimine toate perlele din colier.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>colier.in</var> contine <var>T</var> numarul de teste. Urmatoarele <var>T</var> linii vor contine descrierea testelor. Linia <var>i + 1</var> contine numarul natural <var>N</var> reprezentand numarul perlelor din colier si descrierea colierului printr-un sir de <var>1</var> si <var>0</var>, reprezentand culorile negru si respectiv rosu, nedespartit prin spatii.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fisierul <var>colier.out</var> va contine <var>T</var> linii, fiecare continand <var>"DA"</var> sau <var>"NU"</var> (fara ghilimiele), daca exista un sir de operatii astfel incat Catrinel sa poata sa elimine toate perlele din colier sau nu.</p>
+
+<h2>Restricţii si precizari</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 10</var></li>
+<li><var>1 ≤ N ≤ 10<sup>5</sup></var></li>
+<li>Pentru teste in valoare de <var>20</var> de puncte se garanteaza ca <var>N ≤ 20</var></li>
+<li>Pentru teste in valoare de <var>50</var> de puncte se garanteaza ca <var>N ≤ 1000</var></li>
+<li>O perla dintr-un colier cu o singura perla nu are niciun vecin</li>
+<li>O perla dintr-un colier cu doua perle are un singur vecin</li>
+<li>O perla dintr-un colier cu mai mult de doua perle are doi vecini</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>colier.in</th><th>colier.out</th></tr><tr><td>6<br>
+1 1<br>
+1 0<br>
+2 10 <br>
+2 11<br>
+3 011<br>
+4 1001<br></td><td>DA<br>
+NU<br>
+DA<br>
+NU<br>
+DA<br>
+NU<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Pentru testul <var>5</var> operatiile vor arata asa : <var>0 <b>1</b> 1</var> -&gt; <var><b>1</b> 0</var> -&gt; <var><b>1</b></var> -&gt; colier vid (valorile ingrosate reprezinta perla neagra aleasa pentru operatie)</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

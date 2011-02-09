@@ -1,0 +1,43 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>nunta.in, nunta.out</td><td><strong>Sursă</strong></td><td>preONI 2008 Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>256 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=nunta">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=nunta">Vezi solutiile trimise</a></p>
+
+<h1>Nunta<br></h1>
+
+<p><var>N</var> tineri casatoriti sunt invitati la un eveniment monden. Acolo ei trebuie sa se aseze la o masa dreptunghiulara care are, pe fiecare parte, <var>N</var> locuri. Aceasta inseamna ca <var>N</var> dintre cei <var>2*N</var> invitati se vor aseza de o parte a mesei, in timp ce restul se vor aseza pe cealalta parte. In plus, se stie ca fiecare doi tineri care formeaza un cuplu trebuie sa fie vecini la masa, adica fie sa stea unul langul altul de aceeasi parte a mesei, fie sa stea fata in fata. <br>
+Pentru <var>N</var> dat, sa se determine numarul de posibilitati de a aseza la masa cele <var>N</var> cupluri.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>nunta.in</var> contine o singura linie pe care se afla numarul natural <var>N</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Singura linie din fisierul de iesire <var>nunta.out</var> contine numarul de posibilitati de a aseza la masa cele <var>N</var> cupluri.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 999</var></li>
+<li>Pentru <var>40%</var> din teste, <var>N &lt; 45</var></li>
+<li>Pentru <var>70%</var> din teste, <var>N &lt; 78</var></li>
+<li>Doua asezari nu difera daca este posibila o renumerotare a cuplurilor din prima asezare astfel incat sa o obtinem pe cea de a doua</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>nunta.in</th><th>nunta.out</th></tr><tr><td>3</td><td>3</td></tr></table><h3>Explicatie</h3>
+
+<p>Cele 3 variante distincte de asezare sunt:</p>
+
+<p><img src="http://infoarena.ro/problema/nunta?action=download&amp;file=asezari.jpg&amp;safe_only=true" alt=""></p>
+
+<p>Asezarile de mai jos sunt identice, deoarece este posibila o renumerotare a cuplurilor din prima asezare astfel incat sa o obtinem pe cea de a doua:</p>
+
+<p><img src="http://infoarena.ro/problema/nunta?action=download&amp;file=egale.jpg&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

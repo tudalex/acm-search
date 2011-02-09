@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ghiozdan.in, ghiozdan.out</td><td><strong>Sursă</strong></td><td>preONI 2007, Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>4 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=ghiozdan">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ghiozdan">Vezi solutiile trimise</a></p>
+
+<h1>Ghiozdan<br></h1>
+
+<table style="margin:0.5em auto;" cellspacing="0"><tr><td align="center" style="background-color:#F8EABA;"><img src="http://infoarena.ro/template/badtests?action=download&amp;file=attention.gif&amp;safe_only=true" alt="" class="left" style="float:left"><em>Testele pentru aceasta problema nu sunt destul de bine construite pentru a departaja corect solutii ineficiente sau gresite.</em><br><a href="http://infoarena.ro/implica-te/imbunatatire-teste"><strong>Intra aici</strong></a> <em>daca vrei sa ne ajuti sa imbunatatim calitatea testelor pentru aceasta problema!</em></td></tr></table><p>Zaharel, Nargy si Fumeanu vor sa plece la munte in vacanta. Pentru asta ei au cumparat un ghiozdan cat mai incapator, care are o capacitate de <var>G</var> grame. Ei au facut si o lista cu <var>N</var> obiecte pe care vor sa le ia cu ei. Nu toate obiectele incap in ghiozdan, si fiindca s-au decis sa nu se complice, vor sa umple cat de mult se poate ghiozdanul (desigur nu cu mai mult de <var>G</var> grame in total), dar cu un numar <em>minim</em> de obiecte.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierul de intrare <var>ghiozdan.in</var> va contine numerele naturale <var>N</var> si <var>G</var> separate prin spatii. Urmatoarele <var>N</var> linii vor contine cate un numar natural pe linie, reprezentand greutatile celor <var>N</var> obiecte.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie din fisierul de iesire <var>ghiozdan.out</var> se vor afisa doua numere naturale <var>G<sub>max</sub></var> si <var>N<sub>min</sub></var> cu semnificatia ca se poate umple ghiozdanul cu obiecte de greutate totala <var>G<sub>max</sub></var> (<var>G<sub>max</sub> ≤ G</var>), iar numarul minim de obiecte pentru a obtine aceasta greutate este <var>N<sub>min</sub></var>. Urmatoarele <var>N<sub>min</sub></var> linii vor contine numere naturale reprezentand greutatile obiectelor din ghiozdan. Suma acestor numere trebuie sa fie <var>G<sub>max</sub></var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 20.000</var></li>
+<li><var>0 ≤ G ≤ 75.000</var></li>
+<li>Greutatile celor <var>N</var> obiecte sunt numere naturale intre <var>1</var> si <var>200</var></li>
+<li>Pentru un test se va acorda <var>60%</var> din punctaj pentru determinarea corecta a numerelor <var>G<sub>max</sub></var> si <var>N<sub>min</sub></var>, si inca <var>40%</var> daca s-a determinat si un set de obiecte care pot fi puse in ghiozdan.</li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>ghiozdan.in</th><th>ghiozdan.out</th></tr><tr><td>5 9<br>
+2<br>
+2<br>
+2<br>
+2<br>
+4</td><td>8 3<br>
+2 <br>
+2<br>
+4</td></tr><tr><td>6 24<br>
+19<br>
+7<br>
+7<br>
+7<br>
+7<br>
+2</td><td>23 4<br>
+2<br>
+7<br>
+7<br>
+7</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

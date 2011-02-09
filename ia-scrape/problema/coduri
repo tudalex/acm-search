@@ -1,0 +1,77 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>coduri.in, coduri.out</td><td><strong>Sursă</strong></td><td>ONI 2007, clasa 9</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=156">Roxana Tamplaru</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=coduri">Vezi solutiile trimise</a></p>
+
+<h1>Coduri<br></h1>
+
+<p>Intorcandu-se de la scoala in ziua in care a aflat cum se face inmultirea numerelor, Gigel a auzit la televizor urmatoarea afirmatie: "Pentru a face avere, nu trebuie sa aduni bani in viata, ci trebuie sa-i inmultesti". </p>
+
+<p>Toate acestea l-au pus pe ganduri, asa ca s-a hotarat sa inventeze propriul "sistem de codificare" pentru numere reale mai mari decat <var>0</var> care sa aiba urmatoarele proprietati: </p>
+
+
+<ul><li>fiecare numar va fi codificat sub forma unui sir de valori intregi (pozitive si/ sau negative) </li>
+<li>daca un numar real <var>x</var> are codul <var>c<sub>x</sub></var> si un numar real <var>y</var> are codul <var>c<sub>y</sub></var>, atunci numarul real rezultat prin inmultirea lui <var>x</var> si <var>y</var> trebuie sa aiba codul obtinut prin "adunarea" codurilor <var>c<sub>x</sub></var> si <var>c<sub>y</sub></var></li>
+<li>daca un numar real <var>x</var> se poate scrie ca produs de numere <var>y<sub>1</sub>, y<sub>2</sub>, ..., y<sub>k</sub></var>, atunci codul lui <var>x</var> se obtine prin "adunarea" codurilor numerelor <var>y<sub>1</sub>, y<sub>2</sub>, ..., y<sub>k</sub></var>.</li>
+</ul><p>Consideram un cod <var>c<sub>1</sub></var> format din <var>n<sub>1</sub></var> valori <var>a<sub>n<sub>1</sub></sub></var> ... <var>a<sub>1</sub></var> si un cod <var>c<sub>2</sub></var> format din <var>n<sub>2</sub></var> valori <var>b<sub>n<sub>2</sub></sub></var>...<var>b<sub>1</sub></var>, atunci codul <var>c<sub>3</sub></var> obtinut prin "adunarea" codurilor <var>c<sub>1</sub></var> si <var>c<sub>2</sub></var> va avea <var>n<sub>3</sub></var> valori <var>d<sub>n<sub>3</sub></sub></var>.. <var>d<sub>1</sub></var>, cu proprietatile urmatoare:</p>
+
+
+<ul><li><var>n<sub>3</sub></var> este maximul dintre <var>n<sub>1</sub></var> si <var>n<sub>2</sub></var></li>
+<li><var>d<sub>i</sub></var> = 
+<ul><li><var>a<sub>i</sub> + b<sub>i</sub></var>, pentru <var>1 ≤ i ≤ minim(n<sub>1</sub>,n<sub>2</sub>)</var></li>
+<li><var>a<sub>i</sub></var>, pentru <var>n<sub>2</sub></var> <var>+</var> <var>1 ≤ i ≤</var> <var>n<sub>1</sub></var>, daca <var>minim(n<sub>1</sub>,n<sub>2</sub>) = n<sub>2</sub></var></li>
+<li><var>b<sub>i</sub></var>, pentru <var>n<sub>1</sub></var> <var>+</var> <var>1 ≤ i ≤</var> <var>n<sub>2</sub></var>, daca <var>minim(n<sub>1</sub>,n<sub>2</sub>) = n<sub>1</sub></var></li>
+</ul></li>
+</ul><h2>Cerinta</h2>
+
+<p>Dandu-se <var>N</var> numere reale mai mari strict decat <var>0</var>, sa se scrie codificarea acestora in sistemul inventat de Gigel.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de iesire <var>coduri.in</var> va contine:</p>
+
+
+<ul><li>pe prima linie din fisier se afla numarul <var>N</var> de numere reale </li>
+<li>pe urmatoarele <var>N</var> linii cele <var>N</var> numere reale, fiecare pe cate o linie.</li>
+</ul><h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>coduri.out</var> va contine <var>N</var> linii: pe linia <var>i</var> (<var>i</var> intre <var>1</var> si <var>N</var>) : numarul de valori folosite pentru codificarea numarului cu indicele <var>i</var> din fisierul de intrare, urmat de un spatiu si apoi valorile ce alcatuiesc codul numarului, separate doua cate doua printr-un singur spatiu.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 18</var></li>
+<li>Separatorul intre partea intreaga si partea zecimala este virgula.</li>
+<li>Orice numar are dupa virgula cel mult <var>5</var> cifre.</li>
+<li>Valorile din codurile numerelor din fisierele de test trebuie sa fie cuprinse in intervalul [<var>-10<sup>6</sup>, 10<sup>6</sup></var>]. </li>
+<li>Partea intreaga a fiecarui numar real este o valoare mai mica sau egala cu <var>20000</var>.</li>
+<li>Toate numerele din fisierele de test sunt strict pozitive si distincte doua cate doua.</li>
+<li>Numarul maxim de valori utilizat pentru codificarea unui numar este <var>2500</var>.</li>
+<li>Daca exista mai multe solutii de codificare, se va afisa una singura.</li>
+<li>Nu trebuie sa existe doua numere diferite cu aceeasi codificare.</li>
+<li><var>40%</var> din teste vor contine numai numere intregi, <var>30%</var> din teste vor contine numere intregi si numere reale fara perioada si <var>30%</var> din teste vor contine numere intregi si numere reale cu si fara perioada.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>coduri.in</th><th>coduri.out</th></tr><tr><td>8<br>
+10<br>
+2<br>
+5<br>
+0,3<br>
+7<br>
+2,1<br>
+1,(7)<br>
+1,2(34)<br></td><td>2 1 1<br>
+3 -1 0 1<br>
+3 1 1 0<br>
+3 2 1 0<br>
+3 -1 2 1<br>
+3 1 3 1<br>
+2 1 11<br>
+2 1 2<br></td></tr></table><h3>Explicatie</h3>
+
+<p><var>10=2*5</var>, iar suma codurilor pentru <var>2</var> si <var>5</var>, determina codul lui <var>10</var><br><var>2,1=7*0,3</var>, iar suma codurilor pentru <var>7</var> si <var>0,3</var> determina codul lui <var>2,1</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

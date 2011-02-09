@@ -1,0 +1,31 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>litere.in, litere.out</td><td><strong>Sursă</strong></td><td>preONI 2008 Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/wefgef"><img src="/utilizator/wefgef?action=download&amp;file=avatar&amp;resize=L16x16" alt="wefgef">Andrei Grigorean</a> <a title="Rating wefgef: 783" class="rating-badge-4" href="http://infoarena.ro/utilizator/wefgef?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/wefgef">wefgef</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=litere">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=litere">Vezi solutiile trimise</a></p>
+
+<h1>Litere<br></h1>
+
+<p>Miruna a scris pe foaie un sir de <var>N</var> litere mici ale alfabetului latin. Ea vrea sa sorteze acest sir lexicografic. Pentru a realiza acest lucru, poate sa aleaga oricare <var>2</var> caractere adiacente si sa le interschimbe. Vi se cere sa determinati numarul minim de interschimbari ce trebuie efectuate astfel incat sirul sa fie sortat.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fiserului de intrare <var>litere.in</var> se gaseste un singur numar intreg <var>N</var>. Pe cea de a doua linie, se vor afla <var>N</var> caractere, reprezentand sirul scris de Miruna pe foaie.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>litere.out</var> va contine o singura valoare pe primia linie, reprezentand numarul minim de interschimbari necesare.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 10000</var></li>
+<li>Pentru <var>40%</var> din teste <var>1 ≤ N ≤ 100</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>litere.in</th><th>litere.out</th></tr><tr><td>17<br>
+  abakljfdoqpawkfja<br></td><td>53<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

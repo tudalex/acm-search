@@ -1,0 +1,53 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>bibel.in, bibel.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2007, clasele 9-10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=148">Alexandru Mosoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/wefgef"><img src="/utilizator/wefgef?action=download&amp;file=avatar&amp;resize=L16x16" alt="wefgef">Andrei Grigorean</a> <a title="Rating wefgef: 783" class="rating-badge-4" href="http://infoarena.ro/utilizator/wefgef?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/wefgef">wefgef</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>3 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=bibel">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=bibel">Vezi solutiile trimise</a></p>
+
+<h1>Bibel<br></h1>
+
+<p>Se aproprie ziua Mirunei si Bibel, prietenul ei, vrea sa-i faca cadou un set de bile pentru ca Miruna sa nu mai imprumute bilutele fratelui ei. Fiindca Bibel are in buzunar o singura moneda de 50 bani, el sa gandeste sa o joace la cazinou.</p>
+
+<p>Jocul preferat a lui Bibel e destul de simplu. El este compus din mai multe nivele de joc, iar la fiecare nivel Bibel trebuie sa colectioneze cateva bile aflate pe masa utilizand un carlig. La inceputul fiecarui nivel pe masa sunt puse noi bile. Un nivel se termina cand toate bilele de pe masa au fost colectate. Ceea ce poate Bibel sa faca este sa mute carligul in linie dreapta din pozitia lui curenta deasupra unei bile si sa ia bila de pe masa. Initial carligul se afla in origine, <var>(0, 0)</var>.</p>
+
+<p>Timpul necesar colectionarii unei bile este neglijabil. Timpul necesar miscarii carligului este egal cu patratul distantei intre punctul initial si final (modificand unitatea de masura corespunzator). Deoarece castigul final depinde de cat de repede reuseste Bibel sa termine jocul, Bibel vrea ca la sfarsitul fiecarui nivel sa stie care ar fi fost timpul total minim daca nivelul respectiv ar fi fost ultimul si el ar fi jucat optim (vezi exemplu).</p>
+
+<p>Ajutati-o pe Miruna sa-si primeasca cadoul.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>bibel.in</var> contine o descriere a unui joc. Fiecare nivel este descris prin mai multe linii. Pe ultima linie din descrierea unui nivel se afla un singur numar, <var>1</var>, iar celelate linii descriu coordonatele a cate o bila ce va fi pusa pe masa la inceputul nivelului. Formatul este <var>0 x y</var> unde <var>(x, y)</var> reprezinta coordonatele in plan a unei bile. Ultima linie din fisier contine un singur numar <var>2</var> si marcheaza sfarsitul unui joc. </p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>bibel.out</var> pentru fiecare se va afisa un numar avand semnificatia din cerinta.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>Coordonatele bilelor sunt numere intregi</li>
+<li><var>0 ≤ x, y ≤ 10000</var></li>
+<li>Numarul maxim de bile amplasate pe masa la inceputul unui nivel este <var>≤ 17</var></li>
+<li>Numarul total de linii din fisierul de intrare este <var>≤ 200</var></li>
+<li>Nu conteaza ordinea in care sunt ridicate bilele de pe masa, dar la sfarsitul fiecarui nivel masa trebuie sa fie goala.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>bibel.in</th><th>bibel.out</th></tr><tr><td>0 0 2<br>
+0 2 0<br>
+0 2 2<br>
+1<br>
+0 4 4<br>
+0 6 6<br>
+0 8 8<br>
+1<br>
+2<br></td><td>12<br>
+40<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Cea mai buna varianta ca sa termine primul nivel ar fi sa ridice de pe masa in ordine bilele de la pozitiile <var>(0, 2)</var>, <var>(2, 2)</var>, <var>(2, 0)</var>.<br>
+Cea mai buna varianta ca sa termine al doilea nivel in timp minim ar fi sa ridice de pe masa in ordine bilele de la pozitiile <var>(0, 2)</var>, <var>(2, 0)</var>, <var>(2, 2)</var>, (sfarsitul primului nivel) <var>(4, 4)</var>, <var>(6, 6)</var>, <var>(8, 8)</var> (sfarsitul celui de-al doilea nivel si al jocului).</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

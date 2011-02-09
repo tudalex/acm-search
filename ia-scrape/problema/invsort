@@ -1,0 +1,70 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>invsort.in, invsort.out</td><td><strong>Sursă</strong></td><td>ONI 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=155">Mihai Patrascu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><div class="hidden">5/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=invsort">Vezi solutiile trimise</a></p>
+
+<h1>Invsort<br></h1>
+
+<p>Se da un sir de <var>N</var> numere naturale, care trebuie ordonat crescator. Singura operatie permisa este sa considerati elementele de pe pozitiile <var>i, i+1, ..., j</var> (pentru <var>i</var> si <var>j</var> arbitrare, <var>i&lt;j</var>), si sa inversati ordinea acestor elemente (adica elementul de pe pozitia <var>i</var> ajunge pe pozitia <var>j</var>, <var>i+1</var> ajunge pe pozitia <var>j-1</var>, ..., <var>j</var> ajunge pe pozitia <var>i</var>). Costul unei astfel de operatii este numarul de elemente din subsirul inversat, si anume <var>j-i+1</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care sa determine o secventa de operatii care ordoneaza crescator sirul dat si are un cost total cat mai mic (dar nu obligatoriu minim).</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Fisierul de intrare <var>invsort.in</var> contine pe prima linie numarul <var>N</var>, si apoi <var>N</var> linii cu elementele sirului dat (nu neaparat distincte).</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>invsort.out</var> va contine pe fiecare linie descrierea unei operatii. O operatie este descrisa prin numerele <var>i</var> si <var>j</var>, separate printr-un spatiu. Aceste numere satisfac <var>1 ≤ i &lt; j ≤ N</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 32000</var></li>
+<li>valorile sirului care trebuie ordonat sunt intre <var>0</var> si <var>31999</var></li>
+</ul><h2>Punctaj</h2>
+
+
+<ul><li>daca sirul de operatii (executate in ordinea din fisierul de iesire) nu ordoneaza intrarea, primiti <var>0</var> puncte</li>
+<li>in cazul in care costul total este cel mult <var>4000000</var> (patru milioane) primiti punctaj maxim</li>
+<li>in cazul in care costul total este cel mult <var>40000000</var> (patruzeci de milioane) primiti <var>40%</var> din punctajul pe test</li>
+<li>in <var>50%</var> din teste sirul de intrare contine numai elemente de <var>0</var> si <var>1</var></li>
+<li>pentru toate testele folosite la corectare, <var>N=32000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>invsort.in</th><th>invsort.out</th></tr><tr><td>5<br>
+1<br>
+0<br>
+1<br>
+1<br>
+0</td><td>3 5 <br>
+1 3</td></tr></table><h3>Explicatie </h3>
+
+
+<ul><li>prima operatie are efectul: <var>1 0 [1 1 0] -&gt; 1 0 0 1 1</var></li>
+<li>a doua operatie are efectul: <var>[1 0 0] 1 1 -&gt; 0 0 1 1 1</var></li>
+<li>costul total este <var>3 + 3 = 6</var></li>
+</ul><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=45">Diverse</a></span>
+            <a href="javascript:show_tag_list(45)" id="tag_anchor_45" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_45"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=345">Recursivitate</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=89">Divide et Impera</a></span>
+            <a href="javascript:show_tag_list(89)" id="tag_anchor_89" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_89"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=90">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

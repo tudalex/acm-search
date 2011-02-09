@@ -1,0 +1,48 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>fractii.in, fractii.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=fractii">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=fractii">Vezi solutiile trimise</a></p>
+
+<h1>Fractii<br></h1>
+
+
+
+<p>Gigel, intr-o zi cand isi facea temele la matematica, s-a apucat sa scrie pe o foaie de hartie, un sir de fractii ireductibile de forma <var><sup>P</sup>/<sub>Q</sub></var> cu <var>1 ≤ <span class="caps">P,Q </span>≤ N</var>, unde <var>N</var> este un numar natural ales de el. De exemplu, pentru <var>N = 4</var> el a obtinut urmatorul sir:</p>
+
+<p class="center" style="text-align:center"><var><sup>1</sup>/<sub>1</sub> <sup>1</sup>/<sub>2</sub> <sup>1</sup>/<sub>3</sub> <sup>1</sup>/<sub>4</sub> <sup>2</sup>/<sub>1</sub> <sup>2</sup>/<sub>3</sub> <sup>3</sup>/<sub>1</sub> <sup>3</sup>/<sub>2</sub> <sup>3</sup>/<sub>4</sub> <sup>4</sup>/<sub>1</sub> <sup>4</sup>/<sub>3</sub></var></p>
+
+<p>Gigel s-a apucat apoi sa numere cate fractii a obtinut pentru <var>N = 4</var> si a vazut ca sunt <var>11</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Fiind dat un numar natural <var>N</var>, sa se determine cate fractii sunt in sirul de fractii construit dupa regulile de mai sus.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>fractii.in</var> contine pe prima linie numarul natural <var>N</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>fractii.out</var> trebuie sa contina un numar natural pe prima linie care reprezinta cate fractii sunt in sir.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1.000.000</var></li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>fractii.in</th><th>fractii.out</th></tr><tr><td>3</td><td>7</td></tr><tr><td>4</td><td>11</td></tr><tr><td>5</td><td>19</td></tr><tr><td>10</td><td>63</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=101">Ciurul lui Eratostene</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=113">Indicatorul lui Euler</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

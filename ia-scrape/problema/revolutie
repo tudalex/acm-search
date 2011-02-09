@@ -1,0 +1,46 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>revolutie.in, revolutie.out</td><td><strong>Sursă</strong></td><td>ONI 2009, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Mishu91"><img src="/utilizator/Mishu91?action=download&amp;file=avatar&amp;resize=L16x16" alt="Mishu91">Andrei Misarca</a> <a title="Rating Mishu91: 662" class="rating-badge-1" href="http://infoarena.ro/utilizator/Mishu91?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Mishu91">Mishu91</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=revolutie">Vezi solutiile trimise</a></p>
+
+<h1>Revolutie<br></h1>
+
+<p>În ţara Utopia a avut loc recent o revoluţie digitală, în urma căreia s-a hotărât să se întrerupă serviciile de telefonie mobilă. Din fericire, Miruna s-a infiltrat în sediul central al principalului furnizor de telefonie din Utopia. Pentru a repune în funcţiune reţeaua, Miruna trebuie să treacă de un filtru de autentificare: ea are în faţă o matrice pătratică de dimensiune <var>N</var> având elemente din mulţimea <var>{0, 1}</var>. Asupra acestei matrice se pot efectua următoarele operaţii:</p>
+
+
+<ul><li>se aleg două linii şi se interschimbă;</li>
+<li>se aleg două coloane şi se interschimbă.</li>
+</ul><p>Pentru a trece de filtrul de autentificare Miruna trebuie să obţină pe diagonala principală (toate elementele de forma <var>A[i][i]</var>) valori egale cu 1. </p>
+
+<p>Determinaţi pentru Miruna o secvenţă de maxim <var>4*N</var> operaţii astfel încât să reuşească să treacă de filtrul de autentificare.</p>
+
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>revolutie.in</var> va conţine pe prima linie numărul <var>N</var>, reprezentând dimensiunea matricei. Pe următoarele <var>N</var> linii se află câte <var>N</var> valori din mulţimea <var>{0, 1}</var> reprezentând valorile matricei.</p>
+
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>revolutie.out</var> va conţine pe prima linie un singur număr întreg <var>T</var> reprezentând numărul de operaţii efectuate. Fiecare din următoarele <var>T</var> linii va descrie câte o operaţie: primul caracter de pe linie va fi <var>L</var> dacă s-a aplicat o operaţie asupra liniilor şi <var>C</var> dacă s-a aplicat o operaţie asupra coloanelor. Vor urma două valori între <var>1</var> şi <var>N</var> reprezentând indicii liniilor/coloanelor interschimbate. În caz că nu există soluţie, se va afişa valoarea <var>-1</var>.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 127</var></li>
+<li>Liniile şi coloanele sunt numerotate de la <var>1</var> la <var>N</var></li>
+<li><var>T</var> trebuie să aparţină intervalului <var>[0, 4*N]</var></li>
+<li><var>30%</var> dintre fişierele de test vor avea <var>1 ≤ N ≤ 10</var></li>
+<li>În cazul în care există mai multe soluţii, se va afişa oricare dintre ele</li>
+<li>Miruna se opune fenomenului de “politically correctness”</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>revolutie.in</th><th>revolutie.out</th></tr><tr><td>2<br>
+0 1<br>
+1 0<br></td><td>1<br>
+L 1 2<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Interschimbând primele două linii obţinem matricea:<br><var>1 0</var><br><var>0 1</var><br></p><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

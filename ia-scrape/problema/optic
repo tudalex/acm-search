@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>optic.in, optic.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.6 sec</td><td><strong>Limită de memorie</strong></td><td>65535 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=optic">Vezi solutiile trimise</a></p>
+
+<h1>Optic<br></h1>
+
+<p><var>N</var> switch-uri, numerotate de la <var>1</var> la <var>N</var>, sunt interconectate intr-o retea prin conexiuni din fibra optica. Reteaua are o structura arborescenta. Radacina arborelui este reprezentata de switch-ul numerotat cu <var>1</var>, pe care il consideram situat pe nivelul cel mai de sus din arbore. O conexiune leaga <var>2</var> switch-uri si este unidirectionala (orientata de la switch-ul aflat pe un nivel superior catre cel aflat pe un nivel inferior). Switch-ul cu numarul <var>1</var> trebuie sa transmita niste informatii foarte importante referitoare la starea retelei tuturor celorlalte switch-uri. Pentru a realiza acest lucru, trebuie stabilita o strategie inteligenta de broadcast (transmisie catre toate switch-urile).</p>
+
+<p>La orice moment de timp, un switch <var>A</var> care detine informatiile (initial, la momentul <var>0</var>, doar switch-ul <var>1</var> detine informatiile) poate stabili o cale optica pana la un switch <var>B</var> aflat in subarborele switch-ului <var>A</var>. Calea optica consta din switch-urile <var>A</var>, <var>B</var> si toate celelalte switch-uri aflate pe drumul unic (si orientat) de la <var>A</var> la <var>B</var>. Stabilirea caii optice dureaza <var>1</var> unitate de timp, transmisia informatiilor realizandu-se apoi instantaneu. La finalul transmisiei pe calea optica stabilita, doar switch-ul <var>B</var> va primi informatiile, nu si celelalte switch-uri intermediare de pe drumul de la <var>A</var> la <var>B</var>. O restrictie suplimentara generata de modul de functionare al switch-urilor este ca, la orice moment de timp, orice switch poate face parte din cel mult o cale optica. Asadar, la fiecare moment de timp, caile optice stabilite pentru transmiterea informatiilor trebuie sa fie disjuncte din punct de vedere al switch-urilor ce fac parte din ele. Timpul de transmitere a informatiilor al unei strategii de broadcast este momentul de timp maxim la care unul din switch-uri a primit informatiile.</p>
+
+<p>Determinati o strategie de broadcast cu timp minim de transmitere a informatiilor.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>optic.in</var> contine, pe prima linie, numarul natural <var>N</var>, reprezentand numarul de switch-uri din retea. Urmatoarele <var>N-1</var> linii contin cate doua numere naturale distincte <var>A</var> si <var>B</var> avand semnificatia ca exista o conexiune directa orientata de la <var>A</var> la <var>B</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>optic.out</var> va contine, pe prima linie, timpul minim <var>T</var> de transmitere a informatiilor. In continuare, pentru fiecare moment de timp <var>M</var> de la <var>0</var> la <var>T-1</var> va fi afisat un numar natural <var>C</var>, reprezentand numarul de cai optice stabilite la momentul <var>M</var>, urmat de <var>C</var> linii continand <var>2</var> numere naturale separate printr-un spatiu, <var>A</var> si <var>B</var>, avand semnificatia ca s-a stabilit o cale optica de la switch-ul <var>A</var> la switch-ul <var>B</var>, la momentul <var>M</var>, in vederea transmiterii informatiilor.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 333</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>optic.in</th><th>optic.out</th></tr><tr><td>6<br>
+1 2<br>
+1 3<br>
+3 4<br>
+4 5<br>
+5 6<br></td><td>3<br>
+1<br>
+1 3<br>
+2<br>
+1 2<br>
+3 5<br>
+2<br>
+3 4<br>
+5 6<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

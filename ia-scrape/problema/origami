@@ -1,0 +1,52 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>origami.in, origami.out</td><td><strong>Sursă</strong></td><td>ONI 2009 clasa a 9 a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=188">Alin Burta</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=origami">Vezi solutiile trimise</a></p>
+
+<h1>Origami<br></h1>
+
+<p>Costel este pasionat de arta orientală a confecţionării obiectelor de hârtie, origami, dar este abia la început şi trebuie să se familiarizeze cu operaţiile de îndoire corectă a hârtiei. El are la dispoziţie o foaie de hârtie pătrată, ruptă dintr-un caiet de matematică, având dimensiunea de exact <var>N</var> x <var>N</var> pătrăţele. Îndoiturile trebuie realizate exact pe o linie orizontală sau verticală. <br>
+Sunt permise două tipuri de îndoituri:</p>
+
+<p>îndoitura de tipul <var>1</var>, îndoitură verticală executată la <var>X</var> pătrăţele faţă de marginea stângă a foii: partea din stânga a foii se pliază către dreapta, de-a lungul liniei verticale aflate la distanţa de X pătrăţele faţă de marginea stângă;<br>
+îndoitura de tipul <var>2</var>, îndoitură orizontală executată la <var>X</var> pătrăţele faţă de marginea superioară a foii: partea de sus a foii se pliază în jos, de-a lungul liniei aflate la distanţa de X pătrăţele faţă de marginea de sus a hârtiei.</p>
+
+<p>În urma realizării unei succesiuni de îndoituri, din foaia iniţială de hârtie se va obţine un obiect, care va avea o formă dreptunghiulară, cu înălţimea <var>H</var>, lăţimea <var>M</var> şi având grosimea egală cu numărul maxim de foi care se suprapun în cadrul obiectului obţinut.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Dată fiind o succesiune de îndoituri aplicată unei foi de dimensiune <var>N</var> x <var>N</var>, scrieţi un program care să determine înălţimea, lăţimea şi grosimea obiectului obţinut.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>origami.in</var> are următoarea structură :</p>
+
+
+<ul><li>prima linie a fişierului conţine un număr natural <var>N</var>, reprezentând dimensiunea iniţială a hârtiei;<br>
+a doua linie conţine un număr natural <var>K</var>, reprezentând numărul îndoiturilor;</li>
+<li>pe următoarele <var>K</var> linii se găsesc perechi de numere naturale nenule, <var>A B</var>, separate printr-un spaţiu, reprezentând tipul îndoiturii ( <var>A</var> este <var>1</var> dacă se realizează o îndoitură verticală sau <var>A</var> este <var>2</var> dacă se realizează o îndoitură orizontală), respectiv la ce distanţă se realizează îndoitura;</li>
+</ul><h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>origami.out</var> va conţine, pe o singură linie, trei numere naturale nenule <var>H</var>, <var>L</var>, <var>G</var>, separate prin câte un spaţiu, reprezentând înălţimea, lăţimea şi respectiv grosimea obiectului obţinut.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 170</var></li>
+<li><var>1 ≤ K ≤ 2N-2</var></li>
+<li><var>A = 1 sau A = 2</var></li>
+<li><var>1 ≤ B &lt; înălţimea sau lăţimea hârtiei la momentul respectiv (funcţie de tipul îndoiturii)</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>origami.in</th><th>origami.out</th></tr><tr><td>4<br>
+  3<br>
+  1 3<br>
+  2 3<br>
+  1 1<br></td><td>3 2 6<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Hârtia are <var>4</var> unităţi înălţime şi <var>4</var> unităţi lăţime.Prima îndoitură se realizează de la stânga la dreapta, de-a lungul celei de-a treia linii verticale faţă de marginea stângă a foii. Se obţine o foaie de înălţime <var>4</var>, lăţime <var>3</var> şi grosime <var>2</var>. A doua îndoitură se realizează îndoind partea superioară a foii, în jos, de-a lungul celei de-a treia linii orizontale faţă se marginea de sus a foii. Se obţine un obiect de înălţime <var>3</var>, lăţime <var>3</var> şi grosime <var>4</var>. După a treia îndoitură se obţine obiectul final, având înălţimea <var>3</var>, lăţimea <var>2</var> şi grosimea <var>6</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

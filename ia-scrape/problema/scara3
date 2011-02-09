@@ -1,0 +1,52 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>scara3.in, scara3.out</td><td><strong>Sursă</strong></td><td>OJI 2005, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=135">Stelian Ciurea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/pauldb"><img src="/utilizator/pauldb?action=download&amp;file=avatar&amp;resize=L16x16" alt="pauldb">Paul-Dan Baltescu</a> <a title="Rating pauldb: 792" class="rating-badge-4" href="http://infoarena.ro/utilizator/pauldb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/pauldb">pauldb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=scara3">Vezi solutiile trimise</a></p>
+
+<h1>Scara 3<br></h1>
+
+<p>Domnul G are de urcat o scara cu <var>N</var> trepte. In mod normal, la fiecare pas pe care il face, el urca o treapta. Pe <var>K</var> dintre aceste trepte se afla cate o sticla cu un numar oarecare de decilitri de apa, fie acesta <var>x</var>. Daca bea toata apa dintr-o astfel de sticla, forta si mobilitatea lui G cresc, astfel incat, la urmatorul pas el poate urca pana la x trepte, dupa care, daca nu bea din nou ceva, revine la "normal". Sticlele cu apa nu costa nimic. Cantitatea de apa continuta de aceste sticle poate sa difere de la o treapta la alta.<br>
+Pe <var>L</var> trepte se afla cate o sticla cu bautura energizanta. Si pentru aceste sticle, cantitatea de bautura energizanta poate sa difere de la o treapta la alta. Sa presupunem ca intr-una dintre aceste sticle avem <var>y</var> decilitri de bautura energizanta. Daca bea <var>q</var> <var>(q ≤ y)</var> decilitri dintr-o astfel de sticla, la urmatorul pas G poate urca pana la <var>2q</var> trepte, dupa care si in acest caz, daca nu bea din nou ceva, el revine la "normal". Insa bautura energizanta costa: pentru o cantitate de <var>q</var> decilitri consumati, G trebuie sa plateasca <var>q</var> lei grei.<br>
+Pot exista trepte pe care nu se afla nici un pahar, dar si trepte pe care se afla atat o sticla cu apa cat si una cu bautura energizanta. In astfel de situatii, nu are rost ca G sa bea ambele bauturi deoarece efectul lor nu se cumuleaza; el poate alege sa bea una dintre cele doua bauturi sau poate sa nu bea nimic.</p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati <var>p</var>, numarul minim de pasi pe care trebuie sa ii faca G pentru a urca scara, precum si suma minima pe care trebuie sa o cheltuiasca G pentru a urca scara in <var>p</var> pasi.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>scara3.in</var> contine:</p>
+
+
+<ul><li>pe prima linie un numar natural <var>N</var>, reprezentand numarul total de trepte;</li>
+<li>pe cea de a doua linie un numar natural <var>K</var>, reprezentand numarul de trepte pe care se afla sticle cu apa;</li>
+<li>pe fiecare dintre urmatoarele <var>K</var> linii cate doua numere naturale separate printr-un spatiu, reprezentand numarul de ordine al treptei pe care se afla o sticla cu apa si respectiv cantitatea de apa din acea sticla exprimata in decilitri;</li>
+<li>pe urmatoarea linie un numar natural <var>L</var>, reprezentand numarul de trepte pe care se afla sticle cu bautura energizanta;</li>
+<li>pe fiecare dintre urmatoarele <var>L</var> linii cate doua numere naturale separate printr-un spatiu, reprezentand numarul de ordine al treptei pe care se afla o sticla cu bautura energizanta si respectiv cantitatea de bautura energizanta din acea sticla exprimata in decilitri.</li>
+</ul><h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>scara3.out</var> va contine o singura linie pe care vor fi scrise doua numere naturale <var>p</var> <var>c</var> separate printr-un spatiu, <var>p</var> reprezentand numarul minim de pasi, iar <var>c</var> suma minima cheltuita.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>N ≤ 1200</var></li>
+<li><var>0 ≤ <span class="caps">K,L </span>≤ N</var></li>
+<li>Cantitatea de apa aflata in oricare sticla este <var>1 ≤ x ≤ 1000</var></li>
+<li>Cantitatea de bautura energizanta aflata in oricare sticla este <var>1 ≤ y ≤ 1000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>scara3.in</th><th>scara3.out</th></tr><tr><td>6<br>
+1<br>
+1 2<br>
+2<br>
+4 1<br>
+1 2<br></td><td>3 2<br></td></tr><tr><td>6<br>
+1<br>
+1 2<br>
+2<br>
+4 1<br>
+1 1<br></td><td>4 1<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

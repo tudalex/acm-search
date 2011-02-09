@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>lsort.in, lsort.out</td><td><strong>Sursă</strong></td><td>ONI 2005, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=lsort">Vezi solutiile trimise</a></p>
+
+<h1>Lsort<br></h1>
+
+<p>Se considera o lista simplu inlantuita (<var>L1</var>) ce contine numerele intregi de la <var>1</var> la <var>N</var> (intr-o ordine oarecare). Se doreste construirea unei alte liste simplu inlantuite (<var>L2</var>) care sa contina numerele din lista <var>L1</var> in ordine crescatoare. Pentru a obtine lista <var>L2</var>, se vor sterge elemente din <var>L1</var> si se vor adauga in <var>L2</var>, conform procedeului descris in continuare: initial lista <var>L2</var> e vida. La primul pas putem sterge orice element din <var>L1</var> si acesta se adauga in <var>L2</var>. Apoi, in urmatorii <var>N-1</var> pasi, se poate sterge orice element din <var>L1</var>, dar acesta poate fi adaugat numai la inceputul sau la sfarsitul lui <var>L2</var>. La final, <var>L1</var> nu va contine nici un element, iar <var>L2</var> trebuie sa contina numerele de la <var>1</var> la <var>N</var> in ordine crescatoare. Intrucat exista mai multe posibilitati de a construi <var>L2</var>, vom defini in continuare costul constructiei lui <var>L2</var> si vom dori sa determinam o posibilitate de constructie a lui <var>L2</var> care sa aiba costul minim.</p>
+
+<p>Algoritmul de constructie a lui <var>L2</var> consta din <var>N</var> pasi, la fiecare pas stergandu-se un element din <var>L1</var> si adaugand acest element in <var>L2</var> (conform restrictiilor precizate). La pasul <var>i</var> (<var>1 ≤ i ≤ N</var>), lista <var>L1</var> contine <var>N-i+1</var> elemente si lista <var>L2</var> contine <var>i-1</var> elemente. Daca se muta elementul de pe pozitia <var>k</var> din <var>L1</var> in <var>L2</var> la pasul <var>i</var> (<var>1 ≤ k ≤ N-i+1</var>), costul acestei mutari este egal cu <var><strong>k*i</strong></var>. Dupa mutarea elementului, lista <var>L1</var> va avea cu un element mai putin (toate elementele de pe pozitii mai mari decat <var>k</var> vor ajunge cu o pozitie mai in fata) si lista <var>L2</var> va avea cu un element mai mult. Costul total al constructiei lui <var>L2</var> este egal cu suma costurilor mutarilor efectuate la fiecare dintre cei <var>N</var> pasi.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>lsort.in</var> se afla numarul <var>N</var>, reprezentand numarul de elemente din <var>L1</var>. Urmatoarea linie contine numerele intregi de la <var>1</var> la <var>N</var>, separate prin cel putin un spatiu, in ordinea in care se afla acestea pozitionate in lista <var>L1</var> (primul numar se afla pe pozitia <var>1</var> in <var>L1</var>, al doilea numar pe pozitia <var>2</var> s.a.m.d.).</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>lsort.out</var> se va afisa costul minim de constructie a lui <var>L2</var>. Pe urmatoarea linie se va afisa modul de constructie al acesteia. Pe aceasta linie se va afisa ordinea in care sunt mutate elementele din lista <var>L1</var> in lista <var>L2</var>. Primul numar afisat va reprezenta numarul mutat din <var>L1</var> in <var>L2</var> la primul pas; al doilea numar va reprezenta numarul mutat la pasul <var>2</var> s.a.m.d. Numerele afisate trebuie separate prin cel putin un spatiu. In cazul in care exista mai multe posibilitati de constructie a listei <var>L2</var> avand costul minim, se poate afisa oricare dintre ele.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1000</var></li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>lsort.in</th><th>lsort.out</th></tr><tr><td>4<br>
+4 1 3 2<br></td><td>15<br>
+3 4 2 1<br></td></tr><tr><td>7<br>
+6 3 5 4 1 7 2<br></td><td>43<br>
+6 5 4 3 2 1 7<br></td></tr></table><h3>Explicatie pentru primul exemplu</h3>
+
+
+<ul><li>La pasul <var>1</var>, <var>L1</var> = <var>[4, 1, 3, 2]</var> si <var>L2</var> = <var>[]</var>. Se sterge din <var>L1</var> elementul <var>3</var> (care se afla pe pozitia 3) si se introduce in <var>L2</var>. Costul acestei mutari este <var>3*1=3</var>.</li>
+<li>La pasul <var>2</var>, <var>L1</var> = <var>[4, 1, 2]</var> si <var>L2</var> = <var>[ 3 ]</var>. Se sterge din <var>L1</var> elementul <var>4</var> (care se afla pe pozitia <var>1</var>) si se introduce in <var>L2</var> (este evident ca acest element trebuie adaugat la sfarsitul listei <var>L2</var> si nu la inceputul ei; in caz contrar, lista <var>L2</var> nu ar mai fi sortata). Costul acestei mutari este <var>1*2=2</var>.</li>
+<li>La pasul <var>3</var>, <var>L1</var> = <var>[1, 2]</var> si <var>L2</var> = <var>[3, 4]</var>. Se sterge din <var>L1</var> elementul <var>2</var> (care se afla pe pozitia <var>2</var>) si se introduce in <var>L2</var> (din nou, pozitia unde trebuie adaugat elementul este evidenta : la inceputul listei L2). Costul acestei mutari este <var>2*3=6</var>. </li>
+<li>La pasul <var>4</var>, <var>L1</var> = <var>[ 1 ]</var> si <var>L2</var> = <var>[2, 3, 4]</var>. Se sterge din <var>L1</var> elementul <var>1</var> (care se afla pe pozitia <var>1</var>) si se introduce in <var>L2</var>. Costul acestei mutari este <var>1*4=4</var>.<br>
+Costul total al constructiei listei <var>L2</var> este <var>3+2+6+4=15</var>.</li>
+</ul><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

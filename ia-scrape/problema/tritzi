@@ -1,0 +1,38 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>tritzi.in, tritzi.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>65535 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=tritzi">Vezi solutiile trimise</a></p>
+
+<h1>Tritzi<br></h1>
+
+<p>Un trit este o unitate logica care poate lua <var>3</var> valori: <var>0</var>, <var>1</var> si <var>2</var>. Tritzii se pot folosi exact la fel ca si bitzii (despre care, probabil, ati auzit cu totzii). De exemplu, se pot transmite informatzii reprezentate sub forma unor siruri de tritzi. Pentru a nu se confunda cu sirurile de bitzi, sirurile de tritzi au o proprietate speciala : doi tritzi avand valorile <var>0</var> si respectiv <var>1</var> nu pot fi transmisi unul dupa altul. Astfel, exista siruri de tritzi valide si invalide (care contzin cel putzin o pereche de tritzi alaturatzi egali cu <var>0</var> si <var>1</var>). De exemplu, sirul <var>02212212000211</var> este un sir valid, dar sirurile <var>0122212</var> sau <var>2221022</var> nu sunt valide.</p>
+
+<p>Determinati numarul de siruri de tritzi valide, de lungime <var>N</var>. Intrucat acest numar poate fi foarte mare, ne intereseaza numai valoarea acestuia modulo un numar <var>P</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>tritzi.in</var> se afla numarul intreg <var>T</var>, reprezentand numarul de teste ce urmeaza. Urmatoarele <var>T</var> linii contzin cate <var>2</var> numere intregi: <var>N</var> si <var>P</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pentru fiecare test din fisierul de intrare veti afisa in fisierul de iesire <var>tritzi.out</var> un numar reprezentand valoarea ceruta.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 30</var></li>
+<li><var>1 ≤ N ≤ 1 000 000 000</var></li>
+<li><var>1 ≤ P ≤ 32 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>tritzi.in</th><th>tritzi.out</th></tr><tr><td>4<br>
+1 997<br>
+4 997<br>
+21 997<br>
+999999999 13<br></td><td>3<br>
+41<br>
+22<br>
+5<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

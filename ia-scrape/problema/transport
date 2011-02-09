@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>transport.in, transport.out</td><td><strong>Sursă</strong></td><td>Happy Coding 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">1/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=transport">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=transport">Vezi solutiile trimise</a></p>
+
+<h1>Transport<br></h1>
+
+<p>O firma ce produce saltele cu apa are <var>N</var> astfel de saltele intr-un depozit, asezate una peste alta (intr-o stiva). Fiecare saltea este caracterizata prin volumul sau (un numar intreg, exprimat in decimetri cubi). Pentru a le transporta la magazin, in vederea comercializarii, firma va inchiria un camion care va avea o capacitate egala cu <var>C</var> decimetri cubi. Acest camion va trebuie sa efectueze cel mult <var>K</var> transporturi (s-a estimat durata fiecarui transport si s-a ajuns la concluzia ca daca s-ar efectua mai mult de <var>K</var> transporturi, camionul ar ajunge la magazin in afara orelor de aprovizionare, astfel ca saltelele nu ar putea fi comercializate). La fiecare transport, camionul poate fi incarcat cu saltele, cu conditia ca suma volumelor saltelelor incarcate in camion sa nu depaseasca capacitatea camionului. Deoarece saltele sunt asezate intr-o stiva, nu este posibil sa se incarce in camion o saltea decat dupa ce au fost incarcate (si eventual transportate) toate saltelele de deasupra ei. Intrucat costul inchirierii camionului depinde de capacitatea acestuia, firma doreste sa inchirieze un camion cu capacitatea cat mai mica care sa poata transporta toate cele <var>N</var> saltele, efectuand maxim <var>K</var> transporturi.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>transport.in</var> se afla numerele intregi <var>N</var> si <var>K</var> (separate printr-un spatiu). Pe fiecare din urmatoarele <var>N</var> linii se afla un numar intreg, reprezentand volumul unei saltele. Prima din aceste <var>N</var> linii contine volumul saltelei din varful stivei, a doua linie contine volumul celei de-a doua saltele, etc.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul <var>transport.out</var> veti afisa un singur numar intreg, reprezentand capacitatea minima pe care trebuie sa o aiba camionul pentru a putea transporta cele <var>N</var> saltele efectuand maxim <var>K</var> transporturi.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 16 000</var></li>
+</ul><ul><li><var>1 ≤ K ≤ 16 000</var></li>
+</ul><ul><li><var>1 ≤ volumul oricarei saltele ≤ 16 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>transport.in</th><th>transport.out</th></tr><tr><td>6 3<br>
+7<br>
+3<br>
+2<br>
+3<br>
+1<br>
+4<br></td><td>8</td></tr></table><p><em>Explicatie</em>: la primul transport este incarcata prima saltea (care are volumul 7). La cel de-al doilea transport sunt incarcate saltele 2 si 3 (volumul total este 3 + 2 = 5). La cel de-al treilea transport sunt incarcate saltele 4, 5 si 6 (volumul total este 3 + 1 + 4 = 8).</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=48">Cautare</a></span>
+            <a href="javascript:show_tag_list(48)" id="tag_anchor_48" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_48"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=49">Cautare binara</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,46 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>piese2.in, piese2.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2009, Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/wefgef"><img src="/utilizator/wefgef?action=download&amp;file=avatar&amp;resize=L16x16" alt="wefgef">Andrei Grigorean</a> <a title="Rating wefgef: 783" class="rating-badge-4" href="http://infoarena.ro/utilizator/wefgef?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/wefgef">wefgef</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=piese2">Vezi solutiile trimise</a></p>
+
+<h1>Piese2<br></h1>
+
+<p>Miruna si Aglaia au primit de Mos Nicolae din partea parintilor un joc cu piese colorate. Acesta consta din <var>K</var> piese rosii, <var>K</var> piese albastre si o tabla de joc de dimensiune <var>1 x N</var>. Regulile jocului sunt urmatoarele:</p>
+
+
+<ul><li>La inceput se pozitioneaza piesele pe tabla astfel incat sa nu existe <var>2</var> piese pe aceeasi coloana, iar oricare <var>2</var> piese consecutive sa fie colorate distinct. Prima piesa trebuie sa fie rosie.</li>
+<li>Cele doua fetite vor efectua mutari alternativ, pana cand una dintre ele nu va mai putea efectua nicio mutare, moment in care ea va pierde jocul.</li>
+<li>Miruna poate muta doar piese rosii, iar Aglaia doar piese albastre.</li>
+<li>O mutare consta din alegerea unei piese si deplasarea ei o coloana spre dreapta sau spre stanga daca nu se paraseste tabla si daca respectiva locatie nu este ocupata de alta piesa.</li>
+<li>Miruna este cea care efectueaza prima mutare.</li>
+</ul><p>Fetitele sunt foarte inteligente, asa ca ele vor juca intotdeauna optim. Pentru o configuratie initiala a pieselor, va trebui sa aflati cine va castiga jocul.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>piese2.in</var> contine pe prima linie <var>3</var> numere naturale <var>T</var>, <var>N</var> si <var>K</var>, reprezentand numarul de teste ce vor urma, dimensiunea tablei de joc, respectiv numarul de piese de o anumita culoare. Urmatoarele <var>T</var> linii vor contine cate <var>2 * K</var> numere naturale. Acestea vor fi distince si se vor da in ordine crescatoare. Ele vor reprezenta pozitiile initiale ale pieselor.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>piese2.out</var> veti afisa <var>T</var> linii, pe linia <var>i</var> aflandu-se numele fetitei castigatoare pentru jocul cu numarul <var>i</var>.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 10</var></li>
+<li><var>2 ≤ N ≤ 10<sup>9</sup></var></li>
+<li><var>1 ≤ K ≤ 10<sup>5</sup></var></li>
+<li><var>2*K ≤ N</var></li>
+<li>Pentru <var>20%</var> din teste <var>N ≤ 10</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>piese2.in</th><th>piese2.out</th></tr><tr><td>2 4 1<br>
+  1 3<br>
+  1 4<br></td><td>Miruna<br>
+  Aglaia<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Avem o tabla de lungime 4, si cate o piese din fiecare culoare. In primul joc Miruna muta pe 2, Aglaia muta pe 4, Miruna pe 3 si castiga. In al doilea joc Miruna muta pe 2, Aglaia pe 3, Miruna pe 1, Aglaia pe 2 si castiga.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

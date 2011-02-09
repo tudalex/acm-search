@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>zapezi.in, zapezi.out</td><td><strong>Sursă</strong></td><td>Campion 2002-2003</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=171">Emanuela Cerchez</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=zapezi">Vezi solutiile trimise</a></p>
+
+<h1>Zapezi<br></h1>
+
+<p>Zapada a luat din nou prin surprindere primaria. Primarul a chemat de urgenta serviciul deszapeziri si a dat o lista cu strazile din oras care trebuie sa fie obligatoriu curatate. Primarul a selectat strazile din lista astfel incat numarul lor sa fie cat mai mic posibil, dar totusi intre oricare doua intersectii din oras sa existe legatura. La serviciul deszapeziri lucreaza doi angajati, Vasilica si Ionica, pe doua utilaje. In acest moment si angajatii si utilajele se gasesc la sediul serviciului deszapezri, situat in una dintre intersectiile din oras. Un utilaj de deszapezire consuma 1 litru de benzina/1 metru (indiferent daca se deplaseaza pe o strada inzapezita sau deszapezita).<br>
+Vasilica si Ionica trebuie sa deszapezeasca toate strazile din lista data de primar, astfel incat cantitatea totala de benzina consumata sa fie minima. Cand toate strazile din lista data de primar sunt curatate, utilajele pot fi parcate in ultima intersectie vizitata. Evident Ionica si Vasilica nu trebuie sa-si parcheze utilajele neaparat in aceeasi intersectie. Scrieti un program care sa determine cantitatea minima de benzina necesara pentru curatarea tuturor strazilor din lista data de primar.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>zapezi.in</var> contine:</p>
+
+
+<ul><li>pe prima linie doua numere naturale <var>N</var> si <var>S</var>, unde <var>N</var> este numarul de intersectii din oras, iar <var>S</var> este numarul de ordine al intersectiei in care se afla sediul serviciului deszapeziri, cea din care pleaca initial Vasilica si Ionica (intersectiile sunt numerotate de la <var>1</var> la <var>N</var>).</li>
+<li>fiecare dintre urmatoarele <var>N-1</var> linii contine 3 numere naturale <var>A B C</var> cu semnificatia "intersectiile <var>A</var> si <var>B</var> sunt conectate direct printr-o strada de lungime <var>C</var> metri".</li>
+</ul><h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>zapezi.out</var> contine pe prima linie cantitatea minima de benzina necesara pentru curatarea tuturor strazilor din lista data de primar.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 10.000</var></li>
+<li><var>1 ≤ S, A, B ≤ N</var></li>
+<li><var>1 ≤ C ≤ 1.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>zapezi.in</th><th>zapezi.out</th></tr><tr><td>5 2<br>
+1 2 1<br>
+2 3 2<br>
+3 4 2<br>
+4 5 1<br></td><td>6</td></tr><tr><td>5 1<br>
+1 2 1<br>
+2 3 1<br>
+3 5 1<br>
+3 4 1</td><td>5</td></tr><tr><td>4 1<br>
+1 3 2<br>
+1 2 3<br>
+1 4 4</td><td>11</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,33 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>furnica.in, furnica.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65535 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=furnica">Vezi solutiile trimise</a></p>
+
+<h1>Furnica<br></h1>
+
+<p>O furnicuta se afla intr-un musuroi de forma patratica, alcatuit din incaperi care au la randul lor forma patratica. Intr-o zi, furnicuta pleaca din incaperea ei, si incepe sa se plimbe prin musuroi. In fiecare zi, ea va trece din incaperea in care se afla intr-o incapere alaturata, prin care, eventual, a mai trecut intr-o zi anterioara. O incapere alaturata se defineste ca fiind un patrat cu care camera (patratul) in care se afla furnicuta are o latura in comun. Furnicuta nu ramane doua zile la rand in aceeasi camera.</p>
+
+<p>Pozitia initiala a furnicutei este ori in centrul musuroiului, ori in coltul din stanga-sus al acestuia, ca in figura:<br><img src="http://infoarena.ro/problema/furnica?action=download&amp;file=furnica.jpg&amp;safe_only=true" alt=""></p>
+
+<p>Dandu-se numarul de zile care au trecut de la inceputul plimbarii furnicutei si pozitia sa initiala (centru sau stanga-sus), sa se determine numarul minim de incaperi din musuroi in care trebuie cautata furnicuta, pentru a fi siguri ca aceasta va fi gasita. Numarul de incaperi de pe laturile musuroiului se considera a fi mult mai mare decat numarul de zile in care se plimba furnicuta.</p>
+
+<h2>Date de intrare</h2>
+
+<p>De pe prima linie a fisierului <var>furnica.in</var> se citeste un caracter: <var>"C"</var>, daca pozitia initiala a furnicutei este in centrul musuroiului, respectiv <var>"S"</var>, daca este in coltul din stanga-sus. De pe a doua linie se va citi numarul <var>t</var> de zile trecute de la inceputul plimbarii.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul <var>furnica.out</var> se va scrie, pe prima (si singura) linie numarul minim de incaperi ale musuroiului in care trebuie cautata furnicuta, pentru a fi siguri ca o vom gasi (intr-una din ele).</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>0 ≤ t ≤ 30 000</var></li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>furnica.in</th><th>furnica.out</th></tr><tr><td>S<br>
+17<br></td><td>90<br></td></tr><tr><td>C<br>
+16<br></td><td>289<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

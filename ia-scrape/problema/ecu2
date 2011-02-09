@@ -1,0 +1,32 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ecu2.in, ecu2.out</td><td><strong>Sursă</strong></td><td>Selectie echipe ACM ICPC, UPB 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65535 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ecu2">Vezi solutiile trimise</a></p>
+
+<h1>Ecu2<br></h1>
+
+<p>Se da o ecuatie de forma <var>a*X<sup>2</sup> + b*X + c = 0</var>. Determinati cate solutii reale are ecuatia data.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>ecu2.in</var> contine un numar intreg <var>Q</var>, reprezentand numarul de ecuatii ce urmeaza. Fiecare din urmatoarele <var>Q</var> linii contine <var>3</var> numere intregi, separate prin spatii, <var>a</var>, <var>b</var> si <var>c</var>, care definesc o ecuatie.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pentru fiecare din cele <var>Q</var> ecuatii, in ordinea data in fisierul de intrare, afisati in fisierul de iesire <var>ecu2.out</var> o linie continand numarul de solutii reale ale ecuatiei. Afisati <var>"INF"</var> daca ecuatia are un numar infinit de solutii reale.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ Q ≤ 100</var></li>
+<li><var>-1000 ≤ a, b, c ≤ 1000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>ecu2.in</th><th>ecu2.out</th></tr><tr><td>3<br>
+1 0 0<br>
+1 0 -1<br>
+0 0 0<br></td><td>1<br>
+2<br><span class="caps">INF</span><br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>numere6.in, numere6.out</td><td><strong>Sursă</strong></td><td>OJI 2007, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=203">Ilie Vieru</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/pauldb"><img src="/utilizator/pauldb?action=download&amp;file=avatar&amp;resize=L16x16" alt="pauldb">Paul-Dan Baltescu</a> <a title="Rating pauldb: 792" class="rating-badge-4" href="http://infoarena.ro/utilizator/pauldb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/pauldb">pauldb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=numere6">Vezi solutiile trimise</a></p>
+
+<h1>Numere 6<br></h1>
+
+<p>Fie <var>a</var> si <var>b</var> doua numere naturale nenule.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care citeste din fisierul de intrare doua valori <var>a</var> si <var>b</var>, determina numarul de numere naturale formate din exact <var>a</var> cifre care au fiecare produsul cifrelor egal cu <var>b</var> si afiseaza in fisierul de iesire restul impartirii valorii determinate la numarul <var>9973</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>numere6.in</var> contine pe prima linie numerele <var>a</var> si <var>b</var> despartite printr-un spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>numere6.out</var> va contine pe prima linie o singura valoare care reprezinta restul impartirii numarului de numere naturale formate din exact <var>a</var> cifre care au produsul cifrelor egal cu <var>b</var> la <var>9973</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>Pentru <var>10%</var> din teste <var>1</var> ≤ <var>a</var> ≤ <var>6</var>, <var>1</var> ≤ <var>b</var> ≤ <var>1000</var></li>
+<li>Pentru <var>20%</var> din teste <var>7</var> ≤ <var>a</var> ≤ <var>150</var>, <var>1</var> ≤ <var>b</var> ≤ <var>100</var></li>
+<li>Pentru <var>30%</var> din teste <var>151</var> ≤ <var>a</var> ≤ <var>1000</var>, <var>1</var> ≤ <var>b</var> ≤ <var>100</var></li>
+<li>Pentru <var>40%</var> din teste <var>1001</var> ≤ <var>a</var> ≤ <var>9000</var>, <var>100</var> ≤ <var>b</var> ≤ <var>9000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>numere6.in</th><th>numere6.out</th></tr><tr><td>3 9<br></td><td>6<br></td></tr><tr><td>4 15<br></td><td>12<br></td></tr><tr><td>1000 210<br></td><td>833<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Pentru primul exemplu cele <var>6</var> numere sunt: <var>119 133 191 313 331 911</var>.<br>
+Pentru cel de-al doilea exemplu cele <var>12</var> numere sunt: <var>1135 1153 1315 1351 1513 1531 3115 3151 3511 5113 5131 5311</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

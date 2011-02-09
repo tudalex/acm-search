@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>treid.in, treid.out</td><td><strong>Sursă</strong></td><td>Summer Challenge 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=treid">Vezi solutiile trimise</a></p>
+
+<h1>TreiD<br></h1>
+
+<p>Se da o matrice de <var>NxM</var> elemente intregi. Se cere sa se determine trei submatrici dreptunghiulare compacte, care nu se suprapun si pentru care suma elementelor este maxima.</p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati suma maxima ce se poate obtine.</p>
+
+<h2>Date de intare</h2>
+
+<p>In fisierul de intrare <var>treid.in</var> vom avea pe prima linie numarul <var>N</var> de linii si numarul <var>M</var> de coloane, separate printr-un spatiu. Pe urmatoarele <var>N</var> linii se vor afla cate <var>M</var> intregi separati prin cate un spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>treid.out</var> va contine numarul cerut.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N, M ≤ 200</var></li>
+<li>Elementele sirului vor fi intre <var>-1000</var> si <var>1000</var> inclusiv</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>treid.in</th><th>treid.out</th></tr><tr><td>5 4<br>
+2 -1 1 1<br>
+-1 -1 -1 -1<br>
+1 -1 -1 -1<br>
+1 -1 -1 -1<br>
+-1 -1 1 1<br></td><td>7</td></tr></table><p><em>Explicatie</em>: O solutie posibila ar fi o matrice formata din toate elementele primului rand, una formata din elementele (3, 1) si (4, 1) iar a treia matrice va fi formata din elementele (5, 3) si (5, 4).</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

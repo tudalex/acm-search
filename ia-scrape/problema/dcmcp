@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>dcmcp.in, dcmcp.out</td><td><strong>Sursă</strong></td><td>Selectie echipe ACM ICPC, UPB 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>5 sec</td><td><strong>Limită de memorie</strong></td><td>65535 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=dcmcp">Vezi solutiile trimise</a></p>
+
+<h1>Dcmcp<br></h1>
+
+<p>Sa consideram un graf neorientat avand <var>N</var> noduri, numerotate de la <var>1</var> la <var>N</var>, si <var>M</var> muchii. Nodul <var>1</var> corespunde unei mine de unde sunt extrase niste minerale pretioase. Nodul <var>N</var> corespunde unei fabrici de prelucrare a mineralelor. Fiecare muchie are asociate o durata de traversare (exprimata in unitati de timp) si o capacitate (exprimata in unitati de minerale). S-a decis ca mineralele extrase din mina sa fie transportate la fabrica folosind un singur drum. Acest drum trebuie sa aiba cea mai mare capacitate posibila, pentru a putea transporta simultan cat mai multe unitati de minerale. Capacitatea unui drum este egala cu capacitatea minima a unei muchii de pe drum. Deoarece mineralele sunt foarte sensibile, ele se vor descompune dupa <var>T</var> unitati de timp de la extragerea acestora din mina. Prin urmare, durata totala de traversare a drumului ales (suma duratelor de traversare ale muchiilor de pe drum) trebuie sa fie mai mica sau egala cu <var>T</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>dcmcp.in</var> contine un numar intreg <var>X</var>, reprezentand numarul de teste ce urmeaza. Prima linie a fiecarui test contine <var>3</var> numere intregi, separate prin spatii: <var>N</var>, <var>M</var> si <var>T</var>. Fiecare din urmatoarele <var>M</var> linii va contine <var>4</var> numere intregi, separate prin spatii: <var>A</var>, <var>B</var>, <var>C</var> si <var>D</var>, avand semnificatia ca exista o muchie intre nodurile <var>A</var> si <var>B</var>, avand capacitatea <var>C</var> si durata de traversare <var>D</var>. <var>A</var> si <var>B</var> sunt numere intregi diferite intre <var>1</var> si <var>N</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pentru fiecare din cele <var>X</var> teste, in ordinea din fisierul de intrare, veti afisa in fisierul de iesire <var>dcmcp.out</var> cate o linie continand capacitatea maxima a unui drum de la mina la fabrica, avand proprietatile cerute.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ X ≤ 10</var></li>
+<li><var>2 ≤ N ≤ 10 000</var></li>
+<li><var>1 ≤ M ≤ 50 000</var></li>
+<li><var>1 ≤ T ≤ 500 000</var></li>
+<li><var>1 ≤ capacitatea oricarei muchii ≤ 2 000 000 000</var></li>
+<li><var>1 ≤ durata de traversare a oricarei muchii ≤ 50 000</var></li>
+<li>Va exista cel mult o muchie intre oricare <var>2</var> noduri.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>dcmcp.in</th><th>dcmcp.out</th></tr><tr><td>2<br>
+2 1 10<br>
+1 2 13 10<br>
+4 4 20<br>
+1 2 1000 15<br>
+2 4 999 6<br>
+1 3 100 15<br>
+3 4 99 4<br></td><td>13<br>
+99<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

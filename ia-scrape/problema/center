@@ -1,0 +1,62 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>center.in, center.out</td><td><strong>Sursă</strong></td><td>Lot Iasi 2008, Baraj 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.1 sec</td><td><strong>Limită de memorie</strong></td><td>131072 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=center">Vezi solutiile trimise</a></p>
+
+<h1>Center<br></h1>
+
+<p>Se dau <var>N</var> puncte pe axa <var>OX</var>, numerotate de la <var>1</var> la <var>N</var>. Fiecare punct <var>i</var> se afla la coordonata <var>x<sub>i</sub></var> si are o pondere <var>w<sub>i</sub></var>. Dorim sa amplasam pe axa <var>OX</var> un interval inchis de lungime <var>L</var>, astfel incat maximul dintre distantele ponderate de la puncte la interval sa fie minim (aceasta valoare se numeste distanta mini-maxima). Distanta de la un punct <var>i</var> la un interval <var>[a,a+L]</var> se defineste in felul urmator:</p>
+
+
+<ul><li><var>0</var>, daca <var>a ≤ x<sub>i</sub> ≤ a+L</var></li>
+<li><var>w<sub>i</sub>·(a-x<sub>i</sub>)</var>, daca <var>x<sub>i</sub> &lt; a</var></li>
+<li><var>w<sub>i</sub>·(x<sub>i</sub>-(a+L))</var>, daca <var>x<sub>i</sub> &gt; a+L</var></li>
+</ul><p>Coordonatele si ponderile fiecarui punct se genereaza conform urmatorului algoritm (unde <var>x1=0</var> si <var>w1</var>, <var>A</var>, <var>B</var>, <var>C1</var> si <var>D</var> sunt date in fisierul de intrare):</p>
+
+
+<div class="code"><textarea class="brush: delphi;" cols="60" rows="10">
+C = C1
+for i = 2 to N do
+    x[i] = x[i-1] + 1 + (((x[i-1]· i) xor A) modulo B)
+   if (2·i &lt;= N) then
+      k = 1
+   else
+      k = -1
+   w[i] = maxim(1, w[i-1] + k·(1 + (((w[i-1]·(i + C)) xor (D·i)) modulo D)))
+   C = 1 + ((((C·C) modulo D)·i) modulo D)
+</textarea></div>
+
+
+<h2>Cerinta</h2>
+
+<p>Determinati distanta mini-maxima, precum si valoarea capatului stang al intervalului pentru care se obtine aceasta distanta.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>center.in</var> contine numerele intregi <var>N</var> si <var>L</var>. A doua linie contine numarul intreg <var>w1</var>. A treia linie contine numerele intregi <var>A</var>, <var>B</var>, <var>C1</var> si <var>D</var>. Numerele de pe aceeasi linie sunt separate prin cate un spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Prima linie a fisierului de iesire <var>center.out</var> va contine distanta mini-maxima pentru setul de puncte generat, iar a doua linie va contine capatul stang al intervalului de lungime <var>L</var> pentru care se obtine aceasta distanta. Afisati capatul stang cu cat mai multe zecimale (cel putin <var>8</var>).</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1 000 000</var></li>
+<li><var>0 ≤ L ≤ 100 000 000</var></li>
+<li><var>1 ≤ w1, A, B, <span class="caps">C1,</span> D ≤ 100</var></li>
+<li>Nu se urmareste gasirea vreunei proprietati speciale a algoritmului de generare care sa va ajute sa rezolvati problema (insa, daca gasiti o astfel de proprietate, o puteti folosi).</li>
+<li>Primiti punctajul corespunzator unui test daca pentru ambele cerinte diferenta absoluta dintre rezultatul corect si cel afisat este cel mult <var>0.01</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>center.in</th><th>center.out</th></tr><tr><td>4 2<br>
+  2<br>
+  1 2 3 4<br></td><td>2.667<br>
+  1.33333333<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Coordonatele celor <var>4</var> puncte sunt: <var>0</var>, <var>2</var>, <var>4</var>, <var>6</var>. Ponderile celor <var>4</var> puncte sunt: <var>2</var>, <var>5</var>, <var>2</var>, <var>1</var>. Distanta mini-maxima este <var>2.667</var> si se obtine pentru intervalul <var>[1.333, 3.333]</var> (avand lungimea <var>L=2</var>). Distantele de la cele <var>4</var> puncte la interval sunt: <var>2.667</var>, <var>0</var>, <var>1.333</var>, <var>2.667</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

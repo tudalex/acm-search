@@ -1,0 +1,54 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>reguli.in, reguli.out</td><td><strong>Sursă</strong></td><td>preONI 2007, Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=reguli">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=reguli">Vezi solutiile trimise</a></p>
+
+<h1>Reguli<br></h1>
+
+<table style="margin:0.5em auto;" cellspacing="0"><tr><td align="center" style="background-color:#F8EABA;"><img src="http://infoarena.ro/template/badtests?action=download&amp;file=attention.gif&amp;safe_only=true" alt="" class="left" style="float:left"><em>Testele pentru aceasta problema nu sunt destul de bine construite pentru a departaja corect solutii ineficiente sau gresite.</em><br><a href="http://infoarena.ro/implica-te/imbunatatire-teste"><strong>Intra aici</strong></a> <em>daca vrei sa ne ajuti sa imbunatatim calitatea testelor pentru aceasta problema!</em></td></tr></table><p>La ora de matematica, Gigel invata despre siruri. Pentru a intelege mai bine cum functioneaza acestea, el incearca mai intai sa construiasca niste siruri speciale pe baza anumitor criterii, siruri ce au ca termeni numai numere intregi. O regula <var>a</var> pentru un sir <var>x</var> este un vector <var>(a<sub>1</sub>, a<sub>2</sub>, ... a<sub>K</sub>)</var>. Pe baza primului element al sirului, <var>x<sub>0</sub></var>, si al vectorului <var>a</var>, sirul <var>x</var> este unic determinat prin relatia de recurenta:</p>
+
+<p><span><var>x<sub>i</sub></var> = <var>x<sub>i-1</sub> + a<sub>i mod K</sub></var></span>, daca <var>i mod K</var> este diferit de <var>0</var>, sau<br><span><var>x<sub>i</sub></var> = <var>x<sub>i-1</sub> + a<sub>K</sub></var></span>, daca <var>i mod K</var> este <var>0</var></p>
+
+<p>Prin <var>A mod B</var> se intelege restul impartirii lui numarului <var>A</var> la <var>B</var>.</p>
+
+<p>Gigel noteaza intr-un carnet primele <var>N</var> elemente ale sirului <var>x</var>, <var>x<sub>0</sub>, x<sub>1</sub>, ... x<sub>N-1</sub></var>, sir obtinut conform procedeului de mai sus. Bineinteles, dupa un timp, dupa ce Gigel uita regula pe care a folosit-o pentru a obtine sirul de pe carnet, apar intrebarile. Care este cel mai scurt vector <var>a</var> ( ca numar de elemente ), conform caruia se pot obtine primele <var>N</var> elemente ale sirului <var>x</var>?</p>
+
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare este <var>reguli.in</var>. Pe prima linie a acestui fisier se afla <var>N</var>. Urmatoarele <var>N</var> linii contin cate un numar intreg, pe linia <var>i+1</var> aflandu-se valoarea elementului <var>x<sub>i-1</sub></var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului <var>reguli.out</var> se afla <var>K</var>, lungimea minima a unui vector <var>(a<sub>1</sub>, a<sub>2</sub>, ... a<sub>k</sub>)</var> ce poate genera primele <var>N</var> elemente ale sirului <var>x</var>. Urmeaza <var>K</var> linii ce descriu vectorul determinat, pe linia <var>i+1</var> aflandu-se <var>a<sub>i</sub></var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>5 ≤ N ≤ 500 000</var></li>
+<li>Primele <var>N</var> numere din sirul <var>x</var> se incadreaza intotdeauna in intregi cu semn pe 64 de biti</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>reguli.in</th><th>reguli.out</th></tr><tr><td>8<br>
+8<br>
+10<br>
+14<br>
+13<br>
+15<br>
+19<br>
+18<br>
+20<br></td><td>3<br>
+2<br>
+4<br>
+-1</td></tr></table><h3>Explicatie</h3>
+
+<p>Cea mai scurta regula determinata este <var>2, 4, -1</var>. Se obtin astfel elementele:<br><var>x<sub>1</sub></var> = <var>x<sub>0</sub></var> + <var>a<sub>1</sub></var> = <var>8 + 2</var> = <var>10</var><br><var>x<sub>2</sub></var> = <var>x<sub>1</sub></var> + <var>a<sub>2</sub></var> = <var>10 + 4</var> = <var>14</var><br><var>x<sub>3</sub></var> = <var>x<sub>2</sub></var> + <var>a<sub>3</sub></var> = <var>14 + (-1)</var> = <var>13</var><br><var>x<sub>4</sub></var> = <var>x<sub>3</sub></var> + <var>a<sub>1</sub></var> = <var>13 + 2</var> = <var>15</var><br><var>x<sub>5</sub></var> = <var>x<sub>4</sub></var> + <var>a<sub>2</sub></var> = <var>15 + 4</var> = <var>19</var><br><var>x<sub>6</sub></var> = <var>x<sub>5</sub></var> + <var>a<sub>3</sub></var> = <var>19 + (-1)</var> = <var>18</var><br><var>x<sub>7</sub></var> = <var>x<sub>6</sub></var> + <var>a<sub>1</sub></var> = <var>18 + 2</var> = <var>20</var></p>
+
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

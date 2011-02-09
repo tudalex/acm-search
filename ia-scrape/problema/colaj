@@ -1,0 +1,61 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>colaj.in, colaj.out</td><td><strong>Sursă</strong></td><td>OJI 2008, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=192">Carmen Minca</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gabitzish1"><img src="/utilizator/gabitzish1?action=download&amp;file=avatar&amp;resize=L16x16" alt="gabitzish1">Gabriel Bitis</a> <a title="Rating gabitzish1: 658" class="rating-badge-1" href="http://infoarena.ro/utilizator/gabitzish1?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gabitzish1">gabitzish1</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=colaj">Vezi solutiile trimise</a></p>
+
+<h1>Colaj<br></h1>
+
+<p>La etapa finala a Concursului pe Echipe al Micilor Artisti, pe primul loc s-au clasat doua echipe <var>A</var> si <var>B</var>, cu acelasi punctaj. Comisia de Evaluare, pentru a le departaja, a introdus o noua proba de baraj care vizeaza atat talentul copiilor, cat si istetimea lor.</p>
+
+<p>Astfel, echipa <var>A</var> trebuie sa realizeze un colaj alb-negru avand la dispozitie o plansa dreptunghiulara de culoare alba si <var>N</var> dreptunghiuri de culoare neagra. Membrii acestei echipe vor trebui sa lipeasca pe plansa toate dreptunghiurile, cu laturile paralele cu laturile plansei. Pot exista si dreptunghiuri lipite in interiorul altui dreptunghi, sau dreptunghiuri care se intersecteaza, sau dreptunghiuri cu laturi pe laturile plansei, precum si suprafete din plansa neacoperite cu dreptunghiuri. </p>
+
+<p>Dupa ce aseaza toate dreptunghiurile, membrii echipei <var>A</var> trebuie sa comunice echipei B numarul <var>N</var> de dreptunghiuri negre primite, lungimea <var>m</var> a laturii orizontale a plansei, lungimea <var>p</var> a laturii verticale a plansei, si coordonatele varfurilor din stanga-jos si dreapta-sus ale fiecarui dreptunghi de pe plansa (coordonate referitoare la reperul cartezian <var>xOy</var> cu originea <var>O</var> in coltul din stanga-jos a plansei si cu axa de coordonate <var>Ox</var>, respectiv <var>Oy</var>, pe dreapta suport a laturii orizontale, respectiv a laturii verticale a plansei).</p>
+
+<p>Pentru a castiga concursul, echipa <var>B</var> trebuie sa ghiceasca numarul zonelor continue maximale de culoare alba, continute de colajul realizat de echipa <var>A</var>. O zona alba este considerata continua daca oricare ar fi doua puncte <var>P</var>, <var>Q</var> din zona respectiva, se poate uni punctul <var>P</var> de punctul <var>Q</var> printr-o linie dreapta sau franta care sa nu intersecteze interiorul nici unui dreptunghi negru. O zona alba continua este considerata maximala daca nu exista o alta zona alba continua de arie mai mare care sa includa zona respectiva.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care sa citeasca numarul <var>N</var> al dreptunghiurilor negre primite de echipa <var>A</var>, lungimile <var>m</var> si <var>p</var> ale laturilor plansei, coordonatele varfurilor din stanga-jos si dreapta-sus ale fiecarui dreptunghi negru primit, si care sa determine numarul zonelor continue maximale de culoare alba existente in colajul realizat de echipa <var>A</var>.</p>
+
+<h2>Date de intrare </h2>
+
+<p>Fisierul de intrare <var>colaj.in</var> va contine:</p>
+
+
+<ul><li>Pe prima linie, o valoare naturala <var>N</var>, reprezentand numarul de dreptunghiuri negre date echipei <var>A</var>.</li>
+<li>Pe a doua linie, 2 numere naturale <var>m</var> si <var>p</var>, separate prin spatiu, reprezentand lungimile laturilor plansei</li>
+<li>Urmatoarele <var>N</var> linii contin cate patru numere naturale, separate prin cate un spatiu, care reprezinta coordonatele (<var>a<sub>1</sub></var>,<var>b<sub>1</sub></var>) si (<var>c<sub>1</sub></var>,<var>d<sub>1</sub></var>) ale varfurilor din stanga-jos si dreapta-sus ale primului dreptunghi, ..., coordonatele(<var>a<sub>N</sub></var>,<var>b<sub>N</sub></var>) si (<var>c<sub>N</sub></var>,<var>d<sub>N</sub></var>) ale varfurilor din stanga-jos si dreapta-sus ale celui de-al <var>N</var>-lea dreptunghi. </li>
+</ul><h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>colaj.out</var> va contine o singura linie pe care se va scrie un singur numar natural reprezentand numarul zonelor continue maximale de culoare alba, continute de colaj.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100, <var>a<sub>1</sub></var> &lt; <var>c<sub>1</sub></var> ≤ m, <var>a<sub>2</sub></var> &lt; <var>c<sub>2</sub></var> ≤ m,..., <var>a<sub>N</sub></var> &lt; <var>c<sub>N</sub></var> ≤ m, <var>b<sub>1</sub></var> &lt; <var>d<sub>1</sub></var> ≤ p, <var>b<sub>2</sub></var> &lt; <var>d<sub>2</sub></var> ≤ p,..., <var>b<sub>N</sub></var> &lt; <var>d<sub>N</sub></var> ≤ p</var></li>
+<li>Toate coordonatele varfurilor dreptunghiurilor si lungimile laturilor plansei sunt numere naturale, <var>0 &lt; m, p &lt; 8000</var> </li>
+<li>Daca <var>(x,y)</var> si <var>(z,t)</var> sunt coordonatele a doua varfuri din doua dreptunghiuri distincte, atunci: <var>x ≠ z</var> si <var>y ≠ t</var>.</li>
+<li>In 40% din teste: <var>N &lt; 30, <var>m</var> ≤ 180, <var>p</var> ≤ 180</var>; </li>
+<li>In alte 40% din teste: <var>70 ≤ <var>N</var> ≤ 100, 180 &lt; <var>p</var> &lt; 1000, 180 &lt; <var>m</var> &lt; 1000</var>; </li>
+<li>In celelalte 20% din teste: <var>50 &lt; <var>N</var> &lt; 80, 7000 &lt; <var>m</var> &lt; 8000, 7000 &lt; <var>p</var> &lt; 8000</var>. </li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>colaj.in</th><th>colaj.out</th></tr><tr><td>7<br>
+17 16<br>
+1 1 10 5<br>
+2 6 8 8<br>
+0 9 17 15<br>
+3 2 4 11<br>
+5 3 6 12<br>
+7 4 12 13<br>
+14 10 16 14<br></td><td>6<br></td></tr></table><h3>Explicatie </h3>
+
+
+<p><img src="http://infoarena.ro/problema/colaj?action=download&amp;file=colaj.JPG&amp;safe_only=true" alt=""></p>
+
+<p>Sunt 7 dreptunghiuri negre. Colajul realizat de echipa <var>A</var> este cel din desenul de mai sus. Se observa 6 zone continue maximale de culoare alba continute de colaj (cele numerotate in figura).</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

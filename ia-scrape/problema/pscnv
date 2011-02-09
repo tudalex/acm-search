@@ -1,0 +1,53 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>pscnv.in, pscnv.out</td><td><strong>Sursă</strong></td><td>preONI 2006 Runda Finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=pscnv">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=pscnv">Vezi solutiile trimise</a></p>
+
+<h1>PScNv<br></h1>
+
+<p>Comisia preOni era in pana de probleme frumoase pe care sa le propuna la etapa finala celor mai talentati informaticieni din tara. Au fost deja alese probleme la toate grupele de varsta, dar mai era nevoie de o problema simpla la clasele XI-XII. O prioritate in alegerea problemelor pentru concurs si mai ales pentru finala a fost existenta unui numar mare de solutii astfel incat concurentii sa poata fi departajati usor. Astfel si-a facut aparitia problema simpla cu mai multe nivele:<br>
+Se da un graf orientat cu <var>n</var> noduri si <var>m</var> arce, fiecare arc are o pondere <var>k<sub>i</sub></var>. Se dau doua noduri <var>x</var> si <var>y</var>. Se cere determinarea valorii <var>k</var> minime astfel ca sa existe un drum de la nodul <var>x</var> la nodul <var>y</var> cu proprietatea ca fiecare arc de pe drum are ponderea <var>k<sub>i</sub></var> mai mica sau egala decat <var>k</var>. Intre nodurile <var>x</var> si <var>y</var> va exista intotdeauna un drum.</p>
+
+<h2>Cerinta</h2>
+
+<p>Aflati numarul <var>k</var> minim!</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Fisierul <var>pscnv.in</var> va contine pe prima linie patru numere intregi ce reprezinta valoarile lui <var>n, m, x</var> si <var>y</var>. Pe urmatoarele <var>m</var> linii se vor afla cate trei numere intregi <var>x<sub>i</sub>, y<sub>i</sub></var> si <var>k<sub>i</sub></var> separate cate un singur spatiu ce reprezinta un arc <var>x<sub>i</sub></var> fiind nodul din care pleaca arcul, <var>y<sub>i</sub></var> nodul in care ajunge si <var>k<sub>i</sub></var> reprezentand ponderea arcului.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul <var>pscnv.out</var> va contine un singur numar intreg ce reprezinta valoarea minima a lui <var>k</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ n ≤ 250.000</var></li>
+<li><var>1 ≤ m ≤ 500.000</var></li>
+<li><var>1 ≤ k<sub>i</sub> ≤ 1000</var></li>
+<li>Pot exista mai multe arce intre doua noduri. De asemenea pot exista arce de la un nod la acelasi nod.</li>
+<li><strong><span class="caps">ATENTIE</span>!</strong> In cazul in care lucrati in C/C++ se recomanda citirea cu functii precum fgets din cauza dimensiunii mari a fisierelor de intrare!</li>
+</ul><h2>Nivele</h2>
+
+
+<ul><li>Pentru <var>30%</var> din punctaj <var>n ≤ 1.000 m ≤ 10.000</var></li>
+<li>Pentru <var>50%</var> din punctaj <var>n ≤ 25.000 m ≤ 50.000</var></li>
+<li>Pentru <var>80%</var> din punctaj <var>n ≤ 100.000 m ≤ 200.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>pscnv.in</th><th>pscnv.out</th></tr><tr><td>4 5 1 4 <br>
+1 2 3<br>
+1 3 1<br>
+2 4 2<br>
+3 2 2<br>
+3 4 3</td><td>2</td></tr></table><h3>Explicatie</h3>
+
+<p>Drumul <var>1-&gt;3-&gt;2-&gt;4</var> are ponderile muchiilor <var>1</var>, <var>2</var> respectiv <var>2</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

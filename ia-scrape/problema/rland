@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>rland.in, rland.out</td><td><strong>Sursă</strong></td><td>preONI 2002</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.05 sec</td><td><strong>Limită de memorie</strong></td><td>1000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=rland">Vezi solutiile trimise</a></p>
+
+<h1>Rland<br></h1>
+
+<p>Doi buni prieteni s-au decis sa isi cumpere terenuri intr-o zona a orasului in care locuiesc. Orasul este reprezentat printr-o matrice patratica de dimensiune N, iar fiecare patrat al matricii reprezinta o zona de dimensiune unitara a orasului. Pentru fiecare zona de dimensiune unitara a orasului se cunoaste valoarea ei, care este un numar intreg intre <var>-150</var> si <var>150</var>. Primul dintre cei doi prieteni vrea sa isi cumpere un teren de forma dreptunghiulara avand <var>P</var> linii si <var>Q</var> coloane, inclus complet in oras, care sa aiba valoarea maxima posibila. Valoarea terenului este reprezentata de suma valorilor zonelor de dimensiune unitara pe care le include (in numar de <var>P*Q</var>).</p>
+
+<p>Cel de-al doilea prieten vrea sa isi cumpere si el un teren de forma dreptunghiulara, care sa aiba exact <var>Q</var> coloane (acelasi numar de coloane ca si terenul pe care vrea sa il cumpere prietenul sau) si <strong>maxim</strong> <var>P</var> linii (adica numarul de linii ale terenului poate fi <var>1,2,..,P</var>). Bineinteles, si el doreste ca terenul sau sa fie complet inclus in oras si sa aiba o valoare maxima posibila. Valoarea terenului este data de suma valorilor zonelor de dimensiune unitara pe care le include (in numar de <var>L*Q</var>, <var>1 ≤ L ≤ P</var>).</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>rland.in</var> se vor afla numerele <var>N</var>, <var>P</var> si <var>Q</var> (separate prin cate un spatiu). Pe urmatoarele <var>N</var> linii se vor afla cate <var>N</var> numere intregi (separate prin spatii), reprezentand valorile zonelor de dimensiune unitara care fac parte din oras.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului <var>rland.out</var> veti afisa numarul <var>S</var>, reprezentand valoarea maxima a terenului pe care vrea sa il cumpere primul prieten. Pe a doua linie veti afisa numarul <var>X</var>, reprezentand valoarea maxima a terenului pe care vrea sa il cumpere cel de-al doilea prieten,</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>4 ≤ N ≤ 150</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>rland.in</th><th>rland.out</th></tr><tr><td>4 2 3<br>
+-1 -1 -1 -1<br>
+-1 1 -1 -1<br>
+-1 -1 -1 4<br>
+-1 -1 -1 -1<br></td><td>1<br>
+2</td></tr></table><h2>Explicatie</h2>
+
+<p>Primul prieten isi va cumpara terenul ce are coltul stanga-sus la linia <var>2</var> si coloana <var>2</var> (considerand liniile si coloanele numerotate de la <var>1</var> la <var>N</var>).<br>
+Cel de-al doilea prieten isi va cumpara un teren cu o singura linie, avand coltul stanga-sus la linia <var>3</var> si coloana <var>2</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

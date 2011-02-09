@@ -1,0 +1,48 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cod2.in, cod2.out</td><td><strong>Sursă</strong></td><td>Lot Juniori 2008 - Baraj 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=184">Doru Popescu Anastasiu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cod2">Vezi solutiile trimise</a></p>
+
+<h1>Cod2<br></h1>
+
+<p>Doi frati, Ionica si Florin, merg cu parintii in Antalya la mare. Hotelul la care se cazeaza contine un seif. Ionica, fratele mai mare, este copil linistit, in schimb Florin este mereu pus pe sotii. Cum a ajuns in Antalya, Florin si-a cumparat o jucarie care face un zgomot foarte suparator pentru cei din jur. Pentru a scapa de acest stres, intr-o dimineata Ionut ii ia jucaria lui Florin si o ascunde in seif. Seiful il inchide cu un cod format din <var>n</var> litere mici ale alfabetului englez. Dupa ce se trezeste Florin, incepe taraboiul legat de faptul ca nu mai gaseste jucaria. Dupa multe discutii Ionut ii spune lui Florin ca jucaria este in seif, dar ca nu-si mai aminteste codul de deschidere. <br>
+Pentru a prelungi perioada de liniste Ionut ii spune lui Florin un cuvant, format din litere mici ale alfabetului englez, despre care afirma:</p>
+
+
+<ul><li>Codul este scris cu <var>n</var> litere ce se regasesc in acest cuvant;</li>
+<li>Literele din cod sunt fie distincte, fie exista cel mult o litera care se repeta de exact doua ori in cod, dar asta numai daca litera se gaseste si in cuvant pe cel putin doua pozitii. </li>
+</ul><p>Acum Florin are mult de lucru, pentru ca incepe sa scrie pe un caiet toate variantele distincte pentru cod, pornind de la indiciile date de Ionut.</p>
+
+<h2>Cerinta</h2>
+
+<p>Cunoscand numarul de litere al codului <var>n</var> si cuvantul spus de Ionut, determinati numarul de coduri scrise de Florin.</p>
+
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>cod2.in</var> va contine pe prima linie numarul <var>n</var>, iar pe a doua linie cuvantul spus lui Florin de catre Ionut.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>cod2.out</var> va contine pe prima linie numarul cerut, modulo <var>9901</var>. </p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ numar caractere din cuvant ≤ 250</var></li>
+<li><var>1 ≤ n ≤ 26</var></li>
+<li><var>k modulo p</var> reprezinta restul impartirii intregi a lui <var>k</var> la <var>p</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>cod2.in</th><th>cod2.out</th></tr><tr><td>3<br>
+  radarr<br></td><td>18<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Codurile posibile pot fi: </p>
+
+<p><var>rad, rda, ard, adr, dra, dar, raa, ara, aar, daa, ada, aad, drr, rdr, rrd, arr, rar, rra</var></p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

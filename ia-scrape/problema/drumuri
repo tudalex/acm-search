@@ -1,0 +1,67 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>drumuri.in, drumuri.out</td><td><strong>Sursă</strong></td><td>Finala GInfo 2005</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a>, <a href="/cauta-probleme?tag_id%5B%5D=138">Leonard Crestez</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=drumuri">Vezi solutiile trimise</a></p>
+
+<h1>Drumuri<br></h1>
+
+
+<p>Intr-o tara exista <var>n</var> orase intre care exista un numar total de <var>m</var> drumuri pe care se poate circula in ambele sensuri. Intre oricare doua orase poate exista cel mult un drum.</p>
+
+<p>Din nefericire, in aceasta tara rata criminalitatii este foarte mare si au loc o multime de jafuri "la drumul mare". Din acest motiv, conducatorii tarii au luat decizia de a amplasa paznici pe fiecare drum.</p>
+
+<p>In tara respectiva a fost introdusa cota unica de impozitare, motiv pentru care fondurile de la buget sunt limitate. Pentru a reduce cheltuielile, fiecare paznic va trebui sa pazeasca doua drumuri.</p>
+
+<p>Un paznic poate pazi numai doua drumuri care se intersecteaza si se doreste ca fiecare strada sa fie pazita de exact un paznic si fiecare paznic sa pazeasca exact doua drumuri. Reteaua de drumuri este construita in asa fel incat de la un oras se poate ajunge la oricare altul.</p>
+
+<p>Va trebui sa verificati daca tara poate fi pazita astfel incat sa fie respectate dorintele liderilor si, daca este posibil, sa stabiliti drumurile pazite de fiecare paznic.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>drumuri.in</var> se afla doua numere naturale <var>n</var> si <var>m</var>, reprezentand numarul oraselor, respectiv numarul drumurilor; aceste numere sunt separate printr-un spatiu. Urmatoarele <var>m</var> linii contin cate doua numere intregi, separate printr-un spatiu, reprezentand doua orase intre care se afla un drum.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>drumuri.out</var> se va scrie pe prima linie valoarea <var>1</var> daca exista o solutie, sau valoarea <var>0</var> daca problema nu are solutie. Daca problema are solutie atunci pe urmatoarele <var>m / 2</var> linii vor fi scrise cate trei numere intregi; astfel, pe linia <var>i + 1</var> vor fi scrise numerele <var>x</var>, <var>y</var> si <var>z</var>, separate printr-un spatiu, cu semnificatia: paznicul <var>i</var> pazeste drumul dintre orasele <var>x</var> si <var>y</var>, precum si drumul dintre orasele <var>y</var> si <var>z</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ n ≤ 10.000</var></li>
+<li><var>1 ≤ m ≤ 30.000</var></li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>drumuri.in</th><th>drumuri.out</th></tr><tr><td>5 6<br>
+1 2<br>
+2 3<br>
+3 1<br>
+3 4<br>
+4 5<br>
+5 3<br></td><td>1<br>
+3 1 2<br>
+3 4 5<br>
+2 3 5</td></tr><tr><td>3 3<br>
+1 2<br>
+2 3<br>
+3 1<br></td><td>0 </td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=69">Parcurgere in adancime</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_1"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=61">Greedy</a></span>
+            <a href="javascript:show_tag_list(61)" id="tag_anchor_61" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_61"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=70">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

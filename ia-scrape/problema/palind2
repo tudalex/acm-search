@@ -1,0 +1,46 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>palind2.in, palind2.out</td><td><strong>Sursă</strong></td><td>ONI 2008, clasa a 9-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=161">Adrian Airinei</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gabitzish1"><img src="/utilizator/gabitzish1?action=download&amp;file=avatar&amp;resize=L16x16" alt="gabitzish1">Gabriel Bitis</a> <a title="Rating gabitzish1: 658" class="rating-badge-1" href="http://infoarena.ro/utilizator/gabitzish1?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gabitzish1">gabitzish1</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=palind2">Vezi solutiile trimise</a></p>
+
+<h1>Palind2<br></h1>
+
+<p>Ana a descoperit ca are o adevarata pasiune pentru palindroame. Un sir de numere este palindrom daca se citeste la fel de la stanga la dreapta si de la dreapta la stanga (primul numar este egal cu ultimul, al doilea cu penultimul etc). Ea are un sir cu <var>N</var> numere naturale si vrea ca orice subsecventa de lungime impara a sirului sa fie palindrom. Pentru a-si indeplini dorinta ea poate efectua asupra sirului mai multe operatii. O operatie consta in alegerea unui element din sir si incrementarea sau decrementarea lui cu o unitate. Bineinteles, Ana doreste sa utilizeze un numar minim de operatii pentru ca sirul obtinut sa respecte proprietatea amintita mai sus (orice subsecventa de lungime impara sa fie palindrom).</p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati pentru Ana numarul minim de operatii pe care trebuie sa-l efectueze pentru ca orice subsecventa de lungime impara a sirului obtinut in urma efectuarii operatiilor sa fie palindrom. De asemenea aflati si numarul de siruri finale distincte pe care le poate obtine efectuand acest numar minim de operatii.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>palind2.in</var> va contine pe prima linie numarul <var>T</var>, reprezentand numarul de seturi de date de intrare care urmeaza. In continuare urmeaza seturile de date de intrare, fiecare pe cate doua linii. Pe prima linie a unui set de date se afla numarul <var>N</var>, avand semnificatia din enunt. Pe urmatoarea linie se afla elementele sirului initial, separate prin cate un spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>palind2.out</var> va contine <var>T</var> linii, pe linia <var>i</var> aflandu-se doua numere, reprezentand raspunsul pentru al <var>i</var>-lea set de date de intrare. Primul numar este numarul minim de operatii, iar al doilea numarul de siruri distincte finale care se pot obtine efectuand numarul minim de operatii.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 20</var>;</li>
+<li><var>1 ≤ N ≤ 10.000</var>;</li>
+<li>Elementele sirului sunt numere naturale din intervalul <var>[1, 7.000]</var>;</li>
+<li>Subsecventa a unui sir este un subsir de numere care apar pe pozitii consecutive;</li>
+<li>Toate testele folosite la corectare vor avea <var>T = 20</var>;</li>
+<li>Pentru <var>20%</var> din teste <var>1 ≤ N ≤ 100</var>;</li>
+<li>Pentru <var>20%</var> din teste valoarea maxima din oricare sir este cel mult <var>500</var> si <var>101 ≤ N</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>palind2.in</th><th>palind2.out</th></tr><tr><td>2<br>
+3<br>
+1 2 3<br>
+1<br>
+3<br></td><td>2 3<br>
+0 1<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Pentru primul test, cele trei siruri posibile sunt: 1 2 1, 2 2 2 si 3 2 3. Pentru al doilea test, singurul sir posibil este format din elementul 3.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

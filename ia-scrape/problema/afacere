@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>afacere.in, afacere.out</td><td><strong>Sursă</strong></td><td>Lot Cluj 2009, Baraj 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=240">Catalin-Stefan Tiseanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Marius"><img src="/utilizator/Marius?action=download&amp;file=avatar&amp;resize=L16x16" alt="Marius">Marius Stroe</a> <a title="Rating Marius: 627" class="rating-badge-4" href="http://infoarena.ro/utilizator/Marius?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Marius">Marius</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=afacere">Vezi solutiile trimise</a></p>
+
+<h1>Afacere<br></h1>
+
+<p>Lunasorab s-a decis să îşi deschidă o afacere. Astfel, el s-a apucat de spart coduri (contra cost, bineînţeles). El primeşte o listă de <var>N</var> cuvinte candidat, de aceeaşi lungime <var>L</var> şi trebuie să afle câte cuvinte complete distincte compatibile cu cel puţin unul dintre ele există. Un cuvânt se numeşte candidat dacă conţine numai litere mici din alfabetul latin şi caracterul <var>?</var> (care poate fi înlocuit cu orice literă mică a alfabetului latin). Spunem că un cuvânt este complet dacă este format doar din litere mici ale alfabetului latin, şi spunem că un cuvânt complet este compatibil cu un cuvânt candidat dacă există o asignare a caracterelor <var>?</var> astfel încât cele două cuvinte să devină identice.<br><br>
+Totuşi, deoarece este vorba de mulţi bani şi crede că poate fi singura lui şansă de „a face succes”, el vă testează dându-vă <var>NR</var> extinderi ale alfabetului. O extindere a alfabetului constă din reuniunea literelor mici ale alfabetului latin cu un set de caractere adiţionale distincte (doar cardinalul extinderilor este important). Aceste caractere din extindere pot reprezenta asignări posibile ale caracterelor <var>?</var>.<br><br>
+Deoarece răspunsul pe care Lunasorab îl caută poate fi destul de mare, el vă cere rezultatul modulo <var>1 000 000 007</var>.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Dată fiind o listă de cuvinte candidat şi <var>NR</var> extinderi, să se determine câte cuvinte complete distincte compatibile cu cel puţin unul dintre cuvintele candidat există, pentru fiecare extindere.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>afacere.in</var> conţine pe prima linie numerele naturale <var>N</var> <var>L</var> <var>NR</var>. Pe următoarele <var>N</var> linii se vor afla cuvintele candidat. Pe următoarele <var>NR</var> linii fiecare linie va conţine un număr natural <var>v</var>, reprezentând cardinalul unei extinderi. </p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>afacere.out</var> va conţine pentru fiecare dintre cele <var>NR</var> extinderi câte o linie pe care se va scrie un număr natural reprezentând numărul de cuvinte complete distincte compatibile cu cel puţin unul dintre cuvintele candidat din listă, folosind alfabetul format din literele alfabetului latin împreună cu un număr adiţional de caractere egal cu cardinalul extinderii.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 20</var></li>
+<li><var>1 ≤ L ≤ 100</var></li>
+<li><var>1 ≤ NR ≤ 100</var></li>
+<li>Pentru <var>10%</var> din teste, <var>N ≤ 5</var> şi <var>L ≤ 5</var>.</li>
+<li>Pentru încă <var>30%</var> din teste <var>N ≤ 15</var> şi <var>L ≤ 50</var>.</li>
+<li>Cardinalul unei extinderi va fi mai mic sau egal cu <var>1000</var>.</li>
+<li>Cuvintele candidat din fişierul de intrare vor conţine doar caractere mici ale alfabetului latin şi <var>?</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>afacere.in</th><th>afacere.out</th></tr><tr><td>3 2 2<br>
+ab<br>
+a?<br>
+cb<br>
+0<br>
+2<br></td><td>27<br>
+29<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Pentru prima extindere nu avem niciun caracter adiţional, deci cuvintele complete compatibile posibile sunt <var>aa</var>, <var>ab</var>, <var>ac</var>, …, <var>az</var> şi <var>cb</var>. Pentru al doilea exemplu, avem două caractere adiţionale în care poate fi transformat <var>?</var>, deci cuvintele complete compatibile posibile sunt <var>aa</var>, <var>ab</var>, <var>ac</var>, …, <var>az</var>, <var>aA</var>, <var>aB</var> şi <var>cb</var>, unde prin <var>A</var> şi <var>B</var> am notat cele două caractere adiţionale.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

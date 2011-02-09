@@ -1,0 +1,35 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>points.in, points.out</td><td><strong>Sursă</strong></td><td>Bursele Agora 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=points">Vezi solutiile trimise</a></p>
+
+<h1>Points<br></h1>
+
+
+<p>Se considera <var>n</var> puncte in plan. Sa se determine numarul posibilitatilor de a alege trei dintre aceste puncte, astfel incat aria triunghiului determinat de acestea sa fie un numar intreg.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>points.in</var> contine pe prima linie numarul <var>n</var> al punctelor din plan. Fiecare dintre urmatoarele <var>n</var> linii va contine cate doua numere, separate prin spatii, reprezentand coordonatele unui punct.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>points.out</var> va contine o singura linie pe care se va afla numarul posibilitatilor de a alege trei dintre puncte, astfel incat aria triunghiului determinat de acestea sa fie un numar intreg.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>3 ≤ n ≤ 10.000</var></li>
+<li>Coordonatele punctelor sunt numere intregi cuprinse intre <var>0</var> si <var>1000</var></li>
+<li>Aria triunghiului determinat de trei puncte coliniare este considerata a fi <var>0</var></li>
+<li>Nu exista doua puncte aflate la aceleasi coordonate.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>points.in</th><th>points.out</th></tr><tr><td>4<br>
+0 0<br>
+0 2<br>
+2 2<br>
+2 0<br></td><td>4</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

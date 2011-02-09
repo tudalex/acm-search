@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>branza.in, branza.out</td><td><strong>Sursă</strong></td><td>preONI 2007 Runda Finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=124">Adrian Vladu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/azotlichid"><img src="/utilizator/azotlichid?action=download&amp;file=avatar&amp;resize=L16x16" alt="azotlichid">Adrian Vladu</a> <a title="Rating azotlichid: 631" class="rating-badge-4" href="http://infoarena.ro/utilizator/azotlichid?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/azotlichid">azotlichid</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=branza">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=branza">Vezi solutiile trimise</a></p>
+
+<h1>Branza<br></h1>
+
+<p>Taranul s-a plictisit de munca pe camp si a decis sa isi intemeieze o afacere. In acest sens, si-a deschis o fabrica de branza. In urmatoarele <var>N</var> saptamani pretul branzei va fluctua in functie de cerere. Din fericire taranul cunoaste dinainte (nu se stie de unde) care vor fi preturile in saptamanile ce vor urma. El vrea sa isi minimizeze costurile si sa acopere cerinta de branza. Pentru fiecare saptamana el cunoaste costul <var>C</var> pentru a produce un kg de branza si cantitatea <var>P</var> care va fi cumparata. Taranul poate produce intr-o saptamana orice cantitate de branza. El poate depozita excesul de branza intr-un depozit, dar trebuie sa plateasca <var>S</var> unitati monetare pentru fiecare kg de branza depozitat timp de o saptamana. Branza poate fi depozitata maxim <var>T</var> saptamani inainte sa se strice. Ajutati taranul sa-si minimizeze costurile.</p>
+
+<h2>Date de intrare</h2>
+
+<p>De pe prima linie a fisierului de intrare <var>branza.in</var> se citesc trei numere intregi <var>N</var>, <var>S</var> si <var>T</var> cu semnificatiile de mai sus. De pe urmatoarele <var>N</var> linii se citesc cate doua numere intregi <var>C<sub>i</sub></var> si <var>P<sub>i</sub></var>, reprezentand costul pentru a fabrica un kg de branza in saptamana <var>i</var>, respectiv cantitatea care va fi cumparata in acea saptamana.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>branza.out</var> se afla un singur numar intreg reprezentand costul minim necesar pentru ca taranul sa poata satisface cerinta de branza.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N, T ≤ 100 000</var></li>
+<li><var>1 ≤ S ≤ 100</var></li>
+<li><var>1 ≤ C<sub>i</sub>, P<sub>i</sub> ≤ 10 000 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>branza.in</th><th>branza.out</th></tr><tr><td>5 10 3<br>
+12 1<br>
+21 2<br>
+27 4<br>
+45 5<br>
+52 3<br></td><td>488<br></td></tr></table><h3>Explicatie</h3>
+
+<p>In ziua <var>1</var> taranul produce <var>1</var> kg de branza cu costul <var>12*1 = 12</var>.<br>
+In ziua <var>2</var> taranul produce <var>2</var> kg de branza cu costul <var>21*2 = 42</var>.<br>
+In ziua <var>3</var> taranul produce <var>12</var> kg de branza cu costul <var>27*12 = 324</var>.<br>
+In ziua <var>4</var> taranul nu produce branza, dar plateste taxa de depozitare pentru <var>8</var> kg, cu costul <var>8*10 = 80</var>.<br>
+In ziua <var>5</var> taranul nu produce branza, dar plateste taxa de depozitare pentru <var>3</var> kg, cu costul <var>3*10 = 30</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

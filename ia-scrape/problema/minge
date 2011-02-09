@@ -1,0 +1,37 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>minge.in, minge.out</td><td><strong>Sursă</strong></td><td>infoarena 2.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=165">Din Folclor</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/tudalex"><img src="/utilizator/tudalex?action=download&amp;file=avatar&amp;resize=L16x16" alt="tudalex">Tudorica Constantin Alexandru</a> <a title="Rating tudalex: 586" class="rating-badge-2" href="http://infoarena.ro/utilizator/tudalex?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/tudalex">tudalex</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=minge">Vezi solutiile trimise</a></p>
+
+<h1>Minge<br></h1>
+
+<p>Cristina, Ruxandra, Adriana şi colegele lor se joacă în curtea şcolii cu o minge. La joc participă în total <var>N</var> fete. La început, ele aleg un număr <var>K</var> ( <var>1 ≤ K ≤ N/2</var> ), iar apoi se aşează într-un cerc. Prima fată pasează mingea la cea de a <var>K</var>-a fată din dreapta sa. Aceasta, la rândul ei, o pasează mai departe la cea de a <var>K</var>-a fată, iar procedeul se repetă până când mingea ajunge din nou la prima fată din şir. Ruxandra e suparată că mingea nu ajunge pe parcursul unui joc şi la ea, aşa că te roagă să îi spui un număr <var>K</var> astfel încât mingea să treacă pe la toate fetele exact o dată. Pentru a face jocul şi mai interesant, ea vrea să aleagă acel număr <var>K</var> care să garanteze că mingea va fi jucată de toate fetele, şi, în plus, să fie maxim cu această proprietate. De exemplu, dacă sunt <var>7</var> fete, putem alege <var>K</var> egal cu <var>3</var>. Pentru acest caz, fetele vor primi mingea în ordinea <var>1</var>, <var>4</var>, <var>7</var>, <var>3</var>, <var>6</var>, <var>2</var>, <var>5</var>, după care mingea revine din nou la prima fată din şir.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>minge.in</var> conţine pe prima linie un singur număr natural <var>N</var>, reprezentând numărul de fete.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Pe prima linie a fişierului <var>minge.out</var> se afişează numărul maxim <var>K</var> (<var>1 ≤ K ≤ N/2</var>) care asigură că mingea va trece exact o dată pe la fiecare fată.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 10<sup>2000</sup></var></li>
+<li><var>1 ≤ K ≤ N/2</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>minge.in</th><th>minge.out</th></tr><tr><td>7<br></td><td>3<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=100">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

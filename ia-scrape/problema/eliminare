@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>eliminare.in, eliminare.out</td><td><strong>Sursă</strong></td><td>Lot 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=181">Nistor Eugen Mot</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>6 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=eliminare">Vezi solutiile trimise</a></p>
+
+<h1>Eliminare<br></h1>
+
+<p>Se considera un sir de <var>n</var> numere naturale <var>x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub></var> asupra caruia se executa succesiv <var>m</var> operatii de eliminare. O operatie de eliminare consta din alegerea a doi indici <var>i, j</var> <var>(1≤i≤j≤numarul de elemente din sir)</var> si eliminarea din sir a celui mai mare element din subsecventa <var>x<sub>i</sub>, x<sub>i+1</sub>, ..., x<sub>j</sub></var>. Daca sunt mai multe elemente de valoare maxima se va elimina cel cu indicele cel mai mic. Dupa fiecare eliminare se renumeroteaza termenii sirului (indicii elementelor de dupa cel eliminat vor fi decrementati cu 1).</p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati subsirul ramas dupa cele <var>m</var> operatii de eliminare.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>eliminare.in</var> sunt scrise doua numere naturale separate printr-un spatiu <var>n m</var>, reprezentand numarul de elemente din sirul initial si respectiv numarul de operatii de eliminare. Pe urmatoarele <var>n</var> linii sunt scrise numerele sirului initial, cate unul pe linie. Fiecare dintre ultimele <var>m</var> linii contin doua numere naturale separate printr-un spatiu <var>i j</var> reprezentand indicii intre care se executa o operatie de eliminare. Mai exact, pe linia <var>1+n+k</var> <var>(1≤k≤m)</var> este scris intervalul corespunzator celei de-a <var>k</var>-a eliminari <var>(1≤i≤j≤n-k+1)</var>.</p>
+
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>eliminare.out</var> se vor scrie cele <var>n-m</var> numere ramase, respectand ordinea initiala, cate un numar pe o linie.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ n ≤ 1 000 000</var></li>
+<li><var>1 ≤ m ≤ min(n-1, 500 000)</var></li>
+<li>Termenii sirului sunt numere naturale nenule din mai mici sau egale decat <var>300 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>eliminare.in</th><th>eliminare.out</th></tr><tr><td>8 5<br>
+ 3<br>
+ 7<br>
+ 2<br>
+ 5<br>
+ 8<br>
+ 5<br>
+ 9<br>
+ 4<br>
+ 2 5<br>
+ 6 6<br>
+ 3 6<br>
+ 2 5<br>
+ 1 2<br></td><td>2<br>
+ 5<br>
+ 4<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

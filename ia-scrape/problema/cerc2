@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cerc2.in, cerc2.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>3 sec</td><td><strong>Limită de memorie</strong></td><td>65535 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cerc2">Vezi solutiile trimise</a></p>
+
+<h1>Cerc2<br></h1>
+
+<p>O particula de lumina (un foton) a fost plasat la momentul de timp <var>0</var> la coordonatele <var>(R,0)</var>, in interiorul unui cerc avand centrul la coordonatele <var>(0,0)</var> si raza de <var>R</var> metri. Fotonul se deplaseaza spre punctul <var>(R*cos(alfa) , R*sin(alfa))</var> cu o viteza de <var>1</var> metru pe secunda (este un foton foarte lenes). Cand loveste punctul respectiv, fotonul este reflectat conform regulilor obisnuite de reflectie a luminii (vezi figura de mai jos) si isi continua calatoria in interiorul cercului, schimbandu-si directia de fiecare data cand atinge conturul cercului.<br><img src="http://infoarena.ro/problema/cerc2?action=download&amp;file=cerc2.jpg&amp;safe_only=true" alt=""></p>
+
+<p>Determinati la ce distanta de centrul cercului este pozitionat fotonul dupa exact <var>S</var> secunde de la inceputul calatoriei sale infinite.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>cerc2.in</var> contine numarul de teste <var>T</var>. Urmatoarele linii descriu cele <var>T</var> teste. Fiecare test consta dintr-o linie ce contine <var>3</var> numere: un numar intreg <var>R</var>, un numar real <var>alfa</var> si un numar intreg <var>S</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pentru fiecare test afisati in fisierul de iesire <var>cerc2.out</var> cate o linie continand distanta dintre punctul unde se afla fotonul dupa <var>S</var> secunde si centrul cercului. Se va accepta o eroare de <var>0.001</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 560 000</var></li>
+<li><var>1 ≤ R ≤ 1000</var></li>
+<li><var>0 &lt; alfa ≤ 180</var></li>
+<li><var>0 ≤ S ≤ 1 000 000 000</var></li>
+<li>Unghiul <var>alfa</var> este exprimat in grade (nu in radiani) si este dat cu cel mult <var>5</var> zecimale.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>cerc2.in</th><th>cerc2.out</th></tr><tr><td>5<br>
+10 135 10<br>
+10 135 20<br>
+10 135 40<br>
+5 45 0<br>
+5 45 45<br></td><td>3.902<br>
+8.613<br>
+7.281<br>
+5.000<br>
+4.725<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

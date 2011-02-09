@@ -1,0 +1,56 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>harta2.in, harta2.out</td><td><strong>Sursă</strong></td><td>Lot Alba 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=171">Emanuela Cerchez</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=harta2">Vezi solutiile trimise</a></p>
+
+<h1>Harta2<br></h1>
+
+<p>Scrierea numelor localitatilor pe o harta a fost intotdeauna o problema importanta a cartografilor, deoarece daca unele nume s-ar suprapune harta ar deveni ilizibila.<br>
+Se cunosc coordonatele carteziene ale punctelor care marcheaza pe harta localitatile. Pentru fiecare localitate marcata pe harta trebuie sa scriem numele sau. Numele unei localitati trebuie sa fie incadrat intr-un dreptunghi care indeplineste urmatoarele conditii:</p>
+
+
+<ul><li>are laturile paralele cu axele de coordonate;</li>
+<li>lungimea dreptunghiului este egala cu triplul inaltimii dreptunghiului;</li>
+<li>punctul care marcheaza pe harta localitatea sa fie plasat in coltul stanga sus al dreptunghiului.</li>
+</ul><p>Dreptunghiurile in care sunt scrise numele localitatilor trebuie sa aiba toate aceleasi dimensiuni.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care sa determine inaltimea maxima a dreptunghiului care incadreaza numele localitatilor, astfel incat oricare doua dreptunghiuri desenate pe harta sa aiba intersectia de arie <var>0</var>. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul <var>harta2.in</var> contine pe prima linie un numar natural <var>N</var> reprezentand numarul de localitati marcate pe harta. Pe fiecare dintre urmatoarele <var>N</var> linii se afla cate doua numere naturale <var>X</var> <var>Y</var>, reprezentand coordonatele punctelor (abscisa, ordonata) care marcheaza pe harta localitatile. </p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul <var>harta2.out</var> va contine o singura linie pe care va fi scris un numar real cu <var>3</var> zecimale care reprezinta inaltimea maxima a dreptunghiurilor care incadreaza numele localitatilor, astfel incat oricare doua dreptunghiuri sa aiba intersectia de arie <var>0</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 &lt; N ≤ 1.000.000</var></li>
+<li><var>0 ≤ X, Y ≤ 1.000.000</var></li>
+<li>Oricare doua puncte de pe harta sunt distincte.</li>
+<li>Rezultatul va fi considerat corect daca diferenta in valoare absoluta dintre rezultatul corect si cel din fisierul de iesire este <var>&lt;0.01</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>harta2.in</th><th>harta2.out</th></tr><tr><td>5<br>
+1 1<br>
+6 5<br>
+18 3<br>
+9 9<br>
+16 15<br></td><td>4.000<br></td></tr><tr><td>10<br>
+26 77<br>
+12 37<br>
+14 18<br>
+19 96<br>
+71 95<br>
+91 9<br>
+98 43<br>
+66 77<br>
+2 75<br>
+94 91<br></td><td>7.667<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

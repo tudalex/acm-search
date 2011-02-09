@@ -1,0 +1,38 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ghicit.in, ghicit.out</td><td><strong>Sursă</strong></td><td>Lot 2003</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=120">Marius Andrei</a>, <a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ghicit">Vezi solutiile trimise</a></p>
+
+<h1>Ghicit<br></h1>
+
+<p>Tu si cu Taranul jucati un joc neinteresant. Tu ai un sir de caractere mare. Taranul iti spune un alt sir de caractere, iar tu trebuie sa raspunzi ca mai repede daca sirul respectiv este sau nu o subsecventa a sirului tau. Taranul iti pune multe intrebari si, fiindca esti informatician, te-ai gandit ca ar merge mai repede daca ai sti dinainte toate sirurile despre care te poate intreba. Inainte de a face toata acesta munca te-ar interesa numarul total de subsecvente distincte ale sirului tau, ca sa stii daca are sens sa te apuci de acesta treaba sau nu.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care afla numarul de subsecvente distincte ale unui sir de caractere dat.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>ghicit.in</var> contine pe prima linie sirul de caractere pentru care trebuie sa determinam numarul de subsecvente distincte.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>ghicit.out</var> contine o singura linie pe care se afla numarul <var>N</var>, reprezentand numarul de subsecvente distincte determinat.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ lungimea sirului ≤ 50 211</var></li>
+<li><var>1 ≤ N ≤ 2 000 000 000</var></li>
+<li>O subsecventa a sirului <var>s=s<sub>0</sub>s<sub>1</sub>s<sub>2</sub>...s<sub>k</sub></var> este formata din caractere consecutive ale sirului <var>s<sub>i</sub>s<sub>i+1</sub>...s<sub>j</sub></var> cu <var>0 ≤ i ≤j ≤ k</var></li>
+<li>Sirul contine caractere avand codul <span class="caps">ASCII </span>intre <var>0</var> si <var>255</var> si se termina cu caracterul <var>'\n'</var> (sfarsit de linie) care nu trebuie luat in considerare</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>ghicit.in</th><th>ghicit.out</th></tr><tr><td>abab<br></td><td>7<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Subsecventele sunt: <var>a, b, ab, ba, aba, bab, abab</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

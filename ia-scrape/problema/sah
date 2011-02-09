@@ -1,0 +1,38 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>sah.in, sah.out</td><td><strong>Sursă</strong></td><td>Summer Challenge 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=165">Din Folclor</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=sah">Vezi solutiile trimise</a></p>
+
+<h1>Sah<br></h1>
+
+
+<p>Ciobanasul Eduard are o tabla de sah de dimensiuni <var>NxN</var>. El cauta o modalitate de a imparti tabla de sah in cat mai multe regiuni dreptunghiulare (cu laturile paralele cu axele de coordonate) disjuncte, astfel incat toate regiunile sa aibe arii diferite, iar intr-o regiune numarul casutelor albe sa fie egal cu numarul casutelor negre. Deoarece vrea sa se intoarca cat mai repede la oitele sale Eduard va cere voua ajutorul.</p>
+
+<h2>Cerinta</h2>
+
+<p>Dandu-se <var>N</var> dimensiunea tablei de sah ajutati-l pe Eduard sa gaseasca o impartire in regiuni.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>sah.in</var> se afla <var>N</var>, dimensiunea tablei de sah.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>sah.out</var> va contine <var>N</var> linii cu cate <var>N</var> numere naturale. Al <var>j</var>-lea numar de pe linia <var>i</var> va reprezenta regiunea din care face parte casuta de la coordonatele <var>i, j</var>.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1000</var></li>
+<li><var>N</var> este par</li>
+<li>Fiecare casuta face parte dintr-o singura regiune</li>
+<li>Regiunile trebuie numerotate cu numere consecutive incepand cu <var>1</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>sah.in</th><th>sah.out</th></tr><tr><td>4<br></td><td>1 1 1 1<br>
+1 1 1 1<br>
+2 3 3 3<br>
+2 3 3 3</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

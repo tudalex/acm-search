@@ -1,0 +1,60 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>sediu.in, sediu.out</td><td><strong>Sursă</strong></td><td>.campion 2003</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">2/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=sediu">Vezi solutiile trimise</a></p>
+
+<h1>Sediu<br></h1>
+
+<p>Intr-o tara exista <var>N</var> orase, legate intre ele prin sosele, precum si o grupare terorista care ameninta securitatea nationala. Fiecare sosea leaga o pereche de orase si este bidirectionala. Sistemul stradal este astfel alcatuit, incat intre oricare doua orase exista exact un singur drum, mergand pe soselele din cadrul sistemului. Guvernul tarii a decis sa amplaseze sediul central al armatei intr-unul din orase, in asa fel incat sa minimizeze numarul de orase controlate de gruparea terorista. Aceasta poate controla orice submultime a celorlalte <var>N-1</var> orase, in asa fel incat intre oricare doua orase controlate se poate circula, mergand pe soselele din cadrul sistemului stradal, fara a trece prin orasul in care este situat sediul central al armatei. Dupa ce armata isi amplaseaza sediul central intr-unul din orase, gruparea terorista alege un numar maxim posibil de orase pe care sa le controleze, care respecta proprietatea anterioara.</p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati toate orasele in care armata isi poate amplasa sediul central, astfel incat numarul de orase controlate de gruparea terorista sa fie minim.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>sediu.in</var> contine numarul intreg <var>N</var>. Pe urmatoarele <var>N-1</var> linii se afla numerele a doua orase diferite, <var>a</var> si <var>b</var>, cu proprietatea ca exista o sosea care leaga orasele <var>a</var> si <var>b</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Prima linie a fisierului de iesire <var>sediu.out</var> va contine doua numere intregi <var>O</var> si <var>M</var>. <var>O</var> reprezinta numarul minim de orase controlate de gruparea terorista si <var>M</var> reprezinta numarul oraselor care pot fi alese drept sediu central si pentru care se obtine valoarea <var>O</var>. Pe urmatoarea linie vor fi afisate <var>M</var> numere intregi, separate prin spatii, reprezentand numerele oraselor in care se poate amplasa sediul central al armatei. Aceste numere vor fi afisate in ordine crescatoare.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1</var> ≤ <var>N</var> ≤ <var>16.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>sediu.in</th><th>sediu.out</th></tr><tr><td>7<br>
+1 2<br>
+2 3<br>
+2 4<br>
+1 5<br>
+5 6<br>
+6 7<br></td><td>3 1<br>
+1</td></tr></table><h3>Explicatii</h3>
+
+<p>Daca sediul central al armatei este amplasat in orasul <var>1</var>, gruparea terorista poate controla orasele <var>2</var>, <var>3</var> si <var>4</var> sau <var>5</var>, <var>6</var> si <var>7</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=69">Parcurgere in adancime</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=71">Dinamica pe arbore</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

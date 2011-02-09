@@ -1,0 +1,62 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ubergraf.in, ubergraf.out</td><td><strong>Sursă</strong></td><td>Lot Vrancea 2010, Baraj 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=411">Alexandru Tomescu</a>, <a href="/cauta-probleme?tag_id%5B%5D=167">Paul-Dan Baltescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Mishu91"><img src="/utilizator/Mishu91?action=download&amp;file=avatar&amp;resize=L16x16" alt="Mishu91">Andrei Misarca</a> <a title="Rating Mishu91: 662" class="rating-badge-1" href="http://infoarena.ro/utilizator/Mishu91?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Mishu91">Mishu91</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.5 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ubergraf">Vezi solutiile trimise</a></p>
+
+<h1>Ubergraf<br></h1>
+
+<p>În urma succesului internaţional al <var>shgraf</var>-urilor Mirunei, Laura s-a hotarât să lanseze propriul ei tip de graf, numit <var>ubergraf</var>. Un <var>ubergraf</var> este un graf orientat, aciclic, neetichetat, cu proprietatea că mulţimile vecinilor oricăror două vârfuri diferite sunt distincte.</p>
+
+<p>Să considerăm următoarele exemple de grafuri:</p>
+
+<p><img src="http://infoarena.ro/problema/ubergraf?action=download&amp;file=Screenshot.png&amp;resize=80%25" alt=""></p>
+
+<p>Se observă că primul exemplu nu este un <var>ubergraf</var>, deoarece există două vârfuri a caror mulţime de vecini este mulţimea vidă (cele două vârfuri cu grad extern 0). Nici cel de-al doilea exemplu nu este un <var>ubergraf</var>, deoarece cele două vârfuri cu grad intern <var>0</var> au aceeaşi mulţime de vecini. Cel de-al treilea exemplu este un <var>ubergraf</var>. Ultimul exemplu nu este un <var>ubergraf</var>, pentru că nu este un graf aciclic. Laura întampină acum o nouă problemă: fiind dat un numar natural <var>N</var>, ar dori dori să ştie câte <var>ubergraf</var>-uri distincte cu <var>N</var> vârfuri există. Cum numărul de ubergraf-uri poate fi foarte mare, ea se mulţumeşte dacă îi spuneţi rezultatul modulo <var>P</var>, unde <var>P</var> este un număr prim dat.</p>
+
+<p>Determinaţi numărul de <var>ubergraf</var>-uri cu <var>N</var> noduri modulo <var>P</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare ubergraf.in se află două numere întregi <var>N</var> şi <var>P</var> cu semnificaţia din enunţ.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>ubergraf.out</var> se află un singur număr întreg reprezentând numărul cerut.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 300</var></li>
+<li><var>N &lt; P ≤ 30 000</var>, <var>P</var> prim</li>
+<li>Pentru <var>65%</var> din teste <var>N ≤ 150</var>.</li>
+<li>Două ubergraf-uri se consideră distincte dacă nu există nici o bijecţie de la mulţimea vârfurilor în mulţimea vârfurilor astfel încât între două vârfuri să existe arc dacă şi numai dacă există arc între vârfurile corespondente.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>ubergraf.in</th><th>ubergraf.out</th><th>ubergraf.in</th><th>ubergraf.out</th></tr><tr><td>4 37<br></td><td>9<br></td><td>60 9221<br></td><td>2385<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Cele 9 ubergraf-uri corespunzătoare primului exemplu sunt:</p>
+
+<p><img src="http://infoarena.ro/problema/ubergraf?action=download&amp;file=Screenshot-2.png&amp;resize=80%25" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=281">Combinatorica</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

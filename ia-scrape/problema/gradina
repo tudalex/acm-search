@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>gradina.in, gradina.out</td><td><strong>Sursă</strong></td><td>preONI 2007 Runda Finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=gradina">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=gradina">Vezi solutiile trimise</a></p>
+
+<h1>Gradina<br></h1>
+
+<p>Ion si Vasile sunt doi ciobani mioritici. De-alungul timpului, cand erau prieteni, ei au infipt in terenul de la marginea satului <var>N</var> tarusi. Daca consideram acest teren ca fiind plan, atunci tarusii pot fi considerati puncte laticiale ( puncte de coordonate intregi ). Dupa ce s-au certat, cei doi s-au decis sa isi imparta terenul. Pentru aceasta, fiecare tarus trebuie atribuit fie lui Ion, fie lui Vasile. Tarusii formeaza astfel 2 poligoane, iar interioarele lor ( impreuna cu zona de frontiera ) vor reveni unul lui Ion si celalalt lui Vasile. Evident, cele doua regiuni care revin ciobanilor nu trebuie sa aiba nici macar un punct in comun, altfel ar putea aparea noi conflicte. Mai mult, cele doua regiuni trebuie sa aiba forma de poligon convex.<br>
+Dandu-se cei <var>N</var> tarusi, sa se determine o modalitate de distribuire a lor astfel incat diferenta dintre aria celor doua terenuri care se formeaza sa fie minim posibila si toate conditiile impuse mai sus sa fie respectate.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>gradina.in</var> se afla <var>N</var>, numarul de tarusi. Fiecare din urmatoarele <var>N</var> linii contine o pereche de numere intregi <var>x y</var>, reprezentand coordonatele unui tarus. Toate coordonatele sunt, in modul, mai mici sau egale cu <var>50 000 000</var>. </p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului <var>gradina.out</var> se afla un numar real, afisat cu o zecimala exacta, diferenta minima dintre ariile celor doua terenuri. Urmatoarea linie contine o distribuire a tarusilor pentru care se obtine diferenta minima. Astfel, ea va contine <var>N</var> caractere. Daca al <var>i</var>-lea caracter este <var>I</var>, atunci tarusul al <var>i</var>-lea din fisierul de intrare ii este asociat lui Ion. Daca caracterul este <var>V</var>, atunci tarusul va fi atribuit lui Vasile.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>6 ≤ N ≤ 250</var></li>
+<li>Oricare 3 puncte din cele <var>N</var> nu sunt coliniare</li>
+<li>Daca exista mai multe distribuiri ale tarusilor pentru care se obtine aceeasi diferenta minima, se va afisa cea minim lexicografica</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>gradina.in</th><th>gradina.out</th></tr><tr><td>7<br>
+0 0<br>
+2 0<br>
+1 4<br>
+4 5<br>
+0 2<br>
+2 2<br>
+4 3<br></td><td>1.0<br><span class="caps">IIVVIIV</span><br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

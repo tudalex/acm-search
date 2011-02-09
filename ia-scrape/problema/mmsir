@@ -1,0 +1,34 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>mmsir.in, mmsir.out</td><td><strong>Sursă</strong></td><td>Autumn Warmup 2007, Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=166">Tiberiu Savin</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/devilkind"><img src="/utilizator/devilkind?action=download&amp;file=avatar&amp;resize=L16x16" alt="devilkind">Savin Tiberiu</a> <a title="Rating devilkind: 675" class="rating-badge-4" href="http://infoarena.ro/utilizator/devilkind?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/devilkind">devilkind</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.6 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=mmsir">Vezi solutiile trimise</a></p>
+
+<h1>MMsir<br></h1>
+
+<p>Se da un sir cu <var>N</var> elemente intregi. Definim gradul unui sir ca fiind numarul de schimbari de monotonie ale acestuia. Numarul de schimbari de monotonie ale unui sir cu <var>N</var> elemente reprezinta numarul de pozitii <var>i</var> <var>(1 &lt; i &lt; N)</var> cu propietatea ca <var>a[i-1] &lt; a[i] &gt; a[i+1]</var> sau <var>a[i-1] &gt; a[i] &lt; a[i+1]</var>. Se cere sa se gaseasca numarul de subsecvente ale sirului cu gradul <var>K</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>mmsir.in</var> se vor afla <var>2</var> numere reprezentand numerele <var>N</var> si <var>K</var>. Pe a doua linie se vor afla <var>N</var> numere reprezentand sirul.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul <var>mmsir.out</var> se va afla un singur numar, rezultatul cerut in enunt.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1 000 000</var></li>
+<li><var>0 ≤ K ≤ N</var></li>
+<li>numerele din sir vor fi mai mici sau egale decat <var>2<sup>30</sup></var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>mmsir.in</th><th>mmsir.out</th></tr><tr><td>6 2<br>
+1 2 0 4 6 5<br></td><td>3<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Cele trei subsecvente au capetele pe pozitiile <var>1 4</var>, <var>1 5</var> si <var>2 6</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>puteri35.in, puteri35.out</td><td><strong>Sursă</strong></td><td>Lot Juniori 2010 - Baraj 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=232">Marius Nicoli</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/GheorgheMihai"><img src="/utilizator/GheorgheMihai?action=download&amp;file=avatar&amp;resize=L16x16" alt="GheorgheMihai">Gheorghe Mihai</a> <a title="Rating GheorgheMihai: 787" class="rating-badge-1" href="http://infoarena.ro/utilizator/GheorgheMihai?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/GheorgheMihai">GheorgheMihai</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>3.5 sec</td><td><strong>Limită de memorie</strong></td><td>1024 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=puteri35">Vezi solutiile trimise</a></p>
+
+<h1>Puteri35<br></h1>
+
+<p>După ce au învăţat la şcoală numerele, Maria si Mihai au început sa se joace cu ele. Maria şi-a ales numărul <var>3</var> şi a spus că îi plac toate numerele ce se pot scrie ca sumă de una sau mai multe puteri distincte ale lui <var>3</var>. De exemplu: <var>1 = 3<sup>0</sup></var>, <var>91 = 3<sup>4</sup> + 3<sup>2</sup> + 3<sup>0</sup></var>, <var>27 = 3<sup>3</sup></var>, sunt numere care îi plac Mariei. Numărul <var>6 = 3<sup>1</sup> + 3<sup>1</sup></var> nu îi place Mariei (<var>3<sup>1</sup></var> apare de <var>2</var> ori). Mihai, căruia îi place mereu să intre în competiţie cu Maria, a ales numărul <var>5</var> şi a zis că îi plac numerele ce se pot scrie ca sumă de una sau mai multe puteri distincte ale lui <var>5</var> (aceeaşi regulă ca la numerele care îi plac Mariei, dar folosind numărul <var>5</var>). Jucându-se pe calculator, au găsit un fişier <var>puteri35.in</var> în care era scris un număr natural nenul <var>N</var>. Imediat, copii s-au gândit să scrie fiecare într-un fişier (pe care de comun acord l-au numit <var>puteri35.out</var>), fiecare, primele <var>N</var> numere care îi plac. Aici a apărut din nou discuţia: în ce ordine le vor scrie. În sfârşit, au căzut de acord să scrie toate cele <var>2 * N</var> numere în ordine crescătoare.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Dându-se un număr natural nenul <var>N</var>, obţineţi în ordine crescătoare toate cele <var>2 * N</var> numere, primele <var>N</var> numere care îi plac Mariei şi primele <var>N</var> care îi plac lui Mihai.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>puteri35.in</var> conţine pe prima linie un număr natural <var>N</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>puteri35.out</var> se vor afişa <var>2 * N</var> numere, fiecare pe câte o linie, în ordine crescătoare, primele <var>N</var> numere care îi plac Mariei si primele <var>N</var> numere care îi plac lui Mihai.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1 000 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>puteri35.in</th><th>puteri35.out</th></tr><tr><td>3<br></td><td>1<br>
+1<br>
+3<br>
+4<br>
+5<br>
+6<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Soluţia <var>1 3 4 1 5 6</var> nu este corectă pentru că numerele nu sunt în ordine crescătoare</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

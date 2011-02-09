@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>trecere.in, trecere.out</td><td><strong>Sursă</strong></td><td>ONI 2007, clasa 8</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=197">Carmen Popescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/peanutz"><img src="/utilizator/peanutz?action=download&amp;file=avatar&amp;resize=L16x16" alt="peanutz">Andrei Homorodean</a> <a title="Rating peanutz: 544" class="rating-badge-2" href="http://infoarena.ro/utilizator/peanutz?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/peanutz">peanutz</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>1024 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=trecere">Vezi solutiile trimise</a></p>
+
+<h1>Trecere<br></h1>
+
+<p>In orasul Ababuribu exista o portiune de sosea speciala de forma dreptunghiulara. Soseaua este formata din <var>m</var> randuri a cate <var>n</var> dale patrate de aceeasi dimensiune. Dalele sunt insa colorate in <var>n</var> culori diferite, codificate prin numere intregi cuprinse intre 1 si <var>n</var>. Se stie ca pentru fiecare culoare exista exact <var>m</var> dale colorate cu aceea culoare. Coordonatele dalelor vor fi date de linia si coloana pe care se gaseste dala, numerotarea randurilor facandu-se de sus in jos incepand cu 1, iar coloanele se numeroteaza de la stanga la dreapta incepand cu <var>1</var>.</p>
+
+<p>Primarul orasului doreste sa construiasca o trecere de pietoni pe aceasta portiune de sosea. O trecere va fi formata din <var>m</var> dale avand toate aceeasi culoare si aflate vertical una sub alta, de la primul pana la ultimul rand. Astfel dalele care vor forma trecerea vor avea coordonatele de forma (<var>1,c</var>), (<var>2,c</var>), (<var>3,c</var>),..., (<var>m</var>,<var>c</var>), unde <var>c</var> este coloana pe care este construita trecerea.<br>
+Pentru a construi trecerea, primarul da voie constructorilor sa aleaga culoarea (din cele <var>n</var> disponibile) pe care o va avea trecerea de pietoni precum si coloana pe care se va construi trecerea. De asemenea constructorii au voie sa schimbe intre ele dalele de pe sosea, insa efortul total va trebui sa fie cat mai mic posibil. Efortul schimbarii intre ele a doua dale de coordonatele (<var>x</var>, <var>y</var>) si respectiv (<var>x<sub>1</sub></var>,<var>y<sub>1</sub></var>) este egal cu |<var>x<sub>1</sub></var> - <var>x</var>| + |<var>y<sub>1</sub></var> - <var>y</var>|, unde prin |<var>a</var>| s-a notat valoarea absoluta a valorii <var>a</var>.</p>
+
+<p><img src="http://infoarena.ro/problema/trecere?action=download&amp;file=trecere.gif&amp;safe_only=true" alt="" class="right" style="float:right"></p>
+
+<p>De exemplu pentru soseaua din figura alaturata, cea mai eficienta solutie este construirea unei treceri de culoare <var>1</var>, pe coloana <var>6</var>. Efortul construirii acestei sosele este <var>5</var>. Se vor efectua urmatoarele schimbari: dala (<var>1,6</var>) cu dala (<var>1,7</var>), dala (<var>2,5</var>) cu dala (<var>3,6</var>), dala (<var>3,7</var>) cu dala (<var>4,6</var>).<br>
+Daca exista mai multe solutii care implica acelasi efort minim, primarul prefera acea culoare avand cel mai mic cod, iar daca pentru aceasta culoare se pot construi cu acelasi efort minim, mai multe treceri, el va prefera cea mai din stanga trecere.</p>
+
+<h2>Cerinta</h2>
+
+<p>Fiind date dimensiunile <var>m</var> x <var>n</var> ale soselei si culorile celor <var>m</var> x <var>n</var> dale, se cere sa determinati efortul necesar construirii treceri de pietoni, culoarea pe care o va avea aceasta trecere, precum si coloana pe care va fi construita trecerea. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>trecere.in</var> contine pe prima linie doua numere naturale <var>m</var> si <var>n</var> separate printr-un spatiu, reprezentand numarul de linii respectiv de coloane ale soselei. Urmatoarele <var>m</var> linii ale fisierului vor contine cate <var>n</var> numere naturale cuprinse intre 1 si <var>n</var> (inclusiv) separate prin cate un spatiu, reprezentand culorile dalelor de pe sosea.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>trecere.out</var> va contine pe prima sa linie trei numere intregi <var>a</var>, <var>b</var> si <var>c</var>, separate prin cate un spatiu, avand urmatoarea semnificatie: <var>a</var> - efortul depus pentru construirea trecerii de pietoni, <var>b</var> - culoarea trecerii de pietoni iar <var>c</var> - coloana pe care se construieste trecerea. </p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ n, m ≤ 120</var></li>
+<li>Pentru valoarea corecta a efortului depus se acorda 30% din punctaj.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th><var>trecere.in</var></th><th><var>trecere.out</var></th></tr><tr><td>4 7<br>
+4 3 3 6 3 2 1 <br>
+6 3 4 6 1 1 5 <br>
+5 6 2 4 5 4 1 <br>
+7 2 5 2 7 7 7<br></td><td>5 1 6<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

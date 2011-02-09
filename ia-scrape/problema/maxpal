@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>maxpal.in, maxpal.out</td><td><strong>Sursă</strong></td><td>ONI 2009 - baraj</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=221">Zoltan Szabo</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrei-alpha"><img src="/utilizator/andrei-alpha?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrei-alpha">Andrei-Bogdan Antonescu</a> <a title="Rating andrei-alpha: 700" class="rating-badge-1" href="http://infoarena.ro/utilizator/andrei-alpha?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrei-alpha">andrei-alpha</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=maxpal">Vezi solutiile trimise</a></p>
+
+<h1>Maxpal<br></h1>
+
+<p>Şirul cu n elemente x<sub>1</sub>, x<sub>2</sub>,..., x<sub>n</sub> se numeşte palindrom dacă este identic cu şirul x<sub>n</sub>, x<sub>n-1</sub>,..., x<sub>1</sub>. Se defineşte subşir al şirului <var>x</var> o submulţime a elementelor şirului <var>x</var> aflate nu neapărat pe poziţii succesive, în care poziţiile relative dintre două elemente se păstrează: x<sub>i1</sub>, x<sub>i2</sub>,..., x<sub>ik</sub>, cu 1 ≤ i<sub>1</sub> &lt; i<sub>2</sub> &lt;...&lt; i<sub>k</sub> ≤ <var>n</var>. Vom numi i<sub>1</sub>,i<sub>2</sub>,...,i<sub>k</sub> şirul indicilor. Două subşiruri se consideră distincte dacă cele două şiruri de indici corespunzătoare celor două subşiruri diferă prin cel puţin un element. De exemplu pentru şirul x=( <var>1</var>, <var>3</var>, <var>5</var>, <var>6</var>, <var>3</var>, <var>5</var>, <var>1</var>) subşirul ( <var>1</var>, <var>3</var>, <var>5</var>) poate fi corespondentul a trei subşiruri distincte (x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>), (x<sub>1</sub>, x<sub>2</sub>, x<sub>6</sub>), (x<sub>1</sub>, x<sub>5</sub>, x<sub>6</sub>), dar nu poate fi corespondentul subşirului (x<sub>1</sub>, x<sub>5</sub>, x<sub>3</sub>), pentru că în acest caz s-a inversat poziţia relativă a elementelor x<sub>3</sub> şi x<sub>5</sub>. Subşirul (x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>,x<sub>5</sub>,x<sub>7</sub>) = ( <var>1</var>, <var>3</var>, <var>5</var>, <var>3</var>, <var>1</var>) este un subşir palindrom.</p>
+
+<h2>Cerinta</h2>
+
+<p>Cunoscând elementele unui şir, să se calculeze lungimea maximă a unui subşir palindrom şi numărul de subşiruri distincte de lungime maximă.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare maxpal.in conţine două linii. Pe prima linie se află un număr natural reprezentând valoarea lui <var>N</var> iar pe linia următoare cele <var>N</var> elemente ale şirului <var>x</var>, separate prin câte un spaţiu.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire maxpal.out va conţine pe o singură linie două numere naturale separate printr-un spaţiu; prima va reprezenta lungimea maximă a unui subşir palindrom iar a doua restul împărţirii numărului de subşiruri palindrom distincte de lungime maximă la numărul <b><var>666013</var></b>.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>3</var> ≤ <var>N</var> ≤ <var>2000</var></li>
+<li><var>0</var> ≤ <var>x</var><sub>i</sub> ≤ <var>255</var></li>
+<li>Pentru răspuns corect la prima cerinţă se acordă <var>30</var>% din punctaj, iar pentru a doua <var>70</var>%</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>maxpal.in</th><th>maxpal.out</th></tr><tr><td>5<br>
+2 1 4 2 2<br></td><td>3 5<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Cel mai lung subşir palindrom are lungimea <var>3</var>. Avem <var>5</var> soluţii distincte:<br>
+(x<sub>1</sub>, x<sub>2</sub>, x<sub>4</sub>)=( <var>2</var>, <var>1</var>, <var>2</var>)<br>
+(x<sub>1</sub>, x<sub>2</sub>, x<sub>5</sub>)=( <var>2</var>, <var>1</var>, <var>2</var>)<br>
+(x<sub>1</sub>, x<sub>3</sub>, x<sub>4</sub>)=( <var>2</var>, <var>4</var>, <var>2</var>)<br>
+(x<sub>1</sub>, x<sub>3</sub>, x<sub>5</sub>)=( <var>2</var>, <var>4</var>, <var>2</var>)<br>
+(x<sub>1</sub>, x<sub>4</sub>, x<sub>5</sub>)=( <var>2</var>, <var>2</var>, <var>2</var>)</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

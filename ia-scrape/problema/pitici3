@@ -1,0 +1,53 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>pitici3.in, pitici3.out</td><td><strong>Sursă</strong></td><td>Lot Iasi 2008, Baraj 5</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=171">Emanuela Cerchez</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=pitici3">Vezi solutiile trimise</a></p>
+
+<h1>Pitici3<br></h1>
+
+<p><var>N</var> pitici (numerotaţi de la <var>1</var> la <var>N</var>) au căzut într-o groapă adâncă de <var>D</var> cm. Fiecare pitic îşi cunoaşte înălţimea umerilor (adică distanţa de la pământ la umerii săi), precum şi lungimea braţelor. Prin urmare, dacă piticul <var>i</var> ( <var>1 ≤ i ≤ N</var> ) are înălţimea umerilor <var>H<sub>i</sub></var> cm şi lungimea braţelor <var>L<sub>i</sub></var> cm, atunci când el va sta în picioare cu braţele în sus va atinge înălţimea <var>H<sub>i</sub> + L<sub>i</sub></var> cm.</p>
+
+<p>Piticii se pot urca unii pe umerii celorlalţi formând astfel un singur turn. Dacă piticul <var>i</var> stă cu mânile întinse şi este urcat pe umerii piticului <var>j<sub>k</sub></var>, care stă pe umerii lui <var>j<sub>k-1</sub></var>, ... care stă pe umerii lui <var>j<sub>1</sub></var> atunci el va atinge înălţimea <var>H<sub>j1</sub></var> + <var>H<sub>j2</sub></var> + … + <var>H<sub>jk</sub></var> + <var>H<sub>i</sub></var> + <var>L<sub>i</sub></var>.</p>
+
+<p>Dacă un pitic atinge marginea gropii (adică <var>H<sub>j1</sub></var> + <var>H<sub>j2</sub></var> + … + <var>H<sub>jk</sub></var> + <var>H<sub>i</sub></var> + <var>L<sub>i</sub></var> ≥ D), el poate ieşi din groapă.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Să se determine numărul maxim de pitici care pot ieşi din groapă. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>pitici3.in</var> conţine pe prima linie numărul natural <var>N</var> reprezentând numărul de pitici. Pe următoarele <var>N</var> linii sunt descrişi piticii. Mai exact, pe linia <var>i+1</var> se află două numere naturale separate prin spaţiu <var>H<sub>i</sub></var> şi <var>L<sub>i</sub></var> reprezentând înălţimea umerilor şi respectiv lungimea braţelor piticului <var>i</var> ( <var>1 ≤ i ≤ N</var> ). Pe ultima linie este scris un număr natural <var>D</var> reprezentând adâncimea gropii.</p>
+
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>pitici3.out</var> va conţine o singură linie pe care va fi scris numărul natural <var>X</var> reprezentând numărul maxim de pitici care pot ieşi din groapă. </p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 2000</var></li>
+<li><var>1 ≤ H<sub>i</sub> ≤ 10<sup>5</sup> (1 ≤ i ≤ N)</var></li>
+<li><var>1 ≤ L<sub>i</sub> ≤ 10<sup>5</sup> (1 ≤ i ≤ N)</var></li>
+<li><var>1 ≤ D ≤ 10<sup>5</sup></var></li>
+<li>Piticii care ies nu mai intră înapoi.</li>
+<li>Pentru <var>70%</var> din teste <var>N ≤ 100</var> ; <var>D, H<sub>i</sub>, L<sub>i</sub> ≤ 1000</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>pitici3.in</th><th>pitici3.out</th></tr><tr><td>7<br>
+  2 4<br>
+  3 2<br>
+  4 1<br>
+  7 5<br>
+  2 1<br>
+  6 4<br>
+  6 1<br>
+  30<br></td><td>3<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>De exemplu, pot ieşi piticii <var>1</var>, <var>5</var> si <var>6</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

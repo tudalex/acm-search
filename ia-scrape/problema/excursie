@@ -1,0 +1,66 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>excursie.in, excursie.out</td><td><strong>Sursă</strong></td><td>ONI 2007, clasa 10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=186">Marinel Serban</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=excursie">Vezi solutiile trimise</a></p>
+
+<h1>Excursie<br></h1>
+
+<p>Gigel este un mare amator de excursii la munte. In acelasi timp este si un bun informatician. El a observat ca facand un traseu intre doua obiective turistice oboseste mai putin decat daca alege un alt traseu intre aceleasi obiective. Gigel si-a propus sa gaseasca un model care sa-i permita determinarea unui traseu pe care, daca-l alege, va ajunge la destinatie cat mai putin obosit. Astfel, el reprezinta terenul in care se afla cele doua obiective turistice printr-un tablou bidimensional cu <var>n</var> linii (numerotate de la <var>1</var> la <var>n</var>) si <var>m</var> coloane (numerotate de la <var>1</var> la <var>m</var>), cu elemente numere naturale strict pozitive, in care fiecare element reprezinta cota unei zone de teren de forma unui patrat cu latura <var>1</var> m. Efortul pe care-l face pentru a trece dintr-o zona cu cota <var>c<sub>1</sub></var> intr-o zona vecina cu o cota mai inalta (<var>c<sub>2</sub></var>) se calculeaza dupa cum urmeaza. Se traseaza un triunghi dreptunghic ca in figura:</p>
+
+<p><img src="http://infoarena.ro/problema/excursie?action=download&amp;file=excursie.gif&amp;safe_only=true" alt="" class="right" style="float:right"></p>
+
+
+<ul><li><var>c<sub>1</sub></var> si <var>c<sub>2</sub></var> sunt cele doua cote <var>c<sub>1</sub></var> &lt; <var>c<sub>2</sub></var></li>
+<li><var>1</var> distanta dintre centrele celor doua zone vecine</li>
+<li><var>α</var> este unghiul pantei care trebuie urcata</li>
+<li><img src="http://infoarena.ro/static/images/latex/71b571795f5e546862f64b460c18f211_4.05008pt.gif" title=" d = \sqrt{(c_{2}-c_{1})^{2} + 1 } " alt=" d = \sqrt{(c_{2}-c_{1})^{2} + 1 } " . style="vertical-align:-4.05008pt;"></li>
+</ul><p>Apoi calculeaza efortul astfel:<br><var>ef = d * tg α</var></p>
+
+<table style="width:10%" cellspacing="0"><tr><td>10</td><td>6</td></tr><tr><td>1<br></td><td>2<br></td></tr></table><p>In exemplul urmator consideram patru zone vecine avand cotele <var>1</var>, <var>2</var>, <var>6</var>, <var>10</var>. Pentru a ajunge din zona de cota <var>1</var> in zona de cota <var>10</var> se pot alege doua trasee:</p>
+
+
+<ol><li>direct, ceea ce presupune un efort calculat astfel:<br><var>ef = d * tg α = √82 * 9 ≈ 81</var></li>
+<li>ocolit, prin zonele de cote <var>2</var> si <var>6</var>, ceea ce presupune un efort calculat astfel:<br><var>ef = ef<sub>1</sub>+ef<sub>2</sub>+ef<sub>3</sub> = √2 + √17 * 4 + √17 * 4 ≈ 34</var></li>
+</ol><p>Efortul pe care-l face pentru a trece dintr-o zona avand cota <var>c<sub>1</sub></var> intr-o zona vecina cu aceeasi cota este <var>1</var>.<br>
+Efortul pe care-l face pentru a trece dintr-o zona avand cota <var>c<sub>1</sub></var> intr-o zona vecina cu o cota mai joasa (<var>c<sub>2</sub></var>) este jumatate din efortul pe care l-ar face la urcare (adica de la cota <var>c<sub>2</sub></var> la cota <var>c<sub>1</sub></var>). </p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care sa determine efortul minim pentru a ajunge de la un obiectiv turistic la altul. Daca exista mai multe trasee cu acelasi efort minim se va alege cel care are lungimea cea mai mica. In cazul in care aceasta lungime depaseste valoarea <var>Lmax</var> se va afisa <var>-1</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>excursie.in</var> contine:</p>
+
+
+<ul><li>pe prima linie doua numere naturale <var>n</var> si <var>m</var> separate printr-un spatiu, reprezentand dimensiunile terenului;</li>
+<li>pe linia a doua numarul real <var>Lmax</var> reprezentand lungimea maxima admisa a drumului;</li>
+<li>urmatoarele <var>n</var> linii contin fiecare cate <var>m</var> valori naturale, separate prin, reprezentand in ordine cotele zonelor de teren;</li>
+<li>ultima linie contine patru valori naturale <var>li</var> <var>ci</var> <var>lf</var> <var>cf</var>, separate prin cate un spatiu, unde <var>li</var>, <var>ci</var> reprezinta linia si respectiv coloana punctului de plecare, iar <var>lf</var> <var>cf</var> reprezinta linia si respectiv coloana punctului de sosire.</li>
+</ul><h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>excursie.out</var> va contine pe prima linie doua numere reale separate printr-un spatiu <var>ef d</var>, reprezentand efortul minim depus pentru a ajunge de la un obiectiv la altul si respectiv lungimea minima a unui drum parcurs cu efort minim. Rezultatele vor fi afisate cu cate trei zecimale. </p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ n, m ≤ 50</var></li>
+<li>Deplasarea dintr-o zona in alta se poate face doar in <var>4</var> directii: (N, E, S, V). Mai exact, daca pozitia curenta este pe linia <var>i</var>, coloana <var>j</var>, prin deplasare la N se trece in pozitia (<var>i-1,j</var>), la E in (<var>i,j+1</var>), la S in (<var>i+1,j</var>), iar la V in (<var>i, j-1</var>). (daca aceste pozitii exista).</li>
+<li>Cotele sunt numere naturale cu valori intre <var>1</var> si <var>100</var>.</li>
+<li>Se recomanda utilizarea tipurilor reale pe <var>64</var> biti. Rezultatul va fi considerat corect daca diferenta absoluta dintre rezultatul afisat si rezultatul corect este &lt; <var>0.01</var></li>
+<li>Se acorda <var>60%</var> din punctaj pentru determinarea corecta a efortului minim, respectiv <var>100%</var> pentru rezolvarea corecta a ambelor cerinte. </li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>excursie.in</th><th>excursie.out</th></tr><tr><td>2 2<br>
+11<br>
+10 6<br>
+1 2<br>
+2 1 1 1<br></td><td>34.399 9.660<br></td></tr></table><h3>Explicatie</h3>
+
+<p><var>√2 + √17 * 8 = 34.399 (1.41421356+32.98484500=34.39905856)</var><br><var>√2 + √17 * 2 = 9.660 (1.41421356+ 8.24621125= 9.66042481)</var><br>
+Traseul este corect deoarece lungimea drumului <var>9.660</var> este mai mica decat valoarea data <var>Lmax = 11</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

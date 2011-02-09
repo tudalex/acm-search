@@ -1,0 +1,61 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cezar.in, cezar.out</td><td><strong>Sursă</strong></td><td>OJI 2007, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=177">Rodica Pintea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/pauldb"><img src="/utilizator/pauldb?action=download&amp;file=avatar&amp;resize=L16x16" alt="pauldb">Paul-Dan Baltescu</a> <a title="Rating pauldb: 792" class="rating-badge-4" href="http://infoarena.ro/utilizator/pauldb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/pauldb">pauldb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cezar">Vezi solutiile trimise</a></p>
+
+<h1>Cezar<br></h1>
+
+<p>In Roma antica exista <var>N</var> asezari senatoriale distincte, cate una pentru fiecare dintre cei <var>N</var> senatori ai Republicii. Asezarile senatoriale sunt numerotate de la <var>1</var> la <var>N</var>, intre oricare doua asezari existand legaturi directe sau indirecte. O legatura este directa daca ea nu mai trece prin alte asezari senatoriale intermediare. Edilii au pavat unele dintre legaturile directe dintre doua asezari (numind o astfel de legatura pavata "strada"), astfel incat intre oricare doua asezari senatoriale sa existe o singura succesiune de strazi prin care se poate ajunge de la o asezare senatoriala la cealalta.<br>
+Toti senatorii trebuie sa participe la sedintele Senatului. In acest scop, ei se deplaseaza cu lectica. Orice senator care se deplaseaza pe o strada plateste <var>1</var> ban pentru ca a fost transportat cu lectica pe acea strada.<br>
+La alegerea sa ca prim consul, Cezar a promis ca va dota Roma cu o lectica gratuita care sa circule pe un numar de <var>K</var> strazi ale Romei astfel incat orice senator care va circula pe strazile respective, sa poata folosi lectica gratuita fara a plati. Strazile pe care se deplaseaza lectica gratuita trebuie sa fie legate intre ele (zborul, metroul sau teleportarea nefiind posibile la acea vreme). <br>
+In plus, Cezar a promis sa stabileasca sediul salii de sedinte a Senatului intr-una dintre asezarile senatoriale aflate pe traseul lecticii gratuite. Problema este de a alege cele <var>K</var> strazi si amplasarea sediului salii de sedinte a Senatului astfel incat, prin folosirea transportului gratuit, senatorii, in drumul lor spre sala de sedinte, sa faca economii cat mai insemnate. In calculul costului total de transport, pentru toti senatorii, Cezar a considerat ca fiecare senator va calatori exact o data de la asezarea sa pana la sala de sedinte a Senatului.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care determina costul minim care se poate obtine prin alegerea adecvata a celor <var>K</var> strazi pe care va circula lectica gratuita si a locului de amplasare a salii de sedinta a Senatului.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul <var>cezar.in</var> contine:</p>
+
+
+<ul><li>pe prima linie doua valori <var>N</var> <var>K</var> separate printr-un spatiu reprezentand numarul total de senatori si numarul de strazi pe care circula lectica gratuita</li>
+<li>pe urmatorele <var>N-1</var> linii se afla cate doua valori <var>i</var> <var>j</var> separate printr-un spatiu, reprezentand numerele de ordine a doua asezari senatoriale intre care exista strada.</li>
+</ul><h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului <var>cezar.out</var> se va scrie costul total minim al transportarii tuturor senatorilor pentru o alegere optima a celor <var>K</var> strazi pe care va circula lectica gratuita si a locului unde va fi amplasata sala de sedinte a Senatului.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 &lt; N ≤ 10000</var></li>
+<li><var>0 &lt; K &lt; N</var></li>
+<li><var>1 ≤ i, j ≤ N, i ≠ j</var></li>
+<li>Oricare doua perechi de valori de pe liniile <var>2</var>, <var>3</var>,..., <var>N</var> din fisierul de intrare reprezinta doua strazi distincte.</li>
+<li>Perechile din fisierul de intrare sunt date astfel incat respecta conditiile din problema.</li>
+<li>Pentru <var>25%</var> din teste <var>N ≤ 30</var>, pentru <var>25%</var> din teste <var>30 &lt; N ≤ 1000</var>, pentru <var>30%</var> din teste <var>1000 &lt; N ≤ 3000</var>, pentru <var>10%</var> din teste <var>3000 &lt; N ≤ 5000</var>, pentru <var>10%</var> din teste <var>5000 &lt; N ≤ 10000</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>cezar.in</th><th>cezar.out</th></tr><tr><td>13 3<br>
+1 2<br>
+2 3<br>
+2 8<br>
+7 8<br>
+7 5<br>
+5 4<br>
+5 6<br>
+8 9<br>
+8 10<br>
+10 11<br>
+10 12<br>
+10 13<br></td><td>11<br></td></tr></table><h3>Explicatie</h3>
+
+<p><img src="http://infoarena.ro/problema/cezar?action=download&amp;file=poza.jpg&amp;resize=65%25" alt=""></p>
+
+<p>Costul minim se obtine, de exemplu, pentru alegerea celor <var>3</var> strazi intre asezarile <var>5-7</var>, <var>7-8</var>, <var>8-10</var> si a salii de sedinte a Senatului in asezarea <var>8</var> (dupa cum este evidentiat in desen). <br>
+Exista si alte alegeri pentru care se obtine solutia <var>11</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

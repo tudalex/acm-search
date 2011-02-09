@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>compus.in, compus.out</td><td><strong>Sursă</strong></td><td>OJI 2003, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=171">Emanuela Cerchez</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/stocarul"><img src="/utilizator/stocarul?action=download&amp;file=avatar&amp;resize=L16x16" alt="stocarul">Cosmin Mihai Tutunaru</a> <a title="Rating stocarul: 725" class="rating-badge-1" href="http://infoarena.ro/utilizator/stocarul?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/stocarul">stocarul</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=compus">Vezi solutiile trimise</a></p>
+
+<h1>Compus<br></h1>
+
+<p>La ultima expediţie pe Marte a fost descoperit un compus organic necunoscut. Acest compus este acum studiat în laboratoarele <span class="caps">NASA.</span> Cercetătorii au descoperit că acest compus este constituit numai din atomi de hidrigen (<var>H</var>), ixigen (<var>I</var>) şi carbin (<var>C</var>) şi are masa moleculară <var>M</var>.</p>
+
+<p>Se ştie că regulile de formare a compuşilor organici pe Marte sunt următoarele:</p>
+
+
+<ul><li>un atom de carbin se poate lega de oricare dintre atomii de <var>C</var>, <var>H</var> şi <var>I</var> cu oricâte dintre cele <var>4</var> legături pe care le are (astfel, în combinaţia <var>H–C=C</var> primul atom de carbin se leagă prin două legături de alt atom de carbin şi cu o legătură de alt atom de hidrigen).</li>
+<li>un atom de hidrigen se poate lega numai de un atom de carbin cu singura legătură pe care o posedă.</li>
+<li>un atom de ixigen se poate lega numai de atomi de carbin cu cele două legături pe care le posedă.</li>
+<li>un compus este un ansamblu cu proprietatea că toţi atomii de carbin sunt legaţi conex între ei şi nu există vreun atom cu una sau mai multe legături libere (nelegate de un alt atom). </li>
+</ul><p>Combinaţia <var>H–C=C</var> nu este un compus deoarece atomii de carbin mai au legături libere. Cercetătorii au în vedere studiul categoriilor de compuşi, făcând distincţie între doi compuşi numai dacă aceştia diferă prin numărul de atomi de carbin, de ixigen sau de hidrigen.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Scrieţi un program care să determine câţi compuşi distincţi formaţi din atomi de carbin, hidrigen şi ixigen (cel puţin unul din fiecare) şi care au masa moleculară <var>M</var> există.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>compus.in</var> conţine pe prima linie masa moleculară a produsului.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>compus.out</var> veţi afişa numărul de compuşi determinat.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>10 ≤ M ≤ 1.000.000</var></li>
+<li>Masa atomului de <var>H</var> este <var>1</var>, masa atomului de <var>C</var> este <var>5</var>, iar masa atomului de <var>I</var> este <var>3</var>. Masa moleculară a unui compus este egală cu suma maselor atomilor din care este constituit compusul respectiv.</li>
+<li>Ordinea în care sunt “utilizate” legăturile unui atom nu contează. De asemenea, nici ordinea atomilor sau legăturile interne dintre ei nu contează atâta timp cât respectă regulile de formare enunţate.</li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>compus.in</th><th>compus.out</th><th>compus.in</th><th>compus.out</th></tr><tr><td>10<br></td><td>1<br></td><td>40<br></td><td>3<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Există un singur compus cu masa moleculară <var>10</var>: cel format cu un atom de <var>C</var>, doi atomi de <var>H</var> si un atom de <var>I</var> (<var>5+2*1+3=10</var>).<br>
+Se pot obţine <var>3</var> compuşi cu masa moleculară <var>40</var>: (<var>5C, 6H, 3I</var>), (<var>6C, 4H, 2I</var>), (<var>7C, 2H, 1I</var>):</p>
+
+<p><img src="http://infoarena.ro/problema/compus?action=download&amp;file=Screenshot.png&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>bila.in, bila.out</td><td><strong>Sursă</strong></td><td>ONI gimnaziu 2010, baraj</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=125">Dana Lica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/miculprogramator"><img src="/utilizator/miculprogramator?action=download&amp;file=avatar&amp;resize=L16x16" alt="miculprogramator">A Cosmina - vechi</a> <a title="Rating miculprogramator: 508" class="rating-badge-3" href="http://infoarena.ro/utilizator/miculprogramator?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/miculprogramator">miculprogramator</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=bila">Vezi solutiile trimise</a></p>
+
+<h1>Bila<br></h1>
+
+<p>Ionică are un joc a cărui tablă conţine <var>NxM</var> turnuleţe de înălţimi distincte, dispuse pe <var>N</var> linii şi <var>M</var> coloane. Jocul conţine şi o bilă pe care Ionică o poate aşeza pe oricare turnuleţ al tablei. Din orice poziţie s-ar afla, bila va cădea pe turnul vecin de înălţime minimă, doar dacă înălţimea acestuia este strict mai mică decât a turnuleţului unde se află bila. Două turnuri sunt vecine dacă ele se află pe aceeaşi linie şi pe coloane alăturate sau pe aceeaşi coloană şi pe linii alăturate. Bila se rostogoleşte până când ajunge pe un turn care nu are un turn vecin cu înălţime strict mai mică. Tabla este înconjurată de o bordură mai înaltă decât orice turn al ei. </p>
+
+<h2>Cerinţă</h2>
+
+<p>Realizaţi un program care afişează numărul maxim de turnuri pe care se poate rostogoli bila, precum şi cea mai mică înălţime a unui turn pe care trebuie aşezată iniţial bila astfel încât să se rostogolească pe un număr maxim de turnuri.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>bila.in</var> conţine pe prima linie numerele naturale <var>N</var> şi <var>M</var>. Pe fiecare dintre următoarele <var>N</var> linii se află câte <var>M</var> numere naturale reprezentând înălţimile turnuleţelor aflate pe fiecare linie a tablei. Valorile scrise pe aceeaşi linie sunt separate prin spaţii.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>bila.out</var> se vor afişa pe prima linie, separate printr-un spaţiu, două numere naturale <var><span class="caps">MAX HMIN</span></var> reprezentând, în ordine, numărul maxim de turnuri pe care se poate rostogoli bila (inclusiv turnul de plecare) şi, respectiv, înălţimea cea mai mică a unui turn pe care poate fi plasată iniţial bila astfel încât să se rostogolească pe <var><span class="caps">MAX</span></var> turnuri.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 &lt; N ≤ 125</var></li>
+<li><var>1 &lt; M ≤ 125</var></li>
+<li>Înălţimile turnurilor de pe tablă sunt distincte două câte două.</li>
+<li><var>1 ≤</var> înălţimile turnurilor <var>≤ 65.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>bila.in</th><th>bila.out</th></tr><tr><td>5 5<br>
+109 120 4 5 7<br>
+107 212 1 100 8<br>
+106 105 103 101 12<br>
+6 10 104 102 9<br>
+3 2 19 20 21<br></td><td>7 101<br></td></tr></table><h3>Explicaţie</h3>
+
+<p><img src="http://infoarena.ro/problema/bila?action=download&amp;file=x.jpg&amp;safe_only=true" alt=""></p>
+
+<p>Bila se va rostogoli în ordine peste turnurile de înălţime <br><var>101 12 8 7 5 4 1</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

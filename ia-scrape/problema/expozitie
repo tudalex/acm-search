@@ -1,0 +1,56 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>expozitie.in, expozitie.out</td><td><strong>Sursă</strong></td><td>OJI 2010, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=332">Lucia Miron</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/savim"><img src="/utilizator/savim?action=download&amp;file=avatar&amp;resize=L16x16" alt="savim">Serban Andrei Stan</a> <a title="Rating savim: 783" class="rating-badge-1" href="http://infoarena.ro/utilizator/savim?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/savim">savim</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=expozitie">Vezi solutiile trimise</a></p>
+
+<h1>Expozitie<br></h1>
+
+<p>Ilinca este o fetiţă căreia îi place foarte mult să deseneze; ea a făcut multe desene pe care le-a numerotat de la <var>1</var> la <var>d</var> şi apoi le-a multiplicat (toate copiile poartă acelaşi număr ca şi originalul după care au fost făcute). În vacanţă s-a hotărât să-şi deschidă propria expoziţie pe gardul bunicilor care are mai multe scânduri; pe fiecare scândură ea aşează o planşă (un desen original sau o copie). Ilinca ţine foarte mult la desenele ei şi doreşte ca fiecare desen să apară de cel puţin <var>k</var> ori (folosind originalul şi copiile acestuia). Ilinca se întreabă în câte moduri ar putea aranja expoziţia. Două moduri de aranjare sunt considerate distincte dacă diferă cel puţin prin numărul unei planşe (de exemplu: <var>2 1 3 3</var> este aceeaşi expoziţie ca şi  <var>2 3 1 3</var>, dar este diferită de <var>2 1 3 1</var> şi de <var>1 3 3 1</var>).</p>
+
+<h2>Cerinţă</h2>
+
+<p>Cunoscând <var>n</var> numărul de scânduri din gard, <var>d</var> numărul desenelor originale şi <var>k</var> numărul minim de apariţii al fiecărui desen, să se determine în câte moduri poate fi aranjată expoziţia, ştiind că Ilinca are la dispoziţie oricâte copii doreşte.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>expozitie.in</var> va conţine <var>3</var> numere:<br><var>n d k</var> – numărul de scânduri, numărul desenelor originale, respectiv numărul minim de aparţii</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>expozitie.out</var> va conţine un singur număr:<br><var>nr</var> – numărul modurilor distincte de aranjare a expoziţiei</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>n,k,d</var> sunt numere naturale</li>
+<li><var>1 ≤ n ≤ 500</var></li>
+<li><var>1 ≤ d ≤ 500</var></li>
+<li><var>0 ≤ k ≤ n</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>expozitie.in</th><th>expozitie.out</th></tr><tr><td>3 2 1<br></td><td>2<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Sunt <var>3</var> scânduri, <var>2</var> desene originale şi fiecare desen trebuie să apară cel puţin o data. Există <var>2</var> moduri de aranjare. Planşele ar putea fi aşezate astfel:<br><var>1 2 1</var><br><var>1 2 2</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=281">Combinatorica</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

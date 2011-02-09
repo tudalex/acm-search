@@ -1,0 +1,82 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>biomech.in, biomech.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=biomech">Vezi solutiile trimise</a></p>
+
+<h1>Biomech<br></h1>
+
+<p>In anul 2006, oamenii au construit primul robot biomecanic cu inteligenta artificiala. In orice caz, inca nu se stie prea bine cat de avansata este inteligenta sa. Tocmai de aceea, robotul va fi supus unui test. El va fi plasat intr-o zona rectangulara, impartita in patrate amplasate pe <var>5</var> linii si un numar infinit de coloane. Coloanele sunt numerotate de la <var>-infinit</var> la <var>+infinit</var> si robotul este plasat initial in coloana cu numarul <var>0</var>. Liniile zonei rectangulare sunt numerotate de la <var>1</var> la <var>5</var> si robotul va fi plasat la inceput in linia <var>3</var> (cea din mijloc). Robotul va fi orientat in una din cele <var>8</var> directii posibile: Nord, Nord-Est, Est, Sud-Est, Est, Sud, Sud-Vest, Vest, Nord-Vest.</p>
+
+<p>Mutarile pe care robotul le poate face sunt:</p>
+
+
+<ul><li>Rotatie cu un unghi multiplu de <var>45</var> de grade<br>
+Din directia spre care este indreptat, robotul se poate intoarce astfel spre oricare alta directie. O rotatie de la o directie initiala la o directie finala consuma o anumita cantitate de timp. Din cauza structurii interne a robotului, se poate ca o rotatie cu un unghi mai mare sa dureze mai putin decat o rotatie cu un unghi mic. De asemenea, o rotatie din directia <var>X</var> in directia <var>Y</var> s-ar putea sa nu dureze la fel de mult ca o rotatie din directia <var>Y</var> in directia <var>X</var>.</li>
+<li>Miscare in directia spre care este orientat, din patratul curent in urmatorul patrat (avand o muchie comuna sau un varf comun cu acesta)<br>
+De exemplu, daca robotelul este la linia <var>3</var>, coloana <var>X</var>, orientat spre Nord-Est, s-ar putea deplasa in patratelul de pe linia <var>2</var>, coloana <var>X+1</var>. Dupa mutare, robotul nu-si schimba directia in care este orientat. De asemenea, nu ii este permis sa mute in afara zonei rectangulare (asadar, anumite miscari sunt interzise din anumite patrate).</li>
+</ul><p>Cantitatea de timp necesara pentru o mutare depinde atat de directia in care se muta (din cauza campului magnetic al Pamantului) cat si de linia pe care robotul se afla in momentul curent (deoarece fiecare dintre cele 5 randuri are o structura electromagnetica diferita). Totusi, costurile mutarilor nu depind de coloana in care se afla robotul.</p>
+
+<p>Robotul va fi supus unui test, dupa cum urmeaza: i se vor acorda <var><span class="caps">TMAX</span></var> unitati de timp. Folosindu-le, va trebui sa mute cat mai departe posibil de pozitia curenta. Distanta nu este masurata in termeni de patrate, ci in termeni de coloane. Daca dupa <var><span class="caps">TMAX</span></var> unitati temporale robotul se afla pe coloana <var>X</var>, distanta este considerata |<var>X</var>| (valoarea absoluta a lui <var>X</var>). Nu este importanta linia pe care ajunge.</p>
+
+<p>Robotul va alege directia in care va fi orientat initial si cantitatea de timp va incepe sa scada dupa ce face aceasta decizie. Aflati care este distanta maxima pe care robotul o poate parcurge in <var><span class="caps">TMAX</span></var> unitati de timp.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>biomech.in</var> contine cantitatea de timp <var><span class="caps">TMAX</span></var>. Urmatoarele <var>8</var> linii contin cate <var>8</var> numere intregi fiecare. Al <var>j</var>-lea numar de pe a <var>i</var>-a dintre aceste linii reprezinta timpul necesar pentru a schimba directia <var>i</var> in directia <var>j</var>. Urmatoarele <var>5</var> linii contin cate <var>8</var> numere intregi fiecare. Al <var>j</var>-lea numar de pe a <var>i</var>-a dintre aceste linii reprezinta timpul necesar pentru a muta in directia <var>j</var> dintr-un patrat de pe linia <var>i</var>. Sunt date valori si pentru mutarile interzise. Acestea trebuie ignorate.</p>
+
+<p>Ordinea directiilor (de la <var>1</var> la <var>8</var>) este urmatoarea: <var>N, <span class="caps">NE,</span> E, <span class="caps">SE,</span> S, <span class="caps">SV,</span> V, NV</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Afisati pe singura linie a fisierului <var>biomech.out</var> distanta maxima pe care robotul o poate parcurge fara sa depaseasca durata de timp <var><span class="caps">TMAX</span></var>.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ <span class="caps">TMAX </span>≤ 10<sup>15</sup></var>, <var><span class="caps">TMAX</span></var> este intreg</li>
+<li><var>1</var> ≤ timpul necesar pentru orice rotatie sau miscare ≤ <var>1.000</var></li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>biomech.in</th><th>biomech.out</th></tr><tr><td>4<br>
+0 10 10 10 10 10 10 10<br>
+10 0 10 10 10 10 10 1<br>
+10 10 0 10 10 10 10 10<br>
+10 10 10 0 10 10 10 10<br>
+10 10 10 10 0 10 10 10<br>
+10 10 10 10 10 0 10 10<br>
+10 10 10 10 10 10 0 10<br>
+10 10 10 1 10 10 10 0<br>
+1000 1000 1000 1000 1000 1000 1000 1000<br>
+1000 1000 1000 1 1000 1000 1000 1000<br>
+1000 1 1000 1000 1000 1000 1000 1000<br>
+1000 1000 1000 1000 1000 1000 1000 1000<br>
+1000 1000 1000 1000 1000 1000 1000 1000<br></td><td>2</td></tr><tr><td>100000<br>
+0 1000 1000 1000 1000 1000 1000 1000<br>
+1000 0 1000 1000 1000 1000 1000 1000<br>
+1000 1000 0 1000 1000 1000 1000 1000<br>
+1000 1000 1000 0 1000 1000 1000 1000<br>
+1000 1000 1000 1000 0 1000 1000 1000<br>
+1000 1000 1000 1000 1000 0 1000 1000<br>
+1000 1000 1000 1000 1000 1000 0 1000<br>
+1000 1000 1000 1000 1000 1000 1000 0<br>
+1000 1000 1000 1000 1000 1000 1000 1000<br>
+1000 1000 1000 1000 1000 1000 1000 1000<br>
+1000 1000 1000 1000 1000 1000 7 1000<br>
+1000 1000 1000 1000 1000 1000 1000 1000<br>
+1000 1000 1000 1000 1000 1000 1000 1000<br></td><td>14285</td></tr><tr><td>50<br>
+12 8 43 20 45 13 28 18<br>
+34 28 17 18 19 49 43 46<br>
+22 32 11 48 29 46 15 22<br>
+42 20 5 5 25 13 4 39<br>
+31 31 1 34 26 31 40 40<br>
+29 5 19 25 47 37 3 45<br>
+32 43 25 18 42 33 47 34<br>
+35 35 6 49 32 15 23 40<br>
+22 4 1 12 24 16 46 40<br>
+23 27 39 21 19 16 20 39<br>
+42 26 42 45 50 46 39 6<br>
+23 8 45 16 36 26 31 18<br>
+40 47 48 26 10 7 3 13<br></td><td>2</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

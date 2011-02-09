@@ -1,0 +1,43 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>centru2.in, centru2.out</td><td><strong>Sursă</strong></td><td>Summer Challenge 2009, Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=165">Din Folclor</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/pauldb"><img src="/utilizator/pauldb?action=download&amp;file=avatar&amp;resize=L16x16" alt="pauldb">Paul-Dan Baltescu</a> <a title="Rating pauldb: 792" class="rating-badge-4" href="http://infoarena.ro/utilizator/pauldb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/pauldb">pauldb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.9 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=centru2">Vezi solutiile trimise</a></p>
+
+<h1>Centru2<br></h1>
+
+<p>Conducerea oraşului a construit un nou centru pentru conferinţe. <var>N</var> companii şi-au manifestat interesul de a închiria centrul pentru a ţine propriile conferinţe. O companie client doreşte să închirieze centrul doar dacă acesta este disponibil pe întreaga durată a evenimentului. Conducerea oraşului a decis că cea mai bună strategie de închiriere este de a avea cât mai multe companii client. Desigur, vor exista mai multe de moduri de a închiria centrul folosind aceasta strategie. Conducerea oraşului doreşte să reprezinte un model de onestitate şi, din acest motiv, doreşte să aleagă acel set de clienţi care are cardinal maxim şi este minim lexicografic (considerând ordinea în care sunt depuse cererile pentru închiriere). </p>
+
+<h2>Cerinta</h2>
+
+<p>Determinaţi setul de companii căutat de conducerea oraşului.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare <var>centru2.in</var> se află numărul întreg <var>N</var>. Pe următoarele <var>N</var> linii se găsesc câte două numere întregi <var>a</var> şi <var>b</var> separate prin spaţiu, reprezentând momentele de timp între care o companie doreşte să închirieze centrul de conferinţe. Cererile sunt date în ordinea în care au fost depuse.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Pe prima linie a fişierului de ieşire <var>centru2.out</var> se găseşte un număr natural <var>M</var>, reprezentând cardinalul maxim al unui set de companii client. Pe următoarea linie se găsesc <var>M</var> numere naturale în <strong>ordine crescătoare</strong> ce reprezintă numerele de ordine ale setului de companii ales.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 200 000</var></li>
+<li><var>1 ≤ a ≤ b ≤ 10<sup>9</sup></var></li>
+<li>Dacă o conferinţă are loc între momentele de timp <var>a</var> şi <var>b</var>, atunci se consideră că şi capetele <var>a</var> si <var>b</var> fac parte din conferinţă.</li>
+<li>Pentru <var>30%</var> din teste, <var>N ≤ 3 000</var>.</li>
+<li>Un set <var>(i<sub>1</sub>,i<sub>2</sub>...i<sub>M</sub>)</var> este mai mic din punct de vedere lexicografic decât un alt set <var>(j<sub>1</sub>,j<sub>2</sub>...j<sub>M</sub>)</var> dacă există o poziţie <var>p</var> astfel încât <var>i<sub>p</sub> &lt; j<sub>p</sub></var> si <var>i<sub>1</sub> = j<sub>1</sub></var>, <var>i<sub>2</sub> = j<sub>2</sub></var> ... <var>i<sub>p-1</sub> = j<sub>p-1</sub></var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>centru2.in</th><th>centru2.out</th></tr><tr><td>7<br>
+3 8<br>
+1 5<br>
+4 7<br>
+7 10<br>
+2 4<br>
+6 12<br>
+9 11<br></td><td>2<br>
+1 7<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>abc2.in, abc2.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2.5 sec</td><td><strong>Limită de memorie</strong></td><td>65535 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=abc2">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=abc2">Vezi solutiile trimise</a></p>
+
+<h1>Abc2<br></h1>
+
+<p>Alfabetul limbii Makako este compus din numai <var>3</var> simboluri: <var>a, b si c</var>. Orice cuvant al acestei limbi este un sir format dintr-un numar finit de simboluri din alfabet (la fel ca in cele mai multe din limbile folosite in prezent). Totusi, nu orice insiruire de simboluri formeaza un cuvant cu sens. Conform dictionarului limbii Makako, numai anumite siruri de simboluri reprezinta cuvinte cu sens (in continuare, prin <var>cuvant</var> vom intelege unul dintre aceste siruri de simboluri ce au sens). O particularitate a limbii Makako este ca oricare doua cuvinte au exact aceeasi lungime.</p>
+
+<p>De curand s-a descoperit un text antic despre care se presupune ca ar fi scris intr-un dialect vechi al limbii Makako. Pentru a verifica aceasta ipoteza, oamenii de stiinta vor sa determine in ce pozitii din text se regasesc cuvinte din limba. Textul poate fi privit ca o insiruire de <var>L</var> simboluri din alfabetul limbii Makako, in care pozitiile simbolurilor sunt numerotate de la <var>1</var> la <var>L</var>. Daca un cuvant din limba se regaseste ca o insiruire continua de simboluri in cadrul textului, iar pozitia de inceput a acestuia este <var>P</var>, atunci <var>P</var> reprezinta o pozitie candidat. Oamenii de stiinta doresc sa determine numarul pozitiilor candidat din cadrul textului.</p>
+
+<p>Sa presupunem ca dictionarul limbii Makako ar contine doar urmatoarele <var>3</var> cuvinte: <var>bcc</var>, <var>aba</var> si <var>cba</var>, iar textul antic descoperit ar fi <var>cababacba</var>. La pozitiile <var>2</var> si <var>4</var> din text se regaseste cuvantul <var>aba</var>. La pozitia <var>7</var> se regaseste cuvantul <var>cba</var>. Cuvantul <var>bcc</var> nu se regaseste in text. Asadar, in text exista <var>3</var> pozitii candidat.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>abc2.in</var> contine textul antic ce trebuie analizat. Urmatoarele linii, pana la sfarsitul fisierului, contin fiecare cate un cuvant din dictionarul limbii Makako. </p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>abc2.out</var> veti afisa un singur numar reprezentand numarul de pozitii candidat ce se gasesc in cadrul textului antic.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>Textul antic este alcatuit din cel mult <var>10 000 000</var> de caractere.</li>
+<li>Dictionarul limbii Makako va contine cel mult <var>50 000</var> de cuvinte.</li>
+<li>Cuvintele au o lungime de cel mult <var>20</var> de caractere.</li>
+<li>Datorita dificultatii celor care au scris dictionarul de a lucra cu un numar atat de mare de cuvinte, este posibil ca unele cuvinte sa apara de mai multe ori in dictionar.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>abc2.in</th><th>abc2.out</th></tr><tr><td>bbcabbabcba<br>
+abba<br>
+bbca<br>
+abcb<br>
+bbca<br>
+aaaa<br></td><td>3</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ambuscada.in, ambuscada.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2009, Runda Finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=161">Adrian Airinei</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.7 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ambuscada">Vezi solutiile trimise</a></p>
+
+<h1>Ambuscada<br></h1>
+
+<p>Generalul sef Andrei are la dispozitie o armata formata din <var>N</var> soldati si planuieste o ambuscada in vederea cuceririi unor obiective strategice. Pentru fiecare soldat se cunosc <var>C<sub>i</sub></var>, capacitatea de efort a acestuia si <var>T<sub>i</sub></var>, timpul exprimat in minute in care un soldat isi poate folosi toata capacitatea de efort. Andrei a primit de la superiorii sai o lista cu <var>P</var> obiective, pentru fiecare obiectiv cunoscandu-se <var>D<sub>i</sub></var>, gradul de dificultate care il presupune atacarea lui. Generalul Andrei a primit de asemenea si alte indicatii precise. El poate trimite in ambuscada un grup format din exact <var>K</var> soldati. Un grup de soldati poate cuceri un obiectiv daca suma capacitatilor de efort a soldatilor este mai mare sau egala cu gradul de dificultate al obiectivului. Deoarece o data ce si-a utilizat capacitatea de efort un soldat este prea obosit pentru a mai efectua alte actiuni, timpul in care un grup de soldati cucereste un obiectiv reprezinta timpul maxim in care un soldat din grup isi foloseste capacitatea de efort. Acestea fiind spuse, Andrei va roaga sa ii raspundeti la <var>M</var> intrebari primite de la comandantul sef. Comandantul sef i-a pus <var>M</var> intrebari, a <var>i</var>-a intrebare fiind de tipul "care este dificultatea cea mai ridicata a unui obiectiv care se poate cuceri in cel mult <var>X<sub>i</sub></var> minute?".</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>ambuscada.in</var> contine pe prima linie patru numere naturale, <var>N K M</var> si <var>P</var>, avand semnificatia din enunt. Pe urmatoarele <var>N</var> linii se afla cate doua numere naturale, <var>C<sub>i</sub></var> si <var>T<sub>i</sub></var>, avand semnificatia din enunt. Pe cea de-a <var>N+2</var>-a linie se afla <var>P</var> numere naturale reprezentand gradele de dificultate ale obiectivelor. Urmeaza apoi <var>M</var> linii, pe fiecare linie aflandu-se cate un numar natural <var>X<sub>i</sub></var>, reprezentand intrebarile puse de comandantul sef.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>ambuscada.out</var> se vor afla <var>M</var> linii, pe fiecare linie aflandu-se raspunsul la cate o intrebare pusa de comandant. Daca nu exista niciun obiectiv care sa poata fi cucerit de un grup format din exact <var>K</var> soldati, se va afisa <var>-1</var>, altfel se va afisa dificultatea maxima a unui obiectiv care poate fi cucerit.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N, K, M, P ≤ 100 000</var></li>
+<li><var>1 ≤ C<sub>i</sub>, T<sub>i</sub>, X<sub>i</sub> ≤ 500 000</var></li>
+<li><var>1 ≤ D<sub>i</sub> ≤ 10<sup>12</sup></var></li>
+<li>Datorita faptului ca soldatii au personalitate, nu exista doi soldati <var>i</var> si <var>j</var> diferiti pentru care <var>C<sub>i</sub> = C<sub>j</sub></var> sau <var>T<sub>i</sub> = T<sub>j</sub></var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>ambuscada.in</th><th>ambuscada.out</th></tr><tr><td>3 2 4 3<br>
+  2 1<br>
+  3 2<br>
+  4 3<br>
+  4 6 5<br>
+  1<br>
+  2<br>
+  3<br>
+  4<br></td><td>-1<br>
+  5<br>
+  6<br>
+  6<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Nu poate cuceri niciun obiectiv intr-un timp de <var>1</var> minut deoarece are doar un singur soldat disponibil si trebuie sa trimita un grup format din exact <var>2</var> soldati in ambuscada. Poate trimite soldatii <var>1</var> si <var>2</var> pentru a cuceri obiectivul de dificultate <var>5</var> in <var>2</var> minute, respectiv soldatii <var>2</var> si <var>3</var> pentru a cuceri obiectivul de dificultate <var>6</var> in <var>3</var> minute.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

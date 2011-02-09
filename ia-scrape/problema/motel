@@ -1,0 +1,46 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>motel.in, motel.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil 2009, clasa a 10a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=140">Csaba Patcas</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=motel">Vezi solutiile trimise</a></p>
+
+<h1>Motel<br></h1>
+
+<p>La motelul Gentiana se fac rezervari pentru <var>n</var> grupuri de turisti pe mai multi ani in avans. Cunoscand ziua in care incep rezervarile, zi avand numarul de ordine <var>1</var>, grupurile precizeaza numarul de ordine al primei si ultimei zile a perioadei pe care doresc s-o petreaca la motel. Proprietarul motelului intentioneaza sa organizeze pentru fiecare grup o serbare traditionala, care poate fi realizata doar in sala festiva, unde incape un singur grup de turisti. La aceste evenimente va participa un artist care stabileste acele <var>n</var> zile in care poate veni la serbari. Ajutati proprietarul motelului sa determine pentru fiecare grup de turisti ziua in care poate fi organizata serbarea.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>motel.in</var> se afla numarul natural <var>n</var>, reprezentand numarul grupurilor de turisti si a zilelor in care artistul poate veni la motel. Pe urmatoarele <var>n</var> linii sunt scrise cate doua numere naturale (separate printr-un spatiu), reprezentand prima si ultima zi a perioadelor solicitate de grupurile de turisti. Pe urmatoarele <var>n</var> linii se afla cate un numar natural, reprezentand numarul de ordine al zilelor in care artistul este disponibil. </p>
+
+<h2>Date de ieşire</h2>
+
+<p>In cazul in care exista solutie, fisierul de iesire <var>motel.out</var> va contine <var>n</var> linii. Pe fiecare se vor afla doua numere naturale, separate printr-un spatiu. Primul numar este numarul de ordine al grupului in fisierul de intrare, al doilea este numarul de ordine in fisierul de intrare al zilei alese pentru serbare. In cazul in care exista cel putin un grup pentru care nu se poate determina o astfel de zi, in fisier se vor scrie <strong>doar</strong> doua numere <var>0</var> separate printr-un spatiu. </p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ n ≤ 4000</var></li>
+<li><var>1 ≤ numărul de ordine al unei zi ≤ 30000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>motel.in</th><th>motel.out</th></tr><tr><td>5 <br>
+  12 23 <br>
+  100 120<br>
+  5 15 <br>
+  45 60<br>
+  35 56 <br>
+  5<br>
+  48<br>
+  50<br>
+  110<br>
+  13<br></td><td>3 1<br>
+  1 5<br>
+  5 2<br>
+  4 3<br>
+  2 4<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>O alta solutie posibila ar fi fost <var>3-&gt;1, 1-&gt;5, 5-&gt;3, 4-&gt;2, 2-&gt;4</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

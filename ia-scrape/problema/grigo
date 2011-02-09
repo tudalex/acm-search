@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>grigo.in, grigo.out</td><td><strong>Sursă</strong></td><td>Junior Challenge 2008</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=161">Adrian Airinei</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=grigo">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=grigo">Vezi solutiile trimise</a></p>
+
+<h1>Grigo<br></h1>
+
+<p>Grigo, un celebru personaj mioritic, a studiat recent la facultate teoria permutarilor. O permutare este un sir de <var>N</var> numere naturale de la <var>1</var> la <var>N</var> astfel incat fiecare numar apare exact o singura data in sir. Pentru o permutare <var>P</var> cu <var>N</var> elemente spunem ca pozitia <var>i</var> este <em>vizibila</em> daca si numai daca <var>i=1</var> sau <var>P<sub>j</sub>&lt;P<sub>i</sub></var> pentru orice <var>j&lt;i</var>. Buru ii furnizeaza lui Grigo o lista cu <var>M</var> numere naturale distincte <var>i<sub>1</sub>, i<sub>2</sub> .. i<sub>M</sub></var> si Grigo trebuie sa afle numarul de permutari distincte cu <var>N</var> elemente astfel incat numai pozitiile <var>i<sub>1</sub>, i<sub>2</sub> .. i<sub>M</sub></var> sa fie vizibile. Ajutati-l pe Grigo afland restul impartirii acestui numar la <var>1 000 003</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>grigo.in</var> va contine pe prima linie numarele <var>N</var> si <var>M</var>, separate printr-un singur spatiu, avand semnificatia din enunt. Pe a doua linie se afla <var>M</var> numere naturale distincte <var>i<sub>1</sub>, i<sub>2</sub> .. i<sub>M</sub></var>, care reprezinta pozitiile care trebuie sa fie vizibile. </p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>grigo.out</var> va contine un singur numar natural reprezentand raspunsul cautat de Grigo.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ M ≤ N ≤ 100 000</var></li>
+<li><var>1 ≤ i<sub>j</sub> ≤ N</var>, pentru orice <var>j</var> intre <var>1</var> si <var>M</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>grigo.in</th><th>grigo.out</th></tr><tr><td>4 2<br>
+  1 2<br></td><td>6<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Cele <var>6</var> permutari valide sunt: </p>
+
+
+<ul><li><var>1 4 2 3</var></li>
+<li><var>1 4 3 2</var></li>
+<li><var>2 4 1 3</var></li>
+<li><var>2 4 3 1</var></li>
+<li><var>3 4 1 2</var> </li>
+<li><var>3 4 2 1</var>. </li>
+</ul><p>Permutarea <var>1 2 3 4</var> nu este valida deoarece si pozitiile <var>3</var> si <var>4</var> sunt vizibile.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

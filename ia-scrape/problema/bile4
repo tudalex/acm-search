@@ -1,0 +1,56 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>bile4.in, bile4.out</td><td><strong>Sursă</strong></td><td>.campion 2007-2008, Runda 11, Grupa mare</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=143">Daniel Pasaila</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/danielp"><img src="/utilizator/danielp?action=download&amp;file=avatar&amp;resize=L16x16" alt="danielp">Daniel Pasaila</a> <a title="Rating danielp: 532" class="rating-badge-4" href="http://infoarena.ro/utilizator/danielp?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/danielp">danielp</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>3 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=bile4">Vezi solutiile trimise</a></p>
+
+<h1>Bile4<br></h1>
+
+<p>La grădiniţa din centrul oraşului Suceava există <var>N</var> copii, numerotaţi de la <var>0</var> la <var>N–1</var>. Primarul le face o vizită şi a hotărât să împartă copiilor biluţe. Astfel, el are un sac mare plin cu bile ce au inscripţionat pe ele câte un număr natural. Din când în când primarul mai pune întrebări copiilor cu privire la bilele pe care le-au primit. Iată ce operaţii poate efectua primarul:</p>
+
+
+<ul><li>dăruieşte tuturor copiilor cu numere din intervalul <var>[a,b]</var> câte o bilă inscripţionată cu numărul <var>p</var></li>
+<li>îi întreabă care ar fi numărul inscripţionat pe cea de-a <var>k</var>-a bilă din şirul format din bilele copiilor din intervalul <var>[a,b]</var>, ştiind că bilele sunt aşezate în ordinea crescătoare a numerelor inscripţionate pe ele; dacă nu există <var>k</var> bile în intervalul <var>[a,b]</var>, răspunsul va fi <var>-1</var></li>
+</ul><p>Ajutaţi-i pe copii să răspundă la întrebările primarului. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului <var>bile4.in</var> se găseşte un număr natural <var>N</var>, reprezentând numărul de copii. Pe următoarea linie se găseşte un număr natural <var>M</var>, reprezentând numărul de operaţii efectuate de primar. Pe următoarele <var>M</var> linii sunt descrise operaţiile pe care le efectuează primarul, câte o operaţie pe o linie. O linie care descrie o operaţie poate avea unul dintre următoarele două formate:</p>
+
+<table class="example" cellspacing="0"><tr><th>Format</th><th>Explicatie</th></tr><tr><td>1 a b p</td><td>descrie o operaţie de tip 1 (primarul va da tuturor copiilor din intervalul [a,b] câte o bilă <br>
+inscripţionată cu numărul natural p)</td></tr><tr><td>2 a b k</td><td>descrie o operaţie de tip 2 (primarul îi întreabă pe copii care este numărul inscripţionat pe cea <br>
+de-a k-a bilă din şirul format din bilele copiilor din intervalul [a,b], ştiind că bilele sunt<br>
+ aşezate în ordinea crescătoare a numerelor inscripţionate pe ele)<br></td></tr></table><h2>Date de ieşire</h2>
+
+<p>În fişierul <var>bile4.out</var> veţi afişa câte o linie pentru fiecare operaţie de tipul <var>2</var> din fişierul de intrare. Pe cea de a <var>i</var>-a linie va fi scris un număr întreg care reprezeintă răspunsul pentru cea de-a <var>i</var>-a operaţie de tip <var>2</var> din fişierul de intrare. </p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 30000</var></li>
+<li><var>1 ≤ M ≤ 30000</var></li>
+<li><var>1 ≤ numărul inscripţionat pe bile ≤ 30000</var></li>
+<li><var>un copil poate avea mai multe bile, eventual de aceeaşi valoare</var></li>
+<li><var>în urma unei operaţii de tip 2, configuraţia bilelor rămâne neschimbată</var></li>
+<li><var>iniţial toţi copii au 4 bile</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>bile4.in</th><th>bile4.out</th></tr><tr><td>10<br>
+10<br>
+1 8 9 5<br>
+1 6 6 2<br>
+2 8 8 1<br>
+2 5 7 1<br>
+1 6 7 2<br>
+2 1 8 3<br>
+2 6 7 1<br>
+2 5 5 1<br>
+1 9 9 1<br>
+2 7 8 1<br></td><td>5<br>
+2<br>
+2<br>
+2<br>
+-1<br>
+2<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

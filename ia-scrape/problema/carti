@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>carti.in, carti.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil 2008, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=140">Csaba Patcas</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=carti">Vezi solutiile trimise</a></p>
+
+<h1>Carti<br></h1>
+
+<p>Alice si Bob joaca un joc de carti. Ei folosesc carti de poker, asul avand valoarea <var>1</var>, valetul valoarea <var>11</var>, dama valoarea <var>12</var>, iar regele valoarea <var>13</var>. Restul cartilor au valoarea egala cu cea scrisa pe ele (<var>2</var>, <var>3</var>, <var>4</var>, <var>5</var>, <var>6</var>, <var>7</var>, <var>8</var>, <var>9</var>, <var>10</var>). Alice incepe jocul, apoi cei doi jucatori muta alternativ. La fiecare pas jucatorul aflat la mutare poate ridica de pe masa un numar de cel mult <var>k</var> carti, cu conditia ca acestea sa aiba valori consecutive. Pierde jucatorul care nu mai poate muta.</p>
+
+<h2>Cerinta</h2>
+
+<p>Data fiind o configuratie de carti, determinati castigatorul jocului, presupunand ca ambii jucatori joaca optim.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>carti.in</var> se afla numarul natural <var>c</var>, reprezentand numarul configuratiilor de carti scrise in fisier. Fiecare configuratie va fi descrisa prin doua linii. Prima linie dintre cele doua contine doua numere naturale separate printr-un spatiu. Primul reprezinta numarul cartilor aflate pe masa la inceputul jocului, al doilea este numarul <var>k</var>, avand semnificatia din enunt. A doua linie descrie cartile aflate pe masa intr-o ordine oarecare. Pe o astfel de linie precizarile cartilor sunt separate printr-un singur spatiu. O carte va fi descrisa printr-un numar de la <var>2</var> la <var>10</var> inclusiv sau prin caracterele <var>A</var> (as), <var>J</var> (valet), <var>Q</var> (dama), sau <var>K</var> (rege).</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>carti.out</var> va contine exact atatea linii cate configuratii apar in fisierul de intrare. Fiecare linie a fisierului de iesire va contine <var>Alice</var> sau <var>Bob</var>, in functie de castigatorul jocului.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ k ≤ 13</var></li>
+<li>In descrierea unei configuratii fiecare carte va aparea o singura data</li>
+<li>Numarul configuratiilor din fisier nu va depasi <var>15</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>carti.in</th><th>carti.out</th></tr><tr><td>4<br>
+13 3<br>
+A 2 3 4 5 6 7 8 9 10 J Q K<br>
+2 2<br>
+K J<br>
+2 2<br>
+Q K<br>
+2 1<br>
+4 5<br></td><td>Alice<br>
+Bob<br>
+Alice<br>
+Bob<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

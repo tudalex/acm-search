@@ -1,0 +1,75 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>demolish.in, demolish.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.6 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=demolish">Vezi solutiile trimise</a></p>
+
+<h1>Demolish<br></h1>
+
+<p>Patratel a strans profit serios din afacerile cu struti si acum doreste sa se extinda. Cu banii pe care ii are intentioneaza sa isi construiasca o ferma in regiune. Regiunea este de forma dreptunghiulara si are <var>M</var> kilometri lungime si <var>N</var> kilometri latime, iar ferma trebuie sa fie si ea dreptunghiulara si sa aiba laturile paralele cu ale regiunii. In regiune sunt insa construite alte <var>F</var> ferme ale unor oameni la fel de bogati ca si Patratel, ferme tot dreptunghiulare si tot cu laturile paralele cu ale regiunii. Patratel este om pretentios ( ca si strutii sai, de altfel ), si doreste o ferma de <var>DX</var> kilometri lungime si <var>DY</var> kilometri latime. Constructia unei astfel de ferme nu este intotdeauna posibila pentru ca depinde de asezarea celorlalte <var>F</var> ferme. Fiecare ferma are un cost de demolare ( costul pe care Patratel trebuie sa il plateasca sa demoleze ferma respectiva ). El doreste sa isi plaseze ferma proprie in regiune astfel incat suma costurilor de demolare ale fermelor intersectate de ferma sa fie minima.<br>
+Doua ferme se intersecteaza daca si numai daca un punct de pe laturile primei ferme se gaseste strict in interiorul celei de a doua ferme ( adica ele nu se intersecteaza daca se ating doar laturile ).</p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se determina costul minim pe care il plateste Patratel pentru a-si construi ferma.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului <var>demolish.in</var> contine cinci numere naturale <var>M, N, F, DX</var> si <var>DY</var> ( in aceasta ordine ), cu semnificatia din enunt. Fiecare din urmatoarele <var>F</var> linii contine tot cate cinci numere, <var>(x1 y1 ×2 y2 C)</var>, unde <var>(x1 y1)</var> reprezinta coordonatele coltului stanga-jos ale unei ferme din regiune, <var>(x2 y2)</var> coordonatele dreapta-sus ale aceleiasi ferme, iar C costul de demolare al fermei respective. Pentru un astfel de set avem intotdeauna <var>0 ≤ x1 &lt; x2 ≤ M, 0 ≤ y1 &lt; y2 ≤ N</var> si <var>0 ≤ C ≤ 200 000</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Prima linie a fisierului demolish.out contine <var><span class="caps">COST</span></var>, costul minim cerut. A doua linie contine patru numere intregi separate de cate un spatiu, <var>(x1 y1 ×2 y2)</var>, reprezentand pozitionarea fermei in regiune: <var>(x1 y1)</var> - coordonatele coltului stanga-jos si <var>(x2 y2)</var> - coordonatele dreapta-sus a fermei construite de Patratel pentru a obtine costul minim <var><span class="caps">COST</span></var>. Daca sunt mai multe posibilitati de amplasare, se va afisa cea care are <var>x1</var> minim, iar daca si in acest caz sunt mai multe posibilitati, se va afisa cea care are <var>y1</var> minim.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>4 &lt; M, N &lt; 500 001</var></li>
+<li><var>0 &lt; DX &lt; M + 1, 0 &lt; DY &lt; N + 1</var></li>
+<li><var>F &lt; 30 001</var></li>
+<li>Evident, fermele deja construite in regiune nu se intersecteaza</li>
+<li>Oricare doua ferme nu se intersecteaza daca se ating doar laturile</li>
+<li>Pot exista doua ferme din cele <var>F</var> care au acelasi cost de demolare</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>demolish.in</th><th>demolish.out</th></tr><tr><td>12 10 6 7 8<br>
+2 3 5 8 3 <br>
+5 7 7 9 7<br>
+8 4 12 8 22<br>
+7 1 9 2 4<br>
+0 0 1 2 10<br>
+1 9 2 10 6</td><td>14<br>
+1 0 8 8</td></tr></table><h3>Explicatie</h3>
+
+<p>Costul minim se obtine daca ferma este dispusa conform coordonatelor (1 0 8 8), intersectand fermele 1, 2 si 4, care trebuiesc demolate. Suma costurilor tuturor demolarilor efectuate este de 3+7+4 = 14. O alta plasare posibila care duce tot la costul 14 este (1 1 8 9), dar aceasta nu duce la indeplinirea conditiei de minimalitate a coordonatelor.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 3 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=41">Geometrie</a></span>
+            <a href="javascript:show_tag_list(41)" id="tag_anchor_41" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_41"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=80">Baleiere</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=63">Sortare</a></span>
+            <a href="javascript:show_tag_list(63)" id="tag_anchor_63" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_63"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=64">Sortare</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=84">Arbori de intervale</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

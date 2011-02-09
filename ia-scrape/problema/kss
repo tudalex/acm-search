@@ -1,0 +1,70 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>kss.in, kss.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2010, Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=223">Cosmin Gheorghe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gcosmin"><img src="/utilizator/gcosmin?action=download&amp;file=avatar&amp;resize=L16x16" alt="gcosmin">Gheorghe Cosmin</a> <a title="Rating gcosmin: 1142" class="rating-badge-4" href="http://infoarena.ro/utilizator/gcosmin?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gcosmin">gcosmin</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.8 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=kss">Vezi solutiile trimise</a></p>
+
+<h1>Kss<br></h1>
+
+<p>Lui Miriam ii plac cuvintele in ordine alfabetica. De data aceasta ea isi pune intrebari de genul: avand un sir de caractere <var>S</var> de lungime <var>N</var>, care este al <var>K</var>-lea subsir al acestuia in ordine lexicografica? Bineinteles Miriam nu se pricepe la programare asa ca are nevoie de ajutor.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>kss.in</var> va contine pe prima linie numarul <var>T</var> de teste. Urmatoarele linii vor avea urmatorul format: linia <var>2 * i</var> va contine numerele <var>N</var> si <var>K</var> si linia <var>2 * i + 1</var>, sirul <var>S</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>kss.out</var> veti afisa <var>T</var> linii, pe ficare linie <var>i</var> aflandu-se raspunsul la intrebarea <var>i</var>.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 1 000</var></li>
+<li><var>1 ≤ N ≤ 1 000</var></li>
+<li><var>1 ≤ K ≤ 10<sup>18</sup></var></li>
+<li>Sirul <var>S</var> va contine litere mici ale alfabetului englez.</li>
+<li><b>Atentie</b>: doua subsiruri <b>nu</b> se considera distincte daca pozitiile caracterelor lor in sirul initial sunt distincte.</li>
+<li>Daca nu exista <var>K</var> subsiruri distincte in sirul <var>S</var> raspunsul va fi <var>-1</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>kss.in</th><th>kss.out</th></tr><tr><td>13<br>
+4 1<br>
+aabc<br>
+4 2<br>
+aabc<br>
+4 3<br>
+aabc<br>
+4 4<br>
+aabc<br>
+4 5<br>
+aabc<br>
+4 6<br>
+aabc<br>
+4 7<br>
+aabc<br>
+4 8<br>
+aabc<br>
+4 9<br>
+aabc<br>
+4 10<br>
+aabc<br>
+4 11<br>
+aabc<br>
+4 12<br>
+aabc<br>
+25 12345<br>
+abcafedfdseasfesdfdfdfega<br></td><td>a<br>
+aa<br>
+aab<br>
+aabc<br>
+aac<br>
+ab<br>
+abc<br>
+ac<br>
+b<br>
+bc<br>
+c<br>
+-1<br>
+aaddeafedfddea<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

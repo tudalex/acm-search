@@ -1,0 +1,61 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>distante.in, distante.out</td><td><strong>Sursă</strong></td><td>preONI 2006 Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">2/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=distante">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=distante">Vezi solutiile trimise</a></p>
+
+<h1>Distante<br></h1>
+
+<p>Un bun prieten de-al lui Zaharel, Bronzarel este la spital bolnav de tifos. Fiind buni prieteni, Zaharel se duce sa-l viziteze pe acesta. Ultima data cand a fost in vizita, Bronzarel desenase pe peretii spitalului mai multe grafuri neorientate conexe cu costuri (da, si Bronzarel este pasionat de informatica!) si mai mult de atat calculase pentru fiecare dintre acestea distantele minime de la un nod sursa ales la toate celelalte. Zaharel, curios ca intotdeana, a decis ca vrea sa vada daca Bronzarel delireaza sau nu si si-a notat pe o foaie de hartie ceea ce scrisese acesta pe pereti. Cand a ajuns acasa, el s-a decis sa vada pentru care din grafuri distantele minime calculate de Bronzarel erau corecte.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care-l ajuta pe Zaharel sa determine pentru fiecare graf daca distantele minime au fost calculate correct.</p>
+
+<h2>Date de intare</h2>
+
+<p>Pe prima linie din fisierul de intrare <var>distante.in</var> se va gasi un numar <var>T</var>, reprezetand cate grafuri sunt pe foaie. Urmatoarele linii vor descrie succesiv cate un graf. Prima linie din descrierea unui graf va contine numerele <var>N</var>, <var>M</var>, si <var>S</var> reprezentand numarul de noduri , numarul de muchii si, respectiv, nodul sursa de la care se calculeaza distantele minime. A doua linie din descriere contine <var>N</var> elemente <var>D<sub>1</sub> D<sub>2</sub> ... D<sub>N</sub></var> reprezentand distantele minime calculate de Bronzarel. Urmatoarele <var>M</var> linii vor contine cate trei numere naturale <var>a b c</var> reprezentand faptul ca exista o muchie de cost <var>c</var> de la <var>a</var> la <var>b</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>distante.out</var> va contine <var>T</var> linii, fiecare cu cate un cuvant: <var>DA</var> daca distantele minime au fost calculate correct pentru graful respective, sau <var>NU</var> altfel.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>0 ≤ T ≤ 10</var></li>
+<li><var>1 ≤ a,b,S ≤ N ≤ 50.000</var></li>
+<li><var>0 ≤ M ≤ 100.000</var></li>
+<li><var>0 ≤ c ≤ 1.000</var></li>
+</ul><h2>Exemplu</h2>
+
+
+<table class="example" cellspacing="0"><tr><th>distante.in</th><th>distante.out</th></tr><tr><td>2<br>
+5 6 1<br>
+0 1 7 3 6<br>
+1 2 1<br>
+1 3 7<br>
+1 4 3<br>
+3 4 4<br>
+2 5 5<br>
+4 5 6<br>
+4 4 2<br>
+1 0 2 3<br>
+1 2 1<br>
+2 3 1<br>
+2 4 1<br>
+3 4 1<br></td><td>DA<br>
+NU</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=277">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

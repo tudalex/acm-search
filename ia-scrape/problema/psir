@@ -1,0 +1,35 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>psir.in, psir.out</td><td><strong>Sursă</strong></td><td>preONI 2007 Runda Finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.5 sec</td><td><strong>Limită de memorie</strong></td><td>20480 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=psir">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=psir">Vezi solutiile trimise</a></p>
+
+<h1>P-sir<br></h1>
+
+<p>Un sir de numere naturale <var>a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>k</sub> (k ≥ 2)</var> se numeste <em>p-sir</em> daca se respecta conditia <var>(a<sub>i</sub>-a<sub>i-1</sub>)*(a<sub>i</sub>-a<sub>i-2</sub>) &lt; 0</var> pentru <var>2 &lt; i ≤ k</var>. Un subsir al unui sir care indeplineste conditia de <em>p-sir</em> se numeste <em>p-subsir</em>. Dandu-se un sir de <var>N</var> numere naturale <var>P<sub>1</sub>, P<sub>2</sub>,... P<sub>N</sub></var> sa se determine cate <em>p-subsiruri</em> contine.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie din fisierul de intrare <var>psir.in</var> se va afla numarul natural <var>N</var>. Pe urmatoarea linie vor fi scrise <var>N</var> numere naturale reprezentand elementele <var>P<sub>1</sub>, P<sub>2</sub>,... P<sub>N</sub></var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>psir.out</var> se va scrie numarul de <em>p-subsiruri</em>, modulo <var>2<sup>32</sup></var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 2.000</var></li>
+<li><var>1 ≤ P<sub>i</sub> ≤ 2.000.000.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>psir.in</th><th>psir.out</th></tr><tr><td>4<br>
+1 1 5 2<br></td><td>8<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Cele <var>8</var> p-subsiruri sunt:<br><var>(P<sub>1</sub>, P<sub>2</sub>) = (1, 1)</var><br><var>(P<sub>1</sub>, P<sub>3</sub>) = (1, 5)</var><br><var>(P<sub>1</sub>, P<sub>4</sub>) = (1, 2)</var><br><var>(P<sub>1</sub>, P<sub>3</sub>, P<sub>4</sub>) = (1, 5, 2)</var><br><var>(P<sub>2</sub>, P<sub>3</sub>) = (1, 5)</var><br><var>(P<sub>2</sub>, P<sub>4</sub>) = (1, 2)</var><br><var>(P<sub>2</sub>, P<sub>3</sub>, P<sub>4</sub>) = (1, 5, 2)</var><br><var>(P<sub>3</sub>, P<sub>4</sub>) = (5, 2)</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

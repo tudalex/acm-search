@@ -1,0 +1,38 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>perechi2.in, perechi2.out</td><td><strong>Sursă</strong></td><td>Romanian Open Contest, TIMUS 2001</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=perechi2">Vezi solutiile trimise</a></p>
+
+<h1>Perechi2<br></h1>
+
+<p>O companie romaneasca producatoare de software a cumparat <var>N</var> calculatoare, care vor fi conectate in retea. O conexiune poate fi stabilita intre oricare <var>2</var> calculatoare distincte si este bidirectionala (daca cele <var>2</var> calculatoare sunt etichetate cu <var>i</var> si <var>j</var>, atunci se pot transmite date atat de la <var>i</var> la <var>j</var>, cat si de la <var>j</var> la <var>i</var>). Determinati o modalitate de a interconecta cele <var>N</var> calculatoare astfel inca oricare <var>2</var> calculatoare sa poata transmite date de la unul la altul (direct sau indirect, folosind alte calculatoare intermediare). Exista o singura cerinta suplimentara: reteaua formata trebuie sa contina exact <var>K</var> perechi critice. O pereche <var>(i,j)</var> este critica daca exista o conexiune pe care daca am inlatura-o, atunci nu s-ar mai putea transmite date de la <var>i</var> la <var>j</var> (si nici invers).</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>perechi2.in</var> contine <var>2</var> numere intregi, separate printr-un spatiu: <var>N</var>, numarul de calculatoare, si <var>K</var>, numarul de perechi critice.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>perechi2.out</var> veti afisa conexiunile ce formeaza reteaua, cate o conexiune pe linie. Pentru fiecare conexiune afisati <var>2</var> numere intregi, separate printr-un spatiu: <var>i</var> si <var>j</var>, reprezentand cele <var>2</var> calculatoare conectate direct cu ajutorul conexiunii respective. Daca nu se poate forma o retea avand <var>K</var> perechi critice, afisati in fisierul de iesire doar numarul <var>-1</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100</var></li>
+<li><var>0 ≤ K ≤ N*(N-1)/2</var></li>
+<li>Intre <var>2</var> calculatoare poate exista cel mult o conexiune.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>perechi2.in</th><th>perechi2.out</th></tr><tr><td>7 12<br></td><td>1 2<br>
+1 3<br>
+2 3<br>
+3 4<br>
+4 5<br>
+4 6<br>
+4 7<br>
+5 6<br>
+5 7<br>
+6 7<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

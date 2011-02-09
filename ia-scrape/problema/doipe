@@ -1,0 +1,38 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>doipe.in, doipe.out</td><td><strong>Sursă</strong></td><td>Winter Challange, Runda 01, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=172">Bogdan Ionescu</a>, <a href="/cauta-probleme?tag_id%5B%5D=140">Csaba Patcas</a>, <a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/fireatmyself"><img src="/utilizator/fireatmyself?action=download&amp;file=avatar&amp;resize=L16x16" alt="fireatmyself">Bogdan A. Stoica</a> <a title="Rating fireatmyself: 536" class="rating-badge-2" href="http://infoarena.ro/utilizator/fireatmyself?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/fireatmyself">fireatmyself</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>5.69 sec</td><td><strong>Limită de memorie</strong></td><td>7000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=doipe">Vezi solutiile trimise</a></p>
+
+<h1>Doipe<br></h1>
+
+<p>Pentru orice permutare de <var>N</var> elemente putem determina un sir de <var>N-1</var> relatii (relatiile folosite fiind <var>&lt;</var> sau <var>&gt;</var>). Daca al <var>i</var>-lea element al permutarii este mai mic decat al <var>i+1</var>-lea element, al <var>i</var>-lea element al sirului de relatii va fi <var>&lt;</var>, in caz contrar, al <var>i</var>-lea element al sirului de relatii va fi <var>&gt;</var>. De exemplu pentru permutarea <var>(1,3,2,4)</var> de patru elemente determinam sirul <var>(&lt;, &gt;, &lt;)</var>. Va trebui sa determinati cate permutari de <var>N</var> elemente exista carora le corespunde un anumit sir de relatii. Ne intereseaza doar restul impartirii acestui numar la <var>29997</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>doipe.in</var> se va afla numarul <var>T</var> semnificand numarul testelor din fisier. Pe urmatoarele <var>2*T</var> linii se vor afla informatii despre fiecare test. Astfel pe linia <var>2*k</var> (<var>1 ≤ k ≤ T</var>) se va alfa numarul <var>N</var>, iar pe linia <var>2*k+1</var> (<var>1 ≤ k ≤ T</var>), sirul de relatii.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul <var>doipe.out</var> va trebui sa contina exact <var>T</var> linii. Pe a <var>i</var>-a linie va trebui sa se afle raspunsul pentru al <var>i</var>-lea test din fisierul de intrare.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1</var> ≤ <var>T</var> ≤ <var>20</var></li>
+<li><var>1</var> ≤ <var>N</var> ≤ <var>2.000</var></li>
+<li>40% din fisierele de test vor avea toate valorile lui N mai mici sau egale cu <var>16</var></li>
+<li>70% din fisierele de test vor avea toate valorile lui N mai mici sau egale cu <var>200</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>doipe.in</th><th>doipe.out</th></tr><tr><td>3<br>
+2<br>
+&lt;<br>
+10<br>
+&lt;&gt;&lt;&lt;&lt;&gt;&lt;&lt;&lt;<br>
+15<br>
+&lt;&lt;&gt;&gt;&gt;&lt;&gt;&lt;&gt;&gt;&gt;&lt;&gt;&lt;<br></td><td>1<br>
+2896<br>
+17401<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

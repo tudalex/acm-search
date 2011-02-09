@@ -1,0 +1,55 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>text3.in, text3.out</td><td><strong>Sursă</strong></td><td>OJI 2010, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=129">Horatiu Cristurean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/CezarMocan"><img src="/utilizator/CezarMocan?action=download&amp;file=avatar&amp;resize=L16x16" alt="CezarMocan">Cezar Mocan</a> <a title="Rating CezarMocan: 892" class="rating-badge-1" href="http://infoarena.ro/utilizator/CezarMocan?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/CezarMocan">CezarMocan</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=text3">Vezi solutiile trimise</a></p>
+
+<h1>Text3<br></h1>
+
+<p>Ion Petre, ca oricare adolescent, este pasionat atât de jocuri, cât şi de informatică. Ultimul astfel de joc este acela de a elimina dintr-un text cuvinte astfel încât fiecare cuvânt rămas să fie urmat de un cuvânt care începe cu aceeaşi literă cu care se termină cuvântul precedent. Face excepţie de la această regulă numai ultimul cuvânt.</p>
+
+<h2>Cerinta</h2>
+
+<p>Pentru un text dat, se cere să se afişeze numărul de cuvinte din text, apoi numărul minim de cuvinte ce pot fi eliminate astfel încât în textul rămas orice cuvânt (cu excepţia ultimului) să se termine cu aceeaşi literă cu care începe cuvântul următor, iar în final să se afişeze cuvintele din text rămase după eliminare, fiecare cuvant fiind afişat pe câte o linie.</p>
+
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul <var>text3.in</var> conţine un text scris pe mai multe linii. Pe fiecare linie se află cuvinte formate din litere mici ale alfabetului latin. Cuvintele sunt despărţite între ele prin exact câte un spaţiu.</p>
+
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul <var>text3.out</var> va conţine pe primele doua linii două numerele <var>x</var> şi <var>y</var>, unde <var>x</var> va fi numărul de cuvinte din text, iar <var>y</var> numărul minim de cuvinte ce trebuie eliminate. Pe liniile următoare se vor afişa, în ordine, cuvintele rămase după eliminarea celor <var>y</var> cuvinte, câte un cuvant pe o linie.</p>
+
+
+<h2>Restricţii</h2>
+
+
+<ul><li>Numărul de cuvinte din text este maximum <var>20000</var>.</li>
+<li>Lungimea maximă a unui cuvânt este <var>20</var>.</li>
+<li>Fiecare linie de text din fişierul de intrare are cel mult <var>200</var> de caractere.</li>
+<li>În fişier pot exista rânduri goale.</li>
+<li>Se acordă <var>10%</var> din punctaj pentru determinarea corectă a numărului de cuvinte din text.</li>
+<li>Se acordă <var>40%</var> din punctaj pentru rezolvarea corectă a primelor două cerinţe.</li>
+<li>Pentru rezolvarea corectă a tuturor cerinţelor se acordă tot punctajul.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>text3.in</th><th>text3.out</th></tr><tr><td>pentru ca nu are <br>
+timp ion spune ca nu urmareste nici<br>
+emisiuni interesante si evident nici altfel<br>
+de<br>
+emisiuni<br></td><td>19<br>
+13<br>
+ion<br>
+nu<br>
+urmareste<br>
+emisiuni<br>
+interesante<br>
+evident<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Din întregul text care este format din <var>19</var> cuvinte se elimină <var>13</var> cuvinte şi se obţin, în ordine, cuvintele: <var>ion</var>, <var>nu</var>, <var>urmareste</var>, <var>emisiuni</var>, <var>interesante</var>, <var>evident</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

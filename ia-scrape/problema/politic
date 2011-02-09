@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>politic.in, politic.out</td><td><strong>Sursă</strong></td><td>ONI 2007, clasa 7</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=158">Victor Manz</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/peanutz"><img src="/utilizator/peanutz?action=download&amp;file=avatar&amp;resize=L16x16" alt="peanutz">Andrei Homorodean</a> <a title="Rating peanutz: 544" class="rating-badge-2" href="http://infoarena.ro/utilizator/peanutz?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/peanutz">peanutz</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>1024 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=politic">Vezi solutiile trimise</a></p>
+
+<h1>Politic<br></h1>
+
+<p>In Tara lui Papura Voda s-au organizat de curand primele alegeri democratice. A rezultat astfel un parlament din care fac parte deputati cu diverse doctrine politice, de stanga sau de dreapta. Acestea sunt descrise prin numere naturale nenule (orientarea politica este cu atat mai de stanga cu cat numarul este mai mic). Parlamentarii s-au asociat in partide politice in functie de doctrina fiecaruia. Oricare doi deputati ale caror doctrine corespund unor numere consecutive fac parte din acelasi partid. Prin urmare, partidele vor fi alcatuite din deputati ale caror doctrine sunt numere consecutive. De exemplu, daca parlamentul are 5 deputati, cu doctrinele 1, 2, 3, 5 si 6 atunci inseamna ca acestia sunt grupati in doua partide: unul format din 1, 2 si 3 si altul din 5 si 6.<br>
+Un guvern trebuie sa beneficieze de sustinerea a mai mult de jumatate dintre parlamentari. De exemplu, daca parlamentul este format din 7 deputati, atunci un guvern are nevoie de sustinerea a cel putin 4 deputati.<br>
+Pentru a putea guverna, partidele se pot grupa in coalitii. Regula dupa care se asociaza este urmatoarea: doua partide <var>A</var> si <var>B</var>, <var>A</var> avand o doctrina mai de stanga, pot face parte din aceeasi coalitie doar daca din coalitia respectiva fac parte toate partidele a caror doctrina este mai de dreapta decat cea a lui <var>A</var> si mai de stanga decat cea a lui <var>B</var>. De exemplu, daca parlamentul este alcatuit din deputati cu orientarile politice 1,2,4,5,7 si 8, atunci partidul format din 1 si 2 nu se poate asocia cu partidul format din 7 si 8 decat daca din coalitia respectiva face parte si partidul format din 4 si 5.</p>
+
+<h2>Cerinta</h2>
+
+<p>Fiind dat parlamentul din Tara lui Papura Voda printr-un sir ordonat strict crescator de numere naturale nenule, se cere sa se stabileasca numarul de partide parlamentare si numarul variantelor de coalitie majoritara.</p>
+
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>politic.in</var> se afla un numar natural nenul <var>N</var>, reprezentand numarul de deputati din parlament.<br>
+Pe a doua linie se afla <var>N</var> numere naturale nenule separate prin cate un spatiu, ordonate strict crescator, reprezentand doctrinele parlamentarilor.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Prima linie a fisierului <var>politic.out</var> va contine un numar natural nenul <var>X</var>, reprezentand numarul de partide din parlament, iar a doua linie va contine un alt numar natural nenul <var>Y</var>, care reprezinta numarul de coalitii majoritare care se pot forma.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ <var>N</var> ≤ 20000</var></li>
+<li>Numerele din sir sunt mai mici sau egale cu <var>30 000</var></li>
+<li>Pentru determinarea corecta a numarului de partide parlamentare se acorda 30% din punctaj, iar pentru afisarea corecta a numarului de variante de coalitie majoritara se acorda 70% din punctaj</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th><var>politic.in</var></th><th><var>politic.out</var></th></tr><tr><td>10<br>
+1 2 3 5 6 8 10 11 14 15<br></td><td>5<br>
+4<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

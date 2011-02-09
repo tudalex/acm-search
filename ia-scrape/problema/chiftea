@@ -1,0 +1,37 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>chiftea.in, chiftea.out</td><td><strong>Sursă</strong></td><td>Winter Challange, Runda 01, clasele 9-10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=252">Bogdan Alexandru Stoica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/fireatmyself"><img src="/utilizator/fireatmyself?action=download&amp;file=avatar&amp;resize=L16x16" alt="fireatmyself">Bogdan A. Stoica</a> <a title="Rating fireatmyself: 536" class="rating-badge-2" href="http://infoarena.ro/utilizator/fireatmyself?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/fireatmyself">fireatmyself</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.25 sec</td><td><strong>Limită de memorie</strong></td><td>16000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=chiftea">Vezi solutiile trimise</a></p>
+
+<h1>Chiftea<br></h1>
+
+<p>Varu este mare pasionat de figuri geometrice. El are la dispozitie <var>N</var> patratele de latura o unitate. Se intreaba care este figura de perimetru minim ce se poate construi folosind toate cele <var>N</var> patratele. Scopul vostru este sa-l ajutati pe Varu sa gaseasca raspunsul la intrebarea ce-l macina.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>chiftea.in</var> se va afla <var>T</var>, numarul de teste, iar pe urmatoarele <var>T</var> linii, numarul de patratele pentru fiecare test in parte.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul <var>chiftea.out</var> va contine <var>T</var> linii ce reprezinta perimetrul minim pentru toate cele <var>T</var> teste.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1</var> ≤ <var>T</var> ≤ <var>100.002</var></li>
+<li><var>0</var> ≤ <var>N</var> ≤ <var>2.147.483.647</var></li>
+<li>patratelele nu se pot suprapune</li>
+<li>prin "figura" se intelege o forma geometrica unitara (conexa)</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>chiftea.in</th><th>chiftea.out</th></tr><tr><td>2<br>
+2<br>
+3<br></td><td>6<br>
+8<br></td></tr></table><h2>Explicatii</h2>
+
+<p><img src="http://infoarena.ro/problema/chiftea?action=download&amp;file=exp.jpg&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

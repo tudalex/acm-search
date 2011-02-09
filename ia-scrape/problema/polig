@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>polig.in, polig.out</td><td><strong>Sursă</strong></td><td>Autumn Warmup 2007, Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=210">Marius Dragus</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mariusdrg"><img src="/utilizator/mariusdrg?action=download&amp;file=avatar&amp;resize=L16x16" alt="mariusdrg">dragus marius</a> <a title="Rating mariusdrg: 753" class="rating-badge-1" href="http://infoarena.ro/utilizator/mariusdrg?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mariusdrg">mariusdrg</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=polig">Vezi solutiile trimise</a></p>
+
+<h1>Polig<br></h1>
+
+<p>Lui Lucy ii plac mult florile roz si poligoanele convexe. Ea cunoaste locatia a <var>N</var> gradini (gradinile sunt reprezentate ca puncte in plan) ce contin multe flori roz si isi doreste ca mergand calare pe unicornul ei, sa viziteze unele din gradini astfel incat sa vada in total un numar maxim de flori. Intre oricare doua gradini exista un singur drum direct format din segmentul ce le uneste. O alta dorinta a ei este ca traseul parcurs sa aiba forma unui poligon convex. Ea va porni tot timpul de la casa ei situata in originea planului (coordonata <var>0, 0</var>) si se va intoarce tot aici la finalul traseului. Determinati numarul maxim de flori ce il poate vedea.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>polig.in</var> se afla <var>N</var> avand semnificatia din enunt, iar pe urmatoarele <var>N</var> linii trei numere intregi <var>x</var>, <var>y</var> si <var>c</var>, cele de pe linia <var>i+1</var> reprezentand coordonatele si numarul de flori din gradina <var>i</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului <var>polig.out</var> se afla un singur numar, numarul maxim de flori ce il poate vedea.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100</var></li>
+<li><var>-10000 ≤ x<sub>i</sub> ≤ 10000</var></li>
+<li><var>0 ≤ y<sub>i</sub> ≤ 10000</var></li>
+<li><var>0 ≤ c<sub>i</sub> ≤ 10000</var></li>
+<li>Un poligon este convex daca nu contine un unghi cu masura strict mai mare decat 180 grade</li>
+<li>Oricare trei puncte sunt necoliniare si nu exista 2 puncte care sa fie coliniare cu originea</li>
+<li>Cel putin 20% din teste vor avea <var>N ≤ 15</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>polig.in</th><th>polig.out</th></tr><tr><td>7<br>
+-14 12 14<br>
+4 10 5<br>
+6 14 20<br>
+11 18 15<br>
+-8 13 16<br>
+-2 11 14<br>
+-4 11 1<br></td><td>50<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Lucy porneste din coordonata <var>0, 0</var>, apoi viziteaza gradinile <var>3</var>, <var>5</var> si <var>1</var> in aceasta ordine si se intoarce la coordonata <var>0, 0</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

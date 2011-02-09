@@ -1,0 +1,72 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>1234.in, 1234.out</td><td><strong>Sursă</strong></td><td>CCEX 2009</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=245">Radu Vatavu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Marius"><img src="/utilizator/Marius?action=download&amp;file=avatar&amp;resize=L16x16" alt="Marius">Marius Stroe</a> <a title="Rating Marius: 627" class="rating-badge-4" href="http://infoarena.ro/utilizator/Marius?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Marius">Marius</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=1234">Vezi solutiile trimise</a></p>
+
+<h1>1234<br></h1>
+
+<p>Se dau două numere întregi alcătuite din cifrele <var>{1, 2, 3, 4}</var> asupra cărora veţi efectua operaţii aritmetice simple <var>(+, -)</var>. Numerele vor fi furnizate printr-o imagine alb-negru.</p>
+
+<h3>Definiţii</h3>
+
+<p>O imagine alb-negru este reprezentată printr-o matrice de înălţime <var>h</var> (numărul de linii) şi lăţime <var>w</var> (numărul de coloane), unde fiecare element reprezintă un pixel alb sau negru, după cum valoarea este <var>1</var> sau <var>0</var>.</p>
+
+<p>Un obiect este un grup conectat de pixeli de culoare neagră din imagine. Doi pixeli de coordonate <var>(i<sub>1</sub>, j<sub>1</sub>)</var> şi <var>(i<sub>2</sub>, j<sub>2</sub>)</var> sunt conectaţi dacă <strong><var>|i<sub>1</sub> - i<sub>2</sub>| ≤ 1</var> şi <var>|j<sub>1</sub> - j<sub>2</sub>| ≤ 1</var></strong>. Aceste condiţii înseamnă că un pixel are cel mult <var>8</var> alţi pixeli vecini.</p>
+
+<p>Veţi dispune de o imagine care are doar <var>6</var> tipuri diferite de obiecte: cifrele <var>1</var>, <var>2</var>, <var>3</var>, <var>4</var> şi operatorii <var>+</var>, <var>-</var>, care compun expresia ce va trebui evaluată. În figura de mai jos, rezultatul expresiei este <var>46</var>.</p>
+
+<p class="center" style="text-align:center"><img src="http://infoarena.ro/problema/1234?action=download&amp;file=figure-1.png&amp;safe_only=true" alt=""></p>
+
+<p class="center" style="text-align:center"><em>O imagine ce conţine o expresie de evaluat. Obiectele sunt</em><br><em>întotdeauna de culoare neagră, iar fundalul de culoare albă.</em></p>
+
+<h2>Cerinţă</h2>
+
+<p>Va trebui să calculaţi rezultatul expresiei furnizate prin intermediul unei imagini alb-negru.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>1234.in</var> conţine pe prima linie, separate printr-un spaţiu, dimensiunile matricei: înălţimea <var>h</var> şi lăţimea <var>w</var>. Următoarele <var>h</var> linii vor conţine reprezentarea matricei cu exact <var>w</var> caractere pe o linie. Vor fi două tipuri de caractere: <var>1</var>, reprezentând culoarea alb şi <var>0</var> reprezentând culoarea negru. Între caracterele <var>0</var> şi <var>1</var> nu vor fi spaţii iar fiecare linie are exact <var>w</var> caractere.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>1234.out</var> va conţine un singur număr reprezentând rezultatul expresiei.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ h, w ≤ 150</var></li>
+<li>În fişierul de intrare se vor găsi doar două numere, un operator <var>(+, -)</var> şi un semn egal <var>(=)</var>.</li>
+<li>Fiecare număr conţine cel mult <var>4</var> cifre iar rezultatul poate fi reprezentat, de asemnenea, cu <var>4</var> cifre.</li>
+<li>Operatorul <var>-</var> este binar, adică nu se vor găsi expresii precum <var>-5+6=</var>.</li>
+<li>Caracterele expresiei vor fi aliniate.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>1234.in</th><th>1234.out</th></tr><tr><td>21 120<br>
+111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111<br>
+111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111<br>
+111111111111111100001111111111000011111111111111111111111111110001111111111111111000001111111111111111111111111111111111<br>
+111111111111111100001111111100000000011111111100001111111111000000001111111111110000001111111111111111111111111111111111<br>
+111111111111110000001111111000000000001111111100001111111100000000000111111111110000001111111111111111111111111111111111<br>
+111111111111100000001111110000111100001111111100001111111100001110000011111111100000001110000000000000111111111111111111<br>
+111111111100000000001111110000111100000111111100001111111111101110000111111111001000001110000000000000111111111111111111<br>
+111111111100001000001111111110111100001111111100001111111111111110000111111110011000001110000000000000111111111111111111<br>
+111111111100111000001111111111111100001110000000000000011111111100001111111110011000001110000000000000111111111111111111<br>
+111111111111111000001111111111111000001110000000000000011111111100011111111100111000001111111111111111111111111111111111<br>
+111111111111111000001111111111110000011110000000000000011111111000000111111001111000001111111111111111111111111111111111<br>
+111111111111111000001111111111100001111110000000000000011111111111000011110011111000001110000000000000111111111111111111<br>
+111111111111111000001111111111000011111111111100001111111111111111000011100000000000000010000000000000111111111111111111<br>
+111111111111111000001111111100000111111111111100001111111111111111000001100000000000000010000000000000111111111111111111<br>
+111111111111111000001111111000001111111111111100001111111111101111000011100000000000000010000000000000111111111111111111<br>
+111111111111111000001111111000000000000111111100001111111100001111000011100000000000000011111111111111111111111111111111<br>
+111111111111111000001111110000000000000111111100001111111110000000000111111111111000001111111111111111111111111111111111<br>
+111111111111111000001111110000000000000111111111111111111111000000001111111111111000001111111111111111111111111111111111<br>
+111111111111111000001111110000000000000111111111111111111111111000111111111111111000001111111111111111111111111111111111<br>
+111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111<br>
+111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111<br></td><td>46<br></td></tr></table><h2>Atenţie!</h2>
+
+<p>Problema dispune de un soft adiţional care vă va ajuta să generaţi fişiere de intrare. Softul, împreună cu un ghid de utilizare, poate fi descărcat <a href="http://infoarena.ro/problema/1234?action=download&amp;file=1234_help.zip&amp;safe_only=false" class="wiki_link_external">dând click aici</a>. Programul va putea fi utilizat doar în Windows şi necesită <em>.NET</em>. Dacă nu aveţi <em>.NET</em> instalat îl puteţi descărca de la <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=0856EACB-4362-4B0D-8EDD-AAB15C5E04F5&amp;displaylang=en" class="wiki_link_external">acest link</a>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

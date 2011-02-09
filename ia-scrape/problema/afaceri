@@ -1,0 +1,66 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>afaceri.in, afaceri.out</td><td><strong>Sursă</strong></td><td>Lot Iasi 2008, Baraj 5</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=161">Adrian Airinei</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>6 sec</td><td><strong>Limită de memorie</strong></td><td>131072 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=afaceri">Vezi solutiile trimise</a></p>
+
+<h1>Afaceri<br></h1>
+
+<p>Ana are o afacere cu un şir <var>S</var> format din <var>N</var> litere mici, memorate pe poziţiile <var>0</var>, <var>1</var>, ..., <var>N-1</var>. Şirul este considerat circular (adică după litera de pe poziţia <var>N-1</var> se consideră că urmează litera de pe poziţia <var>0</var>).<br>
+Asupra acestui şir Ana trebuie să efectueze eficient următoarele operaţii:</p>
+
+
+<ol><li>Update( <var>poz</var>, <var>c</var>): schimbă litera de pe poziţia poz din şir în litera <var>c</var></li>
+<li>Query( <var>poz1</var>, <var>poz2</var>, <var>len</var>): consideră subsecvenţa din şir care începe pe poziţia <var>poz1</var> şi subsecvenţa care începe pe poziţia <var>poz2</var>, ambele secvenţe având lungimea <var>len</var>, şi determină distanţa <var>Hamming</var> dintre cele două subsecvenţe.</li>
+</ol><p>Distanţa Hamming dintre două subsecvenţe <var>s1</var> şi <var>s2</var> de lungime len este definită ca numărul de poziţii <var>i</var> pentru care <var>s1[i] ≠ s2[i]</var>, <var>0 ≤ i &lt; len</var>. <br>
+Pentru că volumul datelor de intrare este mare, vom genera operaţiile asupra şirului pe baza unor valori date, după cum urmează:</p>
+
+
+<ul><li><var>M</var> – numărul total de operaţii;</li>
+<li><var>Q</var> – frecvenţa operaţiilor Update (după fiecare <var>Q-1</var> operaţii Query se execută un Update);</li>
+<li><var>L A0 A1 A2 R</var> – valori (iniţial date) în funcţie de care generăm operaţiile.</li>
+<li>Vectorii <var>X</var> cu <var>LX</var> elemente naturale şi respectiv <var>Y</var> cu <var>LY</var> elemente naturale conţin valori utilizate de asemenea pentru generarea operaţiilor (vectorii <var>X</var> şi <var>Y</var> fiind indexaţi de la 0).<br>
+Pseudocodul care descrie modul de generare a operaţiilor Update/Query:</li>
+</ul><div class="code"><textarea class="brush: cpp;" cols="60" rows="10">
+for (i = 1; i &lt;= M; i++)
+    {if (i % Q == 0) // generez o operatie Update
+         {poz=A1%N; c='a' + A2 % 26;	    
+          S[poz] = c; }
+	    else //generez o operatie Query
+          { poz1 = A0%N; poz2=A1%N; len=L+A2%(N-L+1); }
+      //recalculez A0 A1 A2 	     
+      VAL = ((long long)A2*X[i%LX]+Y[i%LY])%R; A0 = A1; A1 = A2; A2 = VAL; 
+    }
+</textarea></div>
+
+
+<h2>Cerinţă</h2>
+
+<p>Scrieţi un program care să efectueze operaţiile generate şi să determine suma răspunsurilor la operaţiile Query.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>afaceri.in</var> va conţine pe prima linie numerele naturale <var>N, M, Q, L, <span class="caps">A0, A1,</span> A2</var> şi <var>R</var>. A doua linie va conţine numărul natural <var>LX</var>, apoi vor urma <var>LX</var> numere naturale <var>X<sub>0</sub> X<sub>1</sub> ... X<sub>LX-1</sub></var> reprezentând valorile vectorului <var>X</var>. A treia linie va conţine numărul natural <var>LY</var>, apoi vor urma <var>LY</var> numere naturale <var>Y<sub>0</sub> Y<sub>1</sub> ... Y<sub>LY-1</sub></var> reprezentând valorile vectorului <var>Y</var>. A patra linie va conţine <var>N</var> litere mici reprezentând şirul dat. Valorile numerice aflate pe aceeaşi linie sunt separate prin spaţii.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>afaceri.out</var> va conţine o singură linie pe care va fi scris un singur număr natural reprezentând suma răspunsurilor la query-urile date.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ L &lt; N ≤ 2000</var></li>
+<li><var>1 ≤ <span class="caps">LX,</span> LY ≤ 5000</var></li>
+<li><var>1 ≤ M ≤ 2.000.000</var></li>
+<li><var>1 ≤ [M/Q] ≤ 20 001</var></li>
+<li><var>1 ≤ X<sub>i</sub> ≤ R ∀ i</var></li>
+<li><var>1 ≤ Y<sub>i</sub> ≤ R ∀ i</var></li>
+<li><var>1 ≤ <span class="caps">A0, A1, A2,</span> R ≤ 1.000.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>afaceri.in</th><th>afaceri.out</th></tr><tr><td>7 15 4 3 5 6 7 8<br>
+  3 5 4 1<br>
+  3 7 2 6<br>
+  lrqagor<br></td><td>65<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

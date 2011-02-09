@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>euro2.in, euro2.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil 2008, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=159">Clara Ionescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=euro2">Vezi solutiile trimise</a></p>
+
+<h1>Euro2<br></h1>
+
+<p>Bursa raporteaza cursul Euro-RON de foarte multe ori pe parcursul unei zile si astfel raportarile oglindesc toate fluctuatiile care au loc pe parcursul zilei. Deoarece pentru populatie nu are prea mare importanta fluctuatia pe intervale mici de timp, Banca Nationala doreste sa comunice fluctuatia cursului astfel incat sa se inteleaga ca acesta a crescut pana la un moment dat, apoi a scazut. </p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati numarul maxim de raportari care pot fi alese si facute publice pentru ca populatia sa inteleaga ca in ziua respectiva cursul a crescut pana la un moment dat, apoi a scazut. Raportatile care sunt facute publice trebuiesc alese in ordine cronologica.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>euro2.in</var> se afla numarul natural <var>N</var>, reprezentand numarul raportarilor. Pe urmatoarele <var>N</var> linii sunt scrise cele <var>N</var> valori ale cursului, cate una pe linie.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima si singura linie a fisierului de iesire <var>euro2.out</var> se va scrie un numar natural, reprezentand numarul raportarilor alese de Banca Nationala.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 &lt; N ≤ 10 000</var></li>
+<li><var>3,0000 ≤ raportare<sub>i</sub> ≤ 4,0000</var></li>
+<li>Numerele reprezentand valoarea unui Euro in <span class="caps">RON </span>au toate exact patru cifre in partea zecimala si sunt distincte</li>
+<li>Raportarile alese de Banca Nationala trebuie sa contina o secventa crescatoare (formata din cel putin doua elemente), urmata de o secventa descrescatoare (formata din cel putin un element)</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>euro2.in</th><th>euro2.out</th></tr><tr><td>12<br>
+3.1120<br>
+3.2470<br>
+3.2110<br>
+3.2090<br>
+3.2440<br>
+3.3500<br>
+3.4700<br>
+3.5100<br>
+3.3120<br>
+3.2150<br>
+3.1170<br>
+3.2170<br></td><td>9<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Raportarile alese sunt: <var>3.1120</var>, <var>3.2110</var>, <var>3.2440</var>, <var>3.3500</var>, <var>3.4700</var>, <var>3.5100</var>, <var>3.3120</var>, <var>3.2150</var> si <var>3.1170</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

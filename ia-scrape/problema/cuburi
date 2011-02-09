@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cuburi.in, cuburi.out</td><td><strong>Sursă</strong></td><td>.campion 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=143">Daniel Pasaila</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/danielp"><img src="/utilizator/danielp?action=download&amp;file=avatar&amp;resize=L16x16" alt="danielp">Daniel Pasaila</a> <a title="Rating danielp: 532" class="rating-badge-4" href="http://infoarena.ro/utilizator/danielp?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/danielp">danielp</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cuburi">Vezi solutiile trimise</a></p>
+
+<h1>Cuburi<br></h1>
+
+<p>Lui Johnie ii place sa se joace cu cuburi. El dispune de o infinitate de cuburi albe (toate cele sase fete colorate in alb) si negre (toate cele sase fete colorate in negru). Toate cuburile lui au latimea, inaltimea si lungimea de un metru. Lui Johnie ii place sa isi dispuna cuburile pe <var>N</var> nivele, fiecare nivel continand <var>2 * 2</var> cuburi. Deci Johnie obtine la sfarsit un bloc cu inaltimea <var>N</var>, latimea <var>2</var> si lungimea <var>2</var>. Dupa ce s-a saturat sa construiasca blocuri aleator, Johnie si-a dat seama ca un bloc este mai frumos daca exista o componenta conexa formata doar din cuburi albe, ce contine cel putin <var>K</var> elemente.<br>
+Spunem ca doua cuburi <var>X, Y</var> sunt in aceeasi componenta conexa daca:</p>
+
+
+<ul><li><var>X</var> si <var>Y</var> sunt asezate pe pozitii adiacente in bloc (au o fata "comuna")</li>
+<li><var>X</var> este adiacent cu un cub <var>Z</var>, iar <var>Z</var> este in aceeasi componenta conexa cu <var>Y</var></li>
+</ul><p>Determinati numarul de blocuri frumoase ce se pot construi. Rezultatul trebuie afisat modulo 10000.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul <var>cuburi.in</var> contine pe prima linie doua numere, <var>N</var> si <var>K</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul <var>cuburi.out</var> contine numarul cerut, modulo <var>10000</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 40</var></li>
+<li><var>1 ≤ K ≤ 4 * N</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>cuburi.in</th><th>cuburi.out</th></tr><tr><td>3 12<br></td><td>1<br></td></tr><tr><td>4 15<br></td><td>17<br></td></tr><tr><td>6 15<br></td><td>2244<br></td></tr></table><h3>Explicatie</h3>
+
+
+<ul><li>Testul 1: Exista un singur bloc, cu toate cuburile albe.</li>
+<li>Testul 2: Exista 17 blocuri, deoarece sunt valide toate blocurile ce au 15 cuburi colorate in alb si unul in negru (16 cuburi de acest fel) precum si blocul ce are toate cuburile colorate in alb.</li>
+</ul><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,64 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>pedefe.in, pedefe.out</td><td><strong>Sursă</strong></td><td>preONI 2006 Runda Finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><div class="hidden">5/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=pedefe">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=pedefe">Vezi solutiile trimise</a></p>
+
+<h1>Pedefe<br></h1>
+
+<p>Zaharel se ocupa de securitatea subiectelor de la finala preONI si a scris textul problemelor sub forma unui sir <var>S<sub>0</sub></var> de numere naturale ordonate crescator. Fiind un pic paranoic, el s-a gandit sa aplice o criptare pe <var>S<sub>0</sub></var>, folosind un algoritm inventat de el, algoritmul de criptare Pedefe™. Din pacate, calculatorul preONI a fost virusat si datele criptate s-au pierdut. Zaharel a putut recupera trei siruri de date din calculator pe care le vom nota <var>S<sub>1</sub>,S<sub>2</sub>,S<sub>3</sub></var>. Dupa cateva investigatii si-a dat seama ca <var>S<sub>3</sub></var> este un subsir al lui <var>S<sub>0</sub></var>, si in plus <var>S<sub>0</sub></var> se gaseste ca subsir atat in <var>S<sub>1</sub></var> cat si in <var>S<sub>2</sub></var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Evident, cele trei siruri nu sunt deajuns pentru a-l gasi in mod unic pe <var>S<sub>0</sub></var>. Ca sa nu-s iroseasca zilele sa recupereze datele, Zaharel vrea sa stie cate posibiltati exista de a-l gasi pe <var>S<sub>0</sub></var> folosind informatiile disponibile. Reamintim ca <var>S<sub>0</sub></var> trebuie sa fie un subsir atat al lui <var>S<sub>1</sub></var> si <var>S<sub>2</sub></var>, sa-l contina pe <var>S<sub>3</sub></var> ca subsir, si sa fie crescator.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului <var>pedefe.in</var> va contine pe prima linie numerele naturale <var>N, M</var> si <var>P</var>. Urmatoarele trei linii vor contine <var>N, M,</var> respectiv <var>P</var> numere naturale, reprezetand sirurile <var>S<sub>1</sub>, S<sub>2</sub>, S<sub>3</sub></var> in aceasta ordine.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>In fisierul <var>pedefe.out</var> se va afisa numarul de posibilitati cautat, modulo <var>666013</var>.</p>
+
+<h2>Restrictii si observatii</h2>
+
+
+<ul><li><var>1 ≤ N, M ≤ 500</var></li>
+<li><var>0 ≤ P ≤ 100, P ≤ min(N, M)</var></li>
+<li>Sirurile vor contine numere naturale din intevalul <var>[1, 500]</var></li>
+<li>Pentru <var>50%</var> din teste <var>N, M ≤ 256</var>, iar pentru inca <var>25%</var> din teste numarul de caractere distincte din sirurile <var>S<sub>1</sub>, S<sub>2</sub>, S<sub>3</sub></var> este <var>≤ 20</var></li>
+<li>Considerand un sir <var>A=(a<sub>1</sub>,a<sub>2</sub>...a<sub>N</sub>)</var>, se numeste subsir al lui <var>A</var>, un sir <var>B=(a<sub>i1</sub>,a<sub>i2</sub>...a<sub>iK</sub>)</var> cu proprietatea <var>1 ≤ i<sub>1</sub>&lt;i<sub>2</sub>&lt;...&lt;i<sub>K</sub> ≤ N</var>.</li>
+<li>Doua solutii se considera distincte considerand pozitiile numerelor in sirurile <var>S<sub>1</sub></var> si <var>S<sub>2</sub></var>, nu valoarea acestora (vezi exemplu)</li>
+<li>Se recomanda evitarea folosirii operatiei modulo din limbajul in care lucrati deoarece este foarte consumatoare de timp; se recomanda folosirea operatiei de scadere in schimb</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>pedefe.in</th><th>pedefe.out</th></tr><tr><td>8 9 2<br>
+14 1 2 2 15 24 3 4<br>
+17 18 1 2 2 3 24 4 19<br>
+1 24</td><td>6</td></tr></table><h3>Explicatii</h3>
+
+<p><var>S<sub>0</sub></var> poate fi:<br><var>1 24 (S<sub>1,2</sub> S<sub>1,6</sub> S<sub>2,3</sub> S<sub>2,7</sub>)</var><br><var>1 2 24 (S<sub>1,2</sub> S<sub>1,3</sub> S<sub>1,6</sub> S<sub>2,3</sub> S<sub>2,4</sub> S<sub>2,7</sub>)</var><br><var>1 2 24 (S<sub>1,2</sub> S<sub>1,4</sub> S<sub>1,6</sub> S<sub>2,3</sub> S<sub>2,4</sub> S<sub>2,7</sub>)</var><br><var>1 2 24 (S<sub>1,2</sub> S<sub>1,3</sub> S<sub>1,6</sub> S<sub>2,3</sub> S<sub>2,5</sub><sub>2,7</sub>)</var><br><var>1 2 24 (S<sub>1,2</sub> S<sub>1,3</sub> S<sub>1,6</sub> S<sub>2,3</sub> S<sub>2,5</sub> S<sub>2,7</sub>)</var><br><var>1 2 2 24 (S<sub>1,2</sub> S<sub>1,3</sub> S<sub>1,4</sub> S<sub>1,6</sub> S<sub>2,3</sub> S<sub>2,4</sub> S<sub>2,5</sub> S<sub>2,7</sub>)</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=106">Arbori indexati binari</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

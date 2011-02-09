@@ -1,0 +1,73 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>joc6.in, joc6.out</td><td><strong>Sursă</strong></td><td>Baraj 2008 gimnaziu</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=190">Adrian Nita</a>, <a href="/cauta-probleme?tag_id%5B%5D=189">Maria Nita</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/raduzer"><img src="/utilizator/raduzer?action=download&amp;file=avatar&amp;resize=L16x16" alt="raduzer">Radu Zernoveanu</a> <a title="Rating raduzer: 704" class="rating-badge-1" href="http://infoarena.ro/utilizator/raduzer?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/raduzer">raduzer</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=joc6">Vezi solutiile trimise</a></p>
+
+<h1>Joc6<br></h1>
+
+<p>Gigel, pasionat de jocuri de carti, dar si de informatica, isi propune sa realizeze un program care sa simuleze un joc de carti intre doi jucatori <var>A</var> si <var>B</var> dupa urmatoarele reguli:</p>
+
+
+<ul><li>jocul se desfasoara sub forma unei succesiuni de mutari alternative ale celor doi jucatori; numarul acestor mutari este stabilit la inceputul jocului;</li>
+<li>initial, ambii jucatori primesc acelasi numar de carti, intr-o anumita ordine; numarul maxim de carti primite de un jucator este <var>1000</var>;</li>
+<li>printr-o mutare se intelege punerea unei carti pe masa de catre unul dintre jucatori;</li>
+<li>jucatorii pun alternativ, pe masa, cate o carte dintre cartile primite, in ordinea in care le-au primit;</li>
+<li>in momentul in care un jucator pune pe masa o carte avand aceeasi valoare cu a uneia deja existente pe masa, acest jucator va lua toate cartile aflate pe masa intre aceste doua carti, inclusiv ele, in ordinea inversa fata de cum au fost puse pe masa de joc, cartile astfel luate de pe masa sunt puse in teancul de carti ale respectivului jucator, dupa ultima lui carte;</li>
+<li>castiga jucatorul care ramane fara nici o carte in mana, chiar daca numarul de mutari efectuate pana atunci este mai mic decat numarul total de mutari; jocul se incheie indecis daca dupa numarul de mutari stabilit ambii jucatori mai au carti in mana.</li>
+</ul><h2>Cerinta</h2>
+
+<p>Scrieti un program care sa determine situatia partidei dupa n mutari. Prin situatia partidei intelegem:</p>
+
+
+<ul><li>identificarea castigatorului <var>A</var> sau <var>B</var>;</li>
+<li>identificarea cartilor pe care le are cel care a pierdut partida, sau in caz indecis a cartilor celor doi jucatori la sfarsitul celor <var>n</var> mutari, precum si identificarea cartilor de pe masa, daca acestea exista.</li>
+</ul><h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>joc6.in</var> are urmatorul format:</p>
+
+
+<ul><li>pe prima linie o valoare <var>n</var> reprezentand numarul de mutari;</li>
+<li>pe a doua sunt date separate prin spatiu cartile jucatorului <var>A</var>. Sirul cartilor acestuia se termina cu valoarea <var>0</var> care nu face parte dintre cartile lui;</li>
+<li>pe linia a treia a fisierului de intrare sunt scrise dupa acelasi format cartile jucatorului <var>B</var>.</li>
+</ul><h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>joc6.out</var> va contine trei linii conform urmatoarelor cazuri posibile:</p>
+
+<table><tr><th>Castiga jucatorul A</th><th>Castiga jucatorul B</th><th>Partida indecisa</th></tr><tr><td>A<br>
+  cartile lui B<br>
+  cartile de pe masa<br></td><td>cartile lui A<br>
+  B<br>
+  cartile de pe masa<br></td><td>cartile lui A<br>
+  cartile lui B<br>
+  cartile de pe masa<br></td></tr></table><p>Daca pe masa nu sunt carti se va afisa valoarea <var>0</var> pe linia a treia.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 250</var></li>
+<li><var>1 ≤ valoarea unei carti ≤ 9</var></li>
+<li>Pentru datele de test exista intotdeauna solutie.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>joc6.in</th><th>joc6.out</th></tr><tr><td>4<br>
+1 4 2 3 0<br>
+2 1 3 4 0<br></td><td>2 3<br>
+3 4 1 4 2 1<br>
+0<br></td></tr></table><h3>Explicatie</h3>
+
+<p>mutarea lui <var>A</var>: <var>1</var><br>
+  Masa de joc 1( Cartea pusa de <var>A</var> ); <var>A: 4 2 3</var>; <var>B:2 1 3 4</var><br>
+mutarea lui <var>B</var>: <var>2</var><br>
+  Masa de joc <var>1 2</var> ( <var>B</var> a pus cartea <var>2</var> ); <var>A: 4 2 3</var>; <var>B: 1 3 4</var><br>
+mutarea lui <var>A</var>: <var>4</var><br>
+  Masa de joc <var>1 2 4</var> ( <var>A</var> a pus cartea <var>4</var> ); <var>A: 2 3</var>; <var>B:1 3 4</var><br>
+mutarea lui <var>B</var>: <var>1</var><br>
+  Masa de joc <strong>1</strong> <var>2 4</var> <strong>1</strong> ( <var>B</var> a pus cartea <var>1</var> ); <var>A: 2 3</var>; <var>B: 3 4</var><br>
+Partida se termina indecis ( s-au realizat <var>4</var> mutari ) <var>B</var> va lua cartile <var>1 2 4 1</var> si va avea <var>3 4 1 4 2 1</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p>
+
+<p> </p></div>

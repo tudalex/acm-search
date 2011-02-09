@@ -1,0 +1,58 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>fibo2.in, fibo2.out</td><td><strong>Sursă</strong></td><td>Lot Juniori 2010 - Baraj 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=221">Zoltan Szabo</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/GheorgheMihai"><img src="/utilizator/GheorgheMihai?action=download&amp;file=avatar&amp;resize=L16x16" alt="GheorgheMihai">Gheorghe Mihai</a> <a title="Rating GheorgheMihai: 787" class="rating-badge-1" href="http://infoarena.ro/utilizator/GheorgheMihai?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/GheorgheMihai">GheorgheMihai</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>1024 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=fibo2">Vezi solutiile trimise</a></p>
+
+<h1>Fibo2<br></h1>
+
+<p>Maria este pasionată de matematică. Ea este interesată în special elementele şirului Fibonacci şi vrea să studieze proprietăţile elementelor acestui şir. De curând a scris elementele Fibonacci: <var>1, 1, 2, 3, 5, 8, 13, ...</var> şi a observat că un element, numărul <var>5</var>, poate fi scris ca sumă de alte două numere Fibonacci ridicate la pătrat, <var>5 = 1<sup>2</sup> + 2<sup>2</sup></var>, iar alt număr Fibonacci, numărul <var>144</var>, poate fi scris ca diferenţă a altor două numere Fibonacci ridicate la pătrat, <var>144 = 13<sup>2</sup> - 5<sup>2</sup></var>. <br>
+Maria a fost încântată de rezultatele pe care le-a obţinut şi ar dori să mai găsească şi alte elemente ale şirului care se pot scrie ca sumă sau ca diferenţă de alte două numere Fibonacci ridicate la pătrat.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Ajutaţi-o pe Maria, să decidă despre un element Fibonacci oarecare dacă se poate scrie ca sumă sau diferenţă de două numere Fibonacci distincte ridicate la pătrat. Datorită valorilor mari ale numerelor Fibonacci se cere restul împărţirii lor la <strong><var>46337</var></strong>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>fibo2.in</var> conţine un singur număr natural <var>N</var>, ce reprezintă numărul de ordine al celui de al <var>N</var>-lea număr Fibonacci.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În cazul în care problema are soluţie, fişierul <var>fibo2.out</var> va conţine <var>5</var> rânduri:<br>
+• prima linie a fişierului va conţine valoarea <var>1</var> sau <var>0</var>, după cum cel de al n-lea număr Fibonacci poate fi scris ca sumă, respectiv ca diferenţă a altor două numere Fibonacci ridicate la pătrat.<br>
+• a doua linie a fişierului de ieşire va conţine două numere naturale <var>i</var> şi <var>j</var> (<var>0 &lt; i &lt; j</var>) separate printr-un spaţiu, reprezentând numerele de ordine a celor două elemente Fibonacci cerute în enunţ <var>(f<sub>n</sub> = f<sub>j</sub><sup>2</sup> ± f<sub>i</sub><sup>2</sup>)</var>. <br>
+• a treia linie a fişierului de ieşire va conţine restul împărţirii celui de al <var>i</var>-lea număr Fibonacci la <var>46337</var>, <br>
+• a patra linie a fişierului de ieşire va conţine restul împărţirii celui de al <var>j</var>-lea număr Fibonacci la <var>46337</var> <br>
+• a cincea linie a fişierului de ieşire va conţine restul împărţirii celui de al <var>N</var>-lea număr Fibonacci la <var>46337</var>.<br>
+În cazul în care problema nu are soluţie, fişierul de ieşire va conţine pe prima linie valoarea <var>-1</var>.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>4 ≤ n ≤ 25 000</var></li>
+<li>Indicii numerelor Fibonacci pornesc de la 1: f<sub>1</sub> = 1; f<sub>2</sub> = 1; f<sub>3</sub> = 2, ...</li>
+<li>Pot exista mai multe soluţii, în acest caz se acceptă oricare dintre ele.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>fibo2.in</th><th>fibo2.out</th><th>Explicatie</th></tr><tr><td>5<br></td><td>1<br>
+1 3<br>
+1<br>
+2<br>
+5<br></td><td>1 - este vorba de o sumă<br>
+se folosesc elementele f<sub>1</sub> şi f<sub>3</sub><br><var>f<sub>1</sub> mod 46337 = 1</var> <br><var>f<sub>3</sub> mod 46337 = 2</var><br><var>f<sub>5</sub> mod 46337 = 5</var><br>
+fiindcă <var>f<sub>5</sub> = f<sub>1</sub><sup>2</sup> + f<sub>3</sub><sup>2</sup> = 1<sup>2</sup> + 2<sup>2</sup> = 1 + 4 = 5</var><br></td></tr><tr><td>5<br></td><td>0<br>
+3 4<br>
+2<br>
+3<br>
+5<br></td><td>0 - este vorba de o diferenţă<br>
+se folosesc elementele f<sub>3</sub> şi f<sub>4</sub><br><var>f<sub>3</sub> mod 46337 = 2</var> <br><var>f<sub>4</sub> mod 46337 = 3</var><br><var>f<sub>5</sub> mod 46337 = 5</var><br>
+fiindcă <var>f<sub>5</sub> = f<sub>4</sub><sup>2</sup> - f<sub>3</sub><sup>2</sup> = 3<sup>2</sup> - 2<sup>2</sup> = 9 - 4 = 5</var><br></td></tr><tr><td>12<br></td><td>0<br>
+5 7<br>
+5<br>
+13<br>
+144<br></td><td>0 - este vorba de o diferenţă<br>
+se folosesc elementele f<sub>5</sub> şi f<sub>7</sub><br><var>f<sub>5</sub> mod 46337 = 5</var> <br><var>f<sub>7</sub> mod 46337 = 13</var><br><var>f<sub>12</sub> mod 46337 = 144</var><br>
+fiindcă <var>f<sub>12</sub> = f<sub>7</sub><sup>2</sup> - f<sub>5</sub><sup>2</sup> = 13<sup>2</sup> - 5<sup>2</sup> = 169 - 35 = 144</var><br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

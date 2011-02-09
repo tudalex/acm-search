@@ -1,0 +1,52 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>srevni.in, srevni.out</td><td><strong>Sursă</strong></td><td>Bursele Agora 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">2/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=srevni">Vezi solutiile trimise</a></p>
+
+<h1>Srevni<br></h1>
+
+<table style="margin:0.5em auto;" cellspacing="0"><tr><td align="center" style="background-color:#F8EABA;"><img src="http://infoarena.ro/template/badtests?action=download&amp;file=attention.gif&amp;safe_only=true" alt="" class="left" style="float:left"><em>Testele pentru aceasta problema nu sunt destul de bine construite pentru a departaja corect solutii ineficiente sau gresite.</em><br><a href="http://infoarena.ro/implica-te/imbunatatire-teste"><strong>Intra aici</strong></a> <em>daca vrei sa ne ajuti sa imbunatatim calitatea testelor pentru aceasta problema!</em></td></tr></table><p>Pe planeta Srevni exista <var>N</var> orase legate intre ele prin strazi cu sens unic. Orasele sunt identificate prin numere cuprinse intre <var>1</var> si <var>N</var>. In fiecare din aceste orase se produce un aliment foarte hranitor. Pretul de vanzare al alimentelor poate fi diferit de la oras la oras. Pentru a reduce costurile, transportul alimentelor se realizeaza astfel: o masina de comanda care trebuie sa alimenteze orasul <var>i</var> pleaca din orasul <var>i</var> spre orasul din care trebuie sa aduca alimentele. In momentul cand ajunge la destinatie este incarcata si teleportata in orasul <var>i</var>. Intr-o zi, Regnos, conducatorul planetei, plictisindu-se, s-a gandit ca ar fi bine sa stie care este cel mai mic pret de achizitie al alimentului pentru fiecare oras al planetei.</p>
+
+<h2>Date de intare</h2>
+
+<p>In fisierul de intrare <var>srevni.in</var> vom avea pe prima linie doua numere intregi <var>N</var> si <var>M</var>. Pe linia urmaroate se vor afla <var>N</var> numere naturale separate intre ele prin spatii, care reprezinta preturile alimentelor in fiecare dintre cele <var>N</var> orase. Pe fiecare dintre urmatoarele <var>M</var> linii se vor afla cate doua numere intregi, separate intre ele printr-un spatiu, <var>X</var> si <var>Y</var>, cu semnificatia ca exista drum de la orasul <var>X</var> catre orasul <var>Y</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>srevni.out</var> va contine pe prima linie <var>N</var> numere separate intre ele prin spatii, care reprezinta cele mai mici preturi de achizitie ale alimentelor pentru fiecare dintre cele <var>N</var> orase.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100 000</var></li>
+<li><var>1 ≤ M ≤ 100 000</var></li>
+<li>Preturile sunt numere naturale cuprinse intre <var>1</var> si <var>1 000 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>srevni.in</th><th>srevni.out</th></tr><tr><td>4 4<br>
+1 2 4 3<br>
+1 3<br>
+2 4<br>
+3 2<br>
+3 4<br></td><td>1 2 2 3</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=69">Parcurgere in adancime</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=63">Sortare</a></span>
+            <a href="javascript:show_tag_list(63)" id="tag_anchor_63" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_63"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=64">Sortare</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

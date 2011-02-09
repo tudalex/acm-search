@@ -1,0 +1,68 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>iepuri.in, iepuri.out</td><td><strong>Sursă</strong></td><td>preONI 2005 Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=iepuri">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=iepuri">Vezi solutiile trimise</a></p>
+
+<h1>Iepuri<br></h1>
+
+<p>Zaharel a facut o noua pasiune, si anume vrea sa aiba iepuri! Astfel, el s-a dus intr-o zi (o vom numi ziua 0) la magazine si si-a cumparat <var>X</var>. Se stie ca iepuri se inmultesc in fiecare zi, astfel incat in ziua 1 el avea <var>Y</var> iepuri, iar in ziua 2 <var>Z</var> iepuri. Baiat perspicace, Zaharel a observat ca, incepand cu ziua 3, numarul de iepuri din fiecare zi depinde de numarul de iepuri din ultimele trei zile astfel: se aduna de <var>A</var> ori numarul de iepuri care existau cu o zi in urma, de <var>B</var> ori numarul de iepuri de acum doua zile si de <var>C</var> ori numarul de iepuri de acum trei zile.</p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se determine restul impartirii numarului de iepuri pe care ii va avea Zaharel in ziua <var>N</var> la <var>666013</var>.</p>
+
+<h2>Date de Intrare </h2>
+
+<p>Fisierul de intrare <var>iepuri.in</var> contine mai multe seturi de date. Pe prima linie se va gasi un numar intreg <var>T</var> reprezetand numarul de seturi de date pentru care se cere raspunsul. Pe urmatoarele <var>T</var> linii se vor gasi cate sapte numere intregi, in ordinea urmtoare: <var>X Y Z A B C N</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>iepuri.out</var> va contine <var>T</var> linii, cate un numar intreg pe fiecare linie reprezentand raspunsul pentru un set de date. Raspunsul de pe linia <var>i</var> va trebui sa corespunda cu setul de date de pe linia <var>i+1</var> din fisierul de intrare.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>0 ≤ T ≤ 100</var></li>
+<li><var>1 ≤ X ≤ Y ≤ Z ≤ 10.000</var></li>
+<li><var>1 ≤ A, B, C ≤ 1.000</var></li>
+<li><var>3 ≤ N ≤ 2.000.000.000</var></li>
+<li>Se acorda punctaj pentru un test doar daca s-a dat raspunsul corect pentru toate seturile de date</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>iepuri.in</th><th>iepuri.out</th></tr><tr><td>2<br>
+1 1 2 1 1 1 5<br>
+1 2 3 1 2 3 4</td><td>13<br>
+22</td></tr></table><h3>Explicatie</h3>
+
+<p>Primul set de date:<br>
+In ziua <var>3</var> va avea <var>1*2+1*1+1*1=4</var> iepuri<br>
+In ziua <var>4</var> va avea <var>1*4+1*2+1*1=7</var> iepuri<br>
+In ziua <var>5</var> va avea <var>1*7+1*4+1*2=13</var> iepuri<br>
+Al doilea set de date:<br>
+In ziua <var>3</var> va avea <var>1*3+2*2+3*1=10</var> iepuri<br>
+In ziua <var>4</var> va avea <var>1*10+2*3+3*2=22</var> iepuri</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=262">Exponentiere rapida</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=283">Exponentiere rapida de matrice</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

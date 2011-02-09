@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ecuatii2.in, ecuatii2.out</td><td><strong>Sursă</strong></td><td>OJI 2006, Clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=171">Emanuela Cerchez</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gabitzish1"><img src="/utilizator/gabitzish1?action=download&amp;file=avatar&amp;resize=L16x16" alt="gabitzish1">Gabriel Bitis</a> <a title="Rating gabitzish1: 658" class="rating-badge-1" href="http://infoarena.ro/utilizator/gabitzish1?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gabitzish1">gabitzish1</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ecuatii2">Vezi solutiile trimise</a></p>
+
+<h1>Ecuatii 2<br></h1>
+
+<p>Sa consideram ecuatii de gradul I, de forma: <var>expresie<sub>1</sub>=expresie<sub>2</sub></var>. Expresiile specificate sunt constituite dintr-o succesiune de operanzi, intre care exista semnul + sau semnul - (cu semnificatia binecunoscuta de adunare, respectiv scadere). Fiecare operand este fie un numar natural, fie un numar natural urmat de litera <var>x</var> (litera <var>x</var> reprezentand necunoscuta), fie doar litera <var>x</var> (ceea ce este echivalent cu <var>1x</var>).<br>
+De exemplu: <var>2x-5+10x+4=20-x</var><br>
+Observati ca in ecuatii nu apar paranteze si necunoscuta este intotdeauna desemnata de litera mica <var>x</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care sa rezolve ecuatii de gradul I, in formatul specificat in enuntul problemei.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>ecuatii2.in</var> contine pe prima linie un numar natural <var>N</var>, reprezentand numarul de ecuatii din fisier. Pe fiecare dintre urmatoarele <var>N</var> linii este scrisa cate o ecuatie.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>ecuatii2.out</var> vor fi scrise <var>N</var> linii, cate una pentru fiecare ecuatie din fisierul de intrare. Pe linia i va fi scrisa solutia ecuatiei de pe linia <var>i+1</var> din fisierul de intrare. Daca solutia ecuatiei este un numar real, atunci acesta se va scrie cu <var>4</var> zecimale. Raspunsul este considerat corect daca diferenta in valoare absoluta dintre solutia corecta si solutia concurentului este <var>&lt; 10<sup>-3</sup></var>. In cazul in care ecuatia admite o infinitate de solutii, se va scrie mesajul <var>infinit</var> (cu litere mici). Daca ecuatia nu admite solutii, se va scrie mesajul <var>imposibil</var> (de asemenea cu litere mici).</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 10</var></li>
+<li>Lungimea unei ecuatii nu depaseste <var>255</var> caractere.</li>
+<li>Ecuatiile nu contin spatii.</li>
+<li>Numerele naturale care intervin in ecuatii sunt <var>≤ 1000</var>.</li>
+<li>Punctajul pe un test se acorda daca si numai daca toate ecuatiile din testul respectiv au fost rezolvate corect.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>ecuatii2.in</th><th>ecuatii2.out</th></tr><tr><td>3 <br>
+  2x-4+5x+300=98x<br>
+  x+2=2+x<br>
+  3x+5=3x+2<br></td><td>3.2527<br>
+  infinit<br>
+  imposibil<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

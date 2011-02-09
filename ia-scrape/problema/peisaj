@@ -1,0 +1,48 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>peisaj.in, peisaj.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil 2009, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=140">Csaba Patcas</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Marius"><img src="/utilizator/Marius?action=download&amp;file=avatar&amp;resize=L16x16" alt="Marius">Marius Stroe</a> <a title="Rating Marius: 627" class="rating-badge-4" href="http://infoarena.ro/utilizator/Marius?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Marius">Marius</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>64 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=peisaj">Vezi solutiile trimise</a></p>
+
+<h1>Peisaj<br></h1>
+
+<p>Sora lui Gigel are o cutie mare de beţişoare din care încearcă să „deseneze” linii de orizont. Corespunzător nivelului mării a ales o margine dreaptă de covor, de unde începând aşează beţişoarele în aşa fel ca ele să formeze munţi şi văi ca în figura de mai jos.<br><br><img src="http://infoarena.ro/problema/peisaj?action=download&amp;file=peisaj.png&amp;safe_only=true" alt=""></p>
+
+<h2>Cerinţă</h2>
+
+<p>Ajutaţi-l pe Gigel să răspundă la următoarele întrebări puse de sora lui:</p>
+
+
+<ol><li>Câte linii de orizont diferite se pot „desena” cu cele <var>N</var> beţişoare existente?</li>
+<li>Câte linii de lungime <var>N</var> vor avea un munte de înălţime cel putin <var>K</var>?</li>
+<li>Câte linii de orizont vor conţine exact <var>K</var> vârfuri de munte? (Prin vârf de munte se înţeleg două beţişoare aşezate în linie în forma /\).</li>
+</ol><h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>peisaj.in</var> conţine pe prima linie două numere naturale <var>N</var>, reprezentând numărul beţişoarelor, şi <var>K</var>. </p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>peisaj.out</var> se vor scrie, pe prima linie, trei numere naturale prin care se răspunde la cele trei întrebări de mai sus. </p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 50</var></li>
+<li><var>1 ≤ K ≤ 10</var></li>
+<li>Beţişorul cu care începe linia şi cel cu care se termină trebuie neapărat să atingă marginea covorului din partea în care au fost construite liniile de orizont.</li>
+<li>Niciun beţişor nu poate să treacă de marginea covorului.</li>
+<li>Toate unghiurile /\, respectiv \/ trebuie să fie de 60º.</li>
+<li>Se acordă punctaje parţiale în felul următor: subpunctul 1. 20%, subpunctul 2. 40%, subpunctul 3. 40%.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>peisaj.in</th><th>peisaj.out</th></tr><tr><td>6 2<br></td><td>5 4 3<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Figurile care se pot forma cu <var>6</var> beţişoare sunt:</p>
+
+<p><img src="http://infoarena.ro/problema/peisaj?action=download&amp;file=explicatie.png&amp;safe_only=true" alt=""></p>
+
+<p>Există <var>5</var> linii de orizont, <var>4</var> dintre ele au un munte de înălţime cel puţin <var>2</var> iar <var>3</var> conţin exact <var>2</var> vârfuri de munte.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

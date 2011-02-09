@@ -1,0 +1,38 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>grozavesti.in, grozavesti.out</td><td><strong>Sursă</strong></td><td>preONI 2008 Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=161">Adrian Airinei</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=grozavesti">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=grozavesti">Vezi solutiile trimise</a></p>
+
+<h1>Grozavesti<br></h1>
+
+<p>Hipiotu' a gasit o noua metoda de amuzament. El priveste pe fereastra caminului din Grozavesti si isi imagineaza peisajul mirific de afara ca fiind un caroiaj cu <var>N</var> linii si <var>N</var> coloane. El observa ca in fiecare celula din caroiaj se afla un numar natural cuprins intre <var>1</var> si <var>1 000 000</var>. El vrea sa interschimbe unele linii sau coloane din caroiaj astfel incat la sfarsit elementele de pe diagonala principala sa fie in ordine crescatoare. Elementele de pe diagonala principala sunt elementele pentru care coloana pe care sunt situate este egala cu linia pe care sunt situate. Mai exact daca notam caroiajul cu <var>A</var> dupa ce se efectueaza interschimbarile dorim ca <var>A<sub>1,1</sub> ≤ A<sub>2,2</sub> ≤ ... ≤ A<sub><span class="caps">N,N</span></sub></var>. Pentru Hipiotu' sunt mai importante lucrurile spirituale, de aceea nu vrea sa efectueze neaparat un numar minim de interschimbari, doreste doar ca acest numar sa fie cel mult <var>2*N</var>. In mod evident, nu se poate interschimba o linie sau o coloana cu ea insasi, iar ordinea in care sunt efectuate interschimbarile conteaza.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>grozavesti.in</var> se afla un numar natural <var>N</var> avand semnificatia din enunt. Pe urmatoarele <var>N</var> linii se afla cate <var>N</var> numere separate de un singur spatiu care reprezinta valorile caroiajului imaginat de Hipiotu'.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului <var>grozavesti.out</var> se afla un numar natural <var>M</var> reprezentand numarul de interschimbari efectuat de solutia voastra. Fiecare din urmatoarele <var>M</var> linii descrie in ordine interschimbarile efectuate si au formatul <var>c x y</var>, unde <var>c</var> este un caracter care poate avea valoarea <var>C</var> daca se interschimba doua coloane, respectiv <var>L</var> daca se interschimba doua linii. <var>x</var> si <var>y</var> reprezinta cele doua linii sau coloane care sunt interschimbate.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 300</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>grozavesti.in</th><th>grozavesti.out</th></tr><tr><td>3<br>
+  1 3 2<br>
+  2 1 3<br>
+  2 2 1<br></td><td>2<br>
+  C 2 3<br>
+  L 1 2<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Desigur, ar fi fost posibila o solutie in care numarul de interschimbari sa fie <var>0</var>, dar <var>2 ≤ 3*2</var> deci este corecta si aceasta.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

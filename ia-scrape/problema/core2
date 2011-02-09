@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>core2.in, core2.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2008</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.7 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=core2">Vezi solutiile trimise</a></p>
+
+<h1>Core2<br></h1>
+
+<p>Tocmai v-ati cumparat un procesor cu 2 core-uri, in speranta ca jocurile voastre preferate vor merge mult mai bine (dinamism mai ridicat, calitate a graficii mai buna, etc.). Fiind nerabdator sa testati noul procesor, vreti sa jucati toate cele N jocuri preferate cat mai curand. Jocurile sunt numerotate de la 1 la N si pentru fiecare joc i se cunoaste durata de joc <var>d<sub>i</sub></var> si satisfactia adusa <var>s<sub>i</sub></var>. Constatati repede ca, desi procesorul este mai avansat din punct de vedere tehnologic, jocurile preferate nu sunt in stare sa foloseasca complet noile capabilitati. Astfel, jocurile de la <var>1</var> la <var>X</var> pot fi rulate numai pe core-ul <var>1</var>, iar jocurile <var>X+1,...,N-1</var> pot fi rulate numai pe al doilea core. Jocul <var>N</var> este mai deosebit si necesita folosirea in paralel a ambelor core-uri. Stiind ca la fiecare moment de timp nu poate fi executat mai mult de un joc pe un core si ca nu va deranjeaza sa jucati cate doua jocuri in paralel (cate unul pe fiecare core), precum si ca aveti la dispozitie doar intervalul de timp <var>[0,T]</var> (dupa care trebuie sa mergeti la scoala), determinati ce jocuri veti juca astfel incat satisfactia totala obtinuta sa fie maxima. O constrangere suplimentara este data de faptul ca in intervalul de timp <var>[T<sub>1,N</sub>,T<sub>2,N</sub>]</var> vine in vizita cel mai bun prieten, pe care vreti sa-l impresionati; prin urmare, daca veti decide sa jucati jocul <var>N</var> (cel deosebit), o veti face doar in prezenta prietenului dumneavoastra (altfel spus, jocul <var>N</var> poate fi jucat doar intr-un interval de timp complet inclus in <var>[T<sub>1,N</sub>,T<sub>2,N</sub>]</var>). Un joc contribuie la satisfactia totala numai daca este jucat in intregime in intervalul de timp avut la dispozitie.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>core2.in</var> contine <var>3</var> numere intregi: <var>N</var>, <var>X</var> si <var>T</var>. Urmatoarele <var>N-1</var> linii contin cate doua numere intregi <var>d<sub>i</sub></var> si <var>s<sub>i</sub></var>, reprezentand durata jocului <var>i</var> si satisfactia provocata de acesta (a <var>i</var>-a dintre aceste linii corespunde jocului <var>i</var>). Ultima linie contine <var>4</var> numere intregi, separate prin cate un spatiu: <var>d<sub>N</sub>, s<sub>N</sub>, T<sub>1,N</sub>, T<sub>2,N</sub></var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>core2.out</var> veti afisa un singur numar, reprezentand satisfactia totala maxima pe care o puteti obtine jucand jocuri in intervalul de timp pe care il aveti la dispozitie.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 50</var></li>
+<li><var>1 ≤ X ≤ N-2</var></li>
+<li><var>1 ≤ d<sub>i</sub> ≤ T ≤ 1000</var></li>
+<li><var>0 ≤ T<sub>1,N</sub> &lt; T<sub>2,N</sub> ≤ T</var></li>
+<li><var>1 ≤ d<sub>N</sub> ≤ T<sub>2,N</sub>-T<sub>1,N</sub></var></li>
+<li><var>1 ≤ s<sub>i</sub> ≤ 1000</var></li>
+<li>O data inceput, un joc trebuie jucat pana la sfarsit (altfel spus, daca alegeti sa jucati jocul <var>i</var>, acesta trebuie jucat pe durata unui interval de timp avand durata <var>d<sub>i</sub></var>)).</li>
+<li>Intervalul de timp in care jucati un joc <var>i</var> <var>(1≤i≤N)</var> trebuie sa fie complet inclus in intervalul <var>[0,T]</var>. Intervalul de timp in care jucati jocul <var>N</var> (daca il jucati) trebuie sa fie complet inclus in intervalul <var>[T<sub>1,N</sub>,T<sub>2,N</sub>]</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>core2.in</th><th>core2.out</th></tr><tr><td>7 3 70<br>
+16 20<br>
+29 13<br>
+41 32<br>
+23 8<br>
+17 19<br>
+66 2<br>
+20 30 14 60<br></td><td>90</td></tr></table><h3>Explicatie</h3>
+
+<p>Jocurile <var>1, 2</var> si <var>3</var> pot fi rulate numai pe core-ul <var>1</var>, iar jocurile <var>4</var>, <var>5</var> si <var>6</var> pot fi rulate numai pe core-ul <var>2</var>. Jocul <var>7</var> are nevoie de ambele core-uri in paralel. Satisfactia totala maxima egala cu <var>90</var> se obtine in felul urmator: veti juca jocul <var>1</var> in intervalul <var>[0,16]</var>, jocul <var>7</var> in intervalul <var>[17,37]</var>, jocul <var>2</var> in intervalul <var>[37,68]</var>, jocul <var>5</var> in intervalul <var>[0,17]</var> si jocul <var>4</var> in intervalul <var>[37,60]</var>. Satisfactia totala este <var>s<sub>1</sub>+s<sub>2</sub>+s<sub>4</sub>+s<sub>5</sub>+s<sub>7</sub>=20+13+8+19+30=90</var>. Observati ca in intervalul <var>[17,37]</var> (cand jucati jocul <var>7</var>), niciun alt joc nu este rulat pe nici unul din cele <var>2</var> core-uri, acestea fiind folosite exclusiv de jocul <var>7</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

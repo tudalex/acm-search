@@ -1,0 +1,53 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ct.in, ct.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ct">Vezi solutiile trimise</a></p>
+
+<h1>CT<br></h1>
+
+<p>Intr-o tara exista <var>N</var> orase, numerotate cu numere de la 1 la <var>N</var>. Orasele sunt conectate de strazi astfel incat exista un singur mod de a ajunge de la un oras la altu folosind strazile existente. In aceasta tara <var>K</var> organizatii teroriste fac planuri pentru distrugerea lumii, de aceea echipa CT s-a decis sa ii opreasca. Fiecare grupare terorista are cate o baza in doua din orasele tarii (deasemenea poate avea ambele baze in acelasi oras). Zilnic teroristii merg de la o baza la alta folosind strazile existente, ducand cu ei planurile pentru dominarea lumii. Bombardarea unui oras <var>C</var> va distruge acel oras si toate perechile de orase pentru care drumul dintre ele trecea prin orasul <var>C</var> vor ramane deconectate. Neutralizarea unei grupari teroriste consta in deconectarea oraselor care contin bazele gruparii respective sau in bombardarea a cel putin un oras care contine o baza a gruparii respective. Deoarece bombardarea oraselor implica si moartea unor civili neajutorati echipa CT doreste sa bombardeze cat mai putine orase pentru a neutraliza toate cele <var>K</var> organizatii teroriste.</p>
+
+<h2>Cerinta</h2>
+
+<p>Gasiti numarul minim de orase pe care echipa CT trebuie sa le bombardeze.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>ct.in</var> contine <var>T</var>, numarul de teste din fisier apoi vor urma cele <var>T</var> teste. Pe prima linie a fiecarui test se afla doua numere <var>N</var> si <var>K</var> numarul de orase respectiv numarul gruparilor teroriste. Urmeaza apoi <var>N-1</var> linii continand cate doua numere <var>x, y</var> cu semnificatia exista strada intre orasele <var>x</var> si <var>y</var>. In continuare vor fi <var>K</var> linii, pe linia <var>i</var> aflandu-se doua numere ce reprezinta orasele in care se afla sediul organizatiei <var>i</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>In fisierul <var>ct.out</var> vor exista <var>T</var> linii fiecare continand numarul minim de orase ce trebuie bombardate pentru tara respectiva.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100.000</var></li>
+<li><var>1 ≤ K ≤ 100.000</var></li>
+<li><var>1 ≤ T ≤ 5</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>ct.in</th><th>ct.out</th></tr><tr><td>1<br>
+11 5<br>
+1 2<br>
+2 3<br>
+3 4<br>
+2 5<br>
+5 6<br>
+5 11<br>
+7 1<br>
+10 7<br>
+8 7<br>
+9 8<br>
+4 6<br>
+3 11<br>
+5 9<br>
+10 9<br>
+8 2</td><td>2</td></tr></table><h3>Explicatii</h3>
+
+<p>Se pot bombarda orasele 2 si 7 neutralizand astfel toate gruparile teroriste.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

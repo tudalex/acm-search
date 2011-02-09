@@ -1,0 +1,35 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>nrsec.in, nrsec.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2009, Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=223">Cosmin Gheorghe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gcosmin"><img src="/utilizator/gcosmin?action=download&amp;file=avatar&amp;resize=L16x16" alt="gcosmin">Gheorghe Cosmin</a> <a title="Rating gcosmin: 1142" class="rating-badge-4" href="http://infoarena.ro/utilizator/gcosmin?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gcosmin">gcosmin</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=nrsec">Vezi solutiile trimise</a></p>
+
+<h1>Nrsec<br></h1>
+
+<p>Electra se pregateste pentru olimpiada de informatica. De curand a dat peste urmatoarea problema. Se da un sir de <var>N</var> numere intregi si un numar natural <var>K</var>. Se cere cel mai mic numar intreg <var>S</var> astfel incat numarul de subsecvente a caror suma este mai mica sau egala cu <var>S</var> sa fie cel putin <var>K</var>. Rezolvati problema ca apoi sa ii puteti da un "hint" Electrei despre cum se rezolva. Daca o ajutati, Electra va va rasplati cum poate ea mai bine.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>nrsec.in</var> va contine pe prima linie numerele <var>N</var> si <var>K</var>. Urmatoarea linie contine sirul de <var>N</var> numere intregi separate prin spatii.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>nrsec.out</var> veti afisa numarul <var>S</var> ce respecta cerinta de mai sus.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 10<sup>5</sup></var></li>
+<li><var>1 ≤ K ≤ N * (N + 1) / 2</var></li>
+<li>Modulul numerelor din sir nu va depasi valoarea <var>10<sup>9</sup></var></li>
+<li>Suma unei subsecvente este suma elemetelor continute in acea subsecventa</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>nrsec.in</th><th>nrsec.out</th></tr><tr><td>4 5<br>
+4 -2 3 -1<br></td><td>2<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Sumele tuturor subsecventelor sunt : <var>4,2,5,4,-2,1,0,3,2,-1</var>. Se observa ca <var>6</var> dintre acestea sunt mai mici sau egale cu <var>2</var>. Deci <var>2</var> este raspunsul ce reprezinta cel mai mic numar intreg astfel incat exista cel putin <var>5</var> subsecvente a caror suma este mai mica sau egala cu <var>2</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

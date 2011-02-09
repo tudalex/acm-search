@@ -1,0 +1,47 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>strigat.in, strigat.out</td><td><strong>Sursă</strong></td><td>Summer Challenge 2007, runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=165">Din Folclor</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.6 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=strigat">Vezi solutiile trimise</a></p>
+
+<h1>Strigat<br></h1>
+
+<p>La insistentele aghiotantului sau Arthur, Tick s-a decis sa renunte la strigatul sau de lupta "Lingura". Tick vrea ca strigatul sau sa fie cat mai inspaimantator pentru raufacatorii din oras. Tick stie ca exista <var>M</var> cuvinte care ii sperie pe raufacatori si care daca se vor afla in cadrul strigatului sau provoaca un anumit grad de spaima. Se cunoaste pentru fiecare cuvant gradul de spaima pe care il provoaca <var>A<sub>i</sub></var>. Gradul total de spaima al strigatului va fi <var>A<sub>1</sub>*n<sub>1</sub> + A<sub>2</sub>*n<sub>2</sub> + ... + A<sub>M</sub>*n<sub>M</sub></var>, unde <var>n<sub>i</sub></var> este numarul de aparitii al cunvatului <var>i</var> in cadrul strigatului. Atentie aparitiile cuvintelor se pot suprapune.</p>
+
+<h2>Cerinta</h2>
+
+<p>Ajutati-l pe Tick sa isi gaseasca un strigat de lupta format din <var>N</var> caractere si care provoaca un grad maxim de spaima.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>strigat.in</var> se afla doua numere intregi <var>N</var> si <var>M</var> cu semnificatiile din enunt. Urmeaza apoi <var>M</var> perechi de linii pe prima aflandu-se un cuvant, iar pe a doua gradul de spaima pe care il induce o aparitie a sa.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>strigat.out</var> se afla gradul maxim de spaima pe care il induce un strigat de lungime <var>N</var>. Pe a doua linie se va afla un strigat care induce gradul respectiv de spaima.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100</var></li>
+<li><var>0 ≤ M ≤ 100</var></li>
+<li><var>1 ≤ lungimea unui cuvant ≤ 100</var></li>
+<li><var>0 ≤ A<sub>i</sub> ≤ 1000</var></li>
+<li>printre cele <var>M</var> cuvinte nu vor exista <var>2</var> identice</li>
+<li>pentru gasirea doar a gradului maxim de spaima se va acorda 40% din punctaj.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>strigat.in</th><th>strigat.out</th></tr><tr><td>4 2<br>
+aa<br>
+5<br>
+ab<br>
+6<br></td><td>16<br>
+aaab<br></td></tr></table><h3>Explicatie</h3>
+
+<p><strong>aa</strong> apare de <var>2</var> ori(incepand cu prima respectiv cu a doua pozitie), <strong>ab</strong> apare o singura data deci spaima totala este <var>5*2+6=16</var>.<br>
+Nici un alt strigat nu poate atinge o valoare mai mare.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

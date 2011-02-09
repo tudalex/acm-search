@@ -1,0 +1,48 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>tester.in, tester.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2010, Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=223">Cosmin Gheorghe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Prostu"><img src="/utilizator/Prostu?action=download&amp;file=avatar&amp;resize=L16x16" alt="Prostu">Filip Stefan A.</a> <a title="Rating Prostu: 650" class="rating-badge-4" href="http://infoarena.ro/utilizator/Prostu?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Prostu">Prostu</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=tester">Vezi solutiile trimise</a></p>
+
+<h1>Tester<br></h1>
+
+<p>Paraschiva e tester de jocuri. Ultimul joc pe care il testeaza are <var>N</var> stari si <var>M</var> taste ce definesc anumite actiuni. Fiecare tasta modifica starea jocului dintr-o anumita stare <var>x</var> in <var>y</var>. Paraschiva stie de la creatorii jocului ca oricare doua taste ( <var>x</var>, <var>y</var> ) si ( <var>y</var>, <var>z</var> ) apasate consecutiv produc un <b>combo</b> special (a doua tasta trebuie neaparat sa afecteze starea in care jocul este lasat de prima tasta). Paraschiva trebuie sa testeze toate combourile posibile ce pot aparea in joc. Pentru asta ea procedeaza astfel: porneste din orice stare a jocului si incepe sa tasteze pentru a descoperi efectele combo-urilor. Ea, de asemenea, poate oricand reseta jocul, adica poate reporni din orice stare doreste. Paraschiva se plictiseste repede asa ca doreste sa testeze jocul intr-un mod cat mai distractiv posibil: ea vrea sa produca o serie de tastari si resetari astfel incat <b>orice combo posibil sa apara in secventa exact odata iar numarul total de resetari ale jocului sa fie minim</b>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>tester.in</var> contine pe prima linie doi intregi, <var>N</var> si <var>M</var>. Urmeaza <var>M</var> linii fiecare continand cate doi intregi: linia <var>i+1</var> contine <var>x</var> si <var>y</var> reprezentand faptul ca tasta <var>i</var> modifica starea jocului din <var>x</var> in <var>y</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>tester.out</var> va contine o singura linie care va descrie <b>starile</b> prin care jocul trece in secventa Paraschivei. Orice resetare este marcata cu un <var>R</var>. Pentru a intelege mai bine formatul fisierului de iesire <b>studiati exemplul si explicatia</b>.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 500</var></li>
+<li><var>1 ≤ M ≤ 5000</var></li>
+<li>Nu vor exista doua taste cu acelasi efect (adica sa aibe aceasi pereche ( <var>x</var>, <var>y</var> )).</li>
+<li>Tasta ( <var>x</var>, <var>y</var> ) este diferita de tasta ( <var>y</var>, <var>x</var> ).</li>
+<li>Orice solutie care respecta conditiile din enunt va obtine punctajul pe respectivul test.</li>
+<li>Graful neorientat determinat de stari ca noduri si taste ca muchii este conex.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>tester.in</th><th>tester.out</th></tr><tr><td>5 5<br>
+1 2<br>
+2 3<br>
+3 5<br>
+5 4<br>
+2 4<br></td><td>1 2 3 5 4 R 1 2 4</td></tr><tr><td>4 7<br>
+1 2<br>
+2 3<br>
+3 2<br>
+1 4<br>
+4 3<br>
+3 4<br>
+3 1<br></td><td>4 3 1 4 3 4 R 2 3 1 2 3 4 3 2 3 2</td></tr></table><h3>Explicaţie</h3>
+
+<p>Pentru primul exemplu, tastele apasate sunt (1, 2) (2, 3) (3, 5) (5, 4) - (1, 2) (2, 4). Se observa ca orice combo posibil apare in secventa exact odata ( ( <var>1</var>, <var>2</var> ) este o tasta, nu un combo deci poate aparea de mai multe ori ). <b>Atentie</b>, valorile afisate sunt starile jocului si nu tastele; tastele sunt implicit determinate de doua numere consecutive din secventa.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

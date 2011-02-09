@@ -1,0 +1,48 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>transport2.in, transport2.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil 2010, Clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=215">Marius Stroe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Marius"><img src="/utilizator/Marius?action=download&amp;file=avatar&amp;resize=L16x16" alt="Marius">Marius Stroe</a> <a title="Rating Marius: 627" class="rating-badge-4" href="http://infoarena.ro/utilizator/Marius?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Marius">Marius</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=transport2">Vezi solutiile trimise</a></p>
+
+<h1>Transport2<br></h1>
+
+<p>Se cunoaşte că un autovehicul nu poate circula pe un drum decât dacă masa sa nu depăşeşte masa maximă autorizată a drumului. În calcularea masei autovehiculului se consideră şi pasagerii, mărfurile etc.</p>
+
+<h3>Cerinţă</h3>
+
+<p>Astfel, se dă o hartă sub forma unui graf neorientat, unde nodurile numerotate de la <var>1</var> la <var>n</var> reprezintă localităţile, iar muchiile reprezintă drumurile, împreună cu o masă maximă autorizată. Determinaţi greutatea maximă a unui autovehicul care poate ajunge legal din sursă (nodul <var>1</var>) la destinaţie (nodul <var>n</var>).</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>transport2.in</var> conţine pe prima linie două numere naturale <var>n</var> şi <var>m</var>, reprezentând numărul nodurilor şi, respectiv, numărul muchiilor. Pe următoarele <var>m</var> linii se află câte trei numere naturale <var>x</var> <var>y</var> <var>w</var>, separate prin câte un spaţiu, reprezentând o muchie de masă maximă autorizată <var>w</var> între nodurile <var>x</var> şi <var>y</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>transport2.out</var> veţi afişa o singură valoare, reprezentând greutatea maximă admisă a unui autovehicul care poate ajunge legal din nodul <var>1</var> în nodul <var>n</var>.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>2 ≤ n ≤ 100 000</var></li>
+<li><var>1 ≤ m ≤ 200 000</var></li>
+<li><var>1 ≤ w ≤ 10 000</var></li>
+<li>Ministrul transporturilor a decis că toate drumurile au masa maximă autorizată un număr întreg.</li>
+<li>Se garantează că există cel puţin un drum care leagă nodul <var>1</var> de nodul <var>n</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>transport2.in</th><th>transport2.out</th></tr><tr><td>6 9<br>
+1 2 5<br>
+1 4 3<br>
+2 4 2<br>
+2 3 6<br>
+4 5 4<br>
+3 4 5<br>
+3 5 1<br>
+3 6 3<br>
+5 6 5<br></td><td>4<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Soluţia corespunde traseului <var>1</var> - <var>2</var> - <var>3</var> - <var>4</var> - <var>5</var> - <var>6</var> ce are costurile <var>5</var>, <var>6</var>, <var>5</var>, <var>4</var> şi respectiv <var>5</var>. Orice alt traseu va avea o greutate maximă autorizată mai mică decât <var>4</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

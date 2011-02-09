@@ -1,0 +1,48 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>trib.in, trib.out</td><td><strong>Sursă</strong></td><td>BOI 2003</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=155">Mihai Patrascu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=trib">Vezi solutiile trimise</a></p>
+
+<h1>Consiliul tribului<br></h1>
+
+<p>Tribul Kazooba este format din <var>N</var> oameni ce doresc sa se reuneasca pentru un consiliu al tribului. Oamenii sunt cu totii descendenti a unui singur om, care este seful tribului. Deoarece toti oamenii acestui trib au o viata lunga, ascendentii fiecarei persoane, chiar si seful tribului, sunt in viata si se vor prezenta la consiliu.<br>
+Oamenii ajung la consiliu intr-o anumita ordine si se aseaza la mese la venire. Ei stau intr-un rand de mese paralele. Prima masa este asezata la poalele Muntelui Sfant, si randul se extinde infinit spre vest (partea opusa muntelui). Pe de alta parte, fiecare om ar dori sa fie cat mai aproape de divinitate, asa ca, atunci cand soseste, el se aseaza catre masa cea mai apropiata de Muntele sfant la care nu s-a asezat nici unul dintre copii sau tatal lui.<br>
+Ca de obicei, zeii tribului au o inclinatie aparte pentru frumusete. Ei ar dori sa ceara membrilor tribului sa soseasca la consiliu intr-o ordine in care numarul de mese ocupate sa fie maxim. Din pacate, ei nu au nici un fel de inclinatie pentru programare, asa ca v-au cerut voua sa scrieti un program pentru asta.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care determina numarul maxim de mese ce poate fi ocupat la consiliu.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului <var>trib.in</var> contine un numar intreg <var>N</var>, reprezentand numarul de oameni din trib. Oamenii sunt numerotati de la 1 la <var>N</var>; seful lor este numarul 1. Fiecare dintre urmatoarele linii contin doua numere <var>A, B</var> cu semnificatia "exista o legatura directa de rudenie intre persoanele <var>A</var> si <var>B</var>". Relatiile descrise in fisierul de intrare sunt corecte (de exemplu nu exista cicluri, iar fiecare persoane este unul dintre descendentii sefului).</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul <var>trib.out</var> are o singura linie ce contine numarul maxim de mese care pot fi ocupate.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 &lt; N ≤ 100 000</var></li>
+<li>pentru <var>30%</var> dintre teste <var>N ≤ 1000</var></li>
+<li>orice masa are capacitate nelimitata</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>trib.in</th><th>trib.out</th></tr><tr><td>5<br>
+1 4<br>
+3 2<br>
+1 3<br>
+3 5</td><td>3</td></tr></table><h3>Explicatie</h3>
+
+<p>Daca oamenii sosec in ordinea 2 4 1 5 3, ei se aseaza astfel:<br>
+-2 se aseaza la prima masa<br>
+-4 se aseaza la prima masa<br>
+-1 are un fiu (4) la prima masa asa ca se aseaza la masa a 2-a<br>
+-5 se aseaza la prima masa<br>
+-3 are 2 fii la prima masa (2 si 5) si pe tatal sau (1) la a 2-a masa, asa ca se aseaza la a 3-a masa</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

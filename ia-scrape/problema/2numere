@@ -1,0 +1,53 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>2numere.in, 2numere.out</td><td><strong>Sursă</strong></td><td>Baraj 2008 gimnaziu</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=135">Stelian Ciurea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/raduzer"><img src="/utilizator/raduzer?action=download&amp;file=avatar&amp;resize=L16x16" alt="raduzer">Radu Zernoveanu</a> <a title="Rating raduzer: 704" class="rating-badge-1" href="http://infoarena.ro/utilizator/raduzer?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/raduzer">raduzer</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=2numere">Vezi solutiile trimise</a></p>
+
+<h1>2Numere<br></h1>
+
+<p>Se dau doua grupe de cifre. Fiecare grupa contine cate <var>n</var> cifre, nu neaparat distincte intre ele. Asezand toate cifrele primei grupe intr-o ordine oarecare, obtinem un numar pe care in notam cu <var>n1</var>. Intr-un mod asemanator, asezand toate cifrele celei de a doua grupe intr-o ordine oarecare, obtinem un alt numar, <var>n2</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se determine <var>n1</var> si <var>n2</var> astfel incat diferenta <var>n1-n2</var> sa fie mai mare sau egala cu <var>0</var> si minima. In cazul in care exista mai multe posibilitati de a forma cele doua numere pentru a obtine diferenta minima, se alege varianta in care <var>n1</var> este minim.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>2numere.in</var> contine pe prima linie o valoare naturala, reprezentand valoarea lui <var>n</var>. Pe fiecare din urmatoarele doua linii se afla cate <var>n</var> cifre separate prin cate un spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>2numere.out</var> va contine trei linii. Pe prima linie se va afla un numar natural reprezentand valoarea determinata pentru <var>n1</var>. Pe a doua linie se va afla valoarea determinata pentru <var>n2</var>. Pe a treia linie se va afla o valoare reprezentand diferenta dintre <var>n1</var> si <var>n2</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ n ≤ 9</var>; pentru <var>50%</var> din teste, <var>n ≤ 5</var></li>
+<li>pentru toate datele de test exista solutie</li>
+<li>in fiecare dintre cele doua grupe exista cel putin o cifra nenula</li>
+<li>daca un program determina corect diferenta minima, el obtine <var>50%</var> din punctaj; daca programul determina corect si cea mai mica valoare a lui <var>n1</var> pentru care se obtine aceasta diferenta minima, el obtine <var>100%</var> din punctaj</li>
+<li>cifrele de <var>0</var> aflate la inceputul numerelor <var>n1</var> sau <var>n2</var> nu se vor afisa</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>2numere.in</th><th>2numere.out</th></tr><tr><td>2<br>
+  2 4<br>
+  9 1<br></td><td>24<br>
+  19<br>
+  5<br></td></tr><tr><td>4<br>
+  3 4 2 4<br>
+  9 0 1 5<br></td><td>2344<br>
+  1950<br>
+  394<br></td></tr><tr><td>3<br>
+  4 0 0<br>
+  0 4 0<br></td><td>4<br>
+  4<br>
+  0<br></td></tr></table><h3>Explicatie</h3>
+
+<p>La testul al treilea, exista si alte valori pentru <var>n1</var> si <var>n2</var> care dau diferenta <var>0</var>, dar pentru acestea valoarea lui <var>n1</var> nu este minima, de exemplu <var>n1=40</var> si <var>n2=40</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p>
+
+<p> </p></div>

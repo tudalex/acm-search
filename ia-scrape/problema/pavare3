@@ -1,0 +1,52 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>pavare3.in, pavare3.out</td><td><strong>Sursă</strong></td><td>ONI 2008, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=184">Doru Popescu Anastasiu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/bogdan2412"><img src="/utilizator/bogdan2412?action=download&amp;file=avatar&amp;resize=L16x16" alt="bogdan2412">Bogdan-Cristian Tataroiu</a> <a title="Rating bogdan2412: 1162" class="rating-badge-4" href="http://infoarena.ro/utilizator/bogdan2412?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/bogdan2412">bogdan2412</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=pavare3">Vezi solutiile trimise</a></p>
+
+<h1>Pavare3<br></h1>
+
+<p>Dupa terminarea facultatii, Ionica a ajuns inginer constructor si vrea sa se angajeze in orasul sau natal. Dupa ce studiaza ofertele de munca, gaseste un post de inginer la Primarie. Pentru a ocupa acest post trebuie sa sustina o proba teoretica. La acesta proba, el trebuie sa realizeze un proiect pentru pavarea pietei din centrul orasului.</p>
+
+<p>Piata are forma unui dreptunghi si are trasat un caroiaj, astfel incat poate fi reprezentata ca un tablou bidimensional cu <var>N</var> linii si <var>P</var> coloane. Fiecare element al matricei corespunde unui patrat cu latura de <var>1 m</var>. Pavarea se poate realiza folosind dale de doua tipuri:</p>
+
+<table><tr><th>Tipul <var>F</var></th><th>Tipul <var>I</var></th></tr><tr><td align="center"><img src="http://infoarena.ro/problema/pavare3?action=download&amp;file=F.jpg&amp;safe_only=true" alt=""></td><td align="center"><img src="http://infoarena.ro/problema/pavare3?action=download&amp;file=I.jpg&amp;safe_only=true" alt=""></td></tr></table><p>Observati ca o dala de tip <var>F</var> este formata din <var>6</var> patrate de latura <var>1 m</var>, dispuse in forma literei <var>F</var> (deci acopera o suprafata cu aria de <var>6 m<sup>2</sup></var>), iar o dala de tipul <var>I</var> este formata din doua patrate cu latura de <var>1 m</var> (deci va avea aria <var>2 m<sup>2</sup></var>).</p>
+
+<p>Prin pavarea pietei se intelege acoperirea fiecarui patrat de latura <var>1 m</var> al pietei cu exact o singura dala. Dalele se pot roti si pot fi utilizate pe orice fata.</p>
+
+<p>Restrictia impusa de primar este ca suprafata din piata pavata cu dale de tipul <var>F</var> sa aiba aceeasi arie cu cea pavata cu dale de tipul <var>I</var>.</p>
+
+<p>Pentru a vizualiza modalitatea de pavare a pietei, Ionica va numerota dalele cu numere naturale consecutive incepand de la <var>1</var>. Numarul asociat unei dale va fi scris in fiecare patrat din piata acoperit de dala respectiva. </p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care sa determine o modalitate de pavare a pietei, care sa respecte conditiile de mai sus.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>pavare3.in</var> va contine pe prima linie doua numere naturale separate prin spatiu <var>N P</var> reprezentand numarul de linii si respectiv numarul de coloane ale matricei.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>pavare3.out</var> va contine <var>N</var> linii, pe fiecare linie fiind scrise <var>P</var> numere naturale separate prin cate un spatiu. Valorile scrise in fisierul de iesire sunt numerele asociate dalelor care acopera cele <var>N * P</var> patrate ale pietei.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>3 ≤ N, P ≤ 150</var></li>
+<li>Produsul <var>N * P</var> este multiplu de <var>24</var>.</li>
+<li>Solutia nu este unica, se poate afisa orice solutie.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>pavare3.in</th><th>pavare3.out</th></tr><tr><td>6 4<br></td><td>7 7 8 8<br>
+1 1 2 2<br>
+1 3 3 2<br>
+1 1 2 2<br>
+1 4 4 2<br>
+5 5 6 6<br></td></tr></table><h3>Explicatie</h3>
+
+<p><img src="http://infoarena.ro/problema/pavare3?action=download&amp;file=exemplu.jpg&amp;safe_only=true" alt="" class="right" style="float:right"> Am pavat o piata cu <var>6</var> linii si <var>4</var> coloane, avand aria <var>24 m<sup>2</sup></var>. Pentru pavare s-au utilizat <var>8</var> dale (<var>2</var> dale de tip <var>F</var> care acopera o suprafata cu aria <var>2 * 6 = 12 m<sup>2</sup></var> si <var>6</var> dale de tip <var>I</var>, care acopera restul pietei, avand de asemenea aria <var>12 m<sup>2</sup></var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

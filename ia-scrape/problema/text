@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>text.in, text.out</td><td><strong>Sursă</strong></td><td>preONI 2005 Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=124">Adrian Vladu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">1/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=text">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=text">Vezi solutiile trimise</a></p>
+
+<h1>Text<br></h1>
+
+<p>Dezamagit de rezultatele sale la ultimul concurs, Paftenie a renuntat la programare si s-a concentrat strict asupra muncii laborioase, dar care implica mai putin efort intelectual. De aceasta data, el primeste un text si trebuie sa calculeze lungimea medie a cuvintelor textului, un cuvant fiind definit ca o secventa continua maximala de caractere ale alfabetului englez ('a' .. 'z' , 'A' .. 'Z'). Definim lungimea medie = (lungimea totala a cuvintelor textului) / (numarul de cuvinte ale textului).</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care ii rezolva problema lui Paftenie.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>text.in</var> se gaseste textul dat.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>text.out</var> va contine pe prima linie un singur intreg, reprezentand partea intreaga a lungimii medii a cuvintelor textului.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li>Dimensiunea fisierului de intrare este de cel mult 1MB</li>
+<li>Fisierul de intrare va contine doar litere mari si mici, cifre, spatii si simboluri (adica nu va contine caractere speciale)</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>text.in</th><th>text.out</th></tr><tr><td>- Lasa-ma in pace, ca am invatat azi noapte toata ziua!</td><td>3</td></tr></table><p><em>Explicatie</em>: Lungimea totala a cuvintelor textului = 41, numarul de cuvinte = 11 =&gt; [41 / 11] = 3.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_1"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=55">Siruri de caractere</a></span>
+            <a href="javascript:show_tag_list(55)" id="tag_anchor_55" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_55"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=67">Parsare</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

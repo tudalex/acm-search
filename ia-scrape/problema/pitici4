@@ -1,0 +1,75 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>pitici4.in, pitici4.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2010, Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=167">Paul-Dan Baltescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/pauldb"><img src="/utilizator/pauldb?action=download&amp;file=avatar&amp;resize=L16x16" alt="pauldb">Paul-Dan Baltescu</a> <a title="Rating pauldb: 792" class="rating-badge-4" href="http://infoarena.ro/utilizator/pauldb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/pauldb">pauldb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=pitici4">Vezi solutiile trimise</a></p>
+
+<h1>Pitici4<br></h1>
+
+<p>Laura locuieşte împreună cu cei <var>N</var> pitici. Într-una din zilele trecute, piticii au facut o plimbare prin pădurea din jurul căsuţei lor. În timpul plimbării piticii au format mai multe grupuri, fiecare pitic formând un grup cu prietenii lui cei mai apropiaţi. Cum cărările pădurii sunt destul de înguste, două grupuri de pitici nu puteau merge în paralel. Din păcate, în astfel de situaţii când piticii se pun pe povestit se întâmplă să-şi uite bunele maniere şi curând au devenit atât de gălăgioşi încât au ajuns să le deranjeze pe restul vieţuitoarelor din pădure. Laura a aflat aceste lucruri si s-a hotărât să îi certe, dar mai întâi a dorit să afle cum erau aceştia aşezaţi în grupuri. Piticii nu doresc să-şi trădeze prietenii apropiaţi şi, de aceea, tot ce sunt de acord să-i spună Laurei sunt fraze de tipul următor: <em>Numărul total de pitici din alte grupuri ce se aflau în faţa mea şi în spatele meu este A<sub>i</sub> şi, respectiv, B<sub>i</sub></em>. Unii pitici mai isteţi şi-au dat seama că aceste informaţii îi sunt suficiente Laurei pentru a reconstitui aşezarea lor pe grupuri şi, pentru a o încurca, au minţit. Cum socoteala nu a ieşit, Laura şi-a dat seama că unii pitici au minţit-o. Cum nu mai poate reconstitui aşezarea piticilor, ea doreşte să ştie care este numărul maxim de pitici ale căror informaţii nu se contrazic.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Cunoscând informaţiile furnizate de pitici, determinaţi numărul maxim de pitici ale căror informaţii nu se contrazic.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>pitici4.in</var> va conţine, pe prima linie, numărul întreg <var>N</var>. Pe următoarele <var>N</var> linii se găsesc câte două numere întregi A<sub>i</sub> şi B<sub>i</sub> corespunzătoare afirmaţiilor făcute de pitici.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>pitici4.out</var> va conţine un singur număr întreg reprezentând numărul maxim de pitici ale căror informaţii nu se contrazic.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 200 000</var></li>
+<li><var>0 ≤ A<sub>i</sub>, B<sub>i</sub> ≤ 10<sup>6</sup></var></li>
+<li>Pentru 20% din teste, <var>N ≤ 18</var></li>
+<li>Pentru 50% din teste, <var>N ≤ 5 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>pitici4.in</th><th>pitici4.out</th></tr><tr><td>9<br>
+6 4<br>
+0 4<br>
+4 4<br>
+6 0<br>
+5 3<br>
+0 4<br>
+0 4<br>
+6 0<br>
+7 0<br></td><td>6<br></td></tr><tr><td>4<br>
+0 1<br>
+0 1<br>
+0 1<br>
+0 1<br></td><td>3<br></td></tr></table><h3>Explicaţie</h3>
+
+<p><strong>Exemplul 1</strong>:</p>
+
+<p>Putem presupune că există <var>3</var> grupuri: primul de <var>5</var> pitici, al doilea de <var>1</var> pitic şi ultimul de <var>3</var> pitici. Pentru această aşezare pe grupuri, piticii ale căror informaţii nu se contrazic sunt <var>2</var>, <var>4</var>, <var>5</var>, <var>6</var>, <var>7</var> şi <var>8</var>. Piticii <var>2</var>, <var>6</var> şi <var>7</var> ar aparţine primului grup, piticul <var>5</var> formează al doilea grup, iar piticii <var>4</var> şi <var>8</var> ar aparţine celui de-al treilea grup. Această aşezare pe grupuri corespunde numărului maxim de pitici ale căror informaţii nu se contrazic. Pe acest exemplu, mai observăm că afirmaţia primului pitic nu va fi niciodată adevărată (el susţinând că în total există minim <var>6+1+4=11</var> pitici).</p>
+
+<p><strong>Exemplul 2</strong>:</p>
+
+<p>Putem presupune că există două grupuri: unul de <var>3</var> pitici şi unul format dintr-un singur pitic. Putem considera că oricare <var>3</var> pitici spun adevărul, însă cel de-al patrulea obligatoriu minte (deoarece nu se poate afla în acelaşi grup cu ceilalţi <var>3</var>, aceştia susţinând că un pitic se află într-un alt grup în spatele lor).</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=63">Sortare</a></span>
+            <a href="javascript:show_tag_list(63)" id="tag_anchor_63" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_63"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=64">Sortare</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

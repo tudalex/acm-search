@@ -1,0 +1,36 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>tunel.in, tunel.out</td><td><strong>Sursă</strong></td><td>preONI 2008 Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/wefgef"><img src="/utilizator/wefgef?action=download&amp;file=avatar&amp;resize=L16x16" alt="wefgef">Andrei Grigorean</a> <a title="Rating wefgef: 783" class="rating-badge-4" href="http://infoarena.ro/utilizator/wefgef?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/wefgef">wefgef</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=tunel">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=tunel">Vezi solutiile trimise</a></p>
+
+<h1>Tunelul groazei<br></h1>
+
+<p>Miruna a reusit de curand sa mituiasca functionarii publici din Tara Minunilor si astfel a capatat dreptul de a construi mult visatul tunel al groazei in parcul de distractii. Miruna crede ca dupa ce se va deschide, tunelul va fi cea mai importanta atractie a parcului. El consta din mai multe drumuri intunecate, care se intalnesc uneori in puncte de intersectie. Se stie ca sunt <var>N</var> astfel de puncte de intersectie, si <var>M</var> drumuri intunecate care leaga <var>2</var> puncte de intersectie. Pentru fiecare drum, se cunoaste timpul necesar parcurgerii lui. Tunelul are <var>2</var> usi prin care se poate intra sau iesi afara. Acestea se afla in intersectiile numerotate cu <var>1</var> si cu <var>N</var>. Initial, curajosii care se vor avanta sa incerce tunelul, vor intra pe usa din intersectia <var>1</var>, iar apoi aceasta usa se va inchide in urma lor. Apoi, pentru a iesi afara, trebuie sa gaseasca intersectia cu numarul <var>N</var>. O data ce au ajuns in intersectia <var>N</var> calatoria lor ia sfarsit, usa se deschide si sunt obligati sa paraseasca tunelul. Deoarece este intuneric, ei nu vad aproape nimic, iar atunci cand ajung intr-o intersectie, exista aceeasi probabilitate sa isi continue traseul pe oricare din drumurile care isi au unul din capete in intersectia respectiva. Deoarece este o fetita mica si lacoma, Miruna ar dori sa stie care este media tuturor timpilor necesari pentru a parcurge drumurile de la intersectia <var>1</var> la <var>N</var>. Astfel ar putea estima ce profit ar avea si cat de repede si-ar recupera banii investiti in functionarii publici.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>tunel.in</var> se vor gasi <var>2</var> numere intregi <var>N</var> si <var>M</var>, avand semnificatia din enunt. Pe urmatoarele <var>M</var> linii se vor afla cate <var>3</var> numere <var>A</var>, <var>B</var> si <var>C</var>, semnificand faptul ca intre intersectiile <var>A</var> si <var>B</var> exista un drum bidirectional a carui traversare dureaza <var>C</var> minute.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>tunel.out</var> veti scrie un singur numar real care reprezinta timpul mediu de parcurgere a drumurilor de la intersectia <var>1</var> la <var>N</var>. Rezultatul se accepta cu o eroare de <var>0.001</var>.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 255</var></li>
+<li><var>N-1 ≤ M ≤ 100000</var></li>
+<li>Timpul necesar traversarii oricarui drum este mai mic decat <var>1000</var>.</li>
+<li>Din intersectia <var>1</var> se poate ajunge in oricare alta.</li>
+<li>Pot exista mai multe drumuri care sa lege aceleasi intersectii.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>tunel.in</th><th>tunel.out</th></tr><tr><td>4 3<br>
+  1 2 1<br>
+  2 3 1<br>
+  3 4 1<br></td><td>9<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

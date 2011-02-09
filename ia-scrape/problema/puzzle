@@ -1,0 +1,63 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>puzzle.in, puzzle.out</td><td><strong>Sursă</strong></td><td>Baraj 2008 gimnaziu</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=216">Livia Toca</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/raduzer"><img src="/utilizator/raduzer?action=download&amp;file=avatar&amp;resize=L16x16" alt="raduzer">Radu Zernoveanu</a> <a title="Rating raduzer: 704" class="rating-badge-1" href="http://infoarena.ro/utilizator/raduzer?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/raduzer">raduzer</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=puzzle">Vezi solutiile trimise</a></p>
+
+<h1>Puzzle<br></h1>
+
+<p>Unul dintre jocurile preferate ale lui Temistocle este un puzzle In care el are la dispozitie un cuvant, fiecare litera a acestuia fiind scrisa pe cate o placuta. Initial, toate placutele sunt amestecate si asezate intr-o ordine oarecare pe un suport liniar, pozitiile placutelor fiind numerotate de la stanga la dreapta, incepand cu <var>1</var>.<br>
+Daca se alege o placuta drept pivot, se obtin doua grupe: </p>
+
+
+<ul><li>grupa <b>1</b> - formata din toate placutele din stanga placutei-pivot, inclusiv aceasta;</li>
+<li>grupa <b>2</b> - formata din toate placutele din dreapta placutei-pivot, fara aceasta.</li>
+</ul><p>Dupa alegerea placutei-pivot, toate placutele din grupa <var>1</var>, daca exista, se deplaseaza circular spre stanga cu exact o pozitie, iar toate placutele din grupa <var>2</var>, daca exista, se deplaseaza circular spre dreapta, cu exact o pozitie, ca in figura de mai jos, dupa care placutele se renumeroteaza, de la stanga la dreapta, incepand cu <var>1</var>.</p>
+
+<p><img src="http://infoarena.ro/problema/puzzle?action=download&amp;file=pivot.jpg&amp;safe_only=true" alt=""></p>
+
+<p>Scopul jocului este ca prin alegerea unui sir potrivit de placute-pivot sa se obtina o asezare a placutelor, astfel incat cuvantul format din literele scrise pe acestea, de la stanga la dreapta, sa fie identic cu cuvantul corect.</p>
+
+<h2>Date de intrare</h2>
+
+<p>In fisierul de intrare <var>puzzle.in</var> se afla</p>
+
+
+<ul><li>pe prima linie, cuvantul corect;</li>
+<li>pe a doua linie, cuvantul format prin asezarea initiala a placutelor.</li>
+</ul><h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>puzzle.out</var> se vor scrie, separate prin cate un spatiu, numerele naturale, reprezentand pozitiile placutelor-pivot, in ordinea alegerii lor. sirul se incheie cu numarul <var>0</var>, care nu corespunde niciunei placute, ci reprezinta finalul jocului.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>Fiecare cuvant are cel mult <var>250</var> de litere.</li>
+<li>Daca exista mai multe solutii, se va furniza una singura, nu neaparat optima, ce contine cel mult <var>80.000</var> de mutari.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>puzzle.in</th><th>puzzle.out</th></tr><tr><td>abc<br>
+  bac<br></td><td>2 0<br></td></tr><tr><td>abcabc<br>
+  aabbcc<br></td><td>6 2 2 0<br></td></tr><tr><td>xyz<br>
+ xyz<br></td><td>0<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Exemplul 1:<br>
+pivot - <var>2</var> <br>
+ba | c -&gt; ab | c</p>
+
+<p>Exemplul 2:<br>
+pivot - <var>6</var><br>
+aabbcc | -&gt; abbcca |<br>
+pivot - <var>2</var><br>
+ab | bcca -&gt; ba | abcc<br>
+pivot - <var>2</var><br>
+ba | abcc -&gt; ab | cabc</p>
+
+<p>Exemplul 3:<br>
+Cuvantul corespunzator placutelor este cel corect.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p>
+
+<p> </p></div>

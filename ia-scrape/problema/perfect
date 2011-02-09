@@ -1,0 +1,59 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>perfect.in, perfect.out</td><td><strong>Sursă</strong></td><td>Lot 2006 Alba</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=186">Marinel Serban</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=perfect">Vezi solutiile trimise</a></p>
+
+<h1>Perfect<br></h1>
+
+<p>Sa consideram secvente de grafuri neorientate de tipurile urmatoare:</p>
+
+
+<ul><li>Tipul <var>A</var><br>
+Secventa grafurilor de tip <var>A</var> se construieste in modul ce se poate deduce din exemplele urmatoare:<br>
+    <var>A1</var>       <var>A2</var>      <var>A3</var>           <var>A4</var>       <var>A5</var><br><img src="http://infoarena.ro/problema/perfect?action=download&amp;file=poza1.jpg&amp;safe_only=true" alt=""><br>
+Observati ca graful <var>An</var> are <var>2n</var> varfuri.</li>
+<li>Tipul <var>B</var><br>
+Secventa grafurilor de tip <var>B</var> se construieste dupa modelul urmator:<br>
+    <var>B1</var>       <var>B2</var>      <var>B3</var>           <var>B4</var><br><img src="http://infoarena.ro/problema/perfect?action=download&amp;file=poza2.jpg&amp;safe_only=true" alt=""></li>
+<li>Tipul <var>C</var><br>
+Secventa grafurilor de tip <var>C</var> se construieste dupa modelul urmator:<br>
+    <var>C1</var>    <var>C2</var>        <var>C3</var>           <var>C4</var><br><img src="http://infoarena.ro/problema/perfect?action=download&amp;file=poza3.jpg&amp;safe_only=true" alt=""></li>
+</ul><p>Se numeste cuplaj perfect in graf o modalitate de a alege muchii ale grafului astfel incat oricare varf din graf sa fie incident cu exact o muchie aleasa. Doua cuplaje sunt distincte daca exista o muchie care apartine unui cuplaj, dar nu apartine celuilalt.</p>
+
+<h2>Cerinta</h2>
+
+<p>Dat fiind un graf de unul dintre tipurile din enunt, sa se determine numarul de cuplaje perfecte distincte ale grafului respectiv.</p>
+
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>perfect.in</var> contine o singura linie pe care se afla un caracter si un numar natural nenul <var>n</var>, separate printr-un spatiu. Caracterul poate fi <var>A</var>, <var>B</var> sau <var>C</var> si indica tipul grafului. Numarul natural <var>n</var> indica numarul de ordine al grafului in secventa de grafuri de tipul specificat de caracter.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>perfect.out</var> va contine o singura linie pe care va fi scris numarul de cuplaje perfecte ale grafului din fisierul de intrare.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ n ≤ 100</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>perfect.in</th><th>perfect.out</th></tr><tr><td>A 4<br></td><td>5<br></td></tr><tr><td>B 2<br></td><td>4<br></td></tr><tr><td>C 2<br></td><td>8<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Cele <var>5</var> cuplaje perfecte ale grafului <var>A4</var> sunt:</p>
+
+<p><img src="http://infoarena.ro/problema/perfect?action=download&amp;file=exp1.jpg&amp;safe_only=true" alt=""></p>
+
+<p>Cele <var>4</var> cuplaje perfecte ale grafului <var>B2</var> sunt:</p>
+
+<p><img src="http://infoarena.ro/problema/perfect?action=download&amp;file=exp2.jpg&amp;safe_only=true" alt=""></p>
+
+<p>Cele <var>8</var> cuplaje perfecte ale grafului <var>C2</var> sunt:</p>
+
+<p><img src="http://infoarena.ro/problema/perfect?action=download&amp;file=exp3.jpg&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

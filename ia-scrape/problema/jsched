@@ -1,0 +1,37 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>jsched.in, jsched.out</td><td><strong>Sursă</strong></td><td>Selectie individuala ACM ICPC, UPB 2009</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=jsched">Vezi solutiile trimise</a></p>
+
+<h1>Jsched<br></h1>
+
+<p>Pe un procesor trebuie sa se execute <var>N</var> aplicatii, numerotate de la <var>1</var> la <var>N</var>. Fiecare aplicatie <var>i</var> are un timp de executie <var>t(i)</var> si o pondere <var>w(i)</var>. Aplicatiile vor fi executate pe procesor intr-o ordine oarecare, fara intrerupere. Fie ordinea in care se executa aplicatiile <var>p(1), ..., p(N)</var>. Costul asociate aplicatiei <var>p(i)</var> este <var>C(p(i))=(t(p(1))+...+t(p(i)))*w(p(i))</var>. Costul total asociat executiei tuturor aplicatiilor este egal cu <var>C(1)+...+C(N)</var>. Determinati costul total minim posibil (care, evident, depinde de ordinea aleasa pentru a executa aplicatiile).</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>jsched.in</var> contine pe prima linie numarul natural <var>N</var>. A <var>i</var>-a din urmatoarele <var>N</var> linii contine <var>2</var> numere naturale: <var>t(i)</var> si <var>w(i)</var>, separate printr-un spatiu.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>jsched.out</var> veti afisa costul total minim posibil.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100.000</var></li>
+<li><var>1 ≤ t(i) ≤ 1.000</var></li>
+<li><var>1 ≤ w(i) ≤ 1.000</var></li>
+<li><strong>Aceasta problema are testele impartite in 2 grupe, valorand 30 si, respectiv, 70 de puncte.</strong></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>jsched.in</th><th>jsched.out</th></tr><tr><td>3<br>
+2 4<br>
+5 2<br>
+1 7<br></td><td>35<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Aplicatiile vor fi executate in ordinea <var>3, 1, 2</var>. Vom avea <var>C(3)=1*7=7</var>, <var>C(1)=3*4=12</var> si <var>C(2)=8*2=16</var>. Costul total este <var>7+12+16=35</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,76 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>soc2.in, soc2.out</td><td><strong>Sursă</strong></td><td>lot 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/azotlichid"><img src="/utilizator/azotlichid?action=download&amp;file=avatar&amp;resize=L16x16" alt="azotlichid">Adrian Vladu</a> <a title="Rating azotlichid: 631" class="rating-badge-4" href="http://infoarena.ro/utilizator/azotlichid?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/azotlichid">azotlichid</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=soc2">Vezi solutiile trimise</a></p>
+
+<h1>Soc 2<br></h1>
+
+<p>Un grup de <var>N</var> oameni de afaceri s-au antalnit cu ocazia unei conferinte. Unii dintre ei sunt dusmani, altii nu (de prietenie nu se prea pune problema cand este vorba de afaceri). Fiecare dintre ei are un cont in banca ce contine o anumita suma exprimata in euro. De fiecare data cand se intalnesc, se gandesc cum sa initieze o noua afacere. De data aceasta s-au decis sa infiinteze o societate, la care actionarii sa fie o parte dintre ei, astfel incat oricare doi oameni de afaceri care sunt actionari ai societatii sa nu fie dusmani, iar capitalul societatii (egal cu totalul sumelor din conturile actionarilor) sa fie maxim. Pentru a determina actionarii acestei societati, v-au angajat pe dumneavoastra si, daca le veti da raspunsul in timp util, veti fi recompensat cu o suma frumoasa.</p>
+
+<p>Inainte de a va apuca de treaba, cei <var>N</var> oameni de afaceri v-au pus la dispozitie informatii referitoare la conturile lor din banca si la relatiile de dusmanie dintre ei. Analizand problema, ati ajuns la concluzia ca relatiile de dusmanie pot fi reprezentate sub forma unui graf neorientat cu <var>N</var> varfuri (corespunzatoare celor <var>N</var> oameni de afaceri); intre doua varfuri diferite exista o muchie, daca cei doi oameni de afaceri corespunzatori celor doua varfuri din graf sunt dusmani (dusmania este reciproca). Graful are o structura speciala, mai exact el este un <var>graf cordal</var>. Un graf se numeste <var>graf cordal</var> daca indeplineste una dintre urmatoarele <var>2</var> conditii:</p>
+
+
+<ol><li>Este un graf cu un singur nod.</li>
+<li>Se obtine inserand un nod nou <var>X</var> intr-un graf cordal <var>G</var>, astfel: se alege o submultime de noduri din <var>G</var>, cu proprietatea ca exista muchie intre oricare doua noduri din submultime (submultimea poate contine si doar un singur nod), si se introduce cate o muchie intre nodul nou inserat <var>X</var> si fiecare nod din submultime.<br><br><img src="http://infoarena.ro/problema/soc2?action=download&amp;file=1.bmp&amp;safe_only=true" alt=""></li>
+</ol><p>O definitie echivalenta a grafurilor cordale este urmatoarea: un graf se numeste <var>graf cordal</var> daca este conex si orice ciclu elementar (ce contine fiecare nod al grafului cel mult o data) avand cel putin 4 noduri contine cel putin o "coarda" (o muchie intre doua noduri care fac parte din ciclu, dar nu sunt adiacente pe ciclu).<br>
+In continuare, iata cateva exemple de grafuri cordale si grafuri care nu sunt cordale :</p>
+
+<p><img src="http://infoarena.ro/problema/soc2?action=download&amp;file=2.bmp&amp;safe_only=true" alt=""></p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare se afla numerele intregi: <var>N</var> si <var>M</var>, separate printr-un spatiu. Pe urmatoarea linie se afla numerele intregi <var>E<sub>i</sub>, i = 1, 2, ..., N</var>, separate prin cate un spatiu, reprezentand sumele din conturile celor <var>N</var> oameni de afaceri. Numarul <var>E<sub>K</sub></var> reprezinta suma din contul afaceristului numerotat cu <var>K</var>. Pe urmatoarele <var>M</var> linii se afla cate doua numere intregi <var>a</var> si <var>b</var> din intervalul <var>[1,N]</var>, avand semnificatia ca oamenii de afaceri numerotati cu <var>a</var> si, respectiv, <var>b</var> sunt dusmani.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire veti afisa, pe prima linie, capitalul maxim al societatii. Pe urmatoarea linie veti afisa numarul <var>A</var>, reprezentand numarul de actionari ai societatii. Pe cea de-a treia linie veti afisa numerele oamenilor de afaceri care vor fi actionari, separate prin cate un spatiu. Daca exista mai multe posibilitati de a alege actionarii societatii astfel incat capitalul acesteia sa fie maxim, puteti afisa oricare din ele. Numerele oamenilor de afaceri pot fi afisate in orice ordine (nu neaparat in ordine crescatoare).</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 256</var></li>
+<li><var>1 ≤ M ≤ N * (N - 1) / 2</var></li>
+<li><var>1 ≤ E<sub>i</sub> ≤ 1 000 000, pentru i = 1, 2, ..., N</var></li>
+<li>Daca determinati doar capitalul maxim al societatii, dar nu si actionarii acesteia, veti primi <var>60%</var> din punctajul corespunzator testului respectiv.</li>
+<li>In cazul a <var>20%</var> din fisierele de test, <var>M = N - 1</var></li>
+<li>In cazul a <var>60%</var> din fisierele de test, fiecare componenta biconexa a grafului dat va contine maxim <var>15</var> noduri</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>soc2.in</th><th>soc2.out</th></tr><tr><td>16 31<br>
+4 4 4 3 1 5 5 3 2 3 1 1 3 5 4 4<br>
+1 3<br>
+1 8<br>
+1 9<br>
+1 10<br>
+2 4<br>
+2 7<br>
+2 13<br>
+3 4<br>
+3 7<br>
+3 8<br>
+3 9<br>
+3 10<br>
+3 13<br>
+3 16<br>
+4 7<br>
+4 13<br>
+5 6<br>
+5 7<br>
+5 15<br>
+6 7<br>
+6 15<br>
+7 11<br>
+7 13<br>
+7 15<br>
+8 9<br>
+9 10<br>
+10 12<br>
+10 14<br>
+10 16<br>
+11 15<br>
+12 14<br></td><td>23<br>
+6<br>
+1 2 6 11 14 16<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

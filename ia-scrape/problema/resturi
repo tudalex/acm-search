@@ -1,0 +1,63 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>resturi.in, resturi.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><div class="hidden">5/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=resturi">Vezi solutiile trimise</a></p>
+
+<h1>Resturi<br></h1>
+
+
+<p>Se dau <var>N</var> numere prime distincte <var>p<sub>1</sub>, p<sub>2</sub>, .. p<sub>N</sub></var> si <var>N</var> resturi distincte <var>r<sub>1</sub>, r<sub>2</sub>, .. r<sub>N</sub></var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Aflati cel mai mic numar nenegativ <var>X</var> cu proprietatea <var>X mod p<sub>k</sub> = r<sub>k</sub></var>, pentru orice <var>k</var> intre <var>1</var> si <var>N</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>resturi.in</var> contine <var>T</var>, numarul de teste. Urmatoarele linii contin descrierea celor <var>T</var> teste. Fiecare test incepe cu o linie pe care se afla <var>N</var>. Pe urmatoarele linii se afla cate <var>2</var> intregi <var>p<sub>k</sub></var> si <var>r<sub>k</sub></var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pentru fiecare test, afisati in fisierul de iesire <var>resturi.out</var> o linie care contine un singur numar, <var>X</var>.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>N ≤ 30</var></li>
+<li><var>1 &lt; p<sub>k</sub> &lt; 1000</var> si <var>0 ≤ r<sub>k</sub> ≤ p<sub>k</sub>-1</var>, pentru <var>k</var> intre <var>1</var> si <var>N</var></li>
+<li><var>a mod b</var> reprezinta restul impartirii numarului <var>a</var> la <var>b</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>resturi.in</th><th>resturi.out</th></tr><tr><td>3<br>
+1<br>
+2 1<br>
+2<br>
+2 0<br>
+3 1<br>
+3<br>
+5 4<br>
+11 3<br>
+19 8<br></td><td>1<br>
+4<br>
+179</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=45">Diverse</a></span>
+            <a href="javascript:show_tag_list(45)" id="tag_anchor_45" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_45"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=104">Operatii pe numere mari</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=424">Teorema chineza a resturilor</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

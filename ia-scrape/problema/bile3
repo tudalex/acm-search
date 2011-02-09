@@ -1,0 +1,57 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>bile3.in, bile3.out</td><td><strong>Sursă</strong></td><td>ONI 2008, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=171">Emanuela Cerchez</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/bogdan2412"><img src="/utilizator/bogdan2412?action=download&amp;file=avatar&amp;resize=L16x16" alt="bogdan2412">Bogdan-Cristian Tataroiu</a> <a title="Rating bogdan2412: 1162" class="rating-badge-4" href="http://infoarena.ro/utilizator/bogdan2412?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/bogdan2412">bogdan2412</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>5120 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=bile3">Vezi solutiile trimise</a></p>
+
+<h1>Bile3<br></h1>
+
+<p>Bogdan a primit de ziua sa un joc foarte ingenios. Jocul este constituit dintr-o cutie cu doua compartimente. Initial in primul compartiment se afla <var>k</var> bile (numerotate de la <var>1</var> la <var>k</var>), iar in al doilea compartiment se afla <var>n - k</var> bile (numerotate de la <var>k + 1</var> la <var>n</var>).</p>
+
+<p>Cele doua compartimente comunica printr-o usita basculanta speciala care are doua lacasuri. Un lacas se afla in compatimentul <var>1</var>, iar celalalt in compartimentul <var>2</var>. intr-un lacas poate sa incapa o singura bila.</p>
+
+<p>Vasile poate alege o bila din compartimentul <var>1</var> si o bila din compartimentul <var>2</var>, sa plaseze bilele alese in cele doua lacasuri ale usitei si sa roteasca usita. Astfel bila din compartimentul <var>1</var> va trece in compartimentul <var>2</var>, iar bila din compartimentul <var>2</var> va trece in compartimentul <var>1</var>.</p>
+
+<p>Aceasta este singura mutare posibila.</p>
+
+<p>Scopul jocului este de a executa o succesiune de mutari astfel incat in compartimentul <var>1</var> sa se obtina succesiv toate submultimile distincte de <var>k</var> elemente ale multimii <var>{1, 2, ..., n}</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care sa afiseze submultimile de <var>k</var> elemente ale multimii <var>{1, 2, ..., n}</var> in ordinea in care acestea pot fi obtinute in compartimentul <var>1</var> cu ajutorul usitei basculante.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>bile3.in</var> va contine pe prima linie numerele naturale <var>n</var> si <var>k</var>, separate printr-un spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>bile3.out</var> va contine cate o linie pentru fiecare submultime obtinuta in compartimentul <var>1</var>. Pe fiecare linie vor fi scrise in ordine crescatoare <var>k</var> numere naturale din multimea <var>{1, 2, ..., n}</var>, separate prin cate un spatiu, reprezentand elementele submultimii. Pe prima linie va fi afisata submultimea initiala (adica numerele <var>1 2 ... k</var>).</p>
+
+<h2>Restrictie</h2>
+
+
+<ul><li><var>1 ≤ k &lt; n ≤ 20</var></li>
+<li>Solutia nu este unica, puteti afisa oricare dintre variantele corecte.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>bile3.in</th><th>bile3.out</th></tr><tr><td>4 2<br></td><td>1 2<br>
+1 3<br>
+1 4<br>
+2 4<br>
+2 3<br>
+3 4<br></td></tr></table><h3>Explicatie</h3>
+
+<p>La prima mutare au fost plasate in usita basculanta bila <var>2</var> (din compartimentul <var>1</var>) si bila <var>3</var> (din compartimentul <var>2</var>).</p>
+
+<p>La a doua mutare au fost alese bilele <var>3</var> si <var>4</var>.</p>
+
+<p>La a treia mutare au fost alese bilele <var>1</var> si <var>2</var>.</p>
+
+<p>La a patra mutare au fost alese bilele <var>4</var> si <var>3</var>.</p>
+
+<p>Iar la ultima mutare au fost alese bilele <var>2</var> si <var>4</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

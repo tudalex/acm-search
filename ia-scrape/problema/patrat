@@ -1,0 +1,37 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>patrat.in, patrat.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil 2008, clasele 5-6</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=159">Clara Ionescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=patrat">Vezi solutiile trimise</a></p>
+
+<h1>Patrat<br></h1>
+
+<p>Gigel si Alina se joaca de-a ghicitoarea. Gigel se gandeste la doua numere naturale <var>x</var> si <var>y</var>. Alina ii promite lui Gigel ca va gasi acele numere care se afla intre cele doua numere <var>x</var> si <var>y</var> care se pot scrie ca suma de doua patrate perfecte in cel putin doua moduri diferite. De exemplu numarul <var>N</var> are proprietatea mentionata daca poate fi scris in doua moduri diferite ca suma de patrate perfecte: <var>N</var> = <var>p<sub>1</sub> + p<sub>2</sub></var> si <var>N</var> = <var>p<sub>3</sub> + p<sub>4</sub></var>. Cele patru patrate (<var>p<sub>1</sub></var>, <var>p<sub>2</sub></var>, <var>p<sub>3</sub></var>, <var>p<sub>4</sub></var>) trebuie sa fie nenule si diferite doua cate doua.</p>
+
+<h2>Cerinta</h2>
+
+<p>Ajuta-ti-o pe Alina sa ghiceasca toate numerele aflate intre <var>x</var> si <var>y</var> care se pot scrie ca suma de doua patrate in doua moduri diferite.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>patrat.in</var> se afla doua numere naturale <var>x</var> si <var>y</var> reprezentand limitele intre care va trebui sa caute Alina numere avand proprietatea enuntata.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Daca intre <var>x</var> si <var>y</var> exista <var>k</var> numere avand proprietatea enuntata, fisierul de iesire <var>patrat.out</var> va contine <var>k</var> linii pe care se va scrie cate un numar natural care se poate scrie ca suma de doua patrate in doua moduri diferite. Numerele vor fi scrise in ordine crescatoare. In cazul in care intre <var>x</var> si <var>y</var> nu exista niciun numar avand proprietatea ceruta, in fisier se va scrie doar numarul <var>0</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ x, y ≤ 20 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>patrat.in</th><th>patrat.out</th></tr><tr><td>40 100<br></td><td>65<br>
+85<br></td></tr><tr><td>10 60<br></td><td>0<br></td></tr></table><h3>Explicatie</h3>
+
+<p>In intervalul <var>[40, 100]</var> exista doua numere avand proprietatea ceruta:<br><var>65 = 1 + 64 = 1<sup>2</sup> + 8<sup>2</sup></var> si <var>65 = 16 + 49 = 4<sup>2</sup> + 7<sup>2</sup></var><br><var>85 = 4 + 81 = 2<sup>2</sup> + 9<sup>2</sup></var> si <var>85 = 36 + 49 = 6<sup>2</sup> + 7<sup>2</sup></var><br>
+In intervalul <var>[10, 60]</var> nu exista niciun numar avand proprietatea ceruta.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

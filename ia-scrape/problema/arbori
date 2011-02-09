@@ -1,0 +1,43 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>arbori.in, arbori.out</td><td><strong>Sursă</strong></td><td>preONI 2008, Runda 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.15 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=arbori">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=arbori">Vezi solutiile trimise</a></p>
+
+<h1>Arbori<br></h1>
+
+<p>Sa se determine cati arbori neetichetati cu radacina exista, care satisfac urmatoarele proprietati:</p>
+
+
+<ul><li>au <var>N</var> noduri </li>
+<li>gradul fiecarui nod intern este egal cu <var>K</var>, modulo <var>M</var></li>
+</ul><p>Doi arbori <var>T<sub>1</sub></var> si <var>T<sub>2</sub></var> se considera egali daca exista o bijectie intre nodurile lor astfel incat radacinii lui <var>T<sub>1</sub></var> ii corespunde radacina lui <var>T<sub>2</sub></var> si exista muchie intre o pereche de noduri din <var>T<sub>1</sub></var> daca si numai daca exista muchie intre perechea de noduri din <var>T<sub>2</sub></var> corespunzatoare.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>arbori.in</var> contine pe prima linie numerele <var>N M K</var> separate prin spatii.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>arbori.out</var> se va scrie numarul cautat.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 90</var></li>
+<li><var>2 ≤ M ≤ 10</var></li>
+<li><var>0 ≤ K &lt; M</var></li>
+<li>Pentru <var>60%</var> din teste <var>N ≤ 40</var></li>
+<li>Se garanteaza ca rezultatul incape intr-un intreg cu semn pe <var>64</var> de biti</li>
+<li>Intr-un arbore cu radacina orice nod care are cel putin un fiu este un nod intern</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>arbori.in</th><th>arbori.out</th></tr><tr><td>5 2 0<br></td><td>3<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Cei <var>3</var> arbori sunt:<br><img src="http://infoarena.ro/problema/arbori?action=download&amp;file=arbori.jpg&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

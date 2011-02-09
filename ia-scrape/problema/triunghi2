@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>triunghi2.in, triunghi2.out</td><td><strong>Sursă</strong></td><td>ONI 2007, clasa 9</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=184">Doru Popescu Anastasiu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=triunghi2">Vezi solutiile trimise</a></p>
+
+<h1>Triunghi2<br></h1>
+
+<p>In comuna Triunghi din Romania sunt <var>n</var> tarani codificati prin numerele <var>1</var>, <var>2</var>, ..., <var>n</var>. Dupa anul 1990 a Inceput retrocedarea suprafetelor de pamant detinute inainte de colectivizare. Fiecare taran are un document prin care dovedeste ca este proprietar pe o singura suprafata de teren de forma triunghiulara. Din pacate, documentele dau bataie de cap primarului (care se ocupa de retrocedarea suprafetelor de pamant), pentru ca sunt portiuni din suprafetele de pamant care se regasesc pe mai multe documente. </p>
+
+<p>In aceasta comuna exista o fantana cu apa, fiind posibil ca ea sa fie revendicata de mai multi tarani. O suprafata de pamant este data prin coordonatele celor trei colturi, iar fantana este considerata punctiforma si data prin coordonatele punctului.</p>
+
+<h2>Cerinta </h2>
+
+<p>Sa se scrie un program care sa determine:</p>
+
+
+<ol><li>Codurile taranilor care au documente cu suprafete de pamant ce contin in interior sau pe frontiera fantana. </li>
+<li>Codul taranului ce detine un document cu suprafata de teren, care include toate celelalte suprafete.</li>
+</ol><h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>triunghi2.in</var> are pe prima linie numarul <var>n</var> de tarani, pe urmatoarele <var>n</var> linii cate <var>6</var> valori numere intregi separate prin cate un spatiu, in formatul: <var>x<sub>1</sub> y<sub>1</sub> x<sub>2</sub> y<sub>2</sub> x<sub>3</sub> y<sub>3</sub></var>, ce reprezinta coordonatele celor trei colturi ale suprafetei triunghiulare detinute de un taran. (<var>x<sub>1</sub> x<sub>2</sub> x<sub>3</sub></var> abscise, iar <var>y<sub>1</sub> y<sub>2</sub> y<sub>3</sub></var> ordonate). Pe linia <var>i+1</var> se afla coordonatele colturilor suprafetei de teren triunghiulare detinute de taranul <var>i</var>, <var>i=1,2,...,n</var>. Ultima linie a fisierului (linia <var>n+2</var>) va contine coordonatele fantanii in formatul <var>x y</var>, cu un spatiu intre ele (<var>x</var> abscisa, iar <var>y</var> ordonata).</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>triunghi2.out</var> va contine pe prima linie raspunsul de la punctul 1), adica: numarul de tarani care indeplinesc conditia din cerinta si apoi codurile lor (in ordine crescatoare), cu un spatiu intre ele. Daca nu exista tarani cu conditia din cerinta, pe prima linie se va scrie cifra <var>0</var>. Pe linia a doua se va scrie raspunsul de la punctul 2), adica: codul taranului cu proprietatea ceruta, sau cifra <var>0</var>, daca nu exista un astfel de taran. </p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ n ≤ 65</var></li>
+<li>coordonatele colturilor suprafetelor de pamant si ale fantanii sunt numere intregi din intervalul [<var>-3000, 3000</var>] </li>
+<li>cele trei colturi ale fiecarei suprafete de pamant sunt distincte si necoliniare</li>
+<li>nu exista doi tarani care sa detina aceeasi suprafata de pamant</li>
+<li>nu se acorda punctaje partiale.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>triunghi2.in</th><th>triunghi2.out</th></tr><tr><td>3<br>
+10 0 0 10 10 10<br>
+0 100 100 0 -100 0<br>
+0 0 10 0 0 10<br>
+10 5<br></td><td>2 1 2<br>
+2<br></td></tr></table><h3>Explicatie</h3>
+
+<p>La punctul 1), sunt doi tarani care detin suprafete de pamant ce au in interior sau pe frontiera fantana, cu codurile <var>1</var> si <var>2</var>.<br>
+La punctul 2), taranul cu codul <var>2</var> detine o suprafata de teren care include, suprafetele de pamant detinute de ceilalti tarani (cu codurile <var>1</var> si <var>3</var>). </p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

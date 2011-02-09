@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>arbore3.in, arbore3.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2010, Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gcosmin"><img src="/utilizator/gcosmin?action=download&amp;file=avatar&amp;resize=L16x16" alt="gcosmin">Gheorghe Cosmin</a> <a title="Rating gcosmin: 1142" class="rating-badge-4" href="http://infoarena.ro/utilizator/gcosmin?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gcosmin">gcosmin</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>3 sec</td><td><strong>Limită de memorie</strong></td><td>128000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=arbore3">Vezi solutiile trimise</a></p>
+
+<h1>Arbore3<br></h1>
+
+<p>Se da un arbore cu <var>N</var> noduri si radacina in nodul <var>1</var>, in care fiecare nod <var>i</var> are asociata o valoare intreaga <var>Vi</var>. Se defineste un drum <em>in jos</em> in arbore ca fiind orice lant elementar ce uneste un nod <var>A</var> cu alt nod <var>B</var> din subarborele lui <var>A</var>. Se cere sa se determine pentru o suma data <var>S</var> cate drumuri <em>in jos</em> exista, astfel incat suma valorilor nodurilor de pe drum sa fie egala cu <var>S</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>arbore3.in</var> va contine pe prima linie numerele <var>N</var> si <var>S</var>. Urmatoarele <var>N</var> linii vor contine fiecare cate doua numere: linia <var>i+1</var> va contine <var>Ti</var> si <var>Vi</var> reprezentand tatal nodului <var>i</var> in arbore si respectiv, valoarea asociata nodului <var>i</var>. Pentru comoditate se considera ca tatal nodului <var>1</var> (radacina) este <var>0</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>arbore3.out</var> veti afisa o singura valoare reprezentand numarul de dumuri <em>in jos</em> cu suma valorilor nodurilor egala cu <var>S</var>.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1 000 000</var></li>
+<li>Numerele <var>S</var> si <var>Vi</var> fi numere intregi <strong>cu semn</strong> pe <var>32</var> de biti</li>
+<li>Pentru orice drum <em>in jos</em>, suma valorilor nodurilor de pe drum se va incadra intr-un intreg <strong>cu semn</strong> pe <var>32</var> de biti</li>
+<li>Nodul <var>1</var> (radacina) este singurul care apare cu tatal <var>0</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>arbore3.in</th><th>arbore3.out</th></tr><tr><td>8 5<br>
+0 1<br>
+1 3<br>
+2 1<br>
+2 5<br>
+1 7<br>
+5 -4<br>
+6 7<br>
+6 2<br></td><td>3<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Cele <var>3</var> lanturi sunt <var>(1, 2, 3)</var>, <var>(4)</var>, <var>(5, 6, 8)</var>. <b>Observati</b> ca desi lantul <var>(8, 6, 7)</var> are suma <var>5</var> el nu este numarat pentru ca nu este un lant <em>in jos</em>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

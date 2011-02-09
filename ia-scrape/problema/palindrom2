@@ -1,0 +1,27 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>palindrom2.in, palindrom2.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil 2009, clasele 5-8</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=215">Marius Stroe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Marius"><img src="/utilizator/Marius?action=download&amp;file=avatar&amp;resize=L16x16" alt="Marius">Marius Stroe</a> <a title="Rating Marius: 627" class="rating-badge-4" href="http://infoarena.ro/utilizator/Marius?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Marius">Marius</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>64 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=palindrom2">Vezi solutiile trimise</a></p>
+
+<h1>Palindrom2<br></h1>
+
+<p>Se consideră un şir de caractere format din litere mici ale alfabetului englez. Transformaţi şirul într-un palindrom de lungime minimă prin inserarea de caractere doar la sfârşitul şirului.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>palindrom2.in</var> conţine pe prima linie şirul de caractere.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>palindrom2.out</var> se va scrie pe prima linie şirul palindrom obţinut în urma transformării.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li>Lungimea şirului este cel mult <var>1 000</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>palindrom2.in</th><th>palindrom2.out</th></tr><tr><td>aabac<br></td><td>aabacabaa<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

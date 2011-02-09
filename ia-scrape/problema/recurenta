@@ -1,0 +1,32 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>recurenta.in, recurenta.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2009, Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=253">Stefan Alexandru Filip</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Prostu"><img src="/utilizator/Prostu?action=download&amp;file=avatar&amp;resize=L16x16" alt="Prostu">Filip Stefan A.</a> <a title="Rating Prostu: 650" class="rating-badge-4" href="http://infoarena.ro/utilizator/Prostu?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Prostu">Prostu</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=recurenta">Vezi solutiile trimise</a></p>
+
+<h1>Recurenta<br></h1>
+
+<p>Dubota a invatat la scoala despre numerele Fibonacci. Aceste numere sunt definite in felul urmator: primii termeni ai sirului sunt <var>0</var>, <var>F<sub>0</sub> = F<sub>1</sub> = 1</var>, iar al n-lea termen, <var>2 ≤ n</var>, se obtine adunand termenii <var>n-1</var> si <var>n-2</var> ai sirului <var>F<sub>n</sub> = F<sub>n-1</sub> + F<sub>n-2</sub></var>. Acum Dubota este curios care sunt termenii sirurilor ai caror termeni se obtin adunand ultimii <var>k</var> termeni si au primii <var>k</var> termeni egali cu <var>1</var>. <var>D<sub>0</sub> = D<sub>1</sub> = ... = D<sub>k-1</sub> = 1, D<sub>n</sub> = D<sub>n-1</sub> + D<sub>n-2</sub> + ... + D<sub>n-k</sub>, k ≤ n</var>. Fiind dat <var>k</var>, Dubota va cere sa ii spuneti care este termenul de indice <var>n</var> al sirului care se formeaza prin regula prezentata mai sus.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>recurenta.in</var> va contine doua numere separate prin spatiu, <var>n</var> si <var>k</var> cu semnificatia din enunt.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>recurenta.out</var> va contine un singur numar, termenul de indice <var>n</var> al sirului.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>k ≤ n ≤ 10000</var></li>
+<li><var>2 ≤ k ≤ 1000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>recurenta.in</th><th>recurenta.out</th></tr><tr><td>6 3<br></td><td>17<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>D<sub>0</sub> = D<sub>1</sub> = D<sub>2</sub> = 1, D<sub>3</sub> = 3, D<sub>4</sub> = 5, D<sub>5</sub> = 9, D<sub>6</sub> = 17.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

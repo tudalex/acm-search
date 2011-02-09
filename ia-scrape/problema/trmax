@@ -1,0 +1,57 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>trmax.in, trmax.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2009, Runda Finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=223">Cosmin Gheorghe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gcosmin"><img src="/utilizator/gcosmin?action=download&amp;file=avatar&amp;resize=L16x16" alt="gcosmin">Gheorghe Cosmin</a> <a title="Rating gcosmin: 1142" class="rating-badge-4" href="http://infoarena.ro/utilizator/gcosmin?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gcosmin">gcosmin</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=trmax">Vezi solutiile trimise</a></p>
+
+<h1>Trmax<br></h1>
+
+<p>Ligia are o matrice de <var>N</var> linii pe <var>M</var> coloane plina cu valori <var>0</var> si <var>1</var>. Ea se intreaba care este cel mai mare triunghi ce poate fi plasat in matrice doar pe elemente egale cu <var>0</var>. Un triunghi de inaltime <var>L</var> este format din <var>L</var> linii si lungimea fiecarei linii este cu <var>2</var> mai mare decat lungimea liniei anterioare (mai putin prima linie care are lungime <var>1</var>). De exemplu un triunghi de inaltime <var>5</var> arata astfel:</p>
+
+
+<ol><li><var>....<b>0</b>....</var></li>
+<li><var>...<b>000</b>...</var></li>
+<li><var>..<b>00000</b>..</var></li>
+<li><var>.<b>0000000</b>.</var></li>
+<li><var><b>000000000</b></var></li>
+</ol><p>Ligia vrea sa stie aria maxima a unui triunghi ce poate fi plasat in matrice, astfel incat sa acopere doar elemente egale cu <var>0</var>. Aria unui triunghi este egala cu numarul de pozitii ocupate de acel triunghi.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>trmax.in</var> va contine pe prima linie trei numere <var>N</var>, <var>M</var>, si <var>K</var>. Urmatoarele <var>K</var> linii vor contine fiecare cate doua numere <var>l<sub>i</sub></var>, <var>c<sub>i</sub></var> reprezentand faptul ca pe linia <var>l<sub>i</sub></var> si coloana <var>c<sub>i</sub></var> se afla un element de valoare <var>1</var>. Toate celelalte elemente ale matricei vor fi egale cu <var>0</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>trmax.out</var> veti afisa un singur numar si anume aria maxima a unui triunghi ce respecta conditiile din cerinta.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N, M ≤ 2 000</var></li>
+<li><var>1 ≤ K ≤ min(N * M, 10<sup>5</sup>)</var></li>
+<li>Triunghiul nu poate fi rotit</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>trmax.in</th><th>trmax.out</th></tr><tr><td>7 9 8<br>
+1 1<br>
+2 3<br>
+4 1<br>
+6 3<br>
+7 1<br>
+1 7<br>
+3 6<br>
+7 6<br></td><td>16<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Matricea si solutia reprezentata prin elementele ingrosate:</p>
+
+
+<ul><li><var>100000100</var></li>
+<li><var>001<b>0</b>00000</var></li>
+<li><var>00<b>000</b>1000</var></li>
+<li><var>1<b>00000</b>000</var></li>
+<li><var><b>0000000</b>00</var></li>
+<li><var>001000000</var></li>
+<li><var>100001000</var></li>
+</ul><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>hypernet.in, hypernet.out</td><td><strong>Sursă</strong></td><td>Summer Challenge 2007, runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=hypernet">Vezi solutiile trimise</a></p>
+
+<h1>Hypernet<br></h1>
+
+<p>In galaxia noastra exista <var>N</var> planete, numerotate de la <var>1</var> la <var>N</var>. Fiecare planeta are un anumit numar de locuitori (planeta <var>i</var> are <var>Q<sub>i</sub></var> locuitori). Guvernul galaxiei doreste sa construiasca o retea compusa din <var>K</var> hipercanale (canale de transport prin hiperspatiu) bidirectionale, fiecare hipercanal conectand <var>2</var> planete distincte. Folosind reteaua construita, fiecare locuitor al fiecarei planete va dori sa viziteze fiecare din celelalte planete. Costul transportului printr-un hipercanal este de <var>1</var> unitate monetare pentru orice locuitor al oricarei planete. Prin urmare, costul vizitarii planetei <var>j</var> de catre un locuitor al planetei <var>i</var> este egal cu numarul minim de hipercanale ce trebuie traversate pentru a ajunge de la planeta i la planeta j (vom numi acest numar <var>dist<sub>i,j</sub></var>). Costul total al retelei de hipercanale este egal cu suma costurilor platite de fiecare locuitor al fiecarei planete: <br><img src="http://infoarena.ro/problema/hypernet?action=download&amp;file=hypernet.gif&amp;safe_only=true" alt=""></p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati costul total minim al unei retele constand din <var>K</var> hipercanale.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>hypernet.in</var> contine <var>2</var> numere intregi, separate printr-un spatiu: <var>N</var> si <var>K</var>. A <var>i</var>-a din urmatoarele <var>N</var> linii contine numarul intreg <var>Q<sub>i</sub></var>, reprezentand numarul de locuitori ai planetei <var>i</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>hypernet.out</var> afisati costul total minim al unei retele de hipercanale avand proprietatile specificate.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 50.000</var></li>
+<li><var>N-1 ≤ K ≤ N*(N-1)/2</var></li>
+<li><var>1 ≤ Q<sub>i</sub> ≤ 1.000.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>hypernet.in</th><th>hypernet.out</th></tr><tr><td>4 3<br>
+4<br>
+3<br>
+1<br>
+2<br></td><td>42<br></td></tr><tr><td>4 5<br>
+10<br>
+9<br>
+8<br>
+7<br></td><td>117<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

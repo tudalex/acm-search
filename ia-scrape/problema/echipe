@@ -1,0 +1,65 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>echipe.in, echipe.out</td><td><strong>Sursă</strong></td><td>.campion 2005</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><div class="hidden">5/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=echipe">Vezi solutiile trimise</a></p>
+
+<h1>Echipe<br></h1>
+
+
+<p>FC Campion Romania se pregateste pentru finala Ligii Campionilor Europeni. Pentru aceasta, cei <var>N</var> jucatori ai sai se antreneaza zilnic. Pentru fiecare dintre ei se cunoaste intervalul <var>[T1,T2)</var> cand este prezent la antrenament. Pentru ca antrenamentul sa fie mai eficient, jucatorii nu se antreneaza toti la un loc, ci sunt impartiti in <var>K</var> echipe. Fiecare jucator face parte din exact o echipa, dar este posibil ca din unele echipe sa nu faca parte nici un jucator. Deoarece munca in echipa este foarte importanta, antrenamentul fiecareia dintre cele <var>K</var> echipe se poate desfasura numai daca sunt prezenti toti jucatorii care fac parte din acea echipa. In aceste conditii, durata de antrenament a fiecarei echipe este egala cu lungimea intervalului de timp in care sunt prezenti la antrenament toti jucatorii din echipa respectiva. Intrucat finala se apropie, conducerea clubului doreste ca suma duratelor de antrenament ale fiecarei echipe sa fie maxima.</p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati o impartire in <var>K</var> echipe a celor <var>N</var> jucatori, astfel incat suma duratelor de antrenament sa fie maxima.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>echipe.in</var> se afla doua numere intregi, separate prin spatii: <var>N</var> si <var>K</var>. Pe urmatoarele <var>N</var> linii se afla cate doua numere intregi separate prin spatii, <var>A</var> si <var>B</var>, reprezentand intervalele de timp in care sunt prezenti jucatorii la antrenament.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul <var>echipe.out</var> veti afisa suma maxima a duratelor de antrenament corespunzatoare unei impartiri pe echipe optime.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ K ≤ N ≤ 250</var></li>
+<li><var>0 ≤ A &lt; B ≤ 1.000.000</var></li>
+<li>Daca o echipa contine <var>0</var> jucatori, durata ei de antrenament este <var>0</var>.</li>
+<li>Daca nu exista nici un moment in care toti jucatorii unei echipe sa fie prezenti simultan la antrenament, atunci durata de pregatire a echipei respective este <var>0</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>echipe.in</th><th>echipe.out</th></tr><tr><td>8 4<br>
+0 11<br>
+0 10<br>
+1 11<br>
+2 12<br>
+3 13<br>
+4 14<br>
+5 15<br>
+19 28<br></td><td>36</td></tr></table><h3>Explicatie</h3>
+
+<p>Din prima echipa fac parte jucatorii <var>1</var>, <var>2</var> si <var>3</var>. Din a doua echipa vor face parte jucatorii <var>4</var> si <var>5</var>. Din a treia echipa fac parte jucatorii <var>6</var> si <var>7</var>, iar a patra echipa il va contine doar pe jucatorul <var>8</var>. Intervalele de antrenament pentru fiecare din cele <var>4</var> echipe sunt: <var>[1,10)</var>, <var>[3,12)</var>, <var>[5,14)</var>, <var>[19,28)</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_1"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=61">Greedy</a></span>
+            <a href="javascript:show_tag_list(61)" id="tag_anchor_61" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_61"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=70">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

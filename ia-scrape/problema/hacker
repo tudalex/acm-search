@@ -1,0 +1,43 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>hacker.in, hacker.out</td><td><strong>Sursă</strong></td><td>preONI 2008 Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.8 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=hacker">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=hacker">Vezi solutiile trimise</a></p>
+
+<h1>Hacker<br></h1>
+
+<p>Nargy vrea sa afle parola de la mail-ul lui Fumeanu ca sa ii faca o farsa. Dupa mai multe cercetari Nargy a aflat ca parola lui Fumeanu este un numar de <var>N</var> cifre in baza <var>K</var> care are urmatoarea proprietate: orice prefix de lungime <var>i &lt; N</var> al numarului este diferit de sufixul corespunzator de lungime <var>i</var>. Mai mult de atat, Nargy stie si ce cifre se afla pe anumite pozitii din parola. <br>
+Nefiind un hacker prea priceput, singura metoda de a sparge o parola pe care o stie Nargy este <a href="http://en.wikipedia.org/wiki/Brute_force_attack" class="wiki_link_external">brute force</a>. Astfel, el ar vrea sa stie inainte, cate posibilitati exista pentru parola lui Fumeanu, folosind informatiile pe care le are pana acum.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>hacker.in</var> contine pe prima linie numerele <var>N</var> si <var>K</var>. Urmatoarea linie contine <var>N</var> caractere care pot fi numere intre <var>0</var> si <var>K-1</var> sau caracterul <var>?</var> pentru pozitiile din parola care nu se cunosc. </p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>hacker.out</var> se va afisa numarul de posiblitati pentru parola lui Fumeanu, modulo <var>666013</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 200</var></li>
+<li><var>2 ≤ K ≤ 10</var></li>
+<li>Numarul poate incepe cu cifra <var>0</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>hacker.in</th><th>hacker.out</th></tr><tr><td>4 2<br>
+ 1??0</td><td>3</td></tr></table><h3>Explicatie</h3>
+
+<p>Cele <var>3</var> parole posibile:</p>
+
+
+<ul><li><var>1000</var></li>
+<li><var>1100</var></li>
+<li><var>1110</var></li>
+</ul><p><var>1010</var> nu este o parola valida deoarece prefixul de lungime <var>2</var> (<var>10</var>) este egal cu sufixul de lungime <var>2</var> (<var>10</var>).</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

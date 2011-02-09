@@ -1,0 +1,34 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>sg1.in, sg1.out</td><td><strong>Sursă</strong></td><td>ONI 2006, clasa 10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=177">Rodica Pintea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/marcelcodrea"><img src="/utilizator/marcelcodrea?action=download&amp;file=avatar&amp;resize=L16x16" alt="marcelcodrea">Codrea Marcel</a> <a title="Rating marcelcodrea: 492" class="rating-badge-3" href="http://infoarena.ro/utilizator/marcelcodrea?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/marcelcodrea">marcelcodrea</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>5120 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=sg1">Vezi solutiile trimise</a></p>
+
+<h1>Sg1<br></h1>
+
+<p>O misiune a echipei <span class="caps">SG1 </span>consta in activarea unui dispozitiv extraterestru actionat cu ajutorul unei tastaturi ciudate formate din <var>n</var> comutatoare aflate initial toate in aceeasi pozitie (sa o notam cu <var>0</var>). Se stie ca trebuie setate (trecute in pozitia <var>1</var>) exact <var>k</var> comutatoare si ca nu conteaza ordinea in care trebuie actionate comutatoarele. In plus, cu ajutorul unor documente antice, au aflat ca intre oricare doua comutatoare succesive setate se pot afla cel putin <var>d<sub>1</sub></var> si cel mult <var>d<sub>2</sub></var> comutatoare nesetate. De exemplu, pentru <var>n=7</var>, <var>k=3</var>, <var>d<sub>1</sub>=1</var>, <var>d<sub>2</sub>=2</var>, o configuratie care corespunde cerintei este: <var>0100101</var>, in timp ce configuratiile <var>1010001</var>, <var>1100100</var>, <var>1010101</var> nu corespund datelor problemei. Daca o combinatie de comutatoare setate nu activeaza dispozitivul, nu se intampla nimic deosebit (ce plictisitor episod!), ci comutatoarele se reseteaza automat, permitand incercarea altei combinatii. <br>
+Scrieti un program care, pentru valorile <var>n</var>, <var>k</var>, <var>d<sub>1</sub></var>, <var>d<sub>2</sub></var> date, determina numarul total de configuratii posibile de comutatoare ce respecta conditiile din enunt.</p>
+
+<h2>Date de intrare</h2>
+
+
+<p>In fisierul text <var>sg1.in</var> se dau, pe aceeasi linie, despartite prin spatii, valorile <var>n</var>, <var>k</var>, <var>d<sub>1</sub></var> si <var>d<sub>2</sub></var>.</p>
+
+
+<h2>Date de iesire</h2>
+
+
+<p>In fisierul <var>sg1.out</var> se scrie numarul de configuratii ce corespund cerintei.</p>
+
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>0 &lt; n &lt; 101</var></li>
+<li><var>0 &lt; k ≤ n</var></li>
+<li><var>0 ≤ d<sub>1</sub> ≤ d<sub>2</sub> &lt; n</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>sg1.in</th><th>sg1.out</th><th>Explicatie</th></tr><tr><td><var>7 3 1 2</var></td><td><var>8</var></td><td><var>1010100</var>, <var>1010010</var>, <var>1001010</var>, <var>1001001</var>, <var>0101010</var>, <var>0101001</var>, <var>0100101</var>, <var>0010101</var></td></tr><tr><td><var>5 2 0 0</var></td><td><var>4</var></td><td><var>11000</var>, <var>01100</var>, <var>00110</var>, <var>00011</var></td></tr><tr><td><var>14 8 1 5</var></td><td><var>0</var></td><td>Nu exista configuratii care respecta cerintele problemei</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

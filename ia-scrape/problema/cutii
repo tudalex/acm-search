@@ -1,0 +1,72 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cutii.in, cutii.out</td><td><strong>Sursă</strong></td><td>preONI 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=119">Silviu-Ionut Ganceanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>7 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=cutii">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cutii">Vezi solutiile trimise</a></p>
+
+<h1>Cutii<br></h1>
+
+<table style="margin:0.5em auto;" cellspacing="0"><tr><td align="center" style="background-color:#F8EABA;"><img src="http://infoarena.ro/template/badtests?action=download&amp;file=attention.gif&amp;safe_only=true" alt="" class="left" style="float:left"><em>Testele pentru aceasta problema nu sunt destul de bine construite pentru a departaja corect solutii ineficiente sau gresite.</em><br><a href="http://infoarena.ro/implica-te/imbunatatire-teste"><strong>Intra aici</strong></a> <em>daca vrei sa ne ajuti sa imbunatatim calitatea testelor pentru aceasta problema!</em></td></tr></table><p>Se dau <var>N</var> cutii paralelipipedice prin dimensiunile lor (<var>X, Y</var> si <var>Z</var>). Se stie ca o cutie se poate pune in alta doar daca toate dimensiunile ei sunt strict mai mici cele ale cutiei in care va fi bagata. Se cere numarul maxim de cutii ce pot fi selectate din cele <var>N</var> astfel incat ele sa poata fi "cuibarite" (o cutie va contine o cutie care la randul ei va contie o alta s.a.m.d. pana la cea mai mica care nu va mai contine nimic).</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului <var>cutii.in</var> va contine <var>N</var> si <var>T</var>, reprezentand numarul de cutii si respectiv numarul de teste care vor urma. Pentru fiecare din cele <var>T</var> teste vor urma cate <var>N</var> linii continand <var>3</var> numere reprezentand dimensiunile fiecarei cutii.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul <var>cutii.out</var> va contine <var>T</var> linii pe fiecare linie un numar reprezentand numarul maxim de cutii ce pot fi alese pentru fiecare test.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 3500</var></li>
+<li><var>1 ≤ T ≤ 100</var></li>
+<li>Dimensiunile cutiilor sunt date astfel fiecare dimensiune in parte (din cele trei posibile) ia toate valorile de la <var>1</var> la <var>N</var> in fiecare test din cele <var>T</var> (valorile unei dimensiuni a cutiilor dintr-un test vor forma o permutare a numerelor de la <var>1</var> la <var>N</var>).</li>
+<li>Timpul de executie a fost ales astfel incat <var>20%</var> din el va fi folosit pentru citire si restul de <var>80%</var> pentru calcularea rezultatelor</li>
+<li><var>40%</var> din teste vor avea <var>N ≤ 100</var> iar restul vor avea <var>N = 3500</var> si <var>T = 100</var></li>
+<li>O cutie nu poate fi intoarsa in nici un fel (dimensiunile ei isi vor pastra ordinea)</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>cutii.in</th><th>cutii.out</th></tr><tr><td>3 2<br>
+1 1 1<br>
+2 2 2<br>
+3 3 3<br>
+1 2 2<br>
+2 1 1<br>
+3 3 3<br></td><td>3<br>
+2</td></tr></table><h3>Explicatii</h3>
+
+<p>Pentru primul set de cutii se selecteaza toate cutiile deoarece cutia cu numarul 2 se poate pune in cutia 3 iar cutia 1 in cea de-a doua. Pentru cel de-al doilea set se selecteaza cutiile 1 si 3 sau cutiile 2 si 3 neexistand posibilitatea de a le lua pe toate. </p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 3 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=86">Cel mai lung subsir crescator</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=63">Sortare</a></span>
+            <a href="javascript:show_tag_list(63)" id="tag_anchor_63" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_63"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=64">Sortare</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=85">Arbori indexati binari 2D</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

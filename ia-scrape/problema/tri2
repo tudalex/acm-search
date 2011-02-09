@@ -1,0 +1,74 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>tri2.in, tri2.out</td><td><strong>Sursă</strong></td><td>Lot 2003</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><div class="hidden">5/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=tri2">Vezi solutiile trimise</a></p>
+
+<h1>Tri2<br></h1>
+
+<p>Micutul Gigel a marcat pe hartie <var>N</var> puncte, avand coordonate intregi. Apoi a inceput sa deseneze triunghiuri, avand varfurile in trei puncte diferite dintre cele <var>N</var>. Pentru fiecare triunghi desenat, Gigel ar dori sa stie cate dintre cele <var>N-3</var> puncte ramase se afla strict in interiorul triughiului.</p>
+
+<h2>Cerinta</h2>
+
+<p>Pentru fiecare triunghi dat (prin indicii celor 3 puncte care sunt varfurile sale), determinati cate dintre celelalte puncte se afla strict in interiorul triunghiului.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>tri2.in</var> se afla numarul intreg <var>N</var>, reprezentand numarul de puncte marcate de Gigel pe hartie. Pe fiecare dintre urmatoarele <var>N</var> linii se afla coordonatele fiecarui punct, in ordine, de la cel numerotat cu 1, la cel numerotat cu <var>N</var>. Coordonatele sunt descrise prin doi intregi <var>x</var> si <var>y</var>, separati printr-un spatiu. Urmatoarea linie contine numarul intreg <var>M</var> de triunghiuri pe care le-a desenat Gigel. Pe urmatoarele <var>M</var> linii se afla cate trei numere intregi, <var>a</var>, <var>b</var> si <var>c</var>, separate prin spatii, reprezentand indicii a trei puncte diferite dintre cele <var>N</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>tri2.out</var> veti afisa <var>M</var> linii. Pe fiecare linie se va afla un numar intreg, reprezentand numarul de puncte dintre cele <var>N-3</var> ramase, care se afla strict in interiorul triunghiului corespunzator liniei (prima linie va contine raspunsul corespunzator primului triunghi descris in fisierul de intrare, a doua linie raspunsul corespunzator celui de-al doilea triunghi, etc.).</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 1 000</var></li>
+<li><var>1 ≤ M ≤ 500 000</var></li>
+<li>Coordonatele <var>x</var>, <var>y</var> sunt numere intregi din intervalul <var>[0, 2 000 000 000]</var></li>
+<li>Oricare doua puncte au coordonatele <var>x</var>, respectiv <var>y</var>, distincte</li>
+<li>Oricare trei puncte sunt necoliniare</li>
+<li>Daca doriti sa folositi numere reale in programul vostru, se recomanda folosirea tipurilor long double pt. C/C++, respectiv extended pt. Pascal. Pentru testarea egalitatii a doua numere reale se recomanda folosirea unei precizii de <var>10<sup>-14</sup></var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>tri2.in</th><th>tri2.out</th></tr><tr><td>5<br>
+0 0<br>
+1 10<br>
+2 4<br>
+3 7<br>
+10 1<br>
+3<br>
+1 2 3<br>
+5 1 2<br>
+5 3 2<br></td><td>0<br>
+2<br>
+1</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 3 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=41">Geometrie</a></span>
+            <a href="javascript:show_tag_list(41)" id="tag_anchor_41" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_41"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=62">ad-hoc</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=80">Baleiere</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=63">Sortare</a></span>
+            <a href="javascript:show_tag_list(63)" id="tag_anchor_63" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_63"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=64">Sortare</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=84">Arbori de intervale</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=106">Arbori indexati binari</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

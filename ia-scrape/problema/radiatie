@@ -1,0 +1,55 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>radiatie.in, radiatie.out</td><td><strong>Sursă</strong></td><td>preONI 2007, Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=radiatie">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=radiatie">Vezi solutiile trimise</a></p>
+
+<h1>Radiatie<br></h1>
+
+<p>Zaharel este cercatator de fizica nucleara si lucreaza la un complex de cercetare secret format din <var>N</var> laboratoate, numerotate convenabil cu numere de la <var>1</var> la <var>N</var>. De asemenea, aceste laboratoare sunt conectate prin <var>M</var> tunele bidirectionale, de diverse lungimi. Desi laboratoarele sunt concepute astfel incat cercetatorii sa nu fie expusi la radiatii, tunelele nu protejeaza complet, astfel incat daca un cercetator foloseste un anumit tunel de legatura va fi expus la un nivel de radiatii direct proportional cu lungimea tunelului. <br>
+Zaharel are de efectuat <var>K</var> drumuri intre diverse perechi de laboratoare. Stiind ca expunerea pentru un timp indelungat la radiatii are efecte daunatoare, el va alege mereu un drum in care lungimea maxima a unui tunel parcurs este minima. Determinati care vor fi drumurile pe care le va alege Zaharel.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>radiatie.in</var> va contine numerele naturale <var>N, M, K</var> separate prin spatii. Urmatoarele <var>M</var> linii vor contine cate trei numere naturale <var>a b c</var> cu semnificatia ca exista un tunel intre laboratorul cu numar <var>a</var> si laboratorul cu numar <var>b</var>, de lungime <var>c</var>. In continuare, urmatoarele <var>K</var> linii vor contine perechi de numere naturale <var>x y</var> avand semnificatia ca Zaharel va efectua un drum intre laboratoarele <var>x</var> si <var>y</var>. </p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>radiatie.out</var> va contine <var>K</var> linii, fiecare continand lungimea maxima minima considerand tunelele parcurse de Zaharel pentru fiecare drum. Rezultatele se vor afisa in ordinea in care sunt date cele <var>K</var> drumuri in fisierul de intrare.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N, K ≤ 15.000</var></li>
+<li><var>1 ≤ M ≤ 30.000</var></li>
+<li>Lungimea unui tunel este un numar natural din intervalul <var>[1, 10<sup>9</sup>]</var></li>
+<li>Un drum reprezinta o succesiune de laboratoare <var>a<sub>1</sub>, a<sub>2</sub> ... a<sub>x</sub></var> cu proprietatea ca exista un tunel intre <var>a<sub>i</sub></var> si <var>a<sub>i+1</sub></var> pentru orice <var>i &lt; x</var></li>
+<li>Se garanteaza ca exista cel putin un drum intre fiecare din cele <var>K</var> perechi de laboratoare din fisierul de intrare</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>radiatie.in</th><th>radiatie.out</th></tr><tr><td>6 6 8<br>
+1 2 5<br>
+2 3 4<br>
+3 4 3<br>
+1 4 8<br>
+2 5 7<br>
+4 6 2<br>
+1 2<br>
+1 3<br>
+1 4<br>
+2 3<br>
+2 4<br>
+5 1<br>
+6 2<br>
+6 1<br></td><td>5<br>
+5<br>
+5<br>
+4<br>
+4<br>
+7<br>
+4<br>
+5<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

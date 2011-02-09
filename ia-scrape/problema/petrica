@@ -1,0 +1,54 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>petrica.in, petrica.out</td><td><strong>Sursă</strong></td><td>preOJI 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=119">Silviu-Ionut Ganceanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=petrica">Vezi solutiile trimise</a></p>
+
+<h1>Petrica<br></h1>
+
+
+<p>Petrica este presedintele unei tari cu <var>N</var> orase conectate prin strazi bidirectionale astfel incat exista un drum unic intre oricare doua dintre ele. Aceste orase sunt numerotate de la <var>1</var> la <var>N</var> astfel incat nu exista doua orase cu acelasi numar. Petrica vrea sa le imparta in patru districte blocand exact trei strazi. De asemenea vrea ca populatia oraselor sa fie distribuita cat mai uniform: diferenta dintre numarul de locuitori din distructul cu cea mai mare populatie si numarul de locuitori din districtul cu cea mai mica populatie sa fie cat mai mica. Aflati pentru presedintele Petrica aceasta diferenta.</p>
+
+<h2>Data de intrare</h2>
+
+<p>Prima linie a fisierului <var>petrica.in</var> va contine numarul <var>N</var> reprezentand numarul de orase. A doua linie contine populatia fiecarui oras (<var>N</var> valori intregi). Urmatoarele linii contin cate doi intregi <var>A</var> si <var>B</var> cu semnificatia: exista o strada intre orasele <var>A</var> si <var>B</var>.</p>
+
+<h2>Data de iesire</h2>
+
+<p>Pe prima linie a fisierului <var>petrica.out</var> se va afla un numar natural reprezentand diferenta minima pe care vrea sa o afle Petrica.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>4 ≤ N ≤ 200</var></li>
+<li>Populatia fiecarui oras este un numar intreg din intervalul <var>[1, 10000]</var></li>
+<li>Populatia unui district se calculeaza ca suma populatiei oraselor din districtul respectiv</li>
+<li>Doua orase sunt in acelasi district daca se poate ajunge de la unul la altul mergand pe strazi care nu au fost blocate</li>
+<li>Pentru <var>50%</var> din teste <var>N ≤ 70</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>petrica.in</th><th>petrica.out</th></tr><tr><td>4<br>
+2 1 1 1<br>
+1 2<br>
+1 3<br>
+1 4<br></td><td>1</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=69">Parcurgere in adancime</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=71">Dinamica pe arbore</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

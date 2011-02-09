@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>camion.in, camion.out</td><td><strong>Sursă</strong></td><td>Finala .campion 2005</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=125">Dana Lica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=camion">Vezi solutiile trimise</a></p>
+
+<h1>Camion<br></h1>
+
+<p>La firma la care lucreaza Gigel exista <var>M</var> tipuri de camioane, din fiecare tip existand <var>N</var> exemplare. Gigel aseaza camioanele firmei pe <var>N</var> randuri, asezand pe fiecare coloana numai camioane de acelasi tip. Se formeaza astfel o matrice in care liniile sunt numerotate de sus in jos de la <var>1</var> la <var>N</var>, iar coloanele sunt numerotate de la stanga la dreapta de la <var>1</var> la <var>M</var>.</p>
+
+<p>In fiecare noapte vine o banda de hoti. Seful bandei anunta: "in noaptea aceasta vom fura toate camioanele care se afla in zona dreptunghiulara avand coltul stanga-sus pe linia <var>x<sub>1</sub></var> si coloana <var>y<sub>1</sub></var>, iar coltul opus pe linia <var>x<sub>2</sub></var> si coloana <var>y<sub>2</sub></var>.</p>
+
+<p>In dimineata urmatoare, Gigel vede acest lucru, si "acopera" furtul: pe fiecare linie in care exista spatii libere deplaseaza spre stanga toate camioanele care se afla in dreapta locului liber ramas.</p>
+
+<p>De exemplu, pentru <var>N = 3</var> si <var>M = 5</var> initial avem urmatoarea amplasare:<br><var>1 2 3 4 5</var><br><var>1 <em><strong>2 3</strong></em> 4 5</var><br><var>1 <em><strong>2 3</strong></em> 4 5</var></p>
+
+<p>In prima noapte hotii fura camioane, din dreptunghiul cu coltul stanga-sus in linia <var>2</var>,coloana <var>2</var> si coltul dreapta-jos linia <var>3</var> coloana <var>3</var>. Astfel, in ziua urmatoare, dupa ce Gigel deplaseaza camioanele, amplasarea este urmatoarea:<br><var><em><strong>1 2</strong></em> 3 4 5</var><br><var><em><strong>1 4</strong></em> 5</var><br><var><em><strong>1 4</strong></em> 5</var></p>
+
+<p>Daca in a doua noapte hotii fura din nou din dreptunghiul cu coltul stanga-sus in linia <var>1</var>, coloana <var>1</var> si coltul dreapta-jos in linia <var>3</var>, coloana <var>2</var>, dupa deplasarile facute ziua de Gigel, amplasarea este urmatoarea:<br><var>3 4 5</var><br><var>5</var><br><var>5</var></p>
+
+<h2>Cerinta</h2>
+
+<p>Cunoscand cate tipuri de camioane exista la firma initial, pe cate randuri au fost asezate, numarul <var>K</var> de zile in care au loc furturi si coordonatele dreptunghiurilor din care fura hotii in fiecare noapte, determinati ce tipuri de camioane se afla pe o anumita coloana din amplasarea finala.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Fisierul de intrare <var>camion.in</var> contine pe prima linie <var>4</var> numere naturale: <var>N M K</var> si <var>C</var>, reprezentand numarul de randuri pe care au fost asezate camioanele, numarul de coloane, numarul de nopti in care vor fura hotii camioane, respectiv numarul coloanei pentru care se doreste sa se afle ce tipuri de camioane contine la final. Pe fiecare dintre urmatoarele <var>K</var> linii se vor afla cate <var>4</var> numere naturale. Pe linia <var>i+1</var> se afla <var>x<sub>1</sub> y<sub>1</sub> x<sub>2</sub> y<sub>2</sub></var>, <var>(x<sub>1</sub>,y<sub>1</sub>)</var> reprezentand linia si coloana coltului stanga-sus, iar <var>(x<sub>2</sub>,y<sub>2</sub>)</var> linia si coloana coltului dreapta-jos al dreptunghiului din care fura hotii in noaptea <var>i</var>. Numerele situate pe aceeasi linie sunt separate prin cate un spatiu.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>camion.out</var> va contine <var>N</var> linii, pe fiecare cate un numar intreg. Numarul de pe linia <var>i</var> va reprezenta tipul camionului de pe linia <var>i</var> si coloana <var>C</var>, dupa <var>K</var> zile. In caz ca pe linia <var>i</var> nu se gaseste nici un camion, se va afisa valoarea <var>0</var> pe linia respectiva.</p>
+
+<h2>Restrictii si observatii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 600</var></li>
+<li><var>1 ≤ C ≤ M ≤ 600</var></li>
+<li><var>0 ≤ K ≤ 30000</var></li>
+</ul><p>Nu este obligatoriu ca dreptunghiul din care se va efectua un furt sa contina camioane in fiecare loc.</p>
+
+<h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>camion.in</th><th>camion.out</th></tr><tr><td>3 5 3 1<br>
+2 2 3 3<br>
+1 1 3 2<br>
+1 2 3 4<br></td><td>3<br>
+5<br>
+5</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

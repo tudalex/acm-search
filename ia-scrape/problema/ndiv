@@ -1,0 +1,32 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ndiv.in, ndiv.out</td><td><strong>Sursă</strong></td><td>Autumun Warmup 2007, runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=157">Vlad Dumitriu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/vlad_D"><img src="/utilizator/vlad_D?action=download&amp;file=avatar&amp;resize=L16x16" alt="vlad_D">Vlad Dumitriu</a> <a title="Rating vlad_D: 518" class="rating-badge-3" href="http://infoarena.ro/utilizator/vlad_D?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/vlad_D">vlad_D</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ndiv">Vezi solutiile trimise</a></p>
+
+<h1>Numar de Divizori<br></h1>
+
+<p>Georgica invata la scoala cum sa afle cati divizori are un numar. Pentru numere mai mari lui Georgica ii este greu sa afle numarul de divizori, si de aceea crede ca e imposibil sa afle pentru o pereche de numere <var>A</var> si <var>B</var> suma numarului divizorilor tuturor numerelor intre <var>A</var> si <var>B</var>, inclusiv. Astfel el va cere sa il ajutati si sa aflati aceasta valoare pentru diferite perechi de numere <var>A</var>, <var>B</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>ndiv.in</var>, separate printr-un spatiu se vor afla 2 numere: <var>A</var> si <var>B</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului <var>ndiv.out</var> se va afla un singur numar care reprezinta suma numarului divizorilor tutor numerelor intre <var>A</var> si <var>B</var>, inclusiv.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ <var>A</var> ≤ <var>B</var> ≤ 2<sup>31</sup> - 1</var></li>
+<li>Pentru cel putin 30% din teste <var>B</var> - <var>A</var> ≤ 100</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>ndiv.in</th><th>ndiv.out</th></tr><tr><td>12 15<br></td><td>16<br></td></tr></table><h3>Explicatie</h3>
+
+<p><var>12</var> are <var>6</var> divizori (<var>1, 2, 3, 4, 6, 12</var>), <var>13</var> are <var>2</var> divizori, <var>14</var> are <var>4</var> divizori si <var>15</var> are <var>4</var> divizori. In total <var>16</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

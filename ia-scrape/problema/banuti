@@ -1,0 +1,47 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>banuti.in, banuti.out</td><td><strong>Sursă</strong></td><td>Autumn Warmup 2007, Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=167">Paul-Dan Baltescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/pauldb"><img src="/utilizator/pauldb?action=download&amp;file=avatar&amp;resize=L16x16" alt="pauldb">Paul-Dan Baltescu</a> <a title="Rating pauldb: 792" class="rating-badge-4" href="http://infoarena.ro/utilizator/pauldb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/pauldb">pauldb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=banuti">Vezi solutiile trimise</a></p>
+
+<h1>Banuti<br></h1>
+
+<p>Taranul Victor are la dispozitie <var>N</var> tipuri de bancnote, fiecare in numar nelimitat. El este curios care este suma minima <var>Smin</var>, astfel incat orice suma mai mare ca <var>Smin</var> sa poata fi platita din bancnotele pe care le are la dispozitie.</p>
+
+<h2>Cerinta</h2>
+
+<p>Cunoscand valorile celor <var>N</var> tipuri de bancnote, aflati <var>Smin</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>banuti.in</var> se afla numarul <var>N</var>. Pe urmatoarea linie se afla <var>N</var> numere <var>V<sub>i</sub></var> care reprezinta valoarea fiecarui tip de bancnota.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului <var>banuti.out</var> se gaseste numarul <var>Smin</var> sau <var>-1</var>, daca nu exista solutie.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 50 000</var></li>
+<li><var>1 ≤ V<sub>i</sub> ≤ 10 000 000</var></li>
+<li>Se garanteaza ca exista cel putin o bancnota cu valoarea <var>≤ 5000</var>.</li>
+<li><var>Smin &lt; 1 000 000 000</var></li>
+<li>Pentru <var>20%</var> din teste <var>N ≤ 50</var>, <var>Smin ≤ 100 000</var> si valoarea minima a cel putin unei bancnote <var>≤ 200</var>.</li>
+<li>Pentru <var>50%</var> din teste <var>N ≤ 1000</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>banuti.in</th><th>banuti.out</th></tr><tr><td>2<br>
+3 5<br></td><td>7<br></td></tr><tr><td>2<br>
+3 6<br></td><td>-1<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=72">Algoritmul lui Dijkstra</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,32 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>sort.in, sort.out</td><td><strong>Sursă</strong></td><td>ONI 2007, clasa 8</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=190">Adrian Nita</a>, <a href="/cauta-probleme?tag_id%5B%5D=189">Maria Nita</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/peanutz"><img src="/utilizator/peanutz?action=download&amp;file=avatar&amp;resize=L16x16" alt="peanutz">Andrei Homorodean</a> <a title="Rating peanutz: 544" class="rating-badge-2" href="http://infoarena.ro/utilizator/peanutz?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/peanutz">peanutz</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>1024 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=sort">Vezi solutiile trimise</a></p>
+
+<h1>Sort<br></h1>
+
+<p>Primaria orasului <span class="caps">ONI </span>a facut un contract cu firma Gigel <span class="caps">SRL </span>in vederea amenajarii gardului Gradinii Botanice. Seful firmei a constatat ca gardul cu pricina este format doar din trei tipuri de scanduri care sunt aranjate fara nicio regula. Fiind un tip cu gust estetic, si-a propus sa rearanjeze scandurile astfel incat gardul sa contina scandurile grupate astfel: primele sa fie scandurile de prima dimensiune (cea mai mica), apoi cele mijlocii, iar ultimele sa fie cele de dimensiunea cea mai mare. Echipa care a fost desemnata sa execute lucrarea are un singur muncitor care doreste sa stie care este numarul minim de schimbari pe care ar trebui sa le faca astfel incat sa rezolve problema si scandurile sa fie ordonate asa precum a decis seful firmei. Operatia de schimbare consta in alegerea a doua scanduri diferite si asezarea uneia in locul celeilalte. </p>
+
+<h2>Cerinta</h2>
+
+<p>Dandu-se un numar <var>N</var> ce reprezinta numarul de scanduri care alcatuiesc gardul, precum si modul in care sunt aranjate scandurile in gard, sa se determine care este numarul minim de schimbari ce trebuie realizat astfel incat gardul sa aiba scandurile aranjate crescator. Scandurile sunt codificate in functie de dimensiune prin valorile <var>1</var>, <var>2</var> si <var>3</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul <var>sort.in</var> contine pe prima linie un numar natural <var>N</var>. Pe a doua linie sunt <var>N</var> valori <var>1</var>, <var>2</var> sau <var>3</var> separate prin cate un spatiu ce reprezinta modul de asezare a scandurilor in gardul gradinii.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul <var>sort.out</var> va contine un numar care reprezinta numarul minim de schimbari ce trebuie realizate pentru a aranja gardul astfel incat sa fie ordonat crescator.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ <var>N</var> ≤ 1000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th><var>sort.in</var></th><th><var>sort.out</var></th></tr><tr><td>10<br>
+1 3 1 2 2 3 1 3 2 1<br></td><td>3<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

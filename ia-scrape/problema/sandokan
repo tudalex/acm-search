@@ -1,0 +1,32 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>sandokan.in, sandokan.out</td><td><strong>Sursă</strong></td><td>preONI 2008, Runda finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=161">Adrian Airinei</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>1024 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=sandokan">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=sandokan">Vezi solutiile trimise</a></p>
+
+<h1>Sandokan<br></h1>
+
+<p>Sandokan a ales un numar natural <var>K</var> si a gasit pe canapea un sir cu <var>N</var> numere naturale distincte. El se joaca cu acest sir de numere si aplica succesiv asupra sirului urmatoarea operatie: alege <var>K</var> elemente distincte din sir si le elimina pe toate mai putin elementul care are valoarea maxima (dintre cele alese). Daca la un moment dat sirul are strict mai putin decat <var>K</var> elemente se opreste si scrie acest sir pe o foaie magica, altfel aplica in continuare operatii pe sirul rezultat. Ne este greu sa aflam ce sir a scris Sandokan, de aceea vrem doar sa aflam numarul total de posibiltati distincte de a scrie un sir pe foaia magica. Fiindca pot fi destul de multe posibilitati, vrem sa stim doar restul impartirii acestui numar la <var>2 000 003</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>sandokan.in</var> contine pe prima linie numerele <var>N</var> si <var>K</var>, avand semnificatia din enunt. Pe linia urmatoare urmeaza cele <var>N</var> numere naturale distincte.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>sandokan.out</var> se afla numarul total de posibilitati distincte de a scrie un sir pe foaia magica modulo <var>2 000 003</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ K ≤ N ≤ 5 000</var></li>
+<li>Cele <var>N</var> numere initiale sunt naturale si nu depasesc <var>2</var> miliarde</li>
+<li>Doua posibilitati de a scrie un sir sunt distincte daca exista macar un numar care apare intr-un sir si nu apare in celalalt </li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>sandokan.in</th><th>sandokan.out</th></tr><tr><td>3 3<br>
+  1 2 3<br></td><td>1<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

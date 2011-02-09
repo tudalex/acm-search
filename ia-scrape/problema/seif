@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>seif.in, seif.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2007-2008, Clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=seif">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=seif">Vezi solutiile trimise</a></p>
+
+<h1>Seif<br></h1>
+
+<p>Miruna a ajuns intr-o mare incurcatura. Deoarece urma sa aiba examen la algoritmi si structuri de date, s-a hotarat sa dea o spargere in apartamentul profesorului sau pentru a pune mana pe subiecte. La inceput s-a descurcat bine, insa acum se afla in fata seifului ce pastreaza mult ravnitele subiecte de examen. Pentru a trece de acest ultim obstacol, Miruna trebuie sa introduca un cod secret. Ea a aflat din surse sigure ca acest cod are lungimea mai mare sau egala decat un numar <var>K</var>. Deasemenea, a mai facut rost din biroul profesorului de <var>2</var> siruri de litere mari ale alfabetului de lungimi <var>N</var> si <var>M</var>. Miruna banuieste ca parola secreta ce deschide seiful este un subsir comun al celor <var>2</var> siruri, cat mai mare lexicografic.</p>
+
+<h2>Cerinta</h2>
+
+<p>Stiind cele <var>2</var> siruri si numarul <var>K</var>, aflati subsirul comun de lungime mai mare sau egala cu <var>K</var> cat mai mare lexicografic.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>seif.in</var> se gaseste un numar intreg <var>T</var>, reprezentand numarul de teste. Fiecare test este compus din <var>3</var> linii: pe prima linie se gaseste un numar intreg <var>K</var>, iar urmatoarele <var>2</var> linii contin sirurile de caractere.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>seif.out</var> va contine <var>T</var> linii, pe fiecare linie aflandu-se subsirul cautat pentru fiecare test in parte.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 10</var></li>
+<li><var>1 ≤ N, M ≤ 1000</var></li>
+<li><var>0 ≤ K ≤ min(N, M)</var></li>
+<li>Un sir <var>(x<sub>1</sub>,x<sub>2</sub>...x<sub>N</sub>)</var> este mai mare din punct de vedere lexicografic decat un alt sir <var>(y<sub>1</sub>,y<sub>2</sub>...y<sub>M</sub>)</var> daca exista o pozitie <var>p</var> astfel incat <var>x<sub>p</sub> &gt; y<sub>p</sub></var> si <var>x<sub>1</sub> = y<sub>1</sub></var>, <var>x<sub>2</sub> = y<sub>2</sub></var> ... <var>x<sub>p-1</sub> = y<sub>p-1</sub></var>.</li>
+<li>Pentru datele de test exista intotdeauna solutie</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>seif.in</th><th>seif.out</th></tr><tr><td>2<br>
+  2<br><span class="caps">AAZ</span><br><span class="caps">AZA</span><br>
+  1<br><span class="caps">ZAZ</span><br><span class="caps">ZBZ</span><br></td><td>AZ<br>
+  ZZ<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

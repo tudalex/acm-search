@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ktree.in, ktree.out</td><td><strong>Sursă</strong></td><td>All You Can Code 2008</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/wefgef"><img src="/utilizator/wefgef?action=download&amp;file=avatar&amp;resize=L16x16" alt="wefgef">Andrei Grigorean</a> <a title="Rating wefgef: 783" class="rating-badge-4" href="http://infoarena.ro/utilizator/wefgef?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/wefgef">wefgef</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>80000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ktree">Vezi solutiile trimise</a></p>
+
+<h1>Ktree<br></h1>
+
+<p>Miruna a ajuns in Tara Minunilor. Acest taram fermecat este alcatuit din <var>N</var> orase legate intre ele prin <var>N-1</var> drumuri astfel incat din orice oras se poate ajunge in oricare altul folosind reteaua de drumuri existenta. Deoarece s-a saturat sa fie tratata ca o printesa cuminte, Miruna vrea sa detoneze exact <var>M</var> drumuri. Unele drumuri sunt construite mai bine decat altele, de aceea Miruna are nevoie de mai mult explozibil pentru a-si atinge obiectivul malefic. Pentru fiecare drum se cunoaste pretul care trebuie platit pentru a achizitiona explozibilul necesar detonarii lui. Dupa ce drumurile alese vor fi distruse, Miruna doreste totusi sa poate circurla pornind din orasul <var>1</var> in exact <var>K</var> orase folosind ceea ce a ramas din reteaua stradala pentru a putea jefui negustorii veniti de peste mari si tari.<br>
+Ajutati-o pe fetita ajunsa in Tara Minunilor sa cheltuie cat mai putin!</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare ktree.in se vor afla <var>3</var> numere intregi <var>N</var>, <var>M</var>, si <var>K</var> avand semnificatia din enunt. Pe urmatoarele <var>N-1</var> linii se vor afla cate <var>3</var> numere <var>A</var>, <var>B</var>, <var>C</var>, semnificand faptul ca intre orasul <var>A</var> si orasul <var>B</var> exista un drum bidirectional pentru care costul detonarii este <var>C</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul ktree.out va contine un singur numar intreg reprezentand costul minim cerut sau -1 in caz ca nu exista solutie.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 &lt; N &lt; 75</var></li>
+<li><var>1 ≤ M &lt; N</var></li>
+<li><var>1 ≤ K &lt; N</var></li>
+<li>Costurile drumurilor vor fi mai mici decat <var>1000</var>.</li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>ktree.in</th><th>ktree.out</th></tr><tr><td>2 1 1<br>
+  1 2 3<br></td><td>3</td></tr><tr><td>10 4 3<br>
+  1 2 10<br>
+  1 3 21<br>
+  1 4 4<br>
+  2 7 2<br>
+  3 5 5<br>
+  3 6 12<br>
+  6 8 7<br>
+  6 9 6<br>
+  6 10 3<br></td><td>23</td></tr></table><h2>Explicatie</h2>
+
+<p>In primul exemplu Miruna va detona singurul drum, care are costul <var>3</var>. In al doilea exemplu, va distruge drumurile dintre urmatoarele perechi de orase: <var>(2, 7)</var>, <var>(3, 5)</var>, <var>(3, 6)</var>, <var>(1, 4)</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

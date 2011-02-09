@@ -1,0 +1,60 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>datorii.in, datorii.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=117">Cristian George Strat</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">2/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=datorii">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=datorii">Vezi solutiile trimise</a></p>
+
+<h1>Datorii<br></h1>
+
+<p>Tatal si mama lui Gigel se ocupa cu vanzarea de sisteme de calcul. Afacerea s-a dovedit a fi foarte profitabila datorita unui sistem incredibil de creditare a clientilor: un client care cumpara un calculator in ziua <var>X</var> (in acest moment au trecut <var>N</var> zile de la infiintarea magazinului, zilele se numeroteaza de la 1 la <var>N</var>, <var>0 &lt; X ≤ N</var>) poate returna banii oricand doreste acesta, neexistand o limita de timp impusa. Astfel, aproape in fiecare zi, la magazinul familiei se prezinta diversi clienti care achita integral sau partial un sistem de calcul cumparat in zilele anterioare. Deoarece vor sa inceapa o noua afacere, Mama si Tata doresc sa il insarcineze pe Gigel cu administrarea magazinului de calculatoare. Pentru aceasta Gigel trebuie sa indeplineasca o conditie esentiala: in orice moment al sederii lui la magazin el poate fi solicitat prin telefon de catre tatal sa raspunda cat mai repede la urmatoarea familie de intrebari: ce suma de bani a ramas inca neachitata luand in considerare achizitiile facute de clienti in zilele <var>P</var>, <var>P+1</var>, <var>P+2</var>... <var>Q-1</var>, <var>Q</var> (<var>0 &lt; P ≤ Q ≤ N</var>). Se stie ca niciodata nu s-au cumparat doua calculatoare in aceeasi zi. Ajuta-l pe Gigel sa demonstreze parintilor ca poate administra magazinul.</p>
+
+<h2>Cerinta</h2>
+
+<p>Se dau: <var>N</var>, <var>M</var>, un sir de numere <var>A<sub>1</sub></var>, <var>A<sub>2</sub></var>... <var>A<sub>N</sub></var> si <var>M</var> operatii. <var>A<sub>i</sub></var> (<var>1 ≤ A<sub>i</sub> ≤ 1000</var>, <var>1 ≤ i ≤ N</var>) reprezinta suma de bani inca neachitata pentru o comanda efectuata in ziua <var>i</var>. O operatie poate fi de doua feluri:</p>
+
+
+<ul><li><var>A</var> (achitare - se scade o valoare din suma restanta a unei zile anume)</li>
+<li><var>B</var> (interogare - se cere suma tuturor sumelor restante ale unui interval de zile). Programul trebuie sa scrie in fisierul de iesire suma ceruta de fiecare operatie de tip <var>B</var> in momentul interogarii.</li>
+</ul><h2>Date de intrare</h2>
+
+<p>Fisierul <var>datorii.in</var> va contine pe prima linie numerele <var>N</var> si <var>M</var>. Pe urmatoarea linie se afla valorile sirului <var>A<sub>1</sub></var>, <var>A<sub>2</sub></var>... <var>A<sub>N</sub></var> separate prin cate un spatiu. Urmatoarele <var>M</var> linii descriu operatiile (achitari sau interogari) efectuate in ordinea data. Fiecare linie care descrie o operatie incepe cu un cod binar (un numar intreg cu valoarea 0 sau 1) si continua cu 2 numere intregi.</p>
+
+
+<ul><li>Un cod 0 urmat de doua numere intregi <var>T</var>, <var>V</var> (<var>1 ≤ T ≤ N</var>, <var>1 ≤ V ≤ 1000</var>) reprezinta o operatie de tip <var>A</var> (in momentul respectiv s-a achitat o valoare <var>V</var> din suma restanta a zilei <var>T</var>)</li>
+<li>Un cod 1 urmat de doua numere intregi <var>P</var>, <var>Q</var> (<var>1 ≤ P ≤ Q ≤ N</var>) o operatie de tip <var>B</var> (se cere suma tuturor sumelor restante din zilele <var>P</var>, <var>P+1</var>, <var>P+2</var>... <var>Q</var> in momentul respectiv).</li>
+</ul><h2>Date de iesire</h2>
+
+<p>In fisierul <var>datorii.out</var> se vor scrie pe cate o linie sumele cerute de fiecare operatie de tip <var>B</var> (sumele se cer in ordinea aparitiei operatiilor in fisierul de intrare).</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 15 000</var></li>
+<li><var>0 &lt; M ≤ 100 000</var></li>
+<li>In orice moment, <var>A<sub>i</sub></var> (<var>1 ≤ i ≤ N</var>) este nenegativ.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>datorii.in</th><th>datorii.out</th></tr><tr><td>6 6<br>
+1 3 2 0 0 10<br>
+1 3 6<br>
+1 1 4<br>
+0 3 1<br>
+1 1 6<br>
+0 6 2<br>
+1 1 6<br></td><td>12<br>
+6<br>
+15<br>
+13</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=106">Arbori indexati binari</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

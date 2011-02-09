@@ -1,0 +1,33 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>criptare.in, criptare.out</td><td><strong>Sursă</strong></td><td>.campion 2006-2007, Runda 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=criptare">Vezi solutiile trimise</a></p>
+
+<h1>Criptare<br></h1>
+
+<p>Zaharel si Bronzarel se intrec adesea in criptare. De data aceasta, Zaharel a criptat un sir de <var>N</var> numere naturale <var>a<sub>0</sub>, a<sub>1</sub>,... a<sub>N-1</sub></var> astfel: a luat un numar natural <var>M</var> si a construit urmatorul sir: <var>b<sub>i</sub> = a<sub>i</sub> + a<sub>(i+1) mod N</sub> + a<sub>(i+2) mod N</sub> + ... + a<sub>(i+M-1) mod N</sub></var>; apoi, l-a intrebat pe Bronzarel daca poate sa determine sirul initial <var>a<sub>0</sub>, a<sub>1</sub>,... a<sub>N-1</sub></var> daca i se da acest nou sir, precum si numarul <var>M</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>criptare.in</var> sunt scrise cele doua numere naturale <var>N, M</var>, separate printr-un singur spatiu. Pe urmatoarea linie se vor scrie <var>N</var> numere naturale separate printr-un singur spatiu, reprezentand sirul <var>b<sub>0</sub>, b<sub>1</sub>,... b<sub>N-1</sub></var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Prima linie a fisierului <var>criptare.out</var> va contine <var>N</var> numere naturale separate printr-un singur spatiu, reprezentand sirul <var>a<sub>0</sub>, a<sub>1</sub>,... a<sub>N-1</sub></var>. Desi pot exista mai multe solutii, Bronzarel stie ca sirul criptat de Zaharel este cel minim lexicografic dintre toate solutiile posibile.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N, M ≤ 50.000</var></li>
+<li><var>0 ≤ b<sub>i</sub> ≤ 10<sup>9</sup></var></li>
+<li>Prin a mod b se intelege restul impartirii lui a la b</li>
+<li>Se garanteaza existenta a cel putin unei solutii</li>
+<li>Sirul <var>a<sub>0</sub>, a<sub>1</sub>,... a<sub>N-1</sub></var> trebuie sa contina numere naturale (nu neaparat nenule)</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>criptare.in</th><th>criptare.out</th></tr><tr><td>3 2<br>
+3 5 4<br></td><td>1 2 3</td></tr><tr><td>6 4<br>
+8 13 11 13 17 10<br></td><td>2 5 0 1 7 3<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

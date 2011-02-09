@@ -1,0 +1,75 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>adn.in, adn.out</td><td><strong>Sursă</strong></td><td>preONI 2005 Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>3 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=adn">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=adn">Vezi solutiile trimise</a></p>
+
+<h1>ADN<br></h1>
+
+<p>O problema importanta in ultimii ani in biologie a fost gasirea secventei de <span class="caps">ADN </span>pentru om. Un lant <span class="caps">ADN </span>este format din doua spirale de molecule, fiecare molecula fiind denumita pe scurt A, G, C sau T. Deci un lant <span class="caps">ADN </span>poate fi reprezentat ca un sir de caractere din multimea A, G, C si T. Poblema cercetatorilor este ca ei nu pot gasi intreaga secventa <span class="caps">ADN </span>cu metode chimice sau biologice dar pot determina sectiuni din ea. Dupa ce au determinat o serie de sectiuni, un sir de molecule care are probabilitatea cea mai mare sa fie apropiat de secventa reala este sirul cel mai scurt de caractere care contine toate sectiunile determinate ca subsecvente!</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care sa-i ajute pe cercetatori sa determine cel mai scurt sir de caractere care contine toate sectiunile determinate ca subsecvente.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Fisierul de intrare <var>adn.in</var> va contine pe prima linie va contine numarul <var>N</var> de secvente <span class="caps">ADN </span>iar pe urmatoarele <var>N</var> linii cate un sir de caractere ce contine numai literele <span class="caps">A,G,C </span>si T.</p>
+
+<h2>Date de Iesire </h2>
+
+<p>Fisierul de iesire <var>adn.out</var> va contine o singura linie cu cel mai scurt sir ce contine secventele din intrare ca subsecvente.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 18</var></li>
+<li>Lungimea fiecarui sir este mai mica de <var>30.001</var></li>
+<li>Daca exista mai multe solutii de lungime minima se va afisa oricare</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>adn.in</th><th>adn.out</th></tr><tr><td>5<br><span class="caps">GGATATAAAAAC</span><br><span class="caps">GATAACCGCGCAGTGATGAGA</span><br><span class="caps">TGATGAGATGGGGATATAAAA</span><br><span class="caps">AGATAGATGATAACCGCGCAGT</span><br><span class="caps">ATGGGGATATAAAAACTTTTTT</span><br></td><td><span class="caps">AGATAGATGATAACCGCGCAGTGATGAGATGGGGATATAAAAACTTTTTT</span></td></tr></table><h3>Explicatie</h3>
+
+<p class="pre"><span class="caps">AGATAGATGATAACCGCGCAGT</span><br><strong><span class="caps">GATAACCGCGCAGT</span></strong><span class="caps">GATGAGA</span><br><strong><span class="caps">TGATGAGA</span></strong><span class="caps">TGGGGATATAAAA</span><br><strong><span class="caps">ATGGGGATATAAAA</span></strong><span class="caps">ACTTTTTT</span><br><strong><span class="caps">GGATATAAAAAC</span></strong></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 4 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=45">Diverse</a></span>
+            <a href="javascript:show_tag_list(45)" id="tag_anchor_45" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_45"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=73">Operatii pe biti</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=57">Lant hamiltonian</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=59">Dinamica pe stari exponentiale</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=77">Memoizare</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_1"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=55">Siruri de caractere</a></span>
+            <a href="javascript:show_tag_list(55)" id="tag_anchor_55" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_55"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=56">KMP</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

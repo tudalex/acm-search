@@ -1,0 +1,62 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>omizi.in, omizi.out</td><td><strong>Sursă</strong></td><td>.campion 2005</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=37">Emilian Miron</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=omizi">Vezi solutiile trimise</a></p>
+
+<h1>Omizi<br></h1>
+
+<p>Intr-un arbore cu <var>N</var> noduri (numerotate de la <var>1</var> la <var>N</var>) s-au urcat <var>M</var> omizi (numerotate de la <var>1</var> la <var>M</var>). Ca orice fiinta, si omizile noastre faceau politica, si ca orice politician voiau sa ajunga cat mai sus in ierarhia arborelui, spre cat mai multe frunze verzi si gustoase.<br>
+Desi are o gandire simpla, totusi fiecare omida tine foarte mult la orientarea sa politica. Astfel omizile de stanga aleg mereu sa mearga in sus si cat mai la stanga, iar cele de dreapta tot mai sus si cat mai spre dreapta. Spre mirarea biologilor, omizile sunt foarte politicoase. Fiecare omida ocupa o singura functie (nod) in arbore si isi asteapta randul spre promovare. Astfel in fiecare zi se efectueaza cate o promovare, si anume a celei mai inalte in functie omizi care poate urca in ierarhie (are un nod fiu vecin neocupat, prin nod fiu vecin omizile intelegand un nod imediat urmator situat mai sus in arbore). Daca sunt mai multe omizi cu acelasi rang, atunci se trage la sorti. Omida zilei alege unde anume vrea sa urce daca are mai multe posibilitati conform orientarii sale politice.</p>
+
+<h2>Cerinta</h2>
+
+<p>Pentru a putea evalua pagubele si pentru a mai salva ceva din calea omizilor politice, gradinarul a hotarat sa apeleze la voi pentru a afla care vor fi pozitile omizilor dupa toate promovarile.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>omizi.in</var> se gasesc numerele naturale <var>N</var> si <var>M</var>, cu semnificatia din enunt. Pe urmatoarele <var>N</var> linii se afla descrierea arborelui. Mai exact, pe linia <var>i+1</var> este scrisa lista fiilor nodului <var>i</var> de la stanga la dreapta ca orientare politica, terminata cu numarul <var>0</var>. Fii sunt separati prin cate un spatiu. Pe urmatoarele <var>M</var> linii se gasesc informatii despre omizi. Mai exact, pe linia <var>N+1+i</var> se afla un numar <var>x</var> si o litera majuscula <var>L</var> separate prin spatiu (<var>x</var> reprezinta numarul nodului in care se afla initial omida <var>i</var>, iar <var>L</var> este orientarea politica a omizii <var>i - S</var> pentru stanga si <var>D</var> pentru dreapta).</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>omizi.out</var> va avea <var>M</var> linii, fiecare continand un numar de la <var>1</var> la <var>N</var>. Pe linia <var>i</var> este scrisa pozitia finala a omizii <var>i</var> (dupa toate promovarile).</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 16 000</var></li>
+<li><var>2 ≤ M ≤ N</var></li>
+<li>Radacina arborelui este intotdeauna nodul <var>1</var></li>
+<li>Rangul unei omizi este distanta in numar de muchii de la radacina pana la nodul unde este pozitionata.</li>
+<li>Omizile vor alege intotdeauna nodurile accesibile conform orientarii politice. De exemplu, ordinea preferata pentru o omida ce urmeaza sa fie promovata si care este intr-un nod cu <var>3</var> fii, <var>4, 5</var> si <var>6</var> (de la stanga la dreapta) este <var>4, 5, 6</var> pentru o omida de stanga si <var>6, 5, 4</var> pentru una de dreapta, aceasta alegand primul fiu care nu este deja ocupat</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>omizi.in</th><th>omizi.out</th></tr><tr><td>4 2<br>
+  2 3 0<br>
+  4 0<br>
+  0<br>
+  0<br>
+  1 S<br>
+  2 S<br></td><td>2<br>
+  4</td></tr><tr><td>10 5<br>
+  2 5 9 0<br>
+  0<br>
+  8 4 0<br>
+  0<br>
+  3 6 7 0<br>
+  0<br>
+  10 0<br>
+  0<br>
+  0<br>
+  0<br>
+  1 D<br>
+  6 S<br>
+  7 D<br>
+  5 S<br>
+  9 S<br></td><td>7<br>
+  6<br>
+  10<br>
+  8<br>
+  9</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

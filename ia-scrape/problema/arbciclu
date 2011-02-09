@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>arbciclu.in, arbciclu.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=arbciclu">Vezi solutiile trimise</a></p>
+
+<h1>Arbore de cicluri<br></h1>
+
+<p>Un arbore de cicluri este un graf neorientat care are una din urmatoarele proprietati:</p>
+
+
+<ul><li>este un ciclu de lungime <var>K</var> (<var>K ≥ 3</var>)</li>
+<li>este un graf obtinut prin atasarea unui ciclu <var>C</var> de lungime <var>K</var> (<var>K ≥ 3</var>) la o muchie dintr-un arbore de cicluri <var>CT</var></li>
+</ul><p>Atasarea unui ciclu la o muchie dintr-un graf inseamna inlocuirea unei muchii din ciclu cu o muchie din graf (si de asemenea inlocuirea celor doua noduri ale muchiei din ciclu cu cele doua noduri ale muchiei din graf).<br><img src="http://infoarena.ro/problema/arbciclu?action=download&amp;file=arbciclu.jpg&amp;safe_only=true" alt="">  <br>
+Dandu-se mai multe grafuri sa se determine pentru fiecare daca este un arbore de cicluri.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>arbciclu.in</var> contine un numar natural <var>T</var>, reprezentand numarul de grafuri care se dau. Pentru fiecare graf dat, prima linie va contine doua numere naturale: <var>N</var> si <var>M</var>. <var>N</var> este numarul de noduri din graf si <var>M</var> este numarul de muchii. Urmatoarele <var>M</var> linii vor contine cate doua numere intregi <var>A</var> si <var>B</var>, cu semnificatia ca exista o muchie intre nodul <var>A</var> si nodul <var>B</var>. Nodurile din graf sunt numerotate cu numere de la <var>1</var> la <var>N</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pentru fiecare graf, in ordinea data in fisierul de intrare, se va afisa in fisierul <var>arbciclu.out</var> sirul <var><span class="caps">YES</span></var> daca graful este un arbore de cicluri, sau <var>NO</var> in caz contrar.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 10</var></li>
+<li><var>1 ≤ N ≤ 100.000</var></li>
+<li><var>1 ≤ M ≤ 200.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>arbciclu.in</th><th>arbciclu.out</th></tr><tr><td>2<br>
+3 3<br>
+1 2<br>
+1 3<br>
+3 2<br>
+4 5<br>
+1 2<br>
+1 3<br>
+3 2<br>
+4 3<br>
+2 4<br></td><td><span class="caps">YES</span><br><span class="caps">YES</span></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

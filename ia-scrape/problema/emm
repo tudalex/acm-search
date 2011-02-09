@@ -1,0 +1,32 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>emm.in, emm.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=emm">Vezi solutiile trimise</a></p>
+
+<h1>Expresii min-max<br></h1>
+
+<p>Considerati o expresie care contine numere naturale, paranteze, si operatorii binari <code>m</code> si <code>M</code>. <code>m</code> este operatorul de minim si <code>M</code> este operatorul de maxim. Astfel, rezultatul operatiei <code>A m B</code> este valoarea minima dintre <code>A</code> si <code>B</code>, iar rezultatul operatiei <code>A M B</code> este valoarea maxima dintre <code>A</code> si <code>B</code>. De exemplu, rezultatul <code>2m7</code> este <code>2</code>, iar rezultatul <code>9M8</code> este <code>9</code>. Cei doi operatori au aceeasi prioritate. Asta inseamna ca daca nu sunt paranteze, vor fi evaluati de la stanga la dreapta. De exemplu, rezultatul <code>1M22m13m789</code> este <code>13</code>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Dandu-se o expresie care contine numere naturale, paranteze si acesti doi operatori, aflati rezultatul obtinut.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului <var>emm.in</var> contine expresia data. Nu vor exista spatii, linia se termina cu caracter de sfarsit de linie (care nu face parte din ea).</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Afisati pe prima linie a fisierului <var>emm.out</var> rezultatul obtinut in urma evaluarii expresiei.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li>Lungimea unei expresii va fi mai mica sau egala cu <var>100.000</var></li>
+<li>Numerele care apar in expresie vor fi numere naturale cuprinse intre <var>0</var> si <var>1.000.000.000</var></li>
+</ul><p>Exemple</p>
+
+<table class="example" cellspacing="0"><tr><th>emm.in</th><th>emm.out</th></tr><tr><td>178<br></td><td>178</td></tr><tr><td>178m66m234M89m54M13M22m67<br></td><td>54</td></tr><tr><td>(((178)))<br></td><td>178</td></tr><tr><td>(1m1m1M1M1m1M1M1m1M0)m1M1<br></td><td>1</td></tr><tr><td>(12m23M13m192)M(90m89m88m87)m((298M7)M2)<br></td><td>87</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,46 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>badea.in, badea.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2006, clasele 9-10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=148">Alexandru Mosoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/bogdan2412"><img src="/utilizator/bogdan2412?action=download&amp;file=avatar&amp;resize=L16x16" alt="bogdan2412">Bogdan-Cristian Tataroiu</a> <a title="Rating bogdan2412: 1162" class="rating-badge-4" href="http://infoarena.ro/utilizator/bogdan2412?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/bogdan2412">bogdan2412</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=badea">Vezi solutiile trimise</a></p>
+
+<h1>Badea<br></h1>
+
+<p>Badea Gheorghe are o ferma foarte mare in forma de patrat format din <var>L x L</var> celule patratice de latura <var>1 m</var>. Fiind foarte batran el se gandeste sa-si lase toata ferma mostenire celor <var>N</var> nepoti. Badea Gheorge vrea sa lase fiecarui nepot cate o parcela dreptunghiulara avand latimea si lungimea numere intregi. Mai mult toate cele <var>2 * N</var> laturi trebuie sa aiba lungimi diferite. De exemplu el nu vrea sa dea unui nepot o parcela de <var>1 × 2</var> si altui nepot o parcela de <var>2 × 3</var>.</p>
+
+<p>Pentru ca nu s-a priceput niciodata la matematica badea Gheorghe va cere ajutorul sa imparta ferma.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>badea.in</var> se vor afla 2 numere intregi <var>N</var> si <var>L</var>. Testele care se vor folosi la evaluare se gasesc in urmatorul tabel. Testul <var>0</var> este exemplu si nu va fi punctat.</p>
+
+<table><tr><th><var>Test #</var></th><th><var>0</var></th><th><var>1</var></th><th><var>2</var></th><th><var>3</var></th><th><var>4</var></th><th><var>5</var></th><th><var>6</var></th><th><var>7</var></th><th><var>8</var></th><th><var>9</var></th><th><var>10</var></th></tr><tr><th><var>N</var></th><td><var>5</var></td><td><var>5</var></td><td><var>5</var></td><td><var>6</var></td><td><var>6</var></td><td><var>7</var></td><td><var>7</var></td><td><var>8</var></td><td><var>8</var></td><td><var>9</var></td><td><var>10</var></td></tr><tr><th><var>L</var></th><td><var>12</var></td><td><var>14</var></td><td><var>20</var></td><td><var>16</var></td><td><var>35</var></td><td><var>35</var></td><td><var>40</var></td><td><var>21</var></td><td><var>29</var></td><td><var>25</var></td><td><var>30</var></td></tr></table><h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>badea.out</var> se vor afla <var>L</var> linii, iar pe fiecare linie cate <var>L</var> numere intregi. despartite prin cate un spatiu. Al <var>x</var>-ulea numar de pe linia <var>y</var> reprezinta carui nepot ii apartine celula (x, y). Fiecarui nepot ii este asociat un numar intreg unic intre <var>1</var> si <var>N</var> (inclusiv).</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li>Pentru toate testele din tabel exista solutie.</li>
+<li>Suprafata de pamant primita de fiecare nepot trebuie sa fie strict pozitiva.</li>
+<li>Deoarece vi se dau testele de intrare este indicat ca programul vostru sa afiseze rezultatul precalculat.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>badea.in</th><th>badea.out</th></tr><tr><td>5 12<br></td><td>1 1 1 1 1 5 5 5 5 5 5 5<br>
+1 1 1 1 1 5 5 5 5 5 5 5<br>
+1 1 1 1 1 3 3 3 2 2 2 2<br>
+1 1 1 1 1 3 3 3 2 2 2 2<br>
+1 1 1 1 1 3 3 3 2 2 2 2<br>
+1 1 1 1 1 3 3 3 2 2 2 2<br>
+1 1 1 1 1 3 3 3 2 2 2 2<br>
+1 1 1 1 1 3 3 3 2 2 2 2<br>
+1 1 1 1 1 3 3 3 2 2 2 2<br>
+1 1 1 1 1 3 3 3 2 2 2 2<br>
+1 1 1 1 1 3 3 3 2 2 2 2<br>
+4 4 4 4 4 4 4 4 2 2 2 2<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Primul nepot primeste o tarla de <var>11 × 5</var>, al doilea nepot primeste o tarla de <var>4 × 10</var>, al treilea nepot primeste o tarla de <var>3 × 9</var>, al patrulea nepot primeste o tarla de <var>1 × 8</var>, iar ultimul nepot primeste o tarla de <var>2 × 7</var>. <var>1, 2, 3, 4, 5, 7, 8, 9, 10, 11</var> sunt numere distincte doua cate doua.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

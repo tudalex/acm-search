@@ -1,0 +1,35 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>choco.in, choco.out</td><td><strong>Sursă</strong></td><td>Fall Contest #2, SGU 2002</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=choco">Vezi solutiile trimise</a></p>
+
+<h1>Choco<br></h1>
+
+<p>Lui Bob ii place foarte tare ciocolata si nu se satura de ea niciodata. Imaginati-va bucuria lui cand parintii i-au spus ca ii vor cumpara multe bucati dreptunghiulare de ciocolata de ziua lui. O bucata de ciocolata este un dreptunghi <var>1×2</var> sau <var>2×1</var>. Parintii lui Bob i-au cumparat, de asemenea, un tort, care poate fi reprezentat ca o matrice avand <var>M</var> linii si <var>N</var> coloane. Unele pozitii de pe tort sunt ocupate de lumanari, iar altele sunt goale. Parintii lui Bob l-au rugat sa puna pe tort cat mai multe bucati de ciocolata, in asa fel incat oricare <var>2</var> bucati sa nu se suprapuna. Bob, insa, vrea sa pastreze cat mai multe bucati pentru el. De aceea, el vrea sa aseze pe tort un numar minim de bucati de ciocolata, pastrandu-le pe restul pentru el. Pentru ca mama si tata sa nu intre la banuieli, Bob vrea sa aseze bucatile de ciocolata in asa fel incat nici o alta bucata de ciocolata sa nu mai poata fi asezata pe tort (adica sa nu existe <var>2</var> patratele libere adiacente pe orizontala sau verticala).</p>
+
+<p>Determinati numarul minim de bucati de ciocolata ce trebuie asezate pe tort, astfel incat acestea sa nu se suprapuna si nici o alta bucata suplimentara sa nu mai poata fi asezata. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>choco.in</var> contine <var>2</var> numere intregi, separate prin cate un spatiu: <var>M</var> si <var>N</var>. Urmatoarele <var>M</var> linii vontin fiecare cate <var>N</var> caractere, descriind tortul. Al <var>j</var>-lea caracter de pe a <var>i</var>-a dintre aceste <var>M</var> linii poate fi ori '*' (cod <span class="caps">ASCII</span> 42), reprezentand o lumanare, ori '.' (cod <span class="caps">ASCII</span> 46), reprezentand o pozitie libera.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>choco.out</var> veti afisa numarul minim de bucati de ciocolata pe care le va aseza Bob pe tort.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ M ≤ 70</var></li>
+<li><var>1 ≤ N ≤ 7</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>choco.in</th><th>choco.out</th></tr><tr><td>5 5<br>
+.*..*<br>
+*....<br>
+..**.<br>
+**.*.<br>
+.**..<br></td><td>4</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

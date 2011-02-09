@@ -1,0 +1,38 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>euclid4.in, euclid4.out</td><td><strong>Sursă</strong></td><td>Lot Juniori 2008 - Baraj 5</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=221">Zoltan Szabo</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=euclid4">Vezi solutiile trimise</a></p>
+
+<h1>Euclid4<br></h1>
+
+<p>Este binecunoscut algoritmul de calcul al celui mai mare divizor comun (cmmdc) cu algoritmul lui Euclid prin impartiri repetate. Conform acestui algoritm cmmdc a doua numere naturale nenule <var>a</var> si <var>b</var> se calculeaza pastrand restul impartirii, si reluand impartirea cu vechiul impartitor si vechiul rest. Algoritmul se va termina cand restul impartirii devine zero. Cel mai mare divizor comun al celor doua numere <var>a</var> si <var>b</var> va fi ultimul impartitor.<br>
+Pentru calculul celui mai mare divizor comun al perechii <var>(16,22)</var> se vor efectua succesiv impartirile:</p>
+
+<table><tr><th>Deimpartit</th><th>Impartitor</th><th>Rest</th><th>Pas</th></tr><tr><td>16<br></td><td>22<br></td><td>16<br></td><td>Pasul 1<br></td></tr><tr><td>22<br></td><td>16<br></td><td>6<br></td><td>Pasul 2<br></td></tr><tr><td>16<br></td><td>6<br></td><td>4<br></td><td>Pasul 3<br></td></tr><tr><td>6<br></td><td>4<br></td><td>2<br></td><td>Pasul 4<br></td></tr><tr><td>4<br></td><td>2<br></td><td>0<br></td><td>Pasul 5<br></td></tr></table><p>Vom numi un pas o operatie de impartire ce intervine in calculului cmmdc. Se observa ca pentru determinarea cmmdc(16,22)=2 au fost necesari <var>5</var> pasi. </p>
+
+<h2>Cerinta</h2>
+
+<p>Cunoscand valoarea unui numar natural <var>n</var>, realizati un program care determina o pereche de numere naturale <var>(a,b)</var> mai mici sau egale cu <var>n</var>, al caror cmmdc se obtine intr-un numar maxim de pasi. Daca exista mai multe perechi <var>(x,y)</var> cu aceasta proprietate se va afisa cea minima. Spunem ca perechea <var>(a,b)</var> este mai mica decat <var>(x,y)</var>, daca <var>a&lt;x</var> sau <var>a=x</var> si <var>b&lt;y</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>euclid4.in</var> contine un singur numar natural <var>n</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>euclid4.out</var> va contine pe prima linie numarul maxim de pasi determinat. A doua linie va contine un numar natural <var>a</var> reprezentand primul numar al perechii minime identificate, iar pe a treia linie se va scrie numarul <var>b</var> reprezentand al doilea numar din pereche.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>4 ≤ n ≤ 10<sup>200</sup></var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>euclid4.in</th><th>euclid4.out</th></tr><tr><td>8<br></td><td>5<br>
+  5 <br>
+  8<br></td></tr><tr><td>12345678910<br></td><td>48<br>
+  4807526976<br>
+  7778742049<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

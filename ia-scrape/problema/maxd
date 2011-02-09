@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>maxd.in, maxd.out</td><td><strong>Sursă</strong></td><td>OJI 2005, clasa a 9-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=190">Adrian Nita</a>, <a href="/cauta-probleme?tag_id%5B%5D=189">Maria Nita</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Florian"><img src="/utilizator/Florian?action=download&amp;file=avatar&amp;resize=L16x16" alt="Florian">Marcu Florian</a> <a title="Rating Florian: 667" class="rating-badge-1" href="http://infoarena.ro/utilizator/Florian?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Florian">Florian</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=maxd">Vezi solutiile trimise</a></p>
+
+<h1>Maxd<br></h1>
+
+<p>Fiind elev in clasa a IX-a, George isi propune sa studieze capitolul divizibilitate cat mai bine. Ajungand la numarul de divizori asociat unui numar natural, constata ca sunt numere intr-un interval dat, cu acelasi numar de divizori. <br>
+De exemplu, in intervalul <var>[1, 10]</var>, <var>6</var>, <var>8</var> si <var>10</var> au acelasi numar de divizori, egal cu <var>4</var>. De asemenea, <var>4</var> si <var>9</var> au acelasi numar de divizori, egal cu <var>3</var>, etc. </p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care pentru un interval dat determina care este cel mai mic numar din interval ce are numar maxim de divizori. Daca sunt mai multe numere cu aceasta proprietate se cere sa se numere cate sunt.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>maxd.in</var> contine pe prima linie doua numere <var>a</var> si <var>b</var> separate prin spatiu (<var>a</var> ≤ <var>b</var>) reprezentand extremitatile intervalului.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>maxd.out</var> va contine pe prima linie trei numere separate prin cate un spatiu<br><var>min</var> <var>nrdiv</var> <var>contor</var> cu semnificatia:	</p>
+
+
+<ul><li><var>min</var> cea mai mica valoare din interval care are numar maxim de divizori</li>
+<li><var>nrdiv</var> numarul de divizori ai lui <var>min</var></li>
+<li><var>contor</var> cate numere din intervalul citit mai au acelasi numar de divizori egal cu <var>nrdiv</var></li>
+</ul><h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ <var>a</var> ≤ <var>b</var> ≤ 2000000000</var>.</li>
+<li><var>0 ≤ <var>b</var> - <var>a</var> ≤ 20000</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>maxd.in</th><th>maxd.out</th></tr><tr><td>2 10<br></td><td>6 4 3<br></td></tr><tr><td>200 200<br></td><td>200 12 1<br></td></tr></table><h3>Explicatie</h3>
+
+<p>In primul exemplu, <var>6</var> este cel mai mic numar din interval care are maxim de divizori egal cu <var>4</var> si sunt <var>3</var> astfel de numere <var>(6, 8, 10)</var>.<br>
+In cel de-al doilea exemplu, <var>200</var> are <var>12</var> divizori, iar in intervalul <var>[200,200]</var> exista un singur numar cu aceasta proprietate.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

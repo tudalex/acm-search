@@ -1,0 +1,46 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>grau.in, grau.out</td><td><strong>Sursă</strong></td><td>All You Can Code 2008</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=144">Mihai Ciucu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gogu"><img src="/utilizator/gogu?action=download&amp;file=avatar&amp;resize=L16x16" alt="gogu">Gogu Marian</a> <a title="Rating gogu: 552" class="rating-badge-2" href="http://infoarena.ro/utilizator/gogu?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gogu">gogu</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>5 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=grau">Vezi solutiile trimise</a></p>
+
+<h1>Grau<br></h1>
+
+<p>Fane a ales sa devina un magnat al graului, dar acum are probleme mari din cauza normelor europene. Conform standardelor <span class="caps">UE, </span>fiecare tip de sol este caracterizat de doua proprietati, pH-ul si indicele Feng shui, iar un agricultor poate cultiva grau decat pe tipuri de sol cu pH si indice Feng shui fixate. Din fericire, asupra oricarui tip de sol se pot executa mai multe operatii, fiecare operatie costand un leu iar efectul ei fiind modificarea cu o unitate a uneia din cele doua proprietati.<br>
+Fane a aflat care sunt cele <var>N</var> tipuri de soluri acceptate de UE asa ca el vrea sa stie pentru fiecare tip de sol pe care urmeaza sa cultive grau care este costul minim prin care poate devenii un sol aprobat.<br>
+Din pacate, Fane traieste in Romania si aici multe din normele europene au fost introduse prost asa ca legislatia se modifica destul de des prin operatii de tipul: aprobarea tuturor solurilor cu anumite proprietati sau interzicerea solurilor de un anumit tip.<br>
+Cum intrebarile lui Fane pot fi precedate de schimbari de legislatie, aflati raspunsurile la ele in momentele respective.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierui de intrare contine numarul <var>N</var> iar pe urmaroarele <var>N</var> linii de afla cele doua proprietati ale solurilor. Linia <var>N+2</var> contine numarul <var>M</var> de operatii iar fiecare din urmatoarele <var>M</var> linii contin care 3 numere, <var>op</var>, <var>X</var>, <var>Y</var>, care descriu operatile de mai sus astfel: <var>X</var> si <var>Y</var> descriu pH-ul respectiv indicele Feng shui al unui tip de sol iar valoarea lui <var>op</var> este 0, in cazul unei intrebari puse de Fane, 1, in cazul in care trebuie introdusa o lege noua care sa aprobe tipul descris de sol sau 2 daca trebuie abrogata o lege.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Raspunsurile la intrebarile lui Fane se vor afla in fisierul de iesire, cate unul pe linie, in ordinea in care au fost date.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N, M ≤ 250.000</var></li>
+<li>Pot sa existe in orice moment mai multe legi care sa aprobe acelasi tip de sol, acestea fiind toate interzise in cazul unei operatii de tip 2.</li>
+<li>Toate numerele din fisierul de intrare sunt intregi mai mici ca 2<sup>28</sup> in valoare absoluta.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>grau.in</th><th>grau.out</th></tr><tr><td>4<br>
+ 2 3<br>
+ 1 1<br>
+ 0 0<br>
+ 5 7<br>
+ 4<br>
+ 1 5 6<br>
+ 0 5 5<br>
+ 2 1 1<br>
+ 0 1 1<br></td><td>1<br>
+ 2<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Solul de tip (5, 5) poate fi transformat cu cost 1 intr-un sol de tip (5, 6) iar solul de tip (1, 1) este transformat intr-un sol de tip (0, 0) cu cost 2.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,94 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>zoo.in, zoo.out</td><td><strong>Sursă</strong></td><td>.campion 2003</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><div class="hidden">5/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=zoo">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=zoo">Vezi solutiile trimise</a></p>
+
+<h1>Zoo<br></h1>
+
+<p>Fermierul Ion are o idee originala: sa infiinteze pe teritoriul fermei sale gradina zoologica <em>Madame Tussaud</em>. Si fiindca deja are o colectie impresionanta de animale de ceara, in marime naturala, raspandite pe teritoriul fermei sale acest lucru nu e foarte dificil. In acest scop a luat harta fermei sale, pe care este fixat un sistem de coordonate si pe care sunt marcate pozitiile animalelor pe teritoriul fermei. Fiecare animal este plasat pe teritoriul fermei intr-un punct de coordonate intregi si nu poate fi mutat fara a-l deteriora. Gradina zoologica pe care o proiecteaza Ion va avea forma unui dreptunghi avand laturile paralele cu axele de coordonate si Ion ar dori ca aceasta sa contina cat mai multe animale. Inainte de a incepe constructia, fermierul face un studiu, pentru a gasi pozitia optima de amplasare a gradinii zoologice. Pentru aceasta, el si-a ales cateva pozitii unde ar putea sa construiasca gradina zoologica. Pentru fiecare dintre ele, ar dori sa stie cate animale dintre cele <var>N</var> pe care le are se afla in interiorul gradinii (sau pe marginile acesteia).</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care sa determine pentru fiecare amplasare posibila a gradinii zoologice numarul de animale care s-ar afla in interiorul acesteia (sau pe margini).</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>zoo.in</var> contine numarul intreg <var>N</var>, reprezentand numarul de animale. Fiecare dintre urmatoarele <var>N</var> linii contine coordonatele <var>x</var> si <var>y</var> ale unui animal, separate prin spatiu. Urmatoarea linie contine numarul intreg <var>M</var>, reprezentand numarul posibilitatilor de amplasare a gradinii zoologice. Pe fiecare dintre urmatoarele <var>M</var> linii se afla patru numere intregi separate prin spatii: <var>x1</var> <var>y1</var> <var>x2</var> <var>y2</var> unde (<var>x1</var>,<var>y1</var>) reprezinta coordonatele coltului stanga-jos al gradinii zoologice, iar (<var>x2</var>,<var>y2</var>) reprezinta coordonatele coltului dreapta-sus.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul <var>zoo.out</var> veti afisa pentru fiecare posibilitate de amplasare a gradinii zoologice cate o linie pe care sefla numarul de animale aflate in interiorul sau pe marginile acesteia.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 16.000</var></li>
+</ul><ul><li><var>1 ≤ M ≤ 100.000</var></li>
+</ul><ul><li>Coordonatele fiecarui animal si ale colturilor fiecarui dreptunghi sunt numere intregi din intervalul [<var>-2.000.000.000</var>, <var>2.000.000.000</var>]</li>
+</ul><ul><li>Pot exista mai multe animale in acelasi punct</li>
+</ul><ul><li><var>x1 &lt; x2</var> si <var>y1 &lt; y2</var> pentru fiecare dreptunghi descris in fisierul de intrare</li>
+</ul><ul><li>Orice linie se termina cu Enter</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>zoo.in</th><th>zoo.out</th></tr><tr><td>5<br>
+0 0<br>
+1 0<br>
+2 0<br>
+0 1<br>
+1 1<br>
+3<br>
+0 0 1000 1000<br>
+-1000 -1000 0 0<br>
+1 0 2 2<br></td><td>5<br>
+1<br>
+3</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 5 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=48">Cautare</a></span>
+            <a href="javascript:show_tag_list(48)" id="tag_anchor_48" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_48"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=49">Cautare binara</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=45">Diverse</a></span>
+            <a href="javascript:show_tag_list(45)" id="tag_anchor_45" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_45"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=298">Normalizare</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=41">Geometrie</a></span>
+            <a href="javascript:show_tag_list(41)" id="tag_anchor_41" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_41"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=80">Baleiere</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=63">Sortare</a></span>
+            <a href="javascript:show_tag_list(63)" id="tag_anchor_63" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_63"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=64">Sortare</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 3 taguri
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=84">Arbori de intervale</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=106">Arbori indexati binari</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=297">Ortogonal Range Search</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,70 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>tree2.in, tree2.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2006, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/bogdan2412"><img src="/utilizator/bogdan2412?action=download&amp;file=avatar&amp;resize=L16x16" alt="bogdan2412">Bogdan-Cristian Tataroiu</a> <a title="Rating bogdan2412: 1162" class="rating-badge-4" href="http://infoarena.ro/utilizator/bogdan2412?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/bogdan2412">bogdan2412</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>32000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=tree2">Vezi solutiile trimise</a></p>
+
+<h1>Tree 2<br></h1>
+
+<p>Patratul unui graf neorientat <var>G</var> este un graf <var>G<sup>2</sup></var> care are aceeasi multime de varfuri ca si <var>G</var> si care contine o muchie <var>(u, v)</var> intre o pereche de varfuri <var>u</var> si <var>v</var> daca si numai daca exista un drum avand o lungime de cel mult <var>2</var> muchii intre <var>u</var> si <var>v</var> in <var>G</var>.</p>
+
+<p>Dandu-se <var>G<sup>2</sup></var> si cunoscand faptul ca <var>G</var> este un arbore (un graf neorientat, conex, care nu contine cicluri), determinati graful <var>G</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intare <var>tree2.in</var> contine pe prima linie numerele intregi <var>N</var> si <var>M</var>, reprezentand numarul de noduri, respectiv numarul de muchii din <var>G<sup>2</sup></var>. Urmatoarele <var>M</var> linii contin cate doua numere intregi <var>A</var> si <var>B</var>, avand semnificatia ca exista muchie intre nodul <var>A</var> si nodul <var>B</var> in <var>G<sup>2</sup></var>. Intre doua noduri va exista cel mult o muchie.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>tree2.out</var> veti afisa <var>N - 1</var> linii, corespunzand celor <var>N - 1</var> muchii ale lui <var>G</var>. Pe fiecare din aceste linii veti afisa doua numere intregi <var>A</var> si <var>B</var>, avand semnificatia ca exista muchie intre nodurile <var>A</var> si <var>B</var> in <var>G</var>. Muchiile pot fi afisate in orice ordine.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 333</var></li>
+<li>Nodurile sunt numerotate de la <var>1</var> la <var>N</var>.</li>
+<li>Se garanteaza ca va exista cel putin un arbore <var>G</var> al carui patrat sa fie graful dat in fisierul de intrare. In cazul in care exista mai multe solutii, puteti afisa oricare dintre ele.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>tree2.in</th><th>tree2.out</th></tr><tr><td>9 19<br>
+1 2<br>
+1 3<br>
+1 4<br>
+1 5<br>
+2 3<br>
+2 4<br>
+2 5<br>
+2 9<br>
+3 4<br>
+3 5<br>
+3 6<br>
+3 7<br>
+3 8<br>
+3 9<br>
+4 5<br>
+4 8<br>
+5 6<br>
+5 7<br>
+6 7<br></td><td>1 3<br>
+2 3<br>
+2 9<br>
+3 4<br>
+3 5<br>
+4 8<br>
+5 6<br>
+5 7<br></td></tr><tr><td>6 9<br>
+1 2<br>
+1 3<br>
+1 5<br>
+2 5<br>
+3 4<br>
+3 5<br>
+3 6<br>
+4 5<br>
+4 6<br></td><td>3 4<br>
+1 2<br>
+3 5<br>
+5 1<br>
+6 4<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,57 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>mexc.in, mexc.out</td><td><strong>Sursă</strong></td><td>ONI 2008 - baraj</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=153">Adrian Diaconu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/toni2007"><img src="/utilizator/toni2007?action=download&amp;file=avatar&amp;resize=L16x16" alt="toni2007">Pripoae Teodor Anton</a> <a title="Rating toni2007: 632" class="rating-badge-1" href="http://infoarena.ro/utilizator/toni2007?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/toni2007">toni2007</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=mexc">Vezi solutiile trimise</a></p>
+
+<h1>Mexc<br></h1>
+
+<p>Proaspat scapat de conflictele sale cu politia, Gigel vrea sa organizeze o excursie la munte. El a descoperit o suprafata dreptunghiulara de N metri latime si M metri lungime, impartita in <var>N</var> x <var>M</var> suprafete patratice elementare de latura <var>1</var> si cu laturile paralele cu laturile suprafetei. Pentru simplitate, ne vom referi la ea ca la o matrice notata cu <var>A</var> avand <var>N</var> linii (numerotate de la <var>1</var> la <var>N</var>) si <var>M</var> coloane (numerotate de la <var>1</var> la <var>M</var>). Pentru fiecare patrat ( <var>i</var> , <var>j</var> ) se cunoaste inaltimea A(i,j) la care acesta se afla.<br>
+Dintr-un patrat ( <var>i</var> , <var>j</var> ), Gigel se poate deplasa, in interiorul suprafetei, in oricare din patratele: ( <var>i</var> , <var>j+1</var> ), ( <var>i</var> , <var>j-1</var> ), ( <var>i-1</var> , <var>j</var> ), ( <var>i+1</var> , <var>j</var> ), in cazul in care acestea exista. Un drum valid in viziunea lui Gigel este un drum care pleaca din orice patrat ( <var>x</var> , <var>y</var> )si are proprietatile:</p>
+
+
+<ul><li>inaltimea fiecarui patrat ( <var>i</var> , <var>j</var> ) prin care trece, satisface relatia: A(i,j) &gt;= A(x,y) - D ;(D fiind o constanta data);</li>
+<li>patratul ( <var>xf</var> , <var>yf</var> ) in care drumul se termina (denumit destinatie finala), are inaltimea mai mare sau egala cu inaltimea patratului (x,y), A(xf,yf) &gt;= A(x,y).</li>
+</ul><h2>Cerinta</h2>
+
+<p>Sa se scrie un program care sa-l ajute pe Gigel sa afle, pentru fiecare patrat initial, cate destinatii finale distincte exista pentru drumurile valide care pornesc din acel patrat.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>mexc.in</var> contine pe prima linie trei numere naturale <var>N</var> <var>M</var> <var>D</var> , separate prin cate un spatiu, cu semnificatia din enunt. Fiecare dintre urmatoarele <var>N</var> linii vor contine cate <var>M</var> numere naturale, separate prin cate un spatiu, reprezentand valorile elementelor matricei A.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>mexc.out</var> va contine <var>N</var> linii pe care se vor scrie cate <var>M</var> numere naturale, separate prin cate un spatiu, numarul i de pe linia j din fisier reprezentand numarul de destinatii finale distincte care pot fi atinse pe drumuri valide ce pornesc din patratul (i,j), ∀ <var>1 ≤ i ≤ N</var> , <var>1 ≤ j ≤ M</var></p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 800</var></li>
+<li><var>1 ≤ M ≤ 800</var></li>
+<li><var>0 ≤ D ≤ 100000</var></li>
+<li><var>0 ≤ A(i,j) ≤ 100000</var>, ∀ <var>1 ≤ i ≤ N</var> , <var>1 ≤ j ≤ M</var></li>
+<li>Destinatia finala poate sa coincida cu punctul de plecare. Un drum format dintr-un singur patratel este considerat valid.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>mexc.in</th><th>mexc.out</th></tr><tr><td>5 6 2<br>
+  7 7 7 7 7 7 <br>
+  7 3 3 3 3 7<br>
+  7 3 5 6 3 7<br>
+  7 3 3 3 3 7<br>
+  7 7 7 7 7 10<br></td><td>18 18 18 18 18 18 <br>
+  18 30 30 30 30 18 <br>
+  18 30 20 1 30 18 <br>
+  18 30 30 30 30 18 <br>
+  18 18 18 18 18 1<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Pentru patratelele de inaltime <var>7</var> destinatia finala poate fi orice patratel de inaltime <var>7</var> si patratelul de inaltime <var>10</var>.<br>
+Pentru patratelele de inaltime <var>3</var> destinatia finala poate fi orice patratel.<br>
+Pentru patratelul de inaltime <var>5</var> destinatia finala poate fi orice patratel mai putin cele de inaltime <var>3</var>.<br>
+Pentru patratelul de inaltime <var>6</var> destinatia finala poate fi doar el insusi (nu poate trece prin patratelele de inaltime <var>3</var> datorita primei restrictii)<br>
+Pentru patratelul de inaltime <var>10</var> destinatia finala poate fi doar el insusi.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

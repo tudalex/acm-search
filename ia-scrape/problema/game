@@ -1,0 +1,59 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>game.in, game.out</td><td><strong>Sursă</strong></td><td>Bursele Agora 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=game">Vezi solutiile trimise</a></p>
+
+<h1>Game<br></h1>
+
+<p>Andrei a invatat un joc matematic interesant care vrea sa il arate lui Mihai. Jocul incepe cu <var>N</var> gramezi de pietre. Fiecare jucator aflat la mutare poate lua pietre dintr-o singura gramada. Numarul pietrelor luate poate fi <var>1</var> sau un numar prim. Jucatorii muta alternativ, iar castigatorul este cel care ia ultima piatra.<br>
+Andrei se ofera sa il lase pe Mihai sa faca prima mutare, dar Mihai stie ca Andrei a invatat deja strategia jocului, asa ca doreste sa afle daca are sau nu o strategie sigura de castig. Baietii joaca cate <var>10</var> jocuri consecutiv.</p>
+
+<h2>Cerinta</h2>
+
+<p>Sarcina voastra este sa il ajutati pe Mihai cu raspunsul exact pentru fiecare dintre cele <var>10</var> configuratii.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Fisierul de intrare <var>game.in</var> contine zece linii. Primul numar de pe o astfel de linie reprezinta numarul <var>N</var> al gramezilor, iar in continuare se afla <var>N</var> numere care reprezinta numarul pietrelor din fiecare gramada. Numerele de pe o linie vor fi separate prin spatii.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>game.out</var> va contine cate o linie pentru fiecare dintre configuratiile din fisierul de intrare (in aceeasi ordine). Valoarea de pe o linie va fi <var>1</var> daca Mihai are o strategie sigura de castig pentru configuratia corespunzatoare si <var>0</var> in caz contrar.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1000</var></li>
+<li>numarul total al pietrelor nu va depasi <var>2000000000</var> pentru o configuratie.</li>
+</ul><h2>Exemplu</h2>
+
+
+<table class="example" cellspacing="0"><tr><th>game.in</th><th>game.out</th></tr><tr><td>2 2 1<br>
+3 7 7 7<br>
+1 1000<br>
+2 5 5<br>
+4 3 3 3 3<br>
+2 2 1<br>
+3 7 7 7<br>
+1 1000<br>
+2 5 5<br>
+4 3 3 3 3<br></td><td>1<br>
+1<br>
+0<br>
+0<br>
+0<br>
+1<br>
+1<br>
+0<br>
+0<br>
+0</td></tr></table><h3>Explicatie</h3>
+
+<p>Pentru prima configuratie Mihai va lua o piatra din prima gramada. Apoi, Andrei va lua o piatra din una dintre cele doua gramezi,iar Mihai va lua piatra din cealalta gramada si va castiga.<br>
+Pentru cea de-a doua configuratie Mihai va lua toate cele sapte pietre din una dintre gramezi. Apoi, Andrei va lua un numar de pietre dintr-una dintre gramezile ramase, iar Mihai va lua acelasi numar de pietre din cealalta gramada ramasa. Procesul va continua pana in momentul in care nu va mai ramane nici o piatra. Ultima mutare va fi efectuata cu siguranta de catre Mihai.</p>
+
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

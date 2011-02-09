@@ -1,0 +1,33 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ordini.in, ordini.out</td><td><strong>Sursă</strong></td><td>Junior Challenge</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.6 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ordini">Vezi solutiile trimise</a></p>
+
+<h1>Ordini<br></h1>
+
+<p>Patratel, elev in clasa a <span class="caps">VIII</span>-a, se pregateste sa participe la Olimpiada Balcanica pentru Juniori. In acest scop, el primeste de la profesorul de informatica un numar de cifre in baza 10. Patratel trebuie sa formeze toate numerele distincte posibile folosind toate cifrele date ( evident prima cifra trebuie sa fie nenula ) si sa adune aceste numere. El trebuie sa ii spuna profesorului rezultatul obtinut modulo un numar <var>M</var> ( restul impartirii rezultatului la numarul <var>M</var> ).</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima si singura linie a fisierului de intrare <var>ordini.in</var> contine <var>11</var> numere naturale. Primele <var>10</var> numere sunt frecventele de aparitie pentru fiecare cifra de la <var>0</var> la <var>9</var>. Ultimul numar de pe linie este numarul <var>M</var>. </p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>ordini.out</var> contine pe prima linie rezultatul obtinut modulo <var>M</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>Suma celor <var>10</var> frecvente nu depaseste <var>1 000</var></li>
+<li>Pentru <var>50%</var> din teste, suma frecventelor este mai mica sau egala cu <var>10</var></li>
+<li><var>5 ≤ M ≤ 100 000 001</var></li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>ordini.in</th><th>ordini.out</th></tr><tr><td>1 1 1 0 0 0 0 0 0 0 29<br></td><td>24</td></tr><tr><td>3 0 0 0 0 0 0 0 0 1 666013<br></td><td>9000</td></tr><tr><td>7 31 9 8 0 16 55 0 8 9 5171<br></td><td>1965</td></tr></table><h3>Explicatie</h3>
+
+<p>Pentru primul exemplu, Patratel trebuie sa formeze numere cu cifrele <var>0</var>, <var>1</var> si <var>2</var> si aceste cifre sa apare in numere exact o data fiecare. Numerele care se pot forma sunt <var>102</var>, <var>120</var>, <var>201</var> si <var>210</var>. Suma acestor numere este <var>633</var> si <var>633 % 29 = 24</var>. Pentru al doilea exemplu singurul numar care se poate forma cu o cifra de <var>9</var> si <var>3</var> cifre de <var>0</var> este <var>9000</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

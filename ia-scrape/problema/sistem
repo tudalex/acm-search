@@ -1,0 +1,58 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>sistem.in, sistem.out</td><td><strong>Sursă</strong></td><td>ONI 2002</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=sistem">Vezi solutiile trimise</a></p>
+
+<h1>Sistem<br></h1>
+
+<p>Intr-un judet exista <var>N</var> orase, numerotate de la <var>1</var> la <var>N</var>. Fiecare dintre cele <var>N</var> orase ale judetului este legat de exact alte 2 orase, prin strazi bidirectionale. Si mai ciudat este faptul ca, in cadrul acestui sistem stradal, nu este intotdeauna posibil sa ajungi din orice oras in oricare alt oras mergand pe strazi. Oricum, locuitorii judetului sunt mandri de acest sistem al lor si sunt de parere ca nu mai exista altul la fel. Dumneavoastra vreti sa le demonstrati contrariul si pentru aceasta vreti sa calculati cate sisteme stradale distincte cu proprietatea de mai sus exista. Doua sisteme sunt considerate distincte daca exista cel putin o strada intre o pereche de orase <var>i</var> si <var>j</var> in cadrul primului sistem, care nu exista in cadrul celui de-al doilea.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care sa calculeze cate sisteme stradale distincte exista.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Din fisierul <var>sistem.in</var> veti citi valoarea intreaga <var>N</var>, reprezentand numarul de orase ale judetului.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul <var>sistem.out</var> veti afisa o valoare intreaga, reprezentand numarul de sisteme stradale distincte, cu proprietatea ca orice oras este legat prin strazi directe de exact alte 2 orase.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 100</var></li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>sistem.in</th><th>sistem.out</th><th>sistem.in</th><th>sistem.out</th></tr><tr><td>4</td><td>3</td><td>6</td><td>70</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 3 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=45">Diverse</a></span>
+            <a href="javascript:show_tag_list(45)" id="tag_anchor_45" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_45"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=104">Operatii pe numere mari</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=281">Combinatorica</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

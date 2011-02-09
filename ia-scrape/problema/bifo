@@ -1,0 +1,64 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>bifo.in, bifo.out</td><td><strong>Sursă</strong></td><td>ONI 2005</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=119">Silviu-Ionut Ganceanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=bifo">Vezi solutiile trimise</a></p>
+
+<h1>Bifo<br></h1>
+
+<p>Pentru a-si vindeca rana provocata de Spanul cel Negru, printul Algorel are nevoie de leacul miraculos aflat in posesia vrajitoarei din padurea intunecata. Aceasta i-a promis leacul daca ii rezolva urmatoarea problema, la care ea s-a gandit zadarnic o mie de ani: pornind de la doua cuvinte initiale <var>A<sub>1</sub></var> si <var>A<sub>2</sub></var> si aplicand "formula bifo" <var>A<sub>n</sub> = A<sub>n-2</sub>A<sub>n-1</sub></var> pentru <var>3 ≤ n</var>, se obtin cuvintele <var>A<sub>3</sub>, A<sub>4</sub>, A<sub>5</sub></var> s.a.m.d. Prin <var>A<sub>n-2</sub>A<sub>n-1</sub></var> intelegem concatenarea cuvintelor <var>A<sub>n-2</sub></var> si <var>A<sub>n-1</sub></var> in aceasta ordine. Toate aceste cuvinte (<var>A<sub>1</sub> A<sub>2</sub>, A<sub>3</sub> A<sub>4</sub>, A<sub>5</sub></var> s.a.m.d), sunt la randul lor concatenate, in ordine, formand un sir de caractere infinit denumit sir magic. Formula leacului miraculos are <var>M</var> caractere, pe care vrajitoarea nu le stie. Se stiu insa cele <var>M</var> pozitii din sirul magic in care apar, in ordine, caracterele din formula.</p>
+
+<h2>Cerinta</h2>
+
+<p>Cu toata inteligenta lui, Algorel nu poate rezolva aceasta problema. Ajutati-l pe print sa iasa din incurcatura afland formula leacului magic.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Primele doua linii ale fisierului <var>bifo.in</var> contin fiecare cate un sir de cel mult <var>100</var> de caractere reprezentand cuvintele <var>A<sub>1</sub></var> (pe prima linie) si respectiv <var>A<sub>2</sub></var> (pe a doua linie). A treia linie contine un numar intreg <var>M</var>, reprezentand numarul de caractere din formula leacului miraculos. Urmeaza <var>M</var> linii descriind, in ordine, pozitiile din sirul magic unde se gasesc caracterele din formula.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>bifo.out</var> va contine pe prima linie un sir de <var>M</var> caractere reprezentand formula leacului miraculos.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ M ≤ 100</var></li>
+<li><var>A<sub>1</sub></var> si <var>A<sub>2</sub></var> contin doar litere mici ale alfabetului englez</li>
+<li>Numerotarea pozitiilor din sirul infinit incepe cu <var>1</var></li>
+<li>Cele <var>M</var> pozitii vor fi numere intregi (nu neaparat distincte) de maxim <var>100</var> de cifre</li>
+<li>Pentru <var>60%</var> din teste pozitiile vor fi numere intregi intre <var>1</var> si <var>1.000.000.000</var></li>
+<li>Fiecare linie din fisierul de intrare si din fisierul de iesire se termina cu marcaj de sfarsit de linie</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>bifo.in</th><th>bifo.out</th></tr><tr><td>ab<br>
+cdx<br>
+3<br>
+10<br>
+4<br>
+15<br></td><td>xdb</td></tr></table><h3>Explicatii</h3>
+
+<p>Primele 5 siruri de caractere obþinute folosind formula bifo sunt:<br><strong>ab, cdx, abcdx, cdxabcdx, abcdxcdxabcdx</strong><br>
+Concatenand aceste siruri se obþine sirul magic:<br><strong>abcdxabcdxcdxabcdxabcdxcdxabcdx</strong>...</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=45">Diverse</a></span>
+            <a href="javascript:show_tag_list(45)" id="tag_anchor_45" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_45"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=104">Operatii pe numere mari</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=345">Recursivitate</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=89">Divide et Impera</a></span>
+            <a href="javascript:show_tag_list(89)" id="tag_anchor_89" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_89"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=90">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

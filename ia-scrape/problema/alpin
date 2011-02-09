@@ -1,0 +1,56 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>alpin.in, alpin.out</td><td><strong>Sursă</strong></td><td>Lista lui Francu</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=163">Cristian Cadar</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=alpin">Vezi solutiile trimise</a></p>
+
+<h1>Alpin<br></h1>
+
+<p>Un alpinist se afla intr-o regiune muntoasa codificata sub forma unei matrici patratice de dimensiune <var>N</var>, fiecare element al matricii reprezentand altitudinea respectivei portiuni de teren. Alpinistul isi poate porni traseul din orice punct al regiunii ( deci de la oricare dintre elementele matricii ) si poate termina acest traseu oriunde. El poate merge pe oricare din directiile {N, S, E, V} cu conditia sa nu paraseasca regiunea. In plus, trebuie sa urce in permanenta, sau, altfel spus, altitudinea regiunii curente sa fie strict mai mica decat altitudinea regiunii urmatoare de pe traseu.</p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se determine cel mai lung traseu pe care il poate face alpinistul.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>alpin.in</var> se va afla numarul <var>N</var>, dimensiunea regiunii. Urmatoarele <var>N</var> linii contin cate <var>N</var> numere naturale pozitive separate prin exact un spatiu, descriind codificarea matriceala a regiunii.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Pe prima linie a sa, fisierul de iesire <var>alpin.out</var> va contine <var><span class="caps">LMAX</span></var>, lungimea maxima a traseului parcurs. Urmeaza <var><span class="caps">LMAX</span></var> linii, descriind traseul urmat prin casutele sale, in ordine, de la prima la ultima, inclusiv.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1024</var></li>
+<li>Altitudinea maxima nu depaseste <var>16.384</var></li>
+<li>Daca exista mai multe solutii de lungime maxima, se va afisa oricare dintre ele</li>
+<li>Daca determinati corect doar lungimea maxima, veti primi <var>50%</var> din punctajul pe testul respectiv</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>alpin.in</th><th>alpin.out</th></tr><tr><td>6<br>
+29 10 8 9 8 10<br>
+22 11 7 3 7 20<br>
+17 15 3 14 45 30<br>
+19 5 2 41 19 17<br>
+23 8 90 39 20 18<br>
+27 30 32 35 70 19<br></td><td>16<br>
+4 3<br>
+3 3<br>
+2 3<br>
+1 3<br>
+1 2<br>
+2 2<br>
+3 2<br>
+3 1<br>
+4 1<br>
+5 1<br>
+6 1<br>
+6 2<br>
+6 3<br>
+6 4<br>
+5 4<br>
+4 4</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,43 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cc.in, cc.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=cc">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cc">Vezi solutiile trimise</a></p>
+
+<h1>Cc<br></h1>
+
+<p>Intr-o sala se afla <var>N</var> concurenti si <var>N</var> calculatoare. Se cunoaste distanta pe care trebuie sa o parcurga fiecare concurent din pozitia in care se afla pana la fiecare calculator. Dorim sa asezam fiecare concurent la cate un calculator, in asa fel incat suma distantelor parcurse de concurenti sa fie minima. Determinati aceasta suma minima a distantelor.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului de intrare cc.in contine numarul intreg <var>N</var>, reprezentand numarul de concurenti si de calculatoare. Urmatoarele <var>N</var> linii contin cate <var>N</var> numere. Al <var>j</var>-lea numar de pe a <var>i</var>-a dintre aceste <var>N</var> linii reprezinta distanta pe care trebuie sa o parcurga concurentul <var>i</var> pentru a ajunge la calculatorul <var>j</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>In fisierul de iesire cc.out veti afisa suma minima a distantelor parcurse de concurenti pentru a se aseza fiecare la cate un calculator.</p>
+
+<h2>Restrictii si precizari:</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100</var></li>
+<li>Fiecare din cele <var>N x N</var> distante este un numar intreg din intervalul <var>[1, 10.000]</var></li>
+</ul><h2>Exemplu:</h2>
+
+<table class="example" cellspacing="0"><tr><th>cc.in</th><th>cc.out</th></tr><tr><td>5<br>
+7 9 2 1 6<br>
+9 10 11 12 13<br>
+8 3 11 6 7<br>
+6 6 6 6 6<br>
+9 5 3 9 8<br></td><td>22<br></td></tr></table><h3>Explicatii </h3>
+
+<p>Concurentul <var>1</var> se aseaza la calculatorul <var>4</var>.<br>
+Concurentul <var>2</var> se aseaza la calculatorul <var>1</var>.<br>
+Concurentul <var>3</var> se aseaza la calculatorul <var>2</var>.<br>
+Concurentul <var>4</var> se aseaza la calculatorul <var>5</var>.<br>
+Concurentul <var>5</var> se aseaza la calculatorul <var>3</var>. </p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

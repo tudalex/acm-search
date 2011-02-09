@@ -1,0 +1,32 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ksecv.in, ksecv.out</td><td><strong>Sursă</strong></td><td>Selectie echipe ACM ICPC, UPB 2008</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.8 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ksecv">Vezi solutiile trimise</a></p>
+
+<h1>Ksecv<br></h1>
+
+<p>Se da o secventa <var>S</var> ce contine <var>N</var> numere intregi pozitive. Pozitiile pe care se afla aceste numere sunt numerotate de la <var>1</var> la <var>N</var>. O <strong>subsecventa</strong> <var>S[i:j]</var> <var>(1≤i≤j≤N)</var> a unei secvente <var>S</var> este o secventa alcatuita din elementele de pe pozitiile <var>i</var>, <var>i+1</var>, ..., <var>j</var> din cadrul secventei <var>S</var>. Vom spune ca o pozitie <var>x</var> <strong>apartine</strong> unei subsecvente <var>S[i:j]</var>, daca <var>i≤x≤j</var>. <br><strong>Costul</strong> unei subsecvente <var>S[i:j]</var> este egal cu elementul maxim din cadrul acesteia. O <strong>K-impartire</strong> a unei secvente <var>S</var> este o multime de <var>K</var> subsecvente disjuncte (din punct de vedere al pozitiilor din <var>S</var>) ale lui <var>S</var>, care, impreuna, acopera intreaga secventa <var>S</var> (adica fiecare pozitie din <var>S</var> <strong>apartine</strong> exact unei subsecvente). Costul unei <var>K-impartiri</var> este egal cu suma costurilor celor <var>K</var> subsecvente.</p>
+
+<p>Determinati o <var>K-impartire</var> de cost minim a unei secvente <var>S</var> date.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>ksecv.in</var> contine doua numere intregi, separate printr-un spatiu: <var>N</var> si <var>K</var>. A doua linie contine <var>N</var> numere intregi, reprezentand, in ordine, elementele secventei <var>S</var> date. Doua numere consecutive din cadrul secventei vor fi separate printr-un spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>ksecv.out</var> veti afisa costul minim al unei <var>K-impartiri</var> a secventei <var>S</var> date in fisierul de intrare.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100.000</var></li>
+<li><var>1 ≤ K ≤ min{N, 100}</var></li>
+<li>Orice element al secventei este un numar intreg din intervalul <var>[0,10.000.000]</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>ksecv.in</th><th>ksecv.out</th></tr><tr><td>7 3<br>
+3 2 1 5 6 3 2<br></td><td>10<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

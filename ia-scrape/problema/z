@@ -1,0 +1,57 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>z.in, z.out</td><td><strong>Sursă</strong></td><td>Grigore Moisil By Net 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=160">Mihai Pantis</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">1/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=z">Vezi solutiile trimise</a></p>
+
+<h1>ZParcurgere<br></h1>
+
+<p>Petrica are o tabla patratica de dimensiuni <var>2<sup>N</sup>*2<sup>N</sup></var>. Ar vrea sa scrie pe patratelele tablei numere naturale cuprinse intre <var>1</var> si <var>2<sup>N</sup>*2<sup>N</sup></var> conform unei parcurgeri mai deosebite pe care o numeste Z-parcurgere. O Z-parcurgere viziteaza recursiv cele patru cadrane ale tablei in ordinea: stanga-sus, dreapta-sus, stanga-jos, dreapta-jos. De exemplu, daca <var>N=1</var>, ordinea vizitarii patratelelor de pe tabla este in forma de Z, ca in figura urmatoare:</p>
+
+<table><tr><td align="center">1</td><td align="center">2</td></tr><tr><td align="center">3</td><td align="center">4</td></tr></table><p>Daca <var>n=2</var>, Petrica va traversa patratelele in ordinea:</p>
+
+
+<table><tr><td align="center">1</td><td align="center">2</td><td align="center">5</td><td align="center">6</td></tr><tr><td align="center">3</td><td align="center">4</td><td align="center">7</td><td align="center">8</td></tr><tr><td align="center">9</td><td align="center">10</td><td align="center">13</td><td align="center">14</td></tr><tr><td align="center">11</td><td align="center">12</td><td align="center">15</td><td align="center">16</td></tr></table><h2>Cerinta</h2>
+
+<p>La un moment dat Petrica ar vrea sa stie ce numar de ordine trebuie sa scrie conform Z-parcurgerii pe anumite patratele date prin coordonatele lor ( <var>x</var>, <var>y</var> ). Petrica incepe umplerea tablei intotdeauna din coltul din stanga-sus.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>z.in</var> se afla doua numere naturale <var>N</var> si <var>K</var>, unde <var>N</var> reprezinta faptul ca tabla are dimensiunea <var>2<sup>N</sup>*2<sup>N</sup></var>, iar <var>K</var> este numarul patratelelor pe care Petrica ar vrea sa stie ce numar va trebui sa scrie pe ele. Pe fiecare din urmatoarele <var>K</var> linii se afla cate doua numere naturale (<var>x</var>, <var>y</var>), care reprezinta linia, respectiv coloana unui patratel ales. A <var>i+1</var>-a linie descrie al <var>i</var>-lea patratel ( <var>i = 1, 2, ..., k</var> ).</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe cele <var>K</var> linii ale fisierului de iesire <var>z.out</var> se va scrie cate un numar natural, corespunzator numarului pe care Petrica il va scrie pe patratelul ales. A <var>i</var>-a linie descrie al <var>i</var>-lea patratel ( <var>i = 1, 2, ..., k</var> ).</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 15</var></li>
+</ul><ul><li><var>1 ≤ K ≤ 1 000</var></li>
+</ul><ul><li><var>1 ≤ x, y ≤ 2<sup>N</sup></var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>z.in</th><th>z.out</th></tr><tr><td>2 2<br>
+3 3<br>
+4 3<br></td><td>13<br>
+15</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=45">Diverse</a></span>
+            <a href="javascript:show_tag_list(45)" id="tag_anchor_45" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_45"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=345">Recursivitate</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_5"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=89">Divide et Impera</a></span>
+            <a href="javascript:show_tag_list(89)" id="tag_anchor_89" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_89"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=90">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

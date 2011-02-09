@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>rompetrol.in, rompetrol.out</td><td><strong>Sursă</strong></td><td>Autumn Warmup 2007, Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>4 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=rompetrol">Vezi solutiile trimise</a></p>
+
+<h1>Rompetrol<br></h1>
+
+<p>Firma Rompetrol are <var>N</var> benzinarii amplasate de-a lungul autostrazii Soarelui. Pozitiile benzinariilor sunt cunoscute, fiind specificate prin distantele <var>d<sub>1</sub>, d<sub>2</sub>, ... , d<sub>N</sub></var> ( <var>d<sub>i</sub></var> reprezinta distanta de la sediul firmei Rompetrol pana la benzinaria <var>i</var>). Sediul firmei Rompetrol este amplasat la intrarea pe autostrada Soarelui. De asemenea, pentru fiecare benzinarie se cunoaste cantitatea de combustibil <var>c<sub>i</sub></var> necesara pentru a satisface cerintele clientilor ce utilizeaza benzinaria respectiva. In <var>K</var> dintre aceste benzinarii firma doreste sa amenajeze depozite de combustibil, care sa alimenteze benzinaria respectiva, precum si, posibil, alte benzinarii invecinate. Fiecare benzinarie va fi alimentata de la depozitul cel mai apropiat. Pentru fiecare benzinarie se cunoaste costul <var>a<sub>i</sub></var> ce trebuie platit pentru amenajarea unui depozit de combustibil in cadrul benzinariei. Costul de transport al benzinei de la un depozit <var>X</var> la o benzinarie <var>Y</var> este egal cu produsul dintre cantitatea de combustibil necesara la benzinaria <var>Y</var> si distanta dintre <var>X</var> si <var>Y</var>. Costul de transport pentru o amplasare a depozitelor data va fi egal cu suma costurilor de transport ale tuturor benzinariilor. Costul total este egal cu suma dintre costul total de transport si costurile de amenajare ale depozitelor in <var>K</var> dintre benzinarii.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care sa determine costul total minim.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>rompetrol.in</var> contine pe prima linie doua numere naturale separate prin spatiu <var>N</var> si <var>K</var>, reprezentand numarul de benzinarii si respectiv numarul de depozite care trebuie construite. Pe fiecare linie <var>i</var> din urmatoarele <var>N</var> sunt scrise <var>3</var> numere naturale, separate prin cate un spatiu: <var>d<sub>i</sub>, c<sub>i</sub> si a<sub>i</sub></var>, reprezentand distanta de la benzinaria <var>i</var> la sediul firmei Rompetrol, cantitatea de combustibil necesara la benzinaria <var>i</var> si costul amenajarii unui depozit in benzinaria <var>i</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>rompetrol.out</var> va contine pe prima linie costul total minim posibil.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100 000</var></li>
+<li><var>1 ≤ K ≤ N</var></li>
+<li><var>1 ≤ N*K ≤ 5 000 000</var></li>
+<li><var>1 ≤ d<sub>1</sub> &lt; d<sub>2</sub> &lt; ... &lt; d<sub>N</sub> ≤ 10 000 000</var></li>
+<li><var>1 ≤ c<sub>i</sub> ≤ 1000</var></li>
+<li><var>0 ≤ a<sub>i</sub> ≤ 1 000 000 000</var></li>
+<li>Cel putin 40% din teste vor avea <var>N ≤ 500</var> si <var>K ≤ 300</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>rompetrol.in</th><th>rompetrol.out</th></tr><tr><td>6 3<br>
+  5 1 0<br>
+  6 1 0<br>
+  12 1 0<br>
+  19 1 0<br>
+  20 1 0<br>
+  27 1 0<br></td><td>8<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Depozitul 1 va fi construit in benzinaria 2 si alimenteaza benzinariile 1, 2, 3. (Cost: <var>1*1+0*1+6*1=7</var>)<br>
+Depozitul 2 va fi construit in benzinaria 4 si alimenteaza benzinariile 4, 5. (Cost: <var>0*1+1*1=1</var>)<br>
+Depozitul 3 va fi construit in benzinaria 6 si alimenteaza benzinaria 6. (Cost: <var>0*1</var>).<br>
+Costul total de transport este <var>7+1+0</var>. Costul amplasarii celor 3 benzinarii este <var>0+0+0=0</var>. Costul total este <var>8+0=8</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,87 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>lapte.in, lapte.out</td><td><strong>Sursă</strong></td><td>preONI 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=124">Adrian Vladu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=lapte">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=lapte">Vezi solutiile trimise</a></p>
+
+<h1>Lapte<br></h1>
+
+<p>Haralambie este un mare bautor de lapte. Impreuna cu prietenii sai organizeaza adesea petreceri salbatice, in care se intrec in bautul laptelui. De data aceasta ei au organizat un joc. Ei au doua feluri de lapte : <var>lapte A</var> si <var>lapte B</var>. In aceasta noapte si-au propus sa bea cel putin <var>L</var> litri din fiecare fel. Dar mai e putin si se face dimineata, parintii lui Haralambie se intorc acasa si petrecerea se sparge. Ajutati-i sa bea cat mai repede.</p>
+
+<h2>Cerinta</h2>
+
+<p>Se cunoaste viteza cu care fiecare persoana bea un litru din <var>laptele A</var> si <var>laptele B</var>. Trebuie planificata o strategie astfel incat la sfarsitul petrecerii sa fi baut cel putin <var>L</var> litri din <var>laptele A</var> si cel putin <var>L</var> litri din <var>laptele B</var>, iar timpul total sa fie minim. O persoana nu poate bea din doua tipuri de lapte in acelasi timp.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>lapte.in</var> sunt scrise numerele <var>N</var> (numarul persoane participante) si <var>L</var> (cantitatea minima de lapte ce trebuie bauta pana la sfarsitul petrecerii). Pe urmatoarele <var>N</var> linii sunt date perechi de numere naturale nenule <var>a b (1 ≤ a, b ≤ 100)</var> reprezentand timpul in care persoana corespunzatoare bea <var>1</var> litru de <var>lapte A</var>, respectiv timpul in care bea <var>1</var> litru de <var>lapte B</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Prima linie a fisierului <var>lapte.out</var> va contine un singur numar <var>T</var> - timpul minim in care se va bea cantitatea ceruta de lapte. Pe urmatoarele <var>N</var> linii vor fi perechi de numere naturale. Linia <var>i + 1</var> va contine numerele <var>x y</var> , reprezentand cantitatea de <var>lapte A</var>, respectiv cantitatea de <var>lapte B</var> pe care o bea persoana <var>i</var>.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N, T, L ≤ 100</var></li>
+<li>Cantitatea de lapte disponibila se considera nelimitata</li>
+<li>Consumul excesiv de lapte duce la epuizarea bauturii</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>lapte.in</th><th>lapte.out</th></tr><tr><td>3 20<br>
+1 1<br>
+2 4<br>
+1 6<br></td><td>18<br>
+0 18<br>
+5 2<br>
+18 0</td></tr></table><h3>Explicatii</h3>
+
+<p>Timpul minim este <var>18</var>. <br>
+Cantitatea de lapte <var>A</var> bauta este <var>0+5+18=23</var>.<br>
+Cantitatea de lapte <var>B</var> bauta este <var>18+2=20</var>.<br>
+Persoana <var>1</var> termina de baut in <var>1*0+1*18=18</var> minute.<br>
+Persoana <var>2</var> termina in <var>2*5+4*2=18</var> minute.<br>
+Persoana <var>3</var> termina in <var>1*18+6*0=18</var> minute.<br>
+Timpul minim dupa care petrecerea va lua sfarsit este <var>max(18,18,18)=18</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 4 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=48">Cautare</a></span>
+            <a href="javascript:show_tag_list(48)" id="tag_anchor_48" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_48"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=49">Cautare binara</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_1"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=61">Greedy</a></span>
+            <a href="javascript:show_tag_list(61)" id="tag_anchor_61" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_61"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=70">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=95">Problema rucsacului</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=63">Sortare</a></span>
+            <a href="javascript:show_tag_list(63)" id="tag_anchor_63" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_63"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=64">Sortare</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

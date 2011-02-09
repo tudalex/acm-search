@@ -1,0 +1,46 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>pluricex.in, pluricex.out</td><td><strong>Sursă</strong></td><td>OJI 2008 - Clasa a 9-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=171">Emanuela Cerchez</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Florian"><img src="/utilizator/Florian?action=download&amp;file=avatar&amp;resize=L16x16" alt="Florian">Marcu Florian</a> <a title="Rating Florian: 667" class="rating-badge-1" href="http://infoarena.ro/utilizator/Florian?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Florian">Florian</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=pluricex">Vezi solutiile trimise</a></p>
+
+<h1>Pluricex<br></h1>
+
+<p>Anul acesta se organizeaza prima editie a Olimpiadei Pluridisciplinare pentru Centrele de Excelenta, PluriCEX. Fiecare Centru de Excelenta din tara va trimite la concurs o echipa formata din <var>k</var> membri (toti participanti la Centrul de Excelenta). Echipa va trebui sa rezolve probleme interdisciplinare, disciplinele vizate fiind cele de la Centrul de Excelenta ( <var>D</var> discipline, pe care le vom considera numerotate de la 1 la <var>D</var> ).<br>
+Directorul <span class="caps">CEX</span> Iasi a facut o lista cu primii <var>n</var> cei mai buni elevi de la <span class="caps">CEX, </span>apoi a numerotat elevii de la <var>1</var> la <var>n</var> , in ordinea aparitiei lor in lista. Pentru fiecare elev, directorul a notat disciplinele la care el participa la <span class="caps">CEX.</span></p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care sa determine toate echipele ce pot fi formate din <var>k</var> dintre cei <var>n</var> elevi de pe lista directorului, cu conditia ca pentru fiecare disciplina sa existe in echipa cel putin un membru care sa studieze la <span class="caps">CEX </span>disciplina respectiva.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>pluricex.in</var> contine pe prima linie trei numere naturale <var>n</var> <var>k</var> <var>D</var> (cu semnificatia din enunt). Urmeaza <var>n</var> linii care descriu participarile la <span class="caps">CEX </span>ale celor <var>n</var> elevi de pe lista directorului. Mai exact, pe linia <var>i+1</var> este descrisa participarea elevului <var>i</var> astfel:<br><var>nr</var> <var>d<sub>1</sub></var> <var>d<sub>2</sub></var> ... <var>d<sub>nr</sub></var> .<br>
+Primul numar de pe linie ( <var>nr</var> ) indica numarul de discipline la care participa elevul <var>i</var> . Urmatoarele <var>nr</var> numere reprezinta disciplinele la care participa elevul <var>i</var>. Numerele scrise pe aceeasi linie sunt separate prin spatiu.</p>
+
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>pluricex.out</var> va contine toate echipele ce se pot forma respectand conditiile din enunt, cate o echipa pe o linie. Membrii unei echipe vor fi scrisi in ordine crescatoare, separati prin cate un spatiu. Echipele vor fi scrise in ordine lexicografica.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>0</var> &lt; <var>n</var> ≤ <var>22</var> </li>
+<li><var>0</var> &lt; <var>k</var> ≤ <var>8</var></li>
+<li><var>0</var> &lt; <var>D</var> ≤ <var>10</var></li>
+<li>Pentru datele de test problema admite intotdeauna solutie, numarul de solutii fiind &lt; <var>20000</var>. </li>
+<li>Spunem ca vectorul ( <var>x<sub>1</sub></var> , <var>x<sub>2</sub></var> , ..., <var>x<sub>n</sub></var> ) preceda lexicografic vectorul ( <var>y<sub>1</sub></var> , <var>y<sub>2</sub></var>, ..., <var>y<sub>n</sub></var>) daca exista un indice <var>i</var> astfel incat       <var>x<sub>j</sub></var> = <var>y<sub>j</sub></var> , pentru orice <var>1</var> ≤ <var>j</var> &lt; <var>i</var> , iar <var>x<sub>i</sub></var> &lt; <var>y<sub>i</sub></var> . </li>
+<li>Pentru 20% din teste solutia este unica.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>pluricex.in</th><th>pluricex.out</th></tr><tr><td>6 3 5<br>
+1 2<br>
+2 1 4<br>
+3 2 4 3<br>
+1 5<br>
+2 3 1<br>
+1 3<br></td><td>2 3 4<br>
+3 4 5<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

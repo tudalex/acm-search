@@ -1,0 +1,57 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>car.in, car.out</td><td><strong>Sursă</strong></td><td>preONI 2005 Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.8 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=car">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=car">Vezi solutiile trimise</a></p>
+
+<h1>Car<br></h1>
+
+<p>Ionel a implinit 18 ani si a luat permisul de conducere, azi vrea sa mearga de la el acasa pana la scoala cu masina si singura conditie pe care i-a impus-o tatal sau e aceea de a nu lua foarte multe curbe! Pentru a primi masina si alta data, Ionel vrea sa il impresioneze pe tatal sau si sa mearga pe drumul cel mai putin costisitor din punct de vedere al curbelor. Orasul e reprezentat de o matrice de <var>N</var> linii si <var>M</var> coloane, un element al matricii fiind <var>0</var> daca pe acolo poate trece masina si <var>1</var> daca nu. Masina se poate misca dintr-o celula a matricii in toate cele <var>8</var> celule adiacente, daca ele sunt libere. Costul unui drum de la pozitia initiala la pozitia finala este data de suma costurilor miscarilor. O miscare in directia de mers are costul <var>0</var>, o miscare la <var>45</var> de grade fata de directia de mers are costul <var>1</var>, o miscare la <var>90</var> de grade are costul <var>2</var>, una la <var>135</var> de grade are costul <var>3</var> iar una la <var>180</var> de grade are costul <var>4</var>. La momentul initial masina poate porni in oricare dintre cele <var>8</var> directii, daca celula din directia respectiva este marcata cu <var>0</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati pentru Ionel costul minim din punct de vedere al curbelor de la o pozitie initiala la o pozitie finala.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>car.in</var> se gasesec doua numere naturale: <var>N</var> (numarul de linii al matricii) si <var>M</var> (numarul de coloane al matricii). Pe urmatoarea linie sunt numerele <var>Si</var> - linia pozitiei initiale a masinii lui Ionel, <var>Sj</var> - coloana pozitiei initiale ale masinii lui Ionel, <var>Fi</var> - linia pozitiei finale, <var>Fj</var> - coloana pozitiei finale. Pe urmatoarele <var>N</var> linii sunt cate <var>M</var> numere de <var>0</var> sau <var>1</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>car.out</var> se va gasi costul minim al unui drum de la pozitia initiala la pozitia finala. Daca nu exista nici un drum se va afisa <var>-1</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>0 ≤ N, M ≤ 500</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>car.in</th><th>car.out</th></tr><tr><td>5 5<br>
+1 1 1 4<br>
+0 1 1 0 1<br>
+1 0 1 0 1<br>
+0 1 1 1 0<br>
+1 0 1 0 1<br>
+1 1 0 1 1<br></td><td>9</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=47">Parcurgere in latime</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=39">Liste</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,161 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>operatii2.in, operatii2.out</td><td><strong>Sursă</strong></td><td>Lot Juniori 2009 - Baraj 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=184">Doru Popescu Anastasiu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/GavrilaVlad"><img src="/utilizator/GavrilaVlad?action=download&amp;file=avatar&amp;resize=L16x16" alt="GavrilaVlad">Gavrila Vlad</a> <a title="Rating GavrilaVlad: 973" class="rating-badge-1" href="http://infoarena.ro/utilizator/GavrilaVlad?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/GavrilaVlad">GavrilaVlad</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.8 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=operatii2">Vezi solutiile trimise</a></p>
+
+<h1>Operatii2<br></h1>
+
+<p>Fiind date două tablouri bidimensionale a şi b, cu m linii şi n coloane fiecare, definim următoarele operaţii:</p>
+
+
+<ol><li>Suma tablourilor <var>a</var> şi <var>b</var>, ca fiind un tablou <var>c</var> cu <var>m</var> linii şi <var>n</var> coloane, în care fiecare element este egal cu suma elementelor de pe aceeaşi linie şi coloană din <var>a</var> şi <var>b</var>. În acest caz folosim operatorul <var>+</var>, adică <var>c = a + b</var>. </li>
+<li>Produsul tablourilor <var>a</var> şi <var>b</var>, ca fiind un tablou <var>d</var> cu <var>m</var> linii şi <var>n</var> coloane, in care fiecare element este egal cu produsul elementelor de pe aceeşi linie şi coloană din <var>a</var> şi <var>b</var>. În acest caz folosim operatorul <var>*</var>, adică <var>d = a * b</var>. Dacă <var>a</var> şi <var>b</var> sunt tablouri identice (<var>a</var> şi <var>b</var> au elemente identice pe aceeaşi poziţie), atunci pentru <var>d</var> se mai foloseşte şi notaţia <var>a<sup>2</sup></var> sau <var>b<sup>2</sup></var>. </li>
+</ol><h3>Exemplu:</h3>
+
+<p>Pentru <var>m = 2</var>, <var>n = 3</var> şi tablourile:</p>
+
+<p><img src="http://infoarena.ro/static/images/latex/1d691f302973e507c16162f8cb5b60d1_10.5pt.gif" title="  a = \begin{matrix}
+1 &amp; 5 &amp; 7 \
+2 &amp; 15 &amp; 3
+\end{matrix}
+" alt="  a = \begin{matrix}
+1 &amp; 5 &amp; 7 \
+2 &amp; 15 &amp; 3
+\end{matrix}
+" . style="vertical-align:-10.5pt;"> şi <img src="http://infoarena.ro/static/images/latex/644d35f2bfd105b285a0fe6533d59ff1_10.5pt.gif" title=" b = \begin{matrix}
+2 &amp; 10 &amp; 100 \
+1 &amp; 8 &amp; 0
+\end{matrix}
+" alt=" b = \begin{matrix}
+2 &amp; 10 &amp; 100 \
+1 &amp; 8 &amp; 0
+\end{matrix}
+" . style="vertical-align:-10.5pt;"></p>
+
+<p>Se obţine:</p>
+
+<p><img src="http://infoarena.ro/static/images/latex/771109b9b0802d42e2328f3f63f21416_10.5pt.gif" title="
+a + b = \begin{matrix}
+3 &amp; 15 &amp; 107 \
+3 &amp; 23 &amp; 3
+\end{matrix}
+" alt="
+a + b = \begin{matrix}
+3 &amp; 15 &amp; 107 \
+3 &amp; 23 &amp; 3
+\end{matrix}
+" . style="vertical-align:-10.5pt;"> , <img src="http://infoarena.ro/static/images/latex/d6b62a25dd701b242ba852c1247f1efd_10.5pt.gif" title="
+a * b = \begin{matrix}
+2 &amp; 50 &amp; 700 \
+2 &amp; 120 &amp; 0
+\end{matrix}
+" alt="
+a * b = \begin{matrix}
+2 &amp; 50 &amp; 700 \
+2 &amp; 120 &amp; 0
+\end{matrix}
+" . style="vertical-align:-10.5pt;"> , <img src="http://infoarena.ro/static/images/latex/00a8517749ab1303bac5bd090e1a5083_10.5pt.gif" title="
+a^2 = \begin{matrix}
+1 &amp; 25 &amp; 49 \
+4 &amp; 225 &amp; 9
+\end{matrix}
+" alt="
+a^2 = \begin{matrix}
+1 &amp; 25 &amp; 49 \
+4 &amp; 225 &amp; 9
+\end{matrix}
+" . style="vertical-align:-10.5pt;"> , <img src="http://infoarena.ro/static/images/latex/256370643e416fa8f6a6ec6fa9bba1f0_10.5pt.gif" title="
+b^2 = \begin{matrix}
+4 &amp; 100 &amp; 10000 \
+1 &amp; 64 &amp; 0
+\end{matrix}
+" alt="
+b^2 = \begin{matrix}
+4 &amp; 100 &amp; 10000 \
+1 &amp; 64 &amp; 0
+\end{matrix}
+" . style="vertical-align:-10.5pt;"> .</p>
+
+<p>Fiind dat un tablou bidimensional <var>a</var>, cu <var>m</var> linii, <var>n</var> coloane şi componente numere naturale dorim să determinăm un şir de tablouri bidimensionale: <var>b<sub>1</sub>, b<sub>2</sub>, ..., b<sub>k</sub></var> cu număr minim de termeni (<var>k</var> minim), cu proprietatea că <var>a = b<sub>1</sub><sup>2</sup> + b<sub>2</sub><sup>2</sup> + ... + b<sub>k</sub><sup>2</sup></var>.</p>
+
+<h2>Cerinţă </h2>
+
+<p>Să se scrie un program care determină tablourile bidimensionale <var>b<sub>1</sub>, b<sub>2</sub>, ..., b<sub>k</sub></var> cu proprietatea din enunţ.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>operatii.in</var> conţine pe prima linie numerele naturale <var>m</var> şi <var>n</var> separate prin câte un spaţiu. Pe umătoarele <var>m</var> linii se află elementele tabloului <var>a</var>, câte <var>n</var> numere pe o linie, în cadrul unei linii numerele fiind separate între ele prin câte un spaţiu.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>operatii.out</var> conţine pe prima linie un număr natural reprezentând valoarea <var>k</var>, apoi pe următoarele <var>k * m</var> linii elementele celor <var>k</var> tablouri <var>b<sub>1</sub>, b<sub>2</sub>, ..., b<sub>k</sub></var>. Fiecare dintre aceste tablouri va fi scris pe câte <var>m</var> linii consecutive, iar pe fiecare dintre aceste linii se vor afla câte <var>n</var> numere separate prin câte un spaţiu. </p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ m, n ≤ 200</var></li>
+<li>Componentele tabloului a sunt numere naturale <var>≤ 10 000</var>.</li>
+<li>Pot exista mai multe solutii, dar în fişierul de ieşire se va scrie una dintre ele.</li>
+<li><var>30%</var> din teste au componentele tabloului a mai mici sau cel mult egale cu <var>100</var> şi <var>m, n ≤ 100</var>. </li>
+<li><var>60%</var> din teste au componentele tabloului a mai mici sau cel mult egale cu <var>1 000</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>operatii2.in</th><th>operatii2.out</th></tr><tr><td>2 3<br>
+1 2 4<br>
+5 5 9<br></td><td>2<br>
+1 1 0<br>
+2 2 3<br>
+0 1 2<br>
+1 1 0<br></td></tr></table><h3>Explicaţie</h3>
+
+<p><var>a</var> este: <img src="http://infoarena.ro/static/images/latex/657e96e24e8a6e8eadd1c88c400d70e0_10.5pt.gif" title=" \begin{matrix}
+1 &amp; 2 &amp; 4 \
+5 &amp; 5 &amp; 9
+\end{matrix}
+" alt=" \begin{matrix}
+1 &amp; 2 &amp; 4 \
+5 &amp; 5 &amp; 9
+\end{matrix}
+" . style="vertical-align:-10.5pt;"> .</p>
+
+<p><var>b<sub>1</sub></var> este: <img src="http://infoarena.ro/static/images/latex/57586c4468c61c8e0f983ec3917a4ed2_10.5pt.gif" title=" \begin{matrix}
+1 &amp; 1 &amp; 0 \
+2 &amp; 2 &amp; 3
+\end{matrix}
+" alt=" \begin{matrix}
+1 &amp; 1 &amp; 0 \
+2 &amp; 2 &amp; 3
+\end{matrix}
+" . style="vertical-align:-10.5pt;"> iar <var>b<sub>1</sub><sup>2</sup></var> este: <img src="http://infoarena.ro/static/images/latex/cae1515e1a9e1ae494272b442f0bfbd3_10.5pt.gif" title=" \begin{matrix}
+1 &amp; 1 &amp; 0 \
+4 &amp; 4 &amp; 9
+\end{matrix}
+" alt=" \begin{matrix}
+1 &amp; 1 &amp; 0 \
+4 &amp; 4 &amp; 9
+\end{matrix}
+" . style="vertical-align:-10.5pt;"> .</p>
+
+<p><var>b<sub>2</sub></var> este: <img src="http://infoarena.ro/static/images/latex/b6a6fe04c91a4bc5b2d50f67e65a9402_10.5pt.gif" title=" \begin{matrix}
+0 &amp; 1 &amp; 2 \
+1 &amp; 1 &amp; 0
+\end{matrix}
+" alt=" \begin{matrix}
+0 &amp; 1 &amp; 2 \
+1 &amp; 1 &amp; 0
+\end{matrix}
+" . style="vertical-align:-10.5pt;"> iar <var>b<sub>2</sub><sup>2</sup></var> este: <img src="http://infoarena.ro/static/images/latex/4b7ed2337ce118efb805ae4676f3932b_10.5pt.gif" title=" \begin{matrix}
+0 &amp; 1 &amp; 4 \
+1 &amp; 1 &amp; 0
+\end{matrix}
+" alt=" \begin{matrix}
+0 &amp; 1 &amp; 4 \
+1 &amp; 1 &amp; 0
+\end{matrix}
+" . style="vertical-align:-10.5pt;"> .<br><br>
+Se observă că <var>b<sub>1</sub><sup>2</sup> + b<sub>2</sub><sup>2</sup> = a</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

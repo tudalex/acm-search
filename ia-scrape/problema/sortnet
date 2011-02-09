@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>sortnet.in, sortnet.out</td><td><strong>Sursă</strong></td><td>Lot 2002</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=155">Mihai Patrascu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=sortnet">Vezi solutiile trimise</a></p>
+
+<h1>Sortnet<br></h1>
+
+<p>O retea de sortare este formata din <var>N</var> linii de date, numerotate de la <var>1</var> la <var>N</var>, legate prin comparatori. Pe o linie de date circula valori numerice; initial <var>N</var> valori oarecare sunt introduse in retea si se asteapta ca reteaua sa furnizeze la iesire o permutare a acestor numere. O retea de sortare perfecta va furniza la iesire valorile in ordine crescatoare.</p>
+
+<p>Comparatorii sunt plasati intre doua linii de date cu scopul de a aseza in ordine crescatoare cele doua valori. Un comparator poate lega oricare doua linii <var>A</var> si <var>B</var>, cu <var>A &lt; B</var>; un astfel de comparator este notat simbolic cu &lt;<var>A</var>,<var>B</var>&gt; sau grafic cu un segment vertical intre cele doua linii de date. Notatia grafica determina univoc comparatorul. Imaginati-va un segment care uneste liniile <var>1</var> si <var>3</var>; acesta reprezinta comparatorul &lt;<var>1</var>,<var>3</var>&gt;, deoarece &lt;<var>3</var>,<var>1</var>&gt; nu poate fi un comparator (vezi definitia de mai sus). In aceasta problema, numarul de linii de date va fi intotdeauna par. Un ciclu de sortare este format din <var>N/2</var> comparatori, astfel incat fiecare linie este legata la un singur comparator. O retea de sortare completa de adancime <var>M</var> este o retea de sortare formata din <var>M</var> cicli de sortare.</p>
+
+<p>Un exemplu valoreaza cat 1000 de cuvinte:</p>
+
+<p><img src="http://infoarena.ro/problema/sortnet?action=download&amp;file=sortnet.gif&amp;safe_only=true" alt=""></p>
+
+<p>Reteaua din figura are <var>4</var> linii de date si <var>2</var> cicli de sortare. Se observa ca aceasta retea de sortare nu este perfecta. Desi sorteaza corect datele din figura (secventa <var>7</var>,<var>8</var>,<var>7</var>,<var>3</var>), ea nu va sorta corect secventa <var>1</var>,<var>3</var>,<var>2</var>,<var>9</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Se poate demonstra ca daca o retea sorteaza corect orice intrare formata numai din numerele <var>0</var> si <var>1</var>, ea va sorta corect orice secventa de numere. Are deci sens sa spunem ca o retea este cu atat mai buna, cu cat sorteaza corect mai multe intrari formate din numerele <var>0</var> si <var>1</var>. Exista <var>2<sup>N</sup></var> astfel de intrari; scrieti un program care determina cate dintre aceste intrari posibile sunt sortate corect de o anumita retea (prin sortate corecta, intelegem ca la iesire toate numerele de zero apar inaintea celor de unu).</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>sortnet.in</var> sunt scrise doua numere intregi <var>N</var> si <var>M</var>, reprezentand numarul de linii de date, respectiv numarul de cicli de sortare. Pe fiecare dintre urmatoarele <var>M</var> linii sunt reprezentati <var>N/2</var> comparatori, in formatul &lt;<var>A</var>,<var>B</var>&gt;, cu <var>A</var> si <var>B</var> numere intregi intre <var>1</var> si <var>N</var>, <var>A &lt; B</var>. Nici un numar nu se va repeta in descrierea unui ciclu de sortare (fiecare linie este legata la exact un comparator in fiecare ciclu).</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul <var>sortnet.out</var> va contine numarul de intrari formate numai din numerele <var>0</var> si <var>1</var>, care sunt sortate corect de catre reteaua considerata.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 20</var> si <var>N</var> par</li>
+<li><var>0 ≤ M ≤ 32</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>sortnet.in</th><th>sortnet.out</th></tr><tr><td>4 2<br>
+&lt;1,3&gt; &lt;2,4&gt;<br>
+&lt;3,4&gt; &lt;1,2&gt;<br></td><td>14</td></tr></table><p><em>Explicatie</em>: Exemplul corespunde figurii; cele doua secvente formate din cifre de <var>0</var> si <var>1</var> care nu sunt sortate corect sunt <var>0</var>,<var>1</var>,<var>0</var>,<var>1</var> si <var>1</var>,<var>0</var>,<var>1</var>,<var>0</var>. </p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,46 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>fibo3.in, fibo3.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2010</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=228">Serban Andrei Stan</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/savim"><img src="/utilizator/savim?action=download&amp;file=avatar&amp;resize=L16x16" alt="savim">Serban Andrei Stan</a> <a title="Rating savim: 783" class="rating-badge-1" href="http://infoarena.ro/utilizator/savim?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/savim">savim</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.7 sec</td><td><strong>Limită de memorie</strong></td><td>6000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=fibo3">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=fibo3">Vezi solutiile trimise</a></p>
+
+<h1>Fibo3<br></h1>
+
+<p>Fie şirul numerelor Fibonacci:<br><var>F<sub>0</sub>=1, F<sub>1</sub>=1, F<sub>2</sub>=2, F<sub>3</sub>=3, F<sub>4</sub>=5 etc.</var></p>
+
+<p>Vom acoperi toate punctele laticiale de coordonate nenegative astfel:</p>
+
+
+<ul><li>Daca pentru un punct <var>P(x,y), x+y</var> este un număr Fibonacci, atunci lui <var>P</var> îi asociem valoarea <var>1</var>.</li>
+<li>Daca pentru un punct <var>P(x,y), x+y</var> nu este un număr Fibonacci, atunci lui <var>P</var> îi asociem valoarea <var>0</var>.</li>
+</ul><h2>Cerinţă</h2>
+
+<p>Răspundeţi la <var>N</var> întrebări de forma: <em>Dându-se un dreptunghi <var>D(x<sub>1</sub>, y<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub>)</var>, care este suma valorilor asociate punctelor din plan conţinute de dreptunghiul <var>D</var>?</em></p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>fibo3.in</var> conţine pe prima linie numărul <var>N</var> de întrebări. Următoarele <var>N</var> linii vor conţine câte patru numere naturale reprezentând câte un dreptunghi de query.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>fibo3.out</var> se vor găsi <var>N</var> numere naturale, fiecare pe câte o linie, numărul de pe linia <var>K</var> fiind răspunsul la cea de-a <var>K</var>-a întrebare.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100 000</var></li>
+<li><var>0 ≤ x<sub>1</sub> ≤ x<sub>2</sub> ≤ 10<sup>15</sup></var></li>
+<li><var>0 ≤ y<sub>1</sub> ≤ y<sub>2</sub> ≤ 10<sup>15</sup></var></li>
+<li>Un punct <var>P(x,y)</var> se numeşte punct laticial, dacă <var>x</var> şi <var>y</var> sunt numere întregi.</li>
+<li>Sirul numerelor Fibonacci este determinat de recurenţa <var>F<sub>N</sub> = F<sub>N-1</sub> + F<sub>N-2</sub></var></li>
+<li>Pentru <var>30%</var> din teste coordonatele dreptunghiurilor nu depăşesc <var>1000</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>fibo3.in</th><th>fibo3.out</th></tr><tr><td>2<br>
+0 0 1 1<br>
+1 0 1 2<br></td><td>3<br>
+3<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,37 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>tree.in, tree.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2010, Runda 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.6 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=tree">Vezi solutiile trimise</a></p>
+
+<h1>Tree<br></h1>
+
+<p>Se da un arbore cu <var>N</var> noduri. Asupra lui se pot efectua urmatoarele operatii:</p>
+
+
+<ul><li>se adauga o muchie intre doua noduri</li>
+<li>se sterge o muchie intre doua noduri</li>
+</ul><p>Trebuie sa determinam numarul minim de operatii pe care trebuie sa le efectuam astfel incat sa transformam arborele intr-un ciclu.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>tree.in</var> contine pe prima linie <var>N</var>, numarul de noduri din arbore. Cea de a doua linie contine <var>N</var> numere naturale. Al <var>i</var>-lea numar de pe aceasta linie reprezinta parintele nodului <var>i</var> in arbore. Daca acest numar este <var>0</var> atunci nodul corespunzator este considerat radacina.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>tree.out</var> se va afisa numarul minim de operatii ce trebuiesc efectuate pentru a obtine transformarea dorita.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 200 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>tree.in</th><th>tree.out</th></tr><tr><td>3<br>
+0 1 1<br></td><td>1<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Se va adauga o muchie intre nodurile <var>2</var> si <var>3</var> si astfel se va obtine un ciclu.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

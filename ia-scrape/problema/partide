@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>partide.in, partide.out</td><td><strong>Sursă</strong></td><td>.campion 2003</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=partide">Vezi solutiile trimise</a></p>
+
+<h1>Partide<br></h1>
+
+<p><var>N</var> prieteni pasionati de sah s-au intalnit si, deoarece nu aveau decat o tabla de sah, s-au decis sa joace dupa urmatorul sistem. In prima partida joaca doi dintre ei (dupa cum stiti, jocul de sah se joaca in doi). Apoi, dupa fiecare partida jucata, invingatorul "ramane la masa". Adica, cel care a castigat ramane sa joace si urmatoarea partida, cu unul dintre ceilalti prieteni (eventual, daca ceilalti prieteni nu se supara, ar putea juca chiar impotriva celui pe care tocmai l-a invins).</p>
+
+<p>Stiind cate jocuri a jucat fiecare dintre cei <var>N</var> prieteni (atat castigate, cat si pierdute), determinati o ordine posibila a partidelor jucate, impreuna cu rezultatul fiecareia.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>partide.in</var> se afla numarul intreg <var>N</var>, reprezentand numarul de prieteni. Pe urmatoarea linie se afla <var>N</var> numere intregi, mai mari sau egale cu <var>0</var>, reprezentand numarul de partide jucate de fiecare dintre ei. Primul numar corespunde partidelor jucate de primul prieten, al doilea corespunde partidelor jucate de al doilea prieten s.a.m.d.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>partide.out</var> veti afisa numarul <var>M</var> de partide jucate in total. Pe urmatoarele <var>M</var> linii veti afisa cate doua numere intregi distincte <var>a</var> si <var>b</var>, din intervalul <var>[1,N]</var>, separate printr-un spatiu. Semnificatia lor va fi ca, in partida respectiva, au jucat prietenii <var>a</var> si <var>b</var>. Castigatorul partidei va fi afisat inaintea pierzatorului. Pentru fiecare partida de la <var>2</var> la <var>M</var>, unul dintre jucatori (actualul castigator sau pierzator) trebuie sa fie castigatorul partidei anterioare.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 100</var></li>
+<li>Numarul total de partide jucate nu va depasi <var>10 000</var>.</li>
+<li>Rezultatul nici unei partide nu va fi remiza.</li>
+<li>Pentru testele folosite la evaluare, va exista cel putin o posibilitate de disputare a partidelor.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>partide.in</th><th>partide.out</th></tr><tr><td>4<br>
+2 4 1 5<br></td><td>6<br>
+4 3<br>
+4 1<br>
+2 4<br>
+2 1<br>
+4 2<br>
+2 4<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

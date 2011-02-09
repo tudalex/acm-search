@@ -1,0 +1,51 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>consir.in, consir.out</td><td><strong>Sursă</strong></td><td>Autumn Warmup 2007, Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=161">Adrian Airinei</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=consir">Vezi solutiile trimise</a></p>
+
+<h1>Consir<br></h1>
+
+<p>Vultur a gasit in cartea de chimie o problema pe care nu stie sa o rezolve si are nevoie de ajutorul vostru. Se da o secventa <var>A</var>, formata din <var>N</var> numere naturale. Un consir este un sir de numere naturale <var>i<sub>1</sub>, i<sub>2</sub> ... i<sub>p</sub></var> (cu valori cuprinse intre <var>1</var> si <var>N</var>) cu proprietatea ca <var>A[i<sub>1</sub>], A[i<sub>2</sub>] ... A[i<sub>p</sub>]</var> sunt numere consecutive. Mai exact <var>A[i<sub>2</sub>]=A[i<sub>1</sub>]+1</var>, <var>A[i<sub>3</sub>]=A[i<sub>2</sub>]+1</var> ... <var>A[i<sub>p</sub>]=A[i<sub>p-1</sub>]+1</var>. Determinati <var>K</var>, lungimea maxima a unui consir ce se poate forma, precum si numarul de consiruri distincte de lungime <var>1</var>, <var>2</var> ... <var>K</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>consir.in</var> se va afla numarul <var>N</var> avand semnificatia din enunt. Pe urmatoarele <var>N</var> linii se afla valorile secventei <var>A</var>, mai exact pe linia <var>i+1</var> se afla valoarea lui <var>A[i]</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului <var>consir.out</var> se va afla valoarea <var>K</var>, avand semnificatia din enunt. In continuare vor urma <var>K</var> linii, pe linia <var>i+1</var> aflandu-se numarul de consiruri distincte de lungime <var>i</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 310 000</var></li>
+<li>Termenii sirului au valori cuprinse intre <var>1</var> si <var>1 000 000</var></li>
+<li>Se garanteaza ca fiecare raspuns are o valoare mai mica decat <var>2<sup>63</sup></var> (se incadreaza pe tipuri de date intregi pe 64 biti fara semn)</li>
+<li>Lungimea unui consir este data de numarul de elemente</li>
+<li>Doua consiruri <var>X</var> si <var>Y</var> sunt distincte daca exista o pozitie <var>i</var> astfel incat <var>X<sub>i</sub></var> diferit de <var>Y<sub>i</sub></var> </li>
+<li>In cel putin 30% din teste <var>N ≤ 1000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>consir.in</th><th>consir.out</th></tr><tr><td>6<br>
+  1<br>
+  2<br>
+  1<br>
+  3<br>
+  4<br>
+  5<br></td><td>5<br>
+  6<br>
+  5<br>
+  4<br>
+  3<br>
+  2<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Cele 2 consiruri de lungime 5 sunt <var>1 2 4 5 6</var> si <var>3 2 4 5 6</var><br>
+Cele 3 consiruri de lungime 4: <var>1 2 4 5</var>, <var>3 2 4 5</var> si <var>2 4 5 6</var><br>
+Cele 4 consiruri de lungime 3: <var>1 2 4</var>, <var>2 4 5</var>, <var>3 2 4</var> si <var>4 5 6</var><br>
+Cele 5 consiruri de lungime 2: <var>1 2</var>, <var>2 4</var>, <var>4 5</var>, <var>3 2</var> si <var>5 6</var><br>
+Cele 6 consiruri de lungime 1: <var>1</var>, <var>2</var>, <var>3</var>, <var>4</var>, <var>5</var> si <var>6</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,65 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>fi.in, fi.out</td><td><strong>Sursă</strong></td><td>ONI 2008, clasa a 7-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=216">Livia Toca</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/raduzer"><img src="/utilizator/raduzer?action=download&amp;file=avatar&amp;resize=L16x16" alt="raduzer">Radu Zernoveanu</a> <a title="Rating raduzer: 704" class="rating-badge-1" href="http://infoarena.ro/utilizator/raduzer?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/raduzer">raduzer</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=fi">Vezi solutiile trimise</a></p>
+
+<h1>Fi si Cri<br></h1>
+
+<p>Dupa cum stiti din fabule, greierasul Cri ar vrea sa o impresioneze cu interpretarile sale artistice pe furnicuta Fi. In povestea noastra, Fi se afla pe un teren de forma dreptunghiulara, format din m siruri de parcele ( numerotate de la <var>1</var> la <var>m</var> ), pe fiecare sir fiind cate <var>n</var> parcele ( numerotate de la <var>1</var> la <var>n</var> ). Toate parcelele au acealeasi dimensiuni si in fiecare parcela se afla exact o firimitura. Fi este initial in parcela ( <var>a,b</var> ), pe sirul <var>a</var>, in pozitia b si urmeaza un traseu bine stabilit, de pe fiecare parcela vizitata luand firimitura aflata in aceasta. <br>
+Prima parcela pe care o viziteaza cand ajunge pe un sir este considerata reper al acelui sir. Dupa ce viziteaza reperul ( de pe un sir oarecare <var>i</var> ), ea viziteaza mai intai <var>k</var> parcele aflate in stanga reperului, apoi se intoarce la reper pe drumul pe care a venit si viziteaza in continuare <var>k</var> parcele aflate in dreapta reperului, dupa care merge pe sirul urmator (sirul <var>i+1</var>), reperul acestuia fiind chiar parcela alaturata celei pe care a vizitat-o ultima data pe sirul anterior ( sirul <var>i</var> ), ca in desenul de mai jos. Pe fiecare sir Fi procedeaza la fel, iar daca la un moment dat numarul parcelelor din stanga sau dreapta reperului este mai mic decat <var>k</var>, pe acea directie viziteaza numai parcelele pe care le are la dispozitie pana la limita terenului.</p>
+
+<p><img src="http://infoarena.ro/problema/fi?action=download&amp;file=furnica.jpg&amp;safe_only=true" alt=""></p>
+
+
+<p>Dupa ce a vizitat <b>p</b> parcele, Fi ajunge in parcela de coordonate ( <var>c,d</var> ) unde il intalneste pe perseverentul Cri, inarmat cu o colectie de melodii de ultima ora.</p>
+
+<h2>Cerinta </h2>
+
+<p>Determinati sirul din care face parte si numarul de ordine in sir al parcelei in care se afla Cri precum si numarul total de firimituri, <var>t</var>, pe care le-a adunat in total Fi, pana la intalnirea cu Cri.</p>
+
+
+<h2>Date de intrare</h2>
+
+<p>In fisierul de intrare <var>fi.in</var> se afla :</p>
+
+
+<ul><li>pe prima linie <var>m</var> si <var>n</var> (doua numere naturale separate printr-un spatiu);</li>
+<li>pe a doua linie <var>k</var> si <var>p</var> (doua numere naturale separate printr-un spatiu); </li>
+<li>pe a treia linie <var>a</var> si <var>b</var> (doua numere naturale separate printr-un spatiu).</li>
+</ul><h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>fi.out</var> se vor scrie:</p>
+
+
+<ul><li>pe prima linie, separate printr-un spatiu, valorile <var>c</var> si <var>d</var> (numarul sirului si parcela din cadrul sirului in care se afla Cri);</li>
+<li>pe a doua linie, valoarea <var>t</var> (numarul total de firimituri adunate).</li>
+</ul><h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ m, n ≤ 999999999</var></li>
+<li><var>1 ≤ k ≤ [n/2]</var></li>
+<li><var>p ≤ m*n</var></li>
+<li><var>1 ≤ a ≤ m</var></li>
+<li><var>1 ≤ b ≤ n</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>fi.in</th><th>fi.out</th></tr><tr><td>4 7<br>
+  2 17<br>
+  1 4<br></td><td>3 6<br>
+  12<br></td></tr><tr><td>4 10<br>
+  5 10<br>
+  1 4<br></td><td>1 7<br>
+  7<br></td></tr></table><h3>Explicatie</h3>
+
+<p><strong>Exemplul 1:</strong></p>
+
+<p>Sunt <var>m=4</var> siruri a cate <var>n=7</var> parcele. Fi se deplaseaza cu <var>k=2</var> parcele in stanga si in dreapta fiecarui reper, iar cele <var>17</var> parcele parcurse sunt, in ordine: <var>(1,4), (1,3), (1,2), (1,3), (1,4), (1,5), (1,6), (2,6), (2,5), (2,4), (2,5), (2,6), (2,7), (3,7), (3,6), (3,5), (3,6)</var>. A adunat 12 firimituri (din parcelele subliniate mai sus).</p>
+
+<p><strong>Exemplul 2:</strong></p>
+
+<p>Sunt <var>m=4</var> siruri a cate <var>n=10</var> parcele. Fi se deplaseaza cu <var>k=5</var> parcele in stanga si in dreapta fiecarui reper, dar primul sir nu are suficiente parcele in stanga. Cele <var>10</var> parcele parcurse sunt, in ordine: <var>(1,4), (1,3), (1,2), (1,1), (1,2), (1,3), (1,4), (1,5), (1,6) (1,7)</var>. A adunat <var>7</var> firimituri (din parcelele subliniate mai sus).</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

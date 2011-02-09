@@ -1,0 +1,71 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>viteza.in, viteza.out</td><td><strong>Sursă</strong></td><td>infoarena 2.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=383">Andrei Parvu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrei.12"><img src="/utilizator/andrei.12?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrei.12">Andrei Parvu</a> <a title="Rating andrei.12: 739" class="rating-badge-4" href="http://infoarena.ro/utilizator/andrei.12?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrei.12">andrei.12</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.3 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=viteza">Vezi solutiile trimise</a></p>
+
+<h1>Viteza<br></h1>
+
+<p>Dezamăgit de rezultatele recente din semifinalele Europa League, Alex şi-a luat o maşină nouă, şi acum este dornic să o testeze pe drumurile din Bucureşti. Harta capitalei poate fi reprezentată prin <var>N</var> intersecţii identificate în mod unic cu numere naturale între <var>1</var> şi <var>N</var> şi prin străzi bidirecţionale care unesc aceste intersecţii. Alex cunoaşte că poate ajunge din orice intersecţie în oricare alta urmând doar străzile existente. Mai mult, între oricare două intersecţii există un drum unic (reţeaua stradală este de fapt un arbore). <br>
+Fiecare intersecţie are asociată o limită de viteză, reprezentată printr-un număr natural. Din cauze încă neclare, limitele de viteză nu există decât în intersecţii, nu şi pe străzile care le unesc.<br>
+Deoarece Alex este un şofer responsabil, el nu doreşte să depăşescă limitele de viteză din intersecţii, dar totuşi doreşte să meargă cu o viteză cât mai mare. Astfel el îşi pune mai multe întrebări de forma: câte intersecţii de pe drumul unic dintre <var>x</var> şi <var>y</var> au limita de viteză mai mică sau egală cu <var>k</var>?<br>
+Pentru că sunteţi cel mai bun prieten al lui Alex, este datoria voastră să îl ajutaţi şi să îi răspundeţi la toate întrebările.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului <var>viteza.in</var> se găsesc două numere <var>N</var> şi <var>M</var>, numărul de intersecţii, respectiv numărul de întrebări ale lui Alex. Pe fiecare din următoarele <var>N-1</var> linii se găseşte o pereche de numere naturale despărţite de un spaţiu, reprezentând două intersecţii între care există stradă. Pe linia <var>N+1</var> se găsesc <var>N</var> numere naturale, al <var>i</var>-lea număr de pe linie reprezentând limita de viteză din intersecţia identificată cu numărul <var>i</var>. Ultimele <var>M</var> linii descriu întrebările. Pe fiecare linie din cele <var>M</var> sunt câte <var>3</var> numere naturale <var>x</var>, <var>y</var> şi <var>k</var>, despărţite prin spaţiu, pentru care trebuie să se afle răspunsul la întrebarea: "câte intersecţii de pe drumul dintre <var>x</var> şi <var>y</var> (inclusiv <var>x</var> şi <var>y</var>) au limita de viteză mai mică sau egală cu <var>k</var>?".</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul <var>viteza.out</var> trebuie să conţină exact <var>M</var> linii, pe linia <var>i</var> aflându-se răspunsul la cea de a <var>i</var>–a întrebare din fişierul de intrare.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N, M ≤ 100000</var></li>
+<li>Limitele de viteză din intersecţii sunt numere naturale din intervalul <var>[0, 100000]</var></li>
+<li>Pentru fiecare întrebare din cele <var>M</var>, <var>1 ≤ x, y ≤ N</var> şi <var>0 ≤ k ≤ 100000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>viteza.in</th><th>viteza.out</th></tr><tr><td>5 4<br>
+1 2<br>
+2 3<br>
+2 4<br>
+5 1<br>
+4 5 7 1 2<br>
+4 3 6<br>
+3 5 1<br>
+2 2 6<br>
+4 1 1<br></td><td>2<br>
+0<br>
+1<br>
+1<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 3 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=82">Lowest Common Ancestor</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=63">Sortare</a></span>
+            <a href="javascript:show_tag_list(63)" id="tag_anchor_63" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_63"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=64">Sortare</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=106">Arbori indexati binari</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

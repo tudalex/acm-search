@@ -1,0 +1,48 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>gaz.in, gaz.out</td><td><strong>Sursă</strong></td><td>ONI 2010, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=215">Marius Stroe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mathboy"><img src="/utilizator/mathboy?action=download&amp;file=avatar&amp;resize=L16x16" alt="mathboy">Dragos-Alin Rotaru</a> <a title="Rating mathboy: 510" class="rating-badge-3" href="http://infoarena.ro/utilizator/mathboy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mathboy">mathboy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.25 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=gaz">Vezi solutiile trimise</a></p>
+
+<h1>Gaz<br></h1>
+
+<p>O staţie de gaz are un rezervor subteran în care poate depozita cel mult <var>L</var> litri de gaz, dar există posibilitatea depozitării unei cantităţi suplimentare de gaz într-un rezervor închiriat de capacitate nelimitată pentru care se va plăti o taxă de <var>C</var> dolari pentru fiecare litru de gaz depozitat de la o zi la alta. Pentru a-şi servi clienţii, staţia se aprovizionează cu gaz cel mult o dată pe zi, dimineaţa. Preţul unui litru de gaz este de <var>D</var> dolari. Pentru fiecare aprovizionare trebuie plătită o taxă de <var>P</var> dolari în plus faţă de costul gazului comandat. În aceste condiţii, comandarea unei cantităţi mari de gaz poate creşte costul depozitării. Staţia de gaz se închide după <var>N</var> zile. Aceasta livrează clienţilor săi <var>G<sub>i</sub></var> litri de gaz, din stocul său, la sfârşitul fiecărei zile <var>i</var>, unde <var>i = 1, 2, ..., N</var>. Problema constă în a alege cantităţile de gaz ce vor fi comandate zilnic, astfel încât la sfârşitul celei de a <var>N</var>-a zi întreaga cantitate de pe stoc să fie consumată şi costul total să fie minim. Se consideră că rezervorul este iniţial gol.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Scrieţi un program care determină costul total minim pentru ca staţia să îşi servească clienţii în cele <var>N</var> zile şi întreaga cantitate de gaz să fie consumată la sfârşitul celei de a <var>N</var>-a zi.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare <var>gaz.in</var> apar patru numere naturale separate prin câte un spaţiu, <var>L P D C</var>, cu semnificaţia din enunţ. A doua linie conţine numerele naturale <var>N G<sub>1</sub> G<sub>2</sub> ... G<sub>N</sub></var>, separate prin câte un spaţiu, unde <var>N</var> reprezintă numărul zilelor după care staţia va fi închisă şi <var>G<sub>i</sub></var> cantitatea de gaz necesară zilei <var>i, i = 1, 2, ..., N</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>gaz.out</var> se va scrie pe prima linie costul total minim cerut.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 2 000</var></li>
+<li><var>1 ≤ L, G<sub>i</sub> ≤ 1 000</var>, <var>i = 1, 2,.., N</var></li>
+<li><var>1 ≤ P, D, C ≤ 5 000</var></li>
+<li>Pentru <var>80%</var> din teste vom avea <var>N ≤ 100</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>gaz.in</th><th>gaz.out</th></tr><tr><td>5 3 1 1<br>
+5 3 2 4 5 1<br></td><td>22<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>O planificare optimă este cea descrisă în continuare. În dimineaţa primei zile se comandă <var>5</var> litri de gaz şi se depozitează în rezervorul propriu. La sfârşitul zilei se livrează <var>3</var> litri. Costul primei zilei este <var>5 + 3 = 8</var>. Pe timpul nopţii vor rămâne <var>2</var> litri în rezervorul propriu, fără costuri suplimentare. În a doua zi staţia nu se aprovizionează, dar livrează <var>2</var> litri de gaz. Costul acestei zile este <var>0</var>. În dimineaţa celei de a treia zi se comandă <var>10</var> litri de gaz, depozitându-se câte 5 litri în fiecare din cele două rezervoare. Seara se livrează <var>4</var> litri din rezervorul închiriat. În rezervorul propriu rămân pe timpul nopţii <var>5</var> litri de gaz, iar în rezervorul închiriat încă un litru pentru care se va plăti un dolar. La costul total se vor aduna <var>10 + 3 + 1 = 14</var> dolari. În dimineaţa zilei a patra staţia nu se aprovizionează, dar seara livrează <var>5</var> litri de gaz, unul din rezervorul închiriat şi <var>4</var> din rezervorul propriu. În timpul nopţii nu vor fi costuri suplimentare de depozitare. În ultima zi se va livra ultimul litru de gaz din rezervorul propriu. Costul total este: <var>8 + 14 = 22</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

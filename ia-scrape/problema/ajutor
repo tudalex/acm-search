@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ajutor.in, ajutor.out</td><td><strong>Sursă</strong></td><td>ONI 2003 - baraj</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=120">Marius Andrei</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/silviug"><img src="/utilizator/silviug?action=download&amp;file=avatar&amp;resize=L16x16" alt="silviug">Silviu-Ionut Ganceanu</a> <a title="Rating silviug: 624" class="rating-badge-4" href="http://infoarena.ro/utilizator/silviug?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/silviug">silviug</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ajutor">Vezi solutiile trimise</a></p>
+
+<h1>Ajutor<br></h1>
+
+<p>Dacă te-ai rănit, nu folosi Sprite să tratezi rana. Cel mai bine e să fugi la cel mai apropiat post de prim ajutor. Norocul tău este că ai o hartă din care poţi afla coordonatele carteziene ale posturilor de prim ajutor. Ghinionul este că, din cauza durerii, nu poţi să fugi direct spre un post, ci numai pe direcţiile nord-sud şi est-vest. Ca să ştii dacă mai are sens să fugi spre un post sau să te bucuri de ultimele clipe de viaţă, cel mai bine e să evaluezi distanţa până la cel mai apropiat post de prim ajutor. Cel mai apropiat post este cel pentru care distanţa Manhattan este minimă.</p>
+
+<p>De data aceasta ai scăpat pentru că timpul necesar ajungerii până la post a fost suficient; însă îţi pui întrebarea: dacă accidentul s-ar fi întâmplat în alt loc, ai fi scăpat? </p>
+
+<h2>Cerinţă</h2>
+
+<p>Se consideră <var>N</var> puncte in plan, reprezentând posturile de prim ajutor şi alte <var>M</var> puncte reprezentând posibile locaţii ale accidentului. Se cere pentru fiecare dintre cele <var>M</var> puncte distanţa Manhattan până la cel mai apropiat post.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>ajutor.in</var> conţine pe prima linie numerele întregi <var>N</var> şi <var>M</var>, în acestă ordine, separate printr-un spaţiu. Pe următoarele <var>N</var> linii se află câte două numere întregi, separate printr-un spaţiu, reprezentând coordonatele fiecărui post de prim ajutor. Pe următoarele <var>M</var> linii se află câte două numere intregi, separate printr-un spaţiu, reprezentând coordonatele punctelor de accident. Coordonatele se dau în ordinea (abscisa, ordonata).</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>ajutor.out</var> va conţine <var>M</var> linii, cu câte un număr pe fiecare linie, reprezentând distanţa minimă până la cel mai apropiat post de prim ajutor.</p>
+
+<h2>Restricţii şi precizări</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 400</var></li>
+<li><var>1 ≤ M ≤ 500000</var></li>
+<li>oricare coodonată este un număr întreg din intervalul <var>[0,32000]</var></li>
+<li>Dacă te afli deja la un post de prim ajutor (coordonatele sunt identice) distanţa e 0.</li>
+<li>Distanţa Manhattan este cel mai scurt drum între două puncte, mergând doar pe direcţii paralele cu axele de coordonate, adică |x1-x2|+|y1-y2|, unde (x1,y1), (x2,y2) sunt coordonatele celor 2 puncte.</li>
+<li>În fişierul de intrare pot exista puncte cu aceleaşi coordonate.</li>
+<li>Se acordă punctele pentru fiecare test, doar dacă toate valorile din fişierul de ieşire sunt corecte.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>ajutor.in</th><th>ajutor.out</th></tr><tr><td>4 4<br>
+1 1<br>
+5 5<br>
+1 5<br>
+5 1<br>
+0 0<br>
+1 1<br>
+3 3<br>
+4 1<br></td><td>2<br>
+0<br>
+4<br>
+1<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>heavymetal.in, heavymetal.out</td><td><strong>Sursă</strong></td><td>preONI 2008, Runda 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/wefgef"><img src="/utilizator/wefgef?action=download&amp;file=avatar&amp;resize=L16x16" alt="wefgef">Andrei Grigorean</a> <a title="Rating wefgef: 783" class="rating-badge-4" href="http://infoarena.ro/utilizator/wefgef?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/wefgef">wefgef</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=heavymetal">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=heavymetal">Vezi solutiile trimise</a></p>
+
+<h1>Heavy metal<br></h1>
+
+<p>Miruna a intrat de curand in afacerea cu muzica buna. Ea s-a decis sa organizeze un festival de heavy metal si a cumparat o sala de concerte. La festival a invitat <var>N</var> formatii, insa fiecare formatie poate sa cante un anumit interval fixat de timp. Deoarece fanii sunt scandalagii, Miruna doreste sa selectioneze formatiile ce vor canta astfel incat timpul total in care cineva concerteaza sa fie cat mai mare. In alegerea formatiilor trebuie sa aiba grija sa nu existe <var>2</var> formatii care sa conerteze in acelasi timp.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>heavymetal.in</var> contine un numar natural <var>N</var>, avand semnificatia din enunt. Urmeaza <var>N</var> linii pe care se vor gasi cate doua valori <var>A<sub>i</sub></var> si <var>B<sub>i</sub></var>, reprezentand intervalele de timp in care pot canta formatiile.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>heavymetal.out</var> se va gasi un singur numar reprezentand suma maxima a intervalelor de timp in care vor canta formatiile.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100000</var></li>
+<li><var>1 ≤ A<sub>i</sub>, B<sub>i</sub> ≤ 10<sup>9</sup></var></li>
+<li><var>A<sub>i</sub> &lt; B<sub>i</sub></var></li>
+<li>Pentru <var>40%</var> din teste <var>1 ≤ N, A<sub>i</sub>, B<sub>i</sub> ≤ 1000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>heavymetal.in</th><th>heavymetal.out</th></tr><tr><td>4<br>
+  3 5<br>
+  5 10<br>
+  3 4<br>
+  1 2<br></td><td>8<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Vor canta formatiile <var>1</var>, <var>2</var> si <var>4</var>, iar timpul total va fi <var>2 + 5 + 1 = 8</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

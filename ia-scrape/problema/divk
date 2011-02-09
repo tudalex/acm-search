@@ -1,0 +1,55 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>divk.in, divk.out</td><td><strong>Sursă</strong></td><td>preONI 2006 Runda Finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=139">Filip Cristian Buruiana</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">1/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=divk">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=divk">Vezi solutiile trimise</a></p>
+
+<h1>Divk<br></h1>
+
+<p>Fie un vector de <var>N</var> numere naturale nenule. Pentru tripletul <var>(K, A, B)</var> dat trebuie sa raspundem la intrebarea: cate subsecvente ale vectorului dat au lungimea cuprinsa intre <var>A</var> si <var>B</var> ( inclusiv ) si au suma elementelor divizibila cu <var>K</var>?</p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se determine numarul subsecventelor cu proprietatea enuntata.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului <var>divk.in</var> contine patru numere naturale <var>N, K, A</var> si <var>B</var>, separate prin cate un spatiu, avand semnificatia descrisa in enunt. Fiecare din urmatoarele <var>N</var> linii contine cate un numar natural nenul, elementele vectorului.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Prima linie a fisierului <var>divk.out</var> contine un numar natural <var>T</var>, numarul de subsecvente cu proprietatea ceruta.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 &lt; A &lt; B &lt; N ≤ 500 000</var></li>
+<li><var>2 ≤ K ≤ 100 000</var></li>
+<li>Fiecare numar din cele N nu depaseste <var>10 000 000</var> ( <var>10</var> milioane )</li>
+<li>Prin subsecventa intelegem orice insiruire de termeni din vector care sunt pe pozitii consecutive</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>divk.in</th><th>divk.out</th></tr><tr><td>6 5 2 4<br>
+2 <br>
+9 <br>
+5 <br>
+4 <br>
+1 <br>
+4</td><td>4</td></tr></table><h3>Explicatie</h3>
+
+<p>Subsecventele care pot fi alese sunt: <var>(2 9 5 4)</var>, <var>(4 1)</var>, <var>(5 4 1)</var> si <var>(1 4)</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=79">Sume partiale</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

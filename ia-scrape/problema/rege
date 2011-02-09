@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>rege.in, rege.out</td><td><strong>Sursă</strong></td><td>Lot Juniori 2010 - Baraj 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=221">Zoltan Szabo</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/GheorgheMihai"><img src="/utilizator/GheorgheMihai?action=download&amp;file=avatar&amp;resize=L16x16" alt="GheorgheMihai">Gheorghe Mihai</a> <a title="Rating GheorgheMihai: 787" class="rating-badge-1" href="http://infoarena.ro/utilizator/GheorgheMihai?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/GheorgheMihai">GheorgheMihai</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>20480 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=rege">Vezi solutiile trimise</a></p>
+
+<h1>Rege<br></h1>
+
+<p>Se cunoaşte că regele se poate mişca pe tabla de şah doar în câmpurile învecinate pe toate cele <var>8</var> direcţii. În figura de mai jos putem vedea deplasările posibile ale regelui la o mutare. Numim drum o succesiune de una sau mai multe astfel de mutări.</p>
+
+<p class="center" style="text-align:center"><img src="http://infoarena.ro/problema/rege?action=download&amp;file=rege.png&amp;resize=40%25" alt=""></p>
+
+<h2>Cerinţă</h2>
+
+<p>Cunoscând dimensiunea <var>M</var> x <var>N</var> a tablei de şah, respectiv poziţia iniţială (l<sub>1</sub>, c<sub>1</sub>) şi poziţia finală (l<sub>2</sub>, c<sub>2</sub>) a traseului regelui, să se calculeze numărul drumurilor minime distincte în care regele poate parcurge drumul.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>rege.in</var> conţine pe prima linie valorile <var>m</var> şi <var>n</var> separate prin spaţiu, reprezentând dimensiunile tablei de şah, pe linia a doua numerele l<sub>1</sub> şi c<sub>1</sub> separate prin spaţiu, reprezentând linia şi coloana poziţiei iniţiale a regelui, iar pe linia a treia numerele l<sub>2</sub> şi c<sub>2</sub> separate prin spaţiu, reprezentând poziţia finală a regelui.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>rege.out</var> se va afişa pe prima linie numărul drumurilor minime distincte modulo 666013.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ M, N, l<sub>1</sub>, c<sub>1</sub>, l<sub>2</sub>, c<sub>2</sub> ≤ 1 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>rege.in</th><th>rege.out</th></tr><tr><td>5 5<br>
+3 3<br>
+2 5<br></td><td>2<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>1. (3, 3) - (3, 4) - (2, 5)<br>
+2. (3, 3) - (2, 4) - (2, 5)</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

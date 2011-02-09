@@ -1,0 +1,60 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>eqs.in, eqs.out</td><td><strong>Sursă</strong></td><td>ONI 2002</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=155">Mihai Patrascu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">2/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=eqs">Vezi solutiile trimise</a></p>
+
+<h1>Ecuatii<br></h1>
+
+<p>Se considera ecuatii de tipul:<br><var>a<sub>1</sub>*x<sub>1</sub><sup>3</sup></var> <code>+</code> <var>a<sub>2</sub>*x<sub>2</sub><sup>3</sup></var> <code>+</code> <var>a<sub>3</sub>*x<sub>3</sub><sup>3</sup></var> <code>+</code> <var>a<sub>4</sub>*x<sub>4</sub><sup>3</sup></var> <code>+</code> <var>a<sub>5</sub>*x<sub>5</sub><sup>3</sup>=0</var><br>
+Toate necunoscutele apar la puterea a treia. Coeficientii <var>a<sub>1</sub>,a<sub>2</sub>,a<sub>3</sub>,a<sub>4</sub>,a<sub>5</sub></var> sunt numere intregi date, din intervalul inchis <var>[-50,+50]</var>. Se considera solutie un pentuplu <var>(x<sub>1</sub>,x<sub>2</sub>,x<sub>3</sub>,x<sub>4</sub>,x<sub>5</sub>)</var> care verifica ecuatia.</p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se gaseasca numarul de solutii ale ecuatiei, pentru care valorile necunoscutelor sunt numere intregi nenule din intervalul inchis <var>[-50,+50]</var>.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>eqs.in</var> sunt scrisi cei <var>5</var> coeficienti intregi <var>a<sub>1</sub>,a<sub>2</sub>,a<sub>3</sub>,a<sub>4</sub>,a<sub>5</sub></var> separati prin cate un spatiu.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Prima linie a fisierului de iesire <var>eqs.out</var> va contine numarul de solutii.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li>coeficientii ecuatiei sunt numere intregi din intervalul <var>[-50, +50]</var></li>
+<li>un program care functioneaza perfect pentru <var>a<sub>4</sub>=a<sub>5</sub>=0</var> va obtine cel putin <var>20</var> de puncte. Un program care functioneaza perfect pentru <var>a<sub>5</sub>=0</var> va obtine cel putin <var>40</var> de puncte.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>eqs.in</th><th>eqs.out</th></tr><tr><td>37 29 41 43 47</td><td>654</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 3 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=48">Cautare</a></span>
+            <a href="javascript:show_tag_list(48)" id="tag_anchor_48" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_48"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=49">Cautare binara</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=63">Sortare</a></span>
+            <a href="javascript:show_tag_list(63)" id="tag_anchor_63" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_63"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=64">Sortare</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=432">Hash</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

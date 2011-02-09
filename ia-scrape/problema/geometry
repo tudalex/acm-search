@@ -1,0 +1,35 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>geometry.in, geometry.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=geometry">Vezi solutiile trimise</a></p>
+
+<h1>Geometry<br></h1>
+
+<p>Ionut are <var>N</var> segmente in planul <var>XY</var> si si-ar dori sa stie cate perechi dintre acestea se intersecteaza. Se considera ca doua segmente se intersecteaza chiar si daca se ating intr-un singur punct.</p>
+
+<h2>Cerinta</h2>
+
+<p>Ajutati-l pe Ionut sa gaseasca raspunsul.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul <var>geometry.in</var> va contine pe prima linie un intreg <var>N</var>, numarul de segmente, urmata de <var>N</var> linii de forma <var>X1</var>, <var>Y1</var>, <var>X2</var>, <var>Y2</var>, reprezentand coordonatele capetelor cate unuia dintre segmente.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul <var>geometry.out</var> va contine pe prima linie un singur numar, reprezentand numarul de perechi de segmente care se intersecteaza.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>0</var> &lt; <var>N</var> ≤ <var>500</var></li>
+<li>Coordonatele capetelor segmentelor sunt toate numere intregi cuprinse intre <var>-10.000</var> si <var>10.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>geometry.in</th><th>geometry.out</th></tr><tr><td>3 <br>
+-1 -1 1 1<br>
+0 -1 0 1<br>
+-1 0 1 0<br></td><td>3</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

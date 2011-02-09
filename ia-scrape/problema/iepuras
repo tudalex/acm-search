@@ -1,0 +1,107 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>iepuras.in, iepuras.out</td><td><strong>Sursă</strong></td><td>ONI 2008, clasa a 9-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=197">Carmen Popescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gabitzish1"><img src="/utilizator/gabitzish1?action=download&amp;file=avatar&amp;resize=L16x16" alt="gabitzish1">Gabriel Bitis</a> <a title="Rating gabitzish1: 658" class="rating-badge-1" href="http://infoarena.ro/utilizator/gabitzish1?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gabitzish1">gabitzish1</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=iepuras">Vezi solutiile trimise</a></p>
+
+<h1>Iepuras<br></h1>
+
+<p>Un iepuras se gaseste intr-o gradina plina de surprize. Harta gradinii poate fi reprezentata sub forma unei table dreptunghiulare cu <var>m</var> linii, numerotate de la <var>1</var> la <var>m</var> de sus in jos, si <var>n</var> coloane, numerotate de la 1 la <var>n</var> de la stanga la dreapta. In fiecare celula a acestei gradini se poate gasi cel mult una dintre urmatoarele surprize: sageata, pom, zid, trapa, morcov, bomba.</p>
+
+<p>O sageata indica una din directiile nord, sud, est, vest. Odata ajuns intr-o celula continand o astfel de sageata iepurasul isi va continua deplasarea in sensul indicat de sageata, iar aceasta dispare.</p>
+
+<p>Intr-o celula in care se gaseste un pom sau un zid iepurasul nu poate sa patrunda, insa daca se "loveste" de un pom, el isi pastreaza directia, insa schimba sensul (daca se deplasa spre nord, isi va schimba sensul spre sud, daca se deplasa spre est, se va deplasa dupa aceea spre vest etc).</p>
+
+<p>Daca iepurasul intra intr-o celula continand o trapa, toate zidurile aflate pe teren dispar si vor aparea alte ziduri, in pozitii precizate. Daca iepurasul va trece din nou printr-o celula continand o trapa, zidurile nou construite dispar si vor reaparea zidurile initiale. Mai exact exista doua grupe de ziduri care comuta la fiecare trecere printr-o celula care contine o trapa.</p>
+
+<p>Daca iepurasul va trece de doua ori prin vecinatatea unei celule continand o bomba (adica prin celulele invecinate la sud, nord, est sau vest cu celula continand bomba), bomba va exploda iar iepurasul se transforma instantaneu in ingeras. De asemenea, daca iepurasul intra intr-o celula continand o bomba se transforma instantaneu in ingeras. Iepurasul va rontai toti morcovii care ii ies in cale. Evident ca daca trece a doua oara prin aceeasi celula, la a doua trecere nu va mai gasi morcov. </p>
+
+<p>Surprizele din gradina sunt codificate astfel: 1 pentru sageata spre nord, 2 pentru sageata spre vest, 3 pentru sageata spre sud, 4 pentru sageata spre est, 5 pentru pom, 6 pentru bomba, 7 pentru morcov, 8 pentru zid, 9 pentru trapa. Casutele libere de pe harta gradinii se codifica cu 0.</p>
+
+<p>Initial, se cunosc pozitia si sensul de deplasare ale iepurasului. Expeditia acestuia se termina in urmatoarele situatii:</p>
+
+
+<ul><li>la explozia unei bombe, caz in care se transforma in ingeras;</li>
+<li>la parasirea gradinii (adica la iesirea in afara zonei dreptunghiulare date), caz in care se rataceste;</li>
+<li>in momentul in care reuseste sa rontaie toti morcovii, caz in care este fericit.</li>
+</ul><h2>Cerinta</h2>
+
+<p>Fiind data harta gradinii se cere sa se determine starea finala a iepurasului (ingeras, ratacit respectiv fericit), numarul de morcovi rontaiti pana in momentul terminarii expeditiei, precum si numarul de pasi pe care ii face iepurasul pana la acest moment.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>iepuras.in</var> se gasesc doua numere intregi <var>m</var> si <var>n</var>, separate printr-un spatiu, reprezentand numarul de linii, respectiv numarul de coloane ale hartii.<br>
+Linia a doua a fisierului contine trei numere naturale, separate prin cate un spatiu, reprezentand linia si coloana pozitiei initiale a iepurasului pe harta precum si directia spre care acesta este orientat. Directia este codificata astfel: <var>1</var> pentru nord, <var>2</var> pentru vest, <var>3</var> pentru sud, <var>4</var> pentru est.<br>
+Urmatoarele <var>m</var> linii contin cate <var>n</var> numere intregi separate prin cate un spatiu, reprezentand codificarea hartii gradinii, conform celor precizate mai sus.<br>
+Urmatoarea linie contine un singur numar natural <var>t</var> reprezentand numarul de celule ce vor contine ziduri dupa prima trecere printr-o celula continand o trapa. Urmatoarele <var>t</var> linii contin cate doua numere naturale <var>i</var> si <var>j</var>, separate printr-un spatiu, reprezentand coordonatele cate unei celule ce va contine zid dupa o prima trecere printr-o celula continand o trapa.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>iepuras.out</var> va contine pe prima sa linie unul dintre cuvintele <span class="caps">INGERAS, RATACIT </span>respectiv <span class="caps">FERICIT, </span>corespunzator starii finale a iepurasului. A doua linie a fisierului va contine doua numere intregi separate printr-un spatiu, reprezentand linia si coloana ultimei pozitii de pe teren a iepurasului, adica pozitia in care a murit, sau in care a devenit fericit, respectiv ultima pozitie a sa de pe teren, inainte de a se rataci.<br>
+A treia linie a fisierului va contine doua numere intregi separate printr-un spatiu, reprezentand numarul de morcovi culesi pana in momentul terminarii expeditiei, respectiv numarul de pasi pe care ii face iepurasul pana ajunge in starea finala.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>Pozitia initiala a iepurasului este una valida, adica este o celula libera din interiorul terenului;</li>
+<li>Pentru datele de test, se asigura ca iepurasul va face un numar finit de pasi pana la terminarea expeditiei sale;</li>
+<li><var>1 ≤ m, n ≤ 200</var></li>
+<li><var>0 ≤ t ≤ 40</var></li>
+<li>Numarul maxim de ziduri aflate la un moment dat pe teren este de cel mult 50, si este posibil ca la un moment dat sa nu existe niciun zid pe teren.</li>
+<li>Se garanteaza ca pentru datele de intrare iepurasul nu poate ajunge simultan in doua din cele trei stari.</li>
+<li>Pomii si trapele sunt obiecte care raman permanent in teren, in pozitiile lor initiale.</li>
+<li>Intr-o celula a gradinii se poate gasi la un moment dat o singura surpriza (pom, zid, trapa, morcov, sageata, bomba).</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>iepuras.in</th><th>iepuras.out</th></tr><tr><td>10 15<br>
+7 1 4<br>
+0 0 6 0 5 5 0 7 0 0 0 0 0 0 0<br>
+0 0 0 0 5 5 0 0 4 0 0 0 0 0 3<br>
+0 5 5 0 5 5 0 0 0 0 0 0 0 0 0<br>
+0 5 5 0 5 5 0 1 7 0 0 7 0 0 2<br>
+0 0 0 0 5 5 0 0 0 0 0 0 0 0 0<br>
+0 0 0 0 0 5 0 0 0 0 0 0 0 0 0<br>
+0 3 0 0 0 5 6 0 0 5 5 5 0 0 0<br>
+0 7 0 0 0 0 0 0 0 0 0 0 0 5 0<br>
+0 4 0 0 0 7 0 0 3 5 0 0 0 5 0<br>
+0 6 0 0 0 0 0 0 1 5 0 0 0 5 0<br>
+0<br></td><td><span class="caps">FERICIT</span><br>
+1 8<br>
+5 37<br></td></tr><tr><td>4 3<br>
+2 1 3<br>
+0 0 0<br>
+0 0 0<br>
+9 6 7<br>
+8 0 0<br>
+4<br>
+4 3<br>
+1 2<br>
+1 3<br>
+2 3<br></td><td><span class="caps">RATACIT</span><br>
+4 1<br>
+0 3<br></td></tr><tr><td>6 5<br>
+2 1 3<br>
+0 0 0 7 0<br>
+0 0 0 0 0<br>
+9 6 7 2 0<br>
+8 0 0 0 0<br>
+7 8 0 0 0<br>
+4 8 9 1 0<br>
+4<br>
+4 4<br>
+5 4<br>
+1 5<br>
+2 5<br></td><td><span class="caps">INGERAS</span><br>
+3 3<br>
+2 11<br></td></tr><tr><td>5 4<br>
+2 1 3<br>
+4 0 7 0<br>
+0 0 0 0<br>
+0 0 0 0<br>
+5 0 0 0<br>
+0 0 0 0<br>
+0<br></td><td><span class="caps">FERICIT</span><br>
+1 3<br>
+1 5<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

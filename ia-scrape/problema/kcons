@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>kcons.in, kcons.out</td><td><strong>Sursă</strong></td><td>Lot Vrancea 2010, Baraj 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=161">Adrian Airinei</a>, <a href="/cauta-probleme?tag_id%5B%5D=223">Cosmin Gheorghe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Mishu91"><img src="/utilizator/Mishu91?action=download&amp;file=avatar&amp;resize=L16x16" alt="Mishu91">Andrei Misarca</a> <a title="Rating Mishu91: 662" class="rating-badge-1" href="http://infoarena.ro/utilizator/Mishu91?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Mishu91">Mishu91</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=kcons">Vezi solutiile trimise</a></p>
+
+<h1>Kcons<br></h1>
+
+<p>Andrei este în mare dificultate: se pare că are câteva probleme la şcoală. Prietenii lui s-au decis să-l mai înveselească şi i-au propus spre rezolvare o problemă la care se gândeau de mai mult timp. Problema cere numărarea tuturor permutărilor cu <var>N</var> elemente care respectă următoarea proprietate: orice subsecvenţă pentru care elementele ei sunt atât în ordine crescătoare, cât şi consecutive are lungimea maxim <var>K</var>.</p>
+
+<p>Deoarece Andrei este ocupat, ajutaţi-l să determine numărul de permutări cu proprietatea cerută, modulo <var>30013</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare <var>kcons.in</var> se vor afla două numere naturale <var>N</var> şi <var>K</var> având semnificaţiile din enunţ.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>kcons.out</var> veţi afişa un singur număr reprezentând numărul de permutări cu proprietatea cerută, modulo <var>30013</var>.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 2000</var></li>
+<li><var>1 ≤ K ≤ N</var></li>
+<li>Pentru <var>10%</var> din teste <var>N ≤ 10</var></li>
+<li>Pentru <var>50%</var> din teste <var>N ≤ 70</var></li>
+<li>Pentru <var>70%</var> din teste <var>N ≤ 300</var></li>
+<li>Pentru <var>40%</var> din teste <var>K = 1</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>kcons.in</th><th>kcons.out</th><th>kcons.in</th><th>kcons.out</th></tr><tr><td>4 2<br></td><td>21<br></td><td>25 10<br></td><td>27042<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Din cele <var>24</var> de permutări posibile următoarele trei nu sunt bune: <var><ins>1 2 3 4</ins></var>, <var><ins>2 3 4</ins> 1</var>, <var>4 <ins>1 2 3</ins></var>. Subsecvenţele subliniate conţin numere crescătoare şi consecutive, iar lungimea lor este mai mare decât 2.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

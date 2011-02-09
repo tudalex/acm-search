@@ -1,0 +1,28 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>hanoi4.in, hanoi4.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=hanoi4">Vezi solutiile trimise</a></p>
+
+<h1>Hanoi4<br></h1>
+
+<p>Cunoastem cu totii problema clasica a celor <var>3</var> turnuri (stive) din Hanoi. Pe una din cele <var>3</var> stive se afla <var>N</var> discuri, in ordine crescatoare (de la varf catre baza) a dimensiunii. Se pot efectua mutari, o mutare constand in luarea unui disc din varful uneia din cele <var>3</var> stive si plasarea lui in varful alteia, cu conditia ca, la nici un moment, pe nici o stiva, sa nu existe un disc de dimensiune mai mare peste un disc de dimensiune mai mica. Se stie ca numarul minim de mutari necesar pentru a muta cele <var>N</var> discuri de pe stiva pe care se afla ele initial, pe o alta, avand la dispozitie doar <var>3</var> stive, este <var>2<sup>N</sup>-1</var>. Dumneavoastra trebuie sa determinati numarul minim de mutari necesar pentru a muta <var>N</var> discuri de pe o stiva pe alta, avand la dispozitie, in total, <var>4</var> stive.</p>
+
+<h2>Date de intrare</h2>
+
+<p>In fisierul de intrare <var>hanoi4.in</var> se afla un singur numar intreg: <var>N</var></p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>hanoi4.out</var> veti afisa o singura valoare intreaga: numarul minim de mutari cerut.</p>
+
+<h2>Restrictii si precizari:</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1000</var></li>
+<li>Rezultatul se incadreaza intr-un intreg pe <var>64</var> de biti.</li>
+</ul><h2>Exemple:</h2>
+
+<table class="example" cellspacing="0"><tr><th>hanoi4.in</th><th>hanoi4.out</th></tr><tr><td>7</td><td>25</td></tr><tr><td>64</td><td>18433</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

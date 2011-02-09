@@ -1,0 +1,43 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>obj.in, obj.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=obj">Vezi solutiile trimise</a></p>
+
+<h1>Obj<br></h1>
+
+<p>Gigel si Ionel joaca un joc. Ei au o gramada ce contine <var>N</var> obiecte si efectueaza mutari alternativ. Cel care se afla la mutare poate sa ia din gramada un numar de obiecte cuprins intre <var>1</var> si minim{ <var>K</var>, numarul de obiecte ramase in gramada }. Numarul de obiecte luat la fiecare mutare se aduna la numarul total de obiecte luate pana atunci de jucatorul respectiv. Castigatorul jocului este cel care, in momentul in care gramada se goleste, detine un numar par de obiecte (pentru a exista un singur castigator, numarul initial de obiecte din gramada este impar). Gigel este cel care efectueaza prima mutare.</p>
+
+<p>Pentru valorile <var>N</var> si <var>K</var> date, determinati cine va castiga jocul, considerand ca atat Gigel, cat si Ionel, folosesc o strategie optima.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>obj.in</var> contine numarul <var>J</var> de jocuri ce vor fi descrise in continuare. Fiecare din urmatoarele <var>J</var> linii contine cate doua numere intregi, separate printr-un spatiu: <var>N</var> si <var>K</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>In fisierul de iesire <var>obj.out</var> veti afisa <var>J</var> linii. Pentru fiecare joc descris in fisierul de intrare (in ordinea in care sunt date in fisier), veti afisa caracterul <var>`G'</var>, in caz ca Gigel va castiga jocul, respectiv caracterul <var>`I'</var>, in cazul in care castigatorul este Ionel.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ J ≤ 30</var></li>
+<li>Pentru fiecare joc:<br>
+o <var>1 ≤ N ≤ 1.000.000.000, N impar</var><br>
+o <var>1 ≤ K ≤ N</var></li>
+<li>Pentru <var>50%</var> din teste <var>N ≤ 20.000</var> si <var>K ≤ 100</var></li>
+<li>Pentru <var>90%</var> din teste <var>N ≤ 1.000.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>obj.in</th><th>obj.out</th></tr><tr><td>5<br>
+  21 8<br>
+  23 8<br>
+  9 3<br>
+  11 3<br>
+  999999 12345<br></td><td>I<br>
+  G<br>
+  I<br>
+  G<br>
+  G</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,36 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>penal.in, penal.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2006, clasele 9-10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=119">Silviu-Ionut Ganceanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/bogdan2412"><img src="/utilizator/bogdan2412?action=download&amp;file=avatar&amp;resize=L16x16" alt="bogdan2412">Bogdan-Cristian Tataroiu</a> <a title="Rating bogdan2412: 1162" class="rating-badge-4" href="http://infoarena.ro/utilizator/bogdan2412?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/bogdan2412">bogdan2412</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.15 sec</td><td><strong>Limită de memorie</strong></td><td>16000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=penal">Vezi solutiile trimise</a></p>
+
+<h1>Problema penala<br></h1>
+
+<p><img src="http://infoarena.ro/problema/penal?action=download&amp;file=schema.png&amp;resize=70%25" alt="" class="right" style="float:right">
+Deoarece a mancat prea multe bomboane, Algorel a inceput sa se joace cu ele. El este in posesia a <var>N<sup>2</sup></var> bomboane pe care le aseaza astfel incat ele formeaza o matrice de dimensiuni <var>N x N</var>. Dupa ce le-a asezat, el se uita mandru la ele si apoi incepe sa le schimbe asezarea in mod repetitiv. Se defineste o operatie ca fiind o reordonare a elementelor matricei dupa urmatoarea regula: mai intai stabileste o ordine a bomboanelor pornind din coltul stanga sus al matricii in forma de spirala; apoi le dispune, in ordinea stabilita, intr-o noua matrice completand prima linie de la stanga la dreapta, apoi a doua linie de la stanga la dreapta, s.a.m.d. (vezi desenul alaturat).</p>
+
+<p><var>P</var> dintre cele <var>N<sup>2</sup></var> bomboane sunt mai speciale: contin alcool. Parintii lui Algorel stiu pozitia initiala a fiecarei bomboane speciale si cate operatii a efectuat acesta. Pentru a il supraveghea cat mai atent, ei vor sa stie pozitia fiecarei bomboane speciale dupa fiecare operatie efectuata de Algorel.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>penal.in</var> se afla 3 numere naturale <var>N</var> <var>M</var> <var>P</var> - <var>N</var> reprezinta latura matricii de bomboane a lui Algorel, <var>M</var> reprezinta numarul de operatii efectuate de acesta si <var>P</var> reprezinta numarul de bomboane speciale. A doua linie a fisierului contine <var>P</var> perechi de numere naturale separate prin spatii, ce reprezinta pozitiile initiale ale bomboanelor speciale.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>penal.out</var> va avea <var>M</var> linii, fiecare continand <var>P</var> perechi de numere naturale separate prin spatii reprezentand pozitiile bomboanelor speciale dupa fiecare operatie. Ordinea bomboanelor pe fiecare linie trebuie sa fie aceeasi ca si in fisierul de intrare.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 40000</var></li>
+<li><var>1 ≤ P ≤ min(100, N<sup>2</sup>)</var></li>
+<li><var>1 &lt;= M &lt;= 1000</var></li>
+<li>Pentru <var>30%</var> din teste <var>N ≤ 50</var>, in timp ce pentru <var>60%</var> dintre ele <var>N &lt;= 1000</var>.</li>
+<li>Pozitiile bomboanelor speciale sunt valide. Nu exista doua bomboane speciale cu aceeasi pozitie.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>penal.in</th><th>penal.out</th></tr><tr><td>3 2 3<br>
+1 1 2 3 3 2<br></td><td>1 1 2 1 2 3<br>
+1 1 3 2 2 1<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

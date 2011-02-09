@@ -1,0 +1,54 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>secv4.in, secv4.out</td><td><strong>Sursă</strong></td><td>Autumn Warmup 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=167">Paul-Dan Baltescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=secv4">Vezi solutiile trimise</a></p>
+
+<h1>Secventa 4<br></h1>
+
+<p>Flubby Doo are de rezolvat un mister. In momentul de fata, el se afla in fata unei usi secrete. Pentru a o deschide si a intra in ascunzatoarea monstrului, el trebuie sa raspunda repede la urmatoarea intrebare: fiind dat un sir de <var>N</var> numere reale nenule, care este secventa de produs maxim, a carei lungime este cuprinsa intre <var>X</var> si <var>Y</var>. Flubby Doo poate raspunde usor la aceasta intrebare, dar este interesat daca si voi, prietenii lui, puteti.</p>
+
+<h2>Date de Intrare:</h2>
+
+<p>Pe prima linie a fisierului <var>secv4.in</var> se afla <var>3</var> numere <var>N</var>, <var>X</var> si <var>Y</var>. Pe urmatoarea linie se afla <var>N</var> numere.</p>
+
+<h2>Date de Iesire:</h2>
+
+<p>Pe prima linie a fisierului <var>secv4.out</var> se afla doua numere: <var>L</var> si <var>P</var>, unde <var>L</var> reprezinta lungimea secventei si <var>P</var> pozitia de inceput a acesteia.</p>
+
+<h2>Restrictii si precizari:</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100.000</var></li>
+<li>Elementele sirului sunt numere reale nenule din intervalul [<var>-10<sup>9</sup>; 10<sup>9</sup></var>]</li>
+<li>In toate testele, secventa de produs maxim va fi pozitiva</li>
+<li>Prin secventa de lungime <var>L</var> se intelege un subsir de <var>L</var> numere consecutive ale sirului initial</li>
+<li>Daca exista mai multe solutii, se va afisa cea cu pozitia de final minima; daca si asa exista mai multe solutii se va afisa cea cu pozitia de inceput minima</li>
+<li>Pentru <var>40%</var> din teste elemente sirului vor fi doar numere pozitive</li>
+<li>Pentru <var>10%</var> din teste elementele sirului vor fi numere pozitive si <var>N ≤ 2000</var></li>
+<li>Elementele sirului vor avea maxim <var>3</var> zecimale</li>
+</ul><h2>Exemplu:</h2>
+
+<table class="example" cellspacing="0"><tr><th>secv4.in</th><th>secv4.out</th></tr><tr><td>5 1 4<br>
+2 2 0.1 2 2<br></td><td>2 1</td></tr><tr><td>6 1 4<br>
+-2 -3 -4 -2 -3 1<br></td><td>4 2</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=437">Logaritmare</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=94">Deque</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

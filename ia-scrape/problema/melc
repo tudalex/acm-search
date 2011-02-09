@@ -1,0 +1,43 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>melc.in, melc.out</td><td><strong>Sursă</strong></td><td>Romanian Open Contest, TIMUS 2001</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=melc">Vezi solutiile trimise</a></p>
+
+<h1>Melc<br></h1>
+
+<table style="margin:0.5em auto;" cellspacing="0"><tr><td align="center" style="background-color:#F8EABA;"><img src="http://infoarena.ro/template/badtests?action=download&amp;file=attention.gif&amp;safe_only=true" alt="" class="left" style="float:left"><em>Testele pentru aceasta problema nu sunt destul de bine construite pentru a departaja corect solutii ineficiente sau gresite.</em><br><a href="http://infoarena.ro/implica-te/imbunatatire-teste"><strong>Intra aici</strong></a> <em>daca vrei sa ne ajuti sa imbunatatim calitatea testelor pentru aceasta problema!</em></td></tr></table><p>In Romania toti melcii sunt lenesi. Sa-l luam pe melcul Gigel, de exemplu. El are de vizitat <var>N</var> prieteni care sunt localizati la coordonate distincte in plan. Dar intrucat Gigel este prea lenes, el nu vrea sa iasa din casa. A zis, totusi, ca se va duce sa isi viziteze prietenii daca cineva ii poate arata drumul potrivit pe care sa-l urmeze.</p>
+
+<p>Gigel ar fi dispus sa iasa din casa, sa-si viziteze toti prietenii si sa se intoarca inapoi acasa. Intre casele a <var>2</var> prieteni, intre casa lui si cea a unui prieten sau intre casa unui prieten si casa lui, Gigel merge in linie dreapta, pe segmentul de dreapta ce le uneste. Asadar, drumul sau este format dintr-o succesiune de <var>N+1</var> segmente. Gigel vrea ca oricare <var>2</var> segmente din cadrul drumului sa nu se intersecteze (decat, cel mult, in capete).</p>
+
+<p>Gasiti un drum potrivit pentru Gigel.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>melc.in</var> se vor afla <var>2</var> numere reale, separate printr-un spatiu: <var>X</var> si <var>Y</var>, reprezentand coordonatele casei lui Gigel. A doua linie contine numarul intreg <var>N</var>, reprezentand numarul de prieteni pe care Gigel trebuie sa ii viziteze. Pe urmatoarele <var>N</var> linii se afla cate <var>3</var> numere, separate prin cate un spatiu: <var>X</var>, <var>Y</var> si <var>ID</var>. <var>ID</var> va fi un numar intreg, reprezentand identificatorul unuia dintre prietenii lui Gigel. <var>X</var> si <var>Y</var> sunt <var>2</var> numere reale, reprezentand coordonatele casei prietenului Gigel identificat prin valoarea lui <var>ID</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>melc.out</var> veti afisa <var>N+2</var> linii: identificatorii prietenilor ale caror case le va vizita Gigel, in ordinea in care ii viziteaza. Incepeti cu identificatorul lui Gigel (care este numarul <var>0</var>), continuati cu identificatorul primului prieten pe care il viziteaza s.a.m.d. Incheiati tot cu identificatorul lui Gigel. Daca nu exista solutie, afisati doar numarul <var>-1</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 1000</var></li>
+<li><var>-100 000 ≤ coordonatele X si Y ale oricarui punct ≤ 100 00</var></li>
+<li>Coordonatele punctelor sunt date cu o precizie de cel mult <var>3</var> zecimale.</li>
+<li>Identificatorii prietenilor lui Gigel sunt numere intregi distincte, cuprinse intre <var>1</var> si <var>N</var>.</li>
+<li>Oricare <var>3</var> prieteni (inclusiv Gigel) nu au casele pe aceeasi linie dreapta.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>melc.in</th><th>melc.out</th></tr><tr><td>0 0 <br>
+3 <br>
+3 3 1 <br>
+6 0 2 <br>
+6 2 3<br></td><td>0 <br>
+1 <br>
+3 <br>
+2 <br>
+0<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

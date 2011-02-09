@@ -1,0 +1,52 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>livada.in, livada.out</td><td><strong>Sursă</strong></td><td>OJI 2010, clasa a 9-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=214">Radu Boriga</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/GavrilaVlad"><img src="/utilizator/GavrilaVlad?action=download&amp;file=avatar&amp;resize=L16x16" alt="GavrilaVlad">Gavrila Vlad</a> <a title="Rating GavrilaVlad: 973" class="rating-badge-1" href="http://infoarena.ro/utilizator/GavrilaVlad?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/GavrilaVlad">GavrilaVlad</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.6 sec</td><td><strong>Limită de memorie</strong></td><td>8192 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=livada">Vezi solutiile trimise</a></p>
+
+<h1>Livada<br></h1>
+
+<p>Norocosul Gigel tocmai a primit în dar de la bunicul său, Nelu, o imensă plantaţie de pomi fructiferi. Fost profesor de geometrie, Nelu a plantat în mod riguros pomii fructiferi pe <var>m</var> rânduri paralele, iar pe fiecare rând a plantat exact câte <var>n</var> pomi fructiferi. Însă, din motive mai mult sau mai puţin obiective, domnul Nelu nu a plantat pe fiecare rând toţi pomii de acelaşi soi, ci din mai multe soiuri diferite. Soiurile de pomi plantaţi în livadă sunt codificate cu numere naturale cuprinse între <var>1</var> şi <var>p</var>. <br>
+Cuprins de febra rigurozităţii matematice şi de cea a statisticii, Gigel a definit noţiunea de soi majoritar astfel: dacă pe un rând <var>k</var> format din <var>n</var> pomi fructiferi avem cel puţin <var>[n/2]+1</var> pomi de acelaşi soi <var>x</var>, atunci spunem că soiul <var>x</var> este soi majoritar pe rândul <var>k</var> (prin <var>[y]</var> se înţelege partea întreagă a numărului real <var>y</var>).</p>
+
+<h2>Cerinţă</h2>
+
+<p>Cunoscând numerele <var>m</var>, <var>n</var> şi <var>p</var>, precum şi soiul fiecărui pom de pe fiecare rând al plantaţiei, ajutaţi-l pe Gigel să determine:</p>
+
+
+<ol><li>pe câte rânduri din livadă există un soi majoritar;</li>
+<li>care este cel mai mare număr de pomi de acelaşi soi plantaţi în poziţii consecutive pe un rând.</li>
+</ol><h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>livada.in</var> conţine pe prima linie trei numere naturale <var>m</var>, <var>n</var> şi <var>p</var> cu semnificaţia din enunţ, iar pe fiecare dintre următoarele <var>m</var> linii se găsesc câte n numere, despărţite prin câte un spaţiu, reprezentând soiurile pomilor de pe rândul respectiv.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>livada.out</var> va conţine două linii:</p>
+
+
+<ol><li>pe prima linie se va scrie un număr natural reprezentând numărul de rânduri din livadă pe care există un soi majoritar;</li>
+<li>pe a doua linie se va scrie un număr natural reprezentând cel mai mare numar de pomi de acelasi soi plantaţi în poziţii consecutive pe un rând. </li>
+</ol><h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ m ≤ 100.</var></li>
+<li><var>1 ≤ n ≤ 700.000.</var></li>
+<li><var>1 ≤ m*n ≤ 700.000.</var></li>
+<li><var>1 ≤ p ≤ 998.560.000.</var></li>
+<li>Pe fiecare rând diferenţa dintre valoarea maximă şi cea minimă este cel mult <var>250.000</var>.</li>
+<li>Dacă doar valoarea de pe prima linie este corectă, se acordă <var>40%</var> din punctaj. Dacă doar valoarea de pe a doua linie este corectă, se acordă <var>60%</var> din punctaj. Dacă ambele valori sunt corecte, se acordă <var>100%</var> din punctajul testului respectiv.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>livada.in</th><th>livada.out</th></tr><tr><td>4 7 9<br>
+2 1 2 3 8 2 2<br>
+4 7 2 4 9 7 4<br>
+5 5 2 5 5 5 7<br>
+2 3 2 3 2 3 1<br></td><td>2<br>
+3<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Plantaţia este formată din <var>m = 4</var> rânduri, iar pe fiecare rând avem câte <var>n = 7</var> pomi. Pentru ca un soi sa fie majoritar pe un rând trebuie ca pe acel rând să existe cel puţin <var>[7/2]+1 = 4</var> pomi din soiul respectiv. Există soiuri majoritare pe două rânduri: primul şi al treilea. Pe randul al treilea exista <var>3</var> pozitii consecutive in care se afla pomi din acelasi soi (soiul <var>5</var>).</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

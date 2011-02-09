@@ -1,0 +1,55 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>zidar.in, zidar.out</td><td><strong>Sursă</strong></td><td>ONI 2007, clasa 10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=124">Adrian Vladu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=zidar">Vezi solutiile trimise</a></p>
+
+<h1>Zidar<br></h1>
+
+<p>Nu se stie de ce, ai decis subit sa incepi o cariera in constructii. Zidurile pe care le construiesti sunt formate din caramizi cubice de latura <var>1</var>, asezate in mai multe straturi.<br>
+Pentru a proiecta un astfel de zid, ai trasat un caroiaj format din <var>MxN</var> patrate de latura <var>1</var>, organizate in <var>M</var> linii si <var>N</var> coloane. Liniile caroiajului sunt numerotate de la <var>1</var> la <var>M</var>, incepand de jos in sus, iar coloanele sunt numerotate de la <var>1</var> la <var>N</var> de la stanga la dreapta.</p>
+
+<p>Fiecare casuta a caroiajului are asociat un anumit cost, care trebuie platit in cazul in care plasam o caramida in casuta respectiva. Costul construirii unui zid este egal cu suma costurilor casutelor in care sunt plasate caramizile zidului.<br>
+Zidurile tale trebuie sa respecte urmatoarele conditii:</p>
+
+
+<ol><li>fiecare strat de caramizi este format dintr-o singura secventa de caramizi, oricare doua caramizi consecutive fiind adiacente (mai exact, caramizile de pe un strat sunt plasate in casute ale caroiajului situate pe aceeasi linie, pe coloane consecutive);</li>
+<li>cel putin o caramida de pe fiecare strat <var>i</var> trebuie sa fie asezata pe o alta caramida de pe stratul de dedesubt (<var>i-1</var>); cel mai de jos strat trebuie sa fie asezat pe pamant (pamantul fiind sub linia <var>1</var> a caroiajului);</li>
+<li>numarul de caramizi folosite in constructia zidului nu trebuie sa depaseasca un numar natural <var>X</var>.</li>
+</ol><p><img src="http://infoarena.ro/problema/zidar?action=download&amp;file=zidar.gif&amp;safe_only=true" alt=""></p>
+
+<h2>Cerinta</h2>
+
+<p>Fiind un zidar dornic de afirmare si stiind ca dispui de o suma de <var>T</var> euro, calculeaza numarul maxim de caramizi pe care le poti folosi in constructia unui zid care costa cel mult <var>T</var> euro.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>zidar.in</var> contine pe prima linie patru numere naturale <var>M</var> <var>N</var> <var>X</var> <var>T</var> separate prin cate un spatiu cu semnificatia din enunt. Pe fiecare dintre urmatoarele <var>M</var> linii se afla cate <var>N</var> numere naturale cuprinse intre <var>1</var> si <var>100</var> reprezentand costul asezarii unei caramizi pentru fiecare dintre casutele caroiajului (mai precis, elementul <var>j</var> de pe a (<var>i+1</var>)-a linie a fisierului de intrare reprezinta costul asezarii unei caramizi in casuta de pe linia <var>i</var> si coloana <var>j</var> a caroiajului).</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>zidar.out</var> va contine o singura linie pe care va fi scris un singur numar natural reprezentand numarul maxim de caramizi pe care il poate contine zidul tau, respectand conditiile impuse.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ M ≤ 50</var></li>
+<li><var>1 ≤ N ≤ 20</var></li>
+<li><var>1 ≤ X ≤ 60</var></li>
+<li><var>1 ≤ T ≤ 10000</var></li>
+<li>Pentru <var>30%</var> din teste <var>T ≤ 60</var>. Pentru <var>60%</var> din teste <var>N ≤ 10</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>zidar.in</th><th>zidar.out</th></tr><tr><td>4 5 20 8<br>
+2 2 3 2 1<br>
+4 7 1 2 3<br>
+2 1 1 1 1<br>
+1 2 5 7 3<br></td><td>6<br></td></tr></table><h3>Explicatie</h3>
+
+<p><img src="http://infoarena.ro/problema/zidar?action=download&amp;file=exemplu.bmp&amp;safe_only=true" alt=""></p>
+
+<p>Pentru a construi zidul marcat in figura ai nevoie de exact <var>8</var> euro. Nu se pot construi ziduri cu mai multe caramizi folosind aceasta suma de bani. </p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,61 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>primar.in, primar.out</td><td><strong>Sursă</strong></td><td>Winter Challenge 2008, Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=252">Bogdan Alexandru Stoica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/fireatmyself"><img src="/utilizator/fireatmyself?action=download&amp;file=avatar&amp;resize=L16x16" alt="fireatmyself">Bogdan A. Stoica</a> <a title="Rating fireatmyself: 536" class="rating-badge-2" href="http://infoarena.ro/utilizator/fireatmyself?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/fireatmyself">fireatmyself</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=primar">Vezi solutiile trimise</a></p>
+
+<h1>Primar<br></h1>
+
+<p>Dubluveu a fost ales de curand primar in <a href="http://ro.wikipedia.org/wiki/Comuna_Popricani%2C_Ia%C5%9Fi" class="wiki_link_external">Popricani</a>. Ca sa poate obtine <a href="http://www.fonduri-structurale.ro" class="wiki_link_external">fondurile structurale</a> pentru dezvoltarea comunei, proaspatul ales trebuie sa-si desemenze cat mai repede consilierii locali. Pentru ca in campania electorala, le-a promis popricanenilor ca nu va face discrimanari (ca si primarul precedent), va trebui sa respecte urmatoarele norme:</p>
+
+
+<ul><li>Cosiliul Local trebuie sa aiba <var>N</var> angajati (cate un singur angajat din fiecare casa, din cele <var>N</var> ale comunei)</li>
+<li>va trebui sa angajeze atat barbati, cat si femei</li>
+<li>valoarea totala a discriminarii sa fie minima.</li>
+</ul><p>Putem considera comuna ca un plan cartezian, unde casele sunt reprezentate de puncte, iar ulitele sunt reprezentate de dreptele paralele cu axele de coordonate, pe care se alfa cel putin o casa (vezi figura). Discriminarea pe o astfel de ulita este egala cu diferenta (in modul) dintre numarul de barbati si numarul de femei alesi in Consiliul Local. Discriminarea totala este suma discriminarilor de pe fiecare ulita.</p>
+
+<p><img src="http://infoarena.ro/problema/primar?action=download&amp;file=grid.jpg&amp;safe_only=true" alt=""></p>
+
+<p><em>Liniile rosii reprezinta ulite, pe cand liniile albastre unesc case ce nu se afla pe aceeasi ulita. Spre exemplu casele 1, 2, 3 si 4 sunt pe aceeasi ulita. De asemenea, casele 5, 6 si 7 sunt pe aceeasi ulita. In schimb, casele 1 si 5</em> <ins>sunt pe ulite diferite</ins>, <em>deoarece dreapta care trece prin punctele 1 si 5 nu este paralela nici cu OX nici cu <span class="caps">OY.</span> Pentru a intelege si mai bine desenul, putem spune ca doua case sunt pe aceeasi ulita</em> <ins>daca si numai daca</ins> <em>au</em> <ins>aceeasi abscisa</ins> <em>sau</em> <ins>aceeasi ordonata</ins>.</p>
+
+<h2>Cerinta</h2>
+
+<p>In calitate de sef de campanie al primarului Dubluveu, trebuie sa determini o alegere a celor <var>N</var> consilieri, care sa respecte promisiunile facute popricanenilor si care sa aiba o <ins>discriminare totala minima</ins>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>primar.in</var> se afla numarul <var>N</var>. Pe urmatoarele <var>N</var> linii se afla coordonatele caselor.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>primar.out</var> veti afisa, pe prima linie, discriminarea minima obtinuta, iar pe ce-a de-a doua, un sir de <var>N</var> numere din multimea <var>{0,1}</var>. Astfel, al i-lea numar va reprezenta alegerea facuta de tine pentru a <var>i</var>-a casa din fisierul de intrare. (0 - reprezinta ca ai numit un barbat de la casa <var>i</var>, 1 - reprezinta ca ai numit o femeie de la casa <var>i</var>)</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1</var> ≤ <var>N</var> ≤ <var>131 072</var></li>
+<li>coordonatele caselor sunt numere intregi ale caror coordonate nu depasesc, in modul, <var>2 000 000 000</var></li>
+<li>daca o ulita are doar o singura casa atunci, <ins>indiferent de alegerea facuta</ins>, discriminarea pe acea ulita va fi <var>0</var>.</li>
+<li>intr-o casa locuiesc cel putin un barbat si cel putin o femeie</li>
+<li>nu exista doua case la aceeasi coordonata</li>
+<li>veti primi <var>40%</var> din punctaj pentru determinarea corecta a discriminarii minime si <var>100%</var> daca raspundeti corect la intreaga cerinta</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>primar.in</th><th>primar.out</th></tr><tr><td>5<br>
+0 0<br>
+0 1<br>
+1 0<br>
+1 1<br>
+1 2<br></td><td>1 <br>
+1 0 0 1 0<br></td></tr></table><h3>Explicatie</h3>
+
+<p>din casele 2, 3 si, respectiv, 5 vei alege cate un barbat, iar din casele 1 si 4 vei alege cate o femeie.</p>
+
+<p><img src="http://infoarena.ro/problema/primar?action=download&amp;file=ex.jpg&amp;safe_only=true" alt=""></p>
+
+<p>Pe ulitele 1, 2 si 4, diferenta dintre numarul de barbati (punctele albastre) si numarul de femei (punctele rosii) este 0. Pe ulita 3, diferenta este 1. In total discriminarea are valoarea 1, fiind minima posibila pe acest exemplu. <br>
+Daca se considera ulita paralela cu OX care trece prin punctul de coordonate (1,2) se observa ca aceasta nu mai trece prin niciun alt punct dat in fisierul de intrare. Prin urmare dicriminarea pe ulita 5 va fi 0. Chiar daca ai fi ales ca din acea casa sa angajezi o femeie, discriminarea de pe ulita 5 ar fi ramasa tot 0, in schimb ar fi crescut discriminarea de pe ulita 3 si, totodata, discriminarea totala.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>excel.in, excel.out</td><td><strong>Sursă</strong></td><td>ONI 2007, clasa 7</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=190">Adrian Nita</a>, <a href="/cauta-probleme?tag_id%5B%5D=189">Maria Nita</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/peanutz"><img src="/utilizator/peanutz?action=download&amp;file=avatar&amp;resize=L16x16" alt="peanutz">Andrei Homorodean</a> <a title="Rating peanutz: 544" class="rating-badge-2" href="http://infoarena.ro/utilizator/peanutz?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/peanutz">peanutz</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>1024 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=excel">Vezi solutiile trimise</a></p>
+
+<h1>Excel<br></h1>
+
+<p>Gigel s-a calificat la <span class="caps">ONI</span> 2007. Din pacate, sau din fericire, se intalneste iarasi cu o problema asemanatoare celei de la <span class="caps">OJI,</span> Excel. <br>
+Reamintim ca o foaie de calcul in Excel se prezinta sub forma unei suprafete liniate cu linii orizontale si verticale. Prin intersectia lor rezulta dreptunghiuri (numite celule), fiecare celula avand un nume format din una sau mai multe litere si un numar, reprezentand coloana, respectiv linia pe care se afla. De exemplu, celula din stanga sus este <var>A1</var>, urmata, pe linie, de <var>B1</var>, <var>C1</var>, ... , <var>Z1</var>, <var><span class="caps">AA1</span></var>, <var><span class="caps">AB1</span></var>, .. . <var><span class="caps">BA1</span></var>, ... .</p>
+
+<table class="example" cellspacing="0"><tr><td></td><th><var>A</var></th><th><var>B</var></th><th>...	</th><th><var>Z</var>	</th><th><var>AA</var></th><th><var>AB</var></th><th>...	</th><th><var>AZ</var></th><th><var>BA</var></th><th>...</th></tr><tr><td>1</td><td><var>A1</var></td><td><var>B1</var></td><td>...</td><td><var>Z1</var></td><td><var><span class="caps">AA1</span></var></td><td><var><span class="caps">AB1</span></var></td><td>...</td><td><var><span class="caps">AZ1</span></var></td><td><var><span class="caps">BA1</span></var></td><td>...</td></tr><tr><td>2</td><td><var>A2</var></td><td><var>B2</var></td><td>...</td><td><var>Z2</var></td><td><var><span class="caps">AA2</span></var></td><td><var><span class="caps">AB2</span></var></td><td>...</td><td><var><span class="caps">AZ2</span></var></td><td><var><span class="caps">BA2</span></var></td><td>...</td></tr><tr><td>3</td><td><var>A3</var></td><td><var>B3</var></td><td>...</td><td><var>Z3</var></td><td><var><span class="caps">AA3</span></var></td><td><var><span class="caps">AB3</span></var></td><td>...</td><td><var><span class="caps">AZ3</span></var></td><td><var><span class="caps">BA3</span></var></td><td>...</td></tr><tr><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr></table><h2>Cerinta</h2>
+
+<p>Dandu-se mai multe celule sub forma <var>LxCy</var>, precum si valorile aflate in aceste celule, sa se afiseze numele celulelor folosind codificarea standard explicata mai sus. <br>
+Se defineste o foaie Excel ca fiind delimitata de linia 1, coloana 1, linia <var>n</var>, coloana <var>m</var> si se completeaza aceasta foaie cu valorile aflate in celulele descrise anterior. Indicii <var>n</var> si <var>m</var> reprezinta indicele celei mai mari linii, respectiv coloane in care exista o valoare diferita de zero. In aceasta foaie se realizeaza insumarea valorilor la prima coloana. Se cere sa se afiseze rezultatele obtinute in aceasta coloana incepand cu celula <var>A1</var> pana in celula <var>An</var>. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul <var>excel.in</var> contine mai multe linii, fiecare fiind de forma: <br><var>LxCy</var> <var>val</var> unde <var>LxCy</var> reprezinta o celula data prin linia <var>x</var>, respectiv coloana <var>y</var>, iar <var>val</var> valoarea numerica pe care o contine aceasta celula.   </p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul <var>excel.out</var> va contine cate o linie corespunzatoare fiecarei linii din fisierul de intrare. Pe fiecare linie se va scrie numele celulei corespunzatoare din fisierul de intrare in formatul descris in enunt <var>(ColoanaLinie)</var>. In plus fisierul de iesire va mai contine o linie ce va descrie coloana <var>A</var>, obtinuta in urma operatiilor de insumare. Pe aceasta coloana fiind mai multe valori dintre care foarte multe valori nule, se vor afisa: valoarea din celula <var>Ak</var> daca exista o valoare numerica diferita de <var>0</var>, sau <var>nr 0</var>, unde <var>nr</var> reprezinta cate valori <var>0</var> consecutive sunt intre doua celule <var>Ai Aj</var>, unde <var>i&lt;j</var>, <var>Ai</var> diferit de <var>0</var>, <var>Aj</var> diferit de <var>0</var> si <var>Ak=0</var>, cu <var>i&lt;k&lt;j</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ <var>indicele de linie(x)</var> ≤ 30 000 000</var></li>
+<li><var>1 ≤ <var>indicele de coloana(y)</var> ≤ 30 000 000</var></li>
+<li>Foaia de calcul, inainte de citirea fisierului de intrare, se considera a fi "umpluta" cu valoarea zero</li>
+<li>In fisierul de intrare sunt cel mult <var>300</var> de linii</li>
+<li>Intre <var>LxCy</var> si <var>val</var> exista un singur spatiu</li>
+<li>Fisierul de intrare va contine, dupa ultima linie, Enter</li>
+<li>Se acorda <var>30%</var> din punctaj pentru afisarea corecta a numelor celulelor descrise in fisierul de intrare</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th><var>excel.in</var></th><th><var>excel.out</var></th></tr><tr><td><span class="caps">L1C1</span> 23<br><span class="caps">L3C1</span> 100<br><span class="caps">L1C3 </span>-100<br><span class="caps">L29999999C26</span> 50<br><span class="caps">L52C52</span> 25<br><span class="caps">L53C17576</span> 24<br><span class="caps">L53C17602</span> 100<br></td><td>A1<br>
+A3<br>
+C1<br><span class="caps">Z29999999</span><br><span class="caps">AZ52</span><br><span class="caps">YYZ53</span><br><span class="caps">YZZ53</span><br>
+-77 1 0 100 48 0 25 124 29999945 0 50<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

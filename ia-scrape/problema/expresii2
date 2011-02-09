@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>expresii2.in, expresii2.out</td><td><strong>Sursă</strong></td><td>preONI 2007, Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=143">Daniel Pasaila</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/danielp"><img src="/utilizator/danielp?action=download&amp;file=avatar&amp;resize=L16x16" alt="danielp">Daniel Pasaila</a> <a title="Rating danielp: 532" class="rating-badge-4" href="http://infoarena.ro/utilizator/danielp?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/danielp">danielp</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>16000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=expresii2">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=expresii2">Vezi solutiile trimise</a></p>
+
+<h1>Expresii 2<br></h1>
+
+<p>O expresie logica este formata din variabile (litere mari ale alfabetului latin) si operatori ( <var>+</var> e disjunctie, <var>*</var> conjunctie si <var>!</var> negatie). De exemplu, <var>!((A + B) * A)</var> este o expresie logica in forma infixata. O expresie in forma postfixata se remarca prin disparitia parantezelor si asezarea operatorilor la sfarsitul ei. Iata un exemplu de expresii, in forma infixata si postfixata:</p>
+
+<table class="exemplu" cellspacing="0"><tr><th>forma infixata</th><th>forma postfixata</th></tr><tr><td><var>!((A + B) * A)</var></td><td><var>AB+A*!</var></td></tr><tr><td><var>(A + B) * C * (B + A)</var></td><td><var>AB+C*BA+*</var></td></tr></table><p>Consideram o ordine lexicografica pe multimea operatorilor si cea a variabilelor ( <var>a..z</var> &lt; <var>+</var> &lt; <var>*</var> &lt; <var>!</var>). Se cere, mai intai, sa se numere toate expresiile in forma postfixata de lungime <var>N</var> ce au variabilele printre primele <var>K</var> litere ale alfabetului latin, iar operatorii printre cei amintiti mai sus. Se cere apoi sa se afiseze expresia de pe pozitia <var>P</var> din lista ordonata de expresii (prima expresie din lista e pe pozitia <var>1</var>).</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul <var>expresii2.in</var> va contine, pe prima linie, <var>N</var>, <var>K</var> si <var>P</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul <var>expresii.out</var> va contine pe prima linie numarul de expresii posibile, iar pe a doua linie a <var>P</var>-a expresie din lista sortata lexicografic.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 30</var></li>
+<li><var>1 ≤ K ≤ 26</var></li>
+<li><var>1 ≤ P ≤ numarul de expresii posibile</var></li>
+<li><var>N</var> si <var>K</var> vor fi alesi in asa fel incat numarul de expresii sa fie mai mic decat <var>2<sup>63</sup></var></li>
+<li><var>40%</var> din teste vor avea <var>P = 1</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>expresii2.in</th><th>expresii2.out</th></tr><tr><td>4 2 3<br></td><td>26 <br>
+AA!+<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Iata primele 5 dintre 26 de expresii posibile:<br><var>AA+!</var><br><var>AA*!</var><br><var>AA!+</var><br><var>AA!*</var><br><var>AB+!</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

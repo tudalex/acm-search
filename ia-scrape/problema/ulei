@@ -1,0 +1,48 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ulei.in, ulei.out</td><td><strong>Sursă</strong></td><td>ONI 2009 - baraj</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=240">Catalin-Stefan Tiseanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrei-alpha"><img src="/utilizator/andrei-alpha?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrei-alpha">Andrei-Bogdan Antonescu</a> <a title="Rating andrei-alpha: 700" class="rating-badge-1" href="http://infoarena.ro/utilizator/andrei-alpha?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrei-alpha">andrei-alpha</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>3 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ulei">Vezi solutiile trimise</a></p>
+
+<h1>Ulei<br></h1>
+
+<p>Dezamăgit de afacerea Siragul, Lunasorab s-a gândit să plece în vacanţă la Paris. A decis să încerce lucruri noi, cum ar fi vizitarea unei galerii de artă. Galeria are mai multe tipuri de tablouri, însă cele care il interesează cel mai mult pe Lunasorab sunt cele în ulei (de mic copil i-a plăcut sa schimbe uleiul la maşină). Galeria este formată din <var>N</var> camere care comunică între ele prin <var>M</var> coridoare, iar tablourile în ulei se găsesc numai pe coridoare, câte unul pe fiecare coridor. Fiecare tablou este pictat cu un tip anume de ulei. Cum nu umblă cu jumătăti de masură, Lunasorab ar vrea să vadă toate tablourile în ulei. Fiind prima lui vizită la muzeu, el doreşte să vadă fiecare tablou exact o dată (în momentul în care trece printr-un coridor Lunasorab vede tabloul care se află acolo). De asemenea, pentru a nu se plictisi, el nu vrea sa vadă două tablouri consecutive care folosesc acelaşi tip de ulei şi nu vrea să termine vizita în muzeu cu un tablou pictat cu acelaşi tip de ulei ca primul tablou văzut. El nu poate să treacă dintr-o cameră în alta decât prin coridorul care le uneşte şi va trece prin fiecare coridor exact o dată. De asemenea, secvenţa de coridoare parcursă nu conţine <var>2</var> tablouri consecutive pictate în acelaşi tip de ulei. În plus, tipul primului tablou văzut trebuie să fie diferit de cel al ultimului tablou vizitat. Vizita începe şi se termină din aceeaşi cameră.</p>
+
+<p>De aceea, el vă cere ajutorul, promiţându-vă o parte din profitul următoarei sale afaceri. Pentru a fi sigur ca nu îl păcăliţi, el vă va furniza mai multe planuri de galerii, alegând la sfârşit pe cel care-i place cel mai mult.</p>
+
+<h2>Cerinta</h2>
+
+<p>Dându-se planul galeriei, găsiţi o secvenţă de coridoare prin care să treacă Lunasorab. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>ulei.in</var> va conţine pe prima linie numărul natural <var>T</var>, reprezentând numărul de teste. Pe urmatoarele linii vor urrma <var>T</var> teste, descrise în continuare. Fiecare test este format din <var>M</var> + <var>1</var> linii. Prima linie va conţine <var>N</var> si <var>M</var>, reprezentând numărul de camere precum şi numărul de coridoare. Pe urmatoarele <var>M</var> linii se vor afla coridoarele, unul pe linie, date sub forma <var>i</var> <var>j</var> <var>t</var>, semnificând faptul că există un coridor de la camera <var>i</var> la camera <var>j</var>, conţinând un tablou care foloseste tipul <var>t</var> de ulei. Coridoarele sunt bidirecţionale, iar între aceeaşi pereche de camere poate exista cel mult un coridor.</p>
+
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>ulei.out</var> va conţine <var>T</var> linii. Pe fiecare linie se găseşte o secvenţă de <var>M</var> + <var>1</var> de numere naturale separate prin câte un spaţiu, reprezentând numerele camerelor în ordinea vizitării.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1</var> ≤ <var>T</var> ≤ <var>5</var></li>
+<li><var>1</var> ≤ <var>N</var> ≤ <var>15.000</var></li>
+<li><var>1</var> ≤ <var>M</var> ≤ <var>100.000</var></li>
+<li>Nu va exista coridor de la o cameră la ea însăşi</li>
+<li>Pe testele folosite la evaluare va exista mereu soluţie</li>
+<li>Tipurile de ulei vor fi între <var>1</var> si <var>15.000</var></li>
+<li>Pentru <var>20</var>% din teste vor fi doar <var>2</var> tipuri de ulei</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>ulei.in</th><th>ulei.out</th></tr><tr><td>1<br>
+3 3<br>
+1 2 1<br>
+2 3 2<br>
+3 1 3<br></td><td>1 2 3 1<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Lunasorab începe vizita în camera <var>1</var>, continuând cu camerele <var>2</var> si <var>3</var>, revenind în final în camera <var>1</var>. Astfel, el a vizitat toate tablourile şi nu s-a plictisit.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

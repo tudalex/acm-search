@@ -1,0 +1,53 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cifralipsa.in, cifralipsa.out</td><td><strong>Sursă</strong></td><td>ad-hoc</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=229">Gabriel Bitis</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gabitzish1"><img src="/utilizator/gabitzish1?action=download&amp;file=avatar&amp;resize=L16x16" alt="gabitzish1">Gabriel Bitis</a> <a title="Rating gabitzish1: 658" class="rating-badge-1" href="http://infoarena.ro/utilizator/gabitzish1?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gabitzish1">gabitzish1</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cifralipsa">Vezi solutiile trimise</a></p>
+
+<h1>Cifra Lipsa<br></h1>
+
+<p>In anul <var>2070</var>, din cauza inflatiei, Demiurgu are de lucrat cu sume uriase de bani. Fiindca ii plac permutarile (a doua pasiune dupa bani), el cheltuie de fiecare data o valoare obtinuta prin permutarea cifrelor sumei totale aflata in contul lui. Cand Demiurgu cere o chitanta pentru a vedea cati bani mai are in cont, din cauza emotiilor si a transpiratiei adunate in palmele tremurande, o cifra din soldul curent se sterge. Ajutati-l pe Demiurgu sa afle care este cifra stearsa.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Dandu-se un sir de cifre reprezentand soldul curent din contul lui Demiurgu dupa micul accident prezentat anterior, sa se determine cifra lipsa.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>cifralipsa.in</var> va contine pe prima linie <var>T</var> reprezentand numarul de teste din fisier. Urmatoarele <var>T</var> linii vor contine cate un sir de cifre pentru care va trebui sa gasiti cifra care s-a sters.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>cifralipsa.out</var> se vor scrie <var>T</var> linii, linia <var>i</var> continand rezultatul pentru testul <var>i</var>.</p>
+
+<h2>Restricţii si precizări</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 10</var></li>
+<li>Demiurgu nu va cheltui o valoare mai mare decat are in cont</li>
+<li>Numarul de cifre de pe fiecare linie nu va depasi <var>100.000</var></li>
+<li>Demiurgu stie ca cifra stearsa nu a fost cifra <var>'0'</var></li>
+<li>Un test poate incepe cu caracterul <var>'0'</var></li>
+<li>Pentru fiecare test se garanteaza existenta unei solutii</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>cifralipsa.in</th><th>cifralipsa.out</th></tr><tr><td>2<br>
+44086<br>
+367179073<br></td><td>5<br>
+2<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Pentru primul test, suma initiala este <var>543.210</var>, iar valoarea cheltuita este <var>102.345</var>. Soldul ramas dupa cumparaturi este <var>440.865</var> iar ultima cifra este stearsa.<br>
+Pentru al doilea test, suma initiala este <var>5.152.535.658</var>, iar valoarea cheltuita este <var>1.525.356.585</var>. Soldul ramas dupa cumparaturi este <var>3.627.179.073</var> iar a treia cifra este stearsa.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=100">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

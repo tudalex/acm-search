@@ -1,0 +1,36 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>desc2.in, desc2.out</td><td><strong>Sursă</strong></td><td>ONI 2007, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=135">Stelian Ciurea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=desc2">Vezi solutiile trimise</a></p>
+
+<h1>Desc2<br></h1>
+
+<p>Consideram trei numere naturale nenule: <var>n</var>, <var>k</var> si <var>x</var>. Denumim o <var>kx-descompunere</var> a numarului <var>n</var> o posibilitate de a scrie numarul <var>n</var> ca suma de <var>k</var> numere naturale nenule astfel incat diferenta intre oricare doi termeni ai sumei este cel putin egala cu <var>x</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Fiind date trei numere naturale <var>n</var>, <var>k</var> si <var>x</var>, sa se determine cate <var>kx-descompuneri</var> distincte exista. Doua <var>kx-descompuneri</var> sunt distincte daca difera prin cel putin un termen. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul <var>desc2.in</var> contine pe prima linie trei valori naturale nenule reprezentand numerele <var>n</var>, <var>k</var> si <var>x</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul <var>desc2.out</var> va contine o singura valoare reprezentand restul impartirii numarului de <var>kx-descompuneri</var> distincte la numarul <var>10007</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>Pentru <var>20%</var> din teste <var>1 ≤ n ≤ 200;</var> pentru celelalte <var>80%</var> din teste, <var>201 ≤ n ≤ 10000</var></li>
+<li><var>1 ≤ x,k ≤ n</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>desc2.in</th><th>desc2.out</th></tr><tr><td>20 2 3<br></td><td>8<br></td></tr><tr><td>2000 19 7<br></td><td>3184<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Numarul de <var>kx-descompuneri</var> in acest caz este <var>8</var>. Acestea sunt formate din numerele <var>1</var> si <var>19</var>; <var>2</var> si <var>18</var>; <var>3</var> si <var>17</var>; <var>4</var> si <var>16</var>; <var>5</var> si <var>15</var>; <var>6</var> si <var>14</var>; <var>7</var> si <var>13</var>; <var>8</var> si <var>12</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

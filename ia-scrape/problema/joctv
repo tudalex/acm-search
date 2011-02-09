@@ -1,0 +1,43 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>joctv.in, joctv.out</td><td><strong>Sursă</strong></td><td>OLI 2006, Bucuresti, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=214">Radu Boriga</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=joctv">Vezi solutiile trimise</a></p>
+
+<h1>Joctv<br></h1>
+
+<p>Redactia <code>Jocuri si concursuri</code> din postul de televiziune <code>SmartTV</code> a conceput urmatorul joc interactiv: pe un ecran apar mai multe numere intregi, distribuite pe <var>N</var> linii si <var>N</var> coloane. Semnificatia numerelor de pe ecran este urmatoarea: daca un numar <var>x</var> este pozitiv concurentul va primi <var>x</var> euro din partea televiziunii, iar daca numarul este negativ concurentul va plati televiziunii <var>x</var> euro. Dupa aparitia numerelor concurentul trebuie sa indice, foarte repede, o zona dreptunghiulara de pe ecran, iar castigul sau va fi egal cu suma numerelor din zona aleasa.</p>
+
+<h2>Cerinta</h2>
+
+<p>Fiind date numerele de pe ecran sa se calculeze cea mai mare suma pe care o poate castiga concurentul.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>joctv.in</var> contine pe prima linie numarul <var>N</var> de linii de pe ecran, iar pe fiecare dintre urmatoarele <var>N</var> linii cele <var>N</var> numere aflate pe linia respectiva a ecranului.  </p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>joctv.out</var> va contine pe prima linie suma maxima pe care o poate castiga concurentul.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100</var></li>
+<li>numerele afisate pe ecran sunt numere intregi din intervalul [<var>-100,100</var>]</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>joctv.in</th><th>joctv.out</th></tr><tr><td>5<br>
+4 6 -7 4 -2<br>
+5 -9 -8 -5 1<br>
+-4 8 -5 -9 -9<br>
+-7 -4 6 -2 6<br>
+-3 -6 6 9 -2<br></td><td>23<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Cea mai mare suma care se poate castiga este <var>23</var> si ea se obtine in zona dreptunghiulara din coltul dreapta-jos al ecranului:</p>
+
+<p><var>6  -2   6</var><br><var>6   9  -2</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

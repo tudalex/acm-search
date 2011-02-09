@@ -1,0 +1,87 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ben.in, ben.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2005, clasele 9-10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=119">Silviu-Ionut Ganceanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ben">Vezi solutiile trimise</a></p>
+
+<h1>Ben<br></h1>
+
+<p>La o benzinarie sosesc intr-o zi <var>N</var> masini pentru a se alimenta. Pentru fiecare masina se cunoaste momentul sosirii si momentul plecarii din benzinarie, intervalul de timp dintre sosire si plecare fiind utilizat exclusiv pentru alimentare. O pompa de benzina se poate utiliza pentru alimentarea unei singure masini la un moment dat (ea poate sa alimenteze mai multe masini dar nu in acelasi timp). Alimentarea unei masini incepe exact in momentul sosirii ei in benzinarie si se termina exact in momentul plecarii, fiind utilizata o singura pompa pe tot timpul parcarii sale in benzinarie.</p>
+
+<h2>Cerinta</h2>
+
+<p>Stiind informatiile despre sosirile si plecarile celor <var>N</var> clienti, aflati <var>K</var> reprezentand numarul minim de pompe de benzina necesare servirii tuturor clientilor. Se cere si numarul de modalitati distincte de servire a clientilor utilizand exact <var>K</var> pompe de alimentare.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>In fisierul <var>ben.in</var> se afla pe prima linie un numar <var>N</var> reprezentand numarul de clienti. Urmeaza <var>N</var> linii fiecare continand doua numere, <var>A</var> si <var>B</var> (<var>A&lt;B</var>), separate printr-un spatiu reprezentand timpul de sosire respectiv timpul de plecare al unui client.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>ben.out</var> va contine o singura linie pe care se vor afla doua numere intregi <var>K</var> si <var>S</var> reprezentand numarul minim de pompe de alimentare si numarul de modalitati de servire a clientilor folosind exact <var>K</var> pompe de alimentare. Numarul <var>S</var> va fi afisat modulo <var>32173</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>0 ≤ N ≤ 30 000</var>, dar pentru <var>70%</var> din teste <var>N ≤ 300</var></li>
+<li>Timpii de sosire si plecare vor fi numere intregi din intervalul [<var>1, 30 000</var>]</li>
+<li>Nu va exista o masina care soseste in momentul pleacarii altei masini</li>
+<li>Daca primul numar din fisierul de iesire este corect veti primi <var>6</var> puncte pe acel test iar daca sunt corecte ambele numere veti primi <var>10</var> puncte. Nu se vor acorda puncte daca este corect numai cel de-al doilea numar.</li>
+<li>Doua modalitati de servire a clientilor se considera diferite daca exista cel putin un client care nu a fost servit la aceeasi pompa in cele doua modalitati</li>
+<li>Clientilor nu le place sa astepte asa ca trebuie sa va asigurati ca exista cel putin o pompa libera la sosirea fiecaruia in benzinarie</li>
+<li>Atentie! Numarul se va afisa modulo <var>32173</var></li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>ben.in</th><th>ben.out</th></tr><tr><td>4<br>
+1 4<br>
+5 7<br>
+8 10<br>
+2 7<br></td><td>2 4</td></tr></table><h3>Explicatii</h3>
+
+<p>Numarul minim de pompe de alimentare este 2. Cele 4 modalitati de servire ale clientilor sunt:<br>
+1, 1, 1, 2 (prima modalitate) <br>
+1, 1, 2, 2 (a doua)<br>
+2, 2, 1, 1 (a treia)          <br>
+2, 2, 2, 1 (a patra)<br>
+Fiecare numar reprezinta indicele pompei la care s-a alimentat fiecare client, pastrand ordinea acestora din fisierul de intrare.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 4 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_1"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=61">Greedy</a></span>
+            <a href="javascript:show_tag_list(61)" id="tag_anchor_61" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_61"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=70">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=105">Formula</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=63">Sortare</a></span>
+            <a href="javascript:show_tag_list(63)" id="tag_anchor_63" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_63"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=64">Sortare</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=285">Heap</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

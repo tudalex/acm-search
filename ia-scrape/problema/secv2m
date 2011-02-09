@@ -1,0 +1,35 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>secv2m.in, secv2m.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2009, Runda Finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=223">Cosmin Gheorghe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gcosmin"><img src="/utilizator/gcosmin?action=download&amp;file=avatar&amp;resize=L16x16" alt="gcosmin">Gheorghe Cosmin</a> <a title="Rating gcosmin: 1142" class="rating-badge-4" href="http://infoarena.ro/utilizator/gcosmin?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gcosmin">gcosmin</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=secv2m">Vezi solutiile trimise</a></p>
+
+<h1>Secv2m<br></h1>
+
+<p>Ingrid are iar de rezolvat o problema cu secvente. Ea are doua siruri de numere intregi de lungime <var>N</var> si respectiv <var>M</var>. Ea vrea sa gaseasca doua subsecvente de lungime <var>L</var>, una din primul sir si cealalta din al doilea sir, A<sub>i1</sub>, A<sub>i2</sub>, ... , A<sub>iL</sub> si B<sub>j1</sub>, B<sub>j2</sub>, ... , B<sub>jL</sub> astfel incat <b>max(A<sub>i1</sub> + B<sub>j1</sub>, A<sub>i2</sub> + B<sub>j2</sub>, ..., A<sub>iL</sub> + B<sub>jL</sub>) sa fie minim posibil</b>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>secv2m.in</var> va contine pe prima linie numerele <var>N</var>, <var>M</var> si <var>L</var>. A doua linie contine <var>N</var> numere intregi reprezentand primul sir, iar a treia linie contine <var>M</var> numere intregi reprezentand al doilea sir.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>secv2m.out</var> veti afisa pe prima linie valoarea minima ceruta. A doua linie va contine pozitia de inceput a primei subsecvente si pozitia de inceput a celei de a doua subsecvente separate printr-un spatiu. <b>Daca exista mai multe solutii</b> se va alege cea in care prima subsecventa are cea mai mica pozitie de inceput. Daca si in acest caz exista mai multe solutii se va alege solutia in care a doua subsecventa are cea mai mica pozitie de inceput.</p>
+
+<h2>Restricţii si precizari</h2>
+
+
+<ul><li><var>1 ≤ L ≤ N, M ≤ 2000</var></li>
+<li>Toate numerele din fisierul de intrare sunt cuprinse intre <var>0</var> si <var>10<sup>8</sup></var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>secv2m.in</th><th>secv2m.out</th></tr><tr><td>5 7 3<br>
+4 3 4 2 2<br>
+3 1 3 2 5 3 2<br></td><td>5<br>
+3 2<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Subsecventele alese sunt : <var>4 3 <b><ins>4 2 2</ins></b></var> si <var>3 <b><ins>1 3 2</ins></b> 5 3 2</var> (<b>Atentie</b>, se cer subsecvente si nu subsiruri).</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

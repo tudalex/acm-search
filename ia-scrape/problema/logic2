@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>logic2.in, logic2.out</td><td><strong>Sursă</strong></td><td>Lista lui Francu</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=207">Valentin Gheorghita</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gabitzish1"><img src="/utilizator/gabitzish1?action=download&amp;file=avatar&amp;resize=L16x16" alt="gabitzish1">Gabriel Bitis</a> <a title="Rating gabitzish1: 658" class="rating-badge-1" href="http://infoarena.ro/utilizator/gabitzish1?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gabitzish1">gabitzish1</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=logic2">Vezi solutiile trimise</a></p>
+
+<h1>Logic2<br></h1>
+
+<p>   Insula Logicii are trei tipuri de locuitori: fiinte divine, care spun intotdeauna adevarul, fiinte malefice, care mint intotdeauna, si oameni, care spun adevarul ziua si mint noaptea. Fiecare locuitor al insulei poate recunoaste tipul oricarui alt locuitor. Un sociolog vrea sa viziteze insula. Deoarece el nu poate distinge cele trei tipuri de locuitori doar dupa aspect, el iti cere un analizator care sa deduca fapte din conversatiile cu locuitorii. Faptele care il intereseaza sunt daca este zi sau noapte si de ce tip sunt interlocutorii sai. </p>
+
+<h2>Date de intrare</h2>
+
+<p>   Fisierul de intrare <var>logic2.in</var> contine o conversatie. Fiecare linie a fisierului contine cate o afirmatie facuta de un locuitor. Toate liniile incep cu numele interlocutorului (care este o litera mare <var>A</var>, <var>B</var>, <var>C</var>, <var>D</var> sau <var>E</var>) urmat de ":" si apoi o afirmatie de forma: </p>
+
+
+<ul><li>Eu [nu] mint.</li>
+<li>Eu [nu] sunt {divin | om | malefic}.</li>
+<li>X [nu] minte.</li>
+<li>X [nu] este {divin | om | malefic}.</li>
+<li>Este {zi | noapte}.</li>
+</ul><p>   Cuvintele care sunt cuprinse intre paranteze patrate pot aparea sau nu in afirmatie. Dintre cuvintele cuprinse intre acolade, apare exact un cuvant in afirmatie. O conversatie poate avea cel mult 50 afirmatii.</p>
+
+<h2>Date de iesire</h2>
+
+<p>   Fisierul <var>logic2.out</var> va contine tot ceea ce se poate deduce in urmatoarea forma:</p>
+
+
+<ul><li>X este {divin | malefic | om}.</li>
+<li>Este {zi | noapte}.</li>
+</ul><p>   X se inlocuieste cu numele interlocutorului. Faptele trebuie date in ordine alfabetica, sortate dupa numele interlocutorilor, iar apoi se spune daca e zi sau noapte. Daca nu se poate deduce nimic se va tipari "Nu se poate deduce nimic.", iar daca conversatia nu respecta regulile de mai sus se va tipari "Imposibil.".</p>
+
+<h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>logic2.in</th><th>logic2.out</th></tr><tr><td>A: B este om. <br>
+B: A este malefic. <br>
+A: B este malefic<br></td><td>A este malefic. <br>
+B este divin.<br></td></tr></table><h3>Explicatie</h3>
+
+<p>   Este evident ca A minte deoarece cele doua afirmatii ale lui sunt contradictorii. Deci B nu poate fi nici om, nici malefic, deci el este divin. B spune intotdeauna adevarul, deci A trebuie sa fie malefic.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,35 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>coprime.in, coprime.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2009, Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/wefgef"><img src="/utilizator/wefgef?action=download&amp;file=avatar&amp;resize=L16x16" alt="wefgef">Andrei Grigorean</a> <a title="Rating wefgef: 783" class="rating-badge-4" href="http://infoarena.ro/utilizator/wefgef?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/wefgef">wefgef</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=coprime">Vezi solutiile trimise</a></p>
+
+<h1>Coprime<br></h1>
+
+<p>Miruna a impartit colegilor ei de clasa mai multe bomboane cu ciocolata. Miruna nu mai tine minte exact cate bomboane i-a dat fiecare coleg, in schimb stie pentru oricare doua persoane daca bomboanele primite reprezentau doua numere prime intre ele sau nu.</p>
+
+<p>Ajutati-o pe fetita sa afle cate bomboane a impartit fiecarui coleg!</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>coprime.in</var> contine pe prima linie doua numere naturale <var>N</var> si <var>M</var>, reprezentand numarul de colegi de clasa, respectiv numarul de perechi de colegi care au primit bomboane ce reprezinta numere prime intre ele. Pe urmatoarele <var>M</var> linii se vor afla cate <var>2</var> numere naturale distincte intre <var>1</var> si <var>N</var>, reprezentand cate o pereche.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>coprime.out</var> veti afisa <var>N</var> linii, pe linia <var>i</var> aflandu-se un numar natural ce reprezinta numarul de bomboane pe care le-a primit colegul cu indicele <var>i</var>.</p>
+
+<h2>Restricţii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 40</var></li>
+<li><var>0 ≤ M ≤ N*(N-1)/2</var></li>
+<li>Valorile afisate trebuie sa fie strict mai mari decat <var>0</var> si pot avea maxim <var>150</var> de cifre</li>
+<li>Puteti afisa orice solutie care respecta conditiile impuse</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>coprime.in</th><th>coprime.out</th></tr><tr><td>2 1<br>
+  1 2<br></td><td>2 <br>
+  3<br></td></tr><tr><td>2 0<br></td><td>4 <br>
+  4<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

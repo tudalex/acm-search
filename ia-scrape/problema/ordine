@@ -1,0 +1,30 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ordine.in, ordine.out</td><td><strong>Sursă</strong></td><td>preONI 2008 Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=161">Adrian Airinei</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=ordine">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ordine">Vezi solutiile trimise</a></p>
+
+<h1>Ordine<br></h1>
+
+<p>Se da un sir de caractere format din litere mici ale alfabetului englez (caractere de la <var>'a'</var> la <var>'z'</var>). Se cere sa se obtina cea mai mica anagrama din punct de vedere lexicografic a sirului cu proprietatea ca oricare doua caractere adiacente din anagrama sunt diferite. O anagrama a sirului initial este un sir care contine exact acealasi caractere, dar posibil in alta ordine. Doua caractere se numesc adiacente daca sunt alaturate (primul caracter este adiacent cu al doilea, al doilea cu al treilea etc). Se garanteaza faptul ca exista intotdeauna solutie.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>ordine.in</var> se gaseste sirul initial de caractere.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>ordine.out</var> se afla cea mai mica anagrama din punct de vedere lexicografic a sirului initial.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ lungimea sirului ≤ 1 000 000</var></li>
+<li>Un sir <var>X</var> este mai mic din punct de vedere lexicografic decat un sir <var>Y</var> daca exista un <var>k</var> astfel incat <var>X<sub>i</sub>=Y<sub>i</sub></var> pentru orice <var>i&lt;k</var> si <var>X<sub>k</sub>&lt;Y<sub>k</sub></var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>ordine.in</th><th>ordine.out</th></tr><tr><td>cbab<br></td><td>abcb<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

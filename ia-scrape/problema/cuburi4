@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cuburi4.in, cuburi4.out</td><td><strong>Sursă</strong></td><td>Lot Juniori 2009 - Baraj 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=177">Rodica Pintea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/GavrilaVlad"><img src="/utilizator/GavrilaVlad?action=download&amp;file=avatar&amp;resize=L16x16" alt="GavrilaVlad">Gavrila Vlad</a> <a title="Rating GavrilaVlad: 973" class="rating-badge-1" href="http://infoarena.ro/utilizator/GavrilaVlad?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/GavrilaVlad">GavrilaVlad</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>1024 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cuburi4">Vezi solutiile trimise</a></p>
+
+<h1>Cuburi4<br></h1>
+
+<p>Fie <var>n</var> cuburi de aceeaşi mărime, cu feţe colorate. Culorile sunt codificate prin câte o literă de la <var>A</var> la <var>M</var>. Pentru fiecare cub se cunosc culorile feţelor în ordinea: bază, capac, faţă frontală, faţă laterală dreapta, faţa din spate, faţă laterală stânga. Să se determine numărul maxim de cuburi care, răsturnate şi rotite convenabil, pot fi puse unul peste altul astfel încât să formeze un turn cu toate feţele uniform colorate (fiecare faţă a turnului sa fie de aceeaşi culoare, de la primul, până la ultimul cub al turnului).</p>
+
+<h2>Date de intrare</h2>
+
+<p>Din fişierul <var>cuburi4.in</var> se citesc, în ordine:</p>
+
+
+<ul><li><var>n ≤ 50000</var>, număr natural, pe prima linie </li>
+</ul><p>Pe următoarele <var>n</var> linii (fără spaţii între litere) culorile fiecărui cub fiind în ordinea: bază, capac, faţă frontală, faţă laterală dreapta, faţa din spate, faţă laterală stânga:</p>
+
+
+<ul><li><var>c<sub>11</sub> c<sub>12</sub> c<sub>13</sub> c<sub>14</sub> c<sub>15</sub> c<sub>16</sub> - culori cub 1</var> </li>
+<li><var>c<sub>21</sub> c<sub>22</sub> c<sub>23</sub> c<sub>24</sub> c<sub>25</sub> c<sub>26</sub> - culori cub 2</var> </li>
+<li><var>...</var></li>
+<li><var>c<sub>n1</sub> c<sub>n2</sub> c<sub>n3</sub> c<sub>n4</sub> c<sub>n5</sub> c<sub>n6</sub> - culori cub n</var> </li>
+</ul><h2>Date de ieşire</h2>
+
+<p>În fişierul <var>cuburi4.out</var> se va scrie un singur număr ce reprezintă numărul maxim de cuburi care, răsturnate şi rotite convenabil, pot fi puse unul peste altul astfel încât să formeze un turn cu feţele uniform colorate.</p>
+
+<h2>Restricţii şi precizări</h2>
+
+
+<ul><li>Cuburile ce formează un turn sunt aşezate numai unul peste celalalt, nu şi unul lângă celălalt.</li>
+<li>Culorile fetelor unui cub se pot repeta pentru două sau mai multe dintre cele <var>6</var> feţe ale sale.</li>
+<li>Orice cub poate fi rotit sau răsturnat pentru a fi adus într-o poziţie convenabilă.</li>
+<li>Culorile fetelor cuburilor care nu formează feţele laterale ale turnului nu au nici o importanţă.</li>
+<li><var>0 ≤ n ≤ 50000</var>, număr natural.</li>
+<li><var>c<sub>ij</sub></var> sunt litere mari ale alfabetului englez, <var>c<sub>ij</sub> ∈ {A, B, ..., M}</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>cuburi4.in</th><th>cuburi4.out</th></tr><tr><td>3<br><span class="caps">ACADEB</span><br><span class="caps">FBCDAE</span><br><span class="caps">AEDCBB</span><br></td><td>2<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Primul cub poate fi păstrat în poziţia sa, având feţele laterale <var>A, D, E, B</var> (frontal, lateral-dreapta, spate, lateral-stânga), iar al treilea cub poate fi răsturnat astfel încât să aibă capacele <var>B</var> şi <var>C</var>, şi rotit astfel încât să aibă feţele laterale să fie tot <var>A, D, E, B</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

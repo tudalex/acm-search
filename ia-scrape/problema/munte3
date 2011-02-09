@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>munte3.in, munte3.out</td><td><strong>Sursă</strong></td><td>Baraj ONI 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=186">Marinel Serban</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=munte3">Vezi solutiile trimise</a></p>
+
+<h1>Munte3<br></h1>
+
+<p>Gigel este un pasionat excursionist. Ii plac in special excursiile la munte. La sfarsitul acestei saptamani el si-a propus sa traverseze un munte din apropierea orasului Cluj. Atata doar ca echipa Salvamont locala i-a impus niste conditii:</p>
+
+
+<ul><li>lungimea drumului trebuie sa fie exact <var>2n-2</var> metri, valoarea <var>n</var> fiind data de salvamontisti;<br>
+trebuie sa plece de la poalele muntelui si trebuie sa ajunga tot la poalele muntelui de partea cealalta la aceeasi altitudine;</li>
+<li>nu are voie sa coboare sub altitudinea de plecare;</li>
+<li>poate traversa drumul doar folosind trei tipuri de pasi:
+<ul><li>pas pe orizontala de lungime <var>2</var>, deci de tipul (<var>2, 0</var>)</li>
+<li>pas "in sus" de lungime <var>1</var>, deci de tipul (<var>1, 1</var>)</li>
+<li>pas "in jos" de lungime <var>1</var>, deci de tipul (<var>1, -1</var>)</li>
+</ul></li>
+<li>drumul lui nu are voie sa aiba "varf" la altitudinea <var>1</var>, adica nu are voie ca fiind la un moment dat, pe parcursul drumului, la altitudinea de plecare, sa faca un pas in sus urmat imediat de un pas in jos.</li>
+</ul><h2>Cerinta</h2>
+
+<p>Data fiind valoarea <var>n</var> sa se determine in cate moduri poate Gigel sa traverseze muntele respectand conditiile echipei Salvamont.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>munte3.in</var> contine o singura linie pe care se afla numarul natural <var>n</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>munte3.out</var> va contine o singura linie pe care va fi scris numarul de modalitati in care Gigel poate realiza traversarea muntelui.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ n ≤ 100</var></li>
+<li>Pentru <var>60%</var> din teste rezultatul este un intreg pe <var>64</var> de biti.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>munte3.in</th><th>munte3.out</th></tr><tr><td>1<br></td><td>1<br></td></tr><tr><td>2<br></td><td>1<br></td></tr><tr><td>3<br></td><td>3<br></td></tr></table><h3>Explicatie</h3>
+
+
+<ol><li>Lungimea drumului fiind <var>2*1-2=0</var>, exista o singura modalitate de a traversa muntele (aceea de a sta pe loc)</li>
+<li>Lungimea drumului fiind <var>2*2-2=2</var>, exista o singura modalitate de a traversa muntele, printr-un pas de lungime <var>2</var>.<br><img src="http://infoarena.ro/problema/munte3?action=download&amp;file=munte1.gif&amp;safe_only=true" alt=""><br>
+Varianta din dreapta nu este corecta deoarece nu respecta ultima conditie</li>
+<li>Cele <var>3</var> modalitati corecte de a traversa muntele cu un drum de lungime <var>4</var> sunt:<br><img src="http://infoarena.ro/problema/munte3?action=download&amp;file=munte2.gif&amp;safe_only=true" alt=""><br>
+Orice alt mod de a traversa muntele pe un drum de lungime <var>4</var> este incorect.</li>
+</ol><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

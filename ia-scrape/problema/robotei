@@ -1,0 +1,58 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>robotei.in, robotei.out</td><td><strong>Sursă</strong></td><td>preONI 2006 Runda Finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=119">Silviu-Ionut Ganceanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=robotei">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=robotei">Vezi solutiile trimise</a></p>
+
+<h1>Robotei<br></h1>
+
+
+<p>In fiecare celula a unui caroiaj de dimensiuni <var>NxN</var> se afla plasat cate un robotel. Coltul din stanga sus al caroiajului are coordonatele (<var>0</var>, <var>0</var>) iar cel din dreapta jos (<var>N-1</var>, <var>N-1</var>). Roboteii sunt programati sa se miste, in fiecare secunda, dupa urmatoarea regula:</p>
+
+<p class="center" style="text-align:center"><var>newX<sub>i</sub> = (oldX<sub>i</sub><sup>2</sup> + offsetX) modulo modX</var></p>
+
+<p class="center" style="text-align:center"><var>newY<sub>i</sub> = (oldY<sub>i</sub><sup>2</sup> + offsetY) modulo modY</var>,</p>
+
+
+<p>unde (<var>oldX<sub>i</sub>, oldY<sub>i</sub></var>) reprezinta pozitia veche a robotelului <var>i</var> (modul de numerotare al roboteilor nu este important) si (<var>newX<sub>i</sub>, newY<sub>i</sub></var>) noua lui pozitie. <var>offsetX</var>, <var>offsetY</var>, <var>modX</var> si <var>modY</var> sunt comune regulilor de miscare ale roboteilor.</p>
+
+<h2>Cerinta</h2>
+
+<p>Stiind ca fiecare robotel va efectua <var>M</var> mutari, aflati cati roboti trec prin pozitia (<var>X</var>, <var>Y</var>) de <var>n</var> ori, pentru fiecare <var>n</var> intre <var>0</var> si <var>M</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare va contine <var>8</var> numere intregi separate de spatii: <var>N</var>, <var>M</var>, <var>X</var>, <var>Y</var>, <var>modX</var>, <var>modY</var>, <var>offsetX</var> si respectiv <var>offsetY</var> cu semnificatiile din enunt.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire va contine cate o linie pentru fiecare <var>n</var> cate doi intregi, <var>n</var> si <var>C<sub>n</sub></var> cu semnificatia: "<var>C<sub>n</sub></var> robotei trec prin pozitia (<var>X</var>, <var>Y</var>) de exact <var>n</var> ori". Perechile de numere vor fi afisate in ordine crescatoare dupa <var>n</var> si vor fi afisate doar cele pentru care <var>C<sub>n</sub></var> este diferit de <var>0</var>.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li>Toate numerele din fisierul de intrare sunt intregi din intervalul <var>[0, 1.000.000]</var></li>
+<li>Aceasta problema va fi testata cu <var>10</var> de teste, fiecare valorand cate <var>10</var> puncte. Valorile utilizate in teste pentru <var>N</var>, <var>M</var>, <var>modX</var> si <var>modY</var> se regasesc in tabelul de mai jos.</li>
+<li>Pe parcurs, o celula poate contine mai multi robotei.</li>
+</ul><table class="numbers" cellspacing="0"><tr><th>Test</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><th>N</th><td>20</td><td>33</td><td>61</td><td>43139</td><td>83</td><td>504</td><td>32668</td><td>906</td><td>1523</td><td>44339</td></tr><tr><th>M</th><td>1000</td><td>2100</td><td>400745</td><td>337654</td><td>237891</td><td>367398</td><td>500000</td><td>325000</td><td>476388</td><td>666732</td></tr><tr><th>modX</th><td>13</td><td>31</td><td>40</td><td>54</td><td>72</td><td>270</td><td>561</td><td>877</td><td>997</td><td>997</td></tr><tr><th>modY</th><td>19</td><td>29</td><td>50</td><td>65</td><td>69</td><td>256</td><td>437</td><td>809</td><td>991</td><td>1000</td></tr></table><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>robotei.in</th><th>robotei.out</th></tr><tr><td>3 4 1 2 2 3 1 1<br></td><td>1 2<br>
+2 6<br>
+3 1</td></tr></table><h3>Explicatii</h3>
+
+<p>Sunt 3 × 3 = 9 robotei. Robotelul situat in celula (3 2) va avea urmatorul parcurs: (3 2) -&gt; (0 2) -&gt; (<span style="color:red">1 2</span>) -&gt; (0 2) -&gt; (<span style="color:red">1 2</span>). In consecinta, el trece de 2 ori prin pozitia (<span style="color:red">1 2</span>).</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=445">Cycle detection</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

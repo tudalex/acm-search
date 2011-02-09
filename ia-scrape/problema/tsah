@@ -1,0 +1,37 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>tsah.in, tsah.out</td><td><strong>Sursă</strong></td><td>Selectie echipe ACM ICPC, UPB 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.8 sec</td><td><strong>Limită de memorie</strong></td><td>1000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=tsah">Vezi solutiile trimise</a></p>
+
+<h1>Tsah<br></h1>
+
+<p>O tabla de sah este o matrice binara de dimensiuni <var>NxN</var>, cu liniile si coloanele numerotate de la <var>1</var> la <var>N</var>. Fiecare pozitie este ori neagra, daca suma numarului liniei si numarului coloanei este para, ori alba, in caz contrar. Figura de mai jos ilustreaza cum arata o tabla de sah pentru <var>N=1</var>, <var>N=2</var> si <var>N=3</var>.<br><img src="http://infoarena.ro/problema/tsah?action=download&amp;file=tsah.jpg&amp;safe_only=true" alt=""></p>
+
+<p>Fiind data o matrice binara, gasiti dimensiunea celei mai mari table de sah localizata complet in interiorul matricii, precum si numarul de table de sah avand dimensiunea maxima (aceste table se pot suprapune partial).</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierul de intrare <var>tsah.in</var> contine un numar intreg <var>T</var>, reprezentand numarul de teste ce urmeaza. Fiecare test contine pe prima linie un numar intreg <var>N</var>, reprezentand numarul de linii si de coloane ale matricii date. Urmatoarele <var>N</var> linii descriu matricea: fiecare linie contine <var>N</var> caractere, care pot fi ori <var>'1'</var> (reprezentand un patratel negru), ori <var>0</var> (reprezentand un patratel alb). Matricea va contine cel putin un caracter <var>'1'</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pentru fiecare din cele <var>T</var> teste, in ordinea din fisierul de intrare, veti afisa in fisierul de iesire <var>tsah.out</var> o linie continand dimensiunea celei mai mari table de sah, urmata de un spatiu si de numarul de table de sah de dimensiune maxima.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 6</var></li>
+<li><var>1 ≤ N ≤ 2000</var></li>
+<li>Fisierul de intrare va avea maxim <var>16</var> <span class="caps">MB.</span></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>tsah.in</th><th>tsah.out</th></tr><tr><td>1<br>
+5<br>
+00101<br>
+11010<br>
+00101<br>
+01010<br>
+11101<br></td><td>3 3<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

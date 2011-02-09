@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>trafic.in, trafic.out</td><td><strong>Sursă</strong></td><td>.campion 2005</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=128">Dan-Ionut Fechete</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=trafic">Vezi solutiile trimise</a></p>
+
+<h1>Trafic<br></h1>
+
+<p>Dupa ce au impartit tara in judete maimutele au o alta problema, trebuie sa opreasca traficul de banane. Tara maimutelor are <var>N</var> orase numerotate de la <var>1</var> la <var>N</var> legate intre ele prin <var>M</var> sosele bidirectionale. Intre oricare doua orase exista maxim o sosea, dar exista drum - direct sau prin orase intermediare. Orasele <var>1</var> si <var>N</var> sunt capitale. In ultima vreme intre cele doua capitale s-a intensificat traficul cu banane. Pentru a combate traficul presedintele are la dispozitie <var>G</var> soldati pe care poate sa-i aseze oriunde pe o sosea, oricat de aproape de un oras, insa nu in oras. In cazul unui atac asupra uneia dintre capitale toti soldatii trebuie sa ajunga in acea capitala. Soldatii se misca cu aceasi viteza constanta. Timpul necesar unei astfel ce mobilizari este egal cu maximul distantelor de la soldati la una dintre capitale.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieti un program care sa gaseasca o asezare a soldatilor astfel incat orice ruta de la o capitala la alta sa treaca printr-o sosea cu cel putin un soldat si timpul de mobilizare in cel mai rau caz sa fie minim.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>trafic.in</var> sunt scrise trei numere <var>N M G</var> separate prin cate un singur spatiu. Pe urmatoarele <var>M</var> linii sunt scrise cate trei numere separate prin spatii <var>a b c</var> cu semnificatia "exista sosea bidirectionala de la orasul <var>a</var> la orasul <var>b</var> de lungime <var>c</var>".</p>
+
+<h2>Date de iesire</h2>
+
+<p>Prima linie a fisierului trafic.out va contine timpul minim de mobilizare cu o zecimala exacta. Daca nu exista solutie se va scrie <var>-1</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 154</var></li>
+<li><var>3 ≤ M ≤ 5054</var></li>
+<li><var>1 ≤ lungimea unei sosele ≤ 1023</var></li>
+<li><var>3 ≤ G ≤ 4095</var><br></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>trafic.in</th><th>trafic.out</th></tr><tr><td>6 6 2<br>
+  1 2 1<br>
+  2 3 2<br>
+  3 6 1<br>
+  1 4 1<br>
+  4 5 3<br>
+  5 6 1<br></td><td>2.5<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Se plaseaza un soldat in mijlocul drumului dintre <var>4</var> si <var>5</var> si un soldat pe drumul dintre <var>2</var> si <var>3</var> la <var>0.5</var> distanta de orasul <var>2</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

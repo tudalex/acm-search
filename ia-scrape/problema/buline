@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>buline.in, buline.out</td><td><strong>Sursă</strong></td><td>preONI 2007, Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=buline">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=buline">Vezi solutiile trimise</a></p>
+
+<h1>Buline<br></h1>
+
+<p>Zaharel se plictisea la cursurile de la facultate si a inceput sa deseneze buline: a luat <var>N</var> bilete si pe fiecare a desenat un numar de buline, doar albe sau doar negre. A asezat cele <var>N</var> bilete in cerc si si-a pus urmatoarea intrebare: daca considera ca pe fiecare biletel este scris un numar intreg (<var>x</var> buline albe va reprezenta numarul <var>x</var> , iar <var>x</var> buline negre numarul <var>-x</var>) care este suma maxima a unei secvente de biletele aflate pe pozitii consecutive?</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>buline.in</var> va contine pe prima linie numarul natural <var>N</var>. Urmatoarele <var>N</var> linii vor contine cate doua numerele naturale , reprezetand numarul de buline de pe biletele si culoarea lor (<var>0</var> pentru negru si <var>1</var> pentru alb), in ordinea in care acestea au fost asezate. </p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>buline.out</var> va contine trei numerele naturale: <var>S P L</var> cu semnificatia ca secventa de biletele de suma maxima are suma <var>S</var>, incepe pe pozitia <var>P</var> si are lungime <var>L</var>. Daca exista mai multe solutii se va afisa cea cu pozitia <var>P</var> minima, iar daca exista mai multe solutii cu pozitia <var>P</var> minima se va afisa cea cu lungimea <var>L</var> minima.</p>
+
+<h2>Restrictii si observatii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 200.000</var></li>
+<li>Numarul de buline de pe un biletel este cuprins in intervalul <var>[0, 10.000]</var></li>
+<li>Biletele sunt numerotate cu numere de la <var>1</var> la <var>N</var></li>
+<li>Avand in vedere ca biletele sunt asezate in cerc, dupa biletelul <var>N</var> urmeaza biletelul <var>1</var></li>
+<li>Secventa aleasa trebuie sa fie formata din cel putin un biletel</li>
+<li>Pentru un test se va acorda <var>50%</var> din punctaj pentru o solutie corecta, dar pentru care valorile <var>P</var> sau <var>L</var> nu sunt minime</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>buline.in</th><th>buline.out</th></tr><tr><td>5<br>
+1 0<br>
+2 1<br>
+4 0<br>
+3 1<br>
+5 1<br></td><td>9 4 4<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Cele 5 biletele, pe fiecare fiind trecut numarul sau si bulinele:<br><img src="http://infoarena.ro/problema/buline?action=download&amp;file=buline.jpg&amp;safe_only=true" alt=""></p>
+
+<p>Biletele cu contur rosu sunt cele care formeaza secventa de suma maxima.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,54 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>dosare.in, dosare.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2007, clasele 9-10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=122">Liviu Ciortea</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/wefgef"><img src="/utilizator/wefgef?action=download&amp;file=avatar&amp;resize=L16x16" alt="wefgef">Andrei Grigorean</a> <a title="Rating wefgef: 783" class="rating-badge-4" href="http://infoarena.ro/utilizator/wefgef?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/wefgef">wefgef</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=dosare">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=dosare">Vezi solutiile trimise</a></p>
+
+<h1>Dosare<br></h1>
+
+<p>Spre deosebire de prietenii sai - Miruna si Algorel - care isi pierd timpul cu bile si bilute, Haralambie este mult mai practic in prag de Craciun: el s-a decis sa-si optimizeze sistemul de fisiere.</p>
+
+<p>Dosarele de pe calculatorul lui Haralambie sunt organizate ierarhic. In dosarul principal se afla mai multe dosare, care la randul lor contin alte dosare, s.a.m.d. El foloseste doar tastatura pentru a se deplasa prin ele, asa ca este foarte importanta ordinea in care se afla subdosarele intr-un dosar. Pentru a intra intr-un subdosar al unui dosar, Haralambie trebuie sa apese tasta de navigare in jos (sageata jos) pana cand se afla deasupra subdosarului dorit.</p>
+
+<p>Spre exemplu, daca in dosarul principal, numerotat cu 1, se afla, in aceasta ordine, dosarele 2, 3 si 4, si in dosarul 3 se afla dosarele 5, 6 si 7, pentru a accesa dosarul 7, Haralambie trebuie sa apese tasta <var><span class="caps">ENTER</span></var> pentru a intra in 1, sa apese sageata jos o data pana ajunge pe 3, din nou <var><span class="caps">ENTER</span></var> pentru a intra in 3, apoi de doua ori sageata in jos, si inca o data <var><span class="caps">ENTER</span></var> pentru a intra in 7, deci in total 6 apasari de taste.</p>
+
+<p>Haralambie cunoaste pentru fiecare dosar in parte de cate ori va avea nevoie sa acceseze acel dosar si va promite sa va cinsteasca cu bile colorate daca veti ordona subdosarele in dosare in asa fel incat numarul total de apasari de taste sa fie minim. La fiecare accesare a unui dosar, considerati ca Haralambie va porni din dosarul principal.</p>
+
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>dosare.in</var> contine pe prima linie numarul total de dosare, <var>N</var>. Pe urmatoarele <var>N</var>-1 linii se afla informatiile referitoare la ierarhia sistemului de dosare. Pe linia <var>i</var> se afla dosarul parinte al dosarului <var>i</var>. Dosarul principal are numarul de ordine 1. Pe ultima linie a fisierului de intrare se afla <var>N</var> numere intregi, reprezentand numarul de accesari al fiecarui dosar.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>dosare.out</var> se va afla pe singura linie numarul total minim de apasari.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 16000</var></li>
+<li><var>1 ≤ A<sub>i</sub> ≤ 1000000</var></li>
+<li>Pentru <var>40%</var> din teste <var>1 ≤ N ≤ 333</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>dosare.in</th><th>dosare.out</th></tr><tr><td>9<br>
+1<br>
+1<br>
+1<br>
+3<br>
+3<br>
+3<br>
+4<br>
+4<br>
+1 1 1 1 1 1 1 1 1<br></td><td>31<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Dosarul 1 contine dosarele 2, 3 si 4. In dosarul 3 avem dosarele 5, 6 si 7 iar in dosarul 4 avem dosarele 8 si 9.<br>
+Putem aseza dosarele in urmatorul mod: in dosarul 3 vom aseza subdosarele in ordinea 5, 6, 7, in dosarul 4 in ordinea 8, 9, iar in dosarul 1 in ordinea 3, 4, 2.<br>
+Conform acestei asezari, scorul total va fi: 1*1 + 1*4 + 1*2 + 1*3 + 1*3 + 1*4 + 1*5 + 1*4 + 1*5 = 31. Orice alta asezare va rezulta intr-un numar total cel putin egal cu 31.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

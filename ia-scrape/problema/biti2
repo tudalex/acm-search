@@ -1,0 +1,57 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>biti2.in, biti2.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=132">Alexandru Dimitriu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">2/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=biti2">Vezi solutiile trimise</a></p>
+
+<h1>Biti2<br></h1>
+
+<p>Profesorul Richard, intr-o expeditie in Valea Regilor, a descoperit o incriptie pe caramizile unei piramide sub forma unei secvente binare:<br><var>01101001100101101001011001101001</var>..<br>
+El a observat ca secventa se construieste astfel: primul caracter este <var>0</var>, apoi la fiecare pozitie ce reprezinta o putere a lui <var>2</var> (<var>1</var>, <var>2</var>, <var>4</var>, <var>8</var>, <var>16</var> ...) secventa curenta se inverseaza (<var>0</var> devine <var>1</var> si <var>1</var> devine <var>0</var>) si se adauga in continuarea secventei curente.</p>
+
+<h2>Cerinta</h2>
+
+<p>Deoarece unele caractere au fost sterse de-alungul timpului, profesorul Richard va da o lista cu <var>N</var> pozitii pentru care voi trebuie sa aflati ce caracter reprezinta.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>biti2.in</var> se va citi <var>N</var>, numarul de pozitii pentru care trebuie sa aflati caracterul din secventa binara. Pe fiecare din urmatoarele <var>N</var> linii se afla valoarea acestor pozitii.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe fiecare din primele <var>N</var> linii ale fisierului de iesire <var>biti2.out</var> se va afisa valoarea <var>0</var> sau <var>1</var> corespunzatoare caracterului din pozitiile date.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 10</var></li>
+<li>Primul caracter al secventei are pozitia <var>0</var></li>
+<li>Fiecare pozitie pentru care trebuie sa aflati valoarea caracterului din secventa este cuprinsa in intervalul [<var>0, 10<sup>2.500</sup></var>]</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>biti2.in</th><th>biti2.out</th></tr><tr><td>3<br>
+0<br>
+2<br>
+13<br></td><td>0<br>
+1<br>
+1</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=45">Diverse</a></span>
+            <a href="javascript:show_tag_list(45)" id="tag_anchor_45" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_45"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=104">Operatii pe numere mari</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=100">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,40 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>hanoi.in, hanoi.out</td><td><strong>Sursă</strong></td><td>infoarena 2.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=165">Din Folclor</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/filipb"><img src="/utilizator/filipb?action=download&amp;file=avatar&amp;resize=L16x16" alt="filipb">Filip Cristian Buruiana</a> <a title="Rating filipb: 671" class="rating-badge-4" href="http://infoarena.ro/utilizator/filipb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/filipb">filipb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=hanoi">Vezi solutiile trimise</a></p>
+
+<h1>Hanoi<br></h1>
+
+<p>Problema turnurilor din Hanoi este bine cunoscută: sunt <var>3</var> tije şi <var>N</var> discuri, oricare două discuri având raza diferită. Iniţial, cele <var>N</var> discuri sunt aşezate pe prima tijă, discurile fiind ordonate de jos în sus descrescător în funcţie de rază. Astfel, discul cu raza cea mai mare este cel mai de jos iar discul cu raza cea mai mică cel mai de sus. Se doreşte mutarea discurilor de pe prima pe ultima tijă, efectuând un număr minim de mutări. O mutare constă în alegerea unei tije care conţine cel puţin un disc şi mutarea discului din vârf în vârful oricărei alte tije. Singura regulă este că un disc nu poate fi aşezat peste alt disc de rază mai mică.</p>
+
+<p>Există o legendă conform căreia într-o mănăstire din Tibet călugării au aşezat <var>N</var> discuri pe prima tijă iar apoi au început să efectueze mutări astfel încât să le mute pe ultima tijă. Legenda spune că atunci când vor termina va avea loc sfârşitul lumii. Recent s-a descoperit că de fapt călugării foloseau <var>M</var> tije în loc de <var>3</var> şi că sfârşitul lumii s-ar putea să fie de fapt mult mai aproape.</p>
+
+<p>Să se determine numărul minim de paşi pentru a muta cele <var>N</var> discuri de pe prima pe ultima tijă, ştiind că în total sunt <var>M</var> tije care pot fi folosite.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>hanoi.in</var> conţine pe prima linie, separate de exact un spatiu, numerele <var>N</var> si <var>M</var>, cu semnificaţia din enunţ.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>hanoi.out</var> conţine o singură linie pe care se află răspunsul problemei.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 250</var></li>
+<li><var>3 ≤ M ≤ 150</var></li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>hanoi.in</th><th>hanoi.out</th></tr><tr><td>5 4</td><td>13</td></tr></table><h3>Explicaţie</h3>
+
+<p>Mai jos este prezentată o secvenţă posibilă cu numar minim de mutări pentru a aduce discurile de pe tija iniţială pe cea finală:</p>
+
+<p><img src="http://infoarena.ro/problema/hanoi?action=download&amp;file=hanoi.png&amp;safe_only=true" alt=""></p>
+
+<p>În total au fost efectuate <var>13</var> mutări.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

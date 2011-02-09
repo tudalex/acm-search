@@ -1,0 +1,54 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>lost.in, lost.out</td><td><strong>Sursă</strong></td><td>Romanian Open Contest, TIMUS 2001</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=lost">Vezi solutiile trimise</a></p>
+
+<h1>Lost<br></h1>
+
+<p>Un astronaut al <span class="caps">ASR </span>(Agentia Spatiala Romana) a fost "uitat" pe al <var>N</var>-lea nivel al unei statii spatiale romanesti. El vrea sa coboare pana la nivelul <var>1</var>, unde sunt localizate dispozitivele de comunicatie, pentru a putea contacta o nava spatiala care sa-l recupereze. Din nefericire, astronautul nu stie cat de mult timp i-ar lua navei spatiale pentru a ajunge la statie; de aceea, astronautul vrea sa adune cat mai multa mancare spatiala inainte de a chema nava spatiala.</p>
+
+<p>Fiecare nivel al statie spatiale contine <var>16</var> camere, aranjate sub forma unei matrice cu <var>4</var> linii si <var>4</var> coloane (liniile sunt numerotate de la <var>1</var> la <var>4</var>; la fel si coloanele). Fiecare camera contine o cantitate de mancare spatiala. Astronautul se poate deplasa liber in interiorul statiei spatiale, dar nu poate vizita aceeasi camera de <var>2</var> ori. Mai mult, o data ce a coborat la un nivel inferior, el nu mai poate urca pe un nivel de deasupra. In fiecare zi, din camera in care se afla, astronautul se poate muta ori in camera localizata la nord, la sud, la est sau la vest fata de camera curenta (pe acelasi nivel) sau in jos, pe nivelul de dedesubt, in camera de pe aceeasi linie si coloana ca si camera curenta. Deplasarea in jos este permisa numai daca exista o usa catre nivelul de dedesubt in camera curenta. Pentru fiecare nivel, astronautul are la dispozitie o harta care ii arata ce camere au usi catre nivelul de dedesubt. Astronautul nu sta <var>2</var> zile la rand in aceeasi camera si in fiecare zi se muta doar o singura data.</p>
+
+<p>De fiecare data cand intra intr-o camera, astronautul ia cantitatea de mancare spatiala aflata in camera respectiva. Ratia de mancare a unui astronaut este definita ca raportul dintre cantitatea totala de mancare spatiala adunata in timpul plimbarii sale prin statie si numarul de zile petrecute in interiorul statiei spatiale inainte de a chema nava spatiala. Se considera ca astronautul petrece prima zi in camera unde isi incepe calatoria, pe nivelul <var>N</var>, si ca ia cantitatea de mancare din camera respectiva.</p>
+
+<p>Determinati o secventa de mutari ale astronautului care sa il aduca din camera unde se afla initial, pe nivelul <var>N</var>, pana intr-o camera de pe nivelul <var>1</var>. Aceasta secventa de mutari trebuie sa ii maximizeze ratia de mancare. Plimbarea astronautului prin statie nu trebuie sa se incheie automat in momentul in care ajunge intr-o camera de pe nivelul <var>1</var>. El se poate plimba prin mai multe camere de pe nivelul <var>1</var> inainte de a-si incheia plimbarea si a chema nava spatiala.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>lost.in</var> contine un singur numar intreg <var>N</var>, reprezentand numarul de nivele ale statiei spatiale. Urmeaza apoi descrierile celor <var>N</var> nivele, in ordine, de la nivelul <var>N</var> la nivelul <var>1</var>. Pentru fiecare nivel, vor exista <var>8</var> linii in fisierul de intrare. Primele <var>4</var> linii contin cate <var>4</var> numere intregi, separate prin cate un spatiu, reprezentand cantitatea de mancarea spatiala disponibila in fiecare camera de pe nivelul respectiv (al <var>j</var>-lea numar de pe a <var>i</var>-a linie dintre cele <var>4</var> va reprezenta cantitatea de mancare din camera de pe linia <var>i</var> si coloana <var>j</var>). Urmatoarele <var>4</var> linii vor contine cate <var>4</var> numere intregi, separate prin cate un spatiu, avand valorile <var>0</var> sau <var>1</var>. <var>1</var> inseamna ca exista o usa din camera respectiva catre nivelul de dedesubt, iar <var>0</var> inseamna ca nu exista usa. Nivelul <var>1</var> va avea numai valori <var>0</var> pe aceste <var>4</var> linii. Ultima linie a fisierului contine <var>2</var> numere intregi, <var>l</var> si <var>c</var>, reprezentand linia si coloana camerei de pe nivelul <var>N</var> in care se afla initial astronautul.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>lost.out</var> veti afisa ratia maxima de mancare pe care o poate obtine astronautul, cu <var>4</var> cifre zecimale. Pe a doua linie veti afisa lungimea drumului sau (afisati <var>0</var> daca astronautul nu iese din camera in care se afla initial). Daca lungimea drumului sau este <var>L</var> (<var>L &gt; 0</var>), atunci pe a treia linie veti afisa <var>L</var> caractere din multimea <var>{'N','E','S','W','D'}</var>, fiecare caracter corespunzand unei directii de miscare (nord, est, sud, vest si jos). Daca exista mai multe drumuri cu aceeasi ratie maxima de mancare, puteti afisa oricare din ele. </p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 16</var></li>
+<li><var>1 ≤ cantitatea de mancare spatiala dintr-o camera ≤ 255</var></li>
+<li>Daca <var>L</var> este lungimea drumului astronautului, atunci el petrece <var>L+1</var> zile in interiorul statiei spatiale inainte de a chema o nava spatiala.</li>
+<li>Pentru fiecare test astronautul va putea ajunge din camera unde se afla initial intr-o camera de pe nivelul <var>1</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>lost.in</th><th>lost.out</th></tr><tr><td>2 <br>
+1 20 1 1 <br>
+1 1 1 1 <br>
+1 1 1 1 <br>
+1 1 1 1 <br>
+1 1 1 1 <br>
+0 0 0 0 <br>
+0 0 0 0 <br>
+0 0 0 0 <br>
+1 1 1 1 <br>
+20 1 1 1 <br>
+1 1 1 1 <br>
+1 1 1 1 <br>
+0 0 0 0 <br>
+0 0 0 0 <br>
+0 0 0 0 <br>
+0 0 0 0 <br>
+1 1<br></td><td>8.6000 <br>
+4 <br><span class="caps">EDSW</span><br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>regiuni2.in, regiuni2.out</td><td><strong>Sursă</strong></td><td>Selectie echipe ACM ICPC, UPB 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65535 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=regiuni2">Vezi solutiile trimise</a></p>
+
+<h1>Regiuni2<br></h1>
+
+<p>Se da un poligon convex cu <var>N</var> varfuri si <var>M</var> drepte care impart poligonul in regiuni. Calculati numarul de regiuni in care este impartit poligonul de catre cele <var>M</var> drepte date.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>regiuni2.in</var> contine numarul <var>T</var> de teste continute in fisier. Prima linie a fiecarui test contine 2 numere intregi, separate printr-un spatiu: numarul <var>N</var> de varfuri ale poligonului si numarul <var>M</var> de drepte. Urmatoarele <var>N</var> linii contin cate <var>2</var> numere intregi <var>X</var> si <var>Y</var>, reprezentand coordonatele unui varf al poligonului. Varfurile sunt date in odinea in care sunt asezate pe conturul poligonului (in sens trigonometric sau in sens invers trigonometric). Fiecare din urmatoarele <var>M</var> linii contine cate 4 numere intregi: <var>x<sub>1</sub> y<sub>1</sub> x<sub>2</sub> y<sub>2</sub></var>; <var>(x<sub>1</sub>,y<sub>1</sub>)</var> si <var>(x<sub>2</sub>,y<sub>2</sub>)</var> sunt <var>2</var> puncte diferite de pe o dreapta. </p>
+
+<h2>Date de iesire</h2>
+
+<p>Pentru fiecare test din fisierul de intrare afisati o linie care contine numarul de regiuni in care este impartit poligonul.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 11</var></li>
+<li><var>3 ≤ N ≤ 10</var></li>
+<li><var>0 ≤ M ≤ 10</var></li>
+<li>Toate coordonatele <var>X</var> si <var>Y</var> din fisierul de intrare sunt in intervalul <var>[-20,20]</var>. </li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>regiuni2.in</th><th>regiuni2.out</th></tr><tr><td>2<br>
+3 0<br>
+0 0<br>
+1 1<br>
+1 0<br>
+3 3<br>
+0 0<br>
+1 1<br>
+1 0<br>
+1 2 3 4<br>
+1 2 3 4<br>
+1 2 3 4<br></td><td>1<br>
+1<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

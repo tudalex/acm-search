@@ -1,0 +1,45 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>hvrays.in, hvrays.out</td><td><strong>Sursă</strong></td><td>Selectie echipe ACM ICPC, UPB 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.5 sec</td><td><strong>Limită de memorie</strong></td><td>65535 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=hvrays">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=hvrays">Vezi solutiile trimise</a></p>
+
+<h1>Hvrays<br></h1>
+
+<p>Se dau <var>H</var> raze orizontale si <var>V</var> raze verticale. O raza orizontala este o linie dreapta care are originea intr-un punct si se extinde la infinit spre dreapta (spre coordonate <var>X</var> crescatoare). O raza verticala este o linie dreapta ce are originea intr-un punct si se extinde la infinit in jos (catre coordonate <var>Y</var> descrescatoare). O raza orizontala a carei origine este <var>(X<sub>h</sub>,Y<sub>h</sub>)</var> atinge o raza verticala a carei origine este <var>(X<sub>v</sub>,Y<sub>v</sub>)</var> daca <var>X<sub>h</sub> ≤ X<sub>v</sub></var> si <var>Y<sub>h</sub> ≤ Y<sub>v</sub></var>.</p>
+
+<p>Determinati o submultime <var>S</var> constand dintr-un numar minim de raze verticale astfel incat fiecare raza orizontala sa fie atinsa de cel putin o raza verticala din <var>S</var>. Se garanteaza ca pe testele folosite va exista o astfel de submultime.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>hvrays.in</var> contine un numar intreg <var>T</var>, reprezentand numarul de teste ce urmeaza. Prima linie a fiecarui test contine <var>2</var> numere intregi: <var>H</var> si <var>V</var>. Urmatoarele <var>H</var> linii contin cate <var>2</var> numere intregi: <var>X</var> si <var>Y</var>, reprezentand coordonatele <var>(X,Y)</var> ale originilor razelor orizontale. Urmatoarele <var>V</var> linii contin cate <var>2</var> numere intregi: <var>X</var> si <var>Y</var>, reprezentand coordonatele <var>(X,Y)</var> ale originilor razelor verticale.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pentru fiecare din cele <var>T</var> teste date, in ordinea din fisierul de intrare, afisati in fisierul de iesire <var>hvrays.out</var> o linie continand numarul minim de raze verticale ale submultimii <var>S</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 12</var></li>
+<li><var>1 ≤ H ≤ 100 000</var></li>
+<li><var>1 ≤ V ≤ 100 000</var></li>
+<li>Coordonatele originilor tuturor razelor sunt numere intregi din intervalul <var>[0,50 000 000]</var>.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>hvrays.in</th><th>hvrays.out</th></tr><tr><td>1<br>
+3 3<br>
+1 6<br>
+4 4<br>
+6 2<br>
+3 8<br>
+5 7<br>
+9 4<br></td><td>2</td></tr></table><h3>Explicatie</h3>
+
+<p>Solutia poate consta din a doua si a treia raza verticala. O alta solutie poate fi formata din prima si a treia raza verticala.<br><img src="http://infoarena.ro/problema/hvrays?action=download&amp;file=hvrays.jpg&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,46 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>editor.in, editor.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2003, clasele 9-10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>16000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=editor">Vezi solutiile trimise</a></p>
+
+<h1>Editor<br></h1>
+
+<p>Se considera un editor de text care raspunde doar la apasarea a sase taste, si anume cele care au tiparite simbolurile: "<var>(</var>", "<var>)</var>", "<var>[</var>", "<var>]</var>", "<var>*</var>" si "<var>E</var>". Daca se apasa una din tastele "<var>(</var>", "<var>)</var>", "<var>[</var>" sau "<var>]</var>" atunci se afiseaza caracaterul respectiv pe ecran. Daca se apasa tasta * se sterge ultimul caracter afisat (daca nu este afisat nici un caracter nu se intampla nimic). <br>
+Daca se apasa tasta "<var>E</var>" atunci editorul va verifica daca sirul afisat pe ecran este un sir parantezat corect. Un sir este parantezat corect daca este construit conform regulilor:</p>
+
+
+<ul><li>&lt;sir parantezat corect&gt; = &lt;sirul vid&gt;</li>
+<li>&lt;sir parantezat corect&gt; = "(" + &lt;sir parantezat corect&gt; + ")"</li>
+<li>&lt;sir parantezat corect&gt; = "[" + &lt;sir parantezat corect&gt; + "]"</li>
+<li>&lt;sir parantezat corect&gt; = &lt;sir parantezat corect&gt; + &lt;sir parantezat corect&gt;</li>
+</ul><p>Prin <var>X+Y</var> s-a notat concatenarea sirurilor <var>X</var> si <var>Y</var>. De exemplu <var>[](())</var> este sir parantezat corect, dar <var>[](()][</var> nu este sir parantezat corect.</p>
+
+<h2>Cerinta</h2>
+
+<p>Dandu-se o succesiune de taste apasate care se termina cu tasta "<var>E</var>" si stiind ca, initial, nici un caracter nu este afisat pe ecran, trebuie sa decideti daca sirul afisat pe ecran in urma apasarii tastelor este parantezat corect.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>editor.in</var> se afla un numar intreg <var>T</var>, reprezentand numarul de succesiuni de taste care vor fi apasate in continuare. Pe fiecare dintre urmatoarele <var>T</var> linii este descrisa cate o succesiune de taste apasate.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul <var>editor.out</var> se vor scrie exact <var>T</var> linii, cate una pentru fiecare succesiune de taste descrisa in fisierul de intrare. Pe fiecare linie veti afisa "<var>:)</var>" (fara ghilimele) daca sirul obtinut in urma succesiunii corespunzatoare de taste este parantezat corect, respectiv "<var>:(</var>", in caz contrar.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 30</var></li>
+<li>nici o succesiune de caractere nu contine mai mult de <var>60000</var> de taste apasate</li>
+<li>nu se acorda punctaje partiale</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>editor.in</th><th>editor.out</th></tr><tr><td>3<br>
+  E<br>
+  [][][]E<br>
+  **[]()*E<br></td><td>:)<br>
+  :)<br>
+  :(<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

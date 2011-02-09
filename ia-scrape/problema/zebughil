@@ -1,0 +1,46 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>zebughil.in, zebughil.out</td><td><strong>Sursă</strong></td><td>preONI 2006 Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=zebughil">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=zebughil">Vezi solutiile trimise</a></p>
+
+<h1>Zebughil<br></h1>
+
+<p>Zebu la ferma lui de gaini, in momentele de pauza in care nu trebuie sa hraneasca gainile sau sa faca curatenie, planuieste creearea unui monopol ovo-lactarian in judetul Bistrita Nasaud. Primul pas pentru indeplinirea acestui vis consta in construirea unei noi hale pentru gaini. Pentru a-si construi hala mult visata el a cumparat <var>N</var> blocuri mari de piatra care vrea sa le aduca la el la firma pentru a le prelucra. Prietenul sau Ghilau are o firma de transporturi si isi ofera serviciile lui gratuit cu conditia ca Zebu sa foloseasca numarul minim de camioane pentru a transporta blocurile de piatra. Fiecare camion de la firma lui Ghilau are aceiasi capacitate maxima de transport <var>G</var>, iar blocurile lui Zebu au greutatile <var>z<sub>i</sub></var>. Un camion va fi folosit o singura data pentru a nu se uza prea mult, iar o piatra nu poate fi taiata.</p>
+
+<h2>Cerinta</h2>
+
+<p>Aflati pentru Zebu care este numarul minim de camioane pe care trebuie sa le foloseasca pentru transportul blocurilor.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>zebughil.in</var> va contine cate trei teste. Pe prima linie a fisierului se vor afla doi intregi <var>N</var> si <var>G</var> separati printr-un spatiu, reprezentand numarul de blocuri de piatra respectiv greutatea maxima suportata de un camion. Pe urmatoarea linie vor fi <var>N</var> intregi separate prin cate un singur spatiu reprezentand dimensiunile blocurilor. Al doilea test va incepe de pe linia 3 si va fi structurat la fel, iar testul trei va incepe de pe linia 5.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>zebughil.out</var> va contine pe trei linii cate un singur numar intreg reprezentand numarul minim de camioane cerut de pe testul corespunzator liniei respective.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 17</var></li>
+<li><var>0 ≤ z<sub>i</sub> ≤ G ≤ 2000000000</var></li>
+<li>Pentru teste in valoare cumulata de 70 de puncte, <var>0 ≤ z<sub>i</sub> ≤ G ≤ 500</var></li>
+<li>Nu se acorda punctaje partiale</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>zebughil.in</th><th>zebughil.out</th></tr><tr><td>4 10<br>
+6 7 5 4<br>
+4 4<br>
+2 3 1 2<br>
+1 5<br>
+1<br></td><td>3<br>
+2<br>
+1</td></tr></table><p><em>Explicatie</em>: pentru primul test putem repartiza blocurile in grupurile <var>{6, 4} {7} {5}</var>, pentru al doilea test in <var>{2, 2} {3, 1}</var>, iar pentru al treilea in <var>{1}</var>.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>palind.in, palind.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">2/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=palind">Vezi solutiile trimise</a></p>
+
+<h1>Palindroame<br></h1>
+
+<p>Un palindrom este un sir de caractere care este egal cu inversul sau. De exemplu <var>"aerisirea"</var> este un palindrom. Dandu-se un sir de caractere vi se cere sa spuneti numarul minim de inversiuni ce trebuie efectuate pentru a-l transforma in palindrom. O inversiune reprezinta schimbarea intre ele a doua caractere adiacente. Pentru a transforma in palindrom <var>"aeriseair"</var> sunt necesare <var>4</var> inversiuni:</p>
+
+
+<ul><li>schimbam <var>"ai"</var> : <var>"aeriseiar"</var></li>
+<li>schimbam <var>"ei"</var> : <var>"aerisiear"</var></li>
+<li>schimbam <var>"ar"</var> : <var>"aerisiera"</var></li>
+<li>schimbam <var>"er"</var> : <var>"aerisirea"</var></li>
+</ul><h2>Date de Intrare (fisierul: <var>palind.in</var>)</h2>
+
+<p>Fisierul de intrare va contine mai multe teste. Pe prima linie se va afla numarul <var>T</var> de teste.<br>
+Pe fiecare din urmatoarele <var>T</var> teste se va afla un sir de caractere (litere mici ale alfabetului latin). Fiecare linie se termina cu enter.</p>
+
+<h2>Date de Iesire (fisierul <var>palind.out</var>)</h2>
+
+<p>Fisierul de iesire va contine <var>T</var> linii. Pe linia <var>i</var> se va afla numarul minim pentru a obtine palindrom din sirul de caractere aflat pe linia <var>i+1</var> in fisierul de intrare sau <var>-1</var> in cazul in care nu se poate obtine palindrom.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>Numarul de caractere dintr-un sir nu va depasi <var>105</var></li>
+<li>T ≤ 105</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>palind.in</th><th>palind.out</th></tr><tr><td>4<br>
+  aeriseair<br>
+  mamad<br>
+  asd<br>
+  aabb<br></td><td>4<br>
+  3<br>
+  -1<br>
+  2</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_1"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=61">Greedy</a></span>
+            <a href="javascript:show_tag_list(61)" id="tag_anchor_61" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_61"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=70">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

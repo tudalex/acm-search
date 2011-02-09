@@ -1,0 +1,43 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>orase.in, orase.out</td><td><strong>Sursă</strong></td><td>preONI 2007 Runda Finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=orase">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=orase">Vezi solutiile trimise</a></p>
+
+<h1>Orase<br></h1>
+
+<p>Zaharel are o harta cu orasele pe care vrea sa le viziteze vara asta. Pe harta este marcata o strada principala de lungime <var>M</var> si <var>N</var> strazi laturalnice perpendiculare pe strada principala. Fiecare strada laturalnica se afla la o distanta <var>D<sub>i</sub></var> fata de capatul stang al strazii principale, si fiecare strada laturalnica are o lungime variabila <var>L<sub>i</sub></var>. La capatul fiecarei strazi laturalnice se afla un oras. Sa se determine care este distanta intre cele mai departate doua orase.</p>
+
+
+<h2>Date de intrare</h2>
+
+<p>Prima linie din fisierul de intrare <var>orase.in</var> contine numerele <var>M</var> si <var>N</var>. Urmatoarele <var>N</var> linii contin cate doua numere naturale <var>D<sub>i</sub> L<sub>i</sub></var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>orase.out</var> se va scrie distanta dintre cele mai departate doua orase.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ M ≤ 1.000.000</var></li>
+<li><var>1 ≤ N ≤ 50.000</var></li>
+<li><var>0 ≤ D<sub>i</sub> ≤ M</var></li>
+<li><var>1 ≤ L<sub>i</sub> ≤ 1.000.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>orase.in</th><th>orase.out</th></tr><tr><td>5 4<br>
+5 6<br>
+2 2<br>
+0 3<br>
+2 7<br></td><td>16<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Linia ingroasata reprezinta drumul de distanta maxima intre doua orase.</p>
+
+<p><img src="http://infoarena.ro/problema/orase?action=download&amp;file=orase.jpg&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

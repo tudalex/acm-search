@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>joc3.in, joc3.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2006</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=143">Daniel Pasaila</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=joc3">Vezi solutiile trimise</a></p>
+
+<h1>Joc3<br></h1>
+
+<p>Gigel si Andrei au <var>N</var> saci cu pietre pretioase numerotati de la <var>1</var> la <var>N</var>. Pentru ca nu vor sa imparta pietrele intre ei, au hotarat sa joace un joc iar castigatorul sa ia toate pietrele. Jocul consta in efectuarea alternativa a unor mutari. O mutare consta in selectarea unor pietre dintr-un sac <var>i</var> (<var>1</var> ≤ <var>i</var> &lt; <var>N</var>) si mutarea acestora in sacul <var>i+1</var>. Jucatorul care nu mai poate efectua nici o mutare (atunci cand toate pietrele sunt asezate in ultimul sac) pierde jocul.</p>
+
+<h2>Cerinta</h2>
+
+<p>Stiind atat numarul de saci si configuratia acestora, cat si faptul ca Gigel va efectua prima mutare determinati, daca exista, o strategie de castig pentru el.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>joc3.in</var> se va afla <var>N</var>, numarul de saci. Urmeaza <var>N</var> linii, pe linia <var>i</var> aflandu-se numarul de pietre pretioase din sacul <var>i</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In cazul in care Gigel nu are strategie de castig fisierul de iesire <var>joc3.out</var> va contine pe prima linie valoarea <var>-1</var>. Altfel, afisati pe prima linie numerele <var>p</var> si <var>q</var> ce codifica mutarea initiala pe care ar trebui sa o efectueze Gigel pentru a castiga jocul (<var>p</var> este numarul sacului, iar <var>q</var> numarul de pietre). In cazul in care exista mai multe mutari initiale ce ar putea duce la castigarea sigura a jocului, afisati mutarea care are <var>p</var> minim. Daca totusi mai sunt cazuri de egalitate, afisati mutarea cu <var>q</var> minim.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1</var> ≤ <var>N</var> ≤ <var>100.000</var></li>
+<li><var>0</var> ≤ numarul de pietre dintr-un sac ≤ <var>10.000</var></li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>joc3.in</th><th>joc3.out</th></tr><tr><td>5<br>
+2<br>
+5<br>
+4<br>
+3<br>
+1</td><td>2 2</td></tr></table><h3>Explicatie</h3>
+
+<p>Efectuand aceasta mutare Gigel va castiga daca va continua sa joace perfect. Nu exista alta mutare cu <var>p</var> sau <var>q</var> mai mic.</p>
+
+<table class="example" cellspacing="0"><tr><th>joc3.in</th><th>joc3.out</th></tr><tr><td>5<br>
+0<br>
+0<br>
+0<br>
+0<br>
+10000</td><td>-1</td></tr></table><h3>Explicatie</h3>
+
+<p>Cum toate pietrele sunt asezate in ultimul sac, Gigel nu poate efectua vreo mutare.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

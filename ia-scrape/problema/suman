@@ -1,0 +1,37 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>suman.in, suman.out</td><td><strong>Sursă</strong></td><td>Selectie individuala ACM ICPC, UPB 2009</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.4 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=suman">Vezi solutiile trimise</a></p>
+
+<h1>Suman<br></h1>
+
+<p>Se da un numar natural <var>N</var> si <var>K</var> numere naturale <var>v<sub>1</sub>, ..., v<sub>K</sub></var>. Calculati suma tuturor numerelor naturale din intervalul <var>[1,N]</var> care sunt divizibile cu cel putin unul din numerele <var>v<sub>1</sub>, ..., v<sub>K</sub></var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>suman.in</var> contine pe prima linie numarul intreg <var>N</var>. Pe a doua linie se afla numarul intreg <var>K</var>. Pe a <var>i</var>-a din urmatoarele <var>K</var> linii se gaseste numarul <var>v<sub>i</sub></var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>suman.out</var> veti afisa suma tuturor numerelor naturale din intervalul <var>[1,N]</var> care sunt divizibile cu cel putin unul din numerele <var>v<sub>1</sub>, ..., v<sub>K</sub></var>.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1.000.000.000</var></li>
+<li><var>1 ≤ K ≤ 20</var></li>
+<li><var>1 ≤ v<sub>i</sub> ≤ N</var></li>
+<li><strong>Aceasta problema are testele impartite in 2 grupe, valorand 30 si, respectiv, 70 de puncte.</strong></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>suman.in</th><th>suman.out</th></tr><tr><td>10<br>
+2<br>
+2<br>
+3<br></td><td>42<br></td></tr></table><h3>Explicaţie</h3>
+
+<p><var>N=10</var>, <var>K=2</var>, <var>v<sub>1</sub>=2</var> si <var>v<sub>2</sub>=3</var>. Numerele naturale din intervalul <var>[1,10]</var> care sunt divizibile cu cel putin unul din numerele <var>2</var> sau <var>3</var> sunt: <var>2, 3, 4, 6, 8, 9, 10</var>. Suma lor este <var>2+3+4+6+8+9+10=42</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

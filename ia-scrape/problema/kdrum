@@ -1,0 +1,74 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>kdrum.in, kdrum.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2009, clasele 9-10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=167">Paul-Dan Baltescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/pauldb"><img src="/utilizator/pauldb?action=download&amp;file=avatar&amp;resize=L16x16" alt="pauldb">Paul-Dan Baltescu</a> <a title="Rating pauldb: 792" class="rating-badge-4" href="http://infoarena.ro/utilizator/pauldb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/pauldb">pauldb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=kdrum">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=kdrum">Vezi solutiile trimise</a></p>
+
+<h1>Kdrum<br></h1>
+
+<p>Laura este pasionata de plimbarile prin parc. Fiind totusi o activitate lipsita de originalitate, ea si-a propus ca plimbarile ei sa urmeze un plan mai nastrusnic. Pentru a va ajuta, ea a reprezentat parcul sub forma unei matrici cu <var>N</var> linii si <var>M</var> coloane. Pentru fiecare zona din parc, ea i-a atribuit un numar natural pozitiv dupa criterii numai de ea stiute. Zonele prin care nu poate trece le-a marcat cu <var>0</var>. Acum ea se afla in pozitia <var>x1</var> <var>y1</var> si doreste sa ajunga la pozitia <var>x2</var> <var>y2</var> astfel incat produsul numerelor de pe drum sa fie divizibil cu un numar <var>K</var>. Pentru ca este frig afara, ea doreste sa stie care este lungimea minima a unui astfel de drum. Cum dorintele ei sunt porunci, voi trebuie sa o ajutati. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>kdrum.in</var> se afla <var>3</var> numere intregi despartie prin spatiu: <var>N M K</var>. Pe urmatoarea linie se gasesc <var>4</var> numere intregi <var>x1 y1</var> <var>x2 y2</var>. Urmatoarele <var>N</var> linii vor avea cate <var>M</var> numere despartite prin spatiu, simbolizand schema parcului.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>kdrum.out</var> se va afla un singur numar natural reprezentand lungimea minima a unui drum ce respecta proprietatile cerute.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 50</var></li>
+<li><var>1 ≤ M ≤ 50</var></li>
+<li><var>1 ≤ K ≤ 12 000</var></li>
+<li>Elementele matricii sunt numere intregi cuprinse in intervalul <var>[0, 100 000]</var>.</li>
+<li>Se garanteaza ca pozitiile de start si de final sunt valide.</li>
+<li>Se garanteaza ca exista cel putin un drum valid de la pozitia de start la destinatie.</li>
+<li>In <var>20%</var> din teste, <var>K = 1</var>.</li>
+<li>Pentru <var>50%</var> din teste, <var>1 ≤ K ≤ 200</var>.</li>
+<li>Deplasarea se face in <var>4</var> directii: sus, jos, stanga, dreapta.</li>
+<li>Laura trebuie sa se deplaseze intr-o casuta vecina in fiecare moment de timp.</li>
+<li>Drumul Laurei poate trece de mai multe ori prin aceeasi pozitie, caz in care trebuie considerata de mai multe ori valoarea din acea zona.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>kdrum.in</th><th>kdrum.out</th></tr><tr><td>3 3 6<br>
+1 1 3 3<br>
+1 3 5<br>
+1 0 2<br>
+6 1 1<br></td><td>5<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Cele doua solutii posibile sunt:</p>
+
+<p><var><strong>1</strong> 3 5</var><br><var><strong>1</strong> 0 2</var><br><var><strong>6 1 1</strong></var> </p>
+
+<p>sau</p>
+
+<p><var><strong>1 3 5</strong></var><br><var>1 0 <strong>2</strong></var><br><var>6 1 <strong>1</strong></var></p>
+
+
+<p>Prima solutie are produsul numerelor de pe drum <var>6</var>, in timp ce a doua are produsul <var>30</var>. Ambele numere sunt divizibile cu <var>6</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=47">Parcurgere in latime</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=43">Algoritmul lui Euclid</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=423">Factorizare</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

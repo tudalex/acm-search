@@ -1,0 +1,65 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>joc9.in, joc9.out</td><td><strong>Sursă</strong></td><td>OLI 2009, Bucuresti, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=192">Carmen Minca</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrei-alpha"><img src="/utilizator/andrei-alpha?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrei-alpha">Andrei-Bogdan Antonescu</a> <a title="Rating andrei-alpha: 700" class="rating-badge-1" href="http://infoarena.ro/utilizator/andrei-alpha?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrei-alpha">andrei-alpha</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=joc9">Vezi solutiile trimise</a></p>
+
+<h1>Joc9<br></h1>
+
+<p>Trei copii au inventat un joc nou. Ei au desenat pe asfalt un triunghi echilateral <var><span class="caps">ABC</span></var> şi l-au împărţit în <var>N*N</var> triunghiuri echilaterale congruente. Pornind din vârful <var>A</var> al triunghiului <var><span class="caps">ABC</span></var> către latura opusă <var>BC</var>, au desenat cercuri identice, câte unul în fiecare vârf al triunghiurilor formate, iar în interiorul fiecărui cerc au scris câte un număr natural nenul reprezentând valoarea cercului, ca în figura alăturată desenată pentru <var>N</var>=3. </p>
+
+<p><img src="http://infoarena.ro/problema/joc9/?action=download&amp;file=01.jpg&amp;safe_only=true" alt=""></p>
+
+<p>Copiii au stabilit regulamentul de desfăşurare a jocului:</p>
+
+
+<ul><li>la joc pot participa doar trei concurenţi; </li>
+<li>fiecare concurent se aşează într-unul din cercurile situate în vârfurile <var>A</var>, <var>B</var> sau <var>C</var> ale triunghiului, denumite cercuri iniţiale; 	 </li>
+<li>fiecare concurent trebuie să ajungă într-unul din cele <var>n</var>+1 cercuri situate pe latura opusă vârfului din care a plecat, în triunghiul <var><span class="caps">ABC</span></var>, şi poate să se deplasaze doar în direcţia acestei laturi; de exemplu, dacă un concurent se află în cercul iniţial din vârful <var>C</var>, el trebuie să ajungă într-unul din cercurile cu valorile: <var>x1</var>, <var>x2</var>, <var>x4</var> sau <var>x7</var> de pe latura opusă, <var>AB</var>;</li>
+<li>concurenţii se vor deplasa sărind dintr-un cerc în altul, fără a trece de mai multe ori prin acelaşi cerc;</li>
+<li>este permis ca într-un cerc să se afle mai mulţi concurenţi;</li>
+<li>la fiecare secundă, simultan, concurenţii trebuie să sară într-unul din cercurile situate la cea mai mică distanţă de cel în care se află, în direcţia laturii opuse corespunzătoare; de exemplu, un concurent, care a plecat din cercul iniţial situat în vârful <var>B</var> şi care se află în cercul cu valoarea <var>x5</var>, poate sări doar în unul din cercurile cu valorile <var>x3</var> sau <var>x6</var>;</li>
+<li>concurenţii nu au voie să sară într-un cerc care nu se află în direcţia laturii opuse corespunzătoare;</li>
+<li>jocul se termină atunci când concurenţii ajung într-unul din cele <var>n</var>+1 cercuri situate pe latura cerută din triunghiul <var><span class="caps">ABC</span></var>, prin efectuarea a câte n sărituri, fiecare;</li>
+<li>pentru fiecare concurent, se va calcula punctajul obţinut prin adunarea valorii cercului iniţial cu valorile celor <var>N</var> cercuri, în care a sărit în timpul deplasării;</li>
+<li>câştigătorul jocului este concurentul cu cel mai mare punctaj; pot fi mai mulţi câştigători dacă sunt mai mulţi concurenţi care au obţinut un punctaj egal cu cel mai mare punctaj obţinut la finalul jocului. </li>
+</ul><h2>Cerinta</h2>
+
+<p>Să se scrie un program care să determine:</p>
+
+
+<ol><li>punctajul maxim pe care îl poate obţine un concurent la finalul jocului;</li>
+<li>valoarea cercului iniţial din care un concurent ar trebui să înceapă jocul pentru a obţine punctajul maxim.</li>
+</ol><h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>joc9.in</var> conţine două linii. Pe prima linie este scris numărul natural nenul <var>N</var>. Pe a doua linie sunt scrise numere naturale nenule: x<sub>1</sub>, x<sub>2</sub> ,…, x<sub>(n+1)*(n+2)/2</sub> separate prin câte un spaţiu, reprezentând valorile cercurilor din joc, în ordinea din enunţ</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>joc9.out</var> va conţine două linii. Pe prima linie se va scrie un număr natural reprezentând punctajul maxim pe care îl poate obţine un concurent la finalul jocului. Pe a doua linie se va scrie un număr natural reprezentând valoarea cercului iniţial din care un concurent ar trebui să înceapă jocul pentru a obţine punctajul maxim. </p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>2</var> ≤ <var>N</var> ≤ <var>135</var></li>
+<li><var>1 ≤ x<sub>1</sub>, x<sub>2</sub> ,…, x<sub>(n+1)*(n+2)/2</sub> ≤ 215</var> </li>
+<li>Dacă există mai multe variante de alegere a cercului iniţial, se va scrie în fişier cea mai mică dintre valorile acestor cercuri iniţiale din care se obţine punctajul maxim.</li>
+<li>Pentru rezolvarea cerinţei <var>1</var> se acordă 30% din punctaj şi pentru cerinţa <var>2</var> 70% din punctaj.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>joc9.in</th><th>joc9.out</th></tr><tr><td>3<br>
+10 4 3 11 14 2 9 6 5 7<br></td><td>37<br>
+7<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Dacă concurentul pleacă din cercul iniţial din vârful: </p>
+
+
+<ul><li><var>A</var>, cel mai mare punctaj pe care îl poate obţine este <var>34</var> (=<var>10</var> + <var>4</var> + <var>11</var> + <var>9</var>)</li>
+<li><var>B</var>, cel mai mare punctaj pe care îl poate obţine este <var>37</var> (=<var>9</var> + <var>11</var> + <var>14</var> + <var>3</var>)</li>
+<li><var>C</var>, cel mai mare punctaj pe care îl poate obţine este <var>37</var> (=<var>7</var> + <var>5</var> + <var>14</var> + <var>11</var>). <br>
+Astfel, punctajul maxim este <var>37</var> şi se poate obţine dacă concurentul pleacă din cercurile iniţiale din <var>B</var> şi <var>C</var>. Cercul din <var>B</var> are valoarea <var>9</var>, iar cel din <var>C</var> are valoarea <var>7</var>&lt;<var>9</var>. Pe prima linie a fişierului joc.out se va scrie valoarea <var>37</var> (punctajul maxim), iar pe a doua linie se va scrie valoarea <var>7</var> (cercul iniţial din <var>C</var> are valoarea mai mică decât cel din <var>B</var>)</li>
+</ul><p><img src="http://infoarena.ro/problema/joc9?action=download&amp;file=02.jpg&amp;safe_only=true" alt=""></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

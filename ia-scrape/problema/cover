@@ -1,0 +1,47 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cover.in, cover.out</td><td><strong>Sursă</strong></td><td>Baraj ONI 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=124">Adrian Vladu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cover">Vezi solutiile trimise</a></p>
+
+<h1>Cover<br></h1>
+
+<p>Se considera <var>N</var> intervale inchise, avand extremitatile numere naturale cuprinse intre <var>1</var> si <var>L</var>. Fiecare numar natural <var>i</var> din intervalul <var>[1, L]</var> are asociata o pondere <var>c<sub>i</sub></var>.<br>
+Numim acoperire o multime de numere naturale cuprinse intre <var>1</var> si <var>L</var> cu proprietatea ca fiecare interval contine cel putin un element al multimii. Costul unei acoperiri este egal cu suma ponderilor numerelor din acoperire. </p>
+
+<p>Pentru un set de intervale dat sa se determine costul minim al unei acoperiri.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>cover.in</var> contine pe prima linie cele doua numere naturale <var>N L</var> separate printr-un spatiu. Pe urmatoarea linie se afla <var>L</var> numere naturale separate prin cate un spatiu <var>c<sub>1</sub> c<sub>2</sub> ... c<sub>L</sub></var> reprezentand ponderile numerelor naturale din intervalul <var>[1, L]</var>. Urmatoarele <var>N</var> linii contin fiecare cate doua numere naturale <var>a b (1 ≤ a ≤ b ≤ L)</var> reprezentand extremitatile intervalelor.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>cover.out</var> va contine o singura linie pe care va fi scris un numar natural reprezentand costul minim al unei acoperiri.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 60 000</var></li>
+<li><var>1 ≤ L ≤ 1 000 000</var></li>
+<li><var>0 ≤ c<sub>i</sub> ≤ 1024</var>, pentru orice <var>1 ≤ i ≤ L</var></li>
+<li>Pentru <code>40%</code> din teste <var>N ≤ 1 000</var> si <var>L ≤ 10 000</var></li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>cover.in</th><th>cover.out</th></tr><tr><td>2 5<br>
+100 5 9 6 90<br>
+1 3<br>
+3 5<br></td><td>9</td></tr><tr><td>4 10<br>
+1 3 6 4 5 1 0 1 3 2<br>
+1 3<br>
+3 5<br>
+6 9<br>
+4 4<br></td><td>5</td></tr></table><h3>Explicatie</h3>
+
+
+<ol><li>Se construieste acoperirea {<var>3</var>} care are costul <var>9</var>. Elementul <var>3</var> apartine ambelor intervale date in fisierul de intrare.<br>
+Exista si alte acoperiri posibile de exemplu {<var>2, 4</var>} dar costul acesteia este <var>11</var> care nu este minim.</li>
+<li>Se construieste acoperirea {<var>1, 4, 7</var>} care are costul <var>5</var>. </li>
+</ol><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

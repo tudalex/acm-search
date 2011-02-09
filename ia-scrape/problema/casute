@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>casute.in, casute.out</td><td><strong>Sursă</strong></td><td>Lot Alba 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>3.5 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=casute">Vezi solutiile trimise</a></p>
+
+<h1>Casute<br></h1>
+
+<p>Nargy si Fumeanu au plecat la munte. Ei au o harta a muntelui, in care sunt identificate <var>N</var> casute montane (numerotate cu numere distincte intre <var>1</var> si <var>N</var>), situate la diferite inaltimi (casuta <var>i</var> se afla la inaltimea <var>H<sub>i</sub></var>). Aceste casute sunt legate prin <var>M</var> poteci. O poteca leaga doua casute distincte si poate fi parcursa doar intr-un singur sens: de la casuta situata la o inaltime mai mica catre casuta situata la o inaltime mai mare.<br>
+La un moment dat, cei doi s-au despartit si fiecare a ajuns in dreptul unei casute, dar din fericire fiecare avea la el o copie a hartii. Cei doi si-au telefonat si au stabilit un loc de intalnire, astfel: se vor intalni la casuta situata la inaltimea minima dintre acele casute la care pot ajunge amandoi (tineti minte ca nu pot decat urca).<br>
+Pentru a evita astfel de situatii in viitor, cei doi si-au propus sa determine locul in care s-ar fi intalnit indiferent de casutele in care s-ar fi aflat cei doi. Ei vor trece aceste rezultate pe o foaie de hartie, pentru fiecare pereche <var>i</var> <var>j</var> (<var>1 ≤ i &lt; j ≤ N</var>), perechile fiind considerate in ordine lexicografica. In cazul in care pentru o anumita pereche nu exista o astfel de casuta de intalnire, se va scrie pe foaie numarul <var>0</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>casute.in</var> contine pe prima linie numerele naturale <var>N</var> si <var>M</var> separate prin spatii. Urmatoarea linie va contine <var>N</var> numere naturale separate prin spatii reprezentand inaltimile la care se afla casutele, in ordine de la <var>1</var> la <var>N</var>. Urmatoarele <var>M</var> linii vor contine cate doua numere naturale <var>i</var> <var>j</var> separate prin spatii, reprezentand o poteca de la casuta <var>i</var> la casuta <var>j</var> (se garanteaza ca <var>H<sub>i</sub>&lt;H<sub>j</sub></var>).</p>
+
+<h2>Date de iesire</h2>
+
+<p>Cele <var>N*(N-1)/2</var> valori pe care cei doi le vor scrie pe foaie pot fi considerate ca reprezinta cifrele unui numar scris in baza <var>N+1</var>. in fisierul de iesire <var>casute.out</var> se va scrie pe prima linie restul impartirii acelui numar convertit in baza <var>10</var> la numarul <var>666013</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 3.000</var></li>
+<li><var>1 ≤ M ≤ 30.000</var></li>
+<li>inaltimile celor <var>N</var> casute sunt numere intregi distincte din intervalul [<var>1,10<sup>9</sup></var>]</li>
+<li>Se considera ca o pereche de numere (<var>a b</var>) este mai mica din punct de vedere lexicografic decat o alta pereche de numere (<var>c d</var>), daca <var>a&lt;c</var> sau <var>a=c</var> si <var>b&lt;d</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>casute.in</th><th>casute.out</th></tr><tr><td>5 7<br>
+1 2 3 4 5<br>
+1 3<br>
+2 3<br>
+1 4<br>
+2 4<br>
+2 5<br>
+4 5<br>
+3 5<br></td><td>24052<br></td></tr></table><h3>Explicatie</h3>
+
+<p><var>(1 2) -&gt; 3</var><br><var>(1 3) -&gt; 3</var><br><var>(1 4) -&gt; 4</var><br><var>(1 5) -&gt; 5</var><br><var>(2 3) -&gt; 3</var><br><var>(2 4) -&gt; 4</var><br><var>(2 5) -&gt; 5</var><br><var>(3 4) -&gt; 5</var><br><var>(3 5) -&gt; 5</var><br><var>(4 5) -&gt; 5</var><br><var>3345345555<sub>(6)</sub> = 36654767<sub>(10)</sub> = 24052 (mod 666013)</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

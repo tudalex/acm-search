@@ -1,0 +1,42 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>tablete.in, tablete.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2009, Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=225">Stefan Istrate</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/stef2n"><img src="/utilizator/stef2n?action=download&amp;file=avatar&amp;resize=L16x16" alt="stef2n">Stefan Istrate</a> <a title="Rating stef2n: 644" class="rating-badge-4" href="http://infoarena.ro/utilizator/stef2n?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/stef2n">stef2n</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>8192 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=tablete">Vezi solutiile trimise</a></p>
+
+<h1>Tablete<br></h1>
+
+<p>De o saptamana, Vasilica s-a angajat la Choco-Bin <span class="caps">S.R.L., </span>singura fabrica din lume care produce "ciocolata cu numere". Astazi, prin semnarea unui contract foarte avantajos cu un lant important de magazine, a venit momentul ca Vasilica sa arate ce stie. Chiar daca este primul sau job, seful fabricii i-a promis un bonus salarial de 50% in caz de indeplinire a contractului cu magazinele respective.</p>
+
+<p>Sarcina lui Vasilica este de a stabili design-ul unei tablete de ciocolata <var>N x N</var> impartita in <var>N<sup>2</sup></var> patratele de dimensiune <var>1 x 1</var>. Contractul mai stabileste, pe langa dimensiunea <var>N</var> a laturii tabletei, si urmatoarele:</p>
+
+
+<ul><li>De pe fiecare patratel din tableta trebuie sa iasa in relief unul din numerele <var>1, 2, .. N<sup>2</sup></var>.</li>
+<li>Oricare doua patratele au numere distincte.</li>
+<li>Pe fiecare linie a tabletei, numerele sunt in ordine crescatoare.</li>
+<li>Pe coloana <var>K</var> (valoare specificata deasemenea in contract), numerele trebuie sa fie pare.</li>
+</ul><p>Vasilica va roaga insistent sa-l ajutati sa-si duca sarcina la bun sfarsit. El nu va poate promite bani (este totusi student), dar va poate garanta 100 de puncte pe aceasta problema.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>tablete.in</var> contine pe prima linie doua numere intregi <var>N</var> si <var>K</var> separate printr-un spatiu, avand semnificatiile de mai sus.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>tablete.out</var> se vor scrie <var>N</var> linii continand cate <var>N</var> valori intregi, reprezentand o varianta posibila pentru tableta de ciocolata cu numere.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 1000</var></li>
+<li><var>1 &lt; K &lt; N</var></li>
+<li>Orice solutie furnizata care sa respecte conditiile din enunt este considerata corecta.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>tablete.in</th><th>tablete.out</th></tr><tr><td><var>4 3</var><br></td><td><var>2 3 <strong>4</strong> 8</var><br><var>1 5 <strong>6</strong> 7</var><br><var>9 11 <strong>12</strong> 16</var><br><var>10 13 <strong>14</strong> 15</var><br></td></tr></table><h2>Explicatie</h2>
+
+<p>Numerele ingrosate reprezinta coloana <var>K</var> pe care s-a tinut cont de paritate.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

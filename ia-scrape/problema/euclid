@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>euclid.in, euclid.out</td><td><strong>Sursă</strong></td><td>Summer Challenge 2007, runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=205">Igor Naverniouk</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/danielp"><img src="/utilizator/danielp?action=download&amp;file=avatar&amp;resize=L16x16" alt="danielp">Daniel Pasaila</a> <a title="Rating danielp: 532" class="rating-badge-4" href="http://infoarena.ro/utilizator/danielp?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/danielp">danielp</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>4 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=euclid">Vezi solutiile trimise</a></p>
+
+<h1>Euclid<br></h1>
+
+<p>Euclid era un om destept care stia ca timpul masinilor de calcul avea sa vina intr-o zi. Stia ca oamenii aveau sa organizeze competitii pe aceste masini, asa ca a vrut sa contribuie cu un puzzle.<br>
+Fiind data o matrice de <var>m</var> linii si <var>n</var> coloane de intregi pozitivi, sa se gaseasca un dreptunghi de inaltime cel putin <var>h</var> si lungime cel putin <var>w</var>, astfel incat numerele din dreptunghi sa aiba cel mai mare cmmdc dintre toate dreptunghiurile de acest fel.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare va incepe printr-o linie ce contine numarul de teste, <var>T</var>. Fiecare test va incepe printr-o linie ce contine <var>m</var>, <var>n</var>, <var>h</var> si <var>w</var>. Urmeaza <var>m</var> linii a cate <var>n</var> intregi pozitivi, descriind matricea de mai sus.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pentru fiecare fisier de iesire, scrieti cate o linie continand "Case #<var>x</var>: ", dupa care afisati cel mai mare cmmdc (<var>x</var> reprezinta numarul testului).</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 20</var></li>
+<li><var>1 ≤ h ≤ m</var></li>
+<li><var>1 ≤ w ≤ n</var></li>
+<li><var>1 ≤ m,n ≤ 400</var></li>
+<li>numerele din matrice sunt intre <var>1</var> si <var>10<sup>9</sup></var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>euclid.in</th><th>euclid.out</th></tr><tr><td>3<br>
+2 2 1 1<br>
+1 2<br>
+3 4<br>
+3 3 3 1<br>
+1 2 3<br>
+4 5 6<br>
+7 8 9<br>
+2 2 2 2<br>
+1000000000 1000000000<br>
+1000000000 1000000000<br></td><td>Case #1: 4<br>
+Case #2: 3<br>
+Case #3: 1000000000<br></td></tr></table><h3>Explicatie</h3>
+
+
+<ul><li>pentru primul exemplu, este evident ca dreptunghiul cu cmmdc maxim contine doar patratelul de coordonate (1, 1) (coordonatele sunt numerotate de la <var>0</var>)</li>
+<li>pentru al 2-lea exemplu dreptunghiul cu cmmdc maxim este format din ultima coloana a matricii; nu exista alt dreptunghi de dimensiuni mai mari sau egale care sa aiba cmmdc-ul mai mare</li>
+<li>in cazul ultimului exemplu putem alege intreaga matrice</li>
+</ul><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

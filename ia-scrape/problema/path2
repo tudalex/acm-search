@@ -1,0 +1,50 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>path2.in, path2.out</td><td><strong>Sursă</strong></td><td>preONI 2002</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>1000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=path2">Vezi solutiile trimise</a></p>
+
+<h1>Path2<br></h1>
+
+<p>Omul de afaceri Gigi trebuie sa ajunga in orasul <var>J</var> sa incheie un contract important. Inainte de a ajunge in orasul <var>J</var> pentru a incheia contractul, el trebuie sa treaca prin orasul <var>I</var>, unde are alta treaba importanta de rezolvat. Intrucat are un program foarte incarcat, Gigi vrea sa isi desfasoare intreaga calatorie intr-un timp cat mai scurt. De aceea, ar vrea sa stie lungimea minima a unui traseu care porneste din orasul in care se afla el initial (numerotat cu <var>1</var>), trece prin orasul <var>I</var> si se termina in orasul <var>J</var>, cate astfel de trasee distincte (cu timp de parcurgere minim) exista si cateva dintre aceste trasee.</p>
+
+<h2>Date de intrare</h2>
+
+<p>In fisierul <var>path2.in</var>, pe prima linie, se afla <var>4</var> numere intregi: <var>N M I J</var>, reprezentand numarul de orase ale tarii in care se afla afaceristul Gigi, numarul de legaturi directe bidirectionale intre orase, numarul orasului in care trebuie sa ajunga Gigi mai intai si numarul orasului unde isi va termina Gigi calatoria. Pe fiecare din urmatoarele <var>M</var> linii se afla cate o pereche de orase intre care exista legatura directa.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului <var>path2.out</var> veti afisa <var>T</var>, reprezentand durata minima (in ore) a unui traseu care trece prin orasul <var>I</var> si se termina in orasul <var>J</var>. Pe a doua linie veti afisa numarul variantelor distincte de a ajunge in orasul <var>J</var> in timpul <var>T</var> (trecand prin orasul <var>I</var>). Pe urmatoarele linii veti afisa toate variantele (de lungime minima) de a ajunge in orasul <var>J</var>, trecand prin orasul <var>I</var>. Daca numarul acestor variante depaseste <var>100</var>, atunci afisati doar <var>100</var> dintre ele (oricare <var>100</var>). O varianta va fi afisata ca o succesiune de orase prin care trece Gigi: orasul de start (<var>1</var>) , orasul urmator, .. , <var>I</var> , .. , <var>J</var>, separate prin spatii. Intre oricare doua orase consecutive trebuie sa existe o legatura directa. Fiecare varianta va fi afisata pe o linie de una singura.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 100</var></li>
+<li><var>1 &lt; <span class="caps">I,J </span>≤ N</var></li>
+<li><var>I &lt;&gt; J</var></li>
+<li><var>2 ≤ M ≤ N*(N-1)/2</var></li>
+<li>Timpul necesar parcurgerii unei legaturi directe intre <var>2</var> orase este <var>1</var> ora. Asadar, o varianta de lungime minima de a ajunge din orasul <var>1</var> in orasul <var>J</var>, trecand si prin orasul <var>I</var> este reprezentata printr-o succesiune de <var>T+1</var> orase (unde <var>T</var> este timpul minim ce trebuie calculat)</li>
+<li>Numarul variantelor distincte de lungime minima va fi minim <var>1</var> si maxim <var>2 000 000 000</var></li>
+<li>Lui Gigi ii este permis sa treaca prin orasul <var>J</var> inainte de a ajunge in orasul <var>I</var>, dar el nu poate incheia contractul in orasul <var>J</var> decat dupa ce a trecut prin orasul <var>I</var> (asta inseamna ca ultimul oras al traseului sau trebuie sa fie obligatoriu orasul <var>J</var>)</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>path2.in</th><th>path2.out</th></tr><tr><td>7 8 7 4<br>
+1 2<br>
+1 3<br>
+2 4<br>
+3 4<br>
+4 5<br>
+4 6<br>
+5 7<br>
+6 7<br></td><td>6<br>
+8<br>
+1 2 4 5 7 5 4<br>
+1 2 4 5 7 6 4<br>
+1 2 4 6 7 5 4<br>
+1 2 4 6 7 6 4<br>
+1 3 4 5 7 5 4<br>
+1 3 4 5 7 6 4<br>
+1 3 4 6 7 5 4<br>
+1 3 4 6 7 6 4<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

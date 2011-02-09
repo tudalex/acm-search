@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>carnati.in, carnati.out</td><td><strong>Sursă</strong></td><td>preONI 2008, Runda 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=153">Adrian Diaconu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=carnati">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=carnati">Vezi solutiile trimise</a></p>
+
+<h1>Carnati<br></h1>
+
+<p>Gigel vrea sa deschida un magazin de carnati. Pentru acest lucru el va angaja un singur vanzator care va lucra un interval continuu de timp si care va fi platit cu o suma fixa <var>C</var> pentru fiecare unitate de timp lucrata. Deasemenea el va avea de vanzare un singur tip de carnati pentru care vrea sa stabileasca un pret fix. Gigel stie ca prin fata magazinului sau trec <var>N</var> oameni si pentru fiecare om cunoaste momentul de timp la care trece <var>T<sub>i</sub></var> si pretul <var>P<sub>i</sub></var> pe care este dispus sa il plateasca pentru un carnat (fiecare om <var>i</var> va cumpara un singur carnat daca <var>P<sub>i</sub></var> este mai mare sau egal decat pretul fixat de Gigel).</p>
+
+<h2>Cerinta</h2>
+
+<p>Ajutati-l pe Gigel sa stabileasca intervalul de timp in care va fi deschis magazinul si pretul pe care il va fixa, pentru a maximiza profitul sau.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>carnati.in</var> va contine pe prima linie doua numere intregi <var>N</var> si <var>C</var>. Pe urmatoarele <var>N</var> linii se vor afla cate 2 numere intregi <var>T<sub>i</sub></var> si <var>P<sub>i</sub></var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>carnati.out</var> se va afla un singur numar, profitul maxim pe care il poate obtine Gigel.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 2.000</var></li>
+<li><var>0 ≤ T<sub>i</sub> ≤ 1.500</var></li>
+<li><var>0 ≤ P<sub>i</sub> ≤ 1.000.000</var></li>
+<li><var>1 ≤ C ≤ 1.000.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>carnati.in</th><th>carnati.out</th></tr><tr><td>8 13<br>
+2 115<br>
+8 157<br>
+11 56<br>
+15 129<br>
+19 158<br>
+35 137<br>
+50 116<br>
+59 129<br></td><td>231<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Magazinul va fi deschis de la <var>8</var> la <var>19</var>. Pretul fixat de el va fi <var>129</var>. Clientii <var>2</var>, <var>4</var> si <var>5</var> vor cumpara cate un carnat. Vanzatorul va fi platit cu <var>13*12=156</var> deoarece lucreaza <var>12</var> unitati de timp. Profitul sau va fi <var>3*129-12*13=231</var>.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

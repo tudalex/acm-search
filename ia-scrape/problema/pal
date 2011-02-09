@@ -1,0 +1,61 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>pal.in, pal.out</td><td><strong>Sursă</strong></td><td>ONI 2005</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=119">Silviu-Ionut Ganceanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">4/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=pal">Vezi solutiile trimise</a></p>
+
+<h1>Pal<br></h1>
+
+<p>Printul Algorel este in incurcatura din nou: a fost prins de Spanul cel Negru in incercarea sa de a o salva pe printesa si acum este inchis in Turnul cel Mare. Algorel poate evada daca gaseste combinatia magica cu care poate deschide poarta turnului. Printul stie cum se formeaza aceasta combinatie magica: trebuie sa utilizeze toate cifrele scrise pe usa turnului pentru a obtine doua numere palindroame, astfel incat suma lor sa fie minima, iar aceasta suma este combinatia magica ce va deschide usa. Primul numar palindrom trebuie sa aiba cel putin <var>L</var> cifre, iar cel de-al doilea poate avea orice lungime diferita de <var>0</var>. Numerele palindroame formate nu pot incepe cu cifra <var>0</var>. Acum interveniti dumneavoastra in poveste, fiind prietenul sau cel mai priceput in algoritmi. Prin noul super-telefon al sau, printul transmite numarul de aparitii a fiecarei cifre de pe usa turnului precum si lungimea minima <var>L</var> a primului numar, iar dumneavoastra trebuie sa-i trimiteti cat mai repede numerele cu care poate obtine combinatia magica.</p>
+
+<h2>Cerinta</h2>
+
+<p>Avand datele necesare, aflati doua numere palindroame cu care se poate obtine combinatia magica.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului <var>pal.in</var> contine un numar intreg <var>L</var> reprezentand lungimea minima a primului numar. Urmeaza 10 linii: pe linia <var>i+2</var> se va afla un numar intreg reprezentand numarul de aparitii ale cifrei <var>i</var>, pentru <var>i</var> cu valori de la <var>0</var> la <var>9</var>.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Prima linie a fisierului de iesire <var>pal.out</var> contine primul numar palidrom, iar cea de-a doua linie contine cel de-al doilea numar palindrom. Daca exista mai multe solutii se va scrie doar una dintre ele.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li>In total vor fi cel mult <var>100</var> de cifre</li>
+<li><var>1 ≤ L &lt; 100</var> si <var>L</var> va fi mai mic decat numarul total de cifre</li>
+<li>Pentru datele de test va exista intotdeauna solutie: se vor putea forma din cifrele scrise pe usa turnului doua numere care incep cu o cifra diferita de <var>0</var>, iar primul numar sa aiba cel putin <var>L</var> cifre</li>
+<li>Un numar este palindrom daca el coincide cu rasturnatul sau. De exemplu <var>12321</var> si <var>7007</var> sunt numere palindroame, in timp ce <var>109</var> si <var>35672</var> nu sunt.</li>
+<li>Pentru <var>30%</var> dintre teste, numarul total de cifre va fi cel mult <var>7</var>; pentru alte <var>40%</var> din teste numarul total de cifre va fi cel mult <var>18</var>, iar pentru restul de <var>30%</var> din teste numarul total de cifre va fi mai mare sau egal cu <var>30</var></li>
+<li>Fiecare linie din fisierul de intrare si din fisierul de iesire se termina cu marcaj de sfarsit de linie.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>pal.in</th><th>pal.out</th></tr><tr><td>5 <br>
+  3<br>
+  2<br>
+  3<br>
+  0<br>
+  0<br>
+  0<br>
+  0<br>
+  0<br>
+  0<br>
+  0<br></td><td>10001<br>
+  222</td></tr></table><h3>Explicatii</h3>
+
+<p>Pentru acest exemplu avem L = 5, 3 cifre de 0, 2 cifre de 1 si 3 cifre de 2. Cifrele de la 3 la 9 lipsesc de pe usa turnului.<br>
+Cele doua palindroame cu care se genereaza combinatia magica sunt 10001 si 222. Combinatia magica va fi suma acestora si anume 10223 (care este suma minima pe care o putem obtine).</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_1"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=61">Greedy</a></span>
+            <a href="javascript:show_tag_list(61)" id="tag_anchor_61" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_61"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=70">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

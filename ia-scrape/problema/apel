@@ -1,0 +1,59 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>apel.in, apel.out</td><td><strong>Sursă</strong></td><td>ONI 2007, clasa 10</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=171">Emanuela Cerchez</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/DITzoneC"><img src="/utilizator/DITzoneC?action=download&amp;file=avatar&amp;resize=L16x16" alt="DITzoneC">Adrian Diaconu</a> <a title="Rating DITzoneC: 596" class="rating-badge-4" href="http://infoarena.ro/utilizator/DITzoneC?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/DITzoneC">DITzoneC</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=apel">Vezi solutiile trimise</a></p>
+
+<h1>Apel<br></h1>
+
+<p>Un apel de functie este un sir de caractere, constituit din numele functiei apelate (o litera mare a alfabetului englez), urmat de lista parametrilor actuali ai functiei, incadrata intre paranteze rotunde. In lista de parametri actuali pot fi <var>1</var>, <var>2</var>, ... maximum <var>10</var> parametri, separati prin virgula. Un parametru actual poate fi o constanta (o cifra araba), o variabila (o litera mica a alfabetului englez) sau un apel de functie.</p>
+
+<p>De exemplu: <code>F(2,a,G(c),G(H(x)))</code><br>
+Functia apelata este <var>F</var> cu <var>4</var> parametri. Primul parametru actual este constanta <var>2</var>, al doilea este variabila <var>a</var>, al treilea este apelul functiei <var>G</var> (functie cu un singur parametru - variabila <var>c</var>), al patrulea este apelul functiei <var>G</var> (care are ca parametru apelul functiei <var>H</var>).</p>
+
+<p>Numarul de parametri ai unei functii se numeste aritate. O functie poate fi apelata de ori cate ori, dar de fiecare data numarul de parametri specificati la apel trebuie sa fie egal cu aritatea functiei.</p>
+
+<p>Fiecare dintre functiile care intervin in apel se poate explicita cu ajutorul unei expresii aritmetice sub forma:<br><code>F(a,b,c,...)=expresie_aritmetica</code><br>
+Parametrii specificati la explicitarea functiei ii vom denumi parametri formali. Daca functia are aritatea <var>n</var> (<var>1 ≤ n ≤ 10</var>), atunci cand explicitam functia, parametrii formali sunt denumiti utilizand in ordine primele <var>n</var> litere mici ale aflabetului englez. In expresia aritmetica care expliciteaza functia apar ca variabile doar parametrii formali ai functiei (denumiti asa cum am precizat cu primele <var>n</var> litere mici ale alfabetului englez).<br>
+Expresia aritmetica ce expliciteaza o functie este constituita din unul sau mai multi termeni separati prin operatorii <var>+</var> (semnificand adunare) sau <var>-</var> (semnificand scadere). Un termen este constituit din unul sau mai multi factori separati prin operatorul <var>*</var> (semnificand inmultire). Un factor poate fi o constanta (cifra araba), o variabila (un parametru formal al functiei) sau o expresie aritmetica incadrata intre paranteze rotunde.</p>
+
+<p>Valoarea obtinuta in urma unui apel de functie se obtine inlocuind in ordine parametrii formali cu parametrii actuali, apoi efectuand operatiile specificate in expresia aritmetica ce expliciteaza functia. </p>
+
+<h2>Cerinta</h2>
+
+<p>Dat fiind un apel de functie, valorile variabilelor care intervin in acest apel, precum si explicitarile functiilor utilizate in acest apel, sa se determine valoarea obtinuta in urma acestui apel.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>apel.in</var> contine pe prima linie sirul de caractere care reprezinta apelul functiei. Pe urmatoarele linii sunt descrise valorile variabilelor, cate o variabila pe o linie sub forma:<br><code>nume_variabila=valoare</code><br>
+Pe urmatoarele linii sunt explicitate functiile ce intervin in apelul de pe prima linie, sub forma descrisa in enunt.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>apel.out</var> va contine o singura linie pe care va fi scris un numar intreg reprezentand valoarea obtinuta in urma apelului din fisierul de intrare.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>Orice linie din fisierul de intrare are maximum <var>250</var> de caractere.</li>
+<li>Valorile variabilelor sunt numere naturale de maximum <var>3</var> cifre.</li>
+<li>Valoarea obtinuta in urma apelului functiei este in intervalul [<var>-2.000.000.000, 2.000.000.000</var>].</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>apel.in</th><th>apel.out</th></tr><tr><td>F(2,a,G<code>(</code>c),G(H(x)))<br>
+x=3<br>
+a=0<br>
+c=1<br>
+H(a)=2*a-3<br>
+G(a)=2*a*a-5*a+6<br>
+F(a,b,c,d)=a*b*c-2*d*c+4*a*c<br></td><td>-30<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Functia <var>F</var> are <var>4</var> parametri. Primul parametru formal (<var>a</var>) este inlocuit de primul paramatru actual (deci are valoarea <var>2</var>).<br>
+Al doilea parametru formal (<var>b</var>) este inlocuit de al doilea parametru actual deci are valoarea variabilei <var>a</var> (adica <var>0</var>).<br>
+Al treilea parametru formal (<var>c</var>) este inlocuit de al treilea parametru actual (apelul <var>G<code>(</code>c)</var>) deci are valoarea <var>2*1*1-5*1+6=3</var><br>
+Al patrulea parametru formal (<var>d</var>) primeste valoarea celui de al patrulea parametru actual (apelul <var>G(H(x))</var>) adica <var>2*H(x)*H(x)-5*H(x)+6=2*(2*x-3)*(2*x-3)-5*(2*x-3)+6=9</var>. <br>
+Deci, valoarea apelului functiei <var>F</var> este:<br><var>2*0*3-2*9*3+4*2*3=-30</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

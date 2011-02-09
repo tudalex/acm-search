@@ -1,0 +1,55 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ferma.in, ferma.out</td><td><strong>Sursă</strong></td><td>preONI 2005 Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.8 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=ferma">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ferma">Vezi solutiile trimise</a></p>
+
+<h1>Ferma<br></h1>
+
+<table style="margin:0.5em auto;" cellspacing="0"><tr><td align="center" style="background-color:#F8EABA;"><img src="http://infoarena.ro/template/badtests?action=download&amp;file=attention.gif&amp;safe_only=true" alt="" class="left" style="float:left"><em>Testele pentru aceasta problema nu sunt destul de bine construite pentru a departaja corect solutii ineficiente sau gresite.</em><br><a href="http://infoarena.ro/implica-te/imbunatatire-teste"><strong>Intra aici</strong></a> <em>daca vrei sa ne ajuti sa imbunatatim calitatea testelor pentru aceasta problema!</em></td></tr></table><p>Zaharel s-a dus in vizita la bunicii lui de la tara impreuna cu Eugenia. Ferma bunicilor este de forma circulara, iar acolo cresc <var>N</var> gaini. Ferma a fost impartita in <var>N</var> sectoare, numerotate de la <var>1</var> la <var>N</var>, astfel incat oricare doua sectoare avand numere consecutive sunt adiacente (se afla unul langa altul). In plus, primul si ultimul sector sunt adiacente. In fiecare sector se afla cate o gaina, iar aceasta depune oua in fiecare zi. Bunicii stiu pentu fiecare gaina care este productivitatea ei, adica un numar care reprezinta diferenta dintre consumul gainii si cat produce. Zaharel si cu Eugenia strang de <var>K</var> ori pe zi oua de la gaini astfel: la fiecare strangere cei doi aleg o secventa (adica un sir de sectoare adiacente) formata din cel putin un sector, care contine numai gaini de la care nu s-au luat oua in acea zi.</p>
+
+<h2>Cerinta</h2>
+
+<p>Cunoscand productivitatea fiecarea gaini cat si numarul de strangeri dintr-o zi, ajutati-i pe Zaharel si Eugenia sa stranga oua astfel incat suma productivitatilor gainilor de la care a strans oua sa fie maxima.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>ferma.in</var> se gasesc numerele naturale <var>N</var> si <var>K</var>. Pe urmatoarea linie se vor gasi <var>N</var> numere intregi reprezentand productivitatea fiecarei gaini.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>ferma.out</var> se va afisa suma maxima posibila a productivitatilor gainilor de la care se strang oua.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 10.000</var></li>
+<li><var>1 ≤ K ≤ 1.000</var></li>
+<li>Productivitatea fiecarei gaini este un numar intreg din intervalul [<var>-100.000, 100.000</var>]</li>
+<li>Daca suma maxima posibila a productivitatilor este un numar negativ se va afisa <var>0</var> (se prefera sa nu se stranga nici un ou)</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>ferma.in</th><th>ferma.out</th></tr><tr><td>8 2<br>
+2 -6 4 3 -7 -9 10 -1<br></td><td>18</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_1"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=61">Greedy</a></span>
+            <a href="javascript:show_tag_list(61)" id="tag_anchor_61" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_61"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=70">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

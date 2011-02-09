@@ -1,0 +1,55 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>rest.in, rest.out</td><td><strong>Sursă</strong></td><td>Selectie echipe ACM ICPC, UPB 2008</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=167">Paul-Dan Baltescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/pauldb"><img src="/utilizator/pauldb?action=download&amp;file=avatar&amp;resize=L16x16" alt="pauldb">Paul-Dan Baltescu</a> <a title="Rating pauldb: 792" class="rating-badge-4" href="http://infoarena.ro/utilizator/pauldb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/pauldb">pauldb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.3 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=rest">Vezi solutiile trimise</a></p>
+
+<h1>Rest<br></h1>
+
+<p>Se dau doua numere naturale <var>N</var> si <var>B</var> si un sir de <var>N</var> numere cu valori naturale cuprinse intre <var>0</var> si <var>B-1</var>. Pe acest sir se pot efectua doua tipuri de operatii:</p>
+
+
+<ol><li>modificarea unui element: elementul de pe pozitia <var>x</var> <var>(1 ≤ x ≤ N)</var> ia valoarea <var>y</var> <var>(0 ≤ y &lt; B)</var></li>
+<li>interogarea pe un interval: se cere restul la <var>P</var> al numarului format in baza <var>B</var> prin concatenarea elementelor dintre pozitiile <var>x</var> si <var>y</var> <var>(1 ≤ x ≤ y ≤ N)</var>.</li>
+</ol><h2>Cerinta</h2>
+
+<p>Pentru fiecare interogare afisati restul cerut.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului <var>rest.in</var> se afla <var>3</var> numere naturale <var>N</var>, <var>B</var> si <var>P</var> cu semnificatia din enunt. Pe urmatoarele <var>N</var> linii se afla cate un element al sirului dat. Apoi se afla numarul <var>M</var>, ce reprezinta numarul total de operatii. Pe urmatoarele <var>M</var> linii se afla cate <var>3</var> numere: <var>a</var> <var>x</var> <var>y</var> (<var>a</var> este <var>1</var> daca operatia este de modificare, <var>2</var> daca operatia este de interogare), iar <var>x</var> si <var>y</var> au semnificatia corespunzatoare fiecarei operatii.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul <var>rest.out</var> se vor afla raspunsurile la interogari, cate un numar pe linie, in ordinea data.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N, M ≤ 250 000</var></li>
+<li><var>2 ≤ B, P ≤ 30 000</var></li>
+<li>In urma concatenarii, pozitia cea mai semnificativa din numarul obtinut este <var>x</var>, pozitia <var>x+1</var> este urmatoarea, etc. </li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>rest.in</th><th>rest.out</th></tr><tr><td>5 10 7<br>
+1 <br>
+3 <br>
+9 <br>
+0 <br>
+7<br>
+3<br>
+2 2 3<br>
+1 3 0<br>
+2 3 5<br></td><td>4<br>
+0<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=84">Arbori de intervale</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

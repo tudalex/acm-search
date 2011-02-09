@@ -1,0 +1,68 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>mesaj3.in, mesaj3.out</td><td><strong>Sursă</strong></td><td>Lot Suceava 2007</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=128">Dan-Ionut Fechete</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/bogdan2412"><img src="/utilizator/bogdan2412?action=download&amp;file=avatar&amp;resize=L16x16" alt="bogdan2412">Bogdan-Cristian Tataroiu</a> <a title="Rating bogdan2412: 1162" class="rating-badge-4" href="http://infoarena.ro/utilizator/bogdan2412?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/bogdan2412">bogdan2412</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2 sec</td><td><strong>Limită de memorie</strong></td><td>32000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=mesaj3">Vezi solutiile trimise</a></p>
+
+<h1>Mesaj 3<br></h1>
+
+<p>Pana nu demult, in Bucovina existau doar <var>N</var> orase conectate intre ele prin <var>N - 1</var> sosele bidirectionale. Cu toate acestea, se putea ajunge din orice oras in orice alt oras mergand pe una sau mai multe sosele.</p>
+
+<p>Cand Stefan trebuia sa faca un anunt important, el trimitea mesajul catre fiecare dintre cei <var>M</var> mesageri ai sai. Fiecare mesager, dupa primirea mesajului de la Stefan, pleaca sa transmita mesajul primit pe o ruta fixata. Mai exact, mesagerul <var>i</var> <var>(1 ≤ i ≤ M)</var> va transmite mesajul in toate orasele situate pe ruta care porneste din orasul <var>a<sub>i</sub></var> si ajunge in orasul <var>b<sub>i</sub></var>. Pentru a transmite mesajul in toate orasele de pe ruta sa, mesagerul <var>i</var> <var>(1 ≤ i ≤ M)</var> va primi <var>X<sub>i</sub></var> galbeni.</p>
+
+<h2>Cerinta</h2>
+
+<p>Care este numar minim de galbeni pe care Stefan trebuia sa-l plateasca pentru ca mesajul sau sa ajunga in toate cele <var>N</var> orase din Bucovina?</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>mesaj3.in</var> contine pe prima linie numarul natural <var>N</var>, reprezentand numarul de orase din Bucovina. Urmatoarele <var>N - 1</var> linii contin cate doua numere naturale distincte separate printr-un spatiu <var>a b</var> cu semnificatia "exista o sosea care conecteaza direct orasele <var>a</var> si <var>b</var>". Pe linia <var>N + 1</var> este scris un numar natural <var>M</var> reprezentand numarul de mesageri. Pe urmatoarele <var>M</var> linii se afla informatii despre cei <var>M</var> mesageri. Pe cea de a <var>i</var>-a linie dintre cele <var>M</var> <var>(1 ≤ i ≤ M)</var> sunt scrise trei numere naturale separate prin cate un spatiu <var>a<sub>i</sub> b<sub>i</sub> X<sub>i</sub></var>, cu semnificatia "mesagerul <var>i</var> parcurge ruta de la orasul <var>a<sub>i</sub></var> la orasul <var>b<sub>i</sub></var>, fiind platit cu <var>X<sub>i</sub></var> galbeni".</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>mesaj3.out</var> va contine o singura linie pe care va fi scris numarul minim de galbeni pe care trebuie sa-i plateasca Stefan, pentru ca mesajul sa fie transmis in toate cele <var>N</var> orase.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 &lt; N &lt; 11011</var></li>
+<li><var>0 &lt; M &lt; 110011</var></li>
+<li><var>0 &lt; X<sub>i</sub> &lt; 1111</var>, pentru orice <var>1 ≤ i ≤ M</var></li>
+<li><var>1 ≤ a<sub>i</sub>, b<sub>i</sub> ≤ N</var>, pentru orice <var>1 ≤ i ≤ M</var></li>
+<li>Nu vor exista mai mult de <var>9</var> mesageri care sa treaca prin acelasi oras.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>mesaj3.in</th><th>mesaj3.out</th></tr><tr><td>10<br>
+1 2<br>
+1 3<br>
+3 4<br>
+3 5<br>
+5 6<br>
+5 7<br>
+5 8<br>
+2 9<br>
+2 10<br>
+9<br>
+8 6 10<br>
+10 9 10<br>
+1 4 30<br>
+4 1 10<br>
+7 8 50<br>
+1 7 10<br>
+6 1 10<br>
+10 1 10<br>
+9 1 10<br></td><td>40<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Suma minima necesara este de <var>40</var> de galbeni.<br>
+Sunt necesari <var>4</var> mesageri, cu rutele:</p>
+
+
+<ul><li><var>8 6</var></li>
+<li><var>1 7</var></li>
+<li><var>4 1</var></li>
+<li><var>10 9</var></li>
+</ul><p>Exista si alte solutii, dar pentru acestea suma necesara este mai mare.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

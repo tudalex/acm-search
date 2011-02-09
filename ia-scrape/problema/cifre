@@ -1,0 +1,58 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>cifre.in, cifre.out</td><td><strong>Sursă</strong></td><td>preONI 2005 Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=cifre">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=cifre">Vezi solutiile trimise</a></p>
+
+<h1>Cifre<br></h1>
+
+<p>Eugenia ii pune adesea intrebari dificile lui Zaharel, nu pentru ca nu stie raspunsul, dar vrea sa vada cat de perspicace este Zaharel. Uneori exagereaza si intrebarile ei sunt foarte grele, chiar si pentru Zaharel; atunci acesta va cere ajutorul vostru! Astazi Eugenia i-a pus urmatoarea intrebare lui Zaharel: "eu ma gandesc la un numar intreg din intervalul <var>[A...B]</var>, care este probabilitatea ca numarul la care ma gandesc sa contina cel putin <var>K</var> cifre de valoare <var>C</var>"?</p>
+
+<h2>Cerinta</h2>
+
+<p>Ajutati-l pe Zaharel sa raspunda cat mai repede la intrebare.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie din fisierul de intrare se gasesc numerele intregi <var>A, B, C</var> si <var>K</var> (in ordinea aceasta)</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Pe prima linie din fisierul de iesire se va scrie probabilitatea, un numar real cu patru zecimale, ca numarul din intervalul <var>[A...B]</var> la care se gandeste Eugenia sa aiba cel putin <var>K</var> cifre de valoare <var>C</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>0 ≤ A ≤ B &lt; 1.000.000.000</var></li>
+<li><var>0 ≤ C, K ≤ 9</var></li>
+<li>Pentru cel putin <var>50%</var> din teste <var>B-A ≤ 1.000.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>cifre.in</th><th>cifre.out</th></tr><tr><td>1 13 1 1</td><td>0.3846</td></tr></table><h3>Explicatii</h3>
+
+<p>In intervalul <var>[1..13]</var> sunt <var>5</var> numere care contin cel putin o cifra de valoare <var>1: 1,10,11,12,13</var>. <br>
+Astfel, probabilitatea este <var>5/13 = 0.(384615)</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=40">Matematica</a></span>
+            <a href="javascript:show_tag_list(40)" id="tag_anchor_40" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_40"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=105">Formula</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

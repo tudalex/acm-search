@@ -1,0 +1,54 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>pattern.in, pattern.out</td><td><strong>Sursă</strong></td><td>Lot Cluj 2009, Baraj 6</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=119">Silviu-Ionut Ganceanu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/sima_cotizo"><img src="/utilizator/sima_cotizo?action=download&amp;file=avatar&amp;resize=L16x16" alt="sima_cotizo">Sima Cotizo</a> <a title="Rating sima_cotizo: 638" class="rating-badge-1" href="http://infoarena.ro/utilizator/sima_cotizo?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/sima_cotizo">sima_cotizo</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.75 sec</td><td><strong>Limită de memorie</strong></td><td>8192 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=pattern">Vezi solutiile trimise</a></p>
+
+<h1>Pattern<br></h1>
+
+<p>Se dau un text şi o mască formate din litere mici ale alfabetului englez. În plus, în mască pot apărea caracterele speciale <var>?</var> şi <var>*</var>.</p>
+
+<p>Spunem că masca se potriveşte peste o subsecvenţă <var>S</var> din text dacă şi numai dacă înlocuind fiecare caracter <var>?</var> cu exact o literă (câte o literă pentru fiecare <var>?</var> din mască) şi fiecare <code>*</code> cu o secvenţă de litere (eventual vidă; câte una pentru fiecare <code>*</code> din mască) se obţine subsecvenţa <var>S</var>.</p>
+
+<p>Două potriviri peste aceeaşi subsecvenţă <var>S</var> sunt considerate diferite dacă există cel puţin un character special care se înlocuieşte cu un caracter/secvenţă de pe alte poziţii din <var>S</var> în cele două potriviri. De asemenea, două potriviri peste subsecvenţe diferite din text sunt considerate distincte. Două subsecvenţe sunt considerate diferite dacă se găsesc pe poziţii diferite în text, chiar dacă ele sunt egale dacă le comparăm ca string-uri.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Aflaţi numărul de potriviri distincte ale măştii în text.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare <var>pattern.in</var> se găseşte un număr <var>T</var> care reprezintă numărul de teste. Urmează câte două linii pentru fiecare test: pe prima linie textul iar pe a doua masca pentru testul respectiv.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>pattern.out</var> se vor găsi <var>T</var> linii conţinând câte un singur număr egal cu numărul posibilităţilor de potrivire a măştii în text modulo <var>1 000 000 007</var> pentru fiecare test.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 3</var></li>
+<li><var>1 ≤ lungime(text) ≤ 100 000</var></li>
+<li><var>1 ≤ lungime(mască) ≤ 50 000</var></li>
+<li>Pentru <var>40%</var> din teste: <var>lungime(text) ≤ 3 000</var> şi <var>lungime(mască) ≤ 1 000</var>.</li>
+<li>Numărul caracterelor speciale din mască va fi mai mic decât <var>101</var>.</li>
+<li>În mască nu vor exista două <var>*</var> alăturate şi există cel puţin o literă.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>pattern.in</th><th>pattern.out</th></tr><tr><td>3<br>
+aababba<br>
+a?b*<br>
+abbabbcbaba<br>
+?c?<br>
+aaa<br>
+a*a*<br></td><td>7<br>
+1<br>
+4<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>În primul test avem următoarele potriviri: <var>aababba, aababba, aababba, aababba, aababba, aababba, aababba</var>.<br>
+Pentru al doilea test avem o singură potrivire: <var>abbabbcbaba</var>.<br>
+Pentru al treilea test avem potrivirile (caracterele îngroşate sunt potrivite peste <var>*</var>): <var>aaa,aaa, a</var><strong>a</strong><var>a, aa</var><strong>a</strong></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

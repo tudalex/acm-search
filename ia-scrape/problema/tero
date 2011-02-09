@@ -1,0 +1,53 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>tero.in, tero.out</td><td><strong>Sursă</strong></td><td>Winter Challenge 2008, Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=252">Bogdan Alexandru Stoica</a>, <a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/fireatmyself"><img src="/utilizator/fireatmyself?action=download&amp;file=avatar&amp;resize=L16x16" alt="fireatmyself">Bogdan A. Stoica</a> <a title="Rating fireatmyself: 536" class="rating-badge-2" href="http://infoarena.ro/utilizator/fireatmyself?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/fireatmyself">fireatmyself</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=tero">Vezi solutiile trimise</a></p>
+
+<h1>Tero<br></h1>
+
+<p>Dupa ce a reusit sa-si indeplineasca, cu succes, toate indatoririle de primar, Dubluveu este ales Presedintele Romaniei. La prima intalnire cu <a href="http://www.sri.ro/" class="wiki_link_external">Serviciul Roman de Informatii</a>, este informat de un atac terorist care ar urma sa aiba loc foarte curand. Din fericire, <span class="caps">SRI </span>cunoaste planurile teroristilor. Conform raportului, raufacatorii doresc sa atace Capitala si Orasul-port de la Marea Neagra. Romania are <var>N</var> orase numerotate de la <var>1</var> la <var>N</var>, legate prin <var>M</var> drumuri bidirectionate de diferite lungimi. Capitala are numarul de ordine <var>1</var>, iar Orasul-port are numarul de ordine <var>N</var>. O solutie propusa de catre seful <span class="caps">SRI </span>este ca, toate drumurile dintre obiectivele vizate sa fie pazite de cei <var>S</var> soldati ai armatei. Astfel, Presedintele ar putea cere plasarea soldatilor pe un drum, oricat de aprope de unul dintre orasele ce-l marginesc, <ins>dar nu in orase</ins> (pentru a evita panica). Fiind o persoana care gandeste situatia in profunzime, Dubluveu si-a pus urmatoarea problema: Daca teroristii reusesc, totusi, sa atace unul dintre orasele tinta, soldatii ar trebui mobilizati in cel mai scurt timp in orasul atacat. Din fericire, toti militarii au viteza constanta de 1m/s, iar timpul necesar mobilizarii unui soldat este egal cu maximul distantelor pana la cele doua orase. Din pacate, planul trebuie intai realizat teoretic si, cum timpul este foarte scurt, va fi nevoie de un programator cu experienta care s-o faca.</p>
+
+<h2>Cerinta</h2>
+
+<p>Presedinitiea v-a insarcinat pe dumneavoastra sa va ocupati cu implementarea planului contra teroristilor. Deci, trebuie sa gasiti o aranjare a celor <var>S</var> soldati, astfel incat <ins>oricare</ins> drum de la <var>1</var> la <var>N</var> sa fie pazit, soldatii sa nu fie plasati in oras, iar mobilizarea totala a acestora sa fie minima.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>tero.in</var> se vor afla 3 numere <var>N</var>, <var>M</var>, si <var>S</var> cu semnificatiile din enunt. Urmeaza apoi <var>M</var> linii cu cate trei numere intregi <var>i</var>, <var>j</var> si <var>dist</var>, avand semnificatia ca de intre orasul <var>i</var> si orasul <var>j</var> exista un drum de lungime <var>dist</var>.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>tero.out</var> se va scrie, pe o singura linie, un numar real cu o zecimala exacta, reprezentand mobilizarea minima.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 700</var></li>
+<li><var>1 ≤ M ≤ 131 072</var></li>
+<li><var>1 ≤ S ≤ M</var></li>
+<li>numarul de soldati este suficient de mare pentru a bloca toate drumurile de la <var>1</var> la <var>N</var></li>
+<li>pe un drum pot fi plasati oricati soldati</li>
+<li>lungimea unui drum nu depaseste <var>100 000</var></li>
+<li>punctajul se va acorda in functie de diferenta absoluta dintre raspunsul dumneavoastra si raspunsul comisiei:
+<ul><li><var>10</var> puncte/test daca diferenta ≤ <var>0.1</var></li>
+<li><var>5</var> puncte/test daca <var>0.1</var> &lt; diferenta ≤ <var>34.5</var></li>
+<li><var>3</var> puncte/test daca <var>34.5</var> &lt; diferenta ≤ <var>69</var></li>
+<li><var>1</var> punct/test daca <var>69</var> &lt; diferenta ≤ <var>103.5</var> </li>
+<li><var>0</var> puncte/test daca diferenta este &gt; <var>103.5</var></li>
+</ul></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>tero.in</th><th>tero.out</th></tr><tr><td>5 6 3<br>
+1 2 2<br>
+1 3 1<br>
+1 4 1<br>
+3 4 3<br>
+2 5 1<br>
+4 5 2<br></td><td>1.5<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Daca primul soldat este plasat pe muchia de la 1 la 2, la distanta 1.5 de 1 si 0.5 de 2, atunci distanta de la 1 la soldat este 1.5, iar distanta de la 5 la soldat este tot 1.5. Maximul dintre distante este 1.5. Daca plasez ceilaiti soldati pe muchia de la 4 la 5, la distanta 1.5 de 5 si, respectiv, 0.5 de 4, distanta de la 1 la soldati este de 1.5 si distanta de la 5 este tot 1.5. Maximul dintre distante este 1.5. Aceasta este mobilizarea minima, din oricare alta asezare rezultand o valoare mai mare.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

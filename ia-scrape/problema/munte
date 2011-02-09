@@ -1,0 +1,72 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>munte.in, munte.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=121">Dan Popovici</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">2/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=munte">Vezi solutiile trimise</a></p>
+
+<h1>Munte<br></h1>
+
+<p>Gheorghe vrea sa cucereasca un munte. El are anumite informatii despre munte. Stie cat de inalt este muntele si care e distanta pana la celaltalta parte a muntelui. El mai are si o lista cu puncte speciale prin care trebuie sa treaca, despre acest puncte stie inaltimea lor si ordinea in care apar, nu stie distanta dintre aceste puncte. Muntele este format din <var>3</var> tipuri de teren.</p>
+
+<p><img src="http://infoarena.ro/problema/munte?action=download&amp;file=img4.jpg&amp;safe_only=true" alt=""></p>
+
+
+<ul><li>Tipul 1: teren crescator, unde muntele creste un metru pe verticala pentru fiecare metru pe orizontala.</li>
+<li>Tipul 2: teren drept. Pe acesta portiune terenul nici nu urca nici nu coboara.</li>
+<li>Tipul 3: teren descrescator , unde muntele scade un metru pe verticala pentru fiecare metru pe orizontala.</li>
+</ul><h2>Cerinta</h2>
+
+<p>Gheorghe avand toate aceste informatii, <var>N</var> (inaltimea maxima a muntelui, presupunand ca muntele incepe la nivelul <var>0</var> si se termina la nivelul <var>0</var>), <var>D</var> - distanta pe orizontala a muntelui si inaltimea la fiecare punct special, vrea sa stie cate posibilitati are de a parcurge muntele.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Pe prima linie din fisierul <var>munte.in</var> se va afla numarul <var>N</var> - inaltimea maxima a muntelui, <var>D</var> - distanta pe orizontala a muntelui si <var>K</var> - numarul de puncte speciale.<br>
+Pe urmatoarele <var>K</var> linii sunt scrise inaltimile punctelor speciale</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Pe prima linie a fisierului <var>munte.out</var> se va gasi <var>P</var> - numarul de posibilitati de a traversa muntele.</p>
+
+<p>Observatii</p>
+
+
+<ul><li>Gheoghe incepe la nivelul <var>0</var> si trebuie sa termine la nivelul <var>0</var></li>
+<li>Doar incepul si sfasitul au nivelul <var>0</var>!</li>
+</ul><h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 50</var></li>
+<li><var>1 ≤ D ≤ 100</var></li>
+<li><var>0 ≤ K ≤ 50</var></li>
+<li><var>0 ≤ P ≤ 2<sup>63</sup>-1</var></li>
+</ul><p>Exemple</p>
+
+<table class="example" cellspacing="0"><tr><th>munte.in</th><th>munte.out</th></tr><tr><td>2 5 0<br></td><td>3</td></tr></table><h3>Explicatii </h3>
+
+<p>Cele 3 posibilitati diferite sunt:<br><img src="http://infoarena.ro/problema/munte?action=download&amp;file=img1.jpg&amp;safe_only=true" alt=""><br><img src="http://infoarena.ro/problema/munte?action=download&amp;file=img2.jpg&amp;safe_only=true" alt=""><br>
+  nu este o parcurgere valida pentru ca inaltimea muntelui nu este <var>2</var>, ci <var>1</var></p>
+
+<table class="example" cellspacing="0"><tr><th>munte.in</th><th>munte.out</th></tr><tr><td>2 5 2 <br>
+  2<br>
+  2<br></td><td>1</td></tr></table><h3>Explicatii </h3>
+
+<p><img src="http://infoarena.ro/problema/munte?action=download&amp;file=img3.jpg&amp;safe_only=true" alt=""></p>
+
+<p>Singura parcurgere posibila este cea de sus</p>
+
+<table class="example" cellspacing="0"><tr><th>munte.in</th><th>munte.out</th></tr><tr><td>3 8 4<br>
+  2<br>
+  2<br>
+  3<br>
+  1<br></td><td>7</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

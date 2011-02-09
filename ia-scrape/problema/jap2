@@ -1,0 +1,54 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>jap2.in, jap2.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2010, Runda 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=200">Bogdan-Cristian Tataroiu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/bogdan2412"><img src="/utilizator/bogdan2412?action=download&amp;file=avatar&amp;resize=L16x16" alt="bogdan2412">Bogdan-Cristian Tataroiu</a> <a title="Rating bogdan2412: 1162" class="rating-badge-4" href="http://infoarena.ro/utilizator/bogdan2412?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/bogdan2412">bogdan2412</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>3 sec</td><td><strong>Limită de memorie</strong></td><td>18432 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=jap2">Vezi solutiile trimise</a></p>
+
+<h1>Jap2<br></h1>
+
+<p>Bercea a primit sarcină de la mentorul său să facă o poveste frumoasă pentru următoarea problemă care va fi dată la Algoreea 2010. Înainte de asta, Bercea ar vrea să ştie cum se rezolvă şi vă cere ajutorul în schimbul unui cadou pe Facebook. Problema sună aşa:</p>
+
+<p>Fiind dat un număr prim <var>P</var> mai mic sau egal cu <var>100 007</var> să se răspundă rapid la <var>Q</var> intrebări de forma „Cu cât este egal (Combinări de <var>A</var> luate câte <var>B</var>) modulo <var>P</var>?”</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare <var>jap2.in</var> se vor afla două numere naturale <var>P</var> şi <var>Q</var> cu semnificaţiile din enunţ. Pe fiecare din următoarele <var>Q</var> linii se vor afla câte două numere naturale <var>A</var> şi <var>B</var> reprezentând o întrebare.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>jap2.out</var> se va afişa pe linia <var>i</var> răspunsul la cea de <var>i</var>-a întrebare.</p>
+
+<h2>Restricţii şi precizări</h2>
+
+
+<ul><li><var>1 ≤ P ≤ 100 007</var>, <var>P</var> prim.</li>
+<li><var>1 ≤ Q ≤ 100 000</var>.</li>
+<li><var>1 ≤ B ≤ A ≤ 10<sup>18</sup></var>.</li>
+<li>Combinări de <var>A</var> luate câte <var>B</var> este egal cu <var><sup>A!</sup>/<sub>B!*(A-B)!</sub></var>, unde <var>A! = 1 * 2 * 3 * ... * A</var>.</li>
+<li>Pentru <var>10%</var> din teste, <var>A, B ≤ 2 000</var></li>
+<li>Pentru <var>50%</var> din teste, <var>A, B ≤ 1 000 000 000</var></li>
+<li>Pentru <var>70%</var> din teste, <var>P ≤ 4 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>jap2.in</th><th>jap2.out</th></tr><tr><td>13 10<br>
+3 3<br>
+5 3<br>
+3 2<br>
+13 1<br>
+7 4<br>
+10 3<br>
+10 8<br>
+3 2<br>
+5 5<br>
+7 4<br></td><td>1<br>
+10<br>
+3<br>
+0<br>
+9<br>
+3<br>
+6<br>
+3<br>
+1<br>
+9<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>nums.in, nums.out</td><td><strong>Sursă</strong></td><td>ONI 2009 - baraj</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=231">Mircea Dima</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrei-alpha"><img src="/utilizator/andrei-alpha?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrei-alpha">Andrei-Bogdan Antonescu</a> <a title="Rating andrei-alpha: 700" class="rating-badge-1" href="http://infoarena.ro/utilizator/andrei-alpha?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrei-alpha">andrei-alpha</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=nums">Vezi solutiile trimise</a></p>
+
+<h1>Nums<br></h1>
+
+<p>Lui Termopanes îi place să se joace cu numere naturale foarte mari. Uneori sora lui îi oferă un număr nou şi în acest caz el îl adaugă în colecţia lui de numere. Alteori sora lui îl intreabă: <b>dacă ai pune numerele din colecţia ta în ordine crescătoare, care ar fi numărul de pe poziţia <var>k</var> ?</b></p>
+
+<h2>Cerinta</h2>
+
+<p>Cunoscând o succesiune de operaţii prin care sora lui Termopanes fie îi oferă acestuia un număr, fie îi pune o întrebare, răspundeţi în ordine la toate întrebările puse.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>nums.in</var> va conţine pe prima linie numărul natural n reprezentând numărul de operaţii. Pe următoarele <var>N</var> linii se vor afla cate <var>2</var> numere <var>t</var> şi <var>x</var> separate printr-un spaţiu. Dacă <var>t</var> este <var>1</var> atunci elementul <var>x</var> se adaugă în colecţia lui Termopanes, iar dacă <var>t</var> este <var>0</var>, atunci lui Termopanes <var>i</var> se adresează o întrebare.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>nums.out</var> va conţine <var>L</var> linii (câte o linie pentru fiecare operaţie de tipul <var>0</var>). Pe linia <var>i</var> se va afişa răspunsul la a <var>i</var>-a întrebare.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1</var> ≤ <var>N</var> ≤ <var>100000</var></li>
+<li><var>1</var> ≤ <var>k</var> ≤ numărul de elemente ale colecţiei la momentul întrebării</li>
+<li>Numărul de cifre al oricărui număr adăugat colecţiei nu va depaşi <var>100000</var></li>
+<li>Dimensiunea fişierului de intrare nu va depaşi <var>6</var> MB</li>
+<li>Dacă Termopanes primeşte un număr deja existent în colecţia sa, nu îl mai adaugă colecţiei.</li>
+<li>Niciun număr nu începe cu <var>0</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>nums.in</th><th>nums.out</th></tr><tr><td>7<br>
+1 1232<br>
+1 1002<br>
+1 212<br>
+0 2<br>
+1 213<br>
+1 123<br>
+0 3<br></td><td>1002<br>
+213<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>În momentul în care se pune prima întrebare, numerele din colecţie sunt: <var>212</var> <var>1002</var> <var>1232</var>, al <var>2</var>-lea fiind <var>1002</var><br>
+Când se pune a doua întrebare, numerele sunt: <var>123</var> <var>212</var> <var>213</var> <var>1002</var> <var>1232</var>, al <var>3</var>-lea fiind <var>213</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

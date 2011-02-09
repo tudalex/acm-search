@@ -1,0 +1,44 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>stalpi.in, stalpi.out</td><td><strong>Sursă</strong></td><td>preONI 2008, Runda 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=161">Adrian Airinei</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=stalpi">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=stalpi">Vezi solutiile trimise</a></p>
+
+<h1>Stalpi<br></h1>
+
+<p>O anumita strada din Orasul Efemer poate fi privita ca axa <var>Ox</var> a numerelor naturale. De-a lungul acestei strazi se afla <var>N</var> stalpi de iluminare publica. Al <var>i</var>-lea stalp se afla la coordonata <var>X<sub>i</sub></var> si pentru o suma de <var>C<sub>i</sub></var> lei se poate amplasa un bec in interiorul stalpului, care va lumina <var>S<sub>i</sub></var> metri in stanga stalpului si <var>D<sub>i</sub></var> metri in dreapta stalpului. Primarul orasului vrea ca toti stalpii sa fie vizibili. Un stalp este vizibil daca in interiorul lui este amplasat un bec sau daca se afla in raza de iluminare a altui stalp in care s-a amplasat un bec. El s-a decis sa aleaga o multime de stalpi si sa instaleze cate un bec in fiecare dintre acestia. Problema este ca va trebui sa plateasca pentru fiecare stalp ales costul necesar amplasarii unui bec in stalpul respectiv si vrea ca suma acestor costuri sa fie minima. Ajutati primarul afland costul minim necesar pentru ca toti stalpii din Orasul Efemer sa fie vizibili.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>stalpi.in</var> contine pe prima linie numarul <var>N</var> avand semnificatia din enunt. Pe urmatoarele <var>N</var> linii urmeaza cate un cvadruplu <var>X C S D</var> cu semnificatia ca stalpul <var>i</var> (pe linia <var>i+1</var> exista informatii despre stalpul <var>i</var>) se afla la coordonata <var>X</var>, costul pentru a amplasa un bec in interiorul lui este <var>C</var> si daca se realizeaza acest lucru va lumina <var>S</var> metri in stanga si <var>D</var> metri in dreapta.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pe prima linie a fisierului de iesire <var>stalpi.out</var> se afla un numar natural <var><span class="caps">MIN</span></var> reprezentand costul minim necesar pentru ca toti stalpii din oras sa fie vizibili.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100 000</var></li>
+<li><var>1 ≤ X<sub>i</sub>, S<sub>i</sub>, D<sub>i</sub> ≤ 10<sup>9</sup></var></li>
+<li><var>1 ≤ C<sub>i</sub> ≤ 100 000</var></li>
+<li>Daca se amplaseaza un bec in stalpul <var>i</var> el va lumina orice stalp <var>j</var> cu proprietatea <var>X<sub>i</sub>-S<sub>i</sub>≤ X<sub>j</sub> ≤ X<sub>i</sub>+D<sub>i</sub></var></li>
+<li>Nu exista doi stalpi diferiti care sa aibe aceiasi coordonata <var>X</var></li>
+<li>Toate numerele din fisierul de intrare sunt naturale</li>
+<li>In cel putin <var>40%</var> din teste <var>1 ≤ N ≤ 1000</var></li>
+<li>Datorita infrastructurii ciudate a stalpilor un bec poate fi amplasat in interiorul acestora</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>stalpi.in</th><th>stalpi.out</th></tr><tr><td>4<br>
+  3 1 3 5<br>
+  1 10 10 9<br>
+  7 2 5 3<br>
+  10 18 4 4<br></td><td>3<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Se va amplasa un bec in interiorul stalpilor <var>1</var> si <var>3</var>. Stalpul <var>2</var> va fi luminat de stalpul <var>1</var> iar stalpul <var>4</var> va fi luminat de stalpul <var>3</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

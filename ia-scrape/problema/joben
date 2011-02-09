@@ -1,0 +1,64 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>joben.in, joben.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2010, Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=167">Paul-Dan Baltescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/pauldb"><img src="/utilizator/pauldb?action=download&amp;file=avatar&amp;resize=L16x16" alt="pauldb">Paul-Dan Baltescu</a> <a title="Rating pauldb: 792" class="rating-badge-4" href="http://infoarena.ro/utilizator/pauldb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/pauldb">pauldb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=joben">Vezi solutiile trimise</a></p>
+
+<h1>Joben<br></h1>
+
+<p>Marcel are <var>T</var> perechi de şiruri ce conţin litere mici ale alfabetului englez. El mai are la dispoziţie un joben magic care poate efectua una din următoarele două operaţii:</p>
+
+
+<ul><li><strong>permutare</strong>: se permută caracterele şirului introdus în joben. De exemplu, dacă este introdus şirul <var>abb</var>, acesta poate deveni <var>abb</var>, <var>bab</var> sau <var>bba</var>.</li>
+<li><strong>transformare</strong>: pentru fiecare caracter din mulţimea <var>{'a', ..., 'z'}</var> se alege un caracter tot din mulţimea <var>{'a', ..., 'z'}</var>, astfel încât oricăror două litere diferite să le corespundă caractere diferite. Fiecare caracter din şirul introdus în joben este înlocuit cu corespondentul său. De exemplu, transformările <var>abcca -&gt; zdffz</var> şi <var>rdbarb -&gt; rbdkrd</var> sunt valide, în timp ce transformările <var>abcca -&gt; zdfgz</var> şi <var>abcde -&gt; ghhij</var> nu sunt valide.</li>
+</ul><h2>Cerinţă</h2>
+
+<p>Pentru fiecare din cele <var>T</var> perechi de şiruri să se precizeze dacă al doilea şir poate fi obţinut din primul şir efectuând oricâte operaţii cu jobenul.</p>
+
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>joben.in</var> conţine pe prima linie numărul întreg <var>T</var>. Pe următoarele <var>2*T</var> linii sunt descrise perechile de şiruri, câte un şir pe linie. Pentru orice <var>1 ≤ i ≤ T</var>, şirurile ce alcătuiesc perechea <var>i</var> se află pe liniile <var>2*i</var> şi <var>2*i+1</var> din fişier.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>joben.out</var> va conţine <var>T</var> linii. Pe linia <var>i</var> <var>(1 ≤ i ≤ T)</var> va fi scris mesajul <var>DA</var> dacă pentru a <var>i</var>-a pereche cel de-al doilea şir poate fi obţinut din primul şir după oricâte operaţii cu jobenul, respectiv <var>NU</var> în caz contrar. </p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 100</var></li>
+<li>Lungimea oricărui şir nu depăşeşte <var>100 000</var> de caractere.</li>
+<li>Două şiruri ce aparţin aceleiaşi perechi au acelaşi număr de caractere.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>joben.in</th><th>joben.out</th></tr><tr><td>2<br>
+esarfa<br>
+iepure<br>
+morcov<br>
+pepene<br></td><td>DA<br>
+NU<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Pe primul test, o soluţie posibilă este <var>esarfa -&gt; aserfe -&gt; aesfre -&gt; iepure</var>, constând în două transformări şi o permutare. Pentru al doilea test, nu există nicio secvenţă de operaţii care să transforme şirul <var>morcov</var> în şirul <var>pepene</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_1"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=61">Greedy</a></span>
+            <a href="javascript:show_tag_list(61)" id="tag_anchor_61" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_61"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=70">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_3"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=63">Sortare</a></span>
+            <a href="javascript:show_tag_list(63)" id="tag_anchor_63" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_63"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=64">Sortare</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,55 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>proc.in, proc.out</td><td><strong>Sursă</strong></td><td>ONI 2003</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">2/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=proc">Vezi solutiile trimise</a></p>
+
+<h1>Proc<br></h1>
+
+
+<p>O aplicatie ce trebuie executata pe un calculator multi-procesor consta din <var>N</var> fragmente de cod independente, ce pot fi rulate in paralel. Fiecare fragment trebuie executat in totalitate pe un singur procesor. Din dorinta de a paraleliza cat mai mult aplicatia, fragmentele de cod au dimensiuni mici si, in consecinta, timpi de executie mici. Mai precis, executia fiecarui fragment dureaza <span class="caps">UNUL </span>sau <span class="caps">DOUA </span>cicluri de ceas pe un procesor de tipul Pentium <span class="caps">IV.</span></p>
+
+<p>Sistemul pe care urmeaza sa fie executata aplicatia consta din <var>P</var> procesoare. Spre deosebire de majoritatea sistemelor de acest fel, insa, cele <var>P</var> procesoare au viteze de executie diferite. Primul procesor este un Pentium IV si este cel mai rapid. Al doilea procesor este de doua ori mai lent decat primul, al treilea de trei ori mai lent ... al <var>i</var>-lea procesor este de <var>i</var> ori mai incet decat primul. In aceste conditii, timpul de executie al fiecarui fragment de cod difera, in functie de procesorul pe care va fi executat. Sa prespunem ca un segment de cod are timpul de executie <var>T</var> (unde <var>T</var> este <var>1</var> sau <var>2</var>) pe primul procesor. Atunci pe un procesor <var>i</var>, timpul sau de executie va fi <var>i*T</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Stiind ca fragmentele de cod pot fi executate in orice ordine si pe orice procesor si ca orice procesor poate executa, la un moment dat, un singur fragment de cod, determinati timpul minim dupa care se va termina executia aplicatiei (adica a tuturor fragmentelor de cod). Timpul dupa care se termina aplicatia este egal cu maximul dintre timpii dupa care fiecare procesor redevine disponibil. Timpul dupa care un procesor redevine disponibil este egal cu suma timpilor de executie a fragmentelor de cod rulate pe procesorul respectiv.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Prima (si singura) linie a fisierului de intrare <var>proc.in</var> contine trei numere intregi, separate prin spatii: <var>N</var> - numarul de fragmente de cod, <var>K</var> - numarul de fragmente de cod care au timpul de executie pe un Pentium IV egal cu <var>1</var> (implicit, <var>N-K</var> au timpul de executie egal cu <var>2</var>) si <var>P</var> - numarul de procesoare ale sistemului.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul <var>proc.out</var> va contine o singura linie pe care se afla timpul minim dupa care se termina de executat aplicatia.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>0 ≤ K ≤ N ≤ 1.000.000.000</var></li>
+<li><var>1 ≤ P ≤ 65.535</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>proc.in</th><th>proc.out</th></tr><tr><td>4 3 2</td><td>4</td></tr></table><h3>Explicatie</h3>
+
+<p>Pe primul procesor se executa un fragment de cod cu timpul de executie (calculat pe un Pentium IV) egal cu <var>1</var> si un fragment de cod cu timpul de executie egal cu <var>2</var> =&gt; timpul dupa care acest procesor devine disponibil este <var>1*1 + 1*2 = 3</var>. Pe al doilea procesor se executa doua fragmente de cod cu timpul de executie (calculat pe un Pentium IV) egal cu <var>1</var> =&gt; timpul dupa care acest procesor devine disponibil este <var>2</var> [numarul de fragmente] * <var>(2*1)</var> [timpul de executie al fiecarui fragment pe procesorul <var>2</var>] = <var>4</var>.<br></p><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=48">Cautare</a></span>
+            <a href="javascript:show_tag_list(48)" id="tag_anchor_48" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_48"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=49">Cautare binara</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_1"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=61">Greedy</a></span>
+            <a href="javascript:show_tag_list(61)" id="tag_anchor_61" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_61"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=70">ad-hoc</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

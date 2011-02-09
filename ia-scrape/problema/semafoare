@@ -1,0 +1,47 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>semafoare.in, semafoare.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2010, Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=167">Paul-Dan Baltescu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/pauldb"><img src="/utilizator/pauldb?action=download&amp;file=avatar&amp;resize=L16x16" alt="pauldb">Paul-Dan Baltescu</a> <a title="Rating pauldb: 792" class="rating-badge-4" href="http://infoarena.ro/utilizator/pauldb?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/pauldb">pauldb</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1.2 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=semafoare">Vezi solutiile trimise</a></p>
+
+<h1>Semafoare<br></h1>
+
+<p>Laura trăieşte în oraşul Simplu. Harta oraşului Simplu este de forma unui grid de dimensiuni <var>N</var> şi <var>M</var>, unde străzile sunt reprezentate de liniile gridului. Aşadar, oraşul are <var>(N+1)*(M+1)</var> intersecţii şi vom nota cu <var>(i, j)</var> intersecţia dintre cea de a <var>i</var>-a stradă orizontală cu cea de a <var>j</var>-a stradă verticală. Fata cunoaşte faptul că în fiecare intersecţie se află un semafor, care funcţionează în felul următor: într-un minut oarecare <var>t</var>, pot intra în intersecţie doar maşinile aflate fie spre nord, fie spre est, fie spre sud, fie spre vest. Dacă la minutul <var>t</var> intră în intersecţie maşinile aflate spre nord, atunci la minutul <var>t+1</var> pot intra maşinile aflate spre est, la <var>t+2</var> intra cele dinspre sud, la <var>t+3</var>, cele dinspre vest, la <var>t+4</var> intră din nou cele dinspre nord, etc. Odată intrată în intersecţie o maşină îşi poate continua drumul mai departe sau poate vira spre stânga sau spre dreapta. Laura mai cunoaşte faptul că timpul necesar pentru a parcurge cu maşina o stradă aflată între două intersecţii consecutive este de <var>1</var> minut. Voi veţi primi o matrice <var>A</var> avand <var>N+1</var> linii si <var>M+1</var> coloane, fiecare element fiind un caracter din mulţimea <var>{'N', 'E', 'S', 'V'}</var>. Fiecare element al matricii <var>A</var> codifică direcţia din care intră maşinile în intersecţia corespunzătoare în minutul <var>0</var> ( <var>'N'</var> pentru nord, <var>'E'</var> pentru est, <var>'S'</var> pentru sud, <var>'V'</var> pentru vest). Ştiind că la momentul de timp <var>0</var>, Laura intră în intersecţia <var>(x1, y1)</var> din direcţia <var>d</var>, determinaţi timpul minim necesar fetei pentru a ajunge cu maşina la semaforul din intersecţia <var>(x2, y2)</var> (fără a ieşi din oraş).</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare <var>semafoare.in</var> se află două numere naturale, <var>N</var> şi <var>M</var>. Pe a doua linie se află două numere întregi şi un caracter din mulţimea <var>{'N', 'E', 'S', 'V'}</var>, separate câte un singur spaţiu, reprezentând <var>x1 y1 d</var>. Pe linia a treia se află alte două numere întregi separate printr-un spaţiu, <var>x2 y2</var>. Pe urmatoarele <var>N+1</var> linii se află câte un şir de <var>M+1</var> caractere din mulţimea <var>{'N', 'E', 'S', 'V'}</var>, reprezentând matricea <var>A</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>semafoare.out</var> se află un singur număr întreg reprezentând timpul minim cerut.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N, M ≤ 1 000</var></li>
+<li>Liniile matricii se consideră numerotate de la <var>0</var> la <var>N</var>, iar coloanele de la <var>0</var> la <var>M</var>.</li>
+<li>Testele problemei sunt grupate două câte două. Pentru fiecare grupă, unul dintre teste este disponibil pentru evaluarea parţială. (50% dintre teste sunt disponibile pentru evaluarea parţială.)</li>
+<li>În timpul cerut nu intră în considerare timpul pe care Laura îl petrece aşteptând la semaforul din intersecţia destinaţie.</li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>semafoare.in</th><th>semafoare.out</th></tr><tr><td>3 4<br>
+1 1 N<br>
+3 4<br><span class="caps">NSEVV</span><br><span class="caps">ESNSS</span><br><span class="caps">SSNSE</span><br><span class="caps">VVNSE</span><br></td><td>7<br></td></tr><tr><td>5 5<br>
+0 5 S<br>
+3 1<br><span class="caps">ENSVVN</span><br><span class="caps">VNENVN</span><br><span class="caps">NEESEE</span><br><span class="caps">ENSSNE</span><br><span class="caps">SVVVNS</span><br><span class="caps">NESSNS</span><br></td><td>19<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Pentru primul exemplu, Laura va parcurge drumul descris în continuare pentru a ajunge în timp minim la destinaţie. La minutul <var>0</var>, Laura se află la semaforul din intersecţia <var>(1, 1)</var> venind dinspre nord. Ea aşteaptă <var>2</var> minute pentru a intra în intersecţie şi consumă <var>1</var> minut pentru a ajunge în intersecţia <var>(1, 2)</var>. Ea intră în intersecţia <var>(1, 2)</var> în minutul <var>3</var> (deoarece acum vine dinspre est) şi mai consumă <var>1</var> minut pentru a ajunge în intersecţia <var>(2, 2)</var>. Ea nu aşteaptă nici la acest semafor şi intră în intersecţie în minutul <var>4</var>, iar apoi porneşte spre intersecţia <var>(2, 3)</var>. Fata nu aşteaptă nici un minut nici în intersecţia <var>(2, 3)</var> (deoarece vine dinspre vest) şi porneşte spre intersecţia <var>(3, 3)</var>. Ajunge în intersecţia <var>(3, 3)</var> în minutul <var>6</var> şi porneşte spre <var>(3, 4)</var> chiar în acelaşi minut. Laura ajunge la semaforul din intersecţia destinaţie în minutul <var>7</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=46">Grafuri</a></span>
+            <a href="javascript:show_tag_list(46)" id="tag_anchor_46" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_46"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=47">Parcurgere in latime</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

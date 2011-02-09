@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>minim2.in, minim2.out</td><td><strong>Sursă</strong></td><td>Stelele Informaticii 2010</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=412">Drutu Bogdan</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mariusdrg"><img src="/utilizator/mariusdrg?action=download&amp;file=avatar&amp;resize=L16x16" alt="mariusdrg">dragus marius</a> <a title="Rating mariusdrg: 753" class="rating-badge-1" href="http://infoarena.ro/utilizator/mariusdrg?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mariusdrg">mariusdrg</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>3 sec</td><td><strong>Limită de memorie</strong></td><td>8000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=minim2">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=minim2">Vezi solutiile trimise</a></p>
+
+<h1>Minim2<br></h1>
+
+<p>Lavinia tocmai s-a apucat de ciclism si vrea neaparat sa intre in cartea recordurilor asa ca si-a ales un traseu format din N portiuni pe care vrea sa bata recordul. Pentru a bate recordul pe traseu, suma timpilor obtinuti de Lavinia pe fiecare portiune de drum trebuie sa fie mai mica decat recordul curent. Din pacate ea nu este suficient de bine pregatita asa ca apeleaza la ajutorul vostru. Voi aveti posibilatea de a inmulti lungimea oricarei portiuni o data cu un numar subunitar <var>A</var> si de oricate ori dupa cu un alt numar subunitar <var>B</var>, <var>A ≤ B</var>. Care este numarul minim de actionari care trebuie sa le faceti astfel incat Lavinia sa bata recordul.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>minim2.in</var> se va gasi un numar intreg N, reprezentand numarul de portiuni. Pe urmatorul rand se vor gasi N numere naturale reprezentand lungimile portiunilor. Pe al <var>3</var>-lea rand se vor afla <var>3</var> numere reale, <var>A</var>, <var>B</var> si recordul curent.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Pe prima linie a fisierului de ieşire <var>minim2.out</var> se va gasi numarul minim de actionari care trebuiesc efectuate astfel incat Lavinia sa bata recordul.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100.000</var></li>
+<li><var>1 ≤ D[i] ≤ 1.000.000.000</var></li>
+<li><var>0 ≤ A ≤ B ≤ 1</var></li>
+<li>Pentru toate testele, numarul total de actionari nu va depasi <var>500.000.000</var>.</li>
+<li>Pentru <var>40%</var> din teste nu vor fi efectuate mai mult de <var>200.000</var> de actionari.</li>
+<li>Recordul se considera batut daca diferenta in valoare absoluta intre timpul Laviniei si record e mai mica decat <var>10<sup>-6</sup></var> sau daca timpul Laviniei este mai mic decat recordul.</li>
+<li>Nici o portiune nu va fi micsorata de mai mult decat <var>10.000</var> de ori.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>minim2.in</th><th>minim2.out</th></tr><tr><td>4<br>
+  5 10 100 18<br>
+  0.5 0.75 52.4<br></td><td>4<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Prima data se actioneaza asupra traseului <var>3</var>, <var>100 * 0.5 = 50</var>. A <var>2</var>-a oara se actioneaza din nou asupra sectorului <var>3</var> <var>50*0.75=37.5</var>, suma fiind <var>70.5</var>. A <var>3</var>-a oara se actioneaza tot asupra sectorului <var>3</var>, <var>37.5*0.75=28.125</var>. A <var>4</var>-a oara se actioneaza asupra sectorului <var>4</var> <var>18*0.5=9</var>. Si astfel suma este <var>5+10+28.125+9=52.125</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

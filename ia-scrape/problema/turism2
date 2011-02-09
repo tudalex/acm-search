@@ -1,0 +1,47 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>turism2.in, turism2.out</td><td><strong>Sursă</strong></td><td>Lot 2008 - Piatra Neamt, Baraj2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=161">Adrian Airinei</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>5 sec</td><td><strong>Limită de memorie</strong></td><td>32768 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=turism2">Vezi solutiile trimise</a></p>
+
+<h1>Turism2<br></h1>
+
+<p>Andreea si Ioana au ajuns in judetul Tinichea si doresc sa viziteze cat mai multe obiective turistice. Judetul Tinichea este format din <var>N</var> orase, intre unele dintre aceste orase existand sosele bidirectionale. Mai exact, orice sosea leaga direct doua orase, iar soselele sunt dispuse astfel incat intre oricare doua orase din judet sa existe un drum unic. Un drum este o succesiune de orase astfel incat intre oricare doua orase consecutive pe drum exista o sosea ce le leaga. Orasele sunt numerotate de la <var>1</var> la <var>N</var> si pentru fiecare oras se cunoaste <var>C<sub>i</sub></var>, numarul de obiective turistice din orasul <var>i</var>. Fiindca s-au certat putin in ultima vreme, cele doua fete vor sa aleaga fiecare cate un drum astfel incat numarul de obiective pe care le viziteaza Andreea adunat cu numarul de obiective pe care le viziteaza Ioana sa fie maxim. Conditiile pe care le pun fetele sunt ca drumurile lor sa nu aibe niciun oras in comun, iar orice oras sa fie vizitat cel mult o singura data.</p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati pentru cele doua fete care este numarul total maxim de obiective pe care le pot vizita, respectand conditiile din enunt.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>turism2.in</var> va contine <var>12</var> seturi de date de intrare. Prima linie a unui set de date de intrare va contine numarul natural <var>N</var>, reprezentand numarul de orase. Pe urmatoarea linie a setului de date se vor afla <var>N</var> numere naturale <var>C<sub>1</sub> C<sub>2</sub> C<sub>3</sub> ... C<sub>N-1</sub> C<sub>N</sub></var>, reprezentand, in ordine, numarul de obiective turistice din fiecare oras. Urmeaza <var>N-1</var> linii pe care se afla cate doua numere naturale distincte <var>A B</var> cu semnificatia ca exista o sosea intre orasele <var>A</var> si <var>B</var>. Valorile de pe aceeasi linie sunt separate prin spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Fisierul de iesire <var>turism2.out</var> va contine <var>12</var> linii, pe linia <var>i</var> aflandu-se raspunsul pentru al <var>i</var>-lea set de date de intrare.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 100000</var></li>
+<li><var>1 ≤ C<sub>i</sub> ≤ 9999</var></li>
+<li>Toate numerele din fisierul de intrare sunt numere naturale.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>turism2.in</th><th>turism2.out</th></tr><tr><td>2<br>
+ 1 1 <br>
+ 1 2<br>
+ ...<br>
+ 3<br>
+ 1 2 3<br>
+ 1 2<br>
+ 1 3<br></td><td>2<br>
+ ...<br>
+ 6<br></td></tr></table><h3>Explicatie</h3>
+
+<p>Fisierul de intrare trebuie sa contina <var>12</var> teste, in exemplu sunt prezentate doar primul si ultimul dintre cele <var>12</var>. Pentru primul test exista <var>2</var> orase, in fiecare oras fiind cate un obiectiv turistic. Exista o singura sosea (de la <var>1</var> la <var>2</var>). Solutia optima este <var>2</var> (fiecare fata viziteaza cate un oras).<br>
+Pentru ultimul test exista <var>3</var> orase, avand <var>1</var>, <var>2</var> respectiv <var>3</var> obiective turistice) si <var>2</var> sosele (intre <var>1</var> si <var>2</var>, respectiv intre <var>1</var> si <var>3</var>). Solutia optima este <var>6</var>. Punctele de suspensie (...) indica faptul ca lipsesc cele <var>10</var> teste.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

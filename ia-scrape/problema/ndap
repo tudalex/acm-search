@@ -1,0 +1,48 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>ndap.in, ndap.out</td><td><strong>Sursă</strong></td><td>Summer Challenge 2007, runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=126">Cosmin Silvestru Negruseri</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/alexandru.mosoi"><img src="/utilizator/alexandru.mosoi?action=download&amp;file=avatar&amp;resize=L16x16" alt="alexandru.mosoi">Alexandru Mosoi</a> <a title="Rating alexandru.mosoi: 598" class="rating-badge-2" href="http://infoarena.ro/utilizator/alexandru.mosoi?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/alexandru.mosoi">alexandru.mosoi</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=ndap">Vezi solutiile trimise</a></p>
+
+<h1>Ndap<br></h1>
+
+<p>Fie <var>G = (V, E)</var> un graf neorientat cu <var>V</var> multimea varfurilor, iar <var>E</var> multimea muchiilor. Definim un <b>graf partial</b> a lui <var>G</var> graful <var>P = (V, E')</var> cu <var>E'</var> inclus in <var>E</var>.</p>
+
+<p>Dandu-se <var>G</var>, <b>un graf neorientat conex</b>, se cere sa se determine cate <b>grafuri partiale conexe</b> are graful <var>G</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie din fisierul de intrare <var>ndap.in</var> contine doua numere <var>N</var> si <var>M</var> reprezentand numarul de noduri, respectiv numarul de muchii din graful <var>G</var>. In continuare in fisier se vor afla <var>M</var> linii ce descriu grafului. Pe linia <var>i+1</var>, cu <var>1 ≤ i ≤ M</var>, se vor afla doua numere <var>a<sub>i</sub> b<sub>i</sub></var> cu semnificatia ca exista o muchie de la <var>a<sub>i</sub></var> la <var>b<sub>i</sub></var> in <var>G</var>. Nodurile vor fi numerotate de la <var>0 la N</var>-1.</p>
+
+<h2>Date de iesire</h2>
+
+<p>In fisierul de iesire <var>ndap.out</var> se va scrie pe prima linie numarul cerut in enunt modulo 30103.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 15</var></li>
+<li><var>0 ≤ a<sub>i</sub>, b<sub>i</sub> ≤ N-1</var></li>
+<li>orice muchie va aparea cel mult o data in fisierul de intrare</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>ndap.in</th><th>ndap.out</th></tr><tr><td>4 3<br>
+  0 1<br>
+  2 1<br>
+  1 3<br></td><td>1<br></td></tr><tr><td>4 4<br>
+  0 1<br>
+  1 2<br>
+  2 3<br>
+  3 0<br></td><td>5<br></td></tr><tr><td>4 5<br>
+  0 1<br>
+  1 2<br>
+  2 3<br>
+  3 0<br>
+1 3<br></td><td>14<br></td></tr></table><h3>Explicatie</h3>
+
+<p>In primul exemplu graful este un arbore si deci are un singur graf partial conex (orice muchie am elimina, graful devine neconex).<br>
+In exemplul al doilea graful este un ciclu format din 4 muchii. Exista 5 grafuri partiale doarece se poate elimina cel mult o muchie pentru ca graful sa ramana conex.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

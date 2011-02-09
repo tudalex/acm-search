@@ -1,0 +1,33 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>nr.in, nr.out</td><td><strong>Sursă</strong></td><td>.campion 2006-2007, Runda 1</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/domino"><img src="/utilizator/domino?action=download&amp;file=avatar&amp;resize=L16x16" alt="domino">Mircea Pasoi</a> <a title="Rating domino: 679" class="rating-badge-4" href="http://infoarena.ro/utilizator/domino?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/domino">domino</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>2.5 sec</td><td><strong>Limită de memorie</strong></td><td>16000 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=nr">Vezi solutiile trimise</a></p>
+
+<h1>Nr<br></h1>
+
+<p>Zaharel este un mare pasionat de numere. Astazi, se joaca cu numere de <var>N</var> cifre scrise in baza <var>B</var>. Fie <var>NR=nr<sub>0</sub>nr<sub>1</sub>...nr<sub>N-1</sub></var> un astfel de numar in baza <var>B</var> (<var>nr<sub>0</sub>, nr<sub>1</sub></var> etc. reprezinta cifrele numarului <var>NR</var> scrise de la stanga la dreapta), definim imaginea acestui numar ca fiind numarul <var>I(NR)=i<sub>0</sub>i<sub>1</sub>...i<sub>N-2</sub></var> cu proprietatea <var>i<sub>p</sub>=min(i<sub>p</sub>,i<sub>p+1</sub>)</var>. Avand o groaza de timp liber, Zaharel s-a gandit sa calculeze pentru fiecare numar posibil de <var>N</var> cifre (numarul poate incepe cu cifre de 0) in baza <var>B</var> produsul cifrelor imaginii numarului si sa adune aceste valori.<br>
+Scrieti un program care il scuteste pe Zaharel de aceste calcule, si determina aceasta suma in timp util.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>numere.in</var> sunt scrise cele doua numere naturale <var>N, B</var>, separate printr-un singur spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Prima linie a fisierului <var>numere.out</var> va contine suma dorita de Zaharel. Deoarece rezultatul poate fi foarte mare, este de ajuns afisarea restului impartirii rezultatului la numarul <var>666013</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 20.000</var></li>
+<li><var>2 ≤ B ≤ 1.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>nr.in</th><th>nr.out</th></tr><tr><td>2 4<br></td><td>14<br></td></tr></table><h3>Explicatie</h3>
+
+<p><var>NR=00, I(NR)=0</var> se aduna <var>0</var><br><var>NR=01, I(NR)=0</var> se aduna <var>0</var><br><var>NR=02, I(NR)=0</var> se aduna <var>0</var><br><var>NR=03, I(NR)=0</var> se aduna <var>0</var><br><var>NR=10, I(NR)=0</var> se aduna <var>0</var><br><var>NR=11, I(NR)=1</var> se aduna <var>1</var><br><var>NR=12, I(NR)=1</var> se aduna <var>1</var><br><var>NR=13, I(NR)=1</var> se aduna <var>1</var><br><var>NR=20, I(NR)=0</var> se aduna <var>0</var><br><var>NR=21, I(NR)=1</var> se aduna <var>1</var><br><var>NR=22, I(NR)=2</var> se aduna <var>2</var><br><var>NR=23, I(NR)=2</var> se aduna <var>2</var><br><var>NR=30, I(NR)=0</var> se aduna <var>0</var><br><var>NR=31, I(NR)=1</var> se aduna <var>1</var><br><var>NR=32, I(NR)=2</var> se aduna <var>2</var><br><var>NR=33, I(NR)=3</var> se aduna <var>3</var></p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

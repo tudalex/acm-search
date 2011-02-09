@@ -1,0 +1,52 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>checkin.in, checkin.out</td><td><strong>Sursă</strong></td><td>ONI 2009, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=171">Emanuela Cerchez</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrei-alpha"><img src="/utilizator/andrei-alpha?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrei-alpha">Andrei-Bogdan Antonescu</a> <a title="Rating andrei-alpha: 700" class="rating-badge-1" href="http://infoarena.ro/utilizator/andrei-alpha?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrei-alpha">andrei-alpha</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>2048 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=checkin">Vezi solutiile trimise</a></p>
+
+<h1>Checkin<br></h1>
+
+<p>Ministerul organizează o excursie pentru olimpici la Paris. Suntem toţi la aeroport, <var>K</var> olimpici având în total <var>P</var> bagaje. Olimpicii la informatică trebuie să rezolve acum următoarea problemă.</p>
+
+<p>Pentru zborul către Paris au fost deschise <var>N</var> ghişee pentru check-in, numerotate de la <var>1</var> la <var>N</var>. La fiecare ghişeu lucrează exact un angajat. Angajatul de la ghişeul <var>i</var> are nevoie de <var>A<sub>i</sub></var> secunde pentru a procesa fiecare bagaj al clientului prezentat la ghişeu şi <var>B<sub>i</sub></var> secunde pentru a emite toate tichetele de îmbarcare solicitate de client (acelaşi timp <var>B<sub>i</sub></var>, indiferent de numărul de tichete solicitate de client). O persoană poate sta la un singur ghişeu şi poate preda <var>0</var>, <var>1</var> sau mai multe bagaje (acestea vor fi trecute pe numele său). Evident, aceeaşi persoană nu poate sta la mai multe ghişee. De asemenea, o persoană poate să prezinte angajatului de la ghişeu biletele şi paşapoartele altor persoane, astfel că poate solicita emiterea mai multor tichete de îmbarcare. O persoană trebuie să solicite de la ghişeul la care se prezintă cel puţin un tichet de îmbarcare.</p>
+
+<p>Iniţial nimeni nu stă la coadă la ghişeele pentru Paris. Timpul necesar pentru a face check-in-ul (predarea tuturor celor <var>P</var> bagaje şi obţinerea tichetelor de îmbarcare pentru toţi cei <var>K</var> olimpici) depinde de strategia adoptată (alegerea ghişeelor, stabilirea persoanelor care stau la coadă la ghişee şi împărţirea bagajelor). Olimpicii la informatică trebuie să găsească o strategie prin care cei <var>K</var> olimpici pot preda cele <var>P</var> bagaje şi obţine cele <var>K</var> tichete de îmbarcare în cel mai scurt timp.</p>
+
+<h2>Cerinta</h2>
+
+<p>Scrieţi un program care să determine timpul minim necesar pentru check-in.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>checkin.in</var> conţine pe prima linie numărul natural <var>N</var> reprezentând numărul de ghişee pentru check-in. Urmează <var>N</var> linii pe care sunt descrise ghişeele. Pe linia <var>i+1</var> sunt scrise numerele naturale <var>A<sub>i</sub></var> <var>B<sub>i</sub></var> (separate prin spaţiu) reprezentând timpul necesar angajatului de la ghişeul <var>i</var> pentru a procesa un singur bagaj al clientului de la ghişeu, respectiv timpul necesar pentru emiterea tuturor tichetelor de îmbarcare solicitate de clientul de la ghişeu. Pe ultima linie sunt scrise numerele naturale <var>K</var> şi <var>P</var>, separate prin spaţiu, reprezentând numărul de olimpici şi numărul de bagaje pe care le au.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>checkin.out</var> va conţine o singură linie pe care va fi scris timpul minim pentru check-in.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 1.000</var></li>
+<li><var>1 ≤ A<sub>i</sub>, B<sub>i</sub> ≤ 1.000</var></li>
+<li><var>1 ≤ K ≤ 10.000</var></li>
+<li><var>0 ≤ P ≤ 10.000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>checkin.in</th><th>checkin.out</th></tr><tr><td>6<br>
+10 100<br>
+20 80<br>
+20 40<br>
+40 50<br>
+20 10<br>
+10 10<br>
+4 10<br></td><td>70<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>O persoană stă la ghişeul <var>3</var>, predă un bagaj şi ia un tichet de îmbarcare.<br>
+O a doua persoană stă la ghişeul <var>5</var>, predă <var>3</var> bagaje şi ia un tichet de îmbarcare.<br>
+O a treia persoană stă la ghişeul <var>6</var>, predă <var>6</var> bagaje şi ia <var>2</var> tichete de îmbarcare.<br>
+A patra persoană nu stă la ghişeu.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

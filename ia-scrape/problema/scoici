@@ -1,0 +1,39 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>scoici.in, scoici.out</td><td><strong>Sursă</strong></td><td>.campion 2005</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=118">Stefan Gheorghe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/ste_fanus"><img src="/utilizator/ste_fanus?action=download&amp;file=avatar&amp;resize=L16x16" alt="ste_fanus">Gheorghe Stefan</a> <a title="Rating ste_fanus: 461" class="rating-badge-3" href="http://infoarena.ro/utilizator/ste_fanus?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/ste_fanus">ste_fanus</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.2 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=scoici">Vezi solutiile trimise</a></p>
+
+<h1>Scoici<br></h1>
+
+<p>Cum se apropie vara, Denisa şi Alexandra, prietene bune din copilărie, merg la mare. Plimbându-se toată ziua pe malul mării încep să strângă scoici. După ce strâng <var>N</var> scoici, Alexandra le înşiră pe o sfoară si constată că sunt colorate în maxim <var>C</var> culori. Denisa doreşte acum să aleagă dintre cele <var>N</var> scoici, o secvenţă armonioasă, cât mai lungă, pentru a-şi face un colier frumos. Colier armonios înseamnă să aibă scoici de toate culorile disponibile şi fiecare să aibă aceeaşi frecvenţă de aparitie. Cum numărul de scoici strâns poate fi destul de mare (pentru că fetele au multa răbdare), vă este cerut ajutorul.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Ajutaţi-o pe Denisa să determine cea mai lungă secvenţă armonioasă din cele <var>N</var> scoici pentru a-şi face cel mai frumos colier.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>scoici.in</var> contine pe prima linie numărul de scoici <var>N</var> şi numărul de culori <var>C</var>. A doua linie va conţine culorile scoicilor culese, codificate prin numere naturale de la <var>1</var> la <var>C</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>scoici.out</var> se vor afişa două numere, poziţia în sirul de scoici de unde incepe colierul şi lungimea acestuia.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 100.000</var></li>
+<li><var>2 ≤ C ≤ 10</var></li>
+<li>Dacă sunt mai multe solutii optime ca lungime, determinaţi pe cea cu poziţia initială mai mică.</li>
+<li>Se garantează existenţa unei soluţii precum şi faptul că în sirul dat există cel putin o scoică din fiecare culoare.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>scoici.in</th><th>scoici.out</th></tr><tr><td>9 3<br>
+  1 2 1 3 3 2 1 1 3<br></td><td>1 6<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Secventa cea mai lungă este <var>1 2 1 3 3 2</var>, cu frecvenţele egale cu <var>2</var> şi toate cele <var>3</var> culori prezente.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>tir.in, tir.out</td><td><strong>Sursă</strong></td><td>ONI 2009, clasa a 7-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=184">Doru Popescu Anastasiu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrici_cezar"><img src="/utilizator/andrici_cezar?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrici_cezar">Andrici Cezar</a> <a title="Rating andrici_cezar: 458" class="rating-badge-3" href="http://infoarena.ro/utilizator/andrici_cezar?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrici_cezar">andrici_cezar</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=tir">Vezi solutiile trimise</a></p>
+
+<h1>Tir<br></h1>
+
+<p>Alex şi fratele lui mai mic, Marian şi-au cumparat un arc cu săgeţi, un afiş pentru a arunca la ţintă şi un panou de formă pătratică (pe care să lipească afişul cu ţinte). Panoul poate fi privit ca un tablou pătratic de dimensiune <var>n</var>, iar afişul cu ţinte ca un tablou pătratic de dimensiune <var>m</var> . Pentru <var>n</var> = <var>6</var> şi <var>m</var> = <var>5</var> avem:<br><img src="http://infoarena.ro/problema/tir?action=download&amp;file=poza.jpg&amp;safe_only=true" alt=""></p>
+
+<p>Dimensiunile pătrăţelelor din care se compune panoul şi afişul sunt egale. Panoul are liniile numerotate începând cu <var>1</var> de sus în jos, iar coloanele tot de la <var>1</var> începând de la stânga la dreapta. În tabloul asociat afişului se pun în evidenţă pătrate concentrice din exterior spre interior: cel din exterior are în fiecare pătrăţel valoarea <var>1</var> , apoi urmează pătratul concentric cu pătrăţele de valoare <var>2</var> , şi aşa mai departe. Acest lucru înseamnă că pentru o săgeată, care se înfige într-unul din pătratele concentrice precizate, se primeşte punctajul corespunzător.</p>
+
+<p>Pentru că Alex este mult mai experimentat decât Marian îi face acestuia o favoare: îl lasă să tragă cu arcul în panou de <var>k</var> ori, după care lipeşte afişul paralel cu marginile panoului, în poziţia în care se obţine punctajul maxim. Afişul îl va lipi complet pe panou (fără să rămână porţiuni din el în afara panoului) şi astfel încât să nu rămână pătrăţele pe panou acoperite parţial. Fiecare dintre săgeţile trimise de Marian atinge exact un pătrăţel de pe panou: nu trage între două pătrăţele, pe marginea panoului sau în afara panoului. Pentru fiecare tragere se dă poziţia în panou a săgeţii (linie, respectiv coloană).</p>
+
+<h2>Cerinţă</h2>
+
+<p>Să se scrie un program care să determine punctajul maxim, notat cu <var>p</var>, pe care poate să-l obţină Marian după lipirea afişului, precum şi colţul din stânga-sus unde se va lipi afişul (linie şi coloană din panou, notate cu <var>lin</var> şi <var>col</var>). Dacă există mai multe posibilităţi de aşezare a afişului, asfel încât să se obţină punctaj maxim, atunci se va alege cea cu indicele liniei colţului din stânga-sus cel mai mic, iar dacă există mai multe soluţii cu aceeaşi indice de linie minim se alege cea cu indicele coloanei cel mai mic. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>tir.in</var> are pe prima linie numerele <var>n</var> , <var>m</var> şi <var>k</var> separate printr-un spaţiu, iar pe următoarele <var>k</var> linii poziţiile săgeţilor pe panou în formatul: linie şi coloană separate printr-un spaţiu.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire tir.out va conţine pe prima linie <var>p</var> , iar pe linia a doua separate printr-un spaţiu numerele <var>lin</var> şi <var>col</var> din cerinţă.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>2 &lt; m ≤ n &lt; 301</var></li>
+<li><var>0 &lt; k &lt; 301</var></li>
+<li>Nu se acordă punctaje parţiale.</li>
+<li>Pot exista mai multe săgeţi în acelaşi pătrăţel. </li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>tir.in</th><th>tir.out</th></tr><tr><td>6 5 4<br>
+1 1<br>
+6 1<br>
+1 6<br>
+2 6<br></td><td>2 <br>
+1 2<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Punând afişul începând cu colţul din stânga sus în pătrăţelul de pe linia <var>1</var> şi coloana <var>2</var> se obţin două puncte corespunzătoare săgeţilor din pătrăţelele <var>1</var> <var>6</var> şi <var>2</var> <var>6</var>. <br>
+Afişul mai poate fi pus în pătrăţelele <var>1</var> <var>1</var>, <var>2</var> <var>1</var> şi <var>2</var> <var>2</var> (linie coloană), dar în fiecare din aceste cazuri se obţine punctajul <var>1</var>.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

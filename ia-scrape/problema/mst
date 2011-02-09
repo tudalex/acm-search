@@ -1,0 +1,51 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>mst.in, mst.out</td><td><strong>Sursă</strong></td><td>Lot Cluj 2009, Baraj 4</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=215">Marius Stroe</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/Marius"><img src="/utilizator/Marius?action=download&amp;file=avatar&amp;resize=L16x16" alt="Marius">Marius Stroe</a> <a title="Rating Marius: 627" class="rating-badge-4" href="http://infoarena.ro/utilizator/Marius?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/Marius">Marius</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=mst">Vezi solutiile trimise</a></p>
+
+<h1>Mst<br></h1>
+
+<p>Fie <var>G</var> un graf neorientat conex. Fiecare muchie <var>e</var> are la momentul <var>t</var> un cost dat de o funcţie polinomială de gradul al doilea <var>f<sub>e</sub>(t) = a<sub>e</sub> * t<sup>2</sup> + b<sub>e</sub> * t + c<sub>e</sub></var>.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Găsiţi timpul <var>t</var> la care costul arborelui de acoperire minim al lui <var>G</var> este cât mai mic posibil, precum şi acest cost. </p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare <var>mst.in</var> se găsesc două numere naturale <var>N</var> şi <var>M</var>, separate printr-un spaţiu, reprezentând numărul nodurilor din graf, respectiv numărul muchiilor. Pe linia <var>i + 1 (1 ≤ i ≤ M)</var> se găsesc numerele <var>u<sub>i</sub> v<sub>i</sub> a<sub>i</sub> b<sub>i</sub> c<sub>i</sub></var>, separate prin câte un spaţiu, unde <var>u<sub>i</sub></var> şi <var>v<sub>i</sub></var> sunt capetele muchiei, iar <var>a<sub>i</sub></var>, <var>b<sub>i</sub></var>, <var>c<sub>i</sub></var> coeficienţii funcţiei polinomiale.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Pe prima linie a fişierului de ieşire <var>mst.out</var> se vor scrie două numere reale cu <var>6</var> zecimale, primul fiind timpul căutat iar al doilea costul arborelui de acoperire minim în acel moment de timp.</p>
+
+<h2>Restricţii şi precizări</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 100</var></li>
+<li><var>1 ≤ M ≤ 100</var></li>
+<li><var>0 ≤ u<sub>i</sub>, v<sub>i</sub> &lt; N</var>, oricare <var>1 ≤ i ≤ M</var></li>
+<li>Coeficienţii <var>a<sub>i</sub></var>, <var>b<sub>i</sub></var>, <var>c<sub>i</sub></var> sunt numere întregi a căror valoare absolută nu depăşeşte <var>10<sup>6</sup></var>, oricare <var>1 ≤ i ≤ M</var>.</li>
+<li>Coeficientul <var>a<sub>i</sub> &gt; 0</var>, oricare <var>1 ≤ i ≤ M</var>.</li>
+<li>Timpul <var>t</var> poate fi orice valoare de pe axa reală.</li>
+<li>Funcţiile asociate muchiilor sunt distincte două câte două.</li>
+<li>Rezultatele vor fi considerate corecte dacă nu au o eroare mai mare de <var>10<sup>-6</sup></var> (a şasea zecimală poate să difere cu cel mult o unitate). Se recomandă afişarea cu <var>6</var> zecimale.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>mst.in</th><th>mst.out</th></tr><tr><td>3 3<br>
+0 1 1 -2 1<br>
+1 2 1 -2 5<br>
+0 2 1 -8 16<br></td><td>1.000000 4.000000<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Funcţiile asociate muchiilor sunt:</p>
+
+
+<ul><li><var>f<sub>(0,1)</sub>(t) = t<sup>2</sup> - 2t + 1</var>,</li>
+<li><var>f<sub>(1,2)</sub>(t) = t<sup>2</sup> - 2t + 5</var>, </li>
+<li><var>f<sub>(2,0)</sub>(t) = t<sup>2</sup> - 8t + 16</var>.</li>
+</ul><p>Minimele funcţiilor f<sub>(0,1)</sub>, f<sub>(1,2)</sub> se ating la momentul <var>t = 1</var> iar suma lor este <var>4</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

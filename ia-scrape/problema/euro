@@ -1,0 +1,68 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>euro.in, euro.out</td><td><strong>Sursă</strong></td><td>BOI 2003</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=155">Mihai Patrascu</a>, <a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.4 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><div class="hidden">5/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=euro">Vezi solutiile trimise</a></p>
+
+<h1>Euro<br></h1>
+
+<p>Tocmai v-ati deschis un nou cont in banca unde veti primi sume de bani in euro. Cand v-ati deschis contul nu ati avut nici euro sau lei in posesie. Pe parcursul urmatoarelor <var>N</var> zile, veti primi diverse sume de euro; aceste sume pot fi negative, caz in care numarul total de euro din cont va scade. Este posibil ca uneori sa aveti o suma negativa de bani in contul vostru. La sfarsitul fiecarei zile banca va permite sa convertiti intreaga suma de euro pe care o aveti in cont in lei. Pretul unui euro variaza dupa urmatoarea regula: in timpul celei de-a <var>K</var>-a zile, un euro poate fi schimbat cu <var>K</var> lei. Banca va cere un comision de <var>T</var> lei pentru fiecare conversie. Astfel, daca la sfarsitul zilei <var>K</var> aveti <var>S</var> euro in cont si decideti sa ii convertiti veti primi <var>S*K-T</var> lei in schimbul lor (bineinteles, <var>S</var> poate fi negativ). La sfarsitul zilei <var>N</var> veti fi obligati sa va convertiti toata suma de bani din cont in lei, chiar daca aceasta este nepozitiva.</p>
+
+<h2>Cerinta</h2>
+
+<p>Obiectivul vostru este sa maximizati suma de lei pe care o veti avea la sfarsitul zilei <var>N</var>.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>euro.in</var> contine doua numere intregi, <var>N</var> si <var>T</var>, separate prin spatii. Urmatoarea linie contine <var>N</var> numere intregi ce reprezinta numarul de euro pe care il veti primi la inceputul fiecarei zile.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>euro.out</var> contine un singur numar ce reprezinta suma maxima de lei pe care o puteti obtine.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 34567</var></li>
+<li><var>0 ≤ T ≤ 34567</var></li>
+<li><var>80%</var> dintre teste vor avea <var>T ≤ 255</var></li>
+<li>numarul de euro pe care il veti primii in fiecare zi este un intreg cuprins in intervalul [<var>-1000, 1000</var>]</li>
+<li>este permis sa convertiti doar euro in lei, si nu lei in euro</li>
+<li>pentru rezultat este recomandata folosirea tipurilor int64 sau extended in Pascal si long long sau long double in C/C++ (depinzand ce preferati, numere reale sau intregi); se garanteaza ca rezultatul se incadreaza in aceste tipuri de date, dar s-ar putea sa fie prea mare pentru alte tipuri de date mai mici</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>euro.in</th><th>euro.out</th></tr><tr><td>7 1<br>
+-10 3 -2 4 -6 2 3<br></td><td>17</td></tr></table><h3>Explicatii</h3>
+
+<p>La sfarsitul primei zile veti schimba cei <var>-10</var> ce i-ati primit pentru <var>-11=-10*1-1</var> lei. A doua conversie are loc la sfarsitul zilei <var>5</var> cand veti avea <var>-1</var> euro in cont (<var>3-2+4-6</var>). Suma de lei pe care o obtineti este <var>-6=(3-2+4-6)*5-1</var>. Veti efectua ultima conversie la sfarsitul zilei <var>7</var>, folosind ultimii <var>5</var> euro din cont (<var>2+3</var>). Suma de lei pe care o obtineti este <var>34=(2+3)*7-1</var>. Suma finala de lei pe care o obtineti este <var>17=-11-6+34</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 3 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_1"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=61">Greedy</a></span>
+            <a href="javascript:show_tag_list(61)" id="tag_anchor_61" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_61"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=70">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 2 taguri
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div> <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=79">Sume partiale</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_2"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=38">Structuri de Date</a></span>
+            <a href="javascript:show_tag_list(38)" id="tag_anchor_38" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_38"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=94">Deque</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

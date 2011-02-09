@@ -1,0 +1,43 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>marmelada.in, marmelada.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2009, runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=161">Adrian Airinei</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/astronomy"><img src="/utilizator/astronomy?action=download&amp;file=avatar&amp;resize=L16x16" alt="astronomy">Airinei Adrian</a> <a title="Rating astronomy: 700" class="rating-badge-4" href="http://infoarena.ro/utilizator/astronomy?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/astronomy">astronomy</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=marmelada">Vezi solutiile trimise</a></p>
+
+<h1>Marmelada<br></h1>
+
+<p>Primarul judetului Marmelada trebuie sa refaca in totalitate reteaua stradala. In judet exista <var>N</var> orase numerotate cu numere naturale de la <var>1</var> la <var>N</var>. Se mai si stiu cele <var>M</var> sosele care trebuie construite, o sosea leaga direct doua orase si se poate circula pe ambele sensuri. Primarul trebuie sa decida acum ce lungime sa aibe fiecare sosea. Firma de constructii s-a oferit sa construiasca <var>M</var> sosele de lungimi <var>C<sub>1</sub>, C<sub>2</sub> ... C<sub>M</sub></var> si i-a lasat libertatea primarului de a decide pentru fiecare sosea din judet ce lungime sa aibe (altfel spus trebuie realizata o bijectie intre multimea de lungimi si multimea de sosele). Primarul are doua orase preferate, <var>S</var> si <var>D</var> si doreste ca dupa construirea soselelor sa existe cel mai scurt drum posibil intre cele doua orase. Un drum este o succesiune de sosele astfel incat oricare doua sosele consecutive au un oras in comun. Ajutati primarul orasului si determinati pentru fiecare sosea ce leaga doua orase ce lungime trebuie sa aiba.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>marmelada.in</var> contine pe prima linie patru numere naturale separate de un spatiu, <var>N</var>, <var>M</var>, <var>S</var> si <var>D</var>, avand semnificatia din enunt. Urmeaza apoi <var>M</var> linii, fiecare linie continand doua numere separate de un singur spatiu <var>a</var> si <var>b</var> avand semnificatia ca trebuie construita o sosea intre orasele <var>a</var> si <var>b</var>. Pe linia <var>M+2</var> din fisier se afla <var>M</var> numere naturale <var>C<sub>1</sub>, C<sub>2</sub> ... C<sub>M</sub></var>, avand semnificatia din enunt. </p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>marmelada.out</var> se vor afisa <var>M</var> numere naturale cuprinse intre <var>1</var> si <var>M</var> (fiecare numar pe cate o linie). Daca al <var>i</var>-lea numar din fiser este <var>j</var> inseamna ca soseaua avand indicele <var>i</var> (soselele sunt numerotate de la <var>1</var> la <var>M</var> in ordinea in care apar in fisierul de intrare) i-a fost atribuita lungimea <var>C<sub>j</sub></var>. Daca exista mai multe solutii se poate afisa oricare dintre ele.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N, M ≤ 100 000</var></li>
+<li>Lungimile soselelor sunt numere naturale din intervalul <var>[1, 10 000]</var></li>
+<li>Soselele sunt numerotate de la <var>1</var> la <var>M</var> in ordinea in care apar in fisierul de intrare</li>
+<li>Va exista mereu cel putin un drum intre <var>S</var> si <var>D</var></li>
+<li>Pot exista mai multe sosele intre doua orase si pot exista sosele ce leaga un oras cu el insusi</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>marmelada.in</th><th>marmelada.out</th></tr><tr><td>4 4 1 4<br>
+  1 2<br>
+  2 4<br>
+  1 3<br>
+  3 4<br>
+  1 2 3 4<br></td><td>1<br>
+  2 <br>
+  3<br>
+  4<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Soseaua <var>1-2</var> are lungimea <var>1</var> iar soseaua <var>2-4</var> are lungimea <var>2</var>, deci exista un drum de lungime <var>3</var> intre orasele <var>1</var> si <var>4</var>. O solutie posibila era si <var>3 4 1 2</var>. Nu exista o alta repartizare a lungimilor soselelor astfel incat sa se obtina un drum de lungime mai mica intre <var>1</var> si <var>4</var>.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,43 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>stalpi2.in, stalpi2.out</td><td><strong>Sursă</strong></td><td>ONI 2010, clasele 11-12</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=162">Constantin Galatan</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/andrei-alpha"><img src="/utilizator/andrei-alpha?action=download&amp;file=avatar&amp;resize=L16x16" alt="andrei-alpha">Andrei-Bogdan Antonescu</a> <a title="Rating andrei-alpha: 700" class="rating-badge-1" href="http://infoarena.ro/utilizator/andrei-alpha?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/andrei-alpha">andrei-alpha</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=stalpi2">Vezi solutiile trimise</a></p>
+
+<h1>Stalpi2<br></h1>
+
+<p>Veronel doreşte să-şi repare gardul care-i separă curtea de cea a vecinului său. Gardul este susţinut de n stâlpi, amplasaţi coliniar, numerotaţi în ordine de la stânga la dreapta: <var>1, 2, ..., N</var>. Aceştia se găsesc la distanţele <var>d<sub>i</sub></var> metri <var>(i=2, 3, ..., N)</var> faţă de primul stâlp. Stâlpii <var>2, 3, ... N-1</var> pot fi mutaţi spre stânga sau spre dreapta. Stâlpul <var>1</var> şi stâlpul <var>N</var> nu se pot muta. Pentru simplitate, Veronel calculează efortul deplasării unui stâlp ca fiind egal cu distanţa de deplasare. Fie <var>D</var> cea mai mare distanţă dintre doi stâlpi consecutivi, după efectuarea tuturor mutărilor.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Cunoscând efortul total maxim <var>E</var> pe care Veronel este dispus să-l facă pentru deplasarea stâlpilor să se determine cea mai mică valoare posibilă pentru <var>D</var>, care se poate obţine conform condiţiilor din enunţ, astfel încât să nu se depăşească efortul <var>E</var>. Efortul total este definit ca suma eforturilor pe care Veronel le face pentru deplasarea stâlpilor.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fişierului de intrare <var>stalpi2.in</var> se află două numere naturale <var>N</var> şi <var>E</var> separate printr-un singur spaţiu, cu semnificaţia din enunţ. Pe linia următoare se află <var>N–1</var> numere naturale <var>d<sub>2</sub>, d<sub>3</sub>, ..., d<sub>N</sub></var>, separate prin câte un singur spaţiu, reprezentând distanţele iniţiale ale stâlpilor <var>2, 3, ..., N</var> faţă de stâlpul <var>1</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>Fişierul de ieşire <var>stalpi2.out</var> va conţine o singură linie pe care se va scrie un număr natural <var>D</var>, cu semnificaţia din enunţ.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li>Stâlpii pot fi mutaţi doar pe poziţii a căror distanţă faţă de stâlpul <var>1</var> este exprimată prin valori naturale.</li>
+<li><var>0 ≤ d<sub>2</sub> ≤ d<sub>3</sub> ... ≤ d<sub>N</sub> ≤ 10 000</var></li>
+<li><var>3 ≤ N ≤ 50</var></li>
+<li><var>1 ≤ E ≤ 400 000</var></li>
+<li>Pentru <var>20%</var> din teste <var>N = 3</var> şi <var>d<sub>N</sub> ≤ 100</var></li>
+<li>Pentru <var>40%</var> din teste <var>N ≤ 15</var> şi <var>d<sub>N</sub> ≤ 200</var></li>
+<li>Pentru <var>70%</var> din teste <var>N ≤ 15</var> şi <var>d<sub>N</sub> ≤ 1000</var></li>
+<li>Pentru <var>100%</var> din teste <var>N ≤ 50</var> şi <var>d<sub>N</sub> ≤ 10 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>stalpi2.in</th><th>stalpi2.out</th></tr><tr><td>4 10<br>
+10 30 50<br></td><td>17<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Se mută stâlpul <var>2</var> cu <var>7</var> metri spre dreapta şi stâlpul <var>3</var> cu <var>3</var> metri spre dreapta.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

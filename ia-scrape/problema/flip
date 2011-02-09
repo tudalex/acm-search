@@ -1,0 +1,53 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>flip.in, flip.out</td><td><strong>Sursă</strong></td><td>info-arena 1.0</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=250">Mircea Bogdan Pasoi</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.5 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">1/5</div></span></td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=flip">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=flip">Vezi solutiile trimise</a></p>
+
+<h1>Jocul Flip<br></h1>
+
+<p>Gigel a descoperit un nou joc pe care l-a numit "Flip". Acesta se joaca pe o tabla dreptunghiulara de dimensiuni <var>N*M</var> care contine numere intregi. Fiecare linie si fiecare coloana are un comutator care schimba starea tuturor elementelor de pe acea linie sau coloana, inmultindu-le cu <var>-1</var>. Scopul jocului este ca pentru o configuratie data a tablei de joc sa se actioneze asupra liniilor si coloanelor astfel incat sa se obtina o tabla cu suma elementelor cat mai mare.</p>
+
+<h2>Cerinta</h2>
+
+<p>Dandu-se o configuratie pentru tabla "Flip", realizati un program care sa determine suma maxima pe care Gigel o poate obtine.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului <var>flip.in</var> contine doua numere intregi <var>N</var> si <var>M</var>, separate prin cate un spatiu, care reprezinta dimensiunea tablei. Urmatoarele <var>N</var> linii contin cate <var>M</var> numere intregi seperate prin cate un spatiu care descriu configuratia tablei de joc.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Prima linie a fisierului <var>flip.out</var> contine un numar care va reprezenta suma maxima pe care Gigel o poate obtine comutand liniile si coloanele tablei de joc.</p>
+
+<h2>Restrictii si precizari</h2>
+
+
+<ul><li><var>1 ≤ N, M ≤ 16</var></li>
+<li>Tabla de joc contine numere intregi din intervalul [<var>-1.000.000,1.000.000</var>]</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>flip.in</th><th>flip.out</th></tr><tr><td>5 3<br>
+4 -2 2<br>
+3 -1 5<br>
+2 0 -3<br>
+4 1 -3<br>
+5 -3 2<br></td><td>28</td></tr></table><h3>Explicatie</h3>
+
+<p>Se comuta coloana a doua si linia a treia.</p>
+
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_0"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=96">Backtracking</a></span>
+            <a href="javascript:show_tag_list(96)" id="tag_anchor_96" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_96"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=98">Generarea tuturor submultimilor</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

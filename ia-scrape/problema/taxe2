@@ -1,0 +1,36 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>taxe2.in, taxe2.out</td><td><strong>Sursă</strong></td><td>OJI 2003, clasa a 10-a</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=356">Daniel Popa</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/stocarul"><img src="/utilizator/stocarul?action=download&amp;file=avatar&amp;resize=L16x16" alt="stocarul">Cosmin Mihai Tutunaru</a> <a title="Rating stocarul: 725" class="rating-badge-1" href="http://infoarena.ro/utilizator/stocarul?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/stocarul">stocarul</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=taxe2">Vezi solutiile trimise</a></p>
+
+<h1>Taxe2<br></h1>
+
+<p>Într-o ţară în care corupţia este în floare şi economia la pământ, pentru a obţine toate aprobările necesare în scopul demarării unei afaceri, investitorul trebuie să treacă prin mai multe camere ale unei clădiri în care se află birouri. Clădirea are un singur nivel în care birourile sunt lipite unele de altele formând un caroiaj pătrat de dimensiune <var>nxn</var>. Pentru a facilita accesul în birouri, toate camerele vecine au uşi între ele. În fiecare birou se află un funcţionar care pretinde o taxă de trecere prin cameră (taxă ce poate fi, pentru unele camere, egală cu <var>0</var>). Investitorul intră încrezător prin colţul din stânga-sus al clădirii (cum se vede de sus planul clădirii) şi doreşte să ajungă în colţul opus al clădirii, unde este ieşirea, plătind o taxă totală cât mai mică.</p>
+
+<h2>Cerinţă</h2>
+
+<p>Ştiind că el are în buzunar <var>S</var> euro şi că fiecare funcţionar îi ia taxa de cum intră în birou, se cere să se determine dacă el poate primi aprobările necesare şi, în caz afirmativ, care este suma maximă de bani care îi rămâne în buzunar la ieşirea din clădire.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>taxe2.in</var> conţine pe prima linie cele două numere <var>S</var> şi <var>n</var> despărţite printr-un spaţiu, iar pe următoarele <var>n</var> linii câte <var>n</var> numere separate prin spaţii ce reprezintă taxele cerute de funcţionarii din fiecare birou.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>taxe2.out</var> veţi afişa o singură linie pe care se află numărul maxim de euro care îi rămân în buzunar sau valoarea <var>–1</var> dacă investitorului nu-i ajung banii pentru a obţine aprobarea.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>3 ≤ N ≤ 100</var></li>
+<li><var>1 ≤ S ≤ 10.000</var></li>
+<li>Valorile reprezentând taxele cerute de funcţionarii din birouri sunt numere naturale, o taxă nedepăşind valoarea de <var>200</var> de euro.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>taxe2.in</th><th>taxe2.out</th></tr><tr><td>10 3<br>
+  1 2 5<br>
+  1 3 1<br>
+  0 8 1<br></td><td>3<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>xerox.in, xerox.out</td><td><strong>Sursă</strong></td><td>preONI 2008 Runda 3</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=174">Andrei Grigorean</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/wefgef"><img src="/utilizator/wefgef?action=download&amp;file=avatar&amp;resize=L16x16" alt="wefgef">Andrei Grigorean</a> <a title="Rating wefgef: 783" class="rating-badge-4" href="http://infoarena.ro/utilizator/wefgef?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/wefgef">wefgef</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><div class="banner"><img style="vertical-align: middle; float: left;" src="/static/images/open_big.png"><em>Pentru aceasta problema accesul la </em><strong><a href="/monitor?task=xerox">toate sursele trimise</a></strong><em> este liber!</em><br></div>
+
+<p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=xerox">Vezi solutiile trimise</a></p>
+
+<h1>Xerox<br></h1>
+
+<p>Pentru ca se apropie sesiunea si pentru ca nu a fost la facultate in timpul anului, Miruna s-a vazut nevoita sa traga la xerox cursurile colegilor de serie. Din greseala, atunci cand s-a hotart sa mearga la xerox, Miruna a luat de pe masa un alt teanc de foi decat cel ce continea cursurile. Astfel, fetita are <var>N</var> foi, care in loc sa contina informatii folositoare la examene, sunt bune de aruncat la gunoi. Dar Miruna nu vrea sa faca risipa de hartie, asa ca se gandeste la ce ar putea folosi foile pe care le-a luat de pe masa. Ea observa ca acestea nu contin decat niste puncte, desenate aleator. Deoarece s-a plictisit sa se joace cu <a href="http://infoarena.ro/problema/bile2">bilele fratiorului ei</a>, fetitei ii vine in minte un nou joc. Sa presupunem ca avem <var>2</var> jucatori, care vor muta alternativ. La fiecare pas, unul din jucatori isi alege o foaie, si deseneaza o linie curba simpla inchisa care trece prin cel putin unul din punctele ce erau desenate initial pe foaie si care nu atinge niciuna din liniile desenate anterior. Cel care muta ultimul este declarat invingator.</p>
+
+<h2>Cerinta</h2>
+
+<p>Stiind dimensiunile foilor si pozitionarea punctelor pe fiecare dintre acestea, determinati daca primul jucator are strategie sigura de castig sau nu.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Pe prima linie a fisierului de intrare <var>xerox.in</var> se va gasi un singur numar natural <var>T</var>, reprezentand numarul de teste. Pentru fiecare test in parte, pe prima linie se vor gasi <var>3</var> numere naturale <var>N</var>, <var>DX</var>, <var>DY</var>, reprezenand numarul de foi, respectiv dimensiunile acestora. Pe urmatoarele <var>N</var> linii se vor afla informatiile necesare pentru fiecare foaie. Mai intai un numar natural <var>M</var>, reprezentand numarul de puncte de pe foaie, iar apoi <var>M</var> perechi de numere naturale <var>X<sub>i</sub></var> si <var>Y<sub>i</sub></var>, reprezentand coordonatele punctelor daca am fixa un sistem de coordonate cu originea in coltul din stanga jos al foii.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Pentru fiecare test veti scrie pe cate o linie in fisierul <var>xerox.out</var> valoarea <var>1</var> in cazul in care primul jucator are strategie sigura de castig, si <var>0</var> in caz contrar.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>1 ≤ T ≤ 20</var></li>
+<li><var>1 ≤ N ≤ 100</var></li>
+<li><var>1 ≤ M ≤ 200</var></li>
+<li><var>1 ≤ <span class="caps">DX,</span> DY ≤ 1000</var></li>
+<li>Pentru orice test, <var>0 &lt; X<sub>i</sub> &lt; DX</var>, <var>0 &lt; Y<sub>i</sub> &lt; DY</var>.</li>
+<li>Punctele de pe aceeasi foaie vor fi distincte.</li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>xerox.in</th><th>xerox.out</th></tr><tr><td>1<br>
+  2 10 10<br>
+  1 6 6<br>
+  1 5 5<br></td><td>0<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

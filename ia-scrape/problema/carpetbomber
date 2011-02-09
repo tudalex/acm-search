@@ -1,0 +1,41 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>carpetbomber.in, carpetbomber.out</td><td><strong>Sursă</strong></td><td>Algoritmiada 2009, Runda Finala</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=200">Bogdan-Cristian Tataroiu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/bogdan2412"><img src="/utilizator/bogdan2412?action=download&amp;file=avatar&amp;resize=L16x16" alt="bogdan2412">Bogdan-Cristian Tataroiu</a> <a title="Rating bogdan2412: 1162" class="rating-badge-4" href="http://infoarena.ro/utilizator/bogdan2412?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/bogdan2412">bogdan2412</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.3 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=carpetbomber">Vezi solutiile trimise</a></p>
+
+<h1>Carpet Bomber<br></h1>
+
+<p>Ato Marm şi-a adus aminte de vremurile în care juca <var><span class="caps">C&amp;C</span> Generals</var>. <var>Carpet Bombing</var> a fost o tehnică utilizată de către generalii chinezi în războiul împotriva <span class="caps">GLA.</span> O salvă de bombe era eliberată de către o aeronavă puternică, de obicei un <var>B-52</var> asupra unei zone alese de general, producând pagube semnificative. Bombardierele mentineau o traiectorie liniara si de aceea erau foarte eficiente la oprirea transporturilor ce mergeau pe sosele.</p>
+
+<p>Generalul chinez Tsing Shi Tao are ordine sa bombardeze intreaga suprafata a unei autostrazi liniare. Aceasta autostrada este impartita in <var>1 000 000</var> de intervale de lungime <var>1</var> numerotate de la <var>1</var> la <var>1 000 000</var>. Generalul are la dispozitie <var>N</var> aeronave, fiecare dintre ele avand explozibil de tipul <var>T<sub>i</sub></var> si un interval continuu din autostrada <var>[L<sub>i</sub>, R<sub>i</sub>]</var> pe care aceasta il bombardeaza in cazul in care este folosita. El are de asemenea ordine sa foloseasca aeronave cu maxim <var>2</var> tipuri diferite de explozibil. Se cere aflarea numarului minim de aeronave necesare bombardarii intregii autostrazi, in cazul in care acest lucru este posibil. In cazul in care nu se poate bombarda intreaga autostrada, afisati <var>-1</var>.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fişierul de intrare <var>carpetbomber.in</var> contine pe prima linie numarul <var>N</var> de bombe. Fiecare dintre urmatoarele <var>N</var> linii va contine cate <var>3</var> numere naturale repezentand, respectiv, tipul bombei <var>T<sub>i</sub></var>, capatul stanga <var>L<sub>i</sub></var> al intervalului afectat de bomba <var>i</var> si capatul dreapta <var>R<sub>i</sub></var> al intervalului afectat de bomba <var>i</var>.</p>
+
+<h2>Date de ieşire</h2>
+
+<p>În fişierul de ieşire <var>carpetbomber.out</var> prima linie va contine numarul minim de aeronave necesare bombardarii, respectand in acelasi timp restrictia mentionata sau <var>-1</var> daca acoperirea intregii autostrazi nu este posibila.</p>
+
+<h2>Restricţii</h2>
+
+
+<ul><li><var>1 ≤ N ≤ 8 191</var></li>
+<li><var>1 ≤ T<sub>i</sub> ≤ 1 023</var></li>
+<li><var>1 ≤ L<sub>i</sub> ≤ R<sub>i</sub> ≤ 1 000 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>carpetbomber.in</th><th>carpetbomber.out</th></tr><tr><td>5<br>
+1 1 250000<br>
+2 250001 500000<br>
+1 750001 1000000<br>
+3 500001 1000000<br>
+2 500001 750000<br></td><td>4<br></td></tr></table><h3>Explicaţie</h3>
+
+<p>Se vor folosi bombele cu numerele de ordine <var>1</var>, <var>2</var>, <var>3</var> si <var>5</var>.<br>
+Daca am putea folosi bombe cu mai mult de <var>2</var> tipuri de explozibil am folosi bombele cu numerele de ordine <var>1</var>, <var>2</var> si <var>4</var> pentru a bombarda intreaga autostrada.</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

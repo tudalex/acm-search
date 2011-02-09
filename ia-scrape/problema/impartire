@@ -1,0 +1,31 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>impartire.in, impartire.out</td><td><strong>Sursă</strong></td><td>Lista lui Francu</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=164">Catalin Francu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/gabitzish1"><img src="/utilizator/gabitzish1?action=download&amp;file=avatar&amp;resize=L16x16" alt="gabitzish1">Gabriel Bitis</a> <a title="Rating gabitzish1: 658" class="rating-badge-1" href="http://infoarena.ro/utilizator/gabitzish1?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/gabitzish1">gabitzish1</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>640 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=impartire">Vezi solutiile trimise</a></p>
+
+<h1>Impartire<br></h1>
+
+<p>Se dau doua numere naturale <var>M</var> si <var>N</var>.</p>
+
+<h2>Cerinta</h2>
+
+<p>Sa se tipareasca numarul <var>M/N</var> in forma zecimala completa (cu perioada, unde este cazul).</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>impartire.in</var> contine pe o singura linie numerele <var>M</var> si <var>N</var> despartite printr-un spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Rezultatul se va tipari in fisierul <var>impartire.out</var> pe o singura linie sub forma 0.parte_neperiodica sau 0.parte_neperiodica(parte_periodica) dupa cum este cazul.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>0 &lt; M &lt; N ≤ 100000</var></li>
+</ul><h2>Exemple</h2>
+
+<table class="example" cellspacing="0"><tr><th>impartire.in</th><th>impartire.out</th></tr><tr><td>13 25<br></td><td>0.52<br></td></tr></table><table class="example" cellspacing="0"><tr><th>impartire.in</th><th>impartire.out</th></tr><tr><td>73 505<br></td><td>0.1(4455)<br></td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

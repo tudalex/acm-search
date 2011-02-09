@@ -1,0 +1,49 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>caraibe.in, caraibe.out</td><td><strong>Sursă</strong></td><td>Lot 2004</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=155">Mihai Patrascu</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><div class="hidden">5/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=caraibe">Vezi solutiile trimise</a></p>
+
+<h1>Caraibe<br></h1>
+
+<p>Cei <var>N</var> pirati de pe Perla Neagra au facut recent o captura foarte importanta: un cufar cu <var>10.000.000.000</var> (zece miliarde) de banuti. Acum piratii au de rezolvat o problema si mai dificila: cum sa imparta banii.<br>
+Pentru impartire, piratii se aseaza in linie. Primul pirat va propune o schema de impartire a banilor. Daca un anumit numar de pirati nu sunt de acord cu aceasta schema, piratul va fi aruncat peste bord, si apoi urmatorul pirat va propune o schema de impartire, si tot asa. Piratii sunt foarte inteligenti: un pirat este de acord cu o schema de impartire doar daca aceasta ii aduce un avantaj strict (cel putin un banut) fata de ce ar obtine votand impotriva schemei. Pentru ca actioneaza numai pe baze rationale, piratii sunt si foarte predictibili. Cu alte cuvinte, un pirat poate anticipa decizia altor pirati pentru a lua o decizie proprie (aceasta inseamna si ca daca un pirat are mai multe posibilitati de a alege o schema de impartire, ceilalti pirati stiu ce varianta ar alege).<br>
+Depinzand de caracteristicile fiecarui pirat (forta, popularitate), numarul de pirati care trebuie sa fie de acord cu schema lui pentru a nu fi aruncat peste bord variaza. Sa zicem ca pentru piratul <var>i (1 ≤ i &lt; N)</var> acest numar este <var>A<sub>i</sub></var>. Daca piratul <var>i</var> propune o schema, stim ca toti piratii pana la <var>i-1</var> au fost aruncati deja peste bord. In afara de piratul <var>i</var>, mai exista <var>N-i</var> pirati. Daca cel putin <var>A<sub>i</sub></var> dintre acestia sunt de acord cu schema piratului <var>i</var>, comoara va fi impartita dupa aceasta schema. Altfel, piratul <var>i</var> va fi aruncat peste bord, si piratul <var>i+1</var> va propune o schema. Pentru orice <var>i</var>, avem <var>0 ≤ A<sub>i</sub> &lt; N-i</var>. Datorita acestei conditii <var>A<sub>N-1</sub>=0</var>, iar <var>A<sub>N</sub></var> nu este definit (pentru ca piratul <var>N</var> este ultimul).</p>
+
+<h2>Cerinta</h2>
+
+<p>Primul pirat din linie doreste sa propuna o schema de impartire a banilor astfel incat sa nu fie aruncat peste bord, si el sa primeasca cat mai multi banuti. Determinati suma maxima pe care o poate primi. Se garanteaza ca exista o schema pe care o poate propune primul pirat, astfel incat el sa nu fie aruncat peste bord.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Fisierul de intrare <var>caraibe.in</var> contine pe prima linie numarul <var>N</var> de pirati. Pe urmatoarele linii se gasesc valorile <var>A<sub>1</sub></var>, <var>A<sub>2</sub></var>, ..., <var>A<sub>N-2</sub></var>, cate o valoare pe o linie. Asa cum se mentioneaza mai sus, <var>A<sub>N-1</sub></var> este intotdeauna zero, si nu apare in fisier.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Fisierul de iesire <var>caraibe.out</var> va contine numarul maxim de banuti pe care ii poate primi primul pirat.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>2 ≤ N ≤ 65 000</var></li>
+<li><var>0 ≤ A<sub>i</sub> &lt; N-i</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>caraibe.in</th><th>caraibe.out</th></tr><tr><td>4<br>
+1<br>
+1<br></td><td>9999999999</td></tr></table><h3>Explicatii</h3>
+
+<p>Schema propusa de primul pirat este: <strong>9999999999</strong> de banuti pentru el insusi, <strong>1</strong> banut pentru al treilea pirat si <strong>0</strong> (zero) pentru ceilalti. Asta il face pe piratul al treilea sa fie de acord cu schema. El rationeaza astfel: "piratii <strong>2</strong> si <strong>4</strong> nu sunt de acord; daca si eu sunt impotriva, piratul <strong>1</strong> va fi aruncat peste bord (<strong>A<sub>1</sub>=1</strong>); apoi piratul <strong>2</strong> va propune schema: <strong>9999999999</strong> de banuti pentru el insusi, <strong>1</strong> banut pentru piratul <strong>4</strong> si nimic pentru mine; piratul <strong>4</strong> va fi de acord, deci schema va fi acceptata (<strong>A<sub>2</sub>=1</strong>); motivul pentru care piratul <strong>4</strong> va fi de acord este ca in cazul in care piratul <strong>2</strong> e aruncat peste bord, eu imi voi acorda toti banii mie si el nu primeste nimic (<strong>A<sub>3</sub>=0</strong>)"</p>
+
+<div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 1 categorie</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=79">Sume partiale</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

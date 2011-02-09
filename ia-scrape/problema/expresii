@@ -1,0 +1,67 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>expresii.in, expresii.out</td><td><strong>Sursă</strong></td><td>Happy Coding 2</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>1 sec</td><td><strong>Limită de memorie</strong></td><td>65536 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td><span class="star-rating"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-full.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><img src="http://infoarena.ro/static/images/stars/normal-empty.png" alt="normal"><div class="hidden">3/5</div></span></td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=expresii">Vezi solutiile trimise</a></p>
+
+<h1>Expresii algebrice<br></h1>
+
+<p>O expresie algebrica poate fi reprezentata printr-un arbore. Putem evalua expresia parcurgand arborele ei corespunzator. Reprezentarea sub forma de arbore a unei expresii algebrice nu este obligatoriu unica. De exemplu, expresia <code>1+2+3*4</code> poate fi reprezentata prin urmatorii doi arbori:</p>
+
+<p><img src="http://infoarena.ro/problema/expresii?action=download&amp;file=expresii.jpg&amp;safe_only=true" alt=""></p>
+
+<p>La o privire atenta observam ca succesiunea operatiilor <code>+</code> si <code>*</code> se mentine, iar ordinea operanzilor ramane neschimbata. In primul arbore ordinea evaluarii va fi: <code>3*4 = 12</code>; <code>2+12 = 14</code>; <code>1+14 = 15</code>. In al doilea arbore, expresia va fi evaluata astfel: <code>1+2 = 3</code>; <code>3*4 = 12</code>; <code>3+12 = 15</code>. Ambele reprezentari produc rezultatul dorit.</p>
+
+<p>In aceasta problema vom considera expresii algebrice simple ce contin doar numere dintr-o singura cifra, <code>+</code>, <code>*</code> si paranteze. Expresia se evalueaza dupa regulile algebrice normale.</p>
+
+<h2>Cerinta</h2>
+
+<p>Determinati numarul de reprezentari sub forma de arbore care evalueaza expresia correct.</p>
+
+<h2>Date de Intrare</h2>
+
+<p>Prima linie a fisierului de intrare <var>expresii.in</var> contine numarul de teste <var>T</var>. Urmatoarele linii contin cele <var>T</var> teste. Fiecare test este format dintr-o singura linie, ce contine expresia algebrica.</p>
+
+<h2>Date de Iesire</h2>
+
+<p>Pentru fiecare test, afisati in fisierul <var>expresii.out</var> o linie ce respecta urmatorul format: "Numarul de arbori = <var><span class="caps">XXX</span></var>.", unde <var><span class="caps">XXX</span></var> va fi inlocuit de numarul de reprezentari care vor evalua expresia correct. Daca expresia algebrica este incorecta din punct de vedere sintactic atunci numarul reprezentarilor corecte este <var>0</var>.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li>expresia nu contine spatii si lungimea ei este intre <var>1</var> si <var>50</var></li>
+<li><var>0 &lt; T &lt; 120</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>expresii.in</th><th>expresii.out</th></tr><tr><td>6<br>
+1+2+3+4<br>
+(1+2)+(3+4)<br>
+1+2+3*4<br>
+1+2+(3*4)<br>
+1+*7<br>
+1+2*(3+(4*5)<br></td><td>Numarul de arbori = 5.<br>
+Numarul de arbori = 1.<br>
+Numarul de arbori = 2.<br>
+Numarul de arbori = 2.<br>
+Numarul de arbori = 0.<br>
+Numarul de arbori = 0.</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+<div id="task_tags"><h3> Indicii de rezolvare</h3><a id="show_tags" href="javascript:show_tags()">
+                Arată 2 categorii</a><ul id="task_tags"><li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_4"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=58">Programare dinamica</a></span>
+            <a href="javascript:show_tag_list(58)" id="tag_anchor_58" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_58"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=68">ad-hoc</a></div>
+            </div>
+        </li>
+        <li style="display: none;" class="tags_list_item">
+            <span class="tag_name color_scheme_1"><a class="tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=55">Siruri de caractere</a></span>
+            <a href="javascript:show_tag_list(55)" id="tag_anchor_55" class="show_tag_anchor">
+                ... 1 tag
+            </a>
+            <div style="display: none;" id="tag_list_55"> 
+                <div class="sub_tag_name"><a class="sub_tag_search_anchor" href="/cauta-probleme?tag_id%5B%5D=67">Parsare</a></div>
+            </div>
+        </li></ul></div>
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>

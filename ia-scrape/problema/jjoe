@@ -1,0 +1,34 @@
+<div class="wiki_text_block"><p> </p>
+
+<table style="margin-left:auto;margin-right:auto;" cellspacing="0"><tr><td><strong>Fişierul intrare/ieşire:</strong></td><td>jjoe.in, jjoe.out</td><td><strong>Sursă</strong></td><td>Fall Contest #2, SGU 2002</td></tr><tr><td><strong>Autor</strong></td><td><a href="/cauta-probleme?tag_id%5B%5D=136">Mugurel Ionut Andreica</a></td><td><a href="http://infoarena.ro/implica-te/extinde-arhiva/"><strong>Adăugată de</strong></a></td><td><span class="tiny-user"><a href="http://infoarena.ro/utilizator/mugurelionut"><img src="/utilizator/mugurelionut?action=download&amp;file=avatar&amp;resize=L16x16" alt="mugurelionut">Mugurel Ionut Andreica</a> <a title="Rating mugurelionut: 884" class="rating-badge-1" href="http://infoarena.ro/utilizator/mugurelionut?action=rating">•</a><span class="username"><a href="http://infoarena.ro/utilizator/mugurelionut">mugurelionut</a></span></span></td></tr><tr><td><strong>Timp execuţie pe test</strong></td><td>0.1 sec</td><td><strong>Limită de memorie</strong></td><td>16384 kbytes</td></tr><tr><td><strong>Scorul tău în arhivă</strong></td><td>N/A</td><td><strong>Dificultate</strong></td><td>N/A</td></tr></table><p style="float: right; margin-right: 1em"><a href="http://infoarena.ro/monitor?task=jjoe">Vezi solutiile trimise</a></p>
+
+<h1>Jjoe<br></h1>
+
+<p>Joe este o broasca careia ii place sa sara foarte mult. De fapt, asta e tot ceea ce face: sare in fata si in spate de-a lungul axei numerelor intregi (o linie dreapta pe care sunt marcate toate numerele intregi, atat pozitive, cat si negative). La inceput Joe se afla langa punctul marcat cu <var>0</var>. De aici, el poate sari in sensul pozitiv sau in sensul negativ al axei o distanta egala cu <var>x1</var> sau cu <var>x2</var>. Din punctul unde a ajuns, el poate sari din nou o distanta egala cu <var>x1</var> sau cu <var>x2</var>, in sensul pozitiv sau negativ s.a.m.d. Joe vrea sa ajunga langa punctul marcat cu numarul <var>P</var>, dupa exact <var>K</var> sarituri. Dumneavoastra trebuie sa decideti daca acest lucru este posibil.</p>
+
+<h2>Date de intrare</h2>
+
+<p>Fisierul de intrare <var>jjoe.in</var> va contine <var>4</var> numere intregi: <var>x1</var>, <var>x2</var>, <var>P</var> si <var>K</var>, separate prin cate un spatiu.</p>
+
+<h2>Date de iesire</h2>
+
+<p>Prima linie a fisierului de iesire <var>jjoe.out</var> va contine sirul <var>"DA"</var>, daca Joe poate sa ajunga langa punctul marcat cu <var>P</var> dupa exact <var>K</var> sarituri sau <var>"NU"</var>, in caz contrar. Daca raspunsul este <var>"DA"</var>, pe a doua linie veti afisa <var>4</var> numere intregi, separate prin cate un spatiu: <var>P<sub>1</sub>, N<sub>1</sub>, P<sub>2</sub>, N<sub>2</sub></var>. <var>P<sub>1</sub></var> este numarul de sarituri de distanta <var>x1</var> pe care Joe le-a efectuat in sensul pozitiv al axei. <var>N<sub>1</sub></var> este numarul de sarituri de distanta <var>x1</var> pe care Joe le-a efectuat in sensul negativ al axei. <var>P<sub>2</sub></var> este numarul de sarituri de distanta <var>x2</var> pe care Joe le-a efectuat in sensul pozitiv al axei. <var>N<sub>2</sub></var> este numarul de sarituri de distanta <var>x2</var> pe care Joe le-a efectuat in sensul negativ al axei. Cele <var>4</var> numere trebuie sa respecte relatiile:</p>
+
+<p><var>P<sub>1</sub>*x1 - N<sub>1</sub>*x1 + P<sub>2</sub>*x2 - N<sub>2</sub>*x2 = P</var><br><var>P<sub>1</sub> + N<sub>1</sub> + P<sub>2</sub> + N<sub>2</sub> = K</var></p>
+
+<p>In caz ca exista mai multe solutii, puteti afisa oricare dintre ele.</p>
+
+<h2>Restrictii</h2>
+
+
+<ul><li><var>0 &lt; x1, x2 &lt; 40 000</var></li>
+<li><var>-40 000 &lt; P &lt; 40 000</var></li>
+<li><var>0 ≤ K &lt; 2 000 000 000</var></li>
+</ul><h2>Exemplu</h2>
+
+<table class="example" cellspacing="0"><tr><th>jjoe.in</th><th>jjoe.out</th></tr><tr><td>2 3 -1 12<br></td><td>DA<br>
+1 0 5 6</td></tr></table><div class="macroMessage">Trebuie sa te autentifici pentru a trimite solutii. <a href="/login">Click aici</a></div>
+
+
+
+<p><a href="http://infoarena.ro/documentatie/tutorial">Cum se trimit solutii?</a></p></div>
